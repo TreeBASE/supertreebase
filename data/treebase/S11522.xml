@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S11522" generator="org.nexml.model.impl.DocumentImpl" id="S11522" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Thu Apr 05 18:44:06 EDT 2012" datatype="xsd:string" id="meta6797347" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@7c1cf268 $Rev: 1060 $" datatype="xsd:string" id="meta6797346" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta6797345" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta6797344" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Molecular Ecology " datatype="xsd:string" id="meta6797343" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Molecular Ecology " datatype="xsd:string" id="meta6797342" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="speciation" datatype="xsd:string" id="meta6797341" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Parulidae" datatype="xsd:string" id="meta6797340" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="migratory connectivity" datatype="xsd:string" id="meta6797339" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="cryptic species" datatype="xsd:string" id="meta6797338" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Aves" datatype="xsd:string" id="meta6797337" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="AFLP" datatype="xsd:string" id="meta6797336" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta6797335" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2011" datatype="xsd:string" id="meta6797334" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Smith T.B." datatype="xsd:string" id="meta6797333" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Irwin J.H." datatype="xsd:string" id="meta6797332" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Irwin D.E." datatype="xsd:string" id="meta6797331" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Irwin D.E., Irwin J.H., &amp; Smith T.B." datatype="xsd:string" id="meta6797330" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="Genetic variation and seasonal migratory connectivity in Wilson's Warblers (Wilsonia pusilla): species-level differences in nuclear DNA between western and eastern populations" datatype="xsd:string" id="meta6797329" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Irwin D.E., Irwin J.H., &amp; Smith T.B. 2011. Genetic variation and seasonal migratory connectivity in Wilson's Warblers (Wilsonia pusilla): species-level differences in nuclear DNA between western and eastern populations. Molecular Ecology , ." datatype="xsd:string" id="meta6797328" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2011-05-11" datatype="xsd:string" id="meta6797327" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2011-05-13" datatype="xsd:string" id="meta6797326" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2011-05-13" datatype="xsd:string" id="meta6797325" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="Wilson's warbler cytochrome b phylogeny" datatype="xsd:string" id="meta6797324" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta6797323" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="11522" datatype="xsd:string" id="meta6797322" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta6797320" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls21073" id="Tls21073" label="Untitled Taxa Block" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3b21b5b0 $Rev: 1040 $" datatype="xsd:string" id="meta6797349" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl533056" id="Tl533056" label="Wilsonia canadensis GU932415">
+      <meta content="170548" datatype="xsd:long" id="meta6797356" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="244785" datatype="xsd:long" id="meta6797355" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/182910" id="meta6797354" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia canadensis" datatype="xsd:string" id="meta6797353" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850417" id="meta6797352" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797351" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533047" id="Tl533047" label="Ergaticus ruber GU932413">
+      <meta content="170558" datatype="xsd:long" id="meta6797363" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="244796" datatype="xsd:long" id="meta6797362" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/182925" id="meta6797361" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Ergaticus ruber" datatype="xsd:string" id="meta6797360" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850419" id="meta6797359" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797358" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533064" id="Tl533064" label="Ergaticus versicolor GU932414">
+      <meta content="604927" datatype="xsd:long" id="meta6797369" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="807387" datatype="xsd:long" id="meta6797368" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Ergaticus versicolor" datatype="xsd:string" id="meta6797367" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850420" id="meta6797366" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797365" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533052" id="Tl533052" label="Cardellina rubrifrons AF383026">
+      <meta content="170550" datatype="xsd:long" id="meta6797376" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="244787" datatype="xsd:long" id="meta6797375" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/182912" id="meta6797374" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Cardellina rubrifrons" datatype="xsd:string" id="meta6797373" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850418" id="meta6797372" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797371" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533039" id="Tl533039" label="Wilsonia pusilla AF499595">
+      <meta content="139583" datatype="xsd:long" id="meta6797383" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797382" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797381" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797380" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797379" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797378" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533059" id="Tl533059" label="Wilsonia pusilla AF499594">
+      <meta content="139583" datatype="xsd:long" id="meta6797390" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797389" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797388" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797387" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797386" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797385" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533029" id="Tl533029" label="Wilsonia pusilla AF499593">
+      <meta content="139583" datatype="xsd:long" id="meta6797397" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797396" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797395" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797394" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797393" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797392" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533028" id="Tl533028" label="Wilsonia pusilla AF499592">
+      <meta content="139583" datatype="xsd:long" id="meta6797404" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797403" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797402" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797401" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797400" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797399" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533037" id="Tl533037" label="Wilsonia pusilla AF499591">
+      <meta content="139583" datatype="xsd:long" id="meta6797411" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797410" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797409" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797408" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797407" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797406" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533040" id="Tl533040" label="Wilsonia pusilla AF499590">
+      <meta content="139583" datatype="xsd:long" id="meta6797418" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797417" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797416" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797415" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797414" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797413" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533049" id="Tl533049" label="Wilsonia pusilla AF499589">
+      <meta content="139583" datatype="xsd:long" id="meta6797425" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797424" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797423" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797422" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797421" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797420" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533046" id="Tl533046" label="Wilsonia pusilla AF499588">
+      <meta content="139583" datatype="xsd:long" id="meta6797432" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797431" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797430" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797429" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797428" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797427" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533048" id="Tl533048" label="Wilsonia pusilla AF499587">
+      <meta content="139583" datatype="xsd:long" id="meta6797439" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797438" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797437" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797436" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797435" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797434" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533042" id="Tl533042" label="Wilsonia pusilla AF499586">
+      <meta content="139583" datatype="xsd:long" id="meta6797446" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797445" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797444" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797443" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797442" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797441" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533062" id="Tl533062" label="Wilsonia pusilla AF499585">
+      <meta content="139583" datatype="xsd:long" id="meta6797453" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797452" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797451" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797450" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797449" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797448" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533035" id="Tl533035" label="Wilsonia pusilla AF499584">
+      <meta content="139583" datatype="xsd:long" id="meta6797460" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797459" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797458" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797457" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797456" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797455" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533054" id="Tl533054" label="Wilsonia pusilla AF499583">
+      <meta content="139583" datatype="xsd:long" id="meta6797467" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797466" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797465" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797464" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797463" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797462" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533030" id="Tl533030" label="Wilsonia pusilla AF499582">
+      <meta content="139583" datatype="xsd:long" id="meta6797474" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797473" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797472" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797471" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797470" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797469" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533036" id="Tl533036" label="Wilsonia pusilla AF499581">
+      <meta content="139583" datatype="xsd:long" id="meta6797481" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797480" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797479" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797478" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797477" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797476" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533051" id="Tl533051" label="Wilsonia pusilla AF499580">
+      <meta content="139583" datatype="xsd:long" id="meta6797488" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797487" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797486" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797485" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797484" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797483" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533063" id="Tl533063" label="Wilsonia pusilla AF499579">
+      <meta content="139583" datatype="xsd:long" id="meta6797495" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797494" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797493" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797492" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797491" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797490" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533053" id="Tl533053" label="Wilsonia pusilla AF499578">
+      <meta content="139583" datatype="xsd:long" id="meta6797502" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797501" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797500" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797499" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797498" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797497" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533038" id="Tl533038" label="Wilsonia pusilla AF499577">
+      <meta content="139583" datatype="xsd:long" id="meta6797509" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797508" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797507" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797506" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797505" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797504" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533033" id="Tl533033" label="Wilsonia pusilla AF499576">
+      <meta content="139583" datatype="xsd:long" id="meta6797516" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797515" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797514" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797513" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797512" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797511" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533031" id="Tl533031" label="Wilsonia pusilla AF499575">
+      <meta content="139583" datatype="xsd:long" id="meta6797523" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797522" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797521" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797520" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797519" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797518" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533032" id="Tl533032" label="Wilsonia pusilla AF499574">
+      <meta content="139583" datatype="xsd:long" id="meta6797530" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797529" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797528" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797527" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797526" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797525" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533058" id="Tl533058" label="Wilsonia pusilla AF499573">
+      <meta content="139583" datatype="xsd:long" id="meta6797537" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797536" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797535" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797534" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797533" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797532" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533055" id="Tl533055" label="Wilsonia pusilla AF499572">
+      <meta content="139583" datatype="xsd:long" id="meta6797544" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797543" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797542" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797541" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797540" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797539" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533057" id="Tl533057" label="Wilsonia pusilla AF499571">
+      <meta content="139583" datatype="xsd:long" id="meta6797551" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797550" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797549" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797548" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797547" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797546" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533050" id="Tl533050" label="Wilsonia pusilla AF499570">
+      <meta content="139583" datatype="xsd:long" id="meta6797558" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797557" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797556" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797555" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797554" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797553" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533044" id="Tl533044" label="Wilsonia pusilla AF499569">
+      <meta content="139583" datatype="xsd:long" id="meta6797565" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797564" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797563" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797562" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797561" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797560" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533045" id="Tl533045" label="Wilsonia pusilla AF499568">
+      <meta content="139583" datatype="xsd:long" id="meta6797572" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797571" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797570" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797569" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797568" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797567" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533061" id="Tl533061" label="Wilsonia pusilla AF499567">
+      <meta content="139583" datatype="xsd:long" id="meta6797579" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797578" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797577" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797576" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797575" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797574" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533034" id="Tl533034" label="Wilsonia pusilla AF499566">
+      <meta content="139583" datatype="xsd:long" id="meta6797586" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797585" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797584" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797583" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797582" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797581" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533043" id="Tl533043" label="Wilsonia pusilla AF499565">
+      <meta content="139583" datatype="xsd:long" id="meta6797593" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797592" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797591" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797590" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797589" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797588" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533060" id="Tl533060" label="Wilsonia pusilla AF499564">
+      <meta content="139583" datatype="xsd:long" id="meta6797600" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797599" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797598" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797597" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797596" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797595" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl533041" id="Tl533041" label="Wilsonia pusilla AF499563">
+      <meta content="139583" datatype="xsd:long" id="meta6797607" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="216015" datatype="xsd:long" id="meta6797606" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/142478" id="meta6797605" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Wilsonia pusilla" datatype="xsd:string" id="meta6797604" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3850416" id="meta6797603" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797602" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M8907" id="M8907" label="WIWA_cytb " otus="Tls21073" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:DnaSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@11581158 $Rev: 1056 $" datatype="xsd:string" id="meta6797632" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="8907" datatype="xsd:long" id="meta6797631" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="316" datatype="xsd:integer" id="meta6797630" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="37" datatype="xsd:integer" id="meta6797629" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="DNA" datatype="xsd:string" id="meta6797628" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states6797609">
+        <state id="state6797610" symbol="A"/>
+        <state id="state6797611" symbol="C"/>
+        <state id="state6797612" symbol="G"/>
+        <state id="state6797613" symbol="T"/>
+        <uncertain_state_set id="uncertain_state_set6797614" symbol="K">
+          <member state="state6797613"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797615" symbol="M">
+          <member state="state6797611"/>
+          <member state="state6797610"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797616" symbol="R">
+          <member state="state6797610"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797617" symbol="S">
+          <member state="state6797611"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797618" symbol="W">
+          <member state="state6797613"/>
+          <member state="state6797610"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797619" symbol="Y">
+          <member state="state6797613"/>
+          <member state="state6797611"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797620" symbol="B">
+          <member state="state6797613"/>
+          <member state="state6797611"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797621" symbol="D">
+          <member state="state6797613"/>
+          <member state="state6797610"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797622" symbol="H">
+          <member state="state6797613"/>
+          <member state="state6797610"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797623" symbol="V">
+          <member state="state6797611"/>
+          <member state="state6797610"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797624" symbol="N">
+          <member state="state6797610"/>
+          <member state="state6797613"/>
+          <member state="state6797611"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797625" symbol="X">
+          <member state="state6797610"/>
+          <member state="state6797613"/>
+          <member state="state6797611"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set6797626" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set6797627" symbol="?">
+          <member state="uncertain_state_set6797626"/>
+          <member state="state6797611"/>
+          <member state="state6797610"/>
+          <member state="state6797613"/>
+          <member state="state6797612"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col19695006" label="DNA" states="states6797609"/>
+      <char id="Col19695007" label="DNA" states="states6797609"/>
+      <char id="Col19695008" label="DNA" states="states6797609"/>
+      <char id="Col19695009" label="DNA" states="states6797609"/>
+      <char id="Col19695010" label="DNA" states="states6797609"/>
+      <char id="Col19695011" label="DNA" states="states6797609"/>
+      <char id="Col19695012" label="DNA" states="states6797609"/>
+      <char id="Col19695013" label="DNA" states="states6797609"/>
+      <char id="Col19695014" label="DNA" states="states6797609"/>
+      <char id="Col19695015" label="DNA" states="states6797609"/>
+      <char id="Col19695016" label="DNA" states="states6797609"/>
+      <char id="Col19695017" label="DNA" states="states6797609"/>
+      <char id="Col19695018" label="DNA" states="states6797609"/>
+      <char id="Col19695019" label="DNA" states="states6797609"/>
+      <char id="Col19695020" label="DNA" states="states6797609"/>
+      <char id="Col19695021" label="DNA" states="states6797609"/>
+      <char id="Col19695022" label="DNA" states="states6797609"/>
+      <char id="Col19695023" label="DNA" states="states6797609"/>
+      <char id="Col19695024" label="DNA" states="states6797609"/>
+      <char id="Col19695025" label="DNA" states="states6797609"/>
+      <char id="Col19695026" label="DNA" states="states6797609"/>
+      <char id="Col19695027" label="DNA" states="states6797609"/>
+      <char id="Col19695028" label="DNA" states="states6797609"/>
+      <char id="Col19695029" label="DNA" states="states6797609"/>
+      <char id="Col19695030" label="DNA" states="states6797609"/>
+      <char id="Col19695031" label="DNA" states="states6797609"/>
+      <char id="Col19695032" label="DNA" states="states6797609"/>
+      <char id="Col19695033" label="DNA" states="states6797609"/>
+      <char id="Col19695034" label="DNA" states="states6797609"/>
+      <char id="Col19695035" label="DNA" states="states6797609"/>
+      <char id="Col19695036" label="DNA" states="states6797609"/>
+      <char id="Col19695037" label="DNA" states="states6797609"/>
+      <char id="Col19695038" label="DNA" states="states6797609"/>
+      <char id="Col19695039" label="DNA" states="states6797609"/>
+      <char id="Col19695040" label="DNA" states="states6797609"/>
+      <char id="Col19695041" label="DNA" states="states6797609"/>
+      <char id="Col19695042" label="DNA" states="states6797609"/>
+      <char id="Col19695043" label="DNA" states="states6797609"/>
+      <char id="Col19695044" label="DNA" states="states6797609"/>
+      <char id="Col19695045" label="DNA" states="states6797609"/>
+      <char id="Col19695046" label="DNA" states="states6797609"/>
+      <char id="Col19695047" label="DNA" states="states6797609"/>
+      <char id="Col19695048" label="DNA" states="states6797609"/>
+      <char id="Col19695049" label="DNA" states="states6797609"/>
+      <char id="Col19695050" label="DNA" states="states6797609"/>
+      <char id="Col19695051" label="DNA" states="states6797609"/>
+      <char id="Col19695052" label="DNA" states="states6797609"/>
+      <char id="Col19695053" label="DNA" states="states6797609"/>
+      <char id="Col19695054" label="DNA" states="states6797609"/>
+      <char id="Col19695055" label="DNA" states="states6797609"/>
+      <char id="Col19695056" label="DNA" states="states6797609"/>
+      <char id="Col19695057" label="DNA" states="states6797609"/>
+      <char id="Col19695058" label="DNA" states="states6797609"/>
+      <char id="Col19695059" label="DNA" states="states6797609"/>
+      <char id="Col19695060" label="DNA" states="states6797609"/>
+      <char id="Col19695061" label="DNA" states="states6797609"/>
+      <char id="Col19695062" label="DNA" states="states6797609"/>
+      <char id="Col19695063" label="DNA" states="states6797609"/>
+      <char id="Col19695064" label="DNA" states="states6797609"/>
+      <char id="Col19695065" label="DNA" states="states6797609"/>
+      <char id="Col19695066" label="DNA" states="states6797609"/>
+      <char id="Col19695067" label="DNA" states="states6797609"/>
+      <char id="Col19695068" label="DNA" states="states6797609"/>
+      <char id="Col19695069" label="DNA" states="states6797609"/>
+      <char id="Col19695070" label="DNA" states="states6797609"/>
+      <char id="Col19695071" label="DNA" states="states6797609"/>
+      <char id="Col19695072" label="DNA" states="states6797609"/>
+      <char id="Col19695073" label="DNA" states="states6797609"/>
+      <char id="Col19695074" label="DNA" states="states6797609"/>
+      <char id="Col19695075" label="DNA" states="states6797609"/>
+      <char id="Col19695076" label="DNA" states="states6797609"/>
+      <char id="Col19695077" label="DNA" states="states6797609"/>
+      <char id="Col19695078" label="DNA" states="states6797609"/>
+      <char id="Col19695079" label="DNA" states="states6797609"/>
+      <char id="Col19695080" label="DNA" states="states6797609"/>
+      <char id="Col19695081" label="DNA" states="states6797609"/>
+      <char id="Col19695082" label="DNA" states="states6797609"/>
+      <char id="Col19695083" label="DNA" states="states6797609"/>
+      <char id="Col19695084" label="DNA" states="states6797609"/>
+      <char id="Col19695085" label="DNA" states="states6797609"/>
+      <char id="Col19695086" label="DNA" states="states6797609"/>
+      <char id="Col19695087" label="DNA" states="states6797609"/>
+      <char id="Col19695088" label="DNA" states="states6797609"/>
+      <char id="Col19695089" label="DNA" states="states6797609"/>
+      <char id="Col19695090" label="DNA" states="states6797609"/>
+      <char id="Col19695091" label="DNA" states="states6797609"/>
+      <char id="Col19695092" label="DNA" states="states6797609"/>
+      <char id="Col19695093" label="DNA" states="states6797609"/>
+      <char id="Col19695094" label="DNA" states="states6797609"/>
+      <char id="Col19695095" label="DNA" states="states6797609"/>
+      <char id="Col19695096" label="DNA" states="states6797609"/>
+      <char id="Col19695097" label="DNA" states="states6797609"/>
+      <char id="Col19695098" label="DNA" states="states6797609"/>
+      <char id="Col19695099" label="DNA" states="states6797609"/>
+      <char id="Col19695100" label="DNA" states="states6797609"/>
+      <char id="Col19695101" label="DNA" states="states6797609"/>
+      <char id="Col19695102" label="DNA" states="states6797609"/>
+      <char id="Col19695103" label="DNA" states="states6797609"/>
+      <char id="Col19695104" label="DNA" states="states6797609"/>
+      <char id="Col19695105" label="DNA" states="states6797609"/>
+      <char id="Col19695106" label="DNA" states="states6797609"/>
+      <char id="Col19695107" label="DNA" states="states6797609"/>
+      <char id="Col19695108" label="DNA" states="states6797609"/>
+      <char id="Col19695109" label="DNA" states="states6797609"/>
+      <char id="Col19695110" label="DNA" states="states6797609"/>
+      <char id="Col19695111" label="DNA" states="states6797609"/>
+      <char id="Col19695112" label="DNA" states="states6797609"/>
+      <char id="Col19695113" label="DNA" states="states6797609"/>
+      <char id="Col19695114" label="DNA" states="states6797609"/>
+      <char id="Col19695115" label="DNA" states="states6797609"/>
+      <char id="Col19695116" label="DNA" states="states6797609"/>
+      <char id="Col19695117" label="DNA" states="states6797609"/>
+      <char id="Col19695118" label="DNA" states="states6797609"/>
+      <char id="Col19695119" label="DNA" states="states6797609"/>
+      <char id="Col19695120" label="DNA" states="states6797609"/>
+      <char id="Col19695121" label="DNA" states="states6797609"/>
+      <char id="Col19695122" label="DNA" states="states6797609"/>
+      <char id="Col19695123" label="DNA" states="states6797609"/>
+      <char id="Col19695124" label="DNA" states="states6797609"/>
+      <char id="Col19695125" label="DNA" states="states6797609"/>
+      <char id="Col19695126" label="DNA" states="states6797609"/>
+      <char id="Col19695127" label="DNA" states="states6797609"/>
+      <char id="Col19695128" label="DNA" states="states6797609"/>
+      <char id="Col19695129" label="DNA" states="states6797609"/>
+      <char id="Col19695130" label="DNA" states="states6797609"/>
+      <char id="Col19695131" label="DNA" states="states6797609"/>
+      <char id="Col19695132" label="DNA" states="states6797609"/>
+      <char id="Col19695133" label="DNA" states="states6797609"/>
+      <char id="Col19695134" label="DNA" states="states6797609"/>
+      <char id="Col19695135" label="DNA" states="states6797609"/>
+      <char id="Col19695136" label="DNA" states="states6797609"/>
+      <char id="Col19695137" label="DNA" states="states6797609"/>
+      <char id="Col19695138" label="DNA" states="states6797609"/>
+      <char id="Col19695139" label="DNA" states="states6797609"/>
+      <char id="Col19695140" label="DNA" states="states6797609"/>
+      <char id="Col19695141" label="DNA" states="states6797609"/>
+      <char id="Col19695142" label="DNA" states="states6797609"/>
+      <char id="Col19695143" label="DNA" states="states6797609"/>
+      <char id="Col19695144" label="DNA" states="states6797609"/>
+      <char id="Col19695145" label="DNA" states="states6797609"/>
+      <char id="Col19695146" label="DNA" states="states6797609"/>
+      <char id="Col19695147" label="DNA" states="states6797609"/>
+      <char id="Col19695148" label="DNA" states="states6797609"/>
+      <char id="Col19695149" label="DNA" states="states6797609"/>
+      <char id="Col19695150" label="DNA" states="states6797609"/>
+      <char id="Col19695151" label="DNA" states="states6797609"/>
+      <char id="Col19695152" label="DNA" states="states6797609"/>
+      <char id="Col19695153" label="DNA" states="states6797609"/>
+      <char id="Col19695154" label="DNA" states="states6797609"/>
+      <char id="Col19695155" label="DNA" states="states6797609"/>
+      <char id="Col19695156" label="DNA" states="states6797609"/>
+      <char id="Col19695157" label="DNA" states="states6797609"/>
+      <char id="Col19695158" label="DNA" states="states6797609"/>
+      <char id="Col19695159" label="DNA" states="states6797609"/>
+      <char id="Col19695160" label="DNA" states="states6797609"/>
+      <char id="Col19695161" label="DNA" states="states6797609"/>
+      <char id="Col19695162" label="DNA" states="states6797609"/>
+      <char id="Col19695163" label="DNA" states="states6797609"/>
+      <char id="Col19695164" label="DNA" states="states6797609"/>
+      <char id="Col19695165" label="DNA" states="states6797609"/>
+      <char id="Col19695166" label="DNA" states="states6797609"/>
+      <char id="Col19695167" label="DNA" states="states6797609"/>
+      <char id="Col19695168" label="DNA" states="states6797609"/>
+      <char id="Col19695169" label="DNA" states="states6797609"/>
+      <char id="Col19695170" label="DNA" states="states6797609"/>
+      <char id="Col19695171" label="DNA" states="states6797609"/>
+      <char id="Col19695172" label="DNA" states="states6797609"/>
+      <char id="Col19695173" label="DNA" states="states6797609"/>
+      <char id="Col19695174" label="DNA" states="states6797609"/>
+      <char id="Col19695175" label="DNA" states="states6797609"/>
+      <char id="Col19695176" label="DNA" states="states6797609"/>
+      <char id="Col19695177" label="DNA" states="states6797609"/>
+      <char id="Col19695178" label="DNA" states="states6797609"/>
+      <char id="Col19695179" label="DNA" states="states6797609"/>
+      <char id="Col19695180" label="DNA" states="states6797609"/>
+      <char id="Col19695181" label="DNA" states="states6797609"/>
+      <char id="Col19695182" label="DNA" states="states6797609"/>
+      <char id="Col19695183" label="DNA" states="states6797609"/>
+      <char id="Col19695184" label="DNA" states="states6797609"/>
+      <char id="Col19695185" label="DNA" states="states6797609"/>
+      <char id="Col19695186" label="DNA" states="states6797609"/>
+      <char id="Col19695187" label="DNA" states="states6797609"/>
+      <char id="Col19695188" label="DNA" states="states6797609"/>
+      <char id="Col19695189" label="DNA" states="states6797609"/>
+      <char id="Col19695190" label="DNA" states="states6797609"/>
+      <char id="Col19695191" label="DNA" states="states6797609"/>
+      <char id="Col19695192" label="DNA" states="states6797609"/>
+      <char id="Col19695193" label="DNA" states="states6797609"/>
+      <char id="Col19695194" label="DNA" states="states6797609"/>
+      <char id="Col19695195" label="DNA" states="states6797609"/>
+      <char id="Col19695196" label="DNA" states="states6797609"/>
+      <char id="Col19695197" label="DNA" states="states6797609"/>
+      <char id="Col19695198" label="DNA" states="states6797609"/>
+      <char id="Col19695199" label="DNA" states="states6797609"/>
+      <char id="Col19695200" label="DNA" states="states6797609"/>
+      <char id="Col19695201" label="DNA" states="states6797609"/>
+      <char id="Col19695202" label="DNA" states="states6797609"/>
+      <char id="Col19695203" label="DNA" states="states6797609"/>
+      <char id="Col19695204" label="DNA" states="states6797609"/>
+      <char id="Col19695205" label="DNA" states="states6797609"/>
+      <char id="Col19695206" label="DNA" states="states6797609"/>
+      <char id="Col19695207" label="DNA" states="states6797609"/>
+      <char id="Col19695208" label="DNA" states="states6797609"/>
+      <char id="Col19695209" label="DNA" states="states6797609"/>
+      <char id="Col19695210" label="DNA" states="states6797609"/>
+      <char id="Col19695211" label="DNA" states="states6797609"/>
+      <char id="Col19695212" label="DNA" states="states6797609"/>
+      <char id="Col19695213" label="DNA" states="states6797609"/>
+      <char id="Col19695214" label="DNA" states="states6797609"/>
+      <char id="Col19695215" label="DNA" states="states6797609"/>
+      <char id="Col19695216" label="DNA" states="states6797609"/>
+      <char id="Col19695217" label="DNA" states="states6797609"/>
+      <char id="Col19695218" label="DNA" states="states6797609"/>
+      <char id="Col19695219" label="DNA" states="states6797609"/>
+      <char id="Col19695220" label="DNA" states="states6797609"/>
+      <char id="Col19695221" label="DNA" states="states6797609"/>
+      <char id="Col19695222" label="DNA" states="states6797609"/>
+      <char id="Col19695223" label="DNA" states="states6797609"/>
+      <char id="Col19695224" label="DNA" states="states6797609"/>
+      <char id="Col19695225" label="DNA" states="states6797609"/>
+      <char id="Col19695226" label="DNA" states="states6797609"/>
+      <char id="Col19695227" label="DNA" states="states6797609"/>
+      <char id="Col19695228" label="DNA" states="states6797609"/>
+      <char id="Col19695229" label="DNA" states="states6797609"/>
+      <char id="Col19695230" label="DNA" states="states6797609"/>
+      <char id="Col19695231" label="DNA" states="states6797609"/>
+      <char id="Col19695232" label="DNA" states="states6797609"/>
+      <char id="Col19695233" label="DNA" states="states6797609"/>
+      <char id="Col19695234" label="DNA" states="states6797609"/>
+      <char id="Col19695235" label="DNA" states="states6797609"/>
+      <char id="Col19695236" label="DNA" states="states6797609"/>
+      <char id="Col19695237" label="DNA" states="states6797609"/>
+      <char id="Col19695238" label="DNA" states="states6797609"/>
+      <char id="Col19695239" label="DNA" states="states6797609"/>
+      <char id="Col19695240" label="DNA" states="states6797609"/>
+      <char id="Col19695241" label="DNA" states="states6797609"/>
+      <char id="Col19695242" label="DNA" states="states6797609"/>
+      <char id="Col19695243" label="DNA" states="states6797609"/>
+      <char id="Col19695244" label="DNA" states="states6797609"/>
+      <char id="Col19695245" label="DNA" states="states6797609"/>
+      <char id="Col19695246" label="DNA" states="states6797609"/>
+      <char id="Col19695247" label="DNA" states="states6797609"/>
+      <char id="Col19695248" label="DNA" states="states6797609"/>
+      <char id="Col19695249" label="DNA" states="states6797609"/>
+      <char id="Col19695250" label="DNA" states="states6797609"/>
+      <char id="Col19695251" label="DNA" states="states6797609"/>
+      <char id="Col19695252" label="DNA" states="states6797609"/>
+      <char id="Col19695253" label="DNA" states="states6797609"/>
+      <char id="Col19695254" label="DNA" states="states6797609"/>
+      <char id="Col19695255" label="DNA" states="states6797609"/>
+      <char id="Col19695256" label="DNA" states="states6797609"/>
+      <char id="Col19695257" label="DNA" states="states6797609"/>
+      <char id="Col19695258" label="DNA" states="states6797609"/>
+      <char id="Col19695259" label="DNA" states="states6797609"/>
+      <char id="Col19695260" label="DNA" states="states6797609"/>
+      <char id="Col19695261" label="DNA" states="states6797609"/>
+      <char id="Col19695262" label="DNA" states="states6797609"/>
+      <char id="Col19695263" label="DNA" states="states6797609"/>
+      <char id="Col19695264" label="DNA" states="states6797609"/>
+      <char id="Col19695265" label="DNA" states="states6797609"/>
+      <char id="Col19695266" label="DNA" states="states6797609"/>
+      <char id="Col19695267" label="DNA" states="states6797609"/>
+      <char id="Col19695268" label="DNA" states="states6797609"/>
+      <char id="Col19695269" label="DNA" states="states6797609"/>
+      <char id="Col19695270" label="DNA" states="states6797609"/>
+      <char id="Col19695271" label="DNA" states="states6797609"/>
+      <char id="Col19695272" label="DNA" states="states6797609"/>
+      <char id="Col19695273" label="DNA" states="states6797609"/>
+      <char id="Col19695274" label="DNA" states="states6797609"/>
+      <char id="Col19695275" label="DNA" states="states6797609"/>
+      <char id="Col19695276" label="DNA" states="states6797609"/>
+      <char id="Col19695277" label="DNA" states="states6797609"/>
+      <char id="Col19695278" label="DNA" states="states6797609"/>
+      <char id="Col19695279" label="DNA" states="states6797609"/>
+      <char id="Col19695280" label="DNA" states="states6797609"/>
+      <char id="Col19695281" label="DNA" states="states6797609"/>
+      <char id="Col19695282" label="DNA" states="states6797609"/>
+      <char id="Col19695283" label="DNA" states="states6797609"/>
+      <char id="Col19695284" label="DNA" states="states6797609"/>
+      <char id="Col19695285" label="DNA" states="states6797609"/>
+      <char id="Col19695286" label="DNA" states="states6797609"/>
+      <char id="Col19695287" label="DNA" states="states6797609"/>
+      <char id="Col19695288" label="DNA" states="states6797609"/>
+      <char id="Col19695289" label="DNA" states="states6797609"/>
+      <char id="Col19695290" label="DNA" states="states6797609"/>
+      <char id="Col19695291" label="DNA" states="states6797609"/>
+      <char id="Col19695292" label="DNA" states="states6797609"/>
+      <char id="Col19695293" label="DNA" states="states6797609"/>
+      <char id="Col19695294" label="DNA" states="states6797609"/>
+      <char id="Col19695295" label="DNA" states="states6797609"/>
+      <char id="Col19695296" label="DNA" states="states6797609"/>
+      <char id="Col19695297" label="DNA" states="states6797609"/>
+      <char id="Col19695298" label="DNA" states="states6797609"/>
+      <char id="Col19695299" label="DNA" states="states6797609"/>
+      <char id="Col19695300" label="DNA" states="states6797609"/>
+      <char id="Col19695301" label="DNA" states="states6797609"/>
+      <char id="Col19695302" label="DNA" states="states6797609"/>
+      <char id="Col19695303" label="DNA" states="states6797609"/>
+      <char id="Col19695304" label="DNA" states="states6797609"/>
+      <char id="Col19695305" label="DNA" states="states6797609"/>
+      <char id="Col19695306" label="DNA" states="states6797609"/>
+      <char id="Col19695307" label="DNA" states="states6797609"/>
+      <char id="Col19695308" label="DNA" states="states6797609"/>
+      <char id="Col19695309" label="DNA" states="states6797609"/>
+      <char id="Col19695310" label="DNA" states="states6797609"/>
+      <char id="Col19695311" label="DNA" states="states6797609"/>
+      <char id="Col19695312" label="DNA" states="states6797609"/>
+      <char id="Col19695313" label="DNA" states="states6797609"/>
+      <char id="Col19695314" label="DNA" states="states6797609"/>
+      <char id="Col19695315" label="DNA" states="states6797609"/>
+      <char id="Col19695316" label="DNA" states="states6797609"/>
+      <char id="Col19695317" label="DNA" states="states6797609"/>
+      <char id="Col19695318" label="DNA" states="states6797609"/>
+      <char id="Col19695319" label="DNA" states="states6797609"/>
+      <char id="Col19695320" label="DNA" states="states6797609"/>
+      <char id="Col19695321" label="DNA" states="states6797609"/>
+    </format>
+    <matrix>
+      <row id="Row642478" otu="Tl533056">
+        <seq>AAACTTCGGATCCCTGCTAGGCATTTGCTTAATTACCCAAATTGTCACAGGTCTCCTACTCGCCATACACTACACAGCAGACACTAATCTAGCTTTCTCCTCCGTAGCCCATATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACATGCAAACGGAGCCTCCTTCTTCTTCATCTGCATCTACTTACACATCGGCCGAGGACTCTACTACGGTTCATACCTAAACAAAGAAACCTGAAACGTGGGAGTTATTCTTCTCTTAACCCTCATAGCAACTGCTTTCGTAGGATATGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642479" otu="Tl533047">
+        <seq>AAACTTCGGATCCCTGCTAGGCATTTGTCTAATTACTCAAATTGTCACAGGCCTCCTACTAGCTATACACTATACAGCAGACACCAACCTAGCCTTCTCCTCCGTCGCCCACATATGCCGAGACGTACAATTCGGCTGACTCATTCGAAACCTACACGCAAACGGAGCCTCTTTCTTCTTCATCTGCATTTACTTACACATCGGCCGAGGACTCTACTATGGTTCATACCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTTCTCTTAACCCTCATAGCAACTGCTTTCGTAGGATATGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642480" otu="Tl533064">
+        <seq>AAACTTCGGATCCCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGCCTCCTACTAGCTATACACTATACAGCAGACACTAACCTAGCCTTCTCCTCCGTCGCCCACATATGCCGAGACGTACAATTCGGCTGACTCATTCGAAACCTACACGCAAACGGAGCCTCTTTCTTCTTCATCTGCATCTACTTACACATCGGCCGAGGACTCTACTATGGTTCATACCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTTCTCTTAACCCTCATAGCAACCGCTTTCGTAGGGTATGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642481" otu="Tl533052">
+        <seq>AAACTTCGGATCCCTGCTAGGCATTTGCCTAATTACTCAAATCGTCACAGGTCTCCTACTAGCTATACACTACACAGCAGACACTAACCTCGCCTTCTCCTCCGTTGCCCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCTTTCTTCTTCATCTGCATTTACCTCCATATCGGCCGAGGCCTCTACTACGGTTCATACCTAAACAAAGAAACCTGAAATGTTGGAGTCATTCTTCTCTTAACCCTCATAGCAACTGCTTTCGTAGGATATGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642482" otu="Tl533039">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATACCTTAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642483" otu="Tl533059">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642484" otu="Tl533029">
+        <seq>AAACTTCGGATCACTACTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCGTATCTAAACAAAGAAACCTGAAATGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642485" otu="Tl533028">
+        <seq>AAACTTCGGATCACTACTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGCTCGTATCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642486" otu="Tl533037">
+        <seq>AAACTTCGGATCACTACTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGCTCGTATCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTACTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642487" otu="Tl533040">
+        <seq>AAACTTCGGATCACTACTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCGTATCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642488" otu="Tl533049">
+        <seq>AAACTTCGGATCACTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCGTATCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642489" otu="Tl533046">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTCTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642490" otu="Tl533048">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCCCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTCTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642491" otu="Tl533042">
+        <seq>AAACTTCGGATCACTACTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACACATCGGCCGAGGACTCTACTACGGTTCGTATCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642492" otu="Tl533062">
+        <seq>AAACTTCGGATCACTACTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCGTACCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642493" otu="Tl533035">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAATCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTCAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCCTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642494" otu="Tl533054">
+        <seq>AAACTTCGGATCACTACTAGGCATTTGCCTAATTACCCAAATTGTCACAGGCCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCGTATCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642495" otu="Tl533030">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTCTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642496" otu="Tl533036">
+        <seq>AAACTTCGGATCACTACTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642497" otu="Tl533051">
+        <seq>AAACTTCGGATCGCTACTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACTTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642498" otu="Tl533063">
+        <seq>AAACTTCGGATCACTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATGCATTACACAGCAGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATTTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTAAACAAAGAAACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642499" otu="Tl533053">
+        <seq>AAACTTCGGATCGCTGCTAGGCATCTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642500" otu="Tl533038">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTCAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAGCCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642501" otu="Tl533033">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGCTCATATCTCAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAGCCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642502" otu="Tl533031">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642503" otu="Tl533032">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCCCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642504" otu="Tl533058">
+        <seq>AAACTTCGGATCCCTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCCCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAATGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642505" otu="Tl533055">
+        <seq>AAACTTCGGATCCCTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTTGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642506" otu="Tl533057">
+        <seq>AAACTTCGGATCCCTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642507" otu="Tl533050">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACACATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642508" otu="Tl533044">
+        <seq>AAACTTCGGATCCCTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATACCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642509" otu="Tl533045">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642510" otu="Tl533061">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACCCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACTTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642511" otu="Tl533034">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGCTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642512" otu="Tl533043">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCATTTTTCTTCATCTGCATCTACCTACACATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642513" otu="Tl533060">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACTTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+      <row id="Row642514" otu="Tl533041">
+        <seq>AAACTTCGGATCGCTGCTAGGCATTTGCCTAATTACTCAAATTGTCACAGGTCTCCTACTAGCCATACACTATACAGCTGACACTAACCTCGCCTTTTCCTCTGTTGCTCACATATGCCGAGACGTACAATTCGGTTGACTCATCCGCAACCTACACGCAAACGGAGCCTCCTTTTTCTTCATCTGCATCTACCTACATATCGGCCGAGGACTCTACTACGGTTCATATCTTAACAAAGAGACCTGAAACGTCGGAGTCATTCTCCTCCTAACCCTCATAGCAACTGCTTTCGTAGGATACGTCCTACCATGAGGA</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb14396" id="Tb14396" label="WIWA cytb MolEcol Irwin" otus="Tls21073" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@8dfc59 $Rev: 1040 $" datatype="xsd:string" id="meta6797988" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S11522" id="meta6797987" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr46102" id="Tr46102" label="tree 1" xsi:type="nex:FloatTree">
+      <meta content="37" datatype="xsd:integer" id="meta6797994" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta6797993" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta6797992" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta6797991" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11522" id="meta6797990" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn7816798"/>
+      <node id="Tn7816788" label="98"/>
+      <node id="Tn7816824" label="97"/>
+      <node id="Tn7816820" label="88"/>
+      <node id="Tn7816801" label="92"/>
+      <node id="Tn7816808" label="54"/>
+      <node id="Tn7816807" label="70"/>
+      <node id="Tn7816799" label="67"/>
+      <node id="Tn7816792" label="Wilsonia pusilla AF499592" otu="Tl533028"/>
+      <node id="Tn7816809" label="Wilsonia pusilla AF499591" otu="Tl533037"/>
+      <node id="Tn7816811" label="Wilsonia pusilla AF499593" otu="Tl533029"/>
+      <node id="Tn7816833" label="Wilsonia pusilla AF499590" otu="Tl533040"/>
+      <node id="Tn7816789" label="Wilsonia pusilla AF499586" otu="Tl533042"/>
+      <node id="Tn7816814" label="Wilsonia pusilla AF499585" otu="Tl533062"/>
+      <node id="Tn7816784" label="Wilsonia pusilla AF499583" otu="Tl533054"/>
+      <node id="Tn7816796" label="Wilsonia pusilla AF499589" otu="Tl533049"/>
+      <node id="Tn7816831" label="Wilsonia pusilla AF499581" otu="Tl533036"/>
+      <node id="Tn7816825" label="Wilsonia pusilla AF499579" otu="Tl533063"/>
+      <node id="Tn7816835" label="79"/>
+      <node id="Tn7816812" label="92"/>
+      <node id="Tn7816819" label="Wilsonia pusilla AF499570" otu="Tl533050"/>
+      <node id="Tn7816806" label="Wilsonia pusilla AF499565" otu="Tl533043"/>
+      <node id="Tn7816783" label="77"/>
+      <node id="Tn7816813" label="66"/>
+      <node id="Tn7816810" label="Wilsonia pusilla AF499577" otu="Tl533038"/>
+      <node id="Tn7816818" label="Wilsonia pusilla AF499576" otu="Tl533033"/>
+      <node id="Tn7816817" label="Wilsonia pusilla AF499584" otu="Tl533035"/>
+      <node id="Tn7816821" label="69"/>
+      <node id="Tn7816797" label="Wilsonia pusilla AF499595" otu="Tl533039"/>
+      <node id="Tn7816795" label="Wilsonia pusilla AF499594" otu="Tl533059"/>
+      <node id="Tn7816785" label="65"/>
+      <node id="Tn7816826" label="Wilsonia pusilla AF499580" otu="Tl533051"/>
+      <node id="Tn7816800" label="Wilsonia pusilla AF499567" otu="Tl533061"/>
+      <node id="Tn7816786" label="56"/>
+      <node id="Tn7816816" label="51"/>
+      <node id="Tn7816832" label="Wilsonia pusilla AF499572" otu="Tl533055"/>
+      <node id="Tn7816791" label="Wilsonia pusilla AF499571" otu="Tl533057"/>
+      <node id="Tn7816836" label="Wilsonia pusilla AF499573" otu="Tl533058"/>
+      <node id="Tn7816834" label="Wilsonia pusilla AF499569" otu="Tl533044"/>
+      <node id="Tn7816829" label="Wilsonia pusilla AF499588" otu="Tl533046"/>
+      <node id="Tn7816804" label="Wilsonia pusilla AF499587" otu="Tl533048"/>
+      <node id="Tn7816794" label="Wilsonia pusilla AF499582" otu="Tl533030"/>
+      <node id="Tn7816830" label="Wilsonia pusilla AF499578" otu="Tl533053"/>
+      <node id="Tn7816802" label="Wilsonia pusilla AF499575" otu="Tl533031"/>
+      <node id="Tn7816790" label="Wilsonia pusilla AF499574" otu="Tl533032"/>
+      <node id="Tn7816827" label="Wilsonia pusilla AF499568" otu="Tl533045"/>
+      <node id="Tn7816823" label="Wilsonia pusilla AF499566" otu="Tl533034"/>
+      <node id="Tn7816805" label="Wilsonia pusilla AF499564" otu="Tl533060"/>
+      <node id="Tn7816837" label="Wilsonia pusilla AF499563" otu="Tl533041"/>
+      <node id="Tn7816815" label="Cardellina rubrifrons AF383026" otu="Tl533052"/>
+      <node id="Tn7816822"/>
+      <node id="Tn7816828" label="Wilsonia canadensis GU932415" otu="Tl533056"/>
+      <node id="Tn7816787" label="99"/>
+      <node id="Tn7816793" label="Ergaticus ruber GU932413" otu="Tl533047"/>
+      <node id="Tn7816803" label="Ergaticus versicolor GU932414" otu="Tl533064"/>
+      <edge id="edge6797997" length="0.00184" source="Tn7816798" target="Tn7816788"/>
+      <edge id="edge6797999" length="0.03317" source="Tn7816788" target="Tn7816824"/>
+      <edge id="edge6798001" length="0.01812" source="Tn7816824" target="Tn7816820"/>
+      <edge id="edge6798003" length="1.0E-5" source="Tn7816820" target="Tn7816801"/>
+      <edge id="edge6798005" length="0.00156" source="Tn7816801" target="Tn7816808"/>
+      <edge id="edge6798007" length="9.7E-4" source="Tn7816808" target="Tn7816807"/>
+      <edge id="edge6798009" length="0.00143" source="Tn7816807" target="Tn7816799"/>
+      <edge id="edge6798011" length="0.00103" source="Tn7816799" target="Tn7816792"/>
+      <edge id="edge6798013" length="0.00103" source="Tn7816799" target="Tn7816809"/>
+      <edge id="edge6798015" length="0.00246" source="Tn7816807" target="Tn7816811"/>
+      <edge id="edge6798017" length="0.00246" source="Tn7816807" target="Tn7816833"/>
+      <edge id="edge6798019" length="0.00246" source="Tn7816807" target="Tn7816789"/>
+      <edge id="edge6798021" length="0.00246" source="Tn7816807" target="Tn7816814"/>
+      <edge id="edge6798023" length="0.00246" source="Tn7816807" target="Tn7816784"/>
+      <edge id="edge6798025" length="0.00343" source="Tn7816808" target="Tn7816796"/>
+      <edge id="edge6798027" length="0.00499" source="Tn7816801" target="Tn7816831"/>
+      <edge id="edge6798029" length="0.005" source="Tn7816820" target="Tn7816825"/>
+      <edge id="edge6798031" length="0.01727" source="Tn7816824" target="Tn7816835"/>
+      <edge id="edge6798033" length="0.00398" source="Tn7816835" target="Tn7816812"/>
+      <edge id="edge6798035" length="0.00187" source="Tn7816812" target="Tn7816819"/>
+      <edge id="edge6798037" length="0.00187" source="Tn7816812" target="Tn7816806"/>
+      <edge id="edge6798039" length="0.00168" source="Tn7816835" target="Tn7816783"/>
+      <edge id="edge6798041" length="0.0027" source="Tn7816783" target="Tn7816813"/>
+      <edge id="edge6798043" length="0.00147" source="Tn7816813" target="Tn7816810"/>
+      <edge id="edge6798045" length="0.00147" source="Tn7816813" target="Tn7816818"/>
+      <edge id="edge6798047" length="0.00416" source="Tn7816783" target="Tn7816817"/>
+      <edge id="edge6798049" length="0.00276" source="Tn7816835" target="Tn7816821"/>
+      <edge id="edge6798051" length="0.00309" source="Tn7816821" target="Tn7816797"/>
+      <edge id="edge6798053" length="0.00309" source="Tn7816821" target="Tn7816795"/>
+      <edge id="edge6798055" length="0.00278" source="Tn7816835" target="Tn7816785"/>
+      <edge id="edge6798057" length="0.00307" source="Tn7816785" target="Tn7816826"/>
+      <edge id="edge6798059" length="0.00307" source="Tn7816785" target="Tn7816800"/>
+      <edge id="edge6798061" length="0.00313" source="Tn7816835" target="Tn7816786"/>
+      <edge id="edge6798063" length="1.0E-5" source="Tn7816786" target="Tn7816816"/>
+      <edge id="edge6798065" length="0.00271" source="Tn7816816" target="Tn7816832"/>
+      <edge id="edge6798067" length="0.00271" source="Tn7816816" target="Tn7816791"/>
+      <edge id="edge6798069" length="0.00272" source="Tn7816786" target="Tn7816836"/>
+      <edge id="edge6798071" length="0.00272" source="Tn7816786" target="Tn7816834"/>
+      <edge id="edge6798073" length="0.00585" source="Tn7816835" target="Tn7816829"/>
+      <edge id="edge6798075" length="0.00585" source="Tn7816835" target="Tn7816804"/>
+      <edge id="edge6798077" length="0.00585" source="Tn7816835" target="Tn7816794"/>
+      <edge id="edge6798079" length="0.00585" source="Tn7816835" target="Tn7816830"/>
+      <edge id="edge6798081" length="0.00585" source="Tn7816835" target="Tn7816802"/>
+      <edge id="edge6798083" length="0.00585" source="Tn7816835" target="Tn7816790"/>
+      <edge id="edge6798085" length="0.00585" source="Tn7816835" target="Tn7816827"/>
+      <edge id="edge6798087" length="0.00585" source="Tn7816835" target="Tn7816823"/>
+      <edge id="edge6798089" length="0.00585" source="Tn7816835" target="Tn7816805"/>
+      <edge id="edge6798091" length="0.00585" source="Tn7816835" target="Tn7816837"/>
+      <edge id="edge6798093" length="0.05629" source="Tn7816788" target="Tn7816815"/>
+      <edge id="edge6798095" length="0.01227" source="Tn7816798" target="Tn7816822"/>
+      <edge id="edge6798097" length="0.04586" source="Tn7816822" target="Tn7816828"/>
+      <edge id="edge6798099" length="0.0361" source="Tn7816822" target="Tn7816787"/>
+      <edge id="edge6798101" length="0.00976" source="Tn7816787" target="Tn7816793"/>
+      <edge id="edge6798103" length="0.00976" source="Tn7816787" target="Tn7816803"/>
+    </tree>
+  </trees>
+</nex:nexml>

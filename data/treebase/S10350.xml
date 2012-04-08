@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S10350" generator="org.nexml.model.impl.DocumentImpl" id="S10350" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Thu Apr 05 15:02:28 EDT 2012" datatype="xsd:string" id="meta2487291" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@313f06d6 $Rev: 1060 $" datatype="xsd:string" id="meta2487290" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta2487289" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta2487288" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Systematic Botany" datatype="xsd:string" id="meta2487287" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Systematic Botany" datatype="xsd:string" id="meta2487286" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="taxonomic synopsis" datatype="xsd:string" id="meta2487285" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="infraspecific taxa" datatype="xsd:string" id="meta2487284" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="character evolution" datatype="xsd:string" id="meta2487283" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Okenia" datatype="xsd:string" id="meta2487282" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Nyctaginia" datatype="xsd:string" id="meta2487281" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Cyphomeris" datatype="xsd:string" id="meta2487280" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Commicarpus" datatype="xsd:string" id="meta2487279" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Boerhavia" datatype="xsd:string" id="meta2487278" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="10.1600/036364407781179752" datatype="xsd:string" id="meta2487277" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2010" datatype="xsd:string" id="meta2487276" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Ochoterena H." datatype="xsd:string" id="meta2487275" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Flores olvera H." datatype="xsd:string" id="meta2487274" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Hern?ndez-ledesma P." datatype="xsd:string" id="meta2487273" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Hern?ndez-ledesma P., Flores olvera H., &amp; Ochoterena H." datatype="xsd:string" id="meta2487272" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="Cladistic analysis and taxonomic synopsis of Anulocaulis (Nyctaginaceae) based on morphological data" datatype="xsd:string" id="meta2487271" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Hern?ndez-ledesma P., Flores olvera H., &amp; Ochoterena H. 2010. Cladistic analysis and taxonomic synopsis of Anulocaulis (Nyctaginaceae) based on morphological data. Systematic Botany, ." datatype="xsd:string" id="meta2487270" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2010-03-27" datatype="xsd:string" id="meta2487269" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2010-04-09" datatype="xsd:string" id="meta2487268" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2010-04-09" datatype="xsd:string" id="meta2487267" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="Cladistic analysis and taxonomic synopsis of Anulocaulis (Nyctaginaceae) based on morphological data" datatype="xsd:string" id="meta2487266" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta2487265" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="10350" datatype="xsd:string" id="meta2487264" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta2487262" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls16420" id="Tls16420" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@f4d754 $Rev: 1040 $" datatype="xsd:string" id="meta2487293" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl287499" id="Tl287499" label="Mirabilis glabrifolia">
+      <meta content="570363" datatype="xsd:long" id="meta2487298" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790679" datatype="xsd:long" id="meta2487297" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646125" id="meta2487296" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487295" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287496" id="Tl287496" label="Nyctaginia capitata">
+      <meta content="317739" datatype="xsd:long" id="meta2487304" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="362102" datatype="xsd:long" id="meta2487303" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/363211" id="meta2487302" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646098" id="meta2487301" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487300" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287492" id="Tl287492" label="Okenia hypogaea">
+      <meta content="371675" datatype="xsd:long" id="meta2487310" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="396013" datatype="xsd:long" id="meta2487309" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/427812" id="meta2487308" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646099" id="meta2487307" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487306" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287498" id="Tl287498" label="Boerhavia alata">
+      <meta content="570362" datatype="xsd:long" id="meta2487315" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790678" datatype="xsd:long" id="meta2487314" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3475708" id="meta2487313" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487312" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287489" id="Tl287489" label="Boerhavia anisophylla">
+      <meta content="371647" datatype="xsd:long" id="meta2487321" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="395969" datatype="xsd:long" id="meta2487320" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/427784" id="meta2487319" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646142" id="meta2487318" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487317" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287495" id="Tl287495" label="Boerhavia coccinea">
+      <meta content="124083" datatype="xsd:long" id="meta2487327" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="201866" datatype="xsd:long" id="meta2487326" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/122400" id="meta2487325" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2665795" id="meta2487324" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487323" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287494" id="Tl287494" label="Boerhavia diffusa">
+      <meta content="570361" datatype="xsd:long" id="meta2487332" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790674" datatype="xsd:long" id="meta2487331" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646144" id="meta2487330" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487329" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287503" id="Tl287503" label="Boerhavia erecta">
+      <meta content="317731" datatype="xsd:long" id="meta2487338" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="362089" datatype="xsd:long" id="meta2487337" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/363203" id="meta2487336" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646145" id="meta2487335" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487334" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287497" id="Tl287497" label="Boerhavia gracillima">
+      <meta content="317732" datatype="xsd:long" id="meta2487344" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="362091" datatype="xsd:long" id="meta2487343" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/363204" id="meta2487342" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646146" id="meta2487341" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487340" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287491" id="Tl287491" label="Boerhavia spicata">
+      <meta content="317734" datatype="xsd:long" id="meta2487350" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="362094" datatype="xsd:long" id="meta2487349" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/363206" id="meta2487348" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646152" id="meta2487347" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487346" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287505" id="Tl287505" label="Boerhavia xantii">
+      <meta content="570370" datatype="xsd:long" id="meta2487355" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790692" datatype="xsd:long" id="meta2487354" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3475716" id="meta2487353" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487352" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287508" id="Tl287508" label="Commicarpus arabicus">
+      <meta content="570368" datatype="xsd:long" id="meta2487360" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790687" datatype="xsd:long" id="meta2487359" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:9494268" id="meta2487358" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487357" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287485" id="Tl287485" label="Commicarpus brandegeei">
+      <meta content="570359" datatype="xsd:long" id="meta2487365" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790669" datatype="xsd:long" id="meta2487364" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:9517737" id="meta2487363" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487362" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287500" id="Tl287500" label="Commicarpus plumbagineus">
+      <meta content="371663" datatype="xsd:long" id="meta2487371" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="395999" datatype="xsd:long" id="meta2487370" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/427800" id="meta2487369" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5938156" id="meta2487368" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487367" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287487" id="Tl287487" label="Commicarpus scandens">
+      <meta content="371664" datatype="xsd:long" id="meta2487377" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="396000" datatype="xsd:long" id="meta2487376" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/427801" id="meta2487375" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2769933" id="meta2487374" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487373" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287501" id="Tl287501" label="Cyphomeris crassifolia">
+      <meta content="570364" datatype="xsd:long" id="meta2487382" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790680" datatype="xsd:long" id="meta2487381" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646091" id="meta2487380" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487379" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287493" id="Tl287493" label="Cyphomeris gypsophiloides">
+      <meta content="317737" datatype="xsd:long" id="meta2487388" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="362099" datatype="xsd:long" id="meta2487387" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/363209" id="meta2487386" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646092" id="meta2487385" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487384" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287506" id="Tl287506" label="Anulocaulis annulatus">
+      <meta content="371642" datatype="xsd:long" id="meta2487394" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="395963" datatype="xsd:long" id="meta2487393" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/427779" id="meta2487392" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646085" id="meta2487391" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487390" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287486" id="Tl287486" label="Anulocaulis eriosolenus">
+      <meta content="317729" datatype="xsd:long" id="meta2487400" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="362087" datatype="xsd:long" id="meta2487399" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/363201" id="meta2487398" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646086" id="meta2487397" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487396" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287490" id="Tl287490" label="Anulocaulis hintoniorum">
+      <meta content="570369" datatype="xsd:long" id="meta2487405" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790691" datatype="xsd:long" id="meta2487404" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10727374" id="meta2487403" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487402" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287502" id="Tl287502" label="Anulocaulis leiosolenus gypsogenus">
+      <meta content="570365" datatype="xsd:long" id="meta2487410" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790684" datatype="xsd:long" id="meta2487409" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:8277951" id="meta2487408" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487407" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287504" id="Tl287504" label="Anulocaulis leiosolenus howardii">
+      <meta content="570366" datatype="xsd:long" id="meta2487415" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790685" datatype="xsd:long" id="meta2487414" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:8277953" id="meta2487413" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487412" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287507" id="Tl287507" label="Anulocaulis leiosolenus lasianthus">
+      <meta content="570367" datatype="xsd:long" id="meta2487420" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790686" datatype="xsd:long" id="meta2487419" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3875534" id="meta2487418" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487417" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287488" id="Tl287488" label="Anulocaulis leiosolenus leiosolenus">
+      <meta content="570360" datatype="xsd:long" id="meta2487425" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="790673" datatype="xsd:long" id="meta2487424" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3875533" id="meta2487423" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487422" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl287484" id="Tl287484" label="Anulocaulis reflexus">
+      <meta content="371644" datatype="xsd:long" id="meta2487431" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="395965" datatype="xsd:long" id="meta2487430" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/427781" id="meta2487429" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2646089" id="meta2487428" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487427" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <otus about="#Tls16207" id="Tls16207" label="Untitled Taxa Block" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@f4d754 $Rev: 1040 $" datatype="xsd:string" id="meta2487433" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl279167" id="Tl279167" label="M.glabrifolia">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487435" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279181" id="Tl279181" label="N.capitata">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487437" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279184" id="Tl279184" label="O.hypogaea">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487439" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279172" id="Tl279172" label="B.alata">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487441" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279182" id="Tl279182" label="B.anisophylla">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487443" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279171" id="Tl279171" label="B.coccinea">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487445" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279169" id="Tl279169" label="B.diffusa">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487447" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279187" id="Tl279187" label="B.erecta">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487449" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279191" id="Tl279191" label="B.gracillima">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487451" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279170" id="Tl279170" label="B.spicata">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487453" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279176" id="Tl279176" label="B.xantii">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487455" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279168" id="Tl279168" label="Co.arabicus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487457" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279186" id="Tl279186" label="Co.brandegeei">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487459" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279189" id="Tl279189" label="Co.plumbagineus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487461" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279174" id="Tl279174" label="Co.scandens">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487463" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279178" id="Tl279178" label="Cy.crassifolia">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487465" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279180" id="Tl279180" label="Cy.gypsophiloides">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487467" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279179" id="Tl279179" label="A.annulatus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487469" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279177" id="Tl279177" label="A.eriosolenus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487471" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279175" id="Tl279175" label="A.hintoniorum">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487473" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279185" id="Tl279185" label="A.leiosolenus var. gypsogenus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487475" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279183" id="Tl279183" label="A.leiosolenus var. howardii">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487477" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279188" id="Tl279188" label="A.leiosolenus var. lasianthus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487479" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279173" id="Tl279173" label="A.leiosolenus var. leiosolenus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487481" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl279190" id="Tl279190" label="A.reflexus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487483" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M5179" id="M5179" label="Hernandez-Ledesma et al- Character Matrix" otus="Tls16420" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:StandardSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@683af9c0 $Rev: 1056 $" datatype="xsd:string" id="meta2487489" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="5179" datatype="xsd:long" id="meta2487488" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="41" datatype="xsd:integer" id="meta2487487" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="25" datatype="xsd:integer" id="meta2487486" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="Standard" datatype="xsd:string" id="meta2487485" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states2487490">
+        <state id="Dcs180352" label="3" symbol="3"/>
+        <state id="Dcs180353" label="2" symbol="2"/>
+        <state id="Dcs180354" label="1" symbol="1"/>
+        <state id="Dcs180351" label="0" symbol="0"/>
+        <state id="Dcs180357" label="7" symbol="7"/>
+        <state id="Dcs180356" label="6" symbol="6"/>
+        <state id="Dcs180355" label="5" symbol="5"/>
+        <state id="Dcs180350" label="4" symbol="4"/>
+        <uncertain_state_set id="uncertain_state_set2487499" label="-" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set2487500" label="?" symbol="?">
+          <member state="Dcs180357"/>
+          <member state="Dcs180353"/>
+          <member state="Dcs180356"/>
+          <member state="Dcs180350"/>
+          <member state="Dcs180355"/>
+          <member state="Dcs180354"/>
+          <member state="Dcs180351"/>
+          <member state="Dcs180352"/>
+          <member state="uncertain_state_set2487499"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col7987976" label="Duration" states="states2487490"/>
+      <char id="Col7987977" label="Mucilaginous rings on stems" states="states2487490"/>
+      <char id="Col7987978" label="Leaf arrangement" states="states2487490"/>
+      <char id="Col7987979" label="Leaf consistency" states="states2487490"/>
+      <char id="Col7987980" label="Leaf margin" states="states2487490"/>
+      <char id="Col7987981" label="Leaf apex angle" states="states2487490"/>
+      <char id="Col7987982" label="Pustules on leaves" states="states2487490"/>
+      <char id="Col7987983" label="Inflorescence ramification" states="states2487490"/>
+      <char id="Col7987984" label="Ramification pattern" states="states2487490"/>
+      <char id="Col7987985" label="Minimum flowering unit arrangement" states="states2487490"/>
+      <char id="Col7987986" label="Pedicel subtending the flowers" states="states2487490"/>
+      <char id="Col7987987" label="Number of bracts subtending a single flower" states="states2487490"/>
+      <char id="Col7987988" label="Floral bract texture" states="states2487490"/>
+      <char id="Col7987989" label="Floral bract shape" states="states2487490"/>
+      <char id="Col7987990" label="Pustules on floral bracts" states="states2487490"/>
+      <char id="Col7987991" label="Bracts persistence in mature fruits" states="states2487490"/>
+      <char id="Col7987992" label="Perianth limb color" states="states2487490"/>
+      <char id="Col7987993" label="Perianth shape" states="states2487490"/>
+      <char id="Col7987994" label="Chasmogamous flower length (mm)" states="states2487490"/>
+      <char id="Col7987995" label="Perianth indumentum" states="states2487490"/>
+      <char id="Col7987996" label="Perianth pubescence" states="states2487490"/>
+      <char id="Col7987997" label="Stigma surface" states="states2487490"/>
+      <char id="Col7987998" label="Anther width (mm)" states="states2487490"/>
+      <char id="Col7987999" label="Exerted portion of the filaments (mm)" states="states2487490"/>
+      <char id="Col7988000" label="Fruit shape" states="states2487490"/>
+      <char id="Col7988001" label="Fruit length (mm)" states="states2487490"/>
+      <char id="Col7988002" label="Fruit width (mm)" states="states2487490"/>
+      <char id="Col7988003" label="Fruit symmetry in the transverse plane" states="states2487490"/>
+      <char id="Col7988004" label="Fruit symmetry in the longitudinal plane" states="states2487490"/>
+      <char id="Col7988005" label="Fruit rib number" states="states2487490"/>
+      <char id="Col7988006" label="Ribs profile in polar view" states="states2487490"/>
+      <char id="Col7988007" label="Equatorial crest on the fruit" states="states2487490"/>
+      <char id="Col7988008" label="Hyaline glands on fruits" states="states2487490"/>
+      <char id="Col7988009" label="Verrucose glands  on fruits" states="states2487490"/>
+      <char id="Col7988010" label="Mucilage on wet fruits" states="states2487490"/>
+      <char id="Col7988011" label="Tubercles on wet fruit" states="states2487490"/>
+      <char id="Col7988012" label="Raphides on fruit" states="states2487490"/>
+      <char id="Col7988013" label="Stalk in fruit" states="states2487490"/>
+      <char id="Col7988014" label="Fruit orientation with pespect to the stalk" states="states2487490"/>
+      <char id="Col7988015" label="Raphides in cotyledons" states="states2487490"/>
+      <char id="Col7988016" label="chromosomal Number (N)" states="states2487490"/>
+    </format>
+    <matrix>
+      <row id="Row253072" otu="Tl287499">
+        <seq>101{01}0001120412021011010030010010101110-0?</seq>
+      </row>
+      <row id="Row253073" otu="Tl287496">
+        <seq>1001{12}0{01}0-00-0{012}12213110{01}{01}01{13}1011000101100?</seq>
+      </row>
+      <row id="Row253074" otu="Tl287492">
+        <seq>000{01}{01}{01}{01}0--0221{01}01131{01}00052300--000000110?</seq>
+      </row>
+      <row id="Row253075" otu="Tl287498">
+        <seq>000110{01}1100{01}2{01}100000-0003001000000100100?</seq>
+      </row>
+      <row id="Row253076" otu="Tl287489">
+        <seq>10{01}2101112{01}{12}2201101100003001001000100100?</seq>
+      </row>
+      <row id="Row253077" otu="Tl287495">
+        <seq>10000001100{01}2{02}0010010000{34}001001010101100{05}</seq>
+      </row>
+      <row id="Row253078" otu="Tl287494">
+        <seq>1010{01}{01}0110002200100100003001001010101100{1567}</seq>
+      </row>
+      <row id="Row253079" otu="Tl287503">
+        <seq>0{01}0000{01}1100{012}20100000-00030010000001011005</seq>
+      </row>
+      <row id="Row253080" otu="Tl287497">
+        <seq>10101001120220101001000040010010101011{01}0?</seq>
+      </row>
+      <row id="Row253081" otu="Tl287491">
+        <seq>0{01}0010{01}1110020100000-00030010010001011005</seq>
+      </row>
+      <row id="Row253082" otu="Tl287505">
+        <seq>0{01}011011110{01}2{01}100000-{01}003001000000101100?</seq>
+      </row>
+      <row id="Row253083" otu="Tl287508">
+        <seq>10001001101{123}0000011100004101011011{01}011112</seq>
+      </row>
+      <row id="Row253084" otu="Tl287485">
+        <seq>10001001101000000111000041010110{01}1001111?</seq>
+      </row>
+      <row id="Row253085" otu="Tl287500">
+        <seq>10001001101{12}00000111000042010110110011112</seq>
+      </row>
+      <row id="Row253086" otu="Tl287487">
+        <seq>10001001101{12}00003100-0004201011001001111?</seq>
+      </row>
+      <row id="Row253087" otu="Tl287501">
+        <seq>11011{01}00-1102000111101004201111000111110{13}</seq>
+      </row>
+      <row id="Row253088" otu="Tl287493">
+        <seq>11010000-11020001110-10042011110001111103</seq>
+      </row>
+      <row id="Row253089" otu="Tl287506">
+        <seq>11{01}22{01}11000{12}2{02}110111100020100120000000-04</seq>
+      </row>
+      <row id="Row253090" otu="Tl287486">
+        <seq>{01}1122111020{34}2211011110000011012000{01}101004</seq>
+      </row>
+      <row id="Row253091" otu="Tl287490">
+        <seq>11122{01}11120322111121000021100120000100-0?</seq>
+      </row>
+      <row id="Row253092" otu="Tl287502">
+        <seq>11122111020022110150-0111130011100100100?</seq>
+      </row>
+      <row id="Row253093" otu="Tl287504">
+        <seq>11122111020022111140-0111120011100100100?</seq>
+      </row>
+      <row id="Row253094" otu="Tl287507">
+        <seq>1112211102002211014100111120011100100100?</seq>
+      </row>
+      <row id="Row253095" otu="Tl287488">
+        <seq>11122111020021110150-01111200111001001004</seq>
+      </row>
+      <row id="Row253096" otu="Tl287484">
+        <seq>11122111020022110120-01{01}1120011100100100?</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb11577" id="Tb11577" label="Hernandez-Ledesma-et al SB 09-25" otus="Tls16420" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@7c71205 $Rev: 1040 $" datatype="xsd:string" id="meta2487569" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S10350" id="meta2487568" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr7856" id="Tr7856" label="tree 04" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2487575" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2487574" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2487573" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2487572" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487571" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711610"/>
+      <node id="Tn711595" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711621"/>
+      <node id="Tn711583"/>
+      <node id="Tn711581" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711623"/>
+      <node id="Tn711602"/>
+      <node id="Tn711620" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711613"/>
+      <node id="Tn711604"/>
+      <node id="Tn711605" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711600"/>
+      <node id="Tn711625" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711599" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711601"/>
+      <node id="Tn711603" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711593" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711619"/>
+      <node id="Tn711611" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711609" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711587"/>
+      <node id="Tn711615" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711614" label="Okenia hypogaea" otu="Tl287492"/>
+      <node id="Tn711597"/>
+      <node id="Tn711617" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711584"/>
+      <node id="Tn711616" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711591"/>
+      <node id="Tn711588" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711598"/>
+      <node id="Tn711578"/>
+      <node id="Tn711592"/>
+      <node id="Tn711607" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711618" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711622"/>
+      <node id="Tn711585" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711586"/>
+      <node id="Tn711596" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711589"/>
+      <node id="Tn711590" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711612" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711582"/>
+      <node id="Tn711606" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711624"/>
+      <node id="Tn711579" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711594"/>
+      <node id="Tn711580" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711608" label="Boerhavia xantii" otu="Tl287505"/>
+      <edge id="edge2487578" source="Tn711610" target="Tn711595"/>
+      <edge id="edge2487580" source="Tn711610" target="Tn711621"/>
+      <edge id="edge2487582" source="Tn711621" target="Tn711583"/>
+      <edge id="edge2487584" source="Tn711583" target="Tn711581"/>
+      <edge id="edge2487586" source="Tn711583" target="Tn711623"/>
+      <edge id="edge2487588" source="Tn711623" target="Tn711602"/>
+      <edge id="edge2487590" source="Tn711602" target="Tn711620"/>
+      <edge id="edge2487592" source="Tn711602" target="Tn711613"/>
+      <edge id="edge2487594" source="Tn711613" target="Tn711604"/>
+      <edge id="edge2487596" source="Tn711604" target="Tn711605"/>
+      <edge id="edge2487598" source="Tn711604" target="Tn711600"/>
+      <edge id="edge2487600" source="Tn711600" target="Tn711625"/>
+      <edge id="edge2487602" source="Tn711600" target="Tn711599"/>
+      <edge id="edge2487604" source="Tn711600" target="Tn711601"/>
+      <edge id="edge2487606" source="Tn711601" target="Tn711603"/>
+      <edge id="edge2487608" source="Tn711601" target="Tn711593"/>
+      <edge id="edge2487610" source="Tn711613" target="Tn711619"/>
+      <edge id="edge2487612" source="Tn711619" target="Tn711611"/>
+      <edge id="edge2487614" source="Tn711619" target="Tn711609"/>
+      <edge id="edge2487616" source="Tn711623" target="Tn711587"/>
+      <edge id="edge2487618" source="Tn711587" target="Tn711615"/>
+      <edge id="edge2487620" source="Tn711587" target="Tn711614"/>
+      <edge id="edge2487622" source="Tn711621" target="Tn711597"/>
+      <edge id="edge2487624" source="Tn711597" target="Tn711617"/>
+      <edge id="edge2487626" source="Tn711597" target="Tn711584"/>
+      <edge id="edge2487628" source="Tn711584" target="Tn711616"/>
+      <edge id="edge2487630" source="Tn711584" target="Tn711591"/>
+      <edge id="edge2487632" source="Tn711591" target="Tn711588"/>
+      <edge id="edge2487634" source="Tn711591" target="Tn711598"/>
+      <edge id="edge2487636" source="Tn711598" target="Tn711578"/>
+      <edge id="edge2487638" source="Tn711578" target="Tn711592"/>
+      <edge id="edge2487640" source="Tn711592" target="Tn711607"/>
+      <edge id="edge2487642" source="Tn711592" target="Tn711618"/>
+      <edge id="edge2487644" source="Tn711578" target="Tn711622"/>
+      <edge id="edge2487646" source="Tn711622" target="Tn711585"/>
+      <edge id="edge2487648" source="Tn711622" target="Tn711586"/>
+      <edge id="edge2487650" source="Tn711586" target="Tn711596"/>
+      <edge id="edge2487652" source="Tn711586" target="Tn711589"/>
+      <edge id="edge2487654" source="Tn711589" target="Tn711590"/>
+      <edge id="edge2487656" source="Tn711589" target="Tn711612"/>
+      <edge id="edge2487658" source="Tn711598" target="Tn711582"/>
+      <edge id="edge2487660" source="Tn711582" target="Tn711606"/>
+      <edge id="edge2487662" source="Tn711582" target="Tn711624"/>
+      <edge id="edge2487664" source="Tn711624" target="Tn711579"/>
+      <edge id="edge2487666" source="Tn711624" target="Tn711594"/>
+      <edge id="edge2487668" source="Tn711594" target="Tn711580"/>
+      <edge id="edge2487670" source="Tn711594" target="Tn711608"/>
+    </tree>
+    <tree about="#Tr7857" id="Tr7857" label="tree 05" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2487676" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2487675" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2487674" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2487673" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487672" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711672"/>
+      <node id="Tn711638" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711670"/>
+      <node id="Tn711664"/>
+      <node id="Tn711650" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711658"/>
+      <node id="Tn711642"/>
+      <node id="Tn711629" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711649"/>
+      <node id="Tn711630" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711663"/>
+      <node id="Tn711631" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711635"/>
+      <node id="Tn711659" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711662"/>
+      <node id="Tn711644" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711633" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711641"/>
+      <node id="Tn711646" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711671" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711645"/>
+      <node id="Tn711636" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711651" label="Okenia hypogaea" otu="Tl287492"/>
+      <node id="Tn711647"/>
+      <node id="Tn711667" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711632"/>
+      <node id="Tn711652" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711657"/>
+      <node id="Tn711666" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711656"/>
+      <node id="Tn711654"/>
+      <node id="Tn711668"/>
+      <node id="Tn711660" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711661" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711626"/>
+      <node id="Tn711628" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711640"/>
+      <node id="Tn711653" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711643"/>
+      <node id="Tn711669" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711673" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711627"/>
+      <node id="Tn711637" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711648"/>
+      <node id="Tn711665" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711655"/>
+      <node id="Tn711639" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711634" label="Boerhavia xantii" otu="Tl287505"/>
+      <edge id="edge2487679" source="Tn711672" target="Tn711638"/>
+      <edge id="edge2487681" source="Tn711672" target="Tn711670"/>
+      <edge id="edge2487683" source="Tn711670" target="Tn711664"/>
+      <edge id="edge2487685" source="Tn711664" target="Tn711650"/>
+      <edge id="edge2487687" source="Tn711664" target="Tn711658"/>
+      <edge id="edge2487689" source="Tn711658" target="Tn711642"/>
+      <edge id="edge2487691" source="Tn711642" target="Tn711629"/>
+      <edge id="edge2487693" source="Tn711642" target="Tn711649"/>
+      <edge id="edge2487695" source="Tn711649" target="Tn711630"/>
+      <edge id="edge2487697" source="Tn711649" target="Tn711663"/>
+      <edge id="edge2487699" source="Tn711663" target="Tn711631"/>
+      <edge id="edge2487701" source="Tn711663" target="Tn711635"/>
+      <edge id="edge2487703" source="Tn711635" target="Tn711659"/>
+      <edge id="edge2487705" source="Tn711635" target="Tn711662"/>
+      <edge id="edge2487707" source="Tn711662" target="Tn711644"/>
+      <edge id="edge2487709" source="Tn711662" target="Tn711633"/>
+      <edge id="edge2487711" source="Tn711662" target="Tn711641"/>
+      <edge id="edge2487713" source="Tn711641" target="Tn711646"/>
+      <edge id="edge2487715" source="Tn711641" target="Tn711671"/>
+      <edge id="edge2487717" source="Tn711658" target="Tn711645"/>
+      <edge id="edge2487719" source="Tn711645" target="Tn711636"/>
+      <edge id="edge2487721" source="Tn711645" target="Tn711651"/>
+      <edge id="edge2487723" source="Tn711670" target="Tn711647"/>
+      <edge id="edge2487725" source="Tn711647" target="Tn711667"/>
+      <edge id="edge2487727" source="Tn711647" target="Tn711632"/>
+      <edge id="edge2487729" source="Tn711632" target="Tn711652"/>
+      <edge id="edge2487731" source="Tn711632" target="Tn711657"/>
+      <edge id="edge2487733" source="Tn711657" target="Tn711666"/>
+      <edge id="edge2487735" source="Tn711657" target="Tn711656"/>
+      <edge id="edge2487737" source="Tn711656" target="Tn711654"/>
+      <edge id="edge2487739" source="Tn711654" target="Tn711668"/>
+      <edge id="edge2487741" source="Tn711668" target="Tn711660"/>
+      <edge id="edge2487743" source="Tn711668" target="Tn711661"/>
+      <edge id="edge2487745" source="Tn711654" target="Tn711626"/>
+      <edge id="edge2487747" source="Tn711626" target="Tn711628"/>
+      <edge id="edge2487749" source="Tn711626" target="Tn711640"/>
+      <edge id="edge2487751" source="Tn711640" target="Tn711653"/>
+      <edge id="edge2487753" source="Tn711640" target="Tn711643"/>
+      <edge id="edge2487755" source="Tn711643" target="Tn711669"/>
+      <edge id="edge2487757" source="Tn711643" target="Tn711673"/>
+      <edge id="edge2487759" source="Tn711656" target="Tn711627"/>
+      <edge id="edge2487761" source="Tn711627" target="Tn711637"/>
+      <edge id="edge2487763" source="Tn711627" target="Tn711648"/>
+      <edge id="edge2487765" source="Tn711648" target="Tn711665"/>
+      <edge id="edge2487767" source="Tn711648" target="Tn711655"/>
+      <edge id="edge2487769" source="Tn711655" target="Tn711639"/>
+      <edge id="edge2487771" source="Tn711655" target="Tn711634"/>
+    </tree>
+    <tree about="#Tr7862" id="Tr7862" label="tree 10" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2487777" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2487776" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2487775" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2487774" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487773" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711890"/>
+      <node id="Tn711870" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711892"/>
+      <node id="Tn711877"/>
+      <node id="Tn711891" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711900"/>
+      <node id="Tn711883"/>
+      <node id="Tn711904" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711896" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711888" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711906"/>
+      <node id="Tn711903" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711872"/>
+      <node id="Tn711869" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711889" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711898"/>
+      <node id="Tn711867" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711873" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711881"/>
+      <node id="Tn711899" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711866" label="Okenia hypogaea" otu="Tl287492"/>
+      <node id="Tn711878"/>
+      <node id="Tn711897" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711875"/>
+      <node id="Tn711893" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711868"/>
+      <node id="Tn711905" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711884"/>
+      <node id="Tn711894"/>
+      <node id="Tn711887" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711882" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711874"/>
+      <node id="Tn711886" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711895" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711901" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711902" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711865"/>
+      <node id="Tn711871" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711885"/>
+      <node id="Tn711879" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711880"/>
+      <node id="Tn711876" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711864" label="Boerhavia xantii" otu="Tl287505"/>
+      <edge id="edge2487780" source="Tn711890" target="Tn711870"/>
+      <edge id="edge2487782" source="Tn711890" target="Tn711892"/>
+      <edge id="edge2487784" source="Tn711892" target="Tn711877"/>
+      <edge id="edge2487786" source="Tn711877" target="Tn711891"/>
+      <edge id="edge2487788" source="Tn711877" target="Tn711900"/>
+      <edge id="edge2487790" source="Tn711900" target="Tn711883"/>
+      <edge id="edge2487792" source="Tn711883" target="Tn711904"/>
+      <edge id="edge2487794" source="Tn711883" target="Tn711896"/>
+      <edge id="edge2487796" source="Tn711883" target="Tn711888"/>
+      <edge id="edge2487798" source="Tn711883" target="Tn711906"/>
+      <edge id="edge2487800" source="Tn711906" target="Tn711903"/>
+      <edge id="edge2487802" source="Tn711906" target="Tn711872"/>
+      <edge id="edge2487804" source="Tn711872" target="Tn711869"/>
+      <edge id="edge2487806" source="Tn711872" target="Tn711889"/>
+      <edge id="edge2487808" source="Tn711872" target="Tn711898"/>
+      <edge id="edge2487810" source="Tn711898" target="Tn711867"/>
+      <edge id="edge2487812" source="Tn711898" target="Tn711873"/>
+      <edge id="edge2487814" source="Tn711900" target="Tn711881"/>
+      <edge id="edge2487816" source="Tn711881" target="Tn711899"/>
+      <edge id="edge2487818" source="Tn711881" target="Tn711866"/>
+      <edge id="edge2487820" source="Tn711892" target="Tn711878"/>
+      <edge id="edge2487822" source="Tn711878" target="Tn711897"/>
+      <edge id="edge2487824" source="Tn711878" target="Tn711875"/>
+      <edge id="edge2487826" source="Tn711875" target="Tn711893"/>
+      <edge id="edge2487828" source="Tn711875" target="Tn711868"/>
+      <edge id="edge2487830" source="Tn711868" target="Tn711905"/>
+      <edge id="edge2487832" source="Tn711868" target="Tn711884"/>
+      <edge id="edge2487834" source="Tn711884" target="Tn711894"/>
+      <edge id="edge2487836" source="Tn711894" target="Tn711887"/>
+      <edge id="edge2487838" source="Tn711894" target="Tn711882"/>
+      <edge id="edge2487840" source="Tn711884" target="Tn711874"/>
+      <edge id="edge2487842" source="Tn711874" target="Tn711886"/>
+      <edge id="edge2487844" source="Tn711874" target="Tn711895"/>
+      <edge id="edge2487846" source="Tn711874" target="Tn711901"/>
+      <edge id="edge2487848" source="Tn711874" target="Tn711902"/>
+      <edge id="edge2487850" source="Tn711868" target="Tn711865"/>
+      <edge id="edge2487852" source="Tn711865" target="Tn711871"/>
+      <edge id="edge2487854" source="Tn711865" target="Tn711885"/>
+      <edge id="edge2487856" source="Tn711885" target="Tn711879"/>
+      <edge id="edge2487858" source="Tn711885" target="Tn711880"/>
+      <edge id="edge2487860" source="Tn711880" target="Tn711876"/>
+      <edge id="edge2487862" source="Tn711880" target="Tn711864"/>
+    </tree>
+    <tree about="#Tr7861" id="Tr7861" label="tree 09" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2487868" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2487867" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2487866" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2487865" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487864" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711860"/>
+      <node id="Tn711834" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711841"/>
+      <node id="Tn711829"/>
+      <node id="Tn711852" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711828"/>
+      <node id="Tn711851" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711836"/>
+      <node id="Tn711833" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711843"/>
+      <node id="Tn711819"/>
+      <node id="Tn711848" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711839" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711832"/>
+      <node id="Tn711821" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711850"/>
+      <node id="Tn711856" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711827"/>
+      <node id="Tn711826" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711849" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711825"/>
+      <node id="Tn711837" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711855"/>
+      <node id="Tn711853" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711831"/>
+      <node id="Tn711846" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711844" label="Boerhavia xantii" otu="Tl287505"/>
+      <node id="Tn711838"/>
+      <node id="Tn711859" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711817"/>
+      <node id="Tn711818"/>
+      <node id="Tn711857" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711820"/>
+      <node id="Tn711822" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711858"/>
+      <node id="Tn711823" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711824"/>
+      <node id="Tn711835" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711830"/>
+      <node id="Tn711842" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711845" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711862"/>
+      <node id="Tn711854" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711861" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711840"/>
+      <node id="Tn711847" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711863" label="Okenia hypogaea" otu="Tl287492"/>
+      <edge id="edge2487871" source="Tn711860" target="Tn711834"/>
+      <edge id="edge2487873" source="Tn711860" target="Tn711841"/>
+      <edge id="edge2487875" source="Tn711841" target="Tn711829"/>
+      <edge id="edge2487877" source="Tn711829" target="Tn711852"/>
+      <edge id="edge2487879" source="Tn711829" target="Tn711828"/>
+      <edge id="edge2487881" source="Tn711828" target="Tn711851"/>
+      <edge id="edge2487883" source="Tn711828" target="Tn711836"/>
+      <edge id="edge2487885" source="Tn711836" target="Tn711833"/>
+      <edge id="edge2487887" source="Tn711836" target="Tn711843"/>
+      <edge id="edge2487889" source="Tn711843" target="Tn711819"/>
+      <edge id="edge2487891" source="Tn711819" target="Tn711848"/>
+      <edge id="edge2487893" source="Tn711819" target="Tn711839"/>
+      <edge id="edge2487895" source="Tn711843" target="Tn711832"/>
+      <edge id="edge2487897" source="Tn711832" target="Tn711821"/>
+      <edge id="edge2487899" source="Tn711832" target="Tn711850"/>
+      <edge id="edge2487901" source="Tn711850" target="Tn711856"/>
+      <edge id="edge2487903" source="Tn711850" target="Tn711827"/>
+      <edge id="edge2487905" source="Tn711827" target="Tn711826"/>
+      <edge id="edge2487907" source="Tn711827" target="Tn711849"/>
+      <edge id="edge2487909" source="Tn711836" target="Tn711825"/>
+      <edge id="edge2487911" source="Tn711825" target="Tn711837"/>
+      <edge id="edge2487913" source="Tn711825" target="Tn711855"/>
+      <edge id="edge2487915" source="Tn711855" target="Tn711853"/>
+      <edge id="edge2487917" source="Tn711855" target="Tn711831"/>
+      <edge id="edge2487919" source="Tn711831" target="Tn711846"/>
+      <edge id="edge2487921" source="Tn711831" target="Tn711844"/>
+      <edge id="edge2487923" source="Tn711841" target="Tn711838"/>
+      <edge id="edge2487925" source="Tn711838" target="Tn711859"/>
+      <edge id="edge2487927" source="Tn711838" target="Tn711817"/>
+      <edge id="edge2487929" source="Tn711817" target="Tn711818"/>
+      <edge id="edge2487931" source="Tn711818" target="Tn711857"/>
+      <edge id="edge2487933" source="Tn711818" target="Tn711820"/>
+      <edge id="edge2487935" source="Tn711820" target="Tn711822"/>
+      <edge id="edge2487937" source="Tn711820" target="Tn711858"/>
+      <edge id="edge2487939" source="Tn711858" target="Tn711823"/>
+      <edge id="edge2487941" source="Tn711858" target="Tn711824"/>
+      <edge id="edge2487943" source="Tn711824" target="Tn711835"/>
+      <edge id="edge2487945" source="Tn711824" target="Tn711830"/>
+      <edge id="edge2487947" source="Tn711830" target="Tn711842"/>
+      <edge id="edge2487949" source="Tn711830" target="Tn711845"/>
+      <edge id="edge2487951" source="Tn711830" target="Tn711862"/>
+      <edge id="edge2487953" source="Tn711862" target="Tn711854"/>
+      <edge id="edge2487955" source="Tn711862" target="Tn711861"/>
+      <edge id="edge2487957" source="Tn711817" target="Tn711840"/>
+      <edge id="edge2487959" source="Tn711840" target="Tn711847"/>
+      <edge id="edge2487961" source="Tn711840" target="Tn711863"/>
+    </tree>
+    <tree about="#Tr7860" id="Tr7860" label="tree 08" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2487967" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2487966" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2487965" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2487964" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2487963" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711807"/>
+      <node id="Tn711793" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711814"/>
+      <node id="Tn711796"/>
+      <node id="Tn711808" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711810"/>
+      <node id="Tn711783" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711794"/>
+      <node id="Tn711815" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711790"/>
+      <node id="Tn711772"/>
+      <node id="Tn711806" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711809" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711789"/>
+      <node id="Tn711773" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711778"/>
+      <node id="Tn711770" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711779"/>
+      <node id="Tn711784" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711798" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711782"/>
+      <node id="Tn711805" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711777"/>
+      <node id="Tn711802" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711775"/>
+      <node id="Tn711801" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711781" label="Boerhavia xantii" otu="Tl287505"/>
+      <node id="Tn711791"/>
+      <node id="Tn711795" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711803"/>
+      <node id="Tn711811"/>
+      <node id="Tn711786" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711788"/>
+      <node id="Tn711785"/>
+      <node id="Tn711812" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711797"/>
+      <node id="Tn711787" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711800" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711813"/>
+      <node id="Tn711776" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711799" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711780"/>
+      <node id="Tn711792" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711816" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711771"/>
+      <node id="Tn711774" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711804" label="Okenia hypogaea" otu="Tl287492"/>
+      <edge id="edge2487970" source="Tn711807" target="Tn711793"/>
+      <edge id="edge2487972" source="Tn711807" target="Tn711814"/>
+      <edge id="edge2487974" source="Tn711814" target="Tn711796"/>
+      <edge id="edge2487976" source="Tn711796" target="Tn711808"/>
+      <edge id="edge2487978" source="Tn711796" target="Tn711810"/>
+      <edge id="edge2487980" source="Tn711810" target="Tn711783"/>
+      <edge id="edge2487982" source="Tn711810" target="Tn711794"/>
+      <edge id="edge2487984" source="Tn711794" target="Tn711815"/>
+      <edge id="edge2487986" source="Tn711794" target="Tn711790"/>
+      <edge id="edge2487988" source="Tn711790" target="Tn711772"/>
+      <edge id="edge2487990" source="Tn711772" target="Tn711806"/>
+      <edge id="edge2487992" source="Tn711772" target="Tn711809"/>
+      <edge id="edge2487994" source="Tn711790" target="Tn711789"/>
+      <edge id="edge2487996" source="Tn711789" target="Tn711773"/>
+      <edge id="edge2487998" source="Tn711789" target="Tn711778"/>
+      <edge id="edge2488000" source="Tn711778" target="Tn711770"/>
+      <edge id="edge2488002" source="Tn711778" target="Tn711779"/>
+      <edge id="edge2488004" source="Tn711779" target="Tn711784"/>
+      <edge id="edge2488006" source="Tn711779" target="Tn711798"/>
+      <edge id="edge2488008" source="Tn711794" target="Tn711782"/>
+      <edge id="edge2488010" source="Tn711782" target="Tn711805"/>
+      <edge id="edge2488012" source="Tn711782" target="Tn711777"/>
+      <edge id="edge2488014" source="Tn711777" target="Tn711802"/>
+      <edge id="edge2488016" source="Tn711777" target="Tn711775"/>
+      <edge id="edge2488018" source="Tn711775" target="Tn711801"/>
+      <edge id="edge2488020" source="Tn711775" target="Tn711781"/>
+      <edge id="edge2488022" source="Tn711814" target="Tn711791"/>
+      <edge id="edge2488024" source="Tn711791" target="Tn711795"/>
+      <edge id="edge2488026" source="Tn711791" target="Tn711803"/>
+      <edge id="edge2488028" source="Tn711803" target="Tn711811"/>
+      <edge id="edge2488030" source="Tn711811" target="Tn711786"/>
+      <edge id="edge2488032" source="Tn711811" target="Tn711788"/>
+      <edge id="edge2488034" source="Tn711788" target="Tn711785"/>
+      <edge id="edge2488036" source="Tn711785" target="Tn711812"/>
+      <edge id="edge2488038" source="Tn711785" target="Tn711797"/>
+      <edge id="edge2488040" source="Tn711797" target="Tn711787"/>
+      <edge id="edge2488042" source="Tn711797" target="Tn711800"/>
+      <edge id="edge2488044" source="Tn711797" target="Tn711813"/>
+      <edge id="edge2488046" source="Tn711813" target="Tn711776"/>
+      <edge id="edge2488048" source="Tn711813" target="Tn711799"/>
+      <edge id="edge2488050" source="Tn711788" target="Tn711780"/>
+      <edge id="edge2488052" source="Tn711780" target="Tn711792"/>
+      <edge id="edge2488054" source="Tn711780" target="Tn711816"/>
+      <edge id="edge2488056" source="Tn711803" target="Tn711771"/>
+      <edge id="edge2488058" source="Tn711771" target="Tn711774"/>
+      <edge id="edge2488060" source="Tn711771" target="Tn711804"/>
+    </tree>
+    <tree about="#Tr7859" id="Tr7859" label="tree 07" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2488066" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2488065" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2488064" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2488063" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2488062" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711760"/>
+      <node id="Tn711724" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711758"/>
+      <node id="Tn711748"/>
+      <node id="Tn711732" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711725"/>
+      <node id="Tn711763"/>
+      <node id="Tn711766" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711759"/>
+      <node id="Tn711726" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711743"/>
+      <node id="Tn711768" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711740"/>
+      <node id="Tn711747" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711762"/>
+      <node id="Tn711767" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711734" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711744"/>
+      <node id="Tn711761" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711753" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711754"/>
+      <node id="Tn711739" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711742" label="Okenia hypogaea" otu="Tl287492"/>
+      <node id="Tn711733"/>
+      <node id="Tn711750" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711756"/>
+      <node id="Tn711749" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711764"/>
+      <node id="Tn711731" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711730"/>
+      <node id="Tn711745"/>
+      <node id="Tn711738"/>
+      <node id="Tn711736" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711727" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711729"/>
+      <node id="Tn711741" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711752"/>
+      <node id="Tn711735" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711765"/>
+      <node id="Tn711723" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711755" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711746"/>
+      <node id="Tn711728" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711751"/>
+      <node id="Tn711722" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711737"/>
+      <node id="Tn711769" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711757" label="Boerhavia xantii" otu="Tl287505"/>
+      <edge id="edge2488069" source="Tn711760" target="Tn711724"/>
+      <edge id="edge2488071" source="Tn711760" target="Tn711758"/>
+      <edge id="edge2488073" source="Tn711758" target="Tn711748"/>
+      <edge id="edge2488075" source="Tn711748" target="Tn711732"/>
+      <edge id="edge2488077" source="Tn711748" target="Tn711725"/>
+      <edge id="edge2488079" source="Tn711725" target="Tn711763"/>
+      <edge id="edge2488081" source="Tn711763" target="Tn711766"/>
+      <edge id="edge2488083" source="Tn711763" target="Tn711759"/>
+      <edge id="edge2488085" source="Tn711759" target="Tn711726"/>
+      <edge id="edge2488087" source="Tn711759" target="Tn711743"/>
+      <edge id="edge2488089" source="Tn711743" target="Tn711768"/>
+      <edge id="edge2488091" source="Tn711743" target="Tn711740"/>
+      <edge id="edge2488093" source="Tn711740" target="Tn711747"/>
+      <edge id="edge2488095" source="Tn711740" target="Tn711762"/>
+      <edge id="edge2488097" source="Tn711762" target="Tn711767"/>
+      <edge id="edge2488099" source="Tn711762" target="Tn711734"/>
+      <edge id="edge2488101" source="Tn711762" target="Tn711744"/>
+      <edge id="edge2488103" source="Tn711744" target="Tn711761"/>
+      <edge id="edge2488105" source="Tn711744" target="Tn711753"/>
+      <edge id="edge2488107" source="Tn711725" target="Tn711754"/>
+      <edge id="edge2488109" source="Tn711754" target="Tn711739"/>
+      <edge id="edge2488111" source="Tn711754" target="Tn711742"/>
+      <edge id="edge2488113" source="Tn711758" target="Tn711733"/>
+      <edge id="edge2488115" source="Tn711733" target="Tn711750"/>
+      <edge id="edge2488117" source="Tn711733" target="Tn711756"/>
+      <edge id="edge2488119" source="Tn711756" target="Tn711749"/>
+      <edge id="edge2488121" source="Tn711756" target="Tn711764"/>
+      <edge id="edge2488123" source="Tn711764" target="Tn711731"/>
+      <edge id="edge2488125" source="Tn711764" target="Tn711730"/>
+      <edge id="edge2488127" source="Tn711730" target="Tn711745"/>
+      <edge id="edge2488129" source="Tn711745" target="Tn711738"/>
+      <edge id="edge2488131" source="Tn711738" target="Tn711736"/>
+      <edge id="edge2488133" source="Tn711738" target="Tn711727"/>
+      <edge id="edge2488135" source="Tn711745" target="Tn711729"/>
+      <edge id="edge2488137" source="Tn711729" target="Tn711741"/>
+      <edge id="edge2488139" source="Tn711729" target="Tn711752"/>
+      <edge id="edge2488141" source="Tn711752" target="Tn711735"/>
+      <edge id="edge2488143" source="Tn711752" target="Tn711765"/>
+      <edge id="edge2488145" source="Tn711765" target="Tn711723"/>
+      <edge id="edge2488147" source="Tn711765" target="Tn711755"/>
+      <edge id="edge2488149" source="Tn711730" target="Tn711746"/>
+      <edge id="edge2488151" source="Tn711746" target="Tn711728"/>
+      <edge id="edge2488153" source="Tn711746" target="Tn711751"/>
+      <edge id="edge2488155" source="Tn711751" target="Tn711722"/>
+      <edge id="edge2488157" source="Tn711751" target="Tn711737"/>
+      <edge id="edge2488159" source="Tn711737" target="Tn711769"/>
+      <edge id="edge2488161" source="Tn711737" target="Tn711757"/>
+    </tree>
+    <tree about="#Tr7858" id="Tr7858" label="tree 06" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2488167" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2488166" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2488165" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2488164" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2488163" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711703"/>
+      <node id="Tn711682" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711704"/>
+      <node id="Tn711674"/>
+      <node id="Tn711705" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711685"/>
+      <node id="Tn711701"/>
+      <node id="Tn711697" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711700"/>
+      <node id="Tn711708"/>
+      <node id="Tn711717" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711711"/>
+      <node id="Tn711676" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711677" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711699"/>
+      <node id="Tn711680" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711692" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711718"/>
+      <node id="Tn711695" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711710" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711693"/>
+      <node id="Tn711720" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711709" label="Okenia hypogaea" otu="Tl287492"/>
+      <node id="Tn711679"/>
+      <node id="Tn711691" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711678"/>
+      <node id="Tn711712" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711713"/>
+      <node id="Tn711696" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711715"/>
+      <node id="Tn711702"/>
+      <node id="Tn711687"/>
+      <node id="Tn711714" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711686" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711689"/>
+      <node id="Tn711721" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711690"/>
+      <node id="Tn711716" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711684"/>
+      <node id="Tn711681" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711675" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711688"/>
+      <node id="Tn711707" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711683"/>
+      <node id="Tn711706" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711719"/>
+      <node id="Tn711698" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711694" label="Boerhavia xantii" otu="Tl287505"/>
+      <edge id="edge2488170" source="Tn711703" target="Tn711682"/>
+      <edge id="edge2488172" source="Tn711703" target="Tn711704"/>
+      <edge id="edge2488174" source="Tn711704" target="Tn711674"/>
+      <edge id="edge2488176" source="Tn711674" target="Tn711705"/>
+      <edge id="edge2488178" source="Tn711674" target="Tn711685"/>
+      <edge id="edge2488180" source="Tn711685" target="Tn711701"/>
+      <edge id="edge2488182" source="Tn711701" target="Tn711697"/>
+      <edge id="edge2488184" source="Tn711701" target="Tn711700"/>
+      <edge id="edge2488186" source="Tn711700" target="Tn711708"/>
+      <edge id="edge2488188" source="Tn711708" target="Tn711717"/>
+      <edge id="edge2488190" source="Tn711708" target="Tn711711"/>
+      <edge id="edge2488192" source="Tn711711" target="Tn711676"/>
+      <edge id="edge2488194" source="Tn711711" target="Tn711677"/>
+      <edge id="edge2488196" source="Tn711711" target="Tn711699"/>
+      <edge id="edge2488198" source="Tn711699" target="Tn711680"/>
+      <edge id="edge2488200" source="Tn711699" target="Tn711692"/>
+      <edge id="edge2488202" source="Tn711700" target="Tn711718"/>
+      <edge id="edge2488204" source="Tn711718" target="Tn711695"/>
+      <edge id="edge2488206" source="Tn711718" target="Tn711710"/>
+      <edge id="edge2488208" source="Tn711685" target="Tn711693"/>
+      <edge id="edge2488210" source="Tn711693" target="Tn711720"/>
+      <edge id="edge2488212" source="Tn711693" target="Tn711709"/>
+      <edge id="edge2488214" source="Tn711704" target="Tn711679"/>
+      <edge id="edge2488216" source="Tn711679" target="Tn711691"/>
+      <edge id="edge2488218" source="Tn711679" target="Tn711678"/>
+      <edge id="edge2488220" source="Tn711678" target="Tn711712"/>
+      <edge id="edge2488222" source="Tn711678" target="Tn711713"/>
+      <edge id="edge2488224" source="Tn711713" target="Tn711696"/>
+      <edge id="edge2488226" source="Tn711713" target="Tn711715"/>
+      <edge id="edge2488228" source="Tn711715" target="Tn711702"/>
+      <edge id="edge2488230" source="Tn711702" target="Tn711687"/>
+      <edge id="edge2488232" source="Tn711687" target="Tn711714"/>
+      <edge id="edge2488234" source="Tn711687" target="Tn711686"/>
+      <edge id="edge2488236" source="Tn711702" target="Tn711689"/>
+      <edge id="edge2488238" source="Tn711689" target="Tn711721"/>
+      <edge id="edge2488240" source="Tn711689" target="Tn711690"/>
+      <edge id="edge2488242" source="Tn711690" target="Tn711716"/>
+      <edge id="edge2488244" source="Tn711690" target="Tn711684"/>
+      <edge id="edge2488246" source="Tn711684" target="Tn711681"/>
+      <edge id="edge2488248" source="Tn711684" target="Tn711675"/>
+      <edge id="edge2488250" source="Tn711715" target="Tn711688"/>
+      <edge id="edge2488252" source="Tn711688" target="Tn711707"/>
+      <edge id="edge2488254" source="Tn711688" target="Tn711683"/>
+      <edge id="edge2488256" source="Tn711683" target="Tn711706"/>
+      <edge id="edge2488258" source="Tn711683" target="Tn711719"/>
+      <edge id="edge2488260" source="Tn711719" target="Tn711698"/>
+      <edge id="edge2488262" source="Tn711719" target="Tn711694"/>
+    </tree>
+    <tree about="#Tr7855" id="Tr7855" label="tree 03" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2488268" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2488267" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2488266" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2488265" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2488264" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711540"/>
+      <node id="Tn711548" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711533"/>
+      <node id="Tn711532"/>
+      <node id="Tn711539" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711556"/>
+      <node id="Tn711569" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711549"/>
+      <node id="Tn711572" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711573"/>
+      <node id="Tn711565"/>
+      <node id="Tn711546" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711544" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711563"/>
+      <node id="Tn711571" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711541"/>
+      <node id="Tn711555" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711531"/>
+      <node id="Tn711568" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711536" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711575"/>
+      <node id="Tn711543" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711547"/>
+      <node id="Tn711570" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711567"/>
+      <node id="Tn711566" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711552" label="Boerhavia xantii" otu="Tl287505"/>
+      <node id="Tn711535"/>
+      <node id="Tn711542" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711553"/>
+      <node id="Tn711574"/>
+      <node id="Tn711545"/>
+      <node id="Tn711558" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711551"/>
+      <node id="Tn711534" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711564" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711577"/>
+      <node id="Tn711561" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711562" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711557"/>
+      <node id="Tn711550" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711560"/>
+      <node id="Tn711537" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711554" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711538"/>
+      <node id="Tn711559" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711576" label="Okenia hypogaea" otu="Tl287492"/>
+      <edge id="edge2488271" source="Tn711540" target="Tn711548"/>
+      <edge id="edge2488273" source="Tn711540" target="Tn711533"/>
+      <edge id="edge2488275" source="Tn711533" target="Tn711532"/>
+      <edge id="edge2488277" source="Tn711532" target="Tn711539"/>
+      <edge id="edge2488279" source="Tn711532" target="Tn711556"/>
+      <edge id="edge2488281" source="Tn711556" target="Tn711569"/>
+      <edge id="edge2488283" source="Tn711556" target="Tn711549"/>
+      <edge id="edge2488285" source="Tn711549" target="Tn711572"/>
+      <edge id="edge2488287" source="Tn711549" target="Tn711573"/>
+      <edge id="edge2488289" source="Tn711573" target="Tn711565"/>
+      <edge id="edge2488291" source="Tn711565" target="Tn711546"/>
+      <edge id="edge2488293" source="Tn711565" target="Tn711544"/>
+      <edge id="edge2488295" source="Tn711573" target="Tn711563"/>
+      <edge id="edge2488297" source="Tn711563" target="Tn711571"/>
+      <edge id="edge2488299" source="Tn711563" target="Tn711541"/>
+      <edge id="edge2488301" source="Tn711541" target="Tn711555"/>
+      <edge id="edge2488303" source="Tn711541" target="Tn711531"/>
+      <edge id="edge2488305" source="Tn711531" target="Tn711568"/>
+      <edge id="edge2488307" source="Tn711531" target="Tn711536"/>
+      <edge id="edge2488309" source="Tn711549" target="Tn711575"/>
+      <edge id="edge2488311" source="Tn711575" target="Tn711543"/>
+      <edge id="edge2488313" source="Tn711575" target="Tn711547"/>
+      <edge id="edge2488315" source="Tn711547" target="Tn711570"/>
+      <edge id="edge2488317" source="Tn711547" target="Tn711567"/>
+      <edge id="edge2488319" source="Tn711567" target="Tn711566"/>
+      <edge id="edge2488321" source="Tn711567" target="Tn711552"/>
+      <edge id="edge2488323" source="Tn711533" target="Tn711535"/>
+      <edge id="edge2488325" source="Tn711535" target="Tn711542"/>
+      <edge id="edge2488327" source="Tn711535" target="Tn711553"/>
+      <edge id="edge2488329" source="Tn711553" target="Tn711574"/>
+      <edge id="edge2488331" source="Tn711574" target="Tn711545"/>
+      <edge id="edge2488333" source="Tn711545" target="Tn711558"/>
+      <edge id="edge2488335" source="Tn711545" target="Tn711551"/>
+      <edge id="edge2488337" source="Tn711551" target="Tn711534"/>
+      <edge id="edge2488339" source="Tn711551" target="Tn711564"/>
+      <edge id="edge2488341" source="Tn711551" target="Tn711577"/>
+      <edge id="edge2488343" source="Tn711577" target="Tn711561"/>
+      <edge id="edge2488345" source="Tn711577" target="Tn711562"/>
+      <edge id="edge2488347" source="Tn711574" target="Tn711557"/>
+      <edge id="edge2488349" source="Tn711557" target="Tn711550"/>
+      <edge id="edge2488351" source="Tn711557" target="Tn711560"/>
+      <edge id="edge2488353" source="Tn711560" target="Tn711537"/>
+      <edge id="edge2488355" source="Tn711560" target="Tn711554"/>
+      <edge id="edge2488357" source="Tn711553" target="Tn711538"/>
+      <edge id="edge2488359" source="Tn711538" target="Tn711559"/>
+      <edge id="edge2488361" source="Tn711538" target="Tn711576"/>
+    </tree>
+    <tree about="#Tr7854" id="Tr7854" label="tree 02" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2488367" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2488366" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2488365" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2488364" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2488363" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711524"/>
+      <node id="Tn711504" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711529"/>
+      <node id="Tn711523"/>
+      <node id="Tn711498" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711486"/>
+      <node id="Tn711497"/>
+      <node id="Tn711483"/>
+      <node id="Tn711500" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711518"/>
+      <node id="Tn711511" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711514" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711517"/>
+      <node id="Tn711493" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711521" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711507"/>
+      <node id="Tn711530" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711506"/>
+      <node id="Tn711512" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711522" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711525"/>
+      <node id="Tn711488" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711485" label="Okenia hypogaea" otu="Tl287492"/>
+      <node id="Tn711513"/>
+      <node id="Tn711501" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711519"/>
+      <node id="Tn711494" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711509"/>
+      <node id="Tn711526" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711527"/>
+      <node id="Tn711496"/>
+      <node id="Tn711492"/>
+      <node id="Tn711520" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711499" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711491"/>
+      <node id="Tn711505" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711495"/>
+      <node id="Tn711515" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711528"/>
+      <node id="Tn711502" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711487" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711489"/>
+      <node id="Tn711490" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711508"/>
+      <node id="Tn711503" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711510"/>
+      <node id="Tn711516" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711484" label="Boerhavia xantii" otu="Tl287505"/>
+      <edge id="edge2488370" source="Tn711524" target="Tn711504"/>
+      <edge id="edge2488372" source="Tn711524" target="Tn711529"/>
+      <edge id="edge2488374" source="Tn711529" target="Tn711523"/>
+      <edge id="edge2488376" source="Tn711523" target="Tn711498"/>
+      <edge id="edge2488378" source="Tn711523" target="Tn711486"/>
+      <edge id="edge2488380" source="Tn711486" target="Tn711497"/>
+      <edge id="edge2488382" source="Tn711497" target="Tn711483"/>
+      <edge id="edge2488384" source="Tn711483" target="Tn711500"/>
+      <edge id="edge2488386" source="Tn711483" target="Tn711518"/>
+      <edge id="edge2488388" source="Tn711518" target="Tn711511"/>
+      <edge id="edge2488390" source="Tn711518" target="Tn711514"/>
+      <edge id="edge2488392" source="Tn711518" target="Tn711517"/>
+      <edge id="edge2488394" source="Tn711517" target="Tn711493"/>
+      <edge id="edge2488396" source="Tn711517" target="Tn711521"/>
+      <edge id="edge2488398" source="Tn711497" target="Tn711507"/>
+      <edge id="edge2488400" source="Tn711507" target="Tn711530"/>
+      <edge id="edge2488402" source="Tn711507" target="Tn711506"/>
+      <edge id="edge2488404" source="Tn711506" target="Tn711512"/>
+      <edge id="edge2488406" source="Tn711506" target="Tn711522"/>
+      <edge id="edge2488408" source="Tn711486" target="Tn711525"/>
+      <edge id="edge2488410" source="Tn711525" target="Tn711488"/>
+      <edge id="edge2488412" source="Tn711525" target="Tn711485"/>
+      <edge id="edge2488414" source="Tn711529" target="Tn711513"/>
+      <edge id="edge2488416" source="Tn711513" target="Tn711501"/>
+      <edge id="edge2488418" source="Tn711513" target="Tn711519"/>
+      <edge id="edge2488420" source="Tn711519" target="Tn711494"/>
+      <edge id="edge2488422" source="Tn711519" target="Tn711509"/>
+      <edge id="edge2488424" source="Tn711509" target="Tn711526"/>
+      <edge id="edge2488426" source="Tn711509" target="Tn711527"/>
+      <edge id="edge2488428" source="Tn711527" target="Tn711496"/>
+      <edge id="edge2488430" source="Tn711496" target="Tn711492"/>
+      <edge id="edge2488432" source="Tn711492" target="Tn711520"/>
+      <edge id="edge2488434" source="Tn711492" target="Tn711499"/>
+      <edge id="edge2488436" source="Tn711496" target="Tn711491"/>
+      <edge id="edge2488438" source="Tn711491" target="Tn711505"/>
+      <edge id="edge2488440" source="Tn711491" target="Tn711495"/>
+      <edge id="edge2488442" source="Tn711495" target="Tn711515"/>
+      <edge id="edge2488444" source="Tn711495" target="Tn711528"/>
+      <edge id="edge2488446" source="Tn711528" target="Tn711502"/>
+      <edge id="edge2488448" source="Tn711528" target="Tn711487"/>
+      <edge id="edge2488450" source="Tn711527" target="Tn711489"/>
+      <edge id="edge2488452" source="Tn711489" target="Tn711490"/>
+      <edge id="edge2488454" source="Tn711489" target="Tn711508"/>
+      <edge id="edge2488456" source="Tn711508" target="Tn711503"/>
+      <edge id="edge2488458" source="Tn711508" target="Tn711510"/>
+      <edge id="edge2488460" source="Tn711510" target="Tn711516"/>
+      <edge id="edge2488462" source="Tn711510" target="Tn711484"/>
+    </tree>
+    <tree about="#Tr7853" id="Tr7853" label="tree 01" xsi:type="nex:FloatTree">
+      <meta content="25" datatype="xsd:integer" id="meta2488468" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Alternative Tree" datatype="xsd:string" id="meta2488467" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta2488466" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta2488465" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10350" id="meta2488464" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn711443"/>
+      <node id="Tn711441" label="Mirabilis glabrifolia" otu="Tl287499"/>
+      <node id="Tn711437"/>
+      <node id="Tn711480"/>
+      <node id="Tn711436" label="Boerhavia anisophylla" otu="Tl287489"/>
+      <node id="Tn711439"/>
+      <node id="Tn711462"/>
+      <node id="Tn711435"/>
+      <node id="Tn711442" label="Anulocaulis reflexus" otu="Tl287484"/>
+      <node id="Tn711466"/>
+      <node id="Tn711453" label="Anulocaulis leiosolenus howardii" otu="Tl287504"/>
+      <node id="Tn711458" label="Anulocaulis leiosolenus lasianthus" otu="Tl287507"/>
+      <node id="Tn711452"/>
+      <node id="Tn711482" label="Anulocaulis leiosolenus gypsogenus" otu="Tl287502"/>
+      <node id="Tn711463" label="Anulocaulis leiosolenus leiosolenus" otu="Tl287488"/>
+      <node id="Tn711460"/>
+      <node id="Tn711481" label="Anulocaulis hintoniorum" otu="Tl287490"/>
+      <node id="Tn711450"/>
+      <node id="Tn711465" label="Anulocaulis annulatus" otu="Tl287506"/>
+      <node id="Tn711449" label="Anulocaulis eriosolenus" otu="Tl287486"/>
+      <node id="Tn711448"/>
+      <node id="Tn711454" label="Nyctaginia capitata" otu="Tl287496"/>
+      <node id="Tn711446" label="Okenia hypogaea" otu="Tl287492"/>
+      <node id="Tn711455"/>
+      <node id="Tn711447" label="Boerhavia gracillima" otu="Tl287497"/>
+      <node id="Tn711464"/>
+      <node id="Tn711475" label="Boerhavia diffusa" otu="Tl287494"/>
+      <node id="Tn711476"/>
+      <node id="Tn711472" label="Boerhavia coccinea" otu="Tl287495"/>
+      <node id="Tn711474"/>
+      <node id="Tn711440"/>
+      <node id="Tn711457"/>
+      <node id="Tn711467" label="Cyphomeris crassifolia" otu="Tl287501"/>
+      <node id="Tn711471" label="Cyphomeris gypsophiloides" otu="Tl287493"/>
+      <node id="Tn711473"/>
+      <node id="Tn711468" label="Commicarpus brandegeei" otu="Tl287485"/>
+      <node id="Tn711451"/>
+      <node id="Tn711461" label="Commicarpus scandens" otu="Tl287487"/>
+      <node id="Tn711469"/>
+      <node id="Tn711479" label="Commicarpus arabicus" otu="Tl287508"/>
+      <node id="Tn711478" label="Commicarpus plumbagineus" otu="Tl287500"/>
+      <node id="Tn711438"/>
+      <node id="Tn711456" label="Boerhavia spicata" otu="Tl287491"/>
+      <node id="Tn711445"/>
+      <node id="Tn711470" label="Boerhavia erecta" otu="Tl287503"/>
+      <node id="Tn711444"/>
+      <node id="Tn711459" label="Boerhavia alata" otu="Tl287498"/>
+      <node id="Tn711477" label="Boerhavia xantii" otu="Tl287505"/>
+      <edge id="edge2488471" source="Tn711443" target="Tn711441"/>
+      <edge id="edge2488473" source="Tn711443" target="Tn711437"/>
+      <edge id="edge2488475" source="Tn711437" target="Tn711480"/>
+      <edge id="edge2488477" source="Tn711480" target="Tn711436"/>
+      <edge id="edge2488479" source="Tn711480" target="Tn711439"/>
+      <edge id="edge2488481" source="Tn711439" target="Tn711462"/>
+      <edge id="edge2488483" source="Tn711462" target="Tn711435"/>
+      <edge id="edge2488485" source="Tn711435" target="Tn711442"/>
+      <edge id="edge2488487" source="Tn711435" target="Tn711466"/>
+      <edge id="edge2488489" source="Tn711466" target="Tn711453"/>
+      <edge id="edge2488491" source="Tn711466" target="Tn711458"/>
+      <edge id="edge2488493" source="Tn711466" target="Tn711452"/>
+      <edge id="edge2488495" source="Tn711452" target="Tn711482"/>
+      <edge id="edge2488497" source="Tn711452" target="Tn711463"/>
+      <edge id="edge2488499" source="Tn711462" target="Tn711460"/>
+      <edge id="edge2488501" source="Tn711460" target="Tn711481"/>
+      <edge id="edge2488503" source="Tn711460" target="Tn711450"/>
+      <edge id="edge2488505" source="Tn711450" target="Tn711465"/>
+      <edge id="edge2488507" source="Tn711450" target="Tn711449"/>
+      <edge id="edge2488509" source="Tn711439" target="Tn711448"/>
+      <edge id="edge2488511" source="Tn711448" target="Tn711454"/>
+      <edge id="edge2488513" source="Tn711448" target="Tn711446"/>
+      <edge id="edge2488515" source="Tn711437" target="Tn711455"/>
+      <edge id="edge2488517" source="Tn711455" target="Tn711447"/>
+      <edge id="edge2488519" source="Tn711455" target="Tn711464"/>
+      <edge id="edge2488521" source="Tn711464" target="Tn711475"/>
+      <edge id="edge2488523" source="Tn711464" target="Tn711476"/>
+      <edge id="edge2488525" source="Tn711476" target="Tn711472"/>
+      <edge id="edge2488527" source="Tn711476" target="Tn711474"/>
+      <edge id="edge2488529" source="Tn711474" target="Tn711440"/>
+      <edge id="edge2488531" source="Tn711440" target="Tn711457"/>
+      <edge id="edge2488533" source="Tn711457" target="Tn711467"/>
+      <edge id="edge2488535" source="Tn711457" target="Tn711471"/>
+      <edge id="edge2488537" source="Tn711440" target="Tn711473"/>
+      <edge id="edge2488539" source="Tn711473" target="Tn711468"/>
+      <edge id="edge2488541" source="Tn711473" target="Tn711451"/>
+      <edge id="edge2488543" source="Tn711451" target="Tn711461"/>
+      <edge id="edge2488545" source="Tn711451" target="Tn711469"/>
+      <edge id="edge2488547" source="Tn711469" target="Tn711479"/>
+      <edge id="edge2488549" source="Tn711469" target="Tn711478"/>
+      <edge id="edge2488551" source="Tn711474" target="Tn711438"/>
+      <edge id="edge2488553" source="Tn711438" target="Tn711456"/>
+      <edge id="edge2488555" source="Tn711438" target="Tn711445"/>
+      <edge id="edge2488557" source="Tn711445" target="Tn711470"/>
+      <edge id="edge2488559" source="Tn711445" target="Tn711444"/>
+      <edge id="edge2488561" source="Tn711444" target="Tn711459"/>
+      <edge id="edge2488563" source="Tn711444" target="Tn711477"/>
+    </tree>
+  </trees>
+</nex:nexml>
