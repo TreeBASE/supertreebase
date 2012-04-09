@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S306" generator="org.nexml.model.impl.DocumentImpl" id="S306" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Mon Apr 09 10:04:41 EDT 2012" datatype="xsd:string" id="meta5459582" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@7b77577e $Rev: 1060 $" datatype="xsd:string" id="meta5459581" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="113" datatype="xsd:string" id="meta5459580" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Botanische Jahrb?cher f?r Systematik, Pflanzengeschichte und Pflanzengeographie" datatype="xsd:string" id="meta5459579" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Botanische Jahrb?cher f?r Systematik, Pflanzengeschichte und Pflanzengeographie" datatype="xsd:string" id="meta5459578" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="105-196" datatype="xsd:string" id="meta5459577" property="prism:pageRange" xsi:type="nex:LiteralMeta"/>
+  <meta content="196" datatype="xsd:string" id="meta5459576" property="prism:endingPage" xsi:type="nex:LiteralMeta"/>
+  <meta content="105" datatype="xsd:string" id="meta5459575" property="prism:startingPage" xsi:type="nex:LiteralMeta"/>
+  <meta content="1991" datatype="xsd:string" id="meta5459574" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Amaral M." datatype="xsd:string" id="meta5459573" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Amaral M." datatype="xsd:string" id="meta5459572" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="Phylogenetische systematik der Ochnaceae." datatype="xsd:string" id="meta5459571" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Amaral M. 1991. Phylogenetische systematik der Ochnaceae. Botanische Jahrb?cher f?r Systematik, Pflanzengeschichte und Pflanzengeographie, 113: 105-196." datatype="xsd:string" id="meta5459570" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="1998-04-24" datatype="xsd:string" id="meta5459569" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="1998-04-24" datatype="xsd:string" id="meta5459568" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="1998-04-24" datatype="xsd:string" id="meta5459567" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="S225" datatype="xsd:string" id="meta5459566" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="306" datatype="xsd:string" id="meta5459565" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta5459563" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls9709" id="Tls9709" label="TaxonLabelSet9709" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@2d31c032 $Rev: 1040 $" datatype="xsd:string" id="meta5459584" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl24950" id="Tl24950" label="Outgroup to Ochnaceae">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459586" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24942" id="Tl24942" label="Ouratea">
+      <meta content="20060" datatype="xsd:long" id="meta5459592" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="46701" datatype="xsd:long" id="meta5459591" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/58891" id="meta5459590" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2647428" id="meta5459589" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459588" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24936" id="Tl24936" label="Brackenridgea">
+      <meta content="3932" datatype="xsd:long" id="meta5459597" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="9374" datatype="xsd:long" id="meta5459596" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823549" id="meta5459595" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459594" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl110887" id="Tl110887" label="Ochna">
+      <meta content="19336" datatype="xsd:long" id="meta5459603" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="44993" datatype="xsd:long" id="meta5459602" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/56628" id="meta5459601" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2647427" id="meta5459600" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459599" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24966" id="Tl24966" label="Lophira">
+      <meta content="16280" datatype="xsd:long" id="meta5459609" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="38141" datatype="xsd:long" id="meta5459608" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/549774" id="meta5459607" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823553" id="meta5459606" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459605" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24941" id="Tl24941" label="Perissocarpa">
+      <meta content="21124" datatype="xsd:long" id="meta5459614" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="49173" datatype="xsd:long" id="meta5459613" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823539" id="meta5459612" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459611" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24957" id="Tl24957" label="Elvasia calophyllea">
+      <meta content="9944" datatype="xsd:long" id="meta5459620" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="23789" datatype="xsd:long" id="meta5459619" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/313265" id="meta5459618" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5982165" id="meta5459617" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459616" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24958" id="Tl24958" label="Elvasia elvasioides">
+      <meta content="9945" datatype="xsd:long" id="meta5459625" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="23793" datatype="xsd:long" id="meta5459624" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:8490252" id="meta5459623" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459622" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24945" id="Tl24945" label="Rhytidanthera">
+      <meta content="25514" datatype="xsd:long" id="meta5459630" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="59686" datatype="xsd:long" id="meta5459629" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823542" id="meta5459628" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459627" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24960" id="Tl24960" label="Godoya">
+      <meta content="12380" datatype="xsd:long" id="meta5459635" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="29392" datatype="xsd:long" id="meta5459634" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823554" id="meta5459633" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459632" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24959" id="Tl24959" label="Krukoviella">
+      <meta content="15106" datatype="xsd:long" id="meta5459640" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="35504" datatype="xsd:long" id="meta5459639" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823557" id="meta5459638" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459637" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24954" id="Tl24954" label="Cespedesia">
+      <meta content="5486" datatype="xsd:long" id="meta5459646" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="13296" datatype="xsd:long" id="meta5459645" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/179738" id="meta5459644" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823550" id="meta5459643" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459642" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24963" id="Tl24963" label="Testulea">
+      <meta content="28713" datatype="xsd:long" id="meta5459651" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66920" datatype="xsd:long" id="meta5459650" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823538" id="meta5459649" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459648" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24938" id="Tl24938" label="Fleurydora">
+      <meta content="11387" datatype="xsd:long" id="meta5459656" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="27213" datatype="xsd:long" id="meta5459655" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823547" id="meta5459654" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459653" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24943" id="Tl24943" label="Philacra">
+      <meta content="21774" datatype="xsd:long" id="meta5459662" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="50644" datatype="xsd:long" id="meta5459661" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/313266" id="meta5459660" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823540" id="meta5459659" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459658" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24948" id="Tl24948" label="Luxemburgia">
+      <meta content="16470" datatype="xsd:long" id="meta5459668" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="38610" datatype="xsd:long" id="meta5459667" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/74578" id="meta5459666" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823545" id="meta5459665" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459664" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24946" id="Tl24946" label="Blastemanthus">
+      <meta content="3585" datatype="xsd:long" id="meta5459673" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="8574" datatype="xsd:long" id="meta5459672" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823551" id="meta5459671" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459670" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24947" id="Tl24947" label="Wallacea">
+      <meta content="30843" datatype="xsd:long" id="meta5459678" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="72004" datatype="xsd:long" id="meta5459677" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3404577" id="meta5459676" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459675" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24962" id="Tl24962" label="Poecilandra">
+      <meta content="23066" datatype="xsd:long" id="meta5459683" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="53924" datatype="xsd:long" id="meta5459682" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823541" id="meta5459681" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459680" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24967" id="Tl24967" label="Euthemis">
+      <meta content="10962" datatype="xsd:long" id="meta5459688" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="26213" datatype="xsd:long" id="meta5459687" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823552" id="meta5459686" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459685" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24951" id="Tl24951" label="Schuurmansia henningsii">
+      <meta content="26423" datatype="xsd:long" id="meta5459693" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="61729" datatype="xsd:long" id="meta5459692" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:8488469" id="meta5459691" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459690" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24961" id="Tl24961" label="Schuurmansia elegans">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459695" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24935" id="Tl24935" label="Schuurmansiella">
+      <meta content="26424" datatype="xsd:long" id="meta5459700" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="61731" datatype="xsd:long" id="meta5459699" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823546" id="meta5459698" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459697" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24956" id="Tl24956" label="Tyleria spectabilis">
+      <meta content="30098" datatype="xsd:long" id="meta5459705" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="70310" datatype="xsd:long" id="meta5459704" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3459362" id="meta5459703" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459702" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24968" id="Tl24968" label="Adenanthe">
+      <meta content="431" datatype="xsd:long" id="meta5459710" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="1038" datatype="xsd:long" id="meta5459709" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4898420" id="meta5459708" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459707" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24952" id="Tl24952" label="Tyleria spathulata">
+      <meta content="30097" datatype="xsd:long" id="meta5459715" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="70309" datatype="xsd:long" id="meta5459714" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3459361" id="meta5459713" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459712" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24944" id="Tl24944" label="Indosinia">
+      <meta content="14545" datatype="xsd:long" id="meta5459720" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="34199" datatype="xsd:long" id="meta5459719" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823556" id="meta5459718" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459717" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24971" id="Tl24971" label="Adenarake">
+      <meta content="433" datatype="xsd:long" id="meta5459725" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="1041" datatype="xsd:long" id="meta5459724" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1823548" id="meta5459723" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459722" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24969" id="Tl24969" label="Roraimanthus">
+      <meta content="25679" datatype="xsd:long" id="meta5459730" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="60100" datatype="xsd:long" id="meta5459729" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3459328" id="meta5459728" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459727" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24949" id="Tl24949" label="Leitgebia">
+      <meta content="15517" datatype="xsd:long" id="meta5459735" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="36416" datatype="xsd:long" id="meta5459734" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3459327" id="meta5459733" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459732" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24937" id="Tl24937" label="Pentaspatella">
+      <meta content="21030" datatype="xsd:long" id="meta5459740" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="48942" datatype="xsd:long" id="meta5459739" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3459324" id="meta5459738" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459737" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24939" id="Tl24939" label="Sauvagesia erecta">
+      <meta content="26232" datatype="xsd:long" id="meta5459746" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="61312" datatype="xsd:long" id="meta5459745" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/313263" id="meta5459744" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2647434" id="meta5459743" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459742" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24970" id="Tl24970" label="Sauvagesia nudicaulis">
+      <meta content="26233" datatype="xsd:long" id="meta5459751" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="61315" datatype="xsd:long" id="meta5459750" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3459338" id="meta5459749" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459748" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24940" id="Tl24940" label="Lavradia">
+      <meta content="15410" datatype="xsd:long" id="meta5459756" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="36181" datatype="xsd:long" id="meta5459755" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3459329" id="meta5459754" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459753" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24965" id="Tl24965" label="Vausagesia">
+      <meta content="30532" datatype="xsd:long" id="meta5459761" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="71260" datatype="xsd:long" id="meta5459760" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3459326" id="meta5459759" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459758" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24953" id="Tl24953" label="Indovethia">
+      <meta content="14554" datatype="xsd:long" id="meta5459766" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="34221" datatype="xsd:long" id="meta5459765" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3410915" id="meta5459764" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459763" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl24964" id="Tl24964" label="Neckia">
+      <meta content="18768" datatype="xsd:long" id="meta5459771" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="43775" datatype="xsd:long" id="meta5459770" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3459325" id="meta5459769" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459768" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M974" id="M974" label="Anhang 4" otus="Tls9709" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:StandardSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@360f19f7 $Rev: 1056 $" datatype="xsd:string" id="meta5459778" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="M246" datatype="xsd:string" id="meta5459777" property="tb:identifier.matrix.tb1" xsi:type="nex:LiteralMeta"/>
+    <meta content="974" datatype="xsd:long" id="meta5459776" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="91" datatype="xsd:integer" id="meta5459775" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="37" datatype="xsd:integer" id="meta5459774" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="Standard" datatype="xsd:string" id="meta5459773" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states5459779">
+        <state id="Dcs77579" label="3" symbol="3"/>
+        <state id="Dcs77577" label="2" symbol="2"/>
+        <state id="Dcs77582" label="1" symbol="1"/>
+        <state id="Dcs77583" label="0" symbol="0"/>
+        <state id="Dcs77576" label="4" symbol="4"/>
+        <uncertain_state_set id="uncertain_state_set5459785" label="-" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set5459786" label="?" symbol="?">
+          <member state="uncertain_state_set5459785"/>
+          <member state="Dcs77579"/>
+          <member state="Dcs77583"/>
+          <member state="Dcs77582"/>
+          <member state="Dcs77577"/>
+          <member state="Dcs77576"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col1059974" label="Sepalen Zahl" states="states5459779"/>
+      <char id="Col1059975" label="Sepalen Bl?tenknospe" states="states5459779"/>
+      <char id="Col1059976" label="Sepalen Deckung" states="states5459779"/>
+      <char id="Col1059977" label="Sepalen Rand" states="states5459779"/>
+      <char id="Col1059978" label="Sepalen Basaldr?sen" states="states5459779"/>
+      <char id="Col1059979" label="Sepalen ?u?ere -&gt; Innere" states="states5459779"/>
+      <char id="Col1059980" label="Sepalen Persistierend?" states="states5459779"/>
+      <char id="Col1059981" label="Sepalen Verl?ngert (Frucht)" states="states5459779"/>
+      <char id="Col1059982" label="Petalen Zahl" states="states5459779"/>
+      <char id="Col1059983" label="Petalen Deckung" states="states5459779"/>
+      <char id="Col1059984" label="Petalen Farbe" states="states5459779"/>
+      <char id="Col1059985" label="Stamina Zahl" states="states5459779"/>
+      <char id="Col1059986" label="Anth. dehiszenz" states="states5459779"/>
+      <char id="Col1059987" label="Anth.spitze" states="states5459779"/>
+      <char id="Col1059988" label="Konnektiv" states="states5459779"/>
+      <char id="Col1059989" label="Persistierend?" states="states5459779"/>
+      <char id="Col1059990" label="Filament" states="states5459779"/>
+      <char id="Col1059991" label="Filament L?nge" states="states5459779"/>
+      <char id="Col1059992" label="Petaloide Staminodien" states="states5459779"/>
+      <char id="Col1059993" label="Petaloide Staminodien" states="states5459779"/>
+      <char id="Col1059994" label="Petaloide Staminodien" states="states5459779"/>
+      <char id="Col1059995" label="Petaloide Staminodien" states="states5459779"/>
+      <char id="Col1059996" label="Porizides System" states="states5459779"/>
+      <char id="Col1059997" label="Fadenf. Staminod." states="states5459779"/>
+      <char id="Col1059998" label="Bl?tensymmetrie" states="states5459779"/>
+      <char id="Col1059999" label="Eingeschl. Bl?ten" states="states5459779"/>
+      <char id="Col1060000" label="Bl?tenstiel Artikulation" states="states5459779"/>
+      <char id="Col1060001" label="Tragblatt" states="states5459779"/>
+      <char id="Col1060002" label="Tragblatt" states="states5459779"/>
+      <char id="Col1060003" label="Vorbl?tter" states="states5459779"/>
+      <char id="Col1060004" label="Vorbl?tter Stellung" states="states5459779"/>
+      <char id="Col1060005" label="Vorbl?tter" states="states5459779"/>
+      <char id="Col1060006" label="Bl?ten" states="states5459779"/>
+      <char id="Col1060007" label="Infloreszenz" states="states5459779"/>
+      <char id="Col1060008" label="Infloreszenz (zusammenges)" states="states5459779"/>
+      <char id="Col1060009" label="Infloreszenz cym?s. Parakl." states="states5459779"/>
+      <char id="Col1060010" label="Griffel" states="states5459779"/>
+      <char id="Col1060011" label="Griffel" states="states5459779"/>
+      <char id="Col1060012" label="Narbe" states="states5459779"/>
+      <char id="Col1060013" label="Androgynophor" states="states5459779"/>
+      <char id="Col1060014" label="Zahl der Karpelle" states="states5459779"/>
+      <char id="Col1060015" label="Gynoeceum" states="states5459779"/>
+      <char id="Col1060016" label="Plazentation" states="states5459779"/>
+      <char id="Col1060017" label="Plazenta" states="states5459779"/>
+      <char id="Col1060018" label="Samenanl./Karpell" states="states5459779"/>
+      <char id="Col1060019" label="Samenanl. abortiert?" states="states5459779"/>
+      <char id="Col1060020" label="Same" states="states5459779"/>
+      <char id="Col1060021" label="Endosperm" states="states5459779"/>
+      <char id="Col1060022" label="Samenanlage" states="states5459779"/>
+      <char id="Col1060023" label="?u?ere Epidermis Papillen" states="states5459779"/>
+      <char id="Col1060024" label="?u?ere Epid." states="states5459779"/>
+      <char id="Col1060025" label="Innere Epid." states="states5459779"/>
+      <char id="Col1060026" label="Embryo" states="states5459779"/>
+      <char id="Col1060027" label="Karpelle bei Fruchtentwickl." states="states5459779"/>
+      <char id="Col1060028" label="Frucht" states="states5459779"/>
+      <char id="Col1060029" label="Frucht (trocken)" states="states5459779"/>
+      <char id="Col1060030" label="Kaps.?ffnung" states="states5459779"/>
+      <char id="Col1060031" label="Bl?tter Nervatur" states="states5459779"/>
+      <char id="Col1060032" label="Nervendichte" states="states5459779"/>
+      <char id="Col1060033" label="Sek.winkel" states="states5459779"/>
+      <char id="Col1060034" label="Sek.nerven" states="states5459779"/>
+      <char id="Col1060035" label="Tert.nervatur" states="states5459779"/>
+      <char id="Col1060036" label="3 Winkel/Mittelnerv" states="states5459779"/>
+      <char id="Col1060037" label="3 Lauf/2.Nerven" states="states5459779"/>
+      <char id="Col1060038" label="Nerven h?h. Ordng." states="states5459779"/>
+      <char id="Col1060039" label="Areolen" states="states5459779"/>
+      <char id="Col1060040" label="Areolenforrn" states="states5459779"/>
+      <char id="Col1060041" label="?derchen" states="states5459779"/>
+      <char id="Col1060042" label="Marginalz?hne" states="states5459779"/>
+      <char id="Col1060043" label="Marginalborsten" states="states5459779"/>
+      <char id="Col1060044" label="Zahl der Sekund?rnerven" states="states5459779"/>
+      <char id="Col1060045" label="Blattspitze" states="states5459779"/>
+      <char id="Col1060046" label="Cristarque" states="states5459779"/>
+      <char id="Col1060047" label="Marginalz?hne" states="states5459779"/>
+      <char id="Col1060048" label="Stipeln" states="states5459779"/>
+      <char id="Col1060049" label="Stipeln" states="states5459779"/>
+      <char id="Col1060050" label="Stipeln" states="states5459779"/>
+      <char id="Col1060051" label="Stipeln Gr??e (mm)" states="states5459779"/>
+      <char id="Col1060052" label="Stipeln Rand" states="states5459779"/>
+      <char id="Col1060053" label="Stipeln Basalwimpern" states="states5459779"/>
+      <char id="Col1060054" label="Stipeln Narbe" states="states5459779"/>
+      <char id="Col1060055" label="Stipeln Form" states="states5459779"/>
+      <char id="Col1060056" label="Habitus" states="states5459779"/>
+      <char id="Col1060057" label="Pollen" states="states5459779"/>
+      <char id="Col1060058" label="Antheren" states="states5459779"/>
+      <char id="Col1060059" label="Zahl der Samenan&#31;lagen" states="states5459779"/>
+      <char id="Col1060060" label="Samenfl?gel" states="states5459779"/>
+      <char id="Col1060061" label="Form Testazellen" states="states5459779"/>
+      <char id="Col1060062" label="Samen: Kutikula" states="states5459779"/>
+      <char id="Col1060063" label="Deckung cloison?e" states="states5459779"/>
+      <char id="Col1060064" label="Testazellen" states="states5459779"/>
+    </format>
+    <matrix>
+      <row id="Row36747" otu="Tl24950">
+        <seq>?0000000???00000?00????000000???000?0000?00???00000000????00000000000000000?0?0000000??0???</seq>
+      </row>
+      <row id="Row36748" otu="Tl24942">
+        <seq>0000001001012001?10????0000?101100110100000?10011???011??00012200001000000000??01?120????1?</seq>
+      </row>
+      <row id="Row36749" otu="Tl24936">
+        <seq>0000000101110001?00????00001100100110100000?10011???111??110022000000010011000201?020????0?</seq>
+      </row>
+      <row id="Row36750" otu="Tl110887">
+        <seq>0000000101002001?00????0000110-11000?110000?10011???111??1000001001010?00?0000001002?????0?</seq>
+      </row>
+      <row id="Row36751" otu="Tl24966">
+        <seq>0100020201102010?00????000210111000?1010224121011???0001?2100011001010?00?000000000201???0?</seq>
+      </row>
+      <row id="Row36752" otu="Tl24941">
+        <seq>0020001001122000?00????000011001000?1000200?11011???0001?210021100020010010100000202?1???1?</seq>
+      </row>
+      <row id="Row36753" otu="Tl24957">
+        <seq>2000001020002000?00????000011011000?0010000?11011???0001?210123110020010010100000202?1?????</seq>
+      </row>
+      <row id="Row36754" otu="Tl24958">
+        <seq>2000001020002000?00????000011011000?0010200?11011???0001?210123110020010010100000202?1?????</seq>
+      </row>
+      <row id="Row36755" otu="Tl24945">
+        <seq>0000111001102000?00????01001100100021000-000?30200110000020012110011000000000???10001?10301</seq>
+      </row>
+      <row id="Row36756" otu="Tl24960">
+        <seq>0000111000012000?00????01011111100021000000?30200011000002000211001200000000020110000?10??1</seq>
+      </row>
+      <row id="Row36757" otu="Tl24959">
+        <seq>0100001001013000?00????01001101100111000000?3020001??00002001211001000000000010110100?10?0?</seq>
+      </row>
+      <row id="Row36758" otu="Tl24954">
+        <seq>0110001001002000?00????0100110110011100001103020001100000200121100010000001102011?001?20301</seq>
+      </row>
+      <row id="Row36759" otu="Tl24963">
+        <seq>1000011010132000010????22001121100100000211030200011000011001211000010?00?0100000?000?102?1</seq>
+      </row>
+      <row id="Row36760" otu="Tl24938">
+        <seq>0000011000022000?00????01011100100110000000?202??????000?2100002000010?10?00003010140?1????</seq>
+      </row>
+      <row id="Row36761" otu="Tl24943">
+        <seq>0100011000002001?10????02010011101??1000111020100011000002100000000000100001003100100?100?0</seq>
+      </row>
+      <row id="Row36762" otu="Tl24948">
+        <seq>0100011000002001?10????02001000001??100011202010001100001210100100100000001?00210?100?100?0</seq>
+      </row>
+      <row id="Row36763" otu="Tl24946">
+        <seq>3000011000013100000????2100000010?1110001110210000000000121000000001001101010001000010?0---</seq>
+      </row>
+      <row id="Row36764" otu="Tl24947">
+        <seq>0000001001123100000?????101111110?110000?2222000000000002210011211?200110100020010011??0001</seq>
+      </row>
+      <row id="Row36765" otu="Tl24962">
+        <seq>0000011001023000000????2100000010?11000011202020001100001210131211?2001?0100010010111?00000</seq>
+      </row>
+      <row id="Row36766" otu="Tl24967">
+        <seq>0102000001123000010?????0?00100100100000000?01000001001??210010211?2001000000041001100?0010</seq>
+      </row>
+      <row id="Row36767" otu="Tl24951">
+        <seq>010000?001120012000????201100111000?101012212020011000000210000100100010000001210001??20300</seq>
+      </row>
+      <row id="Row36768" otu="Tl24961">
+        <seq>01000000011210121111200000110111000?0000122120200111000002100000000000100100004100011?20300</seq>
+      </row>
+      <row id="Row36769" otu="Tl24935">
+        <seq>0112000001121002110????20101000100010000012212010011000001210101211?200100001004100111?2030</seq>
+      </row>
+      <row id="Row36770" otu="Tl24956">
+        <seq>010100000112201211110110000110110010000012212010001100001211033211?201100001121110020?00200</seq>
+      </row>
+      <row id="Row36771" otu="Tl24968">
+        <seq>011100000112101211110110000011110010000022212010001100001211033211?211?00?01011102120?00200</seq>
+      </row>
+      <row id="Row36772" otu="Tl24952">
+        <seq>000000000112001211110110000110110011000012212010001100001210113011?200100000120010020?00000</seq>
+      </row>
+      <row id="Row36773" otu="Tl24944">
+        <seq>0111101001121012111100100001101100110001213120000001000012101100100200100000001100110??0200</seq>
+      </row>
+      <row id="Row36774" otu="Tl24971">
+        <seq>0111000001121010111100100001101100100001110?20000201000012100100100200000000003101120??1401</seq>
+      </row>
+      <row id="Row36775" otu="Tl24969">
+        <seq>000000000112001211100000001001101???000012412000000??0001211031211?20010000100200012???1200</seq>
+      </row>
+      <row id="Row36776" otu="Tl24949">
+        <seq>000000000112301211101000000000001???000012412000000100001211031211?200100001002100120??1200</seq>
+      </row>
+      <row id="Row36777" otu="Tl24937">
+        <seq>000000000112301211101000000000110010000012412000000??00012110102000200100001002100120??1?0?</seq>
+      </row>
+      <row id="Row36778" otu="Tl24939">
+        <seq>0000000001120002111000100000001102100000111?20000001000012101000100200100001012110220??1100</seq>
+      </row>
+      <row id="Row36779" otu="Tl24970">
+        <seq>000000000112001211110010000001111???000012312000000??0001210010010020010000001210012???1100</seq>
+      </row>
+      <row id="Row36780" otu="Tl24940">
+        <seq>0110000001120012111200100010011000100000113120000001000012100100100200001001002100220??401-</seq>
+      </row>
+      <row id="Row36781" otu="Tl24965">
+        <seq>00000000011200021111000000101110001000001121200000010000121?0100100200101001002100120??1100</seq>
+      </row>
+      <row id="Row36782" otu="Tl24953">
+        <seq>000000000112001?11112000000000100010000011212000000100001210110000020000001101210?13???1000</seq>
+      </row>
+      <row id="Row36783" otu="Tl24964">
+        <seq>0012000001120012111120000110011002??000011212000000100001210000010020000001101201?230??1000</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb5060" id="Tb5060" label="Tb5060" otus="Tls9709" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@64861a95 $Rev: 1040 $" datatype="xsd:string" id="meta5459917" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S306" id="meta5459916" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr1433" id="Tr1433" label="Fig. 13" xsi:type="nex:FloatTree">
+      <meta content="37" datatype="xsd:integer" id="meta5459923" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta5459922" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta5459921" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta5459920" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5459919" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn92484"/>
+      <node id="Tn92524" label="Outgroup to Ochnaceae" otu="Tl24950"/>
+      <node id="Tn92494"/>
+      <node id="Tn92527"/>
+      <node id="Tn92483"/>
+      <node id="Tn92504"/>
+      <node id="Tn92488" label="Ouratea" otu="Tl24942"/>
+      <node id="Tn92469" label="Brackenridgea" otu="Tl24936"/>
+      <node id="Tn92519" label="Ochna" otu="Tl110887"/>
+      <node id="Tn92462"/>
+      <node id="Tn92472" label="Lophira" otu="Tl24966"/>
+      <node id="Tn92496"/>
+      <node id="Tn92480" label="Perissocarpa" otu="Tl24941"/>
+      <node id="Tn92516"/>
+      <node id="Tn92471" label="Elvasia calophyllea" otu="Tl24957"/>
+      <node id="Tn92461" label="Elvasia elvasioides" otu="Tl24958"/>
+      <node id="Tn92501"/>
+      <node id="Tn92482"/>
+      <node id="Tn92474"/>
+      <node id="Tn92520"/>
+      <node id="Tn92517" label="Rhytidanthera" otu="Tl24945"/>
+      <node id="Tn92503" label="Godoya" otu="Tl24960"/>
+      <node id="Tn92463"/>
+      <node id="Tn92497" label="Krukoviella" otu="Tl24959"/>
+      <node id="Tn92481" label="Cespedesia" otu="Tl24954"/>
+      <node id="Tn92515" label="Testulea" otu="Tl24963"/>
+      <node id="Tn92465"/>
+      <node id="Tn92489" label="Fleurydora" otu="Tl24938"/>
+      <node id="Tn92511"/>
+      <node id="Tn92521"/>
+      <node id="Tn92492"/>
+      <node id="Tn92466" label="Philacra" otu="Tl24943"/>
+      <node id="Tn92499" label="Luxemburgia" otu="Tl24948"/>
+      <node id="Tn92479" label="Blastemanthus" otu="Tl24946"/>
+      <node id="Tn92514"/>
+      <node id="Tn92476"/>
+      <node id="Tn92470" label="Wallacea" otu="Tl24947"/>
+      <node id="Tn92509" label="Poecilandra" otu="Tl24962"/>
+      <node id="Tn92505"/>
+      <node id="Tn92500" label="Euthemis" otu="Tl24967"/>
+      <node id="Tn92529"/>
+      <node id="Tn92486"/>
+      <node id="Tn92487"/>
+      <node id="Tn92460" label="Schuurmansia henningsii" otu="Tl24951"/>
+      <node id="Tn92498" label="Schuurmansia elegans" otu="Tl24961"/>
+      <node id="Tn92467" label="Schuurmansiella" otu="Tl24935"/>
+      <node id="Tn92502"/>
+      <node id="Tn92506"/>
+      <node id="Tn92513"/>
+      <node id="Tn92531" label="Tyleria spectabilis" otu="Tl24956"/>
+      <node id="Tn92495" label="Adenanthe" otu="Tl24968"/>
+      <node id="Tn92473" label="Tyleria spathulata" otu="Tl24952"/>
+      <node id="Tn92464"/>
+      <node id="Tn92523"/>
+      <node id="Tn92478" label="Indosinia" otu="Tl24944"/>
+      <node id="Tn92475" label="Adenarake" otu="Tl24971"/>
+      <node id="Tn92512"/>
+      <node id="Tn92490"/>
+      <node id="Tn92507"/>
+      <node id="Tn92510" label="Roraimanthus" otu="Tl24969"/>
+      <node id="Tn92491" label="Leitgebia" otu="Tl24949"/>
+      <node id="Tn92526" label="Pentaspatella" otu="Tl24937"/>
+      <node id="Tn92528"/>
+      <node id="Tn92493" label="Sauvagesia erecta" otu="Tl24939"/>
+      <node id="Tn92508" label="Sauvagesia nudicaulis" otu="Tl24970"/>
+      <node id="Tn92518"/>
+      <node id="Tn92530"/>
+      <node id="Tn92522" label="Lavradia" otu="Tl24940"/>
+      <node id="Tn92525" label="Vausagesia" otu="Tl24965"/>
+      <node id="Tn92468"/>
+      <node id="Tn92485" label="Indovethia" otu="Tl24953"/>
+      <node id="Tn92477" label="Neckia" otu="Tl24964"/>
+      <edge id="edge5459926" source="Tn92484" target="Tn92524"/>
+      <edge id="edge5459928" source="Tn92484" target="Tn92494"/>
+      <edge id="edge5459930" source="Tn92494" target="Tn92527"/>
+      <edge id="edge5459932" source="Tn92527" target="Tn92483"/>
+      <edge id="edge5459934" source="Tn92483" target="Tn92504"/>
+      <edge id="edge5459936" source="Tn92504" target="Tn92488"/>
+      <edge id="edge5459938" source="Tn92504" target="Tn92469"/>
+      <edge id="edge5459940" source="Tn92483" target="Tn92519"/>
+      <edge id="edge5459942" source="Tn92527" target="Tn92462"/>
+      <edge id="edge5459944" source="Tn92462" target="Tn92472"/>
+      <edge id="edge5459946" source="Tn92462" target="Tn92496"/>
+      <edge id="edge5459948" source="Tn92496" target="Tn92480"/>
+      <edge id="edge5459950" source="Tn92496" target="Tn92516"/>
+      <edge id="edge5459952" source="Tn92516" target="Tn92471"/>
+      <edge id="edge5459954" source="Tn92516" target="Tn92461"/>
+      <edge id="edge5459956" source="Tn92494" target="Tn92501"/>
+      <edge id="edge5459958" source="Tn92501" target="Tn92482"/>
+      <edge id="edge5459960" source="Tn92482" target="Tn92474"/>
+      <edge id="edge5459962" source="Tn92474" target="Tn92520"/>
+      <edge id="edge5459964" source="Tn92520" target="Tn92517"/>
+      <edge id="edge5459966" source="Tn92520" target="Tn92503"/>
+      <edge id="edge5459968" source="Tn92474" target="Tn92463"/>
+      <edge id="edge5459970" source="Tn92463" target="Tn92497"/>
+      <edge id="edge5459972" source="Tn92463" target="Tn92481"/>
+      <edge id="edge5459974" source="Tn92482" target="Tn92515"/>
+      <edge id="edge5459976" source="Tn92501" target="Tn92465"/>
+      <edge id="edge5459978" source="Tn92465" target="Tn92489"/>
+      <edge id="edge5459980" source="Tn92465" target="Tn92511"/>
+      <edge id="edge5459982" source="Tn92511" target="Tn92521"/>
+      <edge id="edge5459984" source="Tn92521" target="Tn92492"/>
+      <edge id="edge5459986" source="Tn92492" target="Tn92466"/>
+      <edge id="edge5459988" source="Tn92492" target="Tn92499"/>
+      <edge id="edge5459990" source="Tn92521" target="Tn92479"/>
+      <edge id="edge5459992" source="Tn92511" target="Tn92514"/>
+      <edge id="edge5459994" source="Tn92514" target="Tn92476"/>
+      <edge id="edge5459996" source="Tn92476" target="Tn92470"/>
+      <edge id="edge5459998" source="Tn92476" target="Tn92509"/>
+      <edge id="edge5460000" source="Tn92514" target="Tn92505"/>
+      <edge id="edge5460002" source="Tn92505" target="Tn92500"/>
+      <edge id="edge5460004" source="Tn92505" target="Tn92529"/>
+      <edge id="edge5460006" source="Tn92529" target="Tn92486"/>
+      <edge id="edge5460008" source="Tn92486" target="Tn92487"/>
+      <edge id="edge5460010" source="Tn92487" target="Tn92460"/>
+      <edge id="edge5460012" source="Tn92487" target="Tn92498"/>
+      <edge id="edge5460014" source="Tn92486" target="Tn92467"/>
+      <edge id="edge5460016" source="Tn92529" target="Tn92502"/>
+      <edge id="edge5460018" source="Tn92502" target="Tn92506"/>
+      <edge id="edge5460020" source="Tn92506" target="Tn92513"/>
+      <edge id="edge5460022" source="Tn92513" target="Tn92531"/>
+      <edge id="edge5460024" source="Tn92513" target="Tn92495"/>
+      <edge id="edge5460026" source="Tn92506" target="Tn92473"/>
+      <edge id="edge5460028" source="Tn92502" target="Tn92464"/>
+      <edge id="edge5460030" source="Tn92464" target="Tn92523"/>
+      <edge id="edge5460032" source="Tn92523" target="Tn92478"/>
+      <edge id="edge5460034" source="Tn92523" target="Tn92475"/>
+      <edge id="edge5460036" source="Tn92464" target="Tn92512"/>
+      <edge id="edge5460038" source="Tn92512" target="Tn92490"/>
+      <edge id="edge5460040" source="Tn92490" target="Tn92507"/>
+      <edge id="edge5460042" source="Tn92507" target="Tn92510"/>
+      <edge id="edge5460044" source="Tn92507" target="Tn92491"/>
+      <edge id="edge5460046" source="Tn92490" target="Tn92526"/>
+      <edge id="edge5460048" source="Tn92512" target="Tn92528"/>
+      <edge id="edge5460050" source="Tn92528" target="Tn92493"/>
+      <edge id="edge5460052" source="Tn92528" target="Tn92508"/>
+      <edge id="edge5460054" source="Tn92528" target="Tn92518"/>
+      <edge id="edge5460056" source="Tn92518" target="Tn92530"/>
+      <edge id="edge5460058" source="Tn92530" target="Tn92522"/>
+      <edge id="edge5460060" source="Tn92530" target="Tn92525"/>
+      <edge id="edge5460062" source="Tn92518" target="Tn92468"/>
+      <edge id="edge5460064" source="Tn92468" target="Tn92485"/>
+      <edge id="edge5460066" source="Tn92468" target="Tn92477"/>
+    </tree>
+    <tree about="#Tr1434" id="Tr1434" label="Fig. 14" xsi:type="nex:FloatTree">
+      <meta content="37" datatype="xsd:integer" id="meta5460072" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta5460071" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta5460070" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta5460069" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5460068" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn92539"/>
+      <node id="Tn92593" label="Outgroup to Ochnaceae" otu="Tl24950"/>
+      <node id="Tn92537"/>
+      <node id="Tn92543"/>
+      <node id="Tn92576" label="Lophira" otu="Tl24966"/>
+      <node id="Tn92586"/>
+      <node id="Tn92555"/>
+      <node id="Tn92596"/>
+      <node id="Tn92544" label="Ouratea" otu="Tl24942"/>
+      <node id="Tn92595" label="Brackenridgea" otu="Tl24936"/>
+      <node id="Tn92600" label="Ochna" otu="Tl110887"/>
+      <node id="Tn92597"/>
+      <node id="Tn92533" label="Perissocarpa" otu="Tl24941"/>
+      <node id="Tn92556"/>
+      <node id="Tn92580" label="Elvasia calophyllea" otu="Tl24957"/>
+      <node id="Tn92598" label="Elvasia elvasioides" otu="Tl24958"/>
+      <node id="Tn92571"/>
+      <node id="Tn92545" label="Blastemanthus" otu="Tl24946"/>
+      <node id="Tn92560"/>
+      <node id="Tn92587"/>
+      <node id="Tn92568" label="Philacra" otu="Tl24943"/>
+      <node id="Tn92536" label="Luxemburgia" otu="Tl24948"/>
+      <node id="Tn92590"/>
+      <node id="Tn92594" label="Fleurydora" otu="Tl24938"/>
+      <node id="Tn92551"/>
+      <node id="Tn92534"/>
+      <node id="Tn92585"/>
+      <node id="Tn92566" label="Krukoviella" otu="Tl24959"/>
+      <node id="Tn92547" label="Cespedesia" otu="Tl24954"/>
+      <node id="Tn92535"/>
+      <node id="Tn92581" label="Godoya" otu="Tl24960"/>
+      <node id="Tn92599" label="Rhytidanthera" otu="Tl24945"/>
+      <node id="Tn92561" label="Testulea" otu="Tl24963"/>
+      <node id="Tn92562"/>
+      <node id="Tn92591" label="Poecilandra" otu="Tl24962"/>
+      <node id="Tn92542"/>
+      <node id="Tn92549" label="Wallacea" otu="Tl24947"/>
+      <node id="Tn92558"/>
+      <node id="Tn92575" label="Euthemis" otu="Tl24967"/>
+      <node id="Tn92532"/>
+      <node id="Tn92563"/>
+      <node id="Tn92570"/>
+      <node id="Tn92553" label="Schuurmansia henningsii" otu="Tl24951"/>
+      <node id="Tn92577" label="Schuurmansia elegans" otu="Tl24961"/>
+      <node id="Tn92584" label="Schuurmansiella" otu="Tl24935"/>
+      <node id="Tn92540"/>
+      <node id="Tn92546"/>
+      <node id="Tn92541"/>
+      <node id="Tn92572" label="Tyleria spectabilis" otu="Tl24956"/>
+      <node id="Tn92548" label="Adenanthe" otu="Tl24968"/>
+      <node id="Tn92602" label="Tyleria spathulata" otu="Tl24952"/>
+      <node id="Tn92559"/>
+      <node id="Tn92569"/>
+      <node id="Tn92589" label="Indosinia" otu="Tl24944"/>
+      <node id="Tn92601" label="Adenarake" otu="Tl24971"/>
+      <node id="Tn92538"/>
+      <node id="Tn92574"/>
+      <node id="Tn92565" label="Neckia" otu="Tl24964"/>
+      <node id="Tn92592" label="Indovethia" otu="Tl24953"/>
+      <node id="Tn92588"/>
+      <node id="Tn92550" label="Sauvagesia nudicaulis" otu="Tl24970"/>
+      <node id="Tn92582"/>
+      <node id="Tn92578" label="Lavradia" otu="Tl24940"/>
+      <node id="Tn92567" label="Vausagesia" otu="Tl24965"/>
+      <node id="Tn92564"/>
+      <node id="Tn92552" label="Sauvagesia erecta" otu="Tl24939"/>
+      <node id="Tn92579"/>
+      <node id="Tn92583" label="Pentaspatella" otu="Tl24937"/>
+      <node id="Tn92554"/>
+      <node id="Tn92557" label="Leitgebia" otu="Tl24949"/>
+      <node id="Tn92573" label="Roraimanthus" otu="Tl24969"/>
+      <edge id="edge5460075" source="Tn92539" target="Tn92593"/>
+      <edge id="edge5460077" source="Tn92539" target="Tn92537"/>
+      <edge id="edge5460079" source="Tn92537" target="Tn92543"/>
+      <edge id="edge5460081" source="Tn92543" target="Tn92576"/>
+      <edge id="edge5460083" source="Tn92543" target="Tn92586"/>
+      <edge id="edge5460085" source="Tn92586" target="Tn92555"/>
+      <edge id="edge5460087" source="Tn92555" target="Tn92596"/>
+      <edge id="edge5460089" source="Tn92596" target="Tn92544"/>
+      <edge id="edge5460091" source="Tn92596" target="Tn92595"/>
+      <edge id="edge5460093" source="Tn92555" target="Tn92600"/>
+      <edge id="edge5460095" source="Tn92586" target="Tn92597"/>
+      <edge id="edge5460097" source="Tn92597" target="Tn92533"/>
+      <edge id="edge5460099" source="Tn92597" target="Tn92556"/>
+      <edge id="edge5460101" source="Tn92556" target="Tn92580"/>
+      <edge id="edge5460103" source="Tn92556" target="Tn92598"/>
+      <edge id="edge5460105" source="Tn92537" target="Tn92571"/>
+      <edge id="edge5460107" source="Tn92571" target="Tn92545"/>
+      <edge id="edge5460109" source="Tn92571" target="Tn92560"/>
+      <edge id="edge5460111" source="Tn92560" target="Tn92587"/>
+      <edge id="edge5460113" source="Tn92587" target="Tn92568"/>
+      <edge id="edge5460115" source="Tn92587" target="Tn92536"/>
+      <edge id="edge5460117" source="Tn92560" target="Tn92590"/>
+      <edge id="edge5460119" source="Tn92590" target="Tn92594"/>
+      <edge id="edge5460121" source="Tn92590" target="Tn92551"/>
+      <edge id="edge5460123" source="Tn92551" target="Tn92534"/>
+      <edge id="edge5460125" source="Tn92534" target="Tn92585"/>
+      <edge id="edge5460127" source="Tn92585" target="Tn92566"/>
+      <edge id="edge5460129" source="Tn92585" target="Tn92547"/>
+      <edge id="edge5460131" source="Tn92534" target="Tn92535"/>
+      <edge id="edge5460133" source="Tn92535" target="Tn92581"/>
+      <edge id="edge5460135" source="Tn92535" target="Tn92599"/>
+      <edge id="edge5460137" source="Tn92551" target="Tn92561"/>
+      <edge id="edge5460139" source="Tn92590" target="Tn92562"/>
+      <edge id="edge5460141" source="Tn92562" target="Tn92591"/>
+      <edge id="edge5460143" source="Tn92562" target="Tn92542"/>
+      <edge id="edge5460145" source="Tn92542" target="Tn92549"/>
+      <edge id="edge5460147" source="Tn92542" target="Tn92558"/>
+      <edge id="edge5460149" source="Tn92558" target="Tn92575"/>
+      <edge id="edge5460151" source="Tn92558" target="Tn92532"/>
+      <edge id="edge5460153" source="Tn92532" target="Tn92563"/>
+      <edge id="edge5460155" source="Tn92563" target="Tn92570"/>
+      <edge id="edge5460157" source="Tn92570" target="Tn92553"/>
+      <edge id="edge5460159" source="Tn92570" target="Tn92577"/>
+      <edge id="edge5460161" source="Tn92563" target="Tn92584"/>
+      <edge id="edge5460163" source="Tn92532" target="Tn92540"/>
+      <edge id="edge5460165" source="Tn92540" target="Tn92546"/>
+      <edge id="edge5460167" source="Tn92546" target="Tn92541"/>
+      <edge id="edge5460169" source="Tn92541" target="Tn92572"/>
+      <edge id="edge5460171" source="Tn92541" target="Tn92548"/>
+      <edge id="edge5460173" source="Tn92546" target="Tn92602"/>
+      <edge id="edge5460175" source="Tn92540" target="Tn92559"/>
+      <edge id="edge5460177" source="Tn92559" target="Tn92569"/>
+      <edge id="edge5460179" source="Tn92569" target="Tn92589"/>
+      <edge id="edge5460181" source="Tn92569" target="Tn92601"/>
+      <edge id="edge5460183" source="Tn92559" target="Tn92538"/>
+      <edge id="edge5460185" source="Tn92538" target="Tn92574"/>
+      <edge id="edge5460187" source="Tn92574" target="Tn92565"/>
+      <edge id="edge5460189" source="Tn92574" target="Tn92592"/>
+      <edge id="edge5460191" source="Tn92538" target="Tn92588"/>
+      <edge id="edge5460193" source="Tn92588" target="Tn92550"/>
+      <edge id="edge5460195" source="Tn92588" target="Tn92582"/>
+      <edge id="edge5460197" source="Tn92582" target="Tn92578"/>
+      <edge id="edge5460199" source="Tn92582" target="Tn92567"/>
+      <edge id="edge5460201" source="Tn92588" target="Tn92564"/>
+      <edge id="edge5460203" source="Tn92564" target="Tn92552"/>
+      <edge id="edge5460205" source="Tn92564" target="Tn92579"/>
+      <edge id="edge5460207" source="Tn92579" target="Tn92583"/>
+      <edge id="edge5460209" source="Tn92579" target="Tn92554"/>
+      <edge id="edge5460211" source="Tn92554" target="Tn92557"/>
+      <edge id="edge5460213" source="Tn92554" target="Tn92573"/>
+    </tree>
+    <tree about="#Tr1435" id="Tr1435" label="Fig. 15" xsi:type="nex:FloatTree">
+      <meta content="37" datatype="xsd:integer" id="meta5460219" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta5460218" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta5460217" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta5460216" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S306" id="meta5460215" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn92634"/>
+      <node id="Tn92656" label="Outgroup to Ochnaceae" otu="Tl24950"/>
+      <node id="Tn92648"/>
+      <node id="Tn92638"/>
+      <node id="Tn92661"/>
+      <node id="Tn92659"/>
+      <node id="Tn92626" label="Ouratea" otu="Tl24942"/>
+      <node id="Tn92672" label="Brackenridgea" otu="Tl24936"/>
+      <node id="Tn92633" label="Ochna" otu="Tl110887"/>
+      <node id="Tn92616"/>
+      <node id="Tn92604" label="Lophira" otu="Tl24966"/>
+      <node id="Tn92631"/>
+      <node id="Tn92615" label="Perissocarpa" otu="Tl24941"/>
+      <node id="Tn92609"/>
+      <node id="Tn92657" label="Elvasia calophyllea" otu="Tl24957"/>
+      <node id="Tn92643" label="Elvasia elvasioides" otu="Tl24958"/>
+      <node id="Tn92662"/>
+      <node id="Tn92652"/>
+      <node id="Tn92613"/>
+      <node id="Tn92665"/>
+      <node id="Tn92617"/>
+      <node id="Tn92660"/>
+      <node id="Tn92605" label="Philacra" otu="Tl24943"/>
+      <node id="Tn92627" label="Luxemburgia" otu="Tl24948"/>
+      <node id="Tn92611" label="Blastemanthus" otu="Tl24946"/>
+      <node id="Tn92621"/>
+      <node id="Tn92649" label="Poecilandra" otu="Tl24962"/>
+      <node id="Tn92632" label="Wallacea" otu="Tl24947"/>
+      <node id="Tn92650" label="Fleurydora" otu="Tl24938"/>
+      <node id="Tn92606"/>
+      <node id="Tn92640" label="Testulea" otu="Tl24963"/>
+      <node id="Tn92667"/>
+      <node id="Tn92618"/>
+      <node id="Tn92619" label="Krukoviella" otu="Tl24959"/>
+      <node id="Tn92658" label="Cespedesia" otu="Tl24954"/>
+      <node id="Tn92647"/>
+      <node id="Tn92608" label="Godoya" otu="Tl24960"/>
+      <node id="Tn92646" label="Rhytidanthera" otu="Tl24945"/>
+      <node id="Tn92639"/>
+      <node id="Tn92663" label="Euthemis" otu="Tl24967"/>
+      <node id="Tn92653"/>
+      <node id="Tn92673"/>
+      <node id="Tn92637"/>
+      <node id="Tn92620" label="Schuurmansia henningsii" otu="Tl24951"/>
+      <node id="Tn92624" label="Schuurmansia elegans" otu="Tl24961"/>
+      <node id="Tn92603" label="Schuurmansiella" otu="Tl24935"/>
+      <node id="Tn92623"/>
+      <node id="Tn92655"/>
+      <node id="Tn92625"/>
+      <node id="Tn92622" label="Tyleria spectabilis" otu="Tl24956"/>
+      <node id="Tn92612" label="Adenanthe" otu="Tl24968"/>
+      <node id="Tn92641" label="Tyleria spathulata" otu="Tl24952"/>
+      <node id="Tn92630"/>
+      <node id="Tn92671"/>
+      <node id="Tn92628" label="Indosinia" otu="Tl24944"/>
+      <node id="Tn92645" label="Adenarake" otu="Tl24971"/>
+      <node id="Tn92642"/>
+      <node id="Tn92607"/>
+      <node id="Tn92666" label="Pentaspatella" otu="Tl24937"/>
+      <node id="Tn92636"/>
+      <node id="Tn92614" label="Leitgebia" otu="Tl24949"/>
+      <node id="Tn92635" label="Roraimanthus" otu="Tl24969"/>
+      <node id="Tn92644"/>
+      <node id="Tn92651" label="Sauvagesia erecta" otu="Tl24939"/>
+      <node id="Tn92629" label="Sauvagesia nudicaulis" otu="Tl24970"/>
+      <node id="Tn92670"/>
+      <node id="Tn92654"/>
+      <node id="Tn92668" label="Neckia" otu="Tl24964"/>
+      <node id="Tn92664" label="Indovethia" otu="Tl24953"/>
+      <node id="Tn92674"/>
+      <node id="Tn92669" label="Lavradia" otu="Tl24940"/>
+      <node id="Tn92610" label="Vausagesia" otu="Tl24965"/>
+      <edge id="edge5460222" source="Tn92634" target="Tn92656"/>
+      <edge id="edge5460224" source="Tn92634" target="Tn92648"/>
+      <edge id="edge5460226" source="Tn92648" target="Tn92638"/>
+      <edge id="edge5460228" source="Tn92638" target="Tn92661"/>
+      <edge id="edge5460230" source="Tn92661" target="Tn92659"/>
+      <edge id="edge5460232" source="Tn92659" target="Tn92626"/>
+      <edge id="edge5460234" source="Tn92659" target="Tn92672"/>
+      <edge id="edge5460236" source="Tn92661" target="Tn92633"/>
+      <edge id="edge5460238" source="Tn92638" target="Tn92616"/>
+      <edge id="edge5460240" source="Tn92616" target="Tn92604"/>
+      <edge id="edge5460242" source="Tn92616" target="Tn92631"/>
+      <edge id="edge5460244" source="Tn92631" target="Tn92615"/>
+      <edge id="edge5460246" source="Tn92631" target="Tn92609"/>
+      <edge id="edge5460248" source="Tn92609" target="Tn92657"/>
+      <edge id="edge5460250" source="Tn92609" target="Tn92643"/>
+      <edge id="edge5460252" source="Tn92648" target="Tn92662"/>
+      <edge id="edge5460254" source="Tn92662" target="Tn92652"/>
+      <edge id="edge5460256" source="Tn92652" target="Tn92613"/>
+      <edge id="edge5460258" source="Tn92613" target="Tn92665"/>
+      <edge id="edge5460260" source="Tn92665" target="Tn92617"/>
+      <edge id="edge5460262" source="Tn92617" target="Tn92660"/>
+      <edge id="edge5460264" source="Tn92660" target="Tn92605"/>
+      <edge id="edge5460266" source="Tn92660" target="Tn92627"/>
+      <edge id="edge5460268" source="Tn92617" target="Tn92611"/>
+      <edge id="edge5460270" source="Tn92665" target="Tn92621"/>
+      <edge id="edge5460272" source="Tn92621" target="Tn92649"/>
+      <edge id="edge5460274" source="Tn92621" target="Tn92632"/>
+      <edge id="edge5460276" source="Tn92613" target="Tn92650"/>
+      <edge id="edge5460278" source="Tn92652" target="Tn92606"/>
+      <edge id="edge5460280" source="Tn92606" target="Tn92640"/>
+      <edge id="edge5460282" source="Tn92606" target="Tn92667"/>
+      <edge id="edge5460284" source="Tn92667" target="Tn92618"/>
+      <edge id="edge5460286" source="Tn92618" target="Tn92619"/>
+      <edge id="edge5460288" source="Tn92618" target="Tn92658"/>
+      <edge id="edge5460290" source="Tn92667" target="Tn92647"/>
+      <edge id="edge5460292" source="Tn92647" target="Tn92608"/>
+      <edge id="edge5460294" source="Tn92647" target="Tn92646"/>
+      <edge id="edge5460296" source="Tn92662" target="Tn92639"/>
+      <edge id="edge5460298" source="Tn92639" target="Tn92663"/>
+      <edge id="edge5460300" source="Tn92639" target="Tn92653"/>
+      <edge id="edge5460302" source="Tn92653" target="Tn92673"/>
+      <edge id="edge5460304" source="Tn92673" target="Tn92637"/>
+      <edge id="edge5460306" source="Tn92637" target="Tn92620"/>
+      <edge id="edge5460308" source="Tn92637" target="Tn92624"/>
+      <edge id="edge5460310" source="Tn92673" target="Tn92603"/>
+      <edge id="edge5460312" source="Tn92653" target="Tn92623"/>
+      <edge id="edge5460314" source="Tn92623" target="Tn92655"/>
+      <edge id="edge5460316" source="Tn92655" target="Tn92625"/>
+      <edge id="edge5460318" source="Tn92625" target="Tn92622"/>
+      <edge id="edge5460320" source="Tn92625" target="Tn92612"/>
+      <edge id="edge5460322" source="Tn92655" target="Tn92641"/>
+      <edge id="edge5460324" source="Tn92623" target="Tn92630"/>
+      <edge id="edge5460326" source="Tn92630" target="Tn92671"/>
+      <edge id="edge5460328" source="Tn92671" target="Tn92628"/>
+      <edge id="edge5460330" source="Tn92671" target="Tn92645"/>
+      <edge id="edge5460332" source="Tn92630" target="Tn92642"/>
+      <edge id="edge5460334" source="Tn92642" target="Tn92607"/>
+      <edge id="edge5460336" source="Tn92607" target="Tn92666"/>
+      <edge id="edge5460338" source="Tn92607" target="Tn92636"/>
+      <edge id="edge5460340" source="Tn92636" target="Tn92614"/>
+      <edge id="edge5460342" source="Tn92636" target="Tn92635"/>
+      <edge id="edge5460344" source="Tn92642" target="Tn92644"/>
+      <edge id="edge5460346" source="Tn92644" target="Tn92651"/>
+      <edge id="edge5460348" source="Tn92644" target="Tn92629"/>
+      <edge id="edge5460350" source="Tn92644" target="Tn92670"/>
+      <edge id="edge5460352" source="Tn92670" target="Tn92654"/>
+      <edge id="edge5460354" source="Tn92654" target="Tn92668"/>
+      <edge id="edge5460356" source="Tn92654" target="Tn92664"/>
+      <edge id="edge5460358" source="Tn92670" target="Tn92674"/>
+      <edge id="edge5460360" source="Tn92674" target="Tn92669"/>
+      <edge id="edge5460362" source="Tn92674" target="Tn92610"/>
+    </tree>
+  </trees>
+</nex:nexml>
