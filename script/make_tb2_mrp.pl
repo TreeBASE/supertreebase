@@ -5,6 +5,7 @@ use Getopt::Long;
 use Bio::Phylo::IO 'parse';
 use Bio::Phylo::Util::Logger ':levels';
 use Bio::Phylo::Util::CONSTANT ':objecttypes';
+use Bio::Phylo::Util::Exceptions 'throw';
 
 # process command line arguments
 my ( $infile, $verbosity );
@@ -90,14 +91,23 @@ for my $forest ( @{ $forests } ) {
 	});
 	
 	# make an MRP matrix and iterate over the rows
-	$forest->make_matrix->visit(sub{
-		my $row  = shift;
-		my $char = $row->get_char;
-		my $name = $row->get_name;
-		
-		# this is the format of the final MRP data row:
-		# NCBI identifier, tab stop, a string of 0's and 1's, line break
-		print $name, "\t", $char, "\n";
-	});
+	eval {
+		my $matrix = $forest->make_matrix;
+		$matrix->visit(sub{
+			my $row  = shift;
+			my $char = $row->get_char;
+			my $name = $row->get_name;
+			
+			# this is the format of the final MRP data row:
+			# NCBI identifier, tab stop, a string of 0's and 1's, line break
+			print $name, "\t", $char, "\n";
+		})
+	};
+	if ( $@ ) {
+		throw 'API' => ref $@ ? $@->error : $@;
+	}
+	else {
+		$log->info("successfully processed $infile");
+	}
 }
 
