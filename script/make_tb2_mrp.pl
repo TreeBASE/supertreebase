@@ -27,6 +27,7 @@ eval {
 		'-format'     => 'nexml',
 		'-file'       => $infile,
 		'-as_project' => 1,
+		'-skip'       => [ _MATRIX_ ],
 	)
 };
 
@@ -41,73 +42,60 @@ else {
 	$log->info("successfully parsed $infile");
 }
 
-# fetch all taxon objects
-my $taxa = $proj->get_items(_TAXON_);
+# fetch the taxa blocks
+my $taxa_blocks = $proj->get_taxa;
 
-# collect those without NCBI identifiers, rename those with to the ID
-my @delete;
-for my $taxon ( @{ $taxa } ) {
-	my $id;
-	
-	# here we're reading semantic annotations from the NeXML
-	META: for my $meta ( @{ $taxon->get_meta('skos:closeMatch') } ) {
-		my $object = $meta->get_object;
+# delete taxa without NCBI identifiers, rename those with to the ID
+for my $taxa ( @{ $taxa_blocks } ) {
+	for my $taxon ( @{ $taxa->get_entities } ) {
+		my $id;
+		my $name = $taxon->get_name;
 		
-		# the object should be a uniprot uri for the NCBI taxonomy
-		if ( $object =~ m/.+uniprot.+?(\d+)/ ) {
-			$id = $1;
-			last META;
-		}
-	}
-	
-	
-	# rows in the final MRP table must be labeled
-	# with NCBI ids, not TB2 labels, so we rename
-	# all the tips in trees that point to this taxon
-	# and rename them
-	if ( $id ) {
-		$taxon->set_name( $id );
-		for my $node ( @{ $taxon->get_nodes } ) {
-			$node->set_name( $id );
-		}
-	}
-	
-	# we will prune out all taxa that don't have NCBI id annotations
-	else {
-		push @delete, $taxon;
-	}
-}
-
-# let's say a project could be multiple forests, though I doubt it for TB2
-my $forests = $proj->get_items(_FOREST_);
-
-# prune non-anchored taxa, make MRP from the rest
-for my $forest ( @{ $forests } ) {
-	
-	# for each tree in the tree block, delete the un-annotated tips/taxa
-	$forest->visit(sub{
-		my $tree = shift;
-		$tree->prune_tips(\@delete);
-	});
-	
-	# make an MRP matrix and iterate over the rows
-	eval {
-		my $matrix = $forest->make_matrix;
-		$matrix->visit(sub{
-			my $row  = shift;
-			my $char = $row->get_char;
-			my $name = $row->get_name;
+		# here we're reading semantic annotations from the NeXML
+		META: for my $meta ( @{ $taxon->get_meta('skos:closeMatch') } ) {
+			my $object = $meta->get_object;
 			
-			# this is the format of the final MRP data row:
-			# NCBI identifier, tab stop, a string of 0's and 1's, line break
-			print $name, "\t", $char, "\n";
-		})
-	};
-	if ( $@ ) {
-		throw 'API' => ref $@ ? $@->error : $@;
-	}
-	else {
-		$log->info("successfully processed $infile");
+			# the object should be a uniprot uri for the NCBI taxonomy
+			if ( $object =~ m/.+uniprot.+?(\d+)/ ) {
+				$id = $1;			
+				last META;
+			}
+		}
+		
+		
+		# rows in the final MRP table must be labeled
+		# with NCBI ids, not TB2 labels, so we rename
+		# all the tips in trees that point to this taxon
+		# and rename them
+		if ( $id ) {
+			$log->debug("keeping $name ($id)");
+			$taxon->set_name( $id );
+			for my $node ( @{ $taxon->get_nodes } ) {
+				$node->set_name( $id );
+			}
+		}
+		
+		# we will prune out all taxa that don't have NCBI id annotations
+		else {
+			$log->info("*** pruning $name");
+			$taxa->delete($taxon);
+			for my $node ( @{ $taxon->get_nodes } ) {
+				my $tree = $node->get_tree;
+				$tree->prune_tips([$node]);
+			}
+		}
 	}
 }
+
+# print results
+for my $forest ( @{ $proj->get_forests } ) {
+	my $matrix = $forest->make_matrix;
+	my $id = $forest->get_xml_id;
+	for my $row ( @{ $matrix->get_entities } ) {
+		my $name = $row->get_name;
+		my $char = $row->get_char;
+		print $id, "\t", $name, "\t", $char, "\n";
+	}
+}
+
 
