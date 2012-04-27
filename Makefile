@@ -9,6 +9,7 @@ CURL=curl
 DATA=data
 VERBOSITY=-v -v -v
 MRPDIR=$(DATA)/mrp
+MRPTABLE=$(MRPDIR)/combined.dat
 TAXDMP=taxdmp
 TAXDMPDIR=$(DATA)/$(TAXDMP)
 TAXDMPTMP=$(TAXDMPDIR)/tmp
@@ -33,6 +34,12 @@ all : tb2 $(NCBIMRP)
 
 tb2 : tb2studypurls $(TB2STUDYFILES) $(TB2TAXA)
 
+tb2mrp : $(TB2MRPFILES)
+
+tb2taxa : $(TB2TAXA)
+
+ncbimrp : $(NCBIMRP)
+
 clean_tb2 :
 	rm -rf $(TB2DATA)/*.url
 	rm -rf $(TB2DATA)/*.dat
@@ -54,11 +61,11 @@ $(TB2STUDYFILES) : %.xml : %.url
 
 # make TreeBASE MRP matrices
 $(TB2MRPFILES) : %.txt : %.xml
-	$(PERL) $(SCRIPT)/make_tb2_mrp.pl -i $< > $@
+	$(PERL) $(SCRIPT)/make_tb2_mrp.pl -i $< $(VERBOSITY) > $@
 
 # create list of unique taxon IDs
 $(TB2TAXA) : $(TB2MRPFILES)
-	cat $(TB2MRPFILES) | cut -f 1 | sort | uniq > $@
+	cat $(TB2MRPFILES) | cut -f 2 | sort | uniq > $@
 
 # download taxdmp archive
 $(TAXDMPARCH) :
@@ -70,6 +77,10 @@ $(NCBIFILES) : $(TAXDMPARCH)
 	cd $(TAXDMPDIR) && $(EXTRACT) $(TAXDMP).$(ARCH) && cd -	
 
 # make NCBI MRP matrix
-$(NCBIMRP) : $(NCBIFILES)
+$(NCBIMRP) : $(NCBIFILES) $(TB2TAXA)
 	$(MKPATH) $(MRPDIR) $(TAXDMPTMP)
 	$(PERL) $(SCRIPT)/make_ncbi_mrp.pl -taxa $(TB2TAXA) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+
+# concatenate NCBI and TreeBASE MRP matrices
+$(MRPTABLE) : $(TB2MRPFILES) $(NCBIMRP)
+	$(PERL) $(SCRIPT)/concat_mrp.pl -d $(TB2DATA) -n $(NCBIMRP) $(VERBOSITY) > $@
