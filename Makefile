@@ -22,13 +22,15 @@ NCBIFILES=$(NCBINODES) $(NCBINAMES)
 TB2STUDYPURLS=$(wildcard $(TB2DATA)/*.url)
 TB2STUDYFILES=$(patsubst %.url,%.xml,$(TB2STUDYPURLS))
 TB2MRPFILES=$(patsubst %.xml,%.txt,$(TB2STUDYFILES))
+TB2NRMLMRP=$(patsubst %.xml,%.dat,$(TB2STUDYFILES))
 TB2DATA=$(DATA)/treebase
 TB2SITEMAP=sitemap.xml
 TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
 TB2SITEMAPURL=http://treebase.org/treebase-web/$(TB2SITEMAP)
 TB2TAXA=$(TB2DATA)/taxa.txt
+TB2SPECIES=$(TB2DATA)/species.txt
 
-.PHONY : all tb2 clean_tb2
+.PHONY : all clean_tb2
 
 all : tb2 $(NCBIMRP)
 
@@ -37,6 +39,10 @@ tb2 : tb2studypurls $(TB2STUDYFILES) $(TB2TAXA)
 tb2mrp : $(TB2MRPFILES)
 
 tb2taxa : $(TB2TAXA)
+
+tb2species : $(TB2SPECIES)
+
+normalized : $(TB2SPECIES) $(TB2NRMLMRP)
 
 ncbimrp : $(NCBIMRP)
 
@@ -67,6 +73,13 @@ $(TB2MRPFILES) : %.txt : %.xml
 $(TB2TAXA) : $(TB2MRPFILES)
 	cat $(TB2MRPFILES) | cut -f 2 | sort | uniq > $@
 
+# make species-level list from TreeBASE taxon IDs
+$(TB2SPECIES) : $(TB2TAXA)
+	$(PERL) $(SCRIPT)/make_species_list.pl -taxa $(TB2TAXA) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+
+$(TB2NRMLMRP) : %.dat : %.txt
+	$(PERL) $(SCRIPT)/normalize_tb2_mrp.pl -i $< -s $(TB2SPECIES) $(VERBOSITY) > $@
+
 # download taxdmp archive
 $(TAXDMPARCH) :
 	$(MKPATH) $(TAXDMPDIR)
@@ -77,10 +90,10 @@ $(NCBIFILES) : $(TAXDMPARCH)
 	cd $(TAXDMPDIR) && $(EXTRACT) $(TAXDMP).$(ARCH) && cd -	
 
 # make NCBI MRP matrix
-$(NCBIMRP) : $(NCBIFILES) $(TB2TAXA)
+$(NCBIMRP) : $(NCBIFILES) $(TB2SPECIES)
 	$(MKPATH) $(MRPDIR) $(TAXDMPTMP)
-	$(PERL) $(SCRIPT)/make_ncbi_mrp.pl -taxa $(TB2TAXA) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+	$(PERL) $(SCRIPT)/make_ncbi_mrp.pl -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
 
 # concatenate NCBI and TreeBASE MRP matrices
 $(MRPTABLE) : $(TB2MRPFILES) $(NCBIMRP)
-	$(PERL) $(SCRIPT)/concat_mrp.pl -d $(TB2DATA) -n $(NCBIMRP) $(VERBOSITY) > $@
+	$(PERL) $(SCRIPT)/concat_mrp.pl -d $(TB2DATA) -n $(NCBIMRP) -p 'S[0-9]+\.dat' $(VERBOSITY) > $@
