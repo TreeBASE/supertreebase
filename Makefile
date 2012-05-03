@@ -6,6 +6,8 @@ ARCH=zip
 MKPATH=mkdir -p
 SCRIPT=script
 CURL=curl
+CAT=cat
+ECHO=echo
 DATA=data
 VERBOSITY=-v -v -v
 MRPDIR=$(DATA)/mrp
@@ -23,12 +25,15 @@ TB2STUDYPURLS=$(wildcard $(TB2DATA)/*.url)
 TB2STUDYFILES=$(patsubst %.url,%.xml,$(TB2STUDYPURLS))
 TB2MRPFILES=$(patsubst %.xml,%.txt,$(TB2STUDYFILES))
 TB2NRMLMRP=$(patsubst %.xml,%.dat,$(TB2STUDYFILES))
+TNTCOMMANDS=$(patsubst %.dat,%.run,$(TB2NRMLMRP))
 TB2DATA=$(DATA)/treebase
 TB2SITEMAP=sitemap.xml
 TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
 TB2SITEMAPURL=http://treebase.org/treebase-web/$(TB2SITEMAP)
 TB2TAXA=$(TB2DATA)/taxa.txt
 TB2SPECIES=$(TB2DATA)/species.txt
+TB2NCHAR=$(TB2DATA)/nchar.txt
+TNTSCRIPT=$(TB2DATA)/tntscript.runall
 
 .PHONY : all clean_tb2
 
@@ -44,7 +49,9 @@ tb2species : $(TB2SPECIES)
 
 normalized : $(TB2SPECIES) $(TB2NRMLMRP)
 
-ncbimrp : $(NCBIMRP)
+mrp : $(MRPTABLE)
+
+tnt : $(TB2NRMLMRP) $(TNTSCRIPT)
 
 clean_tb2 :
 	rm -rf $(TB2DATA)/*.url
@@ -77,6 +84,7 @@ $(TB2TAXA) : $(TB2MRPFILES)
 $(TB2SPECIES) : $(TB2TAXA)
 	$(PERL) $(SCRIPT)/make_species_list.pl -taxa $(TB2TAXA) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
 
+# make MRP tables with normalized species and ambiguity codes for polyphyly
 $(TB2NRMLMRP) : %.dat : %.txt
 	$(PERL) $(SCRIPT)/normalize_tb2_mrp.pl -i $< -s $(TB2SPECIES) $(VERBOSITY) > $@
 
@@ -90,10 +98,20 @@ $(NCBIFILES) : $(TAXDMPARCH)
 	cd $(TAXDMPDIR) && $(EXTRACT) $(TAXDMP).$(ARCH) && cd -	
 
 # make NCBI MRP matrix
-$(NCBIMRP) : $(NCBIFILES) $(TB2SPECIES)
-	$(MKPATH) $(MRPDIR) $(TAXDMPTMP)
-	$(PERL) $(SCRIPT)/make_ncbi_mrp.pl -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+#$(NCBIMRP) : $(NCBIFILES) $(TB2SPECIES)
+#	$(MKPATH) $(MRPDIR) $(TAXDMPTMP)
+#	$(PERL) $(SCRIPT)/make_ncbi_mrp.pl -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
 
 # concatenate NCBI and TreeBASE MRP matrices
-$(MRPTABLE) : $(TB2MRPFILES) $(NCBIMRP)
-	$(PERL) $(SCRIPT)/concat_mrp.pl -d $(TB2DATA) -n $(NCBIMRP) -p 'S[0-9]+\.dat' $(VERBOSITY) > $@
+$(MRPTABLE) : $(TB2MRPFILES) $(TB2SPECIES)
+	$(PERL) $(SCRIPT)/concat_mrp.pl -d $(TB2DATA) -s $(TB2SPECIES) -p 'S[0-9]+\.dat' $(VERBOSITY) > $@
+
+# make tnt file inclusion commands and single file with nchar for each treeblock
+$(TNTCOMMANDS) : %.run : %.dat
+	$(PERL) $(SCRIPT)/make_tnt.pl -i $< > $@ 2>> $(TB2NCHAR)
+
+# make the master tnt script
+$(TNTSCRIPT) : $(TNTCOMMANDS)
+	$(PERL) $(SCRIPT)/make_tnt_script.pl -n $(TB2NCHAR) -s $(TB2SPECIES) > $@
+	$(CAT) $(TNTCOMMANDS) >> $@
+	$(ECHO) 'proc/;' >> $@
