@@ -2,17 +2,17 @@
 use strict;
 use warnings;
 use Getopt::Long;
-use Bio::Phylo::Factory;
+use Digest::MD5 'md5';
 use Bio::Phylo::Util::Logger ':levels';
 
 # the growing MRP table
 my %Table;
 
 # process command line arguments
-my ( $dir, $ncbi, $verbose, $pattern );
+my ( $dir, $species, $verbose, $pattern );
 GetOptions(
 	'dir=s'     => \$dir,
-	'ncbi=s'    => \$ncbi,
+	'species=s' => \$species,
 	'pattern=s' => \$pattern,
 	'verbose+'  => \$verbose,
 );
@@ -23,16 +23,16 @@ my $log = Bio::Phylo::Util::Logger->new(
 	'-class' => 'main',
 );
 
-# read the NCBI MRP matrix
+# read the species file
 {
-	open my $fh, '<', $ncbi or die $!;
+	open my $fh, '<', $species or die $!;
 	while(<$fh>) {
 		chomp;
-		my @line   = split /\t/, $_;
-		my @fields = split //, $line[1];
-		$Table{$line[0]} = \@fields;
+		my @line = split /\t/, $_;
+		my @species = split /,/, $line[1];
+		$Table{$_} = [] for @species;
 	}
-	$log->info("read ".scalar(keys(%Table))." records from $ncbi");
+	$log->info("read ".scalar(keys(%Table))." records from $species");
 	close $fh;
 }
 
@@ -43,16 +43,14 @@ my $log = Bio::Phylo::Util::Logger->new(
 		if ( $entry =~ /$pattern/ ) {
 
 			# each file potentially has multiple tables for multiple tree blocks
+			my %seen;
 			for my $table ( read_tables("${dir}/${entry}") ) {
 				for my $taxon ( keys %Table ) {
-					if ( exists $table->{$taxon} ) {
-						push @{ $Table{$taxon} }, @{ $table->{$taxon} };
-					}
-					else {
-						for ( 1 .. $table->{'nchar'} ) {
-							push @{ $Table{$taxon} }, '?';
-						}
-					}
+					my $seq = $table->{$taxon} || ( '?' x $table->{'nchar'} );
+					my $digest = md5($seq);
+					my $compressed = compress($seq);
+					$seen{$digest} = \$compressed if not $seen{$digest};
+					push @{ $Table{$taxon} }, $seen{$digest};
 				}
 			}
 		}
@@ -62,8 +60,44 @@ my $log = Bio::Phylo::Util::Logger->new(
 # print result
 for my $taxon ( keys %Table ) {
 	print $taxon, "\t";
-	print join '', @{ $Table{$taxon} };
+	for my $ref ( @{ $Table{$taxon} } ) {
+		my $compressed = ${ $ref };
+		my $expanded = expand($compressed);
+		print $expanded;
+	}
 	print "\n";
+}
+
+# compresses MRP seq to two-bit bit vector
+sub compress {
+	my $seq = shift;
+	my %map = (
+		'1' => '11',
+		'0' => '00',
+		'2' => '01',
+		'?' => '10',
+	);
+	my $twobit = join '', map { $map{$_} } split //, $seq;
+	my $packed = pack('b*', $twobit);
+	return $packed;
+}
+
+# expands two-bit bit vector to MRP seq
+sub expand {
+	my $packed = shift;
+	my %rev = (
+		'11' => '1',
+		'00' => '0',
+		'01' => '2',
+		'10' => '?',
+	);
+	my @unpacked = unpack('b*', $packed);
+	my @revmapped;
+	for ( my $i = 0; $i <= $#unpacked; $i += 2 ) {
+		my $twobit = $unpacked[$i] . $unpacked[$i+1];
+		push @revmapped, $rev{$twobit};
+	}
+	return join '', @revmapped;
 }
 
 # return a list of table hashes
@@ -79,13 +113,12 @@ sub read_tables {
 		
 		# after normalize_tb2_mrp, each taxon is unique within block scope
 		my ( $blockid, $taxonid, $seq ) = @line;
-		$tables{$blockid} = {} if not $tables{$blockid};
-		my @fields = split //, $seq;
-		$tables{$blockid}->{$taxonid} = \@fields;
+		$tables{$blockid} = { 'nchar' => 0 } if not $tables{$blockid};
+		$tables{$blockid}->{$taxonid} = $seq;
 		
 		# store nchar
-		if ( scalar(@fields) > $tables{$blockid}->{'nchar'} ) {
-			$tables{$blockid}->{'nchar'} = scalar(@fields);
+		if ( length($seq) > $tables{$blockid}->{'nchar'} ) {
+			$tables{$blockid}->{'nchar'} = length($seq);
 		}				
 	}
 	close $fh;
