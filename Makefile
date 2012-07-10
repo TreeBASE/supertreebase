@@ -39,7 +39,9 @@ TNTSCRIPT=$(TB2DATA)/tntscript.runall
 
 all : tb2 $(NCBIMRP)
 
-tb2 : tb2studypurls $(TB2STUDYFILES) $(TB2TAXA)
+tb2 : tb2download $(TB2TAXA)
+
+tb2download : tb2studypurls $(TB2STUDYFILES)
 
 tb2mrp : $(TB2MRPFILES)
 
