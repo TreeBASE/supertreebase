@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S12411" generator="org.nexml.model.impl.DocumentImpl" id="S12411" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Tue Jul 10 07:39:13 EDT 2012" datatype="xsd:string" id="meta270824" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@2405a526 $Rev: 1060 $" datatype="xsd:string" id="meta270823" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="1" datatype="xsd:string" id="meta270822" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="12" datatype="xsd:string" id="meta270821" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="BMC Evolutionary Biology" datatype="xsd:string" id="meta270820" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="BMC Evolutionary Biology" datatype="xsd:string" id="meta270819" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="Cellular Immunity" datatype="xsd:string" id="meta270818" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Complement" datatype="xsd:string" id="meta270817" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="MPEG1" datatype="xsd:string" id="meta270816" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Perforin" datatype="xsd:string" id="meta270815" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="10.1186/1471-2148-12-59" datatype="xsd:string" id="meta270814" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012" datatype="xsd:string" id="meta270813" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Bird P.I." datatype="xsd:string" id="meta270812" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Trapani J.A." datatype="xsd:string" id="meta270811" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Whisstock J.C." datatype="xsd:string" id="meta270810" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Dunstone M.A." datatype="xsd:string" id="meta270809" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="D'angelo M.E." datatype="xsd:string" id="meta270808" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="D'angelo M.E., Dunstone M.A., Whisstock J.C., Trapani J.A., &amp; Bird P.I." datatype="xsd:string" id="meta270807" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="Perforin evolved from a gene duplication of MPEG1, followed by a complex pattern of gene gain and loss within Euteleostomi" datatype="xsd:string" id="meta270806" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="D'angelo M.E., Dunstone M.A., Whisstock J.C., Trapani J.A., &amp; Bird P.I. 2012. Perforin evolved from a gene duplication of MPEG1, followed by a complex pattern of gene gain and loss within Euteleostomi. BMC Evolutionary Biology, 12(1)." datatype="xsd:string" id="meta270805" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-02-19" datatype="xsd:string" id="meta270804" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-06-04" datatype="xsd:string" id="meta270803" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-06-04" datatype="xsd:string" id="meta270802" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="Perforin evolved from a gene duplication of MPEG1, followed by a complex pattern of gene gain and loss within Euteleostomi" datatype="xsd:string" id="meta270801" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta270800" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="12411" datatype="xsd:string" id="meta270799" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta270797" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls24566" id="Tls24566" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@64fd9af2 $Rev: 1040 $" datatype="xsd:string" id="meta270826" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl717982" id="Tl717982" label="Homo sapiens PRF1">
+      <meta content="13680" datatype="xsd:long" id="meta270833" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="32274" datatype="xsd:long" id="meta270832" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/9606" id="meta270831" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Homo sapiens" datatype="xsd:string" id="meta270830" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481730" id="meta270829" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270828" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717992" id="Tl717992" label="Mus musculus PRF1">
+      <meta content="18305" datatype="xsd:long" id="meta270840" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="42783" datatype="xsd:long" id="meta270839" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/10090" id="meta270838" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Mus musculus" datatype="xsd:string" id="meta270837" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481174" id="meta270836" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270835" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717985" id="Tl717985" label="Anolis carolinensis PRF1">
+      <meta content="1718" datatype="xsd:long" id="meta270847" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="4232" datatype="xsd:long" id="meta270846" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/28377" id="meta270845" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anolis carolinensis" datatype="xsd:string" id="meta270844" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536304" id="meta270843" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270842" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717951" id="Tl717951" label="Takifugu rubripes PRF1.2">
+      <meta content="11510" datatype="xsd:long" id="meta270854" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66373" datatype="xsd:long" id="meta270853" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/31033" id="meta270852" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Takifugu rubripes" datatype="xsd:string" id="meta270851" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2502808" id="meta270850" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270849" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717989" id="Tl717989" label="Homo sapiens C6">
+      <meta content="13680" datatype="xsd:long" id="meta270861" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="32274" datatype="xsd:long" id="meta270860" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/9606" id="meta270859" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Homo sapiens" datatype="xsd:string" id="meta270858" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481730" id="meta270857" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270856" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717988" id="Tl717988" label="Mus musculus C6">
+      <meta content="18305" datatype="xsd:long" id="meta270868" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="42783" datatype="xsd:long" id="meta270867" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/10090" id="meta270866" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Mus musculus" datatype="xsd:string" id="meta270865" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481174" id="meta270864" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270863" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717986" id="Tl717986" label="Anolis carolinensis C6">
+      <meta content="1718" datatype="xsd:long" id="meta270875" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="4232" datatype="xsd:long" id="meta270874" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/28377" id="meta270873" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anolis carolinensis" datatype="xsd:string" id="meta270872" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536304" id="meta270871" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270870" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717993" id="Tl717993" label="Takifugu rubripes C6">
+      <meta content="11510" datatype="xsd:long" id="meta270882" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66373" datatype="xsd:long" id="meta270881" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/31033" id="meta270880" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Takifugu rubripes" datatype="xsd:string" id="meta270879" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2502808" id="meta270878" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270877" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717987" id="Tl717987" label="Homo sapiens MPEG1">
+      <meta content="13680" datatype="xsd:long" id="meta270889" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="32274" datatype="xsd:long" id="meta270888" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/9606" id="meta270887" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Homo sapiens" datatype="xsd:string" id="meta270886" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481730" id="meta270885" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270884" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717991" id="Tl717991" label="Mus musculus MPEG1">
+      <meta content="18305" datatype="xsd:long" id="meta270896" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="42783" datatype="xsd:long" id="meta270895" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/10090" id="meta270894" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Mus musculus" datatype="xsd:string" id="meta270893" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481174" id="meta270892" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270891" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717990" id="Tl717990" label="Anolis carolinensis MPEG1">
+      <meta content="1718" datatype="xsd:long" id="meta270903" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="4232" datatype="xsd:long" id="meta270902" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/28377" id="meta270901" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anolis carolinensis" datatype="xsd:string" id="meta270900" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536304" id="meta270899" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270898" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717984" id="Tl717984" label="Takifugu rubripes MPEG1">
+      <meta content="11510" datatype="xsd:long" id="meta270910" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66373" datatype="xsd:long" id="meta270909" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/31033" id="meta270908" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Takifugu rubripes" datatype="xsd:string" id="meta270907" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2502808" id="meta270906" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270905" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <otus about="#Tls24565" id="Tls24565" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@64fd9af2 $Rev: 1040 $" datatype="xsd:string" id="meta270912" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl717982" id="Tl717982" label="Homo sapiens PRF1">
+      <meta content="13680" datatype="xsd:long" id="meta270919" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="32274" datatype="xsd:long" id="meta270918" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/9606" id="meta270917" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Homo sapiens" datatype="xsd:string" id="meta270916" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481730" id="meta270915" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270914" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717971" id="Tl717971" label="Oncorhynchus mykiss PRF1">
+      <meta content="19570" datatype="xsd:long" id="meta270926" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="45548" datatype="xsd:long" id="meta270925" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8022" id="meta270924" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Oncorhynchus mykiss" datatype="xsd:string" id="meta270923" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2497864" id="meta270922" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270921" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717952" id="Tl717952" label="Salmo salar PRF1.1">
+      <meta content="26059" datatype="xsd:long" id="meta270933" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="60960" datatype="xsd:long" id="meta270932" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8030" id="meta270931" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Salmo salar" datatype="xsd:string" id="meta270930" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2501296" id="meta270929" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270928" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717973" id="Tl717973" label="Salmo salar PRF1.2">
+      <meta content="26059" datatype="xsd:long" id="meta270940" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="60960" datatype="xsd:long" id="meta270939" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8030" id="meta270938" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Salmo salar" datatype="xsd:string" id="meta270937" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2501296" id="meta270936" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270935" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717960" id="Tl717960" label="Paralichthys olivaceus PRF1">
+      <meta content="53059" datatype="xsd:long" id="meta270947" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="123398" datatype="xsd:long" id="meta270946" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8255" id="meta270945" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Paralichthys olivaceus" datatype="xsd:string" id="meta270944" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3858115" id="meta270943" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270942" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717970" id="Tl717970" label="Takifugu rubripes PRF1.5">
+      <meta content="11510" datatype="xsd:long" id="meta270954" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66373" datatype="xsd:long" id="meta270953" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/31033" id="meta270952" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Takifugu rubripes" datatype="xsd:string" id="meta270951" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2502808" id="meta270950" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270949" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717981" id="Tl717981" label="Takifugu rubripes PRF1.1">
+      <meta content="11510" datatype="xsd:long" id="meta270961" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66373" datatype="xsd:long" id="meta270960" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/31033" id="meta270959" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Takifugu rubripes" datatype="xsd:string" id="meta270958" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2502808" id="meta270957" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270956" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717951" id="Tl717951" label="Takifugu rubripes PRF1.2">
+      <meta content="11510" datatype="xsd:long" id="meta270968" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66373" datatype="xsd:long" id="meta270967" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/31033" id="meta270966" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Takifugu rubripes" datatype="xsd:string" id="meta270965" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2502808" id="meta270964" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270963" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717949" id="Tl717949" label="Takifugu rubripes PRF1.6">
+      <meta content="11510" datatype="xsd:long" id="meta270975" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66373" datatype="xsd:long" id="meta270974" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/31033" id="meta270973" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Takifugu rubripes" datatype="xsd:string" id="meta270972" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2502808" id="meta270971" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270970" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717980" id="Tl717980" label="Takifugu rubripes PRF1.3">
+      <meta content="11510" datatype="xsd:long" id="meta270982" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66373" datatype="xsd:long" id="meta270981" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/31033" id="meta270980" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Takifugu rubripes" datatype="xsd:string" id="meta270979" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2502808" id="meta270978" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270977" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717957" id="Tl717957" label="Tetraodon nigroviridis PRF1.1">
+      <meta content="107159" datatype="xsd:long" id="meta270989" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="425318" datatype="xsd:long" id="meta270988" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/99883" id="meta270987" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Tetraodon nigroviridis" datatype="xsd:string" id="meta270986" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3859081" id="meta270985" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270984" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717978" id="Tl717978" label="Tetraodon nigroviridis PRF1.3">
+      <meta content="107159" datatype="xsd:long" id="meta270996" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="425318" datatype="xsd:long" id="meta270995" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/99883" id="meta270994" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Tetraodon nigroviridis" datatype="xsd:string" id="meta270993" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3859081" id="meta270992" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270991" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717979" id="Tl717979" label="Tetraodon nigroviridis PRF1.2">
+      <meta content="107159" datatype="xsd:long" id="meta271003" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="425318" datatype="xsd:long" id="meta271002" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/99883" id="meta271001" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Tetraodon nigroviridis" datatype="xsd:string" id="meta271000" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3859081" id="meta270999" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta270998" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717983" id="Tl717983" label="Oryzias latipes PRF1.1">
+      <meta content="19983" datatype="xsd:long" id="meta271010" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="46500" datatype="xsd:long" id="meta271009" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8090" id="meta271008" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Oryzias latipes" datatype="xsd:string" id="meta271007" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3858043" id="meta271006" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271005" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717956" id="Tl717956" label="Oryzias latipes PRF1.3">
+      <meta content="19983" datatype="xsd:long" id="meta271017" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="46500" datatype="xsd:long" id="meta271016" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8090" id="meta271015" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Oryzias latipes" datatype="xsd:string" id="meta271014" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3858043" id="meta271013" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271012" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717968" id="Tl717968" label="Oryzias latipes PRF1.4">
+      <meta content="19983" datatype="xsd:long" id="meta271024" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="46500" datatype="xsd:long" id="meta271023" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8090" id="meta271022" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Oryzias latipes" datatype="xsd:string" id="meta271021" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3858043" id="meta271020" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271019" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717948" id="Tl717948" label="Oryzias latipes PRF1.6">
+      <meta content="19983" datatype="xsd:long" id="meta271031" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="46500" datatype="xsd:long" id="meta271030" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8090" id="meta271029" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Oryzias latipes" datatype="xsd:string" id="meta271028" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3858043" id="meta271027" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271026" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717969" id="Tl717969" label="Oryzias latipes PRF1.5">
+      <meta content="19983" datatype="xsd:long" id="meta271038" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="46500" datatype="xsd:long" id="meta271037" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8090" id="meta271036" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Oryzias latipes" datatype="xsd:string" id="meta271035" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3858043" id="meta271034" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271033" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717962" id="Tl717962" label="Oryzias latipes PRF1.2">
+      <meta content="19983" datatype="xsd:long" id="meta271045" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="46500" datatype="xsd:long" id="meta271044" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8090" id="meta271043" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Oryzias latipes" datatype="xsd:string" id="meta271042" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3858043" id="meta271041" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271040" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717977" id="Tl717977" label="Oryzias latipes PRF1.8">
+      <meta content="19983" datatype="xsd:long" id="meta271052" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="46500" datatype="xsd:long" id="meta271051" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/8090" id="meta271050" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Oryzias latipes" datatype="xsd:string" id="meta271049" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3858043" id="meta271048" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271047" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717958" id="Tl717958" label="Gasterosteus aculeatus PRF1.1">
+      <meta content="84031" datatype="xsd:long" id="meta271059" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="162566" datatype="xsd:long" id="meta271058" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/69293" id="meta271057" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Gasterosteus aculeatus" datatype="xsd:string" id="meta271056" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2515814" id="meta271055" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271054" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717950" id="Tl717950" label="Gasterosteus aculeatus PRF1.2">
+      <meta content="84031" datatype="xsd:long" id="meta271066" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="162566" datatype="xsd:long" id="meta271065" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/69293" id="meta271064" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Gasterosteus aculeatus" datatype="xsd:string" id="meta271063" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2515814" id="meta271062" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271061" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717947" id="Tl717947" label="Gasterosteus aculeatus PRF1.3">
+      <meta content="84031" datatype="xsd:long" id="meta271073" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="162566" datatype="xsd:long" id="meta271072" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/69293" id="meta271071" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Gasterosteus aculeatus" datatype="xsd:string" id="meta271070" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2515814" id="meta271069" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271068" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717975" id="Tl717975" label="Gasterosteus aculeatus PRF1.4">
+      <meta content="84031" datatype="xsd:long" id="meta271080" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="162566" datatype="xsd:long" id="meta271079" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/69293" id="meta271078" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Gasterosteus aculeatus" datatype="xsd:string" id="meta271077" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2515814" id="meta271076" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271075" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717953" id="Tl717953" label="Gasterosteus aculeatus PRF1.5">
+      <meta content="84031" datatype="xsd:long" id="meta271087" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="162566" datatype="xsd:long" id="meta271086" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/69293" id="meta271085" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Gasterosteus aculeatus" datatype="xsd:string" id="meta271084" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2515814" id="meta271083" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271082" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717964" id="Tl717964" label="Gasterosteus aculeatus PRF1.6">
+      <meta content="84031" datatype="xsd:long" id="meta271094" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="162566" datatype="xsd:long" id="meta271093" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/69293" id="meta271092" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Gasterosteus aculeatus" datatype="xsd:string" id="meta271091" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2515814" id="meta271090" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271089" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717965" id="Tl717965" label="Carassius auratus langsdorfii PRF1.1">
+      <meta content="610299" datatype="xsd:long" id="meta271101" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="815488" datatype="xsd:long" id="meta271100" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/138676" id="meta271099" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Carassius auratus langsdorfii" datatype="xsd:string" id="meta271098" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2509109" id="meta271097" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271096" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717961" id="Tl717961" label="Carassius auratus langsdorfii PRF1.2">
+      <meta content="610299" datatype="xsd:long" id="meta271108" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="815488" datatype="xsd:long" id="meta271107" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/138676" id="meta271106" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Carassius auratus langsdorfii" datatype="xsd:string" id="meta271105" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2509109" id="meta271104" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271103" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717972" id="Tl717972" label="Carassius auratus langsdorfii PRF1.3">
+      <meta content="610299" datatype="xsd:long" id="meta271115" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="815488" datatype="xsd:long" id="meta271114" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/138676" id="meta271113" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Carassius auratus langsdorfii" datatype="xsd:string" id="meta271112" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2509109" id="meta271111" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271110" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717963" id="Tl717963" label="Ctenopharyngodon idella PRF1.1">
+      <meta content="41245" datatype="xsd:long" id="meta271122" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="96077" datatype="xsd:long" id="meta271121" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7959" id="meta271120" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Ctenopharyngodon idella" datatype="xsd:string" id="meta271119" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3860248" id="meta271118" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271117" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717967" id="Tl717967" label="Ctenopharyngodon idella PRF1.2">
+      <meta content="41245" datatype="xsd:long" id="meta271129" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="96077" datatype="xsd:long" id="meta271128" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7959" id="meta271127" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Ctenopharyngodon idella" datatype="xsd:string" id="meta271126" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3860248" id="meta271125" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271124" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717954" id="Tl717954" label="Danio rerio PRF1.3">
+      <meta content="3879" datatype="xsd:long" id="meta271136" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="20140" datatype="xsd:long" id="meta271135" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7955" id="meta271134" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Danio rerio" datatype="xsd:string" id="meta271133" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491478" id="meta271132" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271131" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717966" id="Tl717966" label="Danio rerio PRF1.1">
+      <meta content="3879" datatype="xsd:long" id="meta271143" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="20140" datatype="xsd:long" id="meta271142" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7955" id="meta271141" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Danio rerio" datatype="xsd:string" id="meta271140" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491478" id="meta271139" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271138" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717976" id="Tl717976" label="Danio rerio PRF1.4">
+      <meta content="3879" datatype="xsd:long" id="meta271150" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="20140" datatype="xsd:long" id="meta271149" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7955" id="meta271148" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Danio rerio" datatype="xsd:string" id="meta271147" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491478" id="meta271146" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271145" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717945" id="Tl717945" label="Danio rerio PRF1.2">
+      <meta content="3879" datatype="xsd:long" id="meta271157" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="20140" datatype="xsd:long" id="meta271156" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7955" id="meta271155" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Danio rerio" datatype="xsd:string" id="meta271154" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491478" id="meta271153" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271152" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717959" id="Tl717959" label="Danio rerio PRF1.6">
+      <meta content="3879" datatype="xsd:long" id="meta271164" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="20140" datatype="xsd:long" id="meta271163" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7955" id="meta271162" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Danio rerio" datatype="xsd:string" id="meta271161" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491478" id="meta271160" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271159" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717946" id="Tl717946" label="Danio rerio PRF1.5">
+      <meta content="3879" datatype="xsd:long" id="meta271171" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="20140" datatype="xsd:long" id="meta271170" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7955" id="meta271169" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Danio rerio" datatype="xsd:string" id="meta271168" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491478" id="meta271167" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271166" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717955" id="Tl717955" label="Danio rerio PRF1.7">
+      <meta content="3879" datatype="xsd:long" id="meta271178" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="20140" datatype="xsd:long" id="meta271177" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7955" id="meta271176" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Danio rerio" datatype="xsd:string" id="meta271175" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491478" id="meta271174" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271173" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl717974" id="Tl717974" label="Danio rerio PRF1.8">
+      <meta content="3879" datatype="xsd:long" id="meta271185" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="20140" datatype="xsd:long" id="meta271184" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7955" id="meta271183" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Danio rerio" datatype="xsd:string" id="meta271182" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2491478" id="meta271181" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta271180" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M11729" id="M11729" label="Fish perforin" otus="Tls24565" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:ProteinSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@978266b $Rev: 1056 $" datatype="xsd:string" id="meta271216" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="11729" datatype="xsd:long" id="meta271215" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="439" datatype="xsd:integer" id="meta271214" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="39" datatype="xsd:integer" id="meta271213" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="Protein" datatype="xsd:string" id="meta271212" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states271187">
+        <state id="state271188" symbol="A"/>
+        <state id="state271189" symbol="B"/>
+        <state id="state271190" symbol="C"/>
+        <state id="state271191" symbol="D"/>
+        <state id="state271192" symbol="E"/>
+        <state id="state271193" symbol="F"/>
+        <state id="state271194" symbol="G"/>
+        <state id="state271195" symbol="H"/>
+        <state id="state271196" symbol="I"/>
+        <state id="state271197" symbol="K"/>
+        <state id="state271198" symbol="L"/>
+        <state id="state271199" symbol="M"/>
+        <state id="state271200" symbol="N"/>
+        <state id="state271201" symbol="P"/>
+        <state id="state271202" symbol="Q"/>
+        <state id="state271203" symbol="R"/>
+        <state id="state271204" symbol="S"/>
+        <state id="state271205" symbol="T"/>
+        <state id="state271206" symbol="U"/>
+        <state id="state271207" symbol="V"/>
+        <state id="state271208" symbol="W"/>
+        <state id="state271209" symbol="Y"/>
+        <state id="state271210" symbol="Z"/>
+        <uncertain_state_set id="uncertain_state_set271211" symbol="X">
+          <member state="state271191"/>
+          <member state="state271209"/>
+          <member state="state271195"/>
+          <member state="state271200"/>
+          <member state="state271210"/>
+          <member state="state271201"/>
+          <member state="state271190"/>
+          <member state="state271204"/>
+          <member state="state271192"/>
+          <member state="state271196"/>
+          <member state="state271198"/>
+          <member state="state271199"/>
+          <member state="state271193"/>
+          <member state="state271203"/>
+          <member state="state271189"/>
+          <member state="state271194"/>
+          <member state="state271205"/>
+          <member state="state271202"/>
+          <member state="state271197"/>
+          <member state="state271207"/>
+          <member state="state271188"/>
+          <member state="state271206"/>
+          <member state="state271208"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col33289422" label="Protein" states="states271187"/>
+      <char id="Col33289423" label="Protein" states="states271187"/>
+      <char id="Col33289424" label="Protein" states="states271187"/>
+      <char id="Col33289425" label="Protein" states="states271187"/>
+      <char id="Col33289426" label="Protein" states="states271187"/>
+      <char id="Col33289427" label="Protein" states="states271187"/>
+      <char id="Col33289428" label="Protein" states="states271187"/>
+      <char id="Col33289429" label="Protein" states="states271187"/>
+      <char id="Col33289430" label="Protein" states="states271187"/>
+      <char id="Col33289431" label="Protein" states="states271187"/>
+      <char id="Col33289432" label="Protein" states="states271187"/>
+      <char id="Col33289433" label="Protein" states="states271187"/>
+      <char id="Col33289434" label="Protein" states="states271187"/>
+      <char id="Col33289435" label="Protein" states="states271187"/>
+      <char id="Col33289436" label="Protein" states="states271187"/>
+      <char id="Col33289437" label="Protein" states="states271187"/>
+      <char id="Col33289438" label="Protein" states="states271187"/>
+      <char id="Col33289439" label="Protein" states="states271187"/>
+      <char id="Col33289440" label="Protein" states="states271187"/>
+      <char id="Col33289441" label="Protein" states="states271187"/>
+      <char id="Col33289442" label="Protein" states="states271187"/>
+      <char id="Col33289443" label="Protein" states="states271187"/>
+      <char id="Col33289444" label="Protein" states="states271187"/>
+      <char id="Col33289445" label="Protein" states="states271187"/>
+      <char id="Col33289446" label="Protein" states="states271187"/>
+      <char id="Col33289447" label="Protein" states="states271187"/>
+      <char id="Col33289448" label="Protein" states="states271187"/>
+      <char id="Col33289449" label="Protein" states="states271187"/>
+      <char id="Col33289450" label="Protein" states="states271187"/>
+      <char id="Col33289451" label="Protein" states="states271187"/>
+      <char id="Col33289452" label="Protein" states="states271187"/>
+      <char id="Col33289453" label="Protein" states="states271187"/>
+      <char id="Col33289454" label="Protein" states="states271187"/>
+      <char id="Col33289455" label="Protein" states="states271187"/>
+      <char id="Col33289456" label="Protein" states="states271187"/>
+      <char id="Col33289457" label="Protein" states="states271187"/>
+      <char id="Col33289458" label="Protein" states="states271187"/>
+      <char id="Col33289459" label="Protein" states="states271187"/>
+      <char id="Col33289460" label="Protein" states="states271187"/>
+      <char id="Col33289461" label="Protein" states="states271187"/>
+      <char id="Col33289462" label="Protein" states="states271187"/>
+      <char id="Col33289463" label="Protein" states="states271187"/>
+      <char id="Col33289464" label="Protein" states="states271187"/>
+      <char id="Col33289465" label="Protein" states="states271187"/>
+      <char id="Col33289466" label="Protein" states="states271187"/>
+      <char id="Col33289467" label="Protein" states="states271187"/>
+      <char id="Col33289468" label="Protein" states="states271187"/>
+      <char id="Col33289469" label="Protein" states="states271187"/>
+      <char id="Col33289470" label="Protein" states="states271187"/>
+      <char id="Col33289471" label="Protein" states="states271187"/>
+      <char id="Col33289472" label="Protein" states="states271187"/>
+      <char id="Col33289473" label="Protein" states="states271187"/>
+      <char id="Col33289474" label="Protein" states="states271187"/>
+      <char id="Col33289475" label="Protein" states="states271187"/>
+      <char id="Col33289476" label="Protein" states="states271187"/>
+      <char id="Col33289477" label="Protein" states="states271187"/>
+      <char id="Col33289478" label="Protein" states="states271187"/>
+      <char id="Col33289479" label="Protein" states="states271187"/>
+      <char id="Col33289480" label="Protein" states="states271187"/>
+      <char id="Col33289481" label="Protein" states="states271187"/>
+      <char id="Col33289482" label="Protein" states="states271187"/>
+      <char id="Col33289483" label="Protein" states="states271187"/>
+      <char id="Col33289484" label="Protein" states="states271187"/>
+      <char id="Col33289485" label="Protein" states="states271187"/>
+      <char id="Col33289486" label="Protein" states="states271187"/>
+      <char id="Col33289487" label="Protein" states="states271187"/>
+      <char id="Col33289488" label="Protein" states="states271187"/>
+      <char id="Col33289489" label="Protein" states="states271187"/>
+      <char id="Col33289490" label="Protein" states="states271187"/>
+      <char id="Col33289491" label="Protein" states="states271187"/>
+      <char id="Col33289492" label="Protein" states="states271187"/>
+      <char id="Col33289493" label="Protein" states="states271187"/>
+      <char id="Col33289494" label="Protein" states="states271187"/>
+      <char id="Col33289495" label="Protein" states="states271187"/>
+      <char id="Col33289496" label="Protein" states="states271187"/>
+      <char id="Col33289497" label="Protein" states="states271187"/>
+      <char id="Col33289498" label="Protein" states="states271187"/>
+      <char id="Col33289499" label="Protein" states="states271187"/>
+      <char id="Col33289500" label="Protein" states="states271187"/>
+      <char id="Col33289501" label="Protein" states="states271187"/>
+      <char id="Col33289502" label="Protein" states="states271187"/>
+      <char id="Col33289503" label="Protein" states="states271187"/>
+      <char id="Col33289504" label="Protein" states="states271187"/>
+      <char id="Col33289505" label="Protein" states="states271187"/>
+      <char id="Col33289506" label="Protein" states="states271187"/>
+      <char id="Col33289507" label="Protein" states="states271187"/>
+      <char id="Col33289508" label="Protein" states="states271187"/>
+      <char id="Col33289509" label="Protein" states="states271187"/>
+      <char id="Col33289510" label="Protein" states="states271187"/>
+      <char id="Col33289511" label="Protein" states="states271187"/>
+      <char id="Col33289512" label="Protein" states="states271187"/>
+      <char id="Col33289513" label="Protein" states="states271187"/>
+      <char id="Col33289514" label="Protein" states="states271187"/>
+      <char id="Col33289515" label="Protein" states="states271187"/>
+      <char id="Col33289516" label="Protein" states="states271187"/>
+      <char id="Col33289517" label="Protein" states="states271187"/>
+      <char id="Col33289518" label="Protein" states="states271187"/>
+      <char id="Col33289519" label="Protein" states="states271187"/>
+      <char id="Col33289520" label="Protein" states="states271187"/>
+      <char id="Col33289521" label="Protein" states="states271187"/>
+      <char id="Col33289522" label="Protein" states="states271187"/>
+      <char id="Col33289523" label="Protein" states="states271187"/>
+      <char id="Col33289524" label="Protein" states="states271187"/>
+      <char id="Col33289525" label="Protein" states="states271187"/>
+      <char id="Col33289526" label="Protein" states="states271187"/>
+      <char id="Col33289527" label="Protein" states="states271187"/>
+      <char id="Col33289528" label="Protein" states="states271187"/>
+      <char id="Col33289529" label="Protein" states="states271187"/>
+      <char id="Col33289530" label="Protein" states="states271187"/>
+      <char id="Col33289531" label="Protein" states="states271187"/>
+      <char id="Col33289532" label="Protein" states="states271187"/>
+      <char id="Col33289533" label="Protein" states="states271187"/>
+      <char id="Col33289534" label="Protein" states="states271187"/>
+      <char id="Col33289535" label="Protein" states="states271187"/>
+      <char id="Col33289536" label="Protein" states="states271187"/>
+      <char id="Col33289537" label="Protein" states="states271187"/>
+      <char id="Col33289538" label="Protein" states="states271187"/>
+      <char id="Col33289539" label="Protein" states="states271187"/>
+      <char id="Col33289540" label="Protein" states="states271187"/>
+      <char id="Col33289541" label="Protein" states="states271187"/>
+      <char id="Col33289542" label="Protein" states="states271187"/>
+      <char id="Col33289543" label="Protein" states="states271187"/>
+      <char id="Col33289544" label="Protein" states="states271187"/>
+      <char id="Col33289545" label="Protein" states="states271187"/>
+      <char id="Col33289546" label="Protein" states="states271187"/>
+      <char id="Col33289547" label="Protein" states="states271187"/>
+      <char id="Col33289548" label="Protein" states="states271187"/>
+      <char id="Col33289549" label="Protein" states="states271187"/>
+      <char id="Col33289550" label="Protein" states="states271187"/>
+      <char id="Col33289551" label="Protein" states="states271187"/>
+      <char id="Col33289552" label="Protein" states="states271187"/>
+      <char id="Col33289553" label="Protein" states="states271187"/>
+      <char id="Col33289554" label="Protein" states="states271187"/>
+      <char id="Col33289555" label="Protein" states="states271187"/>
+      <char id="Col33289556" label="Protein" states="states271187"/>
+      <char id="Col33289557" label="Protein" states="states271187"/>
+      <char id="Col33289558" label="Protein" states="states271187"/>
+      <char id="Col33289559" label="Protein" states="states271187"/>
+      <char id="Col33289560" label="Protein" states="states271187"/>
+      <char id="Col33289561" label="Protein" states="states271187"/>
+      <char id="Col33289562" label="Protein" states="states271187"/>
+      <char id="Col33289563" label="Protein" states="states271187"/>
+      <char id="Col33289564" label="Protein" states="states271187"/>
+      <char id="Col33289565" label="Protein" states="states271187"/>
+      <char id="Col33289566" label="Protein" states="states271187"/>
+      <char id="Col33289567" label="Protein" states="states271187"/>
+      <char id="Col33289568" label="Protein" states="states271187"/>
+      <char id="Col33289569" label="Protein" states="states271187"/>
+      <char id="Col33289570" label="Protein" states="states271187"/>
+      <char id="Col33289571" label="Protein" states="states271187"/>
+      <char id="Col33289572" label="Protein" states="states271187"/>
+      <char id="Col33289573" label="Protein" states="states271187"/>
+      <char id="Col33289574" label="Protein" states="states271187"/>
+      <char id="Col33289575" label="Protein" states="states271187"/>
+      <char id="Col33289576" label="Protein" states="states271187"/>
+      <char id="Col33289577" label="Protein" states="states271187"/>
+      <char id="Col33289578" label="Protein" states="states271187"/>
+      <char id="Col33289579" label="Protein" states="states271187"/>
+      <char id="Col33289580" label="Protein" states="states271187"/>
+      <char id="Col33289581" label="Protein" states="states271187"/>
+      <char id="Col33289582" label="Protein" states="states271187"/>
+      <char id="Col33289583" label="Protein" states="states271187"/>
+      <char id="Col33289584" label="Protein" states="states271187"/>
+      <char id="Col33289585" label="Protein" states="states271187"/>
+      <char id="Col33289586" label="Protein" states="states271187"/>
+      <char id="Col33289587" label="Protein" states="states271187"/>
+      <char id="Col33289588" label="Protein" states="states271187"/>
+      <char id="Col33289589" label="Protein" states="states271187"/>
+      <char id="Col33289590" label="Protein" states="states271187"/>
+      <char id="Col33289591" label="Protein" states="states271187"/>
+      <char id="Col33289592" label="Protein" states="states271187"/>
+      <char id="Col33289593" label="Protein" states="states271187"/>
+      <char id="Col33289594" label="Protein" states="states271187"/>
+      <char id="Col33289595" label="Protein" states="states271187"/>
+      <char id="Col33289596" label="Protein" states="states271187"/>
+      <char id="Col33289597" label="Protein" states="states271187"/>
+      <char id="Col33289598" label="Protein" states="states271187"/>
+      <char id="Col33289599" label="Protein" states="states271187"/>
+      <char id="Col33289600" label="Protein" states="states271187"/>
+      <char id="Col33289601" label="Protein" states="states271187"/>
+      <char id="Col33289602" label="Protein" states="states271187"/>
+      <char id="Col33289603" label="Protein" states="states271187"/>
+      <char id="Col33289604" label="Protein" states="states271187"/>
+      <char id="Col33289605" label="Protein" states="states271187"/>
+      <char id="Col33289606" label="Protein" states="states271187"/>
+      <char id="Col33289607" label="Protein" states="states271187"/>
+      <char id="Col33289608" label="Protein" states="states271187"/>
+      <char id="Col33289609" label="Protein" states="states271187"/>
+      <char id="Col33289610" label="Protein" states="states271187"/>
+      <char id="Col33289611" label="Protein" states="states271187"/>
+      <char id="Col33289612" label="Protein" states="states271187"/>
+      <char id="Col33289613" label="Protein" states="states271187"/>
+      <char id="Col33289614" label="Protein" states="states271187"/>
+      <char id="Col33289615" label="Protein" states="states271187"/>
+      <char id="Col33289616" label="Protein" states="states271187"/>
+      <char id="Col33289617" label="Protein" states="states271187"/>
+      <char id="Col33289618" label="Protein" states="states271187"/>
+      <char id="Col33289619" label="Protein" states="states271187"/>
+      <char id="Col33289620" label="Protein" states="states271187"/>
+      <char id="Col33289621" label="Protein" states="states271187"/>
+      <char id="Col33289622" label="Protein" states="states271187"/>
+      <char id="Col33289623" label="Protein" states="states271187"/>
+      <char id="Col33289624" label="Protein" states="states271187"/>
+      <char id="Col33289625" label="Protein" states="states271187"/>
+      <char id="Col33289626" label="Protein" states="states271187"/>
+      <char id="Col33289627" label="Protein" states="states271187"/>
+      <char id="Col33289628" label="Protein" states="states271187"/>
+      <char id="Col33289629" label="Protein" states="states271187"/>
+      <char id="Col33289630" label="Protein" states="states271187"/>
+      <char id="Col33289631" label="Protein" states="states271187"/>
+      <char id="Col33289632" label="Protein" states="states271187"/>
+      <char id="Col33289633" label="Protein" states="states271187"/>
+      <char id="Col33289634" label="Protein" states="states271187"/>
+      <char id="Col33289635" label="Protein" states="states271187"/>
+      <char id="Col33289636" label="Protein" states="states271187"/>
+      <char id="Col33289637" label="Protein" states="states271187"/>
+      <char id="Col33289638" label="Protein" states="states271187"/>
+      <char id="Col33289639" label="Protein" states="states271187"/>
+      <char id="Col33289640" label="Protein" states="states271187"/>
+      <char id="Col33289641" label="Protein" states="states271187"/>
+      <char id="Col33289642" label="Protein" states="states271187"/>
+      <char id="Col33289643" label="Protein" states="states271187"/>
+      <char id="Col33289644" label="Protein" states="states271187"/>
+      <char id="Col33289645" label="Protein" states="states271187"/>
+      <char id="Col33289646" label="Protein" states="states271187"/>
+      <char id="Col33289647" label="Protein" states="states271187"/>
+      <char id="Col33289648" label="Protein" states="states271187"/>
+      <char id="Col33289649" label="Protein" states="states271187"/>
+      <char id="Col33289650" label="Protein" states="states271187"/>
+      <char id="Col33289651" label="Protein" states="states271187"/>
+      <char id="Col33289652" label="Protein" states="states271187"/>
+      <char id="Col33289653" label="Protein" states="states271187"/>
+      <char id="Col33289654" label="Protein" states="states271187"/>
+      <char id="Col33289655" label="Protein" states="states271187"/>
+      <char id="Col33289656" label="Protein" states="states271187"/>
+      <char id="Col33289657" label="Protein" states="states271187"/>
+      <char id="Col33289658" label="Protein" states="states271187"/>
+      <char id="Col33289659" label="Protein" states="states271187"/>
+      <char id="Col33289660" label="Protein" states="states271187"/>
+      <char id="Col33289661" label="Protein" states="states271187"/>
+      <char id="Col33289662" label="Protein" states="states271187"/>
+      <char id="Col33289663" label="Protein" states="states271187"/>
+      <char id="Col33289664" label="Protein" states="states271187"/>
+      <char id="Col33289665" label="Protein" states="states271187"/>
+      <char id="Col33289666" label="Protein" states="states271187"/>
+      <char id="Col33289667" label="Protein" states="states271187"/>
+      <char id="Col33289668" label="Protein" states="states271187"/>
+      <char id="Col33289669" label="Protein" states="states271187"/>
+      <char id="Col33289670" label="Protein" states="states271187"/>
+      <char id="Col33289671" label="Protein" states="states271187"/>
+      <char id="Col33289672" label="Protein" states="states271187"/>
+      <char id="Col33289673" label="Protein" states="states271187"/>
+      <char id="Col33289674" label="Protein" states="states271187"/>
+      <char id="Col33289675" label="Protein" states="states271187"/>
+      <char id="Col33289676" label="Protein" states="states271187"/>
+      <char id="Col33289677" label="Protein" states="states271187"/>
+      <char id="Col33289678" label="Protein" states="states271187"/>
+      <char id="Col33289679" label="Protein" states="states271187"/>
+      <char id="Col33289680" label="Protein" states="states271187"/>
+      <char id="Col33289681" label="Protein" states="states271187"/>
+      <char id="Col33289682" label="Protein" states="states271187"/>
+      <char id="Col33289683" label="Protein" states="states271187"/>
+      <char id="Col33289684" label="Protein" states="states271187"/>
+      <char id="Col33289685" label="Protein" states="states271187"/>
+      <char id="Col33289686" label="Protein" states="states271187"/>
+      <char id="Col33289687" label="Protein" states="states271187"/>
+      <char id="Col33289688" label="Protein" states="states271187"/>
+      <char id="Col33289689" label="Protein" states="states271187"/>
+      <char id="Col33289690" label="Protein" states="states271187"/>
+      <char id="Col33289691" label="Protein" states="states271187"/>
+      <char id="Col33289692" label="Protein" states="states271187"/>
+      <char id="Col33289693" label="Protein" states="states271187"/>
+      <char id="Col33289694" label="Protein" states="states271187"/>
+      <char id="Col33289695" label="Protein" states="states271187"/>
+      <char id="Col33289696" label="Protein" states="states271187"/>
+      <char id="Col33289697" label="Protein" states="states271187"/>
+      <char id="Col33289698" label="Protein" states="states271187"/>
+      <char id="Col33289699" label="Protein" states="states271187"/>
+      <char id="Col33289700" label="Protein" states="states271187"/>
+      <char id="Col33289701" label="Protein" states="states271187"/>
+      <char id="Col33289702" label="Protein" states="states271187"/>
+      <char id="Col33289703" label="Protein" states="states271187"/>
+      <char id="Col33289704" label="Protein" states="states271187"/>
+      <char id="Col33289705" label="Protein" states="states271187"/>
+      <char id="Col33289706" label="Protein" states="states271187"/>
+      <char id="Col33289707" label="Protein" states="states271187"/>
+      <char id="Col33289708" label="Protein" states="states271187"/>
+      <char id="Col33289709" label="Protein" states="states271187"/>
+      <char id="Col33289710" label="Protein" states="states271187"/>
+      <char id="Col33289711" label="Protein" states="states271187"/>
+      <char id="Col33289712" label="Protein" states="states271187"/>
+      <char id="Col33289713" label="Protein" states="states271187"/>
+      <char id="Col33289714" label="Protein" states="states271187"/>
+      <char id="Col33289715" label="Protein" states="states271187"/>
+      <char id="Col33289716" label="Protein" states="states271187"/>
+      <char id="Col33289717" label="Protein" states="states271187"/>
+      <char id="Col33289718" label="Protein" states="states271187"/>
+      <char id="Col33289719" label="Protein" states="states271187"/>
+      <char id="Col33289720" label="Protein" states="states271187"/>
+      <char id="Col33289721" label="Protein" states="states271187"/>
+      <char id="Col33289722" label="Protein" states="states271187"/>
+      <char id="Col33289723" label="Protein" states="states271187"/>
+      <char id="Col33289724" label="Protein" states="states271187"/>
+      <char id="Col33289725" label="Protein" states="states271187"/>
+      <char id="Col33289726" label="Protein" states="states271187"/>
+      <char id="Col33289727" label="Protein" states="states271187"/>
+      <char id="Col33289728" label="Protein" states="states271187"/>
+      <char id="Col33289729" label="Protein" states="states271187"/>
+      <char id="Col33289730" label="Protein" states="states271187"/>
+      <char id="Col33289731" label="Protein" states="states271187"/>
+      <char id="Col33289732" label="Protein" states="states271187"/>
+      <char id="Col33289733" label="Protein" states="states271187"/>
+      <char id="Col33289734" label="Protein" states="states271187"/>
+      <char id="Col33289735" label="Protein" states="states271187"/>
+      <char id="Col33289736" label="Protein" states="states271187"/>
+      <char id="Col33289737" label="Protein" states="states271187"/>
+      <char id="Col33289738" label="Protein" states="states271187"/>
+      <char id="Col33289739" label="Protein" states="states271187"/>
+      <char id="Col33289740" label="Protein" states="states271187"/>
+      <char id="Col33289741" label="Protein" states="states271187"/>
+      <char id="Col33289742" label="Protein" states="states271187"/>
+      <char id="Col33289743" label="Protein" states="states271187"/>
+      <char id="Col33289744" label="Protein" states="states271187"/>
+      <char id="Col33289745" label="Protein" states="states271187"/>
+      <char id="Col33289746" label="Protein" states="states271187"/>
+      <char id="Col33289747" label="Protein" states="states271187"/>
+      <char id="Col33289748" label="Protein" states="states271187"/>
+      <char id="Col33289749" label="Protein" states="states271187"/>
+      <char id="Col33289750" label="Protein" states="states271187"/>
+      <char id="Col33289751" label="Protein" states="states271187"/>
+      <char id="Col33289752" label="Protein" states="states271187"/>
+      <char id="Col33289753" label="Protein" states="states271187"/>
+      <char id="Col33289754" label="Protein" states="states271187"/>
+      <char id="Col33289755" label="Protein" states="states271187"/>
+      <char id="Col33289756" label="Protein" states="states271187"/>
+      <char id="Col33289757" label="Protein" states="states271187"/>
+      <char id="Col33289758" label="Protein" states="states271187"/>
+      <char id="Col33289759" label="Protein" states="states271187"/>
+      <char id="Col33289760" label="Protein" states="states271187"/>
+      <char id="Col33289761" label="Protein" states="states271187"/>
+      <char id="Col33289762" label="Protein" states="states271187"/>
+      <char id="Col33289763" label="Protein" states="states271187"/>
+      <char id="Col33289764" label="Protein" states="states271187"/>
+      <char id="Col33289765" label="Protein" states="states271187"/>
+      <char id="Col33289766" label="Protein" states="states271187"/>
+      <char id="Col33289767" label="Protein" states="states271187"/>
+      <char id="Col33289768" label="Protein" states="states271187"/>
+      <char id="Col33289769" label="Protein" states="states271187"/>
+      <char id="Col33289770" label="Protein" states="states271187"/>
+      <char id="Col33289771" label="Protein" states="states271187"/>
+      <char id="Col33289772" label="Protein" states="states271187"/>
+      <char id="Col33289773" label="Protein" states="states271187"/>
+      <char id="Col33289774" label="Protein" states="states271187"/>
+      <char id="Col33289775" label="Protein" states="states271187"/>
+      <char id="Col33289776" label="Protein" states="states271187"/>
+      <char id="Col33289777" label="Protein" states="states271187"/>
+      <char id="Col33289778" label="Protein" states="states271187"/>
+      <char id="Col33289779" label="Protein" states="states271187"/>
+      <char id="Col33289780" label="Protein" states="states271187"/>
+      <char id="Col33289781" label="Protein" states="states271187"/>
+      <char id="Col33289782" label="Protein" states="states271187"/>
+      <char id="Col33289783" label="Protein" states="states271187"/>
+      <char id="Col33289784" label="Protein" states="states271187"/>
+      <char id="Col33289785" label="Protein" states="states271187"/>
+      <char id="Col33289786" label="Protein" states="states271187"/>
+      <char id="Col33289787" label="Protein" states="states271187"/>
+      <char id="Col33289788" label="Protein" states="states271187"/>
+      <char id="Col33289789" label="Protein" states="states271187"/>
+      <char id="Col33289790" label="Protein" states="states271187"/>
+      <char id="Col33289791" label="Protein" states="states271187"/>
+      <char id="Col33289792" label="Protein" states="states271187"/>
+      <char id="Col33289793" label="Protein" states="states271187"/>
+      <char id="Col33289794" label="Protein" states="states271187"/>
+      <char id="Col33289795" label="Protein" states="states271187"/>
+      <char id="Col33289796" label="Protein" states="states271187"/>
+      <char id="Col33289797" label="Protein" states="states271187"/>
+      <char id="Col33289798" label="Protein" states="states271187"/>
+      <char id="Col33289799" label="Protein" states="states271187"/>
+      <char id="Col33289800" label="Protein" states="states271187"/>
+      <char id="Col33289801" label="Protein" states="states271187"/>
+      <char id="Col33289802" label="Protein" states="states271187"/>
+      <char id="Col33289803" label="Protein" states="states271187"/>
+      <char id="Col33289804" label="Protein" states="states271187"/>
+      <char id="Col33289805" label="Protein" states="states271187"/>
+      <char id="Col33289806" label="Protein" states="states271187"/>
+      <char id="Col33289807" label="Protein" states="states271187"/>
+      <char id="Col33289808" label="Protein" states="states271187"/>
+      <char id="Col33289809" label="Protein" states="states271187"/>
+      <char id="Col33289810" label="Protein" states="states271187"/>
+      <char id="Col33289811" label="Protein" states="states271187"/>
+      <char id="Col33289812" label="Protein" states="states271187"/>
+      <char id="Col33289813" label="Protein" states="states271187"/>
+      <char id="Col33289814" label="Protein" states="states271187"/>
+      <char id="Col33289815" label="Protein" states="states271187"/>
+      <char id="Col33289816" label="Protein" states="states271187"/>
+      <char id="Col33289817" label="Protein" states="states271187"/>
+      <char id="Col33289818" label="Protein" states="states271187"/>
+      <char id="Col33289819" label="Protein" states="states271187"/>
+      <char id="Col33289820" label="Protein" states="states271187"/>
+      <char id="Col33289821" label="Protein" states="states271187"/>
+      <char id="Col33289822" label="Protein" states="states271187"/>
+      <char id="Col33289823" label="Protein" states="states271187"/>
+      <char id="Col33289824" label="Protein" states="states271187"/>
+      <char id="Col33289825" label="Protein" states="states271187"/>
+      <char id="Col33289826" label="Protein" states="states271187"/>
+      <char id="Col33289827" label="Protein" states="states271187"/>
+      <char id="Col33289828" label="Protein" states="states271187"/>
+      <char id="Col33289829" label="Protein" states="states271187"/>
+      <char id="Col33289830" label="Protein" states="states271187"/>
+      <char id="Col33289831" label="Protein" states="states271187"/>
+      <char id="Col33289832" label="Protein" states="states271187"/>
+      <char id="Col33289833" label="Protein" states="states271187"/>
+      <char id="Col33289834" label="Protein" states="states271187"/>
+      <char id="Col33289835" label="Protein" states="states271187"/>
+      <char id="Col33289836" label="Protein" states="states271187"/>
+      <char id="Col33289837" label="Protein" states="states271187"/>
+      <char id="Col33289838" label="Protein" states="states271187"/>
+      <char id="Col33289839" label="Protein" states="states271187"/>
+      <char id="Col33289840" label="Protein" states="states271187"/>
+      <char id="Col33289841" label="Protein" states="states271187"/>
+      <char id="Col33289842" label="Protein" states="states271187"/>
+      <char id="Col33289843" label="Protein" states="states271187"/>
+      <char id="Col33289844" label="Protein" states="states271187"/>
+      <char id="Col33289845" label="Protein" states="states271187"/>
+      <char id="Col33289846" label="Protein" states="states271187"/>
+      <char id="Col33289847" label="Protein" states="states271187"/>
+      <char id="Col33289848" label="Protein" states="states271187"/>
+      <char id="Col33289849" label="Protein" states="states271187"/>
+      <char id="Col33289850" label="Protein" states="states271187"/>
+      <char id="Col33289851" label="Protein" states="states271187"/>
+      <char id="Col33289852" label="Protein" states="states271187"/>
+      <char id="Col33289853" label="Protein" states="states271187"/>
+      <char id="Col33289854" label="Protein" states="states271187"/>
+      <char id="Col33289855" label="Protein" states="states271187"/>
+      <char id="Col33289856" label="Protein" states="states271187"/>
+      <char id="Col33289857" label="Protein" states="states271187"/>
+      <char id="Col33289858" label="Protein" states="states271187"/>
+      <char id="Col33289859" label="Protein" states="states271187"/>
+      <char id="Col33289860" label="Protein" states="states271187"/>
+    </format>
+    <matrix>
+      <row id="Row871674" otu="Tl717982">
+        <seq>PCHTAARSECKRSHKFVPGAWLAGEGVDVTSLRRSGSFPVDTQTCTLCENALQEGLQRLPLALTNWRAQGSGCQRHVTRAKVSSTEAVARDAARSIRNDWKVGLDTSNVHVSVAGSHSQAANFAAQKTHQDQYSFSTDTVECRFYSFHVVHTPPLHPDFKRALGDLPPAYLRLISNYGTHFIRAVELGGRISALTALRTCELALEGLTDNEVEDCLTVEAQAEAKACEEKKKKHKMTASFHQTYRERHSEVVGGHDLLFGIWVNSLPGSPGLVDYTLEPLHVLLDSQPRREALRRALSQYLTDRARWRCHGSAVTTQDCCPRQRGLAQLEVTFIQAWGLWGDWFTATDAYVKLFFGGQELRTSTVWDNNNPIWSVRLDFGDVGPLRLQVWDLLGTCDQAPKSGSHEVRCNLNHGHLKFRYHARCLPHLGGGTCLDYVPQ</seq>
+      </row>
+      <row id="Row871675" otu="Tl717971">
+        <seq>SCTIGSANECKEAE-FAPGTNLAGEGFDITKMKRKGAFVIDMNTCTLCKNPYLEGQQRLPLAVVDWRPNHQ-CSMKVSSKLHRSSESLVSSSGSSVENNWQVNLESKSGKIMLAGTNSKLAEYSMEKTKSDKFSFTSHSVSCGYYSYRVSGQPKLHREFKTAVKNLPQRYYKLIDNFGTHYITKVSLGGTVQSVTSIKQCQASLQGLSAEEVKMCLDVEASTEFKHCQEDKSKTESKASFSSVFNDRFTEVKGGHELLFSAWLDSLPHYPDIVSYSLESLHELLPTTPARKHLRKAISDYILEKALWKCHNNPGVSADCCPTRK?LARVVITVQRGANLWGDHTTATDGYVKVAFAGTIGRTTVIYNNNNPSWAMSYDLGTVKKLRFEVWDLLGECEKELTAGVKEDLCNLQHGQMYYKWEAVCAPSLGGSACMDYVPS</seq>
+      </row>
+      <row id="Row871676" otu="Tl717952">
+        <seq>SCIIGSANECKEAE-FAPGTNLAGEGFDITKMKRKGAFVIDMNTCTLCENPYLEGKQRLPLAVVDWRPNHQ-CSMKVSSKLHRSSESLVSSSSSSVENNWQVNLESKSGKFMLAGTNSKLAEYSMEKTKSDKFSFTSHSVSCGYYSYRVSGQPKLHREFKTAVKNLPQRYYKLIDNFGTHYITKVSLGGTVQSVTSIMQCQASLQGLSAEEVKMCLDVEATTEFKHCQEDKSKTESKASFSSVFNDRFTEVKGGHELLFSAWLDSLPRYPDIVSYSLESLHELLPTTPARKHLRKAISDYILENALWKCHNNPGVSADCCPTRKGLARVIITVQRGANLWGDHTTATDGYVKVAFAGTIGRTRVIYNNNNPSWAMSYDLGTVKKLRFEVWDLLGECEKELTAGVKEDLCNLQHGQMFYKWEVVCAPSLGGSACMDYVPS</seq>
+      </row>
+      <row id="Row871677" otu="Tl717973">
+        <seq>SCTTGRPAECKAAL-SAPGTNLAGEGFDVVTMERKQAYVIDVDTCTLCVNPFMDRAQRLPAAVVDWRPSQK-CNMKLASMVYDSSEAFVSSSQTEVDVSWKIGLDQAKGSVMVGGTHSRAAKTVMSQSKKDKYSFIKQDIHCSYYSYRLLDDPPLHPEFSRSLGLLPVDYRRFLDNFGTHFIKKVLLGGRVKSVTSLRVCQAALSGYNENEVKDCLEAEASTETKFCKKDLKKRDTKDRFSSTFQERFTEVVGGEDLLFSQWASSLKTIPDVINYSLHPLHLLVKQGSKRAGLKKAVEDYILGHALVKCKASKEMTSQCCPQEKGLAHLTVTVKYARDLWGDTTSETDGLVKVIMDNEARQTKVIHNKNNPVWNSFYDFGFVSELKFEVYDLLGNCSTRPIVGSDKQLCALNHGNMYYSYTVDCAPGLGGSTCGEYVPS</seq>
+      </row>
+      <row id="Row871678" otu="Tl717960">
+        <seq>SCTDGKPMQCQNAE-YAPGANLAGEGFDITKLERKGAFVIDMNTCTLCTNPYMENWQKLPLSVLDWRAKQS-CSNKVASKLHRSSESLVSSSSASIENNWQINLDPRSGSLMLAGAHSKVAEYSMEKTKKDKFSFTSQSISCEYYSYRVSNTPKLHKEFKKAVKQLPQQFYNLIDNFGTHYITKVKLGGSVESVTSIRQCQASLEGLSVEEVQMCLEAEASAQNKFCKRDANKMESKSSFSSHFGDRFTEIKGGHDLLFSAWLTTLPEHPDILSYSLKSLHELLPRNPLQKNLRSAISHYILEKGLLRCHNDPAVNQNCCPTRVGMAQVIITVQRATGLWGDHTTSTDGYVKVSLDTLVQQSPVINNNNNPHWAMVVPLGSQPKVRFEVWDLLGACEQVLSAGVKEEMCQLQHGLLYYKWEVRCAPSLSGNTCTEYKSS</seq>
+      </row>
+      <row id="Row871679" otu="Tl717970">
+        <seq>TCWTASVPECEKAP-FVPGHNLAGKGFDVVRMQRTGAFVINVKTCTLCSNRFQQGTQKLPAAVLDWRPFSR-CSKQLSSALHHSVDSLLRSSSSLVRNNWGIGLSENIGNAVLGGSRSDLAKFARLQHSVDKATFAIHEISCTYYSYRLADHPQLSAEFTKHLKRLPALYRRLIDTYGTHYIHQVQLGGKVRRVTAFKTCLAALKGFTEINVERCLNAELRTLSNKCDNLQRGN-LSMGFYRGFMTHKIEVVGGEDILYQQWINSLHDNPDVVSYAIFPLHQLVQDSQIAANLRDAITGYIQENQLRVCSPTPNLDHHCCPP--GRGTLKVTIHRAVGLNADTSTKADAYVKIFYNGLYDETETVMNNNNPVWNAVFDLGPVLKLKFEVWDFVGKCMTVPERGTHSSGCQLNTGVLYYTYVVGCRG------CDGF---</seq>
+      </row>
+      <row id="Row871680" otu="Tl717981">
+        <seq>SCTQGTPKECLDAE-FAPGSNLAGEGFDITKLERKGAFVIDMNTCTLCSNPYLENKQKLPVSVVDWRSKAS-CTMQITSKLHRSSESLVTSSSSSVDNNWQTNLDNKAASMMLAGTHSKLAEYSMEKTKNDKFSFTSQGMSCTFYSLRVSDSPKLSNEFLRAVRGLPARFYKLIDNFGTHYITKVRLGGSAHSVTSIRQCQASLQGLSTEEVQMCLEAEASSEMKHCKKDTEKMEFKTSFSGLFNDRFTEIKGGQDLLFSAWLNTLPLNPDIVSYSLNSLHELLQVDPARKNLRSAISHYILERGLWKCHNDPAVNQECCPTRKGMARVIITVERGSGLWGDHTTATDGYVKVFFNNMFQRTRVIYNNNDPHWGRVVDLGTQHRVRFEVWDLLGECDRVLSAGDKQDVCALQHGRMFFKWKVECAPSLSGESCTTYKPS</seq>
+      </row>
+      <row id="Row871681" otu="Tl717951">
+        <seq>ACQTSSFTECQNAP-FVPGHNLVGEGFDVVTMKTSGASVVDVKNCTMCHNSLLNQAQKLPVSVLDWRVKVN-CQRSLSSKIFESSQAVMKETSSSLGVSWKVGLGPKLGGFSVGGSHSKTSAFARSHSRQDKFSFTSYEMKCRYYTFRLHARPPLSKEFEVSLKNLPSAFRQFISVYGTHFIRRVHLGGRVNSMTAIRTCQASISQMSVHTVSNCLSVEAEAASRFCQSKSKSLKTGATFSQAFSDRTTDVLGGDDILFQPWLISLKKVPGLVSYQLSPLHLLVPDNVLQESLRSAISDYISKSAKPLCQGHHMVNSDCCPAEYGVARMNVTVVRAAGLWGDYFSKTDGYVKVFYHQAASATPIIWNNNFPAWNYLIRFETVNPVRFEVWDLLGRDSLVPTSGSISTSFRLKHGSLLVRVSAVCAPSLQGSLCEQYAAS</seq>
+      </row>
+      <row id="Row871682" otu="Tl717949">
+        <seq>PCRIGNFSQCQSAP-FVPGHNLVGEGFNVVTLQRKGAYVIDVKTCTLCSNSLQGNLQKLPLSALDWRPFSR-CSADIYGSLHQSVSSLLETYTSQDSSDWKVGLNDKFANLEVGGTQSSAYKYAIRRTGEDRHFFSLHRVTCGYYSYRVSSKPTLSSEFHRDLDRLPAQYNQLIYTYGTHYIRQVYLGGRLRRITASRTCLSTLNALSTSEIHSCLSLGIGNRE-SCKKVLNNQDVSTSFGSGLFQHYTEVVGGTEFSLMSWLNTLKDHPDIVSYSLRPIYELVPSNLTRLGMKAAIEQYLQDNGIKKCSSVPNLASNCCPKEARMGTLDVTIVRAWNLKGDLFGATEAYAKMWFGPFYYRTSMIR-SNNPWWNARYYLSKVFGLKVEVWDRLGSCTWYPQQGTRTVTCPTQGGRGQVRYTLTCDRHLTGSRCERYKPT</seq>
+      </row>
+      <row id="Row871683" otu="Tl717980">
+        <seq>VGYIGTPTECAKAH-FVPGYNLGGEGFDVVTMERKGAFVIDTESCRLYRNRYMNRVQKVPVSVVDWRILPQ-CSLKVDSMLYDSAEALVNDSASSVSNNWKVGLEGASVGVGLGGSHSRESAFGMQKSKQDRYSFSRQSIQCKVYRYRMSKKPLLNAEFLSVVNSLPQQYRALIDTYGTHYITKVALGGSIKAVTSIKTCEAAINGLSTTEVSDCLSVEASAMTEHCKAQKKKLGHSQNYRSMFNERHTEVTGGSDVLFEGWLKSLKTLPDVVQYDLHPLHMVLPAPPAVKGLKAEVEQYIKNNAIATCNSSSHIKSNCCPNGKGLATLKVFRLYAQNLYGDRWSQTDGSVEVTYGNVVKRTNIISNNDNPVWGETFEFGPINKLRFRVYDLLGECSFELHSGKQSNSCMLNHGTFFFSYTAECAPSLGGNRCQEYIPA</seq>
+      </row>
+      <row id="Row871684" otu="Tl717957">
+        <seq>SCSQGKPQECLEAE-FAPGSNLAGEGFDITKLERKGAFVIDMNTCTLCSNPYLENKQKLPVSVVDWRSQNS-CSLQISSGLHRSSESLLTSSTSSVDNSWGVNLDNKAASMMLAGTQSKLAEYSMEKTKNDKFSFASQSTSCVFYSYRLSSSPTLSQEFRKAVRGLPLKFYRLIDTFGTHYITKVKLGGEVQSVTSIRQCQASLQGLSTEEVQMCLEAEASTELKHCKKDTEKMESKSSFSSLFNDRFTEIKGGQDLLFSSWLNTLPLIPDIISYSLNSLHELLPTSPVRKDLRSAIRHYILEKGLWKCHNNPAVNADCCPTRKGMARVIITVQRATDLWGDHTTATDGYVKVFFNNLVHRSQVIYNNNNPHWAREVDLGTQKKVRLEVWDLLGACQQVLTAGVQQEVCSLQHGRLFYSWKVECAPSLDGPGCTTYKPS</seq>
+      </row>
+      <row id="Row871685" otu="Tl717978">
+        <seq>TCWTASGPECEKAP-FVPGHNLAGEGFDVVRMRRTGAYVINVKTCTLCPNRFQQGVQKLPAAVLDWRPFSR-CSKQLSSALHHSVDSLLRSSSSLVNNNWGVGLSENIGKVVLGGSRSDLAKFARSQHSVDKATFAIHEISCTYYSYRLADHPQLSAEFTKYLRRLPGPYRRLIDTYGTHYIHQVQLGGKVRRITAFRTCLATLKGFAETDVKTCLNAELRTLSNKCDNLLKGN-MSMGFYQGFMTHKIEVIGGEDILYQQWMNSLHDNPDVISYAIFPLHQLVPDSQIAANLRDAITEYIQENQLRECSPTPNLDHNCCPLRSGRGTLRLMIHRAAGLRADTFTKTDAYVKIFYNGMYEETETVMDDNDPVWNATYNFGSVQELRLEVWDVAGRCVAVPERGTHSFSCQLKKGVLYFTYEAKCDAHLTGFRCGRYSPS</seq>
+      </row>
+      <row id="Row871686" otu="Tl717979">
+        <seq>ACQTSSFTECQQAP-FVPGHSLVGEGFDVVTMKSSGASVVDVKNCTVCHNPLLNQTQKLPVSVLDWRVKVM-CQRSLSSKIFESSQEVMKEASSSLSVSWKVGLSPLIGGAAVGGSHSRSSQFASSHSRKDKFSFTTHNLKCSYYTFRIHSRPPLSKEFEESLKNLPSAFTQFLSVYGTHFIRRVRLGGHVNSITAIRTCQASMSQMSVQTVSNCLSVEAQAATQFCKTKSSKLKTGATFRQAFSDRSIEVLGGDDVLFNSWLASIKRVPGLVWYQISPLHLLVPDNVLQETLSKAISHYISTRARSLCKGHRLVDANCCPSDYGVARLNVTVVQASGLWGDYFSKTDGYVKVFYGQSSEMTGIIWNNNFPVWNHLIRFQTVKPVTFEVWDLLGRVRVVPTAGSTDRWFRLKHGSVRVRLSAVCAPSLQGSLCEQYAAT</seq>
+      </row>
+      <row id="Row871687" otu="Tl717983">
+        <seq>MCTDGTPKECQEAE-FAPGSNLAGEGFDITSMERKGAFVLDMNACTLCTNPYMDNRQKLPLSVVDWRATHS-CSSKVSSQIFKSSESLVESTTSSVENNWKVGLSGAISNLMLAGSHSKVAGYSMQKTKSDKFSFTTQGLSCEYYSYRVSKAPTLQKDFLDSVKQLPDNYYHLIDTFGTHYITKVKMGGKVQAVTSIRECLAHLEGIEVNEAEMCLRVEASIEVQNCQAKKDKSGRKIAFSSYFNDRFTEVRGGQDLIFSAWLNSVPQNPDIISYSLDSVHELFPKSCMRENLRSAITHYILEKGLLKCHNNPAVTPDCCPAEKSKARVIITVVRASGLWGDYFTATDAYVKVFIGKLVGRTPVIANNNNPQWNMAIDLGTQQKLKFEVWDLLGTCERALTSGNKRGVCALNHGELFFNWKVECTPNLSGSYCQNYQSS</seq>
+      </row>
+      <row id="Row871688" otu="Tl717956">
+        <seq>MCTDGTPQECQQAE-FVPGSNLAGEGFDITSMERKGAFVLDMNACTLCTNPYMDNRQKLPLSVVDWRAKHS-CSSKVSSQIFKSSESLVESTTSSVQNDWKVGLNPFKANLMLAGSHSKVAGYSMEKTKSDKFSFTTQGLSCEYYSYRVSKAPTLQKDFLDSVKQLPDNYYHLIDTFGTHYITKVKMGGKVQAVTSIRECEAHLNGIEVNEVDMCLRVEASSEAEQCQGKKDKLGRKITFSSYFTDRFMEVKGGQDLIFSAWLNSVPQNPDILSYSLDSVHELIPKSPMRQNLRSAITHYILEKGLMKCHNNPAVTPDCCPAEKSEARVIITVVRASKLWGDYSSGTDAYVKVFFGKLVGRTPIIADDDNPHWNMKLDLGTQVKLKFEVWDLLGTCERALTSGTKRGVCALNHGELFFNWKVECTPNLSGSYCQNYQSS</seq>
+      </row>
+      <row id="Row871689" otu="Tl717968">
+        <seq>TCTDGKPKECQEAE-FVPGSNLAGEGFDITKMERKGAFVLDMNACTLCSNPYMEMKQKLPLSVVDWRAKHS-CSGKVSSKLHKSSESLVESSTSSVENNWKVDLEDKSGSVMLAGTNSKLAEYAMEKTKNDRFSFSTNSITCEYYSYRVSSHPRMHQEFRKAVRELPKIFNKVIEKFGTHYITKVKLGGKVKTVTSIRQCEASLQGLSAEEVQMCLEAEASTEMKHCKKDSNKLDNKQAFSDFFTDRLTEIRGGHDLLFSAWLSSVPQYPDILSYSLDSLHDLLSPKPVRKNLRSAIRHYILEKGLWKCHNEPAVNSDCCPTRKGMARVIITVQRALDLWGDHSTPTDGFVKVLVNNQVHRSPVINNNNNPHWENIVDLGSMNIIRFEVWDLLGGCEEILTAGTKEDVCTLQHGRFYYKWEVKCAPSLGGKSCTDYEAS</seq>
+      </row>
+      <row id="Row871690" otu="Tl717948">
+        <seq>ACRIGTGPECEKAP-FVPGHNLAGEGFDVVRLRRTGAYVINVKTCTLCPNRFQKGIQRLPASVLDWRPFSR-CSKQLSSALHHSVESLLRSSNSLVNNNWGLGLSESIGHGVLGGSRSDLAKFASSQHSVDKATFALHEISCTYYSFRLADHPQLSSEFIKHLRKLPASYRRLIDTYGTHYIHQVHLGGKVRRITAFRTCLATLKGFSETEIKNCLNVELRSFSNKCDGLLKGN-MSMGFYQGFMTHKIEVIGGEDILYQQWMNSLHENPDVVSYAIFPLHHLVEDSRVSANLRSVVTEYIKENQLQECSPTPNLDHNCCPLRAGRGTLTVEIHRGAGLRADTFTKTDAFVKIFYSGMYEETETVMDNNDPVWNATYEFGSVQALRFEVWDMAGTCVVYPERGRHSLGCKLRKGVFYFTYTITCDAHLTGYRCGRYSPN</seq>
+      </row>
+      <row id="Row871691" otu="Tl717969">
+        <seq>SCRIGNSSECDSAS-FVPGHNLVGEGFDVVRLQRKGAHVIDVKSCTLCSNSLQGNLQKLPVSVIDWRAFSH-CSADIYSSSHTSVSSLIETYSAQDSNDWKVGLEYVSANLEVGGTRSSAYNFGSQRTSVDRHFFSIHRVTCSHYSYRSSVRPPLSSEFMKDVGRLPAQYEELIHIYGTHYIRQVYLGGRLRRVTATRTCLASLNGLSSNEAHSCLSQGISSSHKSCKQVLENQGTSTTYGSGFHQHYTDVSGGNEFSVSHWMASLKDHPDIVSYSLRPMYDLMPNEAQRAGMKAAIEKYLGDNAVKRNGYTPNLATNCCPMQARRGTLEVTIIRGWNLKGDLTGKTESYAKLWFGPHDRRTHMIR-SNDPRWNAYYNLGKVPGLKVEVWDLLGTCTKSVIQGTHRFTCPAKKGGFEVQYTLTCDPHLTGDKCERYKPS</seq>
+      </row>
+      <row id="Row871692" otu="Tl717962">
+        <seq>MCTDGTPKECLEAE-FAPGSNLAGEGFDITSMERKGAFVLDTNACTLCTNPYMDNRQKLPLSVVDWRATHS-CSSKVSSQIFKSSESLVESTTSSVQNDWKVGLNPFKANLMLAGSHSKVAGYSMEKTKSDKFSFTTQGLSCEYYSYRVSKAPTLQKDFLDSVKQLPDNYYHLIDTFGTHYITKVKMGGKVQAVTSIRECEAHLNGIEVNEVEMCLRVEASSEVQHCQGKKDKLGRKITFSSYFNDRFMEVKGGQDLIFSAWLNSVPQNPDILSYSLDSLHELFPKSPMRQNLRSAITHYILEKGLMKCHNNPAVTPDCCPAQRGMARVIITVVRASKLRGDDFTATDAYVKVFIGKLVGRTPIIANDDNPHWNMKLDLGTQVKLKFEVWDLLGTCEQDLTSGTKRGVCALNRGELFFNWKVECAPSLSGSYCQTYQSS</seq>
+      </row>
+      <row id="Row871693" otu="Tl717977">
+        <seq>TCTDGTPQECQDAG-FVPGSNLAGEGFDITSMERKGAFVLDMNSCTLCTNPYMDNRQKLPLSVVDWRATHS-CSSKVSSQIFKSSESLVESTTSSVQNDWKVGLNPFKANLMLAGSHSKVAGYSMEKTKSDKFSFTTQGLSCEYYSYRISKTPTLQKDFLDSVKQLPNNYYHLIDTFGTHYITKVKMGGKVQAVTSIRECEAHLDGIEVNEAEMCLRVEASSEVQHCQGKKDKLGRKITFSSYFNDRFMEVKGGQDLIFSAWLNSVPQNPDTLSYSLDSLHELIPKSPMRENLCSAITHYILEKGLLKCHNNPAVTPDCCPAQRGMAR-IITVLGGSYLYGDDFTATDAYVKVFTGKQVFRTDTIDNDDFPKWNMKLDLGSQ-KLKFEVWDLLGSCERSLTSGTNSDACSLDYGELYFEWKVECAPNLSGSYCQTYQSS</seq>
+      </row>
+      <row id="Row871694" otu="Tl717958">
+        <seq>SCTDGTPSQCAGAE-LAPGTNMAGEGFDITKMERKGSFVLNMSTCTLCTNPYLENKQKLPLSVVNWRPMQS-CSMKVGTALHQSSESLVNSLTSSVENNWKVNLDGRSASVMLAGTNSKVAEYSMEKSKKDKFSFASHSFSCEFYSYGVSSNPGLSGEFKKALKKLPQRFYKLIDNFGTHYITKVKMGGSVRSVTSIRQCQASLNGISSQEAEMCLEAEASTETKHCQKDINKRERQESFSSIFNDRFTETKGGHDLLFSSWLNTLPQNPDIVSCSLDSLHELLPVNPVRKNMRAAISHYILEKGLWRCHNDPSVNRDCCPTRKGMARVIITVQRAHGLWGDHTSATDGYVKVFLGDVPQRTPVIMNNNSPHWAMVMDLGSQKNVRFEVWDLLGTCNQVLQAGVKEEVCALQHGQLFYKVDVKCAPNLSGATCTDYKPS</seq>
+      </row>
+      <row id="Row871695" otu="Tl717950">
+        <seq>VPFIGSPQQCEKAR-FVPGYNLGGEGFDIVKMERKGAYVIDTETCRMYNNNFMNGSQKVPAAVLDWRVLPK-CSLKVSSLVYNSAETLVNDSTSAVSNDWKIGLKTVTLGVGFGGSHSKESTFAMQKSKEDRYTFVRHSVDCTLYNYRMTSSPPLSQDFKSAVNSLPSNYRSLIDTYGTHFITQVSLGGQIKAITSVKTCQASMQGLSSTEVANCLFVEASARYQYCKSKKQKLGFGQSFSGTFHERSADVIGGDDILFNGWQQSLQTLPDVVKYSIDPLHTLLPIDSARAGLKQEVEKYIVDNAVLKCDSNSNIQHNCCPAGKGLATLKVFKLYADGLYGDKWTQTDGSVEVRYGDQTKRTAIISNNDYPRWTETFQFASINKLQFTVYDLLGECSFGLRKGKHRDSCMFDYGTFFFSYEVECAPSLSGDECQDYIPS</seq>
+      </row>
+      <row id="Row871696" otu="Tl717947">
+        <seq>VRFIGSPQQCAKAR-FVPGYNLGGEGFDIVKMERKGAYVIDTETCRLFNNNFMKGRQKVPAAVVDWRVLPK-CSLKVSSLVYNSAETLVNDSTSAVSNDWKVDLTSVTLGVGLGGSHSKESTFAMQKSKEDRYTFVRHSVDCTLYNYRMTSNPPLSQDFKSAVNSLPLKYRSLIDTYGTHFITQVSLGGKIKAITSVKTCQASMQGLSSTDVADCLSVEASAMFNHCESEKKKLGSSQSFSGTFRERSADVIGGDDILFNGWQRSLQSLPDVVKYSIKSLHTLLPIGAARAGLKQEEEKYIVDNAVLKCNSNSNIKHNCCPAGKGFATLKVFRLYADGLYGDKWTQTDGSVEVRYGDQTKRTAIISNNDYPRWSETFQFGNINKLQFTVYDSLGKCSFGLHKGKHRDSCMFDYGTFFFSYEVECAPSLSGDECQDYIPS</seq>
+      </row>
+      <row id="Row871697" otu="Tl717975">
+        <seq>VRFIGSPQQCAKAR-FVPGYNLGGEGFDIVKMERKGAYVIDTETCRMFNNNFMKGSQKVPAAVVDWRVLPK-CSLKVSSLVYNSAETLVNDSTSAVSNDWKVDLTSVTLGVGLGGSHSKESTFAMQKSKEDHYTFVRHSVDCTLYNYRMTSNPPLSQDFKSAVNSLPLEYRSLIDTYGTHFITQVSLGGKIKAITSVKTCQASMQGLSSTDVADCLSVEASAMFNHCESEKKKLGSSQSFSGTFRERSADVIGGDDILFNGWQRSLQSLPDVVKYSIKSLHTLLPIGAARAGLKQEEEKYIVDNAVLKCNSNSNIKHNCCPAGKGFATLKVFKLYANGLYGDTCTRTDGSVEVRYGDQTKRTAIIRNNDYPRWSETFQFGNINKLQFTVYDRLGKCSFGLLKGKHINSCMFNYGTFFFSYEVECAPSLSGDECQDYIPS</seq>
+      </row>
+      <row id="Row871698" otu="Tl717953">
+        <seq>GCRVGSGAECEKAP-FVPGHNLAGEGFDVVRMRRTGAYVINVKTCTLCPNRFQEGVQRLPAAVLDWRPLSR-CSKQLSSALHHSVDSLLRSSNSLVNNNWGMGLSENIGKALLGGSRSDLAKFARSQHSVDKATFATHEISCTYYSYRLADHPQLSAEFLKHLKRLPALYRRLIDTYGTHYIHQVHLGGKVRRITAFRTCLATLKGFSESDIKNCLNFELRSFSNKCEDLLKGN-MSMGFYQGFMTHKIEVIGGEDILYQEWMSSLHENPDVVSYAIFPLHHLVEDSRVSANLKSTITEYIKDNQLQECSPTPNLDHNCCPLRAGRGTLGLEIHRAAGLRADSITKTDAYVKIFYNGVYEETETVMNDNDPLWNVTYDFGSVQALRFEVWDVAGRCVVFPERGTHALSCQLSKGVLYFTYTVKCDAHLTGYRCGRYSPN</seq>
+      </row>
+      <row id="Row871699" otu="Tl717964">
+        <seq>VPFLGSPQQCEKAR-FVPGYNLGGEGFDIVKMERKGAYVIDTETCRMYNNNFMNGSQKVPAAVLDWRVLPK-CSLKVSSLVYNSAETLVNDSTSAVSNDWKIGLKTVTLGVGFGGSHSKESTFAMQKSKEDRYTFVRHSVDCTLYNYRMTTNPPLSQDFKSAVNSLPSNYRSLIDTYGTHFITQVSLGGQIKAITSVKTCQASMQGLSSTEVANCLFVEASARYQHCKSKKKKLGFGQSFSGTFHERSADVIGGDDILFNGWQQSLQTLPDVVKYSIDPLHTLLPIDSARAGLKQEVEKYIVDNAVLKCDSNSNIQHNCCPAGKGLATLKVFKLYADGLYGDKWTQTDGSVEVRYGDQTKRTAIISNNDYPRWTETFQFASINKLQFTVYDLLGECSFGLRKGKHRDSCMFDYGTFFFSYEVECAPSLSGDECQDYIPS</seq>
+      </row>
+      <row id="Row871700" otu="Tl717965">
+        <seq>SCFLGKEAECQDAD-FVPGSDLAGEGFDITKMQHLGTFVIDMSTCNLCKNPFMQKKQKLPVSVIYWRATQK-CKRSLSSSVYESSESLVSSSTSSIENNWKVGLGVSKISLMMAGTNSKLAEYSMAKTKKDTFSFIKQSTSCEYYRYSISSRASLHHELSNEFTSLPESYLSLVEKFGTHYIVQVKLGGAVQSVTSVRNCIATLQDLSIDEVKTCLDVEVSTAARHCKQSKDKKLSKHSFANNFSDRLTEITGGHALLFSDWLATVPEKPDVISFKLKPLHMLLPVKPKYKQLRRAIRDYILQRALMKCHNIAGVKANCCPAQRGLAQISVTVMKATGLWGDYFSQTDGYVKVLRNQFLGETPVIWNQNSPTWNWKFGLDSFGGLRLEVWDLLGACNIQLKAGVKSNFCRLNHGLLYYKTSVTCAPSLAGSSCTEYVSS</seq>
+      </row>
+      <row id="Row871701" otu="Tl717961">
+        <seq>CCETVPSTECEKPS-FVPGHNLVGEGFDIVQMKTTGAFVVDVRNCTVCENKLLNEKQKLPASVVDWRVKVQ-CRRSVGAKIYESASSVLKDTTNSASASWKIGLSPMAGGVAVGGTHSKSARFAKSHASQDKYSFTSHTFSCRYYSFRLHARPPVTKEFLGSITALPGAYNHFISIYGTHFLRRVDLGGRVHSTTAVKTCQVSMKGLSVHDVSNCLSAEASAQAGYCKGKSQKLERGNSFSGTFSDRVTEILGGNDILFSPWLKSLKKIPGVVSYTLSSLHMLVKNDARRASLQAAISKYITKSAISTCSGHQRIDSNCCPSNPGVATLTVTVLSGAGLWGDYFSKTDGYVKVFYGSRAYETPVIWNNNFPQWNYNINFETVTPLRFEVWDLLGKSSTVPQKGMNQKKFKLKHGSFLISYSAQCGPSLTGSFCEKYAPT</seq>
+      </row>
+      <row id="Row871702" otu="Tl717972">
+        <seq>EGDIGSSKECKNAP-FVPGHNLAGEGFDIVTMERKGSYVIDTETCKLHKNTFMNGKQKLPAAVVDWRPLPK-CSMKVSSQIYESSEALVKESSSAVSAGWNIGLDVYAGGYVVGSTHSSESKFAMQKSKEDKYSFTKHEVECSFYRYRVAAKPPLQAEFLEAVKSLPVAYRNLISTYGTHYTTSVKLGGEMKAITAIKSCQAAMMGLTDTAVKDCLDVEASSKTNLCEKLKRKMHTSVKFSSMFSERQMEIIGGEDLLFSGWVKSLKSLPDVLHYSLKPLHFLLSAKPARKGLKKAVEKYITENALKKCESSQMITSNCCPAAKGLATLKVYSLRARGLYGDKFTQTDGTVTVTYDGKYMRTQTINNNDNPSWPETFYFGPIKKITFAVYDFLGSCSFYLRSGVVRDACAFTYGTFYFNYKVECAPSLQGHKCDEYRPS</seq>
+      </row>
+      <row id="Row871703" otu="Tl717963">
+        <seq>ACFRGKEAECQDAD-FAPGSDLAGEGFDITKMQRLGTFVIDMSTCNLCKNPFMNNKQKLPLSVVYWRATQK-CSMSLSSSIYESSESLVSSSTSSVENNWKAGLGMNKMSLMFAGTNSRLAVYSMRKTKKDKYSFIKQSASCGYYSYRISSHSPIHQELNLDFTNLPESYLSLVEKFGTHYIVQVKLGGAVQSVTSVQQCEASLQDLSTDEVKTCLDVEASTAYRHCKQTEDKKLSKHSFAHRFSDRLTEITGGHALLFSAWLSSVPGKPDVISFSLKPLHMLMPVKPKYGQLRRAIRDYILQRALWKCHNSPGVKANCCPTQRGIAQITVIVKKATGLWGDYFTQTDGYVKVLRNHFLGETPVIWNRNSPTWNWKFDLGSFGGLRLEVWDLLGACNIQLNNGKKSNFCSLNHGMLYYKTSVTCGPSLTGSLCTEYVGF</seq>
+      </row>
+      <row id="Row871704" otu="Tl717967">
+        <seq>SCAKGKPNECAEAS-FAPGSNLAGEGYDVTKMQRKGAFVINTDSCTLCTNPYMDRKQRLPISVVDWRPSQK-CNIKISSSLYQSSEDLVSSSTSSIENNWAANLGKNSGSFMVAGTNSKLAEYSMEKTKKDKFNFASQSISCAFYSYRVSNKPVLHPEFKRSVKELPPRFYKFINTYGTHYITKVTLGGSVQSVTSIRQCETALQGLSVDEVKTCLDVEASAETKHCNEDKDKTEHKSSFSSRFNDRLTDIIGGHELLFSGWLASLPQNPDVISYSLESLHELISSKPVRKHLRQAIHDYILEKSLWRCHNNPGITPDCCPSQRGLSRVKVTIVRAQGLWGDQTTATDGYVKVFDKHQVGRTDMITNNNSPYWGRTFDLGDVEKMKLEVWDLLGTCEVPIKAGQNDNFCNLNHGVLFYKTEVTCAPSLSGTYCSKYVGS</seq>
+      </row>
+      <row id="Row871705" otu="Tl717954">
+        <seq>GCESVASTECEKLP-FVPGHNLVGEGFNIVQMKTTGAFVVDVRNCTACDNKLLNQKQKLPVSVIDWRIKVQ-CRRSLSAKVYESASSVMEDTTSAASLSWKVGLSPMVAGVAVGGTHSKSARFARSHASKDKFSYTSHTFSCRYYSFRLHARPPLTKEFAGSISSLPSAYNHFISIYGTHFLRRVDLGGRVKSTTAVRTCQVSMKGLSANDVSNCLSAEASGQTAYCKSKQKQLERANSFSATFSDRVTDILGGNDILFTPWLGSLKKIPGVVSYTLSSLHMLVRNDARRSSLQQAISKYITKYAISTCNGHVNVNSNCCPNKPGVATLTVTVVSAAGLWGDVFSKTDGYVKVFYGSHTAQTPVIWNNNFPQWNFRAEFGTVASLQFQVWDLLGKGAVVPEKGVNVPKFGFKHGSLMISYSATCGPSLQGSFCEIYAPT</seq>
+      </row>
+      <row id="Row871706" otu="Tl717966">
+        <seq>SCTKGKPKECEEAT-FAPGSNLAGEGYDVIKMQRKGAFVINTDSCTLCKNPYMDGLQKLPLSVVDWRTSQK-CTVKVSSSLYHSSEDLVSSSASSIENNWGASLGKTTGSIVLAGSKSKLAEYSMEKTKKDKFNFASQSISCAYYSYRVSNKPVLHPEFKRSVKELPPRFYKFINTFGTHYITKVTLGGNVHSVTSIRQCETALQGLSTDEVKACLDLEANAESKHCSQNQDKTESKTSFSSRFNDRLTEVTGGHELLFSGWLASLPQNPDVISHSLESLHELIPTKPVRKHMRQAIHDYILENSLWRCHNKPGITPDCCPSKRGLSRVQVTVVKAQDLWGDTTTATDGYVKVFDKNKIGSTNMIPNNNSPYWGQTFDLGDVDNIKLEVWDLLGTCQVAIKVQSQTYNCSLNHGLLYYNTKVTCAPGLAGTYCEKYVGS</seq>
+      </row>
+      <row id="Row871707" otu="Tl717976">
+        <seq>ACFLGKQAECQDAS-FVPGSDLAGEGFDITKMQRLGTFVFDMSTCNLCKNPFMQNKQKLPVSAVYWRASQK-CTMSLSSSVYESSESLVSSSTSSIENNWKTGLGLSKVSLMVAGTNSRLSDYSMSKTKKDKFSFIKQSASCVYYSYRIASSAPLHHELRDDFSNLPESYLSLVEKFGTHYIIQVKLGGGVQSVTSVKQCMATLQDLSVDEVKTCLDVEASTAYRHCKQSQDKKLSAHSFANSFSDRLTEITGGHALLFSAWLSSVPQQPDVISFSLKPLHMLMPAKPKRDQLRRAIHDYVLQKALLKCHNNPAVKANCCPAQRGIAQITVTVMRATGLFGDYFTWTDGYVKVFRNQFLGETPVIWNQNSPKWNWRFDLGSFGGLKLEVWDLLGTCNIQLKAGVKNDFCRLNHGLLYFKTSVTCGPSLAGSSCTEYVGS</seq>
+      </row>
+      <row id="Row871708" otu="Tl717945">
+        <seq>EVEIGTSKECENAH-FVPGYNLAGEGFDVVTLERKGTYVINTETCNMRTNQYMNGKQKLPAAVDFWRTLPK-CSMKVSSQIFESSEAVVEESSSAISGNWKADLSVQLSGATVGGTHSREAKFAMQKSKQDKYSFTKHQVECNFYRYHVVQKPPLHAEFLQAIKLLPFAYRSLISTYGTHYTTSVMLGGHMKAITAIKTCEASIGGLSDTAIKDCLDVEASAEARLCRELKQKLGTNLKMSSKFSERQTEIIGGNDLLFSGWLESLKSVPDVVQYTLKPLHFLLSEKPARKGLKKAVEEYITENALRNCESSKIMKSNCCPTEKGLATLKVYNLRANGLFGDTLTQTDGYVEIKHQGQNKRTQTIVDNDNPRWSETFNFGHISTLTLEVYDHLGTCSVKVSSGVVNDGCALDHGTLFFSYEVKCAPSLQGRHCDEHKPS</seq>
+      </row>
+      <row id="Row871709" otu="Tl717959">
+        <seq>ACHTGSQAECEKAP-FVPGYNLAGEGFDLVKMRRKGAFLINVKTCTICKNRFHGDMQKLPSAVLDWRIFST--TAQPSTALHHSVDSLMKSSTSLINNNWKVDLRDDTGKVIFGGSRSDIAQFAHSQSAKDKTTFALHEISCTYYSYRLRDHPELSTEFSKHLQTLPHLYQKMIETYGTHYIRQVHLGGRVRWVTAFRTCLATLKGFSEIDIKHCLNMDFMSFSNKCSKILVEE-MGMGFYQTFMTHKTEVLGGEELVLNQWRKSLHDNPDVISYAIFPLHHLVADPEVSANLKRAVTQYIEENAISICSKMSNLDQNCCPLRAGRGTLVVFMMGATGMNEDYFSSSDGYVKAWYNGIYKETEVILDNNDPDWNTNFNFGSVHQLKFEVWDFVGECVISPESGMHIHRCKLQRGFFYFIYRALCDDHLTGPRCSRYSPE</seq>
+      </row>
+      <row id="Row871710" otu="Tl717946">
+        <seq>ACHTGSQTECEKAP-FVPGYNLAGEGFDVVKMRRKGAFLINVKTCTICKNRFQGGMQKLPSAVLDWRPFSR-CSKQLSSALHHSVDSLMKSSTSLVNNNWEMDLSDDMGKVIFGGSRSDIAQFAHSQNTMDKATFALHEISCTYYSYRITDNPELSAEFSKHLQKLPPLYRRTIETYGTHYIRQVHLGGRVRRVTAFRTCLATLKGFSETDIKNCLNVELKSLSNKCSQILKDN-LSMGFYQGFMTHKTEVLGGEDLVLSQWMMSLHNNPDVISYAIFPLHHLVADPEVSSNLKIAVTEYIEENMISVCSQTPNLDHNCCPMRAGRGTLIVLVQRAAGLKADLFTRTDGYVKVWYNFMYEETEVVMDNNDPEWNISYDLGSVHELIFEVWDMVGRCVVSPERGIHSHSCKLKRGVLYFTYKASCDAHLTGPRCSRYSPK</seq>
+      </row>
+      <row id="Row871711" otu="Tl717955">
+        <seq>EVEIGTLKECENAH-FVPGYNLAGEGFDVVTLERKGTYVINTETCNMRTNQYMNGKQKLPAAVDFWRTLPK-CSMKVSGQIFESSEAVVEESSSAISGDWKADLSVKLSGATVGGTHSREAKFAMQKSKRDKYSFTKHQVECNFYRYHVVQKPPLHAEFLQAIKLLPFAYRSLISTYGTHYTTSVMLGGHMKAITAIKTCEASIGGLSDTAIKDCLDVEASAEARLCRELKQKLGTNLKMSSKFSERQTEIIGGKDLLFSGWLESLKSVPDVVQYTLKPLHFLLSDKPARKGLKKAVEEYIIENALRKCESSRIMKTNCCPTEKGLATLKVYNLRANGLYGDTWTQTDGYVEVRHQGQNKRTQIIDDNDNPRWSESFNFGHISTLTFEVYDHLGTCSVKVSSGVVNDGCALNHGTLFFSYEVKCAPSLQGPQCDEHKPS</seq>
+      </row>
+      <row id="Row871712" otu="Tl717974">
+        <seq>EDEIGTSKECEDAP-FVPRYNLAGEGFDVVTLERKGTYVINMETCALVENDYLPGKQKLPVAVKFWRTLPK-CSMKVSSQIFESSEAVVNDSSSALSASWKVGIDVKAVGAAVGSTHSREAKFAMTKSKEDKYSFTKHQVECSFYRYNVAENPPLHAEFLEAIKSLPDAYRSLIYTYGTHYTTNVKLGGQIKAITAIKTCQAAVSGLTDTAIKDCLDVEASAEAHFCKEQQKKMGTNQKFSSMFSERQTDIIGGNHLLFSGWLESLKSLPDVVQYSLKPLHFLLSAKPARKGLKKAVEEYIIENALMKCESSQVIKSNCCPAENGLATLKVYNLRANGLYGDVRTQTDGTVLVKYGKTIKRTETIDNNDNPRWRDTFDFGPVERLCFEVYDLLGKCSFKLRSGVVTDACVFNYGTFFFTYEVKCAPSLQGPQCNEHKPS</seq>
+      </row>
+    </matrix>
+  </characters>
+  <characters about="#M11730" id="M11730" label="MPEG1-perforin-C6" otus="Tls24566" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:ProteinSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@978266b $Rev: 1056 $" datatype="xsd:string" id="meta271725" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="11730" datatype="xsd:long" id="meta271724" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="269" datatype="xsd:integer" id="meta271723" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="12" datatype="xsd:integer" id="meta271722" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="Protein" datatype="xsd:string" id="meta271721" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states271696">
+        <state id="state271697" symbol="A"/>
+        <state id="state271698" symbol="B"/>
+        <state id="state271699" symbol="C"/>
+        <state id="state271700" symbol="D"/>
+        <state id="state271701" symbol="E"/>
+        <state id="state271702" symbol="F"/>
+        <state id="state271703" symbol="G"/>
+        <state id="state271704" symbol="H"/>
+        <state id="state271705" symbol="I"/>
+        <state id="state271706" symbol="K"/>
+        <state id="state271707" symbol="L"/>
+        <state id="state271708" symbol="M"/>
+        <state id="state271709" symbol="N"/>
+        <state id="state271710" symbol="P"/>
+        <state id="state271711" symbol="Q"/>
+        <state id="state271712" symbol="R"/>
+        <state id="state271713" symbol="S"/>
+        <state id="state271714" symbol="T"/>
+        <state id="state271715" symbol="U"/>
+        <state id="state271716" symbol="V"/>
+        <state id="state271717" symbol="W"/>
+        <state id="state271718" symbol="Y"/>
+        <state id="state271719" symbol="Z"/>
+        <uncertain_state_set id="uncertain_state_set271720" symbol="X">
+          <member state="state271718"/>
+          <member state="state271706"/>
+          <member state="state271705"/>
+          <member state="state271707"/>
+          <member state="state271714"/>
+          <member state="state271698"/>
+          <member state="state271712"/>
+          <member state="state271699"/>
+          <member state="state271709"/>
+          <member state="state271697"/>
+          <member state="state271710"/>
+          <member state="state271703"/>
+          <member state="state271711"/>
+          <member state="state271701"/>
+          <member state="state271700"/>
+          <member state="state271708"/>
+          <member state="state271717"/>
+          <member state="state271704"/>
+          <member state="state271719"/>
+          <member state="state271713"/>
+          <member state="state271702"/>
+          <member state="state271715"/>
+          <member state="state271716"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col33289861" label="Protein" states="states271696"/>
+      <char id="Col33289862" label="Protein" states="states271696"/>
+      <char id="Col33289863" label="Protein" states="states271696"/>
+      <char id="Col33289864" label="Protein" states="states271696"/>
+      <char id="Col33289865" label="Protein" states="states271696"/>
+      <char id="Col33289866" label="Protein" states="states271696"/>
+      <char id="Col33289867" label="Protein" states="states271696"/>
+      <char id="Col33289868" label="Protein" states="states271696"/>
+      <char id="Col33289869" label="Protein" states="states271696"/>
+      <char id="Col33289870" label="Protein" states="states271696"/>
+      <char id="Col33289871" label="Protein" states="states271696"/>
+      <char id="Col33289872" label="Protein" states="states271696"/>
+      <char id="Col33289873" label="Protein" states="states271696"/>
+      <char id="Col33289874" label="Protein" states="states271696"/>
+      <char id="Col33289875" label="Protein" states="states271696"/>
+      <char id="Col33289876" label="Protein" states="states271696"/>
+      <char id="Col33289877" label="Protein" states="states271696"/>
+      <char id="Col33289878" label="Protein" states="states271696"/>
+      <char id="Col33289879" label="Protein" states="states271696"/>
+      <char id="Col33289880" label="Protein" states="states271696"/>
+      <char id="Col33289881" label="Protein" states="states271696"/>
+      <char id="Col33289882" label="Protein" states="states271696"/>
+      <char id="Col33289883" label="Protein" states="states271696"/>
+      <char id="Col33289884" label="Protein" states="states271696"/>
+      <char id="Col33289885" label="Protein" states="states271696"/>
+      <char id="Col33289886" label="Protein" states="states271696"/>
+      <char id="Col33289887" label="Protein" states="states271696"/>
+      <char id="Col33289888" label="Protein" states="states271696"/>
+      <char id="Col33289889" label="Protein" states="states271696"/>
+      <char id="Col33289890" label="Protein" states="states271696"/>
+      <char id="Col33289891" label="Protein" states="states271696"/>
+      <char id="Col33289892" label="Protein" states="states271696"/>
+      <char id="Col33289893" label="Protein" states="states271696"/>
+      <char id="Col33289894" label="Protein" states="states271696"/>
+      <char id="Col33289895" label="Protein" states="states271696"/>
+      <char id="Col33289896" label="Protein" states="states271696"/>
+      <char id="Col33289897" label="Protein" states="states271696"/>
+      <char id="Col33289898" label="Protein" states="states271696"/>
+      <char id="Col33289899" label="Protein" states="states271696"/>
+      <char id="Col33289900" label="Protein" states="states271696"/>
+      <char id="Col33289901" label="Protein" states="states271696"/>
+      <char id="Col33289902" label="Protein" states="states271696"/>
+      <char id="Col33289903" label="Protein" states="states271696"/>
+      <char id="Col33289904" label="Protein" states="states271696"/>
+      <char id="Col33289905" label="Protein" states="states271696"/>
+      <char id="Col33289906" label="Protein" states="states271696"/>
+      <char id="Col33289907" label="Protein" states="states271696"/>
+      <char id="Col33289908" label="Protein" states="states271696"/>
+      <char id="Col33289909" label="Protein" states="states271696"/>
+      <char id="Col33289910" label="Protein" states="states271696"/>
+      <char id="Col33289911" label="Protein" states="states271696"/>
+      <char id="Col33289912" label="Protein" states="states271696"/>
+      <char id="Col33289913" label="Protein" states="states271696"/>
+      <char id="Col33289914" label="Protein" states="states271696"/>
+      <char id="Col33289915" label="Protein" states="states271696"/>
+      <char id="Col33289916" label="Protein" states="states271696"/>
+      <char id="Col33289917" label="Protein" states="states271696"/>
+      <char id="Col33289918" label="Protein" states="states271696"/>
+      <char id="Col33289919" label="Protein" states="states271696"/>
+      <char id="Col33289920" label="Protein" states="states271696"/>
+      <char id="Col33289921" label="Protein" states="states271696"/>
+      <char id="Col33289922" label="Protein" states="states271696"/>
+      <char id="Col33289923" label="Protein" states="states271696"/>
+      <char id="Col33289924" label="Protein" states="states271696"/>
+      <char id="Col33289925" label="Protein" states="states271696"/>
+      <char id="Col33289926" label="Protein" states="states271696"/>
+      <char id="Col33289927" label="Protein" states="states271696"/>
+      <char id="Col33289928" label="Protein" states="states271696"/>
+      <char id="Col33289929" label="Protein" states="states271696"/>
+      <char id="Col33289930" label="Protein" states="states271696"/>
+      <char id="Col33289931" label="Protein" states="states271696"/>
+      <char id="Col33289932" label="Protein" states="states271696"/>
+      <char id="Col33289933" label="Protein" states="states271696"/>
+      <char id="Col33289934" label="Protein" states="states271696"/>
+      <char id="Col33289935" label="Protein" states="states271696"/>
+      <char id="Col33289936" label="Protein" states="states271696"/>
+      <char id="Col33289937" label="Protein" states="states271696"/>
+      <char id="Col33289938" label="Protein" states="states271696"/>
+      <char id="Col33289939" label="Protein" states="states271696"/>
+      <char id="Col33289940" label="Protein" states="states271696"/>
+      <char id="Col33289941" label="Protein" states="states271696"/>
+      <char id="Col33289942" label="Protein" states="states271696"/>
+      <char id="Col33289943" label="Protein" states="states271696"/>
+      <char id="Col33289944" label="Protein" states="states271696"/>
+      <char id="Col33289945" label="Protein" states="states271696"/>
+      <char id="Col33289946" label="Protein" states="states271696"/>
+      <char id="Col33289947" label="Protein" states="states271696"/>
+      <char id="Col33289948" label="Protein" states="states271696"/>
+      <char id="Col33289949" label="Protein" states="states271696"/>
+      <char id="Col33289950" label="Protein" states="states271696"/>
+      <char id="Col33289951" label="Protein" states="states271696"/>
+      <char id="Col33289952" label="Protein" states="states271696"/>
+      <char id="Col33289953" label="Protein" states="states271696"/>
+      <char id="Col33289954" label="Protein" states="states271696"/>
+      <char id="Col33289955" label="Protein" states="states271696"/>
+      <char id="Col33289956" label="Protein" states="states271696"/>
+      <char id="Col33289957" label="Protein" states="states271696"/>
+      <char id="Col33289958" label="Protein" states="states271696"/>
+      <char id="Col33289959" label="Protein" states="states271696"/>
+      <char id="Col33289960" label="Protein" states="states271696"/>
+      <char id="Col33289961" label="Protein" states="states271696"/>
+      <char id="Col33289962" label="Protein" states="states271696"/>
+      <char id="Col33289963" label="Protein" states="states271696"/>
+      <char id="Col33289964" label="Protein" states="states271696"/>
+      <char id="Col33289965" label="Protein" states="states271696"/>
+      <char id="Col33289966" label="Protein" states="states271696"/>
+      <char id="Col33289967" label="Protein" states="states271696"/>
+      <char id="Col33289968" label="Protein" states="states271696"/>
+      <char id="Col33289969" label="Protein" states="states271696"/>
+      <char id="Col33289970" label="Protein" states="states271696"/>
+      <char id="Col33289971" label="Protein" states="states271696"/>
+      <char id="Col33289972" label="Protein" states="states271696"/>
+      <char id="Col33289973" label="Protein" states="states271696"/>
+      <char id="Col33289974" label="Protein" states="states271696"/>
+      <char id="Col33289975" label="Protein" states="states271696"/>
+      <char id="Col33289976" label="Protein" states="states271696"/>
+      <char id="Col33289977" label="Protein" states="states271696"/>
+      <char id="Col33289978" label="Protein" states="states271696"/>
+      <char id="Col33289979" label="Protein" states="states271696"/>
+      <char id="Col33289980" label="Protein" states="states271696"/>
+      <char id="Col33289981" label="Protein" states="states271696"/>
+      <char id="Col33289982" label="Protein" states="states271696"/>
+      <char id="Col33289983" label="Protein" states="states271696"/>
+      <char id="Col33289984" label="Protein" states="states271696"/>
+      <char id="Col33289985" label="Protein" states="states271696"/>
+      <char id="Col33289986" label="Protein" states="states271696"/>
+      <char id="Col33289987" label="Protein" states="states271696"/>
+      <char id="Col33289988" label="Protein" states="states271696"/>
+      <char id="Col33289989" label="Protein" states="states271696"/>
+      <char id="Col33289990" label="Protein" states="states271696"/>
+      <char id="Col33289991" label="Protein" states="states271696"/>
+      <char id="Col33289992" label="Protein" states="states271696"/>
+      <char id="Col33289993" label="Protein" states="states271696"/>
+      <char id="Col33289994" label="Protein" states="states271696"/>
+      <char id="Col33289995" label="Protein" states="states271696"/>
+      <char id="Col33289996" label="Protein" states="states271696"/>
+      <char id="Col33289997" label="Protein" states="states271696"/>
+      <char id="Col33289998" label="Protein" states="states271696"/>
+      <char id="Col33289999" label="Protein" states="states271696"/>
+      <char id="Col33290000" label="Protein" states="states271696"/>
+      <char id="Col33290001" label="Protein" states="states271696"/>
+      <char id="Col33290002" label="Protein" states="states271696"/>
+      <char id="Col33290003" label="Protein" states="states271696"/>
+      <char id="Col33290004" label="Protein" states="states271696"/>
+      <char id="Col33290005" label="Protein" states="states271696"/>
+      <char id="Col33290006" label="Protein" states="states271696"/>
+      <char id="Col33290007" label="Protein" states="states271696"/>
+      <char id="Col33290008" label="Protein" states="states271696"/>
+      <char id="Col33290009" label="Protein" states="states271696"/>
+      <char id="Col33290010" label="Protein" states="states271696"/>
+      <char id="Col33290011" label="Protein" states="states271696"/>
+      <char id="Col33290012" label="Protein" states="states271696"/>
+      <char id="Col33290013" label="Protein" states="states271696"/>
+      <char id="Col33290014" label="Protein" states="states271696"/>
+      <char id="Col33290015" label="Protein" states="states271696"/>
+      <char id="Col33290016" label="Protein" states="states271696"/>
+      <char id="Col33290017" label="Protein" states="states271696"/>
+      <char id="Col33290018" label="Protein" states="states271696"/>
+      <char id="Col33290019" label="Protein" states="states271696"/>
+      <char id="Col33290020" label="Protein" states="states271696"/>
+      <char id="Col33290021" label="Protein" states="states271696"/>
+      <char id="Col33290022" label="Protein" states="states271696"/>
+      <char id="Col33290023" label="Protein" states="states271696"/>
+      <char id="Col33290024" label="Protein" states="states271696"/>
+      <char id="Col33290025" label="Protein" states="states271696"/>
+      <char id="Col33290026" label="Protein" states="states271696"/>
+      <char id="Col33290027" label="Protein" states="states271696"/>
+      <char id="Col33290028" label="Protein" states="states271696"/>
+      <char id="Col33290029" label="Protein" states="states271696"/>
+      <char id="Col33290030" label="Protein" states="states271696"/>
+      <char id="Col33290031" label="Protein" states="states271696"/>
+      <char id="Col33290032" label="Protein" states="states271696"/>
+      <char id="Col33290033" label="Protein" states="states271696"/>
+      <char id="Col33290034" label="Protein" states="states271696"/>
+      <char id="Col33290035" label="Protein" states="states271696"/>
+      <char id="Col33290036" label="Protein" states="states271696"/>
+      <char id="Col33290037" label="Protein" states="states271696"/>
+      <char id="Col33290038" label="Protein" states="states271696"/>
+      <char id="Col33290039" label="Protein" states="states271696"/>
+      <char id="Col33290040" label="Protein" states="states271696"/>
+      <char id="Col33290041" label="Protein" states="states271696"/>
+      <char id="Col33290042" label="Protein" states="states271696"/>
+      <char id="Col33290043" label="Protein" states="states271696"/>
+      <char id="Col33290044" label="Protein" states="states271696"/>
+      <char id="Col33290045" label="Protein" states="states271696"/>
+      <char id="Col33290046" label="Protein" states="states271696"/>
+      <char id="Col33290047" label="Protein" states="states271696"/>
+      <char id="Col33290048" label="Protein" states="states271696"/>
+      <char id="Col33290049" label="Protein" states="states271696"/>
+      <char id="Col33290050" label="Protein" states="states271696"/>
+      <char id="Col33290051" label="Protein" states="states271696"/>
+      <char id="Col33290052" label="Protein" states="states271696"/>
+      <char id="Col33290053" label="Protein" states="states271696"/>
+      <char id="Col33290054" label="Protein" states="states271696"/>
+      <char id="Col33290055" label="Protein" states="states271696"/>
+      <char id="Col33290056" label="Protein" states="states271696"/>
+      <char id="Col33290057" label="Protein" states="states271696"/>
+      <char id="Col33290058" label="Protein" states="states271696"/>
+      <char id="Col33290059" label="Protein" states="states271696"/>
+      <char id="Col33290060" label="Protein" states="states271696"/>
+      <char id="Col33290061" label="Protein" states="states271696"/>
+      <char id="Col33290062" label="Protein" states="states271696"/>
+      <char id="Col33290063" label="Protein" states="states271696"/>
+      <char id="Col33290064" label="Protein" states="states271696"/>
+      <char id="Col33290065" label="Protein" states="states271696"/>
+      <char id="Col33290066" label="Protein" states="states271696"/>
+      <char id="Col33290067" label="Protein" states="states271696"/>
+      <char id="Col33290068" label="Protein" states="states271696"/>
+      <char id="Col33290069" label="Protein" states="states271696"/>
+      <char id="Col33290070" label="Protein" states="states271696"/>
+      <char id="Col33290071" label="Protein" states="states271696"/>
+      <char id="Col33290072" label="Protein" states="states271696"/>
+      <char id="Col33290073" label="Protein" states="states271696"/>
+      <char id="Col33290074" label="Protein" states="states271696"/>
+      <char id="Col33290075" label="Protein" states="states271696"/>
+      <char id="Col33290076" label="Protein" states="states271696"/>
+      <char id="Col33290077" label="Protein" states="states271696"/>
+      <char id="Col33290078" label="Protein" states="states271696"/>
+      <char id="Col33290079" label="Protein" states="states271696"/>
+      <char id="Col33290080" label="Protein" states="states271696"/>
+      <char id="Col33290081" label="Protein" states="states271696"/>
+      <char id="Col33290082" label="Protein" states="states271696"/>
+      <char id="Col33290083" label="Protein" states="states271696"/>
+      <char id="Col33290084" label="Protein" states="states271696"/>
+      <char id="Col33290085" label="Protein" states="states271696"/>
+      <char id="Col33290086" label="Protein" states="states271696"/>
+      <char id="Col33290087" label="Protein" states="states271696"/>
+      <char id="Col33290088" label="Protein" states="states271696"/>
+      <char id="Col33290089" label="Protein" states="states271696"/>
+      <char id="Col33290090" label="Protein" states="states271696"/>
+      <char id="Col33290091" label="Protein" states="states271696"/>
+      <char id="Col33290092" label="Protein" states="states271696"/>
+      <char id="Col33290093" label="Protein" states="states271696"/>
+      <char id="Col33290094" label="Protein" states="states271696"/>
+      <char id="Col33290095" label="Protein" states="states271696"/>
+      <char id="Col33290096" label="Protein" states="states271696"/>
+      <char id="Col33290097" label="Protein" states="states271696"/>
+      <char id="Col33290098" label="Protein" states="states271696"/>
+      <char id="Col33290099" label="Protein" states="states271696"/>
+      <char id="Col33290100" label="Protein" states="states271696"/>
+      <char id="Col33290101" label="Protein" states="states271696"/>
+      <char id="Col33290102" label="Protein" states="states271696"/>
+      <char id="Col33290103" label="Protein" states="states271696"/>
+      <char id="Col33290104" label="Protein" states="states271696"/>
+      <char id="Col33290105" label="Protein" states="states271696"/>
+      <char id="Col33290106" label="Protein" states="states271696"/>
+      <char id="Col33290107" label="Protein" states="states271696"/>
+      <char id="Col33290108" label="Protein" states="states271696"/>
+      <char id="Col33290109" label="Protein" states="states271696"/>
+      <char id="Col33290110" label="Protein" states="states271696"/>
+      <char id="Col33290111" label="Protein" states="states271696"/>
+      <char id="Col33290112" label="Protein" states="states271696"/>
+      <char id="Col33290113" label="Protein" states="states271696"/>
+      <char id="Col33290114" label="Protein" states="states271696"/>
+      <char id="Col33290115" label="Protein" states="states271696"/>
+      <char id="Col33290116" label="Protein" states="states271696"/>
+      <char id="Col33290117" label="Protein" states="states271696"/>
+      <char id="Col33290118" label="Protein" states="states271696"/>
+      <char id="Col33290119" label="Protein" states="states271696"/>
+      <char id="Col33290120" label="Protein" states="states271696"/>
+      <char id="Col33290121" label="Protein" states="states271696"/>
+      <char id="Col33290122" label="Protein" states="states271696"/>
+      <char id="Col33290123" label="Protein" states="states271696"/>
+      <char id="Col33290124" label="Protein" states="states271696"/>
+      <char id="Col33290125" label="Protein" states="states271696"/>
+      <char id="Col33290126" label="Protein" states="states271696"/>
+      <char id="Col33290127" label="Protein" states="states271696"/>
+      <char id="Col33290128" label="Protein" states="states271696"/>
+      <char id="Col33290129" label="Protein" states="states271696"/>
+    </format>
+    <matrix>
+      <row id="Row871713" otu="Tl717982">
+        <seq>ARSECKRHKPGAWLAGEGVDVTSLRRSGPVDTQRFLRCTLCENALQRLPLALTRAQGCQRHVTRAKVSSTEAVARDHSVAGSHKTHQDQYSFSTDTVECRFYSFHVVHTPPLHPDFKRALGDLPHHFNAPAYLRLISNYGTHFIRAVELGTALRTCELALEGLTDNEVEDCLEAQVNIHGSAEAKACEEKKKKHKMTSFHQTYRERHSEVVGGTSINDLLFGIQEQYSAWVNSLPGSPGLVDYTLEPLHVLLDSQDPRREALRRALSQY</seq>
+      </row>
+      <row id="Row871714" otu="Tl717992">
+        <seq>TRSECKQHKPGVWMAGEGMDVTTLRRSGPVNTQRFLRCTLCKNSTQRLPVAITRPHHCQRNVAAAKVHSTEGVARERSVAGSHKTYQDQYNFNSDTVECRMYSFRLVQKPPLHLDFKKALRALPRNFNSHAYHRLISSYGTHFITAVDLGTALRTCQLTLNGLTADEVGDCLEAQVSIQASSEYKACEEKKKQHKMASFHQTYRERHVEVLGGDSTHDLLFGNQEQFSTWTASLPSNPGLVDYSLEPLHTLLEEQNPKREALRQAISHY</seq>
+      </row>
+      <row id="Row871715" otu="Tl717985">
+        <seq>TEDECQDQHPGHGLAGVGFDITKLERKAVLDMSQWQKCTLCQNPLQRLPLAIAEAKACQKNLRSSIQVSGISAVQAQALAGSHKSSQDQYTFVSHEVSCSYYSLRIGHRRKLAEHFRHALKTLPLKYNRLEYHQLIGTYGTHWITHLRLGTATRVCETVLDGVTADEVKDCLEASASIRNSSSYKMCQELKKKQNFKSFHNTYNERHTEVVGGASHVDLLFSNDESFKEWLEGLKSLPDLLSYSLEPIHTLVRKGHPKRESLRQAVSEY</seq>
+      </row>
+      <row id="Row871716" otu="Tl717951">
+        <seq>SFTECQNAPPGHNLVGEGFDVVTMKTSGVVDVKTFMVCTMCHNSAQKLPVSVLRVKNCQRSLSSKIFESSQAVMKEGSVGGSHHSRQDKFSFTSYEMKCRYYTFRLHARPPLSKEFEVSLKNLPPTYDHSAFRQFISVYGTHFIRRVHLGTAIRTCQASISQMSVHTVSNCLEAEATIKGVAASRFCQSKSKSLKTGTFSQAFSDRTTDVLGGESVGDILFQPNAAFKKWLISLKKVPGLVSYQLSPLHLLVPDNPVLQESLRSAISDY</seq>
+      </row>
+      <row id="Row871717" otu="Tl717989">
+        <seq>TKAVCTRYNPSVQLMGNGFHFLAGEPRGEVLDNSFTGCKTVKSSPYRVPANLEGFETAEDDLKTDFYKDLTSLGHNKSENINHASHKKDSSFIRIHKVMKVLNFTTKAKDHLSDVFLKALNHLPLEYNSALYSRIFDDFGTHYFTSGSLGYQFSSEELKNSGLTEEEAKHCVETKKRVAKKVEHRCTTNKLSEKHEGSFIQGAEKSISLIRGGEYGAALAWEKGKTFSEWLESVKENPAVIDFELAPIVDLVRCAVTKRNNLRKALQEY</seq>
+      </row>
+      <row id="Row871718" otu="Tl717988">
+        <seq>TKPVCTRYTPSVQLMGTGFHFLAGEPRGEVLDNSFTGCKLVKTSPYRVSANLENFETIEDDLKTEFYKNLISFEKNENEHSHYASHKKDSSFIRIHKLIKVLNFTMKATDQLSDVFLKALVHLPLEYNSAVYSRIFDDFGTHYFTSGSLGYQFSRQELQNSGLTEEEAQNCVETKKLKYMEKEDTCTKNKLSEKYGGSFLQGSEKSISLVQGGQQAAALAWEKGNVYSEWLESVKENPAVVDYKLAPITDLVRCAVTKRNNLRRALQEY</seq>
+      </row>
+      <row id="Row871719" otu="Tl717986">
+        <seq>INRVCKRFIPSAQLMGLGYHILADESRGEVLDYSFHGCVRVKSETYRVPANLENFQNQEDDVKAHYYTDLTPIMQTGNSMVSSSSHKMSSNFIRVHKVIAVSNFTVKQSDQVSRVFLNALNSLPLEYNYALYSRIFDDFGTHYYTSGSLGYQFNEEETKNSGLTQEEITNCVETTFYIIPIRHEECTRSKMTERYEGSVLKSSERSISLVKGGQYAAALAFEKKNIFNNWLESTKENPGVIEFEVASILDLVKCAVTKRYNLRKAFFEY</seq>
+      </row>
+      <row id="Row871720" otu="Tl717993">
+        <seq>FKTVCPAKRPGADLVGNGFDAMAEEPRGAVLDNMFMGCNIKRPQYHRIPHNFANFDDHYERLEVTFLPSLAGSEPESSPYAENLFRDKDSKFLRVHQVLPVSTFKMMDSEVLSQPFLQFLHALPLEYNYALYREIFQRFGTHYYHSGVLGYQYSREELKSSGTTEEHIRGCSSTAQIPQEGPLLEVVSNQIQIQFNTSYIQAAEKSYSMVRGGREAAALAWERQVSFKNWAKSVLDNPAVVESTVNPIIDLVRCAVTKRRHLRKALLQY</seq>
+      </row>
+      <row id="Row871721" otu="Tl717987">
+        <seq>GVQKCKNLKLPVLEVLPGGGWDNLRNVDRVMELTYSNCRTTEDGQYIIPDEIFPQKQSNLEMNSEILESWANYQSSSFSKVNGKTLQVKDQAITTRVQVRNLVYTVKINPELSSGFRKELLDISDRLENYLAELLVLNYGTHVTTSVDAGAALIQEDHLRASFLQDSQSSRSTASAGLQNTVNFKFEENYTSQNVLTSYLSNRTNSRVQSIGGPFYPGITLQAWQGITNHLVAIDRSGLPLHFFINPNMLPDLLVKKVSKTVETAVKRY</seq>
+      </row>
+      <row id="Row871722" otu="Tl717991">
+        <seq>GFQICKNLKLPVLEVLPGGGWDNLRNVDRVMDLTYTNCKTTEDGQYIIPDEVYPQKESNLEMNSEVLESWMNYQSTAFSRVNGKTLQVKDQAVTTRVQVRNRIYTVKTTPELSLGFTKALMDICDQLEKYLAELLILNYGTHVITSVDAGAALVQEDHVRSSFLLDNQNSQNTASAGILNIVNFKVETDYISQTSLTDYLSNRTNSRVQSFGGPFYPGITLETWKGITNHLVAIDRAGLPLHFFIKPDKLPGLLVKKLSKTVETAVRHY</seq>
+      </row>
+      <row id="Row871723" otu="Tl717990">
+        <seq>GFQECRQLGRPALEVLPGGGWDNLQNRARVIHLNYSLCRTTEDGAYLIPNDVFPLKETYLELNSEIIESWMDYQSASTSFINGKTHQVKDQTVTTRVQVRNRMYTVKFDPRFDEGFQQQLVAIASHLENYLAEILVLNYGTHVITGVDAGASLIQEDQVRSTFVKDSKFMRSTAAAGVHKVVNFQSSLSVGIDDSFIQYEANRTNSRVESIGGPFYPGITLKTWESIPNRLVAIDRFGLPLEFFITPEKLPGLIVKRLSKTVASAITRY</seq>
+      </row>
+      <row id="Row871724" otu="Tl717984">
+        <seq>WLRQCRETNITALEVLPGGGWDNLRNMDRVMNISYFQCQTTEDGLYLIPDEVFPHKETGVETNSEIISSWLEQKSCSFSVLNGKTHQVKDSSITTRVQIRNFIYKVKAFPALDVRFAQQAKEIADAIENYLSEKMVLEFGTHVITSVDAGATLVEEDYLTAKYVSDATSKSSTAQAGLFDKLKFDISSQTSTQSSILGYQSNITYSIIQSHGGPFYPGMTLQKWESTRNNLVAIDRSGMPLQYFINPNTFPDLTVRKVSRSVRQAIDRY</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb16523" id="Tb16523" label="mpc6" otus="Tls24566" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@4f3c2d59 $Rev: 1040 $" datatype="xsd:string" id="meta272009" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S12411" id="meta272008" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr51117" id="Tr51117" label="Fig. 7" xsi:type="nex:FloatTree">
+      <meta content="12" datatype="xsd:integer" id="meta272015" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta272014" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Consensus" datatype="xsd:string" id="meta272013" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gene Tree" datatype="xsd:string" id="meta272012" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta272011" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn8719962"/>
+      <node id="Tn8719953" label="Homo sapiens PRF1" otu="Tl717982"/>
+      <node id="Tn8719947" label="Mus musculus PRF1" otu="Tl717992"/>
+      <node id="Tn8719955"/>
+      <node id="Tn8719966"/>
+      <node id="Tn8719960" label="Anolis carolinensis PRF1" otu="Tl717985"/>
+      <node id="Tn8719946" label="Takifugu rubripes PRF1.2" otu="Tl717951"/>
+      <node id="Tn8719965"/>
+      <node id="Tn8719964"/>
+      <node id="Tn8719951"/>
+      <node id="Tn8719961" label="Homo sapiens C6" otu="Tl717989"/>
+      <node id="Tn8719949" label="Mus musculus C6" otu="Tl717988"/>
+      <node id="Tn8719957"/>
+      <node id="Tn8719967" label="Anolis carolinensis C6" otu="Tl717986"/>
+      <node id="Tn8719952" label="Takifugu rubripes C6" otu="Tl717993"/>
+      <node id="Tn8719959"/>
+      <node id="Tn8719954"/>
+      <node id="Tn8719950"/>
+      <node id="Tn8719948" label="Homo sapiens MPEG1" otu="Tl717987"/>
+      <node id="Tn8719958" label="Mus musculus MPEG1" otu="Tl717991"/>
+      <node id="Tn8719963" label="Anolis carolinensis MPEG1" otu="Tl717990"/>
+      <node id="Tn8719956" label="Takifugu rubripes MPEG1" otu="Tl717984"/>
+      <edge id="edge272018" length="0.2182058881928563" source="Tn8719962" target="Tn8719953"/>
+      <edge id="edge272020" length="0.1135144373896666" source="Tn8719962" target="Tn8719947"/>
+      <edge id="edge272022" length="0.2349182466549733" source="Tn8719962" target="Tn8719955"/>
+      <edge id="edge272024" length="0.08996341315032971" source="Tn8719955" target="Tn8719966"/>
+      <edge id="edge272026" length="0.434490372214341" source="Tn8719966" target="Tn8719960"/>
+      <edge id="edge272028" length="0.5968679091159527" source="Tn8719966" target="Tn8719946"/>
+      <edge id="edge272030" length="0.5087466468811458" source="Tn8719955" target="Tn8719965"/>
+      <edge id="edge272032" length="0.9263745148458866" source="Tn8719965" target="Tn8719964"/>
+      <edge id="edge272034" length="0.088993829417424" source="Tn8719964" target="Tn8719951"/>
+      <edge id="edge272036" length="0.08804900181605667" source="Tn8719951" target="Tn8719961"/>
+      <edge id="edge272038" length="0.1360188446115988" source="Tn8719951" target="Tn8719949"/>
+      <edge id="edge272040" length="0.1147805744707456" source="Tn8719964" target="Tn8719957"/>
+      <edge id="edge272042" length="0.3260618880834291" source="Tn8719957" target="Tn8719967"/>
+      <edge id="edge272044" length="0.7249791289248632" source="Tn8719957" target="Tn8719952"/>
+      <edge id="edge272046" length="1.681453800550064" source="Tn8719965" target="Tn8719959"/>
+      <edge id="edge272048" length="0.1894372751243247" source="Tn8719959" target="Tn8719954"/>
+      <edge id="edge272050" length="0.1477984618646638" source="Tn8719954" target="Tn8719950"/>
+      <edge id="edge272052" length="0.07351530013815946" source="Tn8719950" target="Tn8719948"/>
+      <edge id="edge272054" length="0.1446294552332519" source="Tn8719950" target="Tn8719958"/>
+      <edge id="edge272056" length="0.2838862053433839" source="Tn8719954" target="Tn8719963"/>
+      <edge id="edge272058" length="0.2782843600436303" source="Tn8719959" target="Tn8719956"/>
+    </tree>
+  </trees>
+  <trees about="#Tb16522" id="Tb16522" label="Fish-PRF" otus="Tls24565" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@4f3c2d59 $Rev: 1040 $" datatype="xsd:string" id="meta272061" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S12411" id="meta272060" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr51116" id="Tr51116" label="Fig. 5" xsi:type="nex:FloatTree">
+      <meta content="39" datatype="xsd:integer" id="meta272067" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta272066" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Consensus" datatype="xsd:string" id="meta272065" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gene Tree" datatype="xsd:string" id="meta272064" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12411" id="meta272063" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn8719877"/>
+      <node id="Tn8719899" label="Homo sapiens PRF1" otu="Tl717982"/>
+      <node id="Tn8719887"/>
+      <node id="Tn8719884"/>
+      <node id="Tn8719935" label="Takifugu rubripes PRF1.2" otu="Tl717951"/>
+      <node id="Tn8719910" label="Tetraodon nigroviridis PRF1.2" otu="Tl717979"/>
+      <node id="Tn8719942"/>
+      <node id="Tn8719918" label="Carassius auratus PRF1.2" otu="Tl717961"/>
+      <node id="Tn8719880" label="Danio rerio PRF1.3" otu="Tl717954"/>
+      <node id="Tn8719916"/>
+      <node id="Tn8719924"/>
+      <node id="Tn8719938"/>
+      <node id="Tn8719917"/>
+      <node id="Tn8719900"/>
+      <node id="Tn8719888"/>
+      <node id="Tn8719913"/>
+      <node id="Tn8719901" label="Oncorhynchus mykiss PRF1" otu="Tl717971"/>
+      <node id="Tn8719930" label="Salmo salar PRF1.1" otu="Tl717952"/>
+      <node id="Tn8719904"/>
+      <node id="Tn8719872" label="Paralichthys olivaceus PRF1" otu="Tl717960"/>
+      <node id="Tn8719889"/>
+      <node id="Tn8719894" label="Takifugu rubripes PRF1.1" otu="Tl717981"/>
+      <node id="Tn8719891" label="Tetraodon nigroviridis PRF1.1" otu="Tl717957"/>
+      <node id="Tn8719945"/>
+      <node id="Tn8719902"/>
+      <node id="Tn8719931" label="Oryzias latipes PRF1.1" otu="Tl717983"/>
+      <node id="Tn8719886"/>
+      <node id="Tn8719939" label="Oryzias latipes PRF1.3" otu="Tl717956"/>
+      <node id="Tn8719919"/>
+      <node id="Tn8719915" label="Oryzias latipes PRF1.2" otu="Tl717962"/>
+      <node id="Tn8719923" label="Oryzias latipes PRF1.8" otu="Tl717977"/>
+      <node id="Tn8719929" label="Gasterosteus aculeatus PRF1.1" otu="Tl717958"/>
+      <node id="Tn8719912" label="Oryzias latipes PRF1.4" otu="Tl717968"/>
+      <node id="Tn8719925"/>
+      <node id="Tn8719876" label="Ctenopharyngodon idella PRF1.2" otu="Tl717967"/>
+      <node id="Tn8719941" label="Danio rerio PRF1.1" otu="Tl717966"/>
+      <node id="Tn8719943"/>
+      <node id="Tn8719928"/>
+      <node id="Tn8719926" label="Carassius auratus PRF1.1" otu="Tl717965"/>
+      <node id="Tn8719905" label="Ctenopharyngodon idella PRF1.1" otu="Tl717963"/>
+      <node id="Tn8719897" label="Danio rerio PRF1.4" otu="Tl717976"/>
+      <node id="Tn8719936" label="Salmo salar PRF1.2" otu="Tl717973"/>
+      <node id="Tn8719922"/>
+      <node id="Tn8719914"/>
+      <node id="Tn8719882" label="Takifugu rubripes PRF1.3" otu="Tl717980"/>
+      <node id="Tn8719937"/>
+      <node id="Tn8719879"/>
+      <node id="Tn8719944" label="Gasterosteus aculeatus PRF1.2" otu="Tl717950"/>
+      <node id="Tn8719932" label="Gasterosteus aculeatus PRF1.6" otu="Tl717964"/>
+      <node id="Tn8719940"/>
+      <node id="Tn8719903" label="Gasterosteus aculeatus PRF1.3" otu="Tl717947"/>
+      <node id="Tn8719878" label="Gasterosteus aculeatus PRF1.4" otu="Tl717975"/>
+      <node id="Tn8719907"/>
+      <node id="Tn8719873" label="Carassius auratus PRF1.3" otu="Tl717972"/>
+      <node id="Tn8719921"/>
+      <node id="Tn8719906"/>
+      <node id="Tn8719911" label="Danio rerio PRF1.2" otu="Tl717945"/>
+      <node id="Tn8719883" label="Danio rerio PRF1.7" otu="Tl717955"/>
+      <node id="Tn8719934" label="Danio rerio PRF1.8" otu="Tl717974"/>
+      <node id="Tn8719885"/>
+      <node id="Tn8719875"/>
+      <node id="Tn8719927"/>
+      <node id="Tn8719895"/>
+      <node id="Tn8719896" label="Takifugu rubripes PRF1.5" otu="Tl717970"/>
+      <node id="Tn8719893" label="Tetraodon nigroviridis PRF1.3" otu="Tl717978"/>
+      <node id="Tn8719908"/>
+      <node id="Tn8719874" label="Oryzias latipes PRF1.6" otu="Tl717948"/>
+      <node id="Tn8719920" label="Gasterosteus aculeatus PRF1.5" otu="Tl717953"/>
+      <node id="Tn8719898"/>
+      <node id="Tn8719881" label="Danio rerio PRF1.6" otu="Tl717959"/>
+      <node id="Tn8719892" label="Danio rerio PRF1.5" otu="Tl717946"/>
+      <node id="Tn8719909"/>
+      <node id="Tn8719890" label="Takifugu rubripes PRF1.6" otu="Tl717949"/>
+      <node id="Tn8719933" label="Oryzias latipes PRF1.5" otu="Tl717969"/>
+      <edge id="edge272070" length="0.6626942933864676" source="Tn8719877" target="Tn8719899"/>
+      <edge id="edge272072" length="0.3281091423651014" source="Tn8719877" target="Tn8719887"/>
+      <edge id="edge272074" length="0.1969655701555195" source="Tn8719887" target="Tn8719884"/>
+      <edge id="edge272076" length="0.08258784466321331" source="Tn8719884" target="Tn8719935"/>
+      <edge id="edge272078" length="0.1488641388216855" source="Tn8719884" target="Tn8719910"/>
+      <edge id="edge272080" length="0.163784794656962" source="Tn8719887" target="Tn8719942"/>
+      <edge id="edge272082" length="0.09260873919857768" source="Tn8719942" target="Tn8719918"/>
+      <edge id="edge272084" length="0.1166525376346088" source="Tn8719942" target="Tn8719880"/>
+      <edge id="edge272086" length="0.1128382009614159" source="Tn8719877" target="Tn8719916"/>
+      <edge id="edge272088" length="0.06199205483712483" source="Tn8719916" target="Tn8719924"/>
+      <edge id="edge272090" length="0.1057245310955607" source="Tn8719924" target="Tn8719938"/>
+      <edge id="edge272092" length="0.2204257864954498" source="Tn8719938" target="Tn8719917"/>
+      <edge id="edge272094" length="0.0828166225528686" source="Tn8719917" target="Tn8719900"/>
+      <edge id="edge272096" length="0.1170067723015182" source="Tn8719900" target="Tn8719888"/>
+      <edge id="edge272098" length="0.1260723154149515" source="Tn8719888" target="Tn8719913"/>
+      <edge id="edge272100" length="0.00924893192755477" source="Tn8719913" target="Tn8719901"/>
+      <edge id="edge272102" length="0.01790697469767223" source="Tn8719913" target="Tn8719930"/>
+      <edge id="edge272104" length="0.09104855353449495" source="Tn8719888" target="Tn8719904"/>
+      <edge id="edge272106" length="0.14427142165327" source="Tn8719904" target="Tn8719872"/>
+      <edge id="edge272108" length="0.075922983787833" source="Tn8719904" target="Tn8719889"/>
+      <edge id="edge272110" length="0.1072008752643791" source="Tn8719889" target="Tn8719894"/>
+      <edge id="edge272112" length="0.08423101197375922" source="Tn8719889" target="Tn8719891"/>
+      <edge id="edge272114" length="0.03917926079364852" source="Tn8719904" target="Tn8719945"/>
+      <edge id="edge272116" length="0.2983964551802992" source="Tn8719945" target="Tn8719902"/>
+      <edge id="edge272118" length="0.03888986842683067" source="Tn8719902" target="Tn8719931"/>
+      <edge id="edge272120" length="0.03998380637428604" source="Tn8719902" target="Tn8719886"/>
+      <edge id="edge272122" length="0.03419268701758844" source="Tn8719886" target="Tn8719939"/>
+      <edge id="edge272124" length="0.01601830495819306" source="Tn8719886" target="Tn8719919"/>
+      <edge id="edge272126" length="0.01682082865975611" source="Tn8719919" target="Tn8719915"/>
+      <edge id="edge272128" length="0.09055174182300267" source="Tn8719919" target="Tn8719923"/>
+      <edge id="edge272130" length="0.1713076667228827" source="Tn8719945" target="Tn8719929"/>
+      <edge id="edge272132" length="0.1830388420795712" source="Tn8719904" target="Tn8719912"/>
+      <edge id="edge272134" length="0.1712225311784087" source="Tn8719900" target="Tn8719925"/>
+      <edge id="edge272136" length="0.05014163455663785" source="Tn8719925" target="Tn8719876"/>
+      <edge id="edge272138" length="0.1376402610337383" source="Tn8719925" target="Tn8719941"/>
+      <edge id="edge272140" length="0.2831200573164713" source="Tn8719917" target="Tn8719943"/>
+      <edge id="edge272142" length="0.02819026396526028" source="Tn8719943" target="Tn8719928"/>
+      <edge id="edge272144" length="0.08229584509066387" source="Tn8719928" target="Tn8719926"/>
+      <edge id="edge272146" length="0.09663365435355237" source="Tn8719928" target="Tn8719905"/>
+      <edge id="edge272148" length="0.07189478825122492" source="Tn8719943" target="Tn8719897"/>
+      <edge id="edge272150" length="0.4198084513896531" source="Tn8719938" target="Tn8719936"/>
+      <edge id="edge272152" length="0.2360506144945745" source="Tn8719924" target="Tn8719922"/>
+      <edge id="edge272154" length="0.1565258446989345" source="Tn8719922" target="Tn8719914"/>
+      <edge id="edge272156" length="0.1991567994011548" source="Tn8719914" target="Tn8719882"/>
+      <edge id="edge272158" length="0.1967277746268004" source="Tn8719914" target="Tn8719937"/>
+      <edge id="edge272160" length="0.04266988387053104" source="Tn8719937" target="Tn8719879"/>
+      <edge id="edge272162" length="0.0073874059808071" source="Tn8719879" target="Tn8719944"/>
+      <edge id="edge272164" length="0.005403773964394711" source="Tn8719879" target="Tn8719932"/>
+      <edge id="edge272166" length="0.04399329650684208" source="Tn8719937" target="Tn8719940"/>
+      <edge id="edge272168" length="0.002516376831958509" source="Tn8719940" target="Tn8719903"/>
+      <edge id="edge272170" length="0.02690241491432879" source="Tn8719940" target="Tn8719878"/>
+      <edge id="edge272172" length="0.1277309819534022" source="Tn8719922" target="Tn8719907"/>
+      <edge id="edge272174" length="0.1566843267519115" source="Tn8719907" target="Tn8719873"/>
+      <edge id="edge272176" length="0.07266619721656625" source="Tn8719907" target="Tn8719921"/>
+      <edge id="edge272178" length="0.1378899386984322" source="Tn8719921" target="Tn8719906"/>
+      <edge id="edge272180" length="0.02577363090893823" source="Tn8719906" target="Tn8719911"/>
+      <edge id="edge272182" length="0.01960533000517842" source="Tn8719906" target="Tn8719883"/>
+      <edge id="edge272184" length="0.109702433998788" source="Tn8719921" target="Tn8719934"/>
+      <edge id="edge272186" length="0.2876253131535779" source="Tn8719916" target="Tn8719885"/>
+      <edge id="edge272188" length="0.3315043590768512" source="Tn8719885" target="Tn8719875"/>
+      <edge id="edge272190" length="0.1097032671285356" source="Tn8719875" target="Tn8719927"/>
+      <edge id="edge272192" length="0.04736926756630954" source="Tn8719927" target="Tn8719895"/>
+      <edge id="edge272194" length="0.1531266399672572" source="Tn8719895" target="Tn8719896"/>
+      <edge id="edge272196" length="0.03046146967910467" source="Tn8719895" target="Tn8719893"/>
+      <edge id="edge272198" length="0.03105727950926421" source="Tn8719927" target="Tn8719908"/>
+      <edge id="edge272200" length="0.07326707106724631" source="Tn8719908" target="Tn8719874"/>
+      <edge id="edge272202" length="0.06391485335604496" source="Tn8719908" target="Tn8719920"/>
+      <edge id="edge272204" length="0.1134551431256161" source="Tn8719875" target="Tn8719898"/>
+      <edge id="edge272206" length="0.2164043941250577" source="Tn8719898" target="Tn8719881"/>
+      <edge id="edge272208" length="0.03440182372558809" source="Tn8719898" target="Tn8719892"/>
+      <edge id="edge272210" length="0.4210150683695399" source="Tn8719885" target="Tn8719909"/>
+      <edge id="edge272212" length="0.1956283436671671" source="Tn8719909" target="Tn8719890"/>
+      <edge id="edge272214" length="0.1994086365512094" source="Tn8719909" target="Tn8719933"/>
+    </tree>
+  </trees>
+</nex:nexml>
