@@ -18,7 +18,7 @@ GetOptions(
 	'section=s' => \$section,
 	'help|?'    => \$help,
 );
-die "Usage: $0 -q \"dcterms.contributor=Maddison\" -f nexus -s study\n";
+die "Usage: $0 -q \"dcterms.contributor=Maddison\" -f nexus -s study\n" if $help;
 
 # instantiate factory
 my $fac = Bio::Phylo::Factory->new;
