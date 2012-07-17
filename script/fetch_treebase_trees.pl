@@ -6,10 +6,6 @@ use Getopt::Long;
 use Bio::Phylo::Factory;
 use Bio::Phylo::IO 'unparse';
 
-# Usage example: 
-# perl fetch_treebase_trees.pl --query="dcterms.contributor=Maddison" \
-# --format=nexus --section=study
-
 # process command line arguments
 my ( $query, $format, $section, $help );
 GetOptions(
@@ -18,7 +14,7 @@ GetOptions(
 	'section=s' => \$section,
 	'help|?'    => \$help,
 );
-die "Usage: $0 -q \"dcterms.contributor=Maddison\" -f nexus -s study\n" if $help;
+die "Usage: $0 --query='dcterms.identifier=S1787' --format=newick --section=study\n" if $help;
 
 # instantiate factory
 my $fac = Bio::Phylo::Factory->new;
