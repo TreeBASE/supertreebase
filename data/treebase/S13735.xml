@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:DwC="http://rs.tdwg.org/dwc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S13735" generator="org.nexml.model.impl.DocumentImpl" id="S13735" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Sun Feb 17 18:19:46 EST 2013" datatype="xsd:string" id="meta560054" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@460ae737 $Rev: 1060 $" datatype="xsd:string" id="meta560053" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta560052" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta560051" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Molecular Biology and Evolution" datatype="xsd:string" id="meta560050" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Molecular Biology and Evolution" datatype="xsd:string" id="meta560049" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="gender-based divergence; gene conversion; male-female sexual dimorphism; MAT3/RB; mating type locus; volvocine algae" datatype="xsd:string" id="meta560048" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="10.1093/molbev/mst018" datatype="xsd:string" id="meta560047" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013" datatype="xsd:string" id="meta560046" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Nozaki H." datatype="xsd:string" id="meta560045" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Umen J." datatype="xsd:string" id="meta560044" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Sekimoto H." datatype="xsd:string" id="meta560043" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Abe J." datatype="xsd:string" id="meta560042" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Kawafune K." datatype="xsd:string" id="meta560041" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Matsuzaki R." datatype="xsd:string" id="meta560040" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Hamaji T." datatype="xsd:string" id="meta560039" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Kawai-toyooka H." datatype="xsd:string" id="meta560038" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Hiraide R." datatype="xsd:string" id="meta560037" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Hiraide R., Kawai-toyooka H., Hamaji T., Matsuzaki R., Kawafune K., Abe J., Sekimoto H., Umen J., &amp; Nozaki H." datatype="xsd:string" id="meta560036" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="The Evolution of Male-Female Sexual Dimorphism Predates the Gender-Based Divergence of the Mating Locus Gene MAT3/RB" datatype="xsd:string" id="meta560035" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Hiraide R., Kawai-toyooka H., Hamaji T., Matsuzaki R., Kawafune K., Abe J., Sekimoto H., Umen J., &amp; Nozaki H. 2013. The Evolution of Male-Female Sexual Dimorphism Predates the Gender-Based Divergence of the Mating Locus Gene MAT3/RB. Molecular Biology and Evolution, ." datatype="xsd:string" id="meta560034" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-12-13" datatype="xsd:string" id="meta560033" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013-02-12" datatype="xsd:string" id="meta560032" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013-02-12" datatype="xsd:string" id="meta560031" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="The Evolution of Male-Female Sexual Dimorphism Predates the Gender-Based Divergence of the Mating Locus Gene MAT3/RB" datatype="xsd:string" id="meta560030" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta560029" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="13735" datatype="xsd:string" id="meta560028" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta560026" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls28990" id="Tls28990" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@75d7f1fd $Rev: 1040 $" datatype="xsd:string" id="meta560056" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl959370" id="Tl959370" label="Chlamydomonas reinhardtii Plus">
+      <meta content="5860" datatype="xsd:long" id="meta560063" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="14193" datatype="xsd:long" id="meta560062" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/3055" id="meta560061" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Chlamydomonas reinhardtii" datatype="xsd:string" id="meta560060" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5433091" id="meta560059" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560058" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959368" id="Tl959368" label="Chlamydomonas reinhardtii Minus">
+      <meta content="5860" datatype="xsd:long" id="meta560070" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="14193" datatype="xsd:long" id="meta560069" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/3055" id="meta560068" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Chlamydomonas reinhardtii" datatype="xsd:string" id="meta560067" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5433091" id="meta560066" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560065" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959377" id="Tl959377" label="Chlamydomonas globosa">
+      <meta content="72163" datatype="xsd:long" id="meta560076" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="148589" datatype="xsd:long" id="meta560075" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/51694" id="meta560074" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4941094" id="meta560073" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560072" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959375" id="Tl959375" label="Gonium pectorale Plus/Minus">
+      <meta content="12456" datatype="xsd:long" id="meta560083" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="29550" datatype="xsd:long" id="meta560082" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/33097" id="meta560081" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Gonium pectorale" datatype="xsd:string" id="meta560080" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2638216" id="meta560079" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560078" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959374" id="Tl959374" label="Yamagishiella unicocca Plus/Minus">
+      <meta content="31169" datatype="xsd:long" id="meta560091" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="72769" datatype="xsd:long" id="meta560090" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Yamagishiella unicocca" datatype="xsd:string" id="meta560089" property="skos:prefLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/79755" id="meta560088" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Yamagishiella unicocca (W. R. Rayburn &amp; R. C. Starr) H. Nozaki" datatype="xsd:string" id="meta560087" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1493117" id="meta560086" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560085" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959378" id="Tl959378" label="Eudorina sp. Male/Female">
+      <meta content="60419" datatype="xsd:long" id="meta560098" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="133887" datatype="xsd:long" id="meta560097" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/34143" id="meta560096" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Eudorina" datatype="xsd:string" id="meta560095" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4937693" id="meta560094" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560093" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959371" id="Tl959371" label="Pleodorina starrii Male/Female">
+      <meta content="289755" datatype="xsd:long" id="meta560105" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="341289" datatype="xsd:long" id="meta560104" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/330485" id="meta560103" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Pleodorina starrii" datatype="xsd:string" id="meta560102" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10276237" id="meta560101" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560100" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959376" id="Tl959376" label="Volvox africanus Male">
+      <meta content="72179" datatype="xsd:long" id="meta560112" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="148608" datatype="xsd:long" id="meta560111" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/51714" id="meta560110" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Volvox africanus" datatype="xsd:string" id="meta560109" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3926073" id="meta560108" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560107" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959369" id="Tl959369" label="Volvox africanus Female">
+      <meta content="72179" datatype="xsd:long" id="meta560119" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="148608" datatype="xsd:long" id="meta560118" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/51714" id="meta560117" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Volvox africanus" datatype="xsd:string" id="meta560116" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3926073" id="meta560115" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560114" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959372" id="Tl959372" label="Volvox obversus Male">
+      <meta content="69276" datatype="xsd:long" id="meta560126" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="145027" datatype="xsd:long" id="meta560125" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/47289" id="meta560124" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Volvox obversus" datatype="xsd:string" id="meta560123" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5954119" id="meta560122" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560121" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959373" id="Tl959373" label="Volvox carteri f. nagariensis Male">
+      <meta content="616665" datatype="xsd:long" id="meta560133" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="825233" datatype="xsd:long" id="meta560132" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/3068" id="meta560131" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Volvox carteri f. nagariensis" datatype="xsd:string" id="meta560130" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5687134" id="meta560129" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560128" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959379" id="Tl959379" label="Volvox carteri f. nagariensis Female">
+      <meta content="616665" datatype="xsd:long" id="meta560140" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="825233" datatype="xsd:long" id="meta560139" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/3068" id="meta560138" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Volvox carteri f. nagariensis" datatype="xsd:string" id="meta560137" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5687134" id="meta560136" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560135" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959366" id="Tl959366" label="Volvox carteri f. kawasakiensis Male">
+      <meta content="72378" datatype="xsd:long" id="meta560147" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="148801" datatype="xsd:long" id="meta560146" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/51971" id="meta560145" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Volvox carteri f. kawasakiensis" datatype="xsd:string" id="meta560144" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10145387" id="meta560143" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560142" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959381" id="Tl959381" label="Volvox carteri f. kawasakiensis Female">
+      <meta content="72378" datatype="xsd:long" id="meta560154" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="148801" datatype="xsd:long" id="meta560153" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/51971" id="meta560152" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Volvox carteri f. kawasakiensis" datatype="xsd:string" id="meta560151" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10145387" id="meta560150" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560149" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959367" id="Tl959367" label="Volvox carteri f. weismannia Male">
+      <meta content="616664" datatype="xsd:long" id="meta560161" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="825232" datatype="xsd:long" id="meta560160" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/51966" id="meta560159" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Volvox carteri f. weismannia" datatype="xsd:string" id="meta560158" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5797106" id="meta560157" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560156" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl959380" id="Tl959380" label="Volvox carteri f. weismannia Female">
+      <meta content="616664" datatype="xsd:long" id="meta560168" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="825232" datatype="xsd:long" id="meta560167" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/51966" id="meta560166" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Volvox carteri f. weismannia" datatype="xsd:string" id="meta560165" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5797106" id="meta560164" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560163" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M15497" id="M15497" label="MAT3 alignment" otus="Tls28990" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:ProteinSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@d00e423 $Rev: 1056 $" datatype="xsd:string" id="meta560199" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="15497" datatype="xsd:long" id="meta560198" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="464" datatype="xsd:integer" id="meta560197" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="16" datatype="xsd:integer" id="meta560196" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="Protein" datatype="xsd:string" id="meta560195" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states560170">
+        <state id="state560171" symbol="A"/>
+        <state id="state560172" symbol="B"/>
+        <state id="state560173" symbol="C"/>
+        <state id="state560174" symbol="D"/>
+        <state id="state560175" symbol="E"/>
+        <state id="state560176" symbol="F"/>
+        <state id="state560177" symbol="G"/>
+        <state id="state560178" symbol="H"/>
+        <state id="state560179" symbol="I"/>
+        <state id="state560180" symbol="K"/>
+        <state id="state560181" symbol="L"/>
+        <state id="state560182" symbol="M"/>
+        <state id="state560183" symbol="N"/>
+        <state id="state560184" symbol="P"/>
+        <state id="state560185" symbol="Q"/>
+        <state id="state560186" symbol="R"/>
+        <state id="state560187" symbol="S"/>
+        <state id="state560188" symbol="T"/>
+        <state id="state560189" symbol="U"/>
+        <state id="state560190" symbol="V"/>
+        <state id="state560191" symbol="W"/>
+        <state id="state560192" symbol="Y"/>
+        <state id="state560193" symbol="Z"/>
+        <uncertain_state_set id="uncertain_state_set560194" symbol="X">
+          <member state="state560190"/>
+          <member state="state560185"/>
+          <member state="state560182"/>
+          <member state="state560192"/>
+          <member state="state560193"/>
+          <member state="state560179"/>
+          <member state="state560175"/>
+          <member state="state560186"/>
+          <member state="state560184"/>
+          <member state="state560174"/>
+          <member state="state560183"/>
+          <member state="state560177"/>
+          <member state="state560173"/>
+          <member state="state560181"/>
+          <member state="state560176"/>
+          <member state="state560178"/>
+          <member state="state560191"/>
+          <member state="state560189"/>
+          <member state="state560171"/>
+          <member state="state560188"/>
+          <member state="state560172"/>
+          <member state="state560180"/>
+          <member state="state560187"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col70356861" label="Protein" states="states560170"/>
+      <char id="Col70356862" label="Protein" states="states560170"/>
+      <char id="Col70356863" label="Protein" states="states560170"/>
+      <char id="Col70356864" label="Protein" states="states560170"/>
+      <char id="Col70356865" label="Protein" states="states560170"/>
+      <char id="Col70356866" label="Protein" states="states560170"/>
+      <char id="Col70356867" label="Protein" states="states560170"/>
+      <char id="Col70356868" label="Protein" states="states560170"/>
+      <char id="Col70356869" label="Protein" states="states560170"/>
+      <char id="Col70356870" label="Protein" states="states560170"/>
+      <char id="Col70356871" label="Protein" states="states560170"/>
+      <char id="Col70356872" label="Protein" states="states560170"/>
+      <char id="Col70356873" label="Protein" states="states560170"/>
+      <char id="Col70356874" label="Protein" states="states560170"/>
+      <char id="Col70356875" label="Protein" states="states560170"/>
+      <char id="Col70356876" label="Protein" states="states560170"/>
+      <char id="Col70356877" label="Protein" states="states560170"/>
+      <char id="Col70356878" label="Protein" states="states560170"/>
+      <char id="Col70356879" label="Protein" states="states560170"/>
+      <char id="Col70356880" label="Protein" states="states560170"/>
+      <char id="Col70356881" label="Protein" states="states560170"/>
+      <char id="Col70356882" label="Protein" states="states560170"/>
+      <char id="Col70356883" label="Protein" states="states560170"/>
+      <char id="Col70356884" label="Protein" states="states560170"/>
+      <char id="Col70356885" label="Protein" states="states560170"/>
+      <char id="Col70356886" label="Protein" states="states560170"/>
+      <char id="Col70356887" label="Protein" states="states560170"/>
+      <char id="Col70356888" label="Protein" states="states560170"/>
+      <char id="Col70356889" label="Protein" states="states560170"/>
+      <char id="Col70356890" label="Protein" states="states560170"/>
+      <char id="Col70356891" label="Protein" states="states560170"/>
+      <char id="Col70356892" label="Protein" states="states560170"/>
+      <char id="Col70356893" label="Protein" states="states560170"/>
+      <char id="Col70356894" label="Protein" states="states560170"/>
+      <char id="Col70356895" label="Protein" states="states560170"/>
+      <char id="Col70356896" label="Protein" states="states560170"/>
+      <char id="Col70356897" label="Protein" states="states560170"/>
+      <char id="Col70356898" label="Protein" states="states560170"/>
+      <char id="Col70356899" label="Protein" states="states560170"/>
+      <char id="Col70356900" label="Protein" states="states560170"/>
+      <char id="Col70356901" label="Protein" states="states560170"/>
+      <char id="Col70356902" label="Protein" states="states560170"/>
+      <char id="Col70356903" label="Protein" states="states560170"/>
+      <char id="Col70356904" label="Protein" states="states560170"/>
+      <char id="Col70356905" label="Protein" states="states560170"/>
+      <char id="Col70356906" label="Protein" states="states560170"/>
+      <char id="Col70356907" label="Protein" states="states560170"/>
+      <char id="Col70356908" label="Protein" states="states560170"/>
+      <char id="Col70356909" label="Protein" states="states560170"/>
+      <char id="Col70356910" label="Protein" states="states560170"/>
+      <char id="Col70356911" label="Protein" states="states560170"/>
+      <char id="Col70356912" label="Protein" states="states560170"/>
+      <char id="Col70356913" label="Protein" states="states560170"/>
+      <char id="Col70356914" label="Protein" states="states560170"/>
+      <char id="Col70356915" label="Protein" states="states560170"/>
+      <char id="Col70356916" label="Protein" states="states560170"/>
+      <char id="Col70356917" label="Protein" states="states560170"/>
+      <char id="Col70356918" label="Protein" states="states560170"/>
+      <char id="Col70356919" label="Protein" states="states560170"/>
+      <char id="Col70356920" label="Protein" states="states560170"/>
+      <char id="Col70356921" label="Protein" states="states560170"/>
+      <char id="Col70356922" label="Protein" states="states560170"/>
+      <char id="Col70356923" label="Protein" states="states560170"/>
+      <char id="Col70356924" label="Protein" states="states560170"/>
+      <char id="Col70356925" label="Protein" states="states560170"/>
+      <char id="Col70356926" label="Protein" states="states560170"/>
+      <char id="Col70356927" label="Protein" states="states560170"/>
+      <char id="Col70356928" label="Protein" states="states560170"/>
+      <char id="Col70356929" label="Protein" states="states560170"/>
+      <char id="Col70356930" label="Protein" states="states560170"/>
+      <char id="Col70356931" label="Protein" states="states560170"/>
+      <char id="Col70356932" label="Protein" states="states560170"/>
+      <char id="Col70356933" label="Protein" states="states560170"/>
+      <char id="Col70356934" label="Protein" states="states560170"/>
+      <char id="Col70356935" label="Protein" states="states560170"/>
+      <char id="Col70356936" label="Protein" states="states560170"/>
+      <char id="Col70356937" label="Protein" states="states560170"/>
+      <char id="Col70356938" label="Protein" states="states560170"/>
+      <char id="Col70356939" label="Protein" states="states560170"/>
+      <char id="Col70356940" label="Protein" states="states560170"/>
+      <char id="Col70356941" label="Protein" states="states560170"/>
+      <char id="Col70356942" label="Protein" states="states560170"/>
+      <char id="Col70356943" label="Protein" states="states560170"/>
+      <char id="Col70356944" label="Protein" states="states560170"/>
+      <char id="Col70356945" label="Protein" states="states560170"/>
+      <char id="Col70356946" label="Protein" states="states560170"/>
+      <char id="Col70356947" label="Protein" states="states560170"/>
+      <char id="Col70356948" label="Protein" states="states560170"/>
+      <char id="Col70356949" label="Protein" states="states560170"/>
+      <char id="Col70356950" label="Protein" states="states560170"/>
+      <char id="Col70356951" label="Protein" states="states560170"/>
+      <char id="Col70356952" label="Protein" states="states560170"/>
+      <char id="Col70356953" label="Protein" states="states560170"/>
+      <char id="Col70356954" label="Protein" states="states560170"/>
+      <char id="Col70356955" label="Protein" states="states560170"/>
+      <char id="Col70356956" label="Protein" states="states560170"/>
+      <char id="Col70356957" label="Protein" states="states560170"/>
+      <char id="Col70356958" label="Protein" states="states560170"/>
+      <char id="Col70356959" label="Protein" states="states560170"/>
+      <char id="Col70356960" label="Protein" states="states560170"/>
+      <char id="Col70356961" label="Protein" states="states560170"/>
+      <char id="Col70356962" label="Protein" states="states560170"/>
+      <char id="Col70356963" label="Protein" states="states560170"/>
+      <char id="Col70356964" label="Protein" states="states560170"/>
+      <char id="Col70356965" label="Protein" states="states560170"/>
+      <char id="Col70356966" label="Protein" states="states560170"/>
+      <char id="Col70356967" label="Protein" states="states560170"/>
+      <char id="Col70356968" label="Protein" states="states560170"/>
+      <char id="Col70356969" label="Protein" states="states560170"/>
+      <char id="Col70356970" label="Protein" states="states560170"/>
+      <char id="Col70356971" label="Protein" states="states560170"/>
+      <char id="Col70356972" label="Protein" states="states560170"/>
+      <char id="Col70356973" label="Protein" states="states560170"/>
+      <char id="Col70356974" label="Protein" states="states560170"/>
+      <char id="Col70356975" label="Protein" states="states560170"/>
+      <char id="Col70356976" label="Protein" states="states560170"/>
+      <char id="Col70356977" label="Protein" states="states560170"/>
+      <char id="Col70356978" label="Protein" states="states560170"/>
+      <char id="Col70356979" label="Protein" states="states560170"/>
+      <char id="Col70356980" label="Protein" states="states560170"/>
+      <char id="Col70356981" label="Protein" states="states560170"/>
+      <char id="Col70356982" label="Protein" states="states560170"/>
+      <char id="Col70356983" label="Protein" states="states560170"/>
+      <char id="Col70356984" label="Protein" states="states560170"/>
+      <char id="Col70356985" label="Protein" states="states560170"/>
+      <char id="Col70356986" label="Protein" states="states560170"/>
+      <char id="Col70356987" label="Protein" states="states560170"/>
+      <char id="Col70356988" label="Protein" states="states560170"/>
+      <char id="Col70356989" label="Protein" states="states560170"/>
+      <char id="Col70356990" label="Protein" states="states560170"/>
+      <char id="Col70356991" label="Protein" states="states560170"/>
+      <char id="Col70356992" label="Protein" states="states560170"/>
+      <char id="Col70356993" label="Protein" states="states560170"/>
+      <char id="Col70356994" label="Protein" states="states560170"/>
+      <char id="Col70356995" label="Protein" states="states560170"/>
+      <char id="Col70356996" label="Protein" states="states560170"/>
+      <char id="Col70356997" label="Protein" states="states560170"/>
+      <char id="Col70356998" label="Protein" states="states560170"/>
+      <char id="Col70356999" label="Protein" states="states560170"/>
+      <char id="Col70357000" label="Protein" states="states560170"/>
+      <char id="Col70357001" label="Protein" states="states560170"/>
+      <char id="Col70357002" label="Protein" states="states560170"/>
+      <char id="Col70357003" label="Protein" states="states560170"/>
+      <char id="Col70357004" label="Protein" states="states560170"/>
+      <char id="Col70357005" label="Protein" states="states560170"/>
+      <char id="Col70357006" label="Protein" states="states560170"/>
+      <char id="Col70357007" label="Protein" states="states560170"/>
+      <char id="Col70357008" label="Protein" states="states560170"/>
+      <char id="Col70357009" label="Protein" states="states560170"/>
+      <char id="Col70357010" label="Protein" states="states560170"/>
+      <char id="Col70357011" label="Protein" states="states560170"/>
+      <char id="Col70357012" label="Protein" states="states560170"/>
+      <char id="Col70357013" label="Protein" states="states560170"/>
+      <char id="Col70357014" label="Protein" states="states560170"/>
+      <char id="Col70357015" label="Protein" states="states560170"/>
+      <char id="Col70357016" label="Protein" states="states560170"/>
+      <char id="Col70357017" label="Protein" states="states560170"/>
+      <char id="Col70357018" label="Protein" states="states560170"/>
+      <char id="Col70357019" label="Protein" states="states560170"/>
+      <char id="Col70357020" label="Protein" states="states560170"/>
+      <char id="Col70357021" label="Protein" states="states560170"/>
+      <char id="Col70357022" label="Protein" states="states560170"/>
+      <char id="Col70357023" label="Protein" states="states560170"/>
+      <char id="Col70357024" label="Protein" states="states560170"/>
+      <char id="Col70357025" label="Protein" states="states560170"/>
+      <char id="Col70357026" label="Protein" states="states560170"/>
+      <char id="Col70357027" label="Protein" states="states560170"/>
+      <char id="Col70357028" label="Protein" states="states560170"/>
+      <char id="Col70357029" label="Protein" states="states560170"/>
+      <char id="Col70357030" label="Protein" states="states560170"/>
+      <char id="Col70357031" label="Protein" states="states560170"/>
+      <char id="Col70357032" label="Protein" states="states560170"/>
+      <char id="Col70357033" label="Protein" states="states560170"/>
+      <char id="Col70357034" label="Protein" states="states560170"/>
+      <char id="Col70357035" label="Protein" states="states560170"/>
+      <char id="Col70357036" label="Protein" states="states560170"/>
+      <char id="Col70357037" label="Protein" states="states560170"/>
+      <char id="Col70357038" label="Protein" states="states560170"/>
+      <char id="Col70357039" label="Protein" states="states560170"/>
+      <char id="Col70357040" label="Protein" states="states560170"/>
+      <char id="Col70357041" label="Protein" states="states560170"/>
+      <char id="Col70357042" label="Protein" states="states560170"/>
+      <char id="Col70357043" label="Protein" states="states560170"/>
+      <char id="Col70357044" label="Protein" states="states560170"/>
+      <char id="Col70357045" label="Protein" states="states560170"/>
+      <char id="Col70357046" label="Protein" states="states560170"/>
+      <char id="Col70357047" label="Protein" states="states560170"/>
+      <char id="Col70357048" label="Protein" states="states560170"/>
+      <char id="Col70357049" label="Protein" states="states560170"/>
+      <char id="Col70357050" label="Protein" states="states560170"/>
+      <char id="Col70357051" label="Protein" states="states560170"/>
+      <char id="Col70357052" label="Protein" states="states560170"/>
+      <char id="Col70357053" label="Protein" states="states560170"/>
+      <char id="Col70357054" label="Protein" states="states560170"/>
+      <char id="Col70357055" label="Protein" states="states560170"/>
+      <char id="Col70357056" label="Protein" states="states560170"/>
+      <char id="Col70357057" label="Protein" states="states560170"/>
+      <char id="Col70357058" label="Protein" states="states560170"/>
+      <char id="Col70357059" label="Protein" states="states560170"/>
+      <char id="Col70357060" label="Protein" states="states560170"/>
+      <char id="Col70357061" label="Protein" states="states560170"/>
+      <char id="Col70357062" label="Protein" states="states560170"/>
+      <char id="Col70357063" label="Protein" states="states560170"/>
+      <char id="Col70357064" label="Protein" states="states560170"/>
+      <char id="Col70357065" label="Protein" states="states560170"/>
+      <char id="Col70357066" label="Protein" states="states560170"/>
+      <char id="Col70357067" label="Protein" states="states560170"/>
+      <char id="Col70357068" label="Protein" states="states560170"/>
+      <char id="Col70357069" label="Protein" states="states560170"/>
+      <char id="Col70357070" label="Protein" states="states560170"/>
+      <char id="Col70357071" label="Protein" states="states560170"/>
+      <char id="Col70357072" label="Protein" states="states560170"/>
+      <char id="Col70357073" label="Protein" states="states560170"/>
+      <char id="Col70357074" label="Protein" states="states560170"/>
+      <char id="Col70357075" label="Protein" states="states560170"/>
+      <char id="Col70357076" label="Protein" states="states560170"/>
+      <char id="Col70357077" label="Protein" states="states560170"/>
+      <char id="Col70357078" label="Protein" states="states560170"/>
+      <char id="Col70357079" label="Protein" states="states560170"/>
+      <char id="Col70357080" label="Protein" states="states560170"/>
+      <char id="Col70357081" label="Protein" states="states560170"/>
+      <char id="Col70357082" label="Protein" states="states560170"/>
+      <char id="Col70357083" label="Protein" states="states560170"/>
+      <char id="Col70357084" label="Protein" states="states560170"/>
+      <char id="Col70357085" label="Protein" states="states560170"/>
+      <char id="Col70357086" label="Protein" states="states560170"/>
+      <char id="Col70357087" label="Protein" states="states560170"/>
+      <char id="Col70357088" label="Protein" states="states560170"/>
+      <char id="Col70357089" label="Protein" states="states560170"/>
+      <char id="Col70357090" label="Protein" states="states560170"/>
+      <char id="Col70357091" label="Protein" states="states560170"/>
+      <char id="Col70357092" label="Protein" states="states560170"/>
+      <char id="Col70357093" label="Protein" states="states560170"/>
+      <char id="Col70357094" label="Protein" states="states560170"/>
+      <char id="Col70357095" label="Protein" states="states560170"/>
+      <char id="Col70357096" label="Protein" states="states560170"/>
+      <char id="Col70357097" label="Protein" states="states560170"/>
+      <char id="Col70357098" label="Protein" states="states560170"/>
+      <char id="Col70357099" label="Protein" states="states560170"/>
+      <char id="Col70357100" label="Protein" states="states560170"/>
+      <char id="Col70357101" label="Protein" states="states560170"/>
+      <char id="Col70357102" label="Protein" states="states560170"/>
+      <char id="Col70357103" label="Protein" states="states560170"/>
+      <char id="Col70357104" label="Protein" states="states560170"/>
+      <char id="Col70357105" label="Protein" states="states560170"/>
+      <char id="Col70357106" label="Protein" states="states560170"/>
+      <char id="Col70357107" label="Protein" states="states560170"/>
+      <char id="Col70357108" label="Protein" states="states560170"/>
+      <char id="Col70357109" label="Protein" states="states560170"/>
+      <char id="Col70357110" label="Protein" states="states560170"/>
+      <char id="Col70357111" label="Protein" states="states560170"/>
+      <char id="Col70357112" label="Protein" states="states560170"/>
+      <char id="Col70357113" label="Protein" states="states560170"/>
+      <char id="Col70357114" label="Protein" states="states560170"/>
+      <char id="Col70357115" label="Protein" states="states560170"/>
+      <char id="Col70357116" label="Protein" states="states560170"/>
+      <char id="Col70357117" label="Protein" states="states560170"/>
+      <char id="Col70357118" label="Protein" states="states560170"/>
+      <char id="Col70357119" label="Protein" states="states560170"/>
+      <char id="Col70357120" label="Protein" states="states560170"/>
+      <char id="Col70357121" label="Protein" states="states560170"/>
+      <char id="Col70357122" label="Protein" states="states560170"/>
+      <char id="Col70357123" label="Protein" states="states560170"/>
+      <char id="Col70357124" label="Protein" states="states560170"/>
+      <char id="Col70357125" label="Protein" states="states560170"/>
+      <char id="Col70357126" label="Protein" states="states560170"/>
+      <char id="Col70357127" label="Protein" states="states560170"/>
+      <char id="Col70357128" label="Protein" states="states560170"/>
+      <char id="Col70357129" label="Protein" states="states560170"/>
+      <char id="Col70357130" label="Protein" states="states560170"/>
+      <char id="Col70357131" label="Protein" states="states560170"/>
+      <char id="Col70357132" label="Protein" states="states560170"/>
+      <char id="Col70357133" label="Protein" states="states560170"/>
+      <char id="Col70357134" label="Protein" states="states560170"/>
+      <char id="Col70357135" label="Protein" states="states560170"/>
+      <char id="Col70357136" label="Protein" states="states560170"/>
+      <char id="Col70357137" label="Protein" states="states560170"/>
+      <char id="Col70357138" label="Protein" states="states560170"/>
+      <char id="Col70357139" label="Protein" states="states560170"/>
+      <char id="Col70357140" label="Protein" states="states560170"/>
+      <char id="Col70357141" label="Protein" states="states560170"/>
+      <char id="Col70357142" label="Protein" states="states560170"/>
+      <char id="Col70357143" label="Protein" states="states560170"/>
+      <char id="Col70357144" label="Protein" states="states560170"/>
+      <char id="Col70357145" label="Protein" states="states560170"/>
+      <char id="Col70357146" label="Protein" states="states560170"/>
+      <char id="Col70357147" label="Protein" states="states560170"/>
+      <char id="Col70357148" label="Protein" states="states560170"/>
+      <char id="Col70357149" label="Protein" states="states560170"/>
+      <char id="Col70357150" label="Protein" states="states560170"/>
+      <char id="Col70357151" label="Protein" states="states560170"/>
+      <char id="Col70357152" label="Protein" states="states560170"/>
+      <char id="Col70357153" label="Protein" states="states560170"/>
+      <char id="Col70357154" label="Protein" states="states560170"/>
+      <char id="Col70357155" label="Protein" states="states560170"/>
+      <char id="Col70357156" label="Protein" states="states560170"/>
+      <char id="Col70357157" label="Protein" states="states560170"/>
+      <char id="Col70357158" label="Protein" states="states560170"/>
+      <char id="Col70357159" label="Protein" states="states560170"/>
+      <char id="Col70357160" label="Protein" states="states560170"/>
+      <char id="Col70357161" label="Protein" states="states560170"/>
+      <char id="Col70357162" label="Protein" states="states560170"/>
+      <char id="Col70357163" label="Protein" states="states560170"/>
+      <char id="Col70357164" label="Protein" states="states560170"/>
+      <char id="Col70357165" label="Protein" states="states560170"/>
+      <char id="Col70357166" label="Protein" states="states560170"/>
+      <char id="Col70357167" label="Protein" states="states560170"/>
+      <char id="Col70357168" label="Protein" states="states560170"/>
+      <char id="Col70357169" label="Protein" states="states560170"/>
+      <char id="Col70357170" label="Protein" states="states560170"/>
+      <char id="Col70357171" label="Protein" states="states560170"/>
+      <char id="Col70357172" label="Protein" states="states560170"/>
+      <char id="Col70357173" label="Protein" states="states560170"/>
+      <char id="Col70357174" label="Protein" states="states560170"/>
+      <char id="Col70357175" label="Protein" states="states560170"/>
+      <char id="Col70357176" label="Protein" states="states560170"/>
+      <char id="Col70357177" label="Protein" states="states560170"/>
+      <char id="Col70357178" label="Protein" states="states560170"/>
+      <char id="Col70357179" label="Protein" states="states560170"/>
+      <char id="Col70357180" label="Protein" states="states560170"/>
+      <char id="Col70357181" label="Protein" states="states560170"/>
+      <char id="Col70357182" label="Protein" states="states560170"/>
+      <char id="Col70357183" label="Protein" states="states560170"/>
+      <char id="Col70357184" label="Protein" states="states560170"/>
+      <char id="Col70357185" label="Protein" states="states560170"/>
+      <char id="Col70357186" label="Protein" states="states560170"/>
+      <char id="Col70357187" label="Protein" states="states560170"/>
+      <char id="Col70357188" label="Protein" states="states560170"/>
+      <char id="Col70357189" label="Protein" states="states560170"/>
+      <char id="Col70357190" label="Protein" states="states560170"/>
+      <char id="Col70357191" label="Protein" states="states560170"/>
+      <char id="Col70357192" label="Protein" states="states560170"/>
+      <char id="Col70357193" label="Protein" states="states560170"/>
+      <char id="Col70357194" label="Protein" states="states560170"/>
+      <char id="Col70357195" label="Protein" states="states560170"/>
+      <char id="Col70357196" label="Protein" states="states560170"/>
+      <char id="Col70357197" label="Protein" states="states560170"/>
+      <char id="Col70357198" label="Protein" states="states560170"/>
+      <char id="Col70357199" label="Protein" states="states560170"/>
+      <char id="Col70357200" label="Protein" states="states560170"/>
+      <char id="Col70357201" label="Protein" states="states560170"/>
+      <char id="Col70357202" label="Protein" states="states560170"/>
+      <char id="Col70357203" label="Protein" states="states560170"/>
+      <char id="Col70357204" label="Protein" states="states560170"/>
+      <char id="Col70357205" label="Protein" states="states560170"/>
+      <char id="Col70357206" label="Protein" states="states560170"/>
+      <char id="Col70357207" label="Protein" states="states560170"/>
+      <char id="Col70357208" label="Protein" states="states560170"/>
+      <char id="Col70357209" label="Protein" states="states560170"/>
+      <char id="Col70357210" label="Protein" states="states560170"/>
+      <char id="Col70357211" label="Protein" states="states560170"/>
+      <char id="Col70357212" label="Protein" states="states560170"/>
+      <char id="Col70357213" label="Protein" states="states560170"/>
+      <char id="Col70357214" label="Protein" states="states560170"/>
+      <char id="Col70357215" label="Protein" states="states560170"/>
+      <char id="Col70357216" label="Protein" states="states560170"/>
+      <char id="Col70357217" label="Protein" states="states560170"/>
+      <char id="Col70357218" label="Protein" states="states560170"/>
+      <char id="Col70357219" label="Protein" states="states560170"/>
+      <char id="Col70357220" label="Protein" states="states560170"/>
+      <char id="Col70357221" label="Protein" states="states560170"/>
+      <char id="Col70357222" label="Protein" states="states560170"/>
+      <char id="Col70357223" label="Protein" states="states560170"/>
+      <char id="Col70357224" label="Protein" states="states560170"/>
+      <char id="Col70357225" label="Protein" states="states560170"/>
+      <char id="Col70357226" label="Protein" states="states560170"/>
+      <char id="Col70357227" label="Protein" states="states560170"/>
+      <char id="Col70357228" label="Protein" states="states560170"/>
+      <char id="Col70357229" label="Protein" states="states560170"/>
+      <char id="Col70357230" label="Protein" states="states560170"/>
+      <char id="Col70357231" label="Protein" states="states560170"/>
+      <char id="Col70357232" label="Protein" states="states560170"/>
+      <char id="Col70357233" label="Protein" states="states560170"/>
+      <char id="Col70357234" label="Protein" states="states560170"/>
+      <char id="Col70357235" label="Protein" states="states560170"/>
+      <char id="Col70357236" label="Protein" states="states560170"/>
+      <char id="Col70357237" label="Protein" states="states560170"/>
+      <char id="Col70357238" label="Protein" states="states560170"/>
+      <char id="Col70357239" label="Protein" states="states560170"/>
+      <char id="Col70357240" label="Protein" states="states560170"/>
+      <char id="Col70357241" label="Protein" states="states560170"/>
+      <char id="Col70357242" label="Protein" states="states560170"/>
+      <char id="Col70357243" label="Protein" states="states560170"/>
+      <char id="Col70357244" label="Protein" states="states560170"/>
+      <char id="Col70357245" label="Protein" states="states560170"/>
+      <char id="Col70357246" label="Protein" states="states560170"/>
+      <char id="Col70357247" label="Protein" states="states560170"/>
+      <char id="Col70357248" label="Protein" states="states560170"/>
+      <char id="Col70357249" label="Protein" states="states560170"/>
+      <char id="Col70357250" label="Protein" states="states560170"/>
+      <char id="Col70357251" label="Protein" states="states560170"/>
+      <char id="Col70357252" label="Protein" states="states560170"/>
+      <char id="Col70357253" label="Protein" states="states560170"/>
+      <char id="Col70357254" label="Protein" states="states560170"/>
+      <char id="Col70357255" label="Protein" states="states560170"/>
+      <char id="Col70357256" label="Protein" states="states560170"/>
+      <char id="Col70357257" label="Protein" states="states560170"/>
+      <char id="Col70357258" label="Protein" states="states560170"/>
+      <char id="Col70357259" label="Protein" states="states560170"/>
+      <char id="Col70357260" label="Protein" states="states560170"/>
+      <char id="Col70357261" label="Protein" states="states560170"/>
+      <char id="Col70357262" label="Protein" states="states560170"/>
+      <char id="Col70357263" label="Protein" states="states560170"/>
+      <char id="Col70357264" label="Protein" states="states560170"/>
+      <char id="Col70357265" label="Protein" states="states560170"/>
+      <char id="Col70357266" label="Protein" states="states560170"/>
+      <char id="Col70357267" label="Protein" states="states560170"/>
+      <char id="Col70357268" label="Protein" states="states560170"/>
+      <char id="Col70357269" label="Protein" states="states560170"/>
+      <char id="Col70357270" label="Protein" states="states560170"/>
+      <char id="Col70357271" label="Protein" states="states560170"/>
+      <char id="Col70357272" label="Protein" states="states560170"/>
+      <char id="Col70357273" label="Protein" states="states560170"/>
+      <char id="Col70357274" label="Protein" states="states560170"/>
+      <char id="Col70357275" label="Protein" states="states560170"/>
+      <char id="Col70357276" label="Protein" states="states560170"/>
+      <char id="Col70357277" label="Protein" states="states560170"/>
+      <char id="Col70357278" label="Protein" states="states560170"/>
+      <char id="Col70357279" label="Protein" states="states560170"/>
+      <char id="Col70357280" label="Protein" states="states560170"/>
+      <char id="Col70357281" label="Protein" states="states560170"/>
+      <char id="Col70357282" label="Protein" states="states560170"/>
+      <char id="Col70357283" label="Protein" states="states560170"/>
+      <char id="Col70357284" label="Protein" states="states560170"/>
+      <char id="Col70357285" label="Protein" states="states560170"/>
+      <char id="Col70357286" label="Protein" states="states560170"/>
+      <char id="Col70357287" label="Protein" states="states560170"/>
+      <char id="Col70357288" label="Protein" states="states560170"/>
+      <char id="Col70357289" label="Protein" states="states560170"/>
+      <char id="Col70357290" label="Protein" states="states560170"/>
+      <char id="Col70357291" label="Protein" states="states560170"/>
+      <char id="Col70357292" label="Protein" states="states560170"/>
+      <char id="Col70357293" label="Protein" states="states560170"/>
+      <char id="Col70357294" label="Protein" states="states560170"/>
+      <char id="Col70357295" label="Protein" states="states560170"/>
+      <char id="Col70357296" label="Protein" states="states560170"/>
+      <char id="Col70357297" label="Protein" states="states560170"/>
+      <char id="Col70357298" label="Protein" states="states560170"/>
+      <char id="Col70357299" label="Protein" states="states560170"/>
+      <char id="Col70357300" label="Protein" states="states560170"/>
+      <char id="Col70357301" label="Protein" states="states560170"/>
+      <char id="Col70357302" label="Protein" states="states560170"/>
+      <char id="Col70357303" label="Protein" states="states560170"/>
+      <char id="Col70357304" label="Protein" states="states560170"/>
+      <char id="Col70357305" label="Protein" states="states560170"/>
+      <char id="Col70357306" label="Protein" states="states560170"/>
+      <char id="Col70357307" label="Protein" states="states560170"/>
+      <char id="Col70357308" label="Protein" states="states560170"/>
+      <char id="Col70357309" label="Protein" states="states560170"/>
+      <char id="Col70357310" label="Protein" states="states560170"/>
+      <char id="Col70357311" label="Protein" states="states560170"/>
+      <char id="Col70357312" label="Protein" states="states560170"/>
+      <char id="Col70357313" label="Protein" states="states560170"/>
+      <char id="Col70357314" label="Protein" states="states560170"/>
+      <char id="Col70357315" label="Protein" states="states560170"/>
+      <char id="Col70357316" label="Protein" states="states560170"/>
+      <char id="Col70357317" label="Protein" states="states560170"/>
+      <char id="Col70357318" label="Protein" states="states560170"/>
+      <char id="Col70357319" label="Protein" states="states560170"/>
+      <char id="Col70357320" label="Protein" states="states560170"/>
+      <char id="Col70357321" label="Protein" states="states560170"/>
+      <char id="Col70357322" label="Protein" states="states560170"/>
+      <char id="Col70357323" label="Protein" states="states560170"/>
+      <char id="Col70357324" label="Protein" states="states560170"/>
+    </format>
+    <matrix>
+      <row about="#Row1158878" id="Row1158878" otu="Tl959370">
+        <meta id="meta560665" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560669" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Chlamydomonas reinhardtii Plus" datatype="xsd:string" id="meta560668" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560667" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560666" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTDTDRMNRVVAALEREYEQHYSRGATELDEREFLSTDFTKFASPRFSPGHMHSTMAKLRSGSMPLRSGGPLGPGLHTATPLGLHSPLPMMHLNAGPGVPGTPISEAMGASAWLRGVTSNMVAEPSPTLQRFLAALPITPVQQLMKRVRDLVASVIPDEAAPSLLGPFPLLNTSLGVERRIEATKLYCHSLDTILQNEQRTNGLPAALALLGSAKFQRGLIACCIEVVAACYRMVSCAFPNVLDALRIKAFDMANIIGTFVKSIATLPRELKRHLFLIEEKILECLAWEPGSSLYHLIVQGQAGLLFEFLRKVLKLTSFRLALLCENFDFSPLEGPEVNSKVYEAIEHALYKQTHLFYNRHIDQIMLSTLYGYCKVHKLSQVSFREIIAQYRKQPQAQQSIFRSVVIDQVLPTLQIQSRADIIGFYNAVFVPAMRNFLLKHKIPEGLAALLQALDSQK</seq>
+      </row>
+      <row about="#Row1158879" id="Row1158879" otu="Tl959368">
+        <meta id="meta560671" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560675" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Chlamydomonas reinhardtii Minus" datatype="xsd:string" id="meta560674" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560673" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560672" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTDTDRMNRVVAALEREYEQHYSRGATELDEREFLSTDFTKFASPRFSPGHMHSTMAKLRSGSMPLRSGGPLGPGLHTATPLGLHSPLPMMHLNAGPGVPGTPISEAMGASAWLRGVTSNMVAEPSPTLQRFLAALPITPVQQLMKRVRDLVASVIPDEAAPSLLGPFPLLNTSLGAERRIEATKLYCHSLDTILQNEQRTNGLPAALALLGSAKFQRGLIACCIEVVAACYRMVSCAFPNVLDALRIKAFDMANIIGTFVKSIATLPRELKRHLFLIEEKILECLAWEPGSSLYHLIVQGQAGLLFEFLRKVLKLTSFRLALLCENFDFSPLEGPEVNSKVYEAIEHALYKQTHLFYNRHIDQIMLSTLYGYCKVHKLSQVSFREIIAQYRKQPQAQQSIFRSVVIDQVLPTLQIQSRADIIGFYNAVFVPAMRNFLLKHKIPEGLAALLQALDSQK</seq>
+      </row>
+      <row about="#Row1158880" id="Row1158880" otu="Tl959377">
+        <meta id="meta560677" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560681" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Chlamydomonas globosa" datatype="xsd:string" id="meta560680" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560679" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560678" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTNMERMNRAVAALEREYEQHYSRGATELDEREFLSTDFTKFASPRLSPGHMHSTMAKLRSEPMPLRSGGLLSPGLHTTIPPWLHSPLPMMHLNAGPGLQGTPISEAMGASAWLRGVTSSMAAEPSPALQRLLAALPITPAQLLMKRVRDLVASVIPDEAAPSVLGPFPMLNTSFGAERRTQAARLYCHSLETIMLNEERTNGLPAALALLGSAKFQRGLIACCIEVVAACYRMSSCAFPKVVDALRIKAFDMASIIGTFVKSIATLPRELKRHLFLIEEKILECLAWQPGSSLYHLIVHGQAGLLFEFLRKVLKLTSFRLALLCENVDFGPLERPEVSSKVYETIEHALYKQTHLFYNRHIDQVMLSTLYGYCKVHKLSQVSFREIIAQYRKQPQAQQSVFRSVVIEQSMPTLQIQSRADIIAFYNAVFVPAMKSFLLKHIIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158881" id="Row1158881" otu="Tl959375">
+        <meta id="meta560683" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560687" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Gonium pectorale Plus/Minus" datatype="xsd:string" id="meta560686" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560685" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560684" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PILSGLVTDIDRMNLALAALERVYEQHLACSGSELDEREFLTTDFTKFASPRYSPGQMHYVLSTLRGGSTPIRPGILLGPGAHRTAPPGLHSPLPGVHCG-DPGPPITPVSELMSASTWLRGLATTLTAEPSCTLQRFLAAVPVSAAEQLSRRIRELISLVIPDESSSTLLGSFP-LQPRLAAERRMEAYKLYLHSLETLLVAEEKVNGLAGVVALLSSSKFHRGLVACTVEIVAACYRMVSCAFPKVMDVLHIKAFDLAKMVQGFVRSVSSLPRELKRHMFLIEEKILESLAWEPGSSLYFHIVSNVAGPLQEFCRKVLKLIAYRLALLCEKFDFSPLGRAEVNSKVYETIEHALYHHTQMFYNRHIDQVMLSALYGYCKVHKLVQVSFREIIAQYRKQPHAQQATFRSVVIEQSNPGLQITSRADIISFYNQIFVPAMKAYLLKRRIPDGLAALLQALDSQS</seq>
+      </row>
+      <row about="#Row1158882" id="Row1158882" otu="Tl959374">
+        <meta id="meta560689" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560693" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Yamagishiella unicocca Plus/Minus" datatype="xsd:string" id="meta560692" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560691" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560690" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PILEGLVTDSDRMNRAVAALEVEYEQHYVRGTSELDERDFLSTDFTKFASPRFSPGQMHSVMTKLRGGPMPLRPGDLLGPGAHTTAPPGLHSPLPMMHLGAGAGQPGTPVSEVMGASAWLRGVTANLAPEPSPVLQRFLAAVNVSLAVQLSRRVRDMVASVIPDENGPSVLGPFPLLQPSLAAERRMEATKLYYHSLETILMSEEKASGLTGVTALLVATKFHRGLVACCVEVVSACYRMVSCAFPKVLDSLRIKAFDLAKMIQNFVKSIATLPRELKRHLFLIEEKILESLAWEPGSSLYHLIIGGSVGALHEFCRKVLKLASFRLALMCNNFDFAPLDKVEVSSKVYETIEYALYRQTHLFYNRHIDQIMLSALYGYCKVHKLAQVSFREIIAQYRKQPQAQQAIFRSVIIEQSNPGLQISSRADIIAFYNQVFVPSMKAFLLKHKIPDGLAALLQALDSQA</seq>
+      </row>
+      <row about="#Row1158883" id="Row1158883" otu="Tl959378">
+        <meta id="meta560695" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560699" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Eudorina sp. Male/Female" datatype="xsd:string" id="meta560698" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560697" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560696" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>SSLEGLVTDADRMQRALAALETEYEQHFNRGDSELDEREFLQTDFTKFASPRLSPAHLQTAMAKVRAGPMPLRQGALLGPGAHTTAPPGFHSPLPMLHLGVDLGQPNTPVSEVMGASAWLRGVTASLQTEPSASLMRYLEAVSVAAAQQLSRRVRDLVLSIMPDERIPALFGPFPLLQTSLAAERRTEVTKLYYHSLENILRAEEKASGIAAAIALLSAGKFHRALVACCVEVVAACYRMAGCAFPKVLDAVGIKAFDLGKMIQGFVKSVASLPRELKRHMFLIEEKILESLAWEPGSSLYNHILTGSAGALYDFCRKVLKLAAFRLSLMCDNFDFMPLDRGEVNAKVYETIEHALYFQTHLFYNRHIDQILLSALYGYCKVQKLSQVSFREIIAHYRKQPQAHQSIFRSVIIEQTNPGLQVVTRADIIAFYNQTFVPSMKSFLLKHQIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158884" id="Row1158884" otu="Tl959371">
+        <meta id="meta560701" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560705" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Pleodorina starrii Male/Female" datatype="xsd:string" id="meta560704" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560703" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560702" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTDADRMQRALAALEAEYEQHYTLGGTELDERQFLHTDFTKFASPRFSSGHLHAAMTKLRAGPMPLRQGGLLGPGAHTTASTGMYSPLPMLHLGMDSGQPNTPVSEVMGASAWLRSVTANLAPEPPPSLLQYFEAVAVAAAQQLSRRVRELVSSVMPEEKIPSLLGPFPLLQTSLAAEKRTEVTKLYFHSLENILHVEEKASGMPSAVALLSTGKFHRTLVACCVEVVAACYRMVSCAFPKVLDALHIKAFDLAKMIQGFVKSIPALPRELKRHLFLIEERILESLAWEPGSSLYHHIIGGSSGALYNFCHKVLKLAAFRLALMCDNFNFSPLDRVEVSTKVYETIEYALYCQTHLFYNRHIDQIVLSALYGYCKVHKLPQVSFREIITHYRKQPQAQQAIFRSVIIEQSNPGLQIVSRADIIAFYNQVFVPAMKSFLLKHQIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158885" id="Row1158885" otu="Tl959376">
+        <meta id="meta560707" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560711" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Volvox africanus Male" datatype="xsd:string" id="meta560710" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560709" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560708" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTDADRMQRAITALEAEYERHYKHGGSELDEREFLFTDFTKFASPRFSPRHMHSAITKLQSGPTPLRQGALLGPGAHITASAGTHSPLPMLNLAMDVGQPTTPVSEVMSASAWLRALTANLATEPSPGLMRYLAAIDMSAAEQLGQRVRDLVSSVMPEEEIPSLLGPFPLLQSSLAVERRTEITKLYYHSLEIILQNEEKASGLAGVAPLLASGKFHRALVTCCIEVVAACYRMVSCAFPKVLDALHIKAIDLPNMIQSFVKSIETLPRELKRHLFLIEEKILESLAWEPGSSLYSHITGGSAGALRDFCRKVLKLAAFRLALMCDNFDFTPLNRAEVNAKVYETIEHALYYQTHLFYNRHIDQIILSALYGYCKVHKLTQVSFREIIAHYRKQPQAQQCIFRSVIIEQSNPDLQVAARADIIAFYNQVFVPSMKSFLLKVEIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158886" id="Row1158886" otu="Tl959369">
+        <meta id="meta560713" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560717" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Volvox africanus Female" datatype="xsd:string" id="meta560716" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560715" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560714" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTDADRMQRAITALEAEYEQHYKHGGSELDEREFLFTDFTKFASPRFSPRHMHSAITKLQSGPTPLRQGALLGPGAHITASAGTHSPLPMLNLAMDVGQPTTPVSEVMSASAWLRALTANLATEPSPGLMRYLAAIDMSAAEQLGQRVRDLVSSVMPEEEIPSLLGPFPLLQSSLAVERRTEITKLYYHSLEIILQNEEKASGLAGVAPLLASGKFHRALVTCCIEVVAACYRMVSCAFPKVLDALHIKAFDLAKMIQSFVKSIETLPRELKRHLFLIEEKILESLAWEPGSSLYSHITGGSAGALRDFCRKVLKLAAFRLALMCDNFDFTPLNRAEVNTKVYETIEHALYYQTHLFYNRHIDQIILSALYGYCKVHKLTQVSFREIIAHYRKQPQAQQCIFRSVIIEQSNPDLQVAARADIIAFYNQVFVPSMKSFLLKVEIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158887" id="Row1158887" otu="Tl959372">
+        <meta id="meta560719" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560723" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Volvox obversus Male" datatype="xsd:string" id="meta560722" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560721" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560720" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTDGIRMEQALAALEAEYEHHYVHGGSELDEREFLYTDFAKFASPRLSPGHIHSAMVKLRSGFLPLRQGALLGPGAHTTAPAGMQSPLPLLNLGIDMGQPNTPVSEVMNASAWLRALTANLEAEPTPGLVRHLSAGGATAVHQLGQRVRDLVSSIMPEEKAPSLVGPFPLFQSSLAAERRSEVTKLYYHSLDSILQTEEKVSGMPGVTSLLLAGKFHRALIACCVEVVAACYRMVSCSFPKVLDALHIKAFDLAKMIQSFVKSVETLPRELKRHLFQIEEKILESLAWEPGSSLYSHIINGNGGALHDFCRKVLKLAAFRLPLMCDNFDFKPLDRVEVNAKVYETIENALYYQTHMFYNRHINQIILSALYGYCKVQKLAQVSFREIIGHYRKQPQAQQCVFRSVIIEQSNPELQVINRADIIAFYNHIFVPSMKSFLLRHQIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158888" id="Row1158888" otu="Tl959373">
+        <meta id="meta560725" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560730" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="GU784916" datatype="xsd:string" id="meta560729" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="Volvox carteri f. nagariensis Male" datatype="xsd:string" id="meta560728" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560727" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560726" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTDAVRMQRALDALESEYEKHYEHGGSELDEREFLFTDFTKFASPRFSPGHMQSAITKMRLGPMPLRQGALLGPGAHTTAPAGMHSPLPVLNLSIDTGQPSTPVSEVMNISAWLRGRTANLAAEPSPGLTRYLAAVGGSTAHQLGQRVRDLISSIIPEEKIPSLVGAFPLLQPSLTAERRLEVTKLYYHSLDNILHTEEKVGGMAGVTSLLSAGKFHRALVACCIEVVAACYRMVSCAFPKVLDALHIKAFDLAKMIPSFVKSIETLPRELKRHLFLIEEKIIESLAWEPGSSLYTHIVSGSAGALHDFCRKVLKLAAFRLALMCDNFDFSPLDRVEVNAKVYETIEYALYNQTHLFYNRHIDQIILSALYGYCKVHKLVQVSFREIIGHYRKQPQAQQCIFRSVIIEQSNPGLQVSTRADIIAFYNQVFVPSMKSFLLKHQIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158889" id="Row1158889" otu="Tl959379">
+        <meta id="meta560732" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560737" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="XM_002954427" datatype="xsd:string" id="meta560736" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="Volvox carteri f. nagariensis Female" datatype="xsd:string" id="meta560735" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560734" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560733" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>RLLEGLVTDGNRMQRALSALETEYAQHYTRGGSELDEREFLFTDFTKFASPRFSPRHMQSAVMKLRAGPLPIRQGSLLGPGAHTTASARMHSPLPKLNLGVETGPPVTPVSEIMSTSAWLRGITASLAAEPSPSVMRYLAEVAVSAAEQLNQRVQELVSCIMPEEKIPSLLGSFPLLQPSLVSERRIEVTKVYYLSLERILQAEEKNNGVAGVTSLLSAGKFHRALVACSAEVVTACYRMVSCTFPKVLDALHIKAFDLAKMIQCFVRSITTLPRDLKRHLFLVEEKILESLAWEADSPLYSLICDGCAAALNHFCCKVLKLAAFRLAVLCDNFDFSPLQRLDVNTKVYQTIEHALFFQTHLFYNRHIDQIILSALYGFCKVHRLAQVSFREIIAHYRKQPQAQPSIFRSVVVEQSNPSLQVGRRADIIAFYNQVFVPCMKSFLLRHQIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158890" id="Row1158890" otu="Tl959366">
+        <meta id="meta560739" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560743" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Volvox carteri f. kawasakiensis Male" datatype="xsd:string" id="meta560742" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560741" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560740" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTDAARMQRALDALESEYEKHYALGGSELDEREFLYTDFTKFASPRFSPGHMQSAVTKLRLGPMPLRQGALLGPGAHTTAPAGMHSPLPVLHLSIDTGQPSTPVSEVMNISAWLRGRTANLAAEPSPGLARYLAAVGGSAAHQLDQRVRDLISSIIPEEKIPSLVGAFPLLQPSLAAERRTEVTKLYYHSLDSILHTEEKVSGMAGVTSLLSAGKFHRALVACCIEVVAACYRMVSCAFPKVLDALHIKAFDLAKMIPSFVKSVETLPRELKRHLFLIEEKIIESLAWEPGSSLYTHILSGSAGALSDFCRKVLKLAAFRLALMCDNFDFSPLDRVEVNLKVYETIEYALYYQTHLFYNRHIDQIILSALYGYCKVHKLVQVSFREIIAHYRKQPQAQQGIFRSVIIEQTNPGLQVSTRADIIAFYNQVFVPSMKSFLLKHQIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158891" id="Row1158891" otu="Tl959381">
+        <meta id="meta560745" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560749" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Volvox carteri f. kawasakiensis Female" datatype="xsd:string" id="meta560748" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560747" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560746" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>RVLEGLVTDANRMQRALSAMELEYEQHYTRGGSELDEREFLYTDFSKFASPRFSPGHMQSAVMKLRAGPLPIRQGEFLGPGAHTTAPAGVHSPLPKLDLGVETGPPVTPVSEIMSASAWLRGVTANLAAEPSPSVMRYLATVAVSAAEQLNQRIRELVTCIMPEEKLPSLLGPFPLFQPSLVAERRIEVMKLYYLGLECILQAEEKSSGVPGVTSLLSSGKFHRALVACSVEVVTACYRMVSCAFPK??????????????????????????????????????????????????????????DGCAAALNHFCCKVLKLAAFRLAVMCDNFDFTPLDRLDVNTKVYQTIEHALFFQTHLFYNRHIDQIILSALYGFCKVHRLSQVSFREIIAHYRKQPQAQPSIFRSVVVEQSNPGLQVGRRADIIAFYNQVFVPSMKSFLLRHQIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158892" id="Row1158892" otu="Tl959367">
+        <meta id="meta560751" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560755" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Volvox carteri f. weismannia Male" datatype="xsd:string" id="meta560754" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560753" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560752" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>PVLEGLVTDAVRMQRALDALESEYEKYYVHGGSELDEREFLYTDFTKFASPRFSPGHMQSAITKLRLSPMPLRQGGLLGPGAHTTAPAGMHSPLPVLNLGIDTGQPSTPVSEVMNISAWLRGRTANLAAEPSPGLTRYLAAVGGTAAHQLGQRVRDLISSVIPEEKIPSLVGAFPLLQPSLAAERRTEVTKLYYHSLDSILHTEEKVSGMAGVTSLLSAGKFHRALVACCIEVVAACYRMVSCAFPKVLDALHIKAFDLAKMIPSFVKSVETLPRELKRHLFLIEEKIIESLAWDPGSSLYTHIASGSAGALNDFCRKVLKLAAFRLALMCDNFDFSPLDRMEVNTKVYETIEYALYYQTHLFYNRHIDQIILSALYGFCKVHKLVQVSFREIIAHYRKQPQAQQCIFRSVIIEQSNPSLQVSTRADIIAFYNQVFVPSMKSFLLKHQIPDGLAALLQALDSQQ</seq>
+      </row>
+      <row about="#Row1158893" id="Row1158893" otu="Tl959380">
+        <meta id="meta560757" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="MAT3" datatype="xsd:string" id="meta560761" property="DwC:datasetName" xsi:type="nex:LiteralMeta"/>
+          <meta content="Volvox carteri f. weismannia Female" datatype="xsd:string" id="meta560760" property="DwC:scientificName" xsi:type="nex:LiteralMeta"/>
+          <meta content="464" datatype="xsd:integer" id="meta560759" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta560758" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>RVLEGLVTDANRMQRALTALETEYEQHYTRGGSELDEREFLYTDFTKFASPRFSPGHMQSAVMKLGAGPLPIRQGALLGPGAHITAPAGLHSP--KLDLGVEAGPPVTPVSEIMSASAWLRGVTANLAAEPSPSLMRYLAAVAVSAAKQLTQRVRDLVSCIMPEEKIPSLLGPFPLLQPSLVTERRIEVTKLYYLSLERILQAEEKNNGVTGVISLLSAGKFHRALVACSLEVVTACYRMVSCAFPKVLDALHIKAFDMAKMIECFVKSITTLPRELKRHLFLVEEKILESLAWEAGSPIYSLIS???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb19706" id="Tb19706" label="MAT3 Result" otus="Tls28990" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@694dc487 $Rev: 1040 $" datatype="xsd:string" id="meta560764" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S13735" id="meta560763" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr59782" id="Tr59782" label="Fig. 3" xsi:type="nex:FloatTree">
+      <meta content="16" datatype="xsd:integer" id="meta560770" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta560769" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta560768" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta560767" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13735" id="meta560766" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn9681116"/>
+      <node id="Tn9681102" label="Chlamydomonas reinhardtii Plus" otu="Tl959370"/>
+      <node id="Tn9681110" label="Chlamydomonas reinhardtii Minus" otu="Tl959368"/>
+      <node id="Tn9681108" label="1.000"/>
+      <node id="Tn9681103" label="Chlamydomonas globosa" otu="Tl959377"/>
+      <node id="Tn9681118" label="1.000"/>
+      <node id="Tn9681100" label="Yamagishiella unicocca Plus/Minus" otu="Tl959374"/>
+      <node id="Tn9681107" label="0.994"/>
+      <node id="Tn9681095" label="Gonium pectorale Plus/Minus" otu="Tl959375"/>
+      <node id="Tn9681117" label="1.000"/>
+      <node id="Tn9681101" label="0.999"/>
+      <node id="Tn9681092" label="Eudorina sp. Male/Female" otu="Tl959378"/>
+      <node id="Tn9681115" label="Pleodorina starrii Male/Female" otu="Tl959371"/>
+      <node id="Tn9681093" label="1.000"/>
+      <node id="Tn9681105" label="0.999"/>
+      <node id="Tn9681121" label="1.000"/>
+      <node id="Tn9681099" label="Volvox africanus Male" otu="Tl959376"/>
+      <node id="Tn9681098" label="Volvox africanus Female" otu="Tl959369"/>
+      <node id="Tn9681096" label="0.999"/>
+      <node id="Tn9681094" label="Volvox obversus Male" otu="Tl959372"/>
+      <node id="Tn9681112" label="1.000"/>
+      <node id="Tn9681119" label="Volvox carteri f. weismannia Male" otu="Tl959367"/>
+      <node id="Tn9681114" label="0.629"/>
+      <node id="Tn9681120" label="Volvox carteri f. nagariensis Male" otu="Tl959373"/>
+      <node id="Tn9681104" label="Volvox carteri f. kawasakiensis Male" otu="Tl959366"/>
+      <node id="Tn9681111" label="1.000"/>
+      <node id="Tn9681097" label="Volvox carteri f. weismannia Female" otu="Tl959380"/>
+      <node id="Tn9681106" label="0.897"/>
+      <node id="Tn9681113" label="Volvox carteri f. nagariensis Female" otu="Tl959379"/>
+      <node id="Tn9681109" label="Volvox carteri f. kawasakiensis Female" otu="Tl959381"/>
+      <edge id="edge560773" length="0.003537" source="Tn9681116" target="Tn9681102"/>
+      <edge id="edge560775" length="0.00152" source="Tn9681116" target="Tn9681110"/>
+      <edge id="edge560777" length="0.053168" source="Tn9681116" target="Tn9681108"/>
+      <edge id="edge560779" length="0.07441" source="Tn9681108" target="Tn9681103"/>
+      <edge id="edge560781" length="0.19266" source="Tn9681108" target="Tn9681118"/>
+      <edge id="edge560783" length="0.073087" source="Tn9681118" target="Tn9681100"/>
+      <edge id="edge560785" length="0.031478" source="Tn9681118" target="Tn9681107"/>
+      <edge id="edge560787" length="0.269449" source="Tn9681107" target="Tn9681095"/>
+      <edge id="edge560789" length="0.08488" source="Tn9681107" target="Tn9681117"/>
+      <edge id="edge560791" length="0.026537" source="Tn9681117" target="Tn9681101"/>
+      <edge id="edge560793" length="0.126802" source="Tn9681101" target="Tn9681092"/>
+      <edge id="edge560795" length="0.099794" source="Tn9681101" target="Tn9681115"/>
+      <edge id="edge560797" length="0.025212" source="Tn9681117" target="Tn9681093"/>
+      <edge id="edge560799" length="0.023459" source="Tn9681093" target="Tn9681105"/>
+      <edge id="edge560801" length="0.103778" source="Tn9681105" target="Tn9681121"/>
+      <edge id="edge560803" length="0.011518" source="Tn9681121" target="Tn9681099"/>
+      <edge id="edge560805" length="0.001647" source="Tn9681121" target="Tn9681098"/>
+      <edge id="edge560807" length="0.026064" source="Tn9681105" target="Tn9681096"/>
+      <edge id="edge560809" length="0.131582" source="Tn9681096" target="Tn9681094"/>
+      <edge id="edge560811" length="0.054778" source="Tn9681096" target="Tn9681112"/>
+      <edge id="edge560813" length="0.02686" source="Tn9681112" target="Tn9681119"/>
+      <edge id="edge560815" length="0.004343" source="Tn9681112" target="Tn9681114"/>
+      <edge id="edge560817" length="0.026623" source="Tn9681114" target="Tn9681120"/>
+      <edge id="edge560819" length="0.026344" source="Tn9681114" target="Tn9681104"/>
+      <edge id="edge560821" length="0.132419" source="Tn9681093" target="Tn9681111"/>
+      <edge id="edge560823" length="0.043958" source="Tn9681111" target="Tn9681097"/>
+      <edge id="edge560825" length="0.01543" source="Tn9681111" target="Tn9681106"/>
+      <edge id="edge560827" length="0.061364" source="Tn9681106" target="Tn9681113"/>
+      <edge id="edge560829" length="0.050796" source="Tn9681106" target="Tn9681109"/>
+    </tree>
+  </trees>
+</nex:nexml>

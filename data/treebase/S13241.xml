@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S13241" generator="org.nexml.model.impl.DocumentImpl" id="S13241" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Sun Feb 17 16:23:44 EST 2013" datatype="xsd:string" id="meta498822" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@48016d8 $Rev: 1060 $" datatype="xsd:string" id="meta498821" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="3" datatype="xsd:string" id="meta498820" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="29" datatype="xsd:string" id="meta498819" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Journal of Vertebrate Paleontology" datatype="xsd:string" id="meta498818" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Journal of Vertebrate Paleontology" datatype="xsd:string" id="meta498817" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta498816" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="771-786" datatype="xsd:string" id="meta498815" property="prism:pageRange" xsi:type="nex:LiteralMeta"/>
+  <meta content="786" datatype="xsd:string" id="meta498814" property="prism:endingPage" xsi:type="nex:LiteralMeta"/>
+  <meta content="771" datatype="xsd:string" id="meta498813" property="prism:startingPage" xsi:type="nex:LiteralMeta"/>
+  <meta content="10.1671/039.029.0329" datatype="xsd:string" id="meta498812" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2009" datatype="xsd:string" id="meta498811" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Goodwin M.B." datatype="xsd:string" id="meta498810" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Carr T.D." datatype="xsd:string" id="meta498809" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Williamson T.E." datatype="xsd:string" id="meta498808" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Evans D.C." datatype="xsd:string" id="meta498807" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Schott R.K." datatype="xsd:string" id="meta498806" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Schott R.K., Evans D.C., Williamson T.E., Carr T.D., &amp; Goodwin M.B." datatype="xsd:string" id="meta498805" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="The anatomy and systematics of Colepiocephale lambei (Dinosauria: Pachycephalosauridae)." datatype="xsd:string" id="meta498804" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Schott R.K., Evans D.C., Williamson T.E., Carr T.D., &amp; Goodwin M.B. 2009. The anatomy and systematics of Colepiocephale lambei (Dinosauria: Pachycephalosauridae). Journal of Vertebrate Paleontology, 29(3): 771-786." datatype="xsd:string" id="meta498803" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-08-03" datatype="xsd:string" id="meta498802" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-08-15" datatype="xsd:string" id="meta498801" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-08-15" datatype="xsd:string" id="meta498800" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="The anatomy and systematics of Colepiocephale lambei (Dinosauria: Pachycephalosauridae)." datatype="xsd:string" id="meta498799" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta498798" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="13241" datatype="xsd:string" id="meta498797" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta498795" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls27182" id="Tls27182" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@4ef73ace $Rev: 1040 $" datatype="xsd:string" id="meta498824" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl864428" id="Tl864428" label="Psittacosaurus mongoliensis">
+      <meta content="613672" datatype="xsd:long" id="meta498829" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820724" datatype="xsd:long" id="meta498828" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5686912" id="meta498827" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498826" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864415" id="Tl864415" label="Stenopelix valdensis">
+      <meta content="613880" datatype="xsd:long" id="meta498834" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820933" datatype="xsd:long" id="meta498833" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6893249" id="meta498832" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498831" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864431" id="Tl864431" label="Wannanosaurus yanshiensis">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498836" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864423" id="Tl864423" label="Goyocephale lattimorei">
+      <meta content="613868" datatype="xsd:long" id="meta498841" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820921" datatype="xsd:long" id="meta498840" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6833399" id="meta498839" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498838" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864429" id="Tl864429" label="Homalocephale calathocercos">
+      <meta content="613888" datatype="xsd:long" id="meta498846" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820941" datatype="xsd:long" id="meta498845" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6833400" id="meta498844" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498843" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864424" id="Tl864424" label="Tylocephale gilmorei">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498848" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864351" id="Tl864351" label="Prenocephale prenes">
+      <meta content="614439" datatype="xsd:long" id="meta498853" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821563" datatype="xsd:long" id="meta498852" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5719377" id="meta498851" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498850" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864433" id="Tl864433" label="Yaverlandia bitholus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498855" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864422" id="Tl864422" label="Pachycephalosauridae indet Ornatotholus browni holotype AMNH 5450">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498857" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864417" id="Tl864417" label="Pachycephalosauridae indet SMP VP 1084">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498859" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864432" id="Tl864432" label="Stegoceras edmontonense holotype CMN 8830">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498861" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864426" id="Tl864426" label="Stegoceras breve holotype CMN 1423">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498863" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864420" id="Tl864420" label="Stegoceras sternbergi holotype CMN 8817">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498865" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864421" id="Tl864421" label="Stegoceras lambei holotype CMN 8818">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498867" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864419" id="Tl864419" label="Stegoceras validum UA 2">
+      <meta content="614445" datatype="xsd:long" id="meta498873" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821569" datatype="xsd:long" id="meta498872" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Stegoceras validum" datatype="xsd:string" id="meta498871" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5534012" id="meta498870" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498869" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864416" id="Tl864416" label="Stegoceras sp. Gravitholus albertae holotype TMP 72.27.1">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498875" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864418" id="Tl864418" label="Stegoceras sp. UCMP 130051">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498877" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864425" id="Tl864425" label="Stygimoloch spinifer">
+      <meta content="614446" datatype="xsd:long" id="meta498882" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821570" datatype="xsd:long" id="meta498881" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5534000" id="meta498880" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498879" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864430" id="Tl864430" label="Pachycephalosaurus wyomingensis">
+      <meta content="614447" datatype="xsd:long" id="meta498887" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821571" datatype="xsd:long" id="meta498886" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5534006" id="meta498885" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498884" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864414" id="Tl864414" label="Sphaerotholus goodwini holotype NMMNH P 27403">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498889" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864427" id="Tl864427" label="Sphaerotholus buchholtzae holotype TMP 87.113.3">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498891" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <otus about="#Tls27178" id="Tls27178" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@4ef73ace $Rev: 1040 $" datatype="xsd:string" id="meta498893" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl864345" id="Tl864345" label="Ornithopoda">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498895" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864349" id="Tl864349" label="Ceratopsidae">
+      <meta content="614444" datatype="xsd:long" id="meta498900" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821568" datatype="xsd:long" id="meta498899" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5483814" id="meta498898" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498897" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864353" id="Tl864353" label="Stenopelix">
+      <meta content="614419" datatype="xsd:long" id="meta498905" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821543" datatype="xsd:long" id="meta498904" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4352583" id="meta498903" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498902" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864350" id="Tl864350" label="Wannanosaurus">
+      <meta content="614410" datatype="xsd:long" id="meta498910" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821534" datatype="xsd:long" id="meta498909" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4526623" id="meta498908" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498907" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864344" id="Tl864344" label="Goyocephale">
+      <meta content="614409" datatype="xsd:long" id="meta498915" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821533" datatype="xsd:long" id="meta498914" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4550497" id="meta498913" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498912" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864347" id="Tl864347" label="Homalocephale">
+      <meta content="614413" datatype="xsd:long" id="meta498920" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821537" datatype="xsd:long" id="meta498919" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4499720" id="meta498918" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498917" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864348" id="Tl864348" label="Stegoceras">
+      <meta content="613664" datatype="xsd:long" id="meta498925" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820716" datatype="xsd:long" id="meta498924" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4351442" id="meta498923" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498922" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864341" id="Tl864341" label="Tylocephale">
+      <meta content="614435" datatype="xsd:long" id="meta498930" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821559" datatype="xsd:long" id="meta498929" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4525583" id="meta498928" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498927" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864351" id="Tl864351" label="Prenocephale prenes">
+      <meta content="614439" datatype="xsd:long" id="meta498935" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821563" datatype="xsd:long" id="meta498934" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5719377" id="meta498933" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498932" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864342" id="Tl864342" label="Prenocephale brevis">
+      <meta content="614436" datatype="xsd:long" id="meta498940" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821560" datatype="xsd:long" id="meta498939" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5533988" id="meta498938" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498937" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864355" id="Tl864355" label="Prenocephale edmontonensis">
+      <meta content="614442" datatype="xsd:long" id="meta498945" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821566" datatype="xsd:long" id="meta498944" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5533990" id="meta498943" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498942" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864352" id="Tl864352" label="Prenocephale goodwini">
+      <meta content="614440" datatype="xsd:long" id="meta498950" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821564" datatype="xsd:long" id="meta498949" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5533992" id="meta498948" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498947" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864354" id="Tl864354" label="Colepiocephale">
+      <meta content="614441" datatype="xsd:long" id="meta498955" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821565" datatype="xsd:long" id="meta498954" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4627364" id="meta498953" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498952" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864346" id="Tl864346" label="Hanssuesia">
+      <meta content="614438" datatype="xsd:long" id="meta498960" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821562" datatype="xsd:long" id="meta498959" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4627366" id="meta498958" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498957" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864356" id="Tl864356" label="Stygimoloch">
+      <meta content="614443" datatype="xsd:long" id="meta498965" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821567" datatype="xsd:long" id="meta498964" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4586965" id="meta498963" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498962" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl864343" id="Tl864343" label="Pachycephalosaurus">
+      <meta content="614437" datatype="xsd:long" id="meta498970" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821561" datatype="xsd:long" id="meta498969" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4409622" id="meta498968" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta498967" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M14018" id="M14018" label="Character Matrix A" otus="Tls27178" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:StandardSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@2cb47f8c $Rev: 1056 $" datatype="xsd:string" id="meta498976" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="14018" datatype="xsd:long" id="meta498975" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="49" datatype="xsd:integer" id="meta498974" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="16" datatype="xsd:integer" id="meta498973" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="Standard" datatype="xsd:string" id="meta498972" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states498977">
+        <state id="Dcs352365" label="1" symbol="1"/>
+        <state id="Dcs352366" label="0" symbol="0"/>
+        <uncertain_state_set id="uncertain_state_set498980" label="-" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set498981" label="?" symbol="?">
+          <member state="uncertain_state_set498980"/>
+          <member state="Dcs352366"/>
+          <member state="Dcs352365"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col42032364" states="states498977"/>
+      <char id="Col42032365" states="states498977"/>
+      <char id="Col42032366" states="states498977"/>
+      <char id="Col42032367" states="states498977"/>
+      <char id="Col42032368" states="states498977"/>
+      <char id="Col42032369" states="states498977"/>
+      <char id="Col42032370" states="states498977"/>
+      <char id="Col42032371" states="states498977"/>
+      <char id="Col42032372" states="states498977"/>
+      <char id="Col42032373" states="states498977"/>
+      <char id="Col42032374" states="states498977"/>
+      <char id="Col42032375" states="states498977"/>
+      <char id="Col42032376" states="states498977"/>
+      <char id="Col42032377" states="states498977"/>
+      <char id="Col42032378" states="states498977"/>
+      <char id="Col42032379" states="states498977"/>
+      <char id="Col42032380" states="states498977"/>
+      <char id="Col42032381" states="states498977"/>
+      <char id="Col42032382" states="states498977"/>
+      <char id="Col42032383" states="states498977"/>
+      <char id="Col42032384" states="states498977"/>
+      <char id="Col42032385" states="states498977"/>
+      <char id="Col42032386" states="states498977"/>
+      <char id="Col42032387" states="states498977"/>
+      <char id="Col42032388" states="states498977"/>
+      <char id="Col42032389" states="states498977"/>
+      <char id="Col42032390" states="states498977"/>
+      <char id="Col42032391" states="states498977"/>
+      <char id="Col42032392" states="states498977"/>
+      <char id="Col42032393" states="states498977"/>
+      <char id="Col42032394" states="states498977"/>
+      <char id="Col42032395" states="states498977"/>
+      <char id="Col42032396" states="states498977"/>
+      <char id="Col42032397" states="states498977"/>
+      <char id="Col42032398" states="states498977"/>
+      <char id="Col42032399" states="states498977"/>
+      <char id="Col42032400" states="states498977"/>
+      <char id="Col42032401" states="states498977"/>
+      <char id="Col42032402" states="states498977"/>
+      <char id="Col42032403" states="states498977"/>
+      <char id="Col42032404" states="states498977"/>
+      <char id="Col42032405" states="states498977"/>
+      <char id="Col42032406" states="states498977"/>
+      <char id="Col42032407" states="states498977"/>
+      <char id="Col42032408" states="states498977"/>
+      <char id="Col42032409" states="states498977"/>
+      <char id="Col42032410" states="states498977"/>
+      <char id="Col42032411" states="states498977"/>
+      <char id="Col42032412" states="states498977"/>
+    </format>
+    <matrix>
+      <row id="Row1043508" otu="Tl864345">
+        <seq>0000000000000000000000000000000000000?00000000000</seq>
+      </row>
+      <row id="Row1043509" otu="Tl864349">
+        <seq>0000000000000000000000000000000000000?00000000000</seq>
+      </row>
+      <row id="Row1043510" otu="Tl864353">
+        <seq>111??????00?0??????0?00????000???????????????????</seq>
+      </row>
+      <row id="Row1043511" otu="Tl864350">
+        <seq>???1111111111000?0?????0??????00000??00?000000000</seq>
+      </row>
+      <row id="Row1043512" otu="Tl864344">
+        <seq>1?1111111111?11111111110???0??00000??000000000000</seq>
+      </row>
+      <row id="Row1043513" otu="Tl864347">
+        <seq>1?11?1111???11111?1111111111110000000000000000000</seq>
+      </row>
+      <row id="Row1043514" otu="Tl864348">
+        <seq>?11111111111111111111111111111111{01}000000000{01}00000</seq>
+      </row>
+      <row id="Row1043515" otu="Tl864341">
+        <seq>???1?1111????111?1?????11?????1111111000100000000</seq>
+      </row>
+      <row id="Row1043516" otu="Tl864351">
+        <seq>1?1111111????1111??1?11111111111111110001{01}0000000</seq>
+      </row>
+      <row id="Row1043517" otu="Tl864342">
+        <seq>???1??111????1?1???????1??????11111???0?1??110000</seq>
+      </row>
+      <row id="Row1043518" otu="Tl864355">
+        <seq>???1??111????1?1???????1??????11111???0?111111000</seq>
+      </row>
+      <row id="Row1043519" otu="Tl864352">
+        <seq>???1?1111????1?1???????1??????11111???0?1110100??</seq>
+      </row>
+      <row id="Row1043520" otu="Tl864354">
+        <seq>???????1???????????????1??????11100??????????0?1?</seq>
+      </row>
+      <row id="Row1043521" otu="Tl864346">
+        <seq>???1?1110????1?1?0?????1??????11111???0?000000001</seq>
+      </row>
+      <row id="Row1043522" otu="Tl864356">
+        <seq>???1?1110????1?1???????1??????11111??111000000000</seq>
+      </row>
+      <row id="Row1043523" otu="Tl864343">
+        <seq>???1?1110????1111??????11?????1111110111000001000</seq>
+      </row>
+    </matrix>
+  </characters>
+  <characters about="#M14022" id="M14022" label="Character Matrix B" otus="Tls27182" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:StandardSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@2cb47f8c $Rev: 1056 $" datatype="xsd:string" id="meta499052" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="14022" datatype="xsd:long" id="meta499051" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="53" datatype="xsd:integer" id="meta499050" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="21" datatype="xsd:integer" id="meta499049" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="Standard" datatype="xsd:string" id="meta499048" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states499053">
+        <state id="Dcs352368" label="3" symbol="3"/>
+        <state id="Dcs352369" label="2" symbol="2"/>
+        <state id="Dcs352370" label="1" symbol="1"/>
+        <state id="Dcs352367" label="0" symbol="0"/>
+        <uncertain_state_set id="uncertain_state_set499058" label="-" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set499059" label="?" symbol="?">
+          <member state="Dcs352368"/>
+          <member state="Dcs352370"/>
+          <member state="Dcs352369"/>
+          <member state="uncertain_state_set499058"/>
+          <member state="Dcs352367"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col42037972" states="states499053"/>
+      <char id="Col42037973" states="states499053"/>
+      <char id="Col42037974" states="states499053"/>
+      <char id="Col42037975" states="states499053"/>
+      <char id="Col42037976" states="states499053"/>
+      <char id="Col42037977" states="states499053"/>
+      <char id="Col42037978" states="states499053"/>
+      <char id="Col42037979" states="states499053"/>
+      <char id="Col42037980" states="states499053"/>
+      <char id="Col42037981" states="states499053"/>
+      <char id="Col42037982" states="states499053"/>
+      <char id="Col42037983" states="states499053"/>
+      <char id="Col42037984" states="states499053"/>
+      <char id="Col42037985" states="states499053"/>
+      <char id="Col42037986" states="states499053"/>
+      <char id="Col42037987" states="states499053"/>
+      <char id="Col42037988" states="states499053"/>
+      <char id="Col42037989" states="states499053"/>
+      <char id="Col42037990" states="states499053"/>
+      <char id="Col42037991" states="states499053"/>
+      <char id="Col42037992" states="states499053"/>
+      <char id="Col42037993" states="states499053"/>
+      <char id="Col42037994" states="states499053"/>
+      <char id="Col42037995" states="states499053"/>
+      <char id="Col42037996" states="states499053"/>
+      <char id="Col42037997" states="states499053"/>
+      <char id="Col42037998" states="states499053"/>
+      <char id="Col42037999" states="states499053"/>
+      <char id="Col42038000" states="states499053"/>
+      <char id="Col42038001" states="states499053"/>
+      <char id="Col42038002" states="states499053"/>
+      <char id="Col42038003" states="states499053"/>
+      <char id="Col42038004" states="states499053"/>
+      <char id="Col42038005" states="states499053"/>
+      <char id="Col42038006" states="states499053"/>
+      <char id="Col42038007" states="states499053"/>
+      <char id="Col42038008" states="states499053"/>
+      <char id="Col42038009" states="states499053"/>
+      <char id="Col42038010" states="states499053"/>
+      <char id="Col42038011" states="states499053"/>
+      <char id="Col42038012" states="states499053"/>
+      <char id="Col42038013" states="states499053"/>
+      <char id="Col42038014" states="states499053"/>
+      <char id="Col42038015" states="states499053"/>
+      <char id="Col42038016" states="states499053"/>
+      <char id="Col42038017" states="states499053"/>
+      <char id="Col42038018" states="states499053"/>
+      <char id="Col42038019" states="states499053"/>
+      <char id="Col42038020" states="states499053"/>
+      <char id="Col42038021" states="states499053"/>
+      <char id="Col42038022" states="states499053"/>
+      <char id="Col42038023" states="states499053"/>
+      <char id="Col42038024" states="states499053"/>
+    </format>
+    <matrix>
+      <row id="Row1043603" otu="Tl864428">
+        <seq>00000000000000000000000000000000000000000000000000000</seq>
+      </row>
+      <row id="Row1043604" otu="Tl864415">
+        <seq>111?????00?0?????0?00????0000????????????????????????</seq>
+      </row>
+      <row id="Row1043605" otu="Tl864431">
+        <seq>???11111111100?00????0???????0???00000?00??0???1??0??</seq>
+      </row>
+      <row id="Row1043606" otu="Tl864423">
+        <seq>1?111111111?1111011110??100??0??001100100010011110011</seq>
+      </row>
+      <row id="Row1043607" otu="Tl864429">
+        <seq>1?11?111???1111?11111111111110000011001000110111100??</seq>
+      </row>
+      <row id="Row1043608" otu="Tl864424">
+        <seq>???1?111????1111?????11??????1110212011121111??1101??</seq>
+      </row>
+      <row id="Row1043609" otu="Tl864351">
+        <seq>1?111111????11?111?1111111111111021202112111102120111</seq>
+      </row>
+      <row id="Row1043610" otu="Tl864433">
+        <seq>???1?1?0????1???????????????????00???????00???????0??</seq>
+      </row>
+      <row id="Row1043611" otu="Tl864422">
+        <seq>???1???1????1????????1???????1??00?????11010?????00??</seq>
+      </row>
+      <row id="Row1043612" otu="Tl864417">
+        <seq>???1?111????1????????1???????1???2?????12????????01??</seq>
+      </row>
+      <row id="Row1043613" otu="Tl864432">
+        <seq>???1???1????1????????1???????1??021???112110???1?01??</seq>
+      </row>
+      <row id="Row1043614" otu="Tl864426">
+        <seq>???1???1????1????????1???????1??121?1?111110???1?01??</seq>
+      </row>
+      <row id="Row1043615" otu="Tl864420">
+        <seq>???1???1????1????????1???????1??11?????11220???1?02??</seq>
+      </row>
+      <row id="Row1043616" otu="Tl864421">
+        <seq>???1???1????1????????1???????1??11?????11220???0?02??</seq>
+      </row>
+      <row id="Row1043617" otu="Tl864419">
+        <seq>?1111111111111111111111111111100111200111220011120200</seq>
+      </row>
+      <row id="Row1043618" otu="Tl864416">
+        <seq>???1???1????1????????1???????1??11?????112?0???1?02??</seq>
+      </row>
+      <row id="Row1043619" otu="Tl864418">
+        <seq>???1?111????1????????1???????1??1100000112200??1102??</seq>
+      </row>
+      <row id="Row1043620" otu="Tl864425">
+        <seq>???1??11????1????????1???????1??0211??2121111????1122</seq>
+      </row>
+      <row id="Row1043621" otu="Tl864430">
+        <seq>???1?111????11???????11??????11002111?212110100111122</seq>
+      </row>
+      <row id="Row1043622" otu="Tl864414">
+        <seq>???1?111????11?1?????1??1????1??0212111121111021301??</seq>
+      </row>
+      <row id="Row1043623" otu="Tl864427">
+        <seq>???1?111????1????????1???????1??0212111121101??1301??</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb18480" id="Tb18480" label="Analysis results 2" otus="Tls27182" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@a730f5b $Rev: 1040 $" datatype="xsd:string" id="meta499136" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S13241" id="meta499135" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr55993" id="Tr55993" label="Figure 8B" xsi:type="nex:FloatTree">
+      <meta content="21" datatype="xsd:integer" id="meta499142" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta499141" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Consensus" datatype="xsd:string" id="meta499140" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta499139" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta499138" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn9176249"/>
+      <node id="Tn9176258" label="Psittacosaurus mongoliensis" otu="Tl864428"/>
+      <node id="Tn9176261"/>
+      <node id="Tn9176260" label="Stenopelix valdensis" otu="Tl864415"/>
+      <node id="Tn9176250" label="Wannanosaurus yanshiensis" otu="Tl864431"/>
+      <node id="Tn9176253" label="Yaverlandia bitholus" otu="Tl864433"/>
+      <node id="Tn9176257"/>
+      <node id="Tn9176267" label="Goyocephale lattimorei" otu="Tl864423"/>
+      <node id="Tn9176265"/>
+      <node id="Tn9176244" label="Homalocephale calathocercos" otu="Tl864429"/>
+      <node id="Tn9176247"/>
+      <node id="Tn9176266" label="Pachycephalosauridae indet Ornatotholus browni holotype AMNH 5450" otu="Tl864422"/>
+      <node id="Tn9176242"/>
+      <node id="Tn9176252"/>
+      <node id="Tn9176241" label="Tylocephale gilmorei" otu="Tl864424"/>
+      <node id="Tn9176270" label="Prenocephale prenes" otu="Tl864351"/>
+      <node id="Tn9176255" label="Pachycephalosauridae indet SMP VP 1084" otu="Tl864417"/>
+      <node id="Tn9176264" label="Stegoceras edmontonense holotype CMN 8830" otu="Tl864432"/>
+      <node id="Tn9176248" label="Sphaerotholus goodwini holotype NMMNH P 27403" otu="Tl864414"/>
+      <node id="Tn9176251" label="Sphaerotholus buchholtzae holotype TMP 87.113.3" otu="Tl864427"/>
+      <node id="Tn9176245"/>
+      <node id="Tn9176256" label="Stygimoloch spinifer" otu="Tl864425"/>
+      <node id="Tn9176263" label="Pachycephalosaurus wyomingensis" otu="Tl864430"/>
+      <node id="Tn9176268"/>
+      <node id="Tn9176243" label="Stegoceras breve holotype CMN 1423" otu="Tl864426"/>
+      <node id="Tn9176240"/>
+      <node id="Tn9176259" label="Stegoceras sternbergi holotype CMN 8817" otu="Tl864420"/>
+      <node id="Tn9176262" label="Stegoceras lambei holotype CMN 8818" otu="Tl864421"/>
+      <node id="Tn9176246" label="Stegoceras validum UA 2" otu="Tl864419"/>
+      <node id="Tn9176269" label="Stegoceras sp. Gravitholus albertae holotype TMP 72.27.1" otu="Tl864416"/>
+      <node id="Tn9176254" label="Stegoceras sp. UCMP 130051" otu="Tl864418"/>
+      <edge id="edge499145" source="Tn9176249" target="Tn9176258"/>
+      <edge id="edge499147" source="Tn9176249" target="Tn9176261"/>
+      <edge id="edge499149" source="Tn9176261" target="Tn9176260"/>
+      <edge id="edge499151" source="Tn9176261" target="Tn9176250"/>
+      <edge id="edge499153" source="Tn9176261" target="Tn9176253"/>
+      <edge id="edge499155" source="Tn9176261" target="Tn9176257"/>
+      <edge id="edge499157" source="Tn9176257" target="Tn9176267"/>
+      <edge id="edge499159" source="Tn9176257" target="Tn9176265"/>
+      <edge id="edge499161" source="Tn9176265" target="Tn9176244"/>
+      <edge id="edge499163" source="Tn9176265" target="Tn9176247"/>
+      <edge id="edge499165" source="Tn9176247" target="Tn9176266"/>
+      <edge id="edge499167" source="Tn9176247" target="Tn9176242"/>
+      <edge id="edge499169" source="Tn9176242" target="Tn9176252"/>
+      <edge id="edge499171" source="Tn9176252" target="Tn9176241"/>
+      <edge id="edge499173" source="Tn9176252" target="Tn9176270"/>
+      <edge id="edge499175" source="Tn9176252" target="Tn9176255"/>
+      <edge id="edge499177" source="Tn9176252" target="Tn9176264"/>
+      <edge id="edge499179" source="Tn9176252" target="Tn9176248"/>
+      <edge id="edge499181" source="Tn9176252" target="Tn9176251"/>
+      <edge id="edge499183" source="Tn9176252" target="Tn9176245"/>
+      <edge id="edge499185" source="Tn9176245" target="Tn9176256"/>
+      <edge id="edge499187" source="Tn9176245" target="Tn9176263"/>
+      <edge id="edge499189" source="Tn9176242" target="Tn9176268"/>
+      <edge id="edge499191" source="Tn9176268" target="Tn9176243"/>
+      <edge id="edge499193" source="Tn9176268" target="Tn9176240"/>
+      <edge id="edge499195" source="Tn9176240" target="Tn9176259"/>
+      <edge id="edge499197" source="Tn9176240" target="Tn9176262"/>
+      <edge id="edge499199" source="Tn9176240" target="Tn9176246"/>
+      <edge id="edge499201" source="Tn9176240" target="Tn9176269"/>
+      <edge id="edge499203" source="Tn9176240" target="Tn9176254"/>
+    </tree>
+  </trees>
+  <trees about="#Tb18479" id="Tb18479" label="Analysis results 1" otus="Tls27178" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@a730f5b $Rev: 1040 $" datatype="xsd:string" id="meta499206" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S13241" id="meta499205" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr55992" id="Tr55992" label="Figure 8A" xsi:type="nex:FloatTree">
+      <meta content="16" datatype="xsd:integer" id="meta499212" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta499211" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Consensus" datatype="xsd:string" id="meta499210" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta499209" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13241" id="meta499208" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn9176222"/>
+      <node id="Tn9176230" label="ORNITHOPODA" otu="Tl864345"/>
+      <node id="Tn9176224"/>
+      <node id="Tn9176220" label="CERATOPSIDAE" otu="Tl864349"/>
+      <node id="Tn9176211"/>
+      <node id="Tn9176228" label="Stenopelix" otu="Tl864353"/>
+      <node id="Tn9176218"/>
+      <node id="Tn9176229" label="Wannanosaurus" otu="Tl864350"/>
+      <node id="Tn9176234"/>
+      <node id="Tn9176212" label="Goyocephale" otu="Tl864344"/>
+      <node id="Tn9176233"/>
+      <node id="Tn9176239" label="Homalocephale" otu="Tl864347"/>
+      <node id="Tn9176213"/>
+      <node id="Tn9176232" label="Stegoceras" otu="Tl864348"/>
+      <node id="Tn9176223" label="Colepiocephale" otu="Tl864354"/>
+      <node id="Tn9176225"/>
+      <node id="Tn9176219"/>
+      <node id="Tn9176226" label="Tylocephale" otu="Tl864341"/>
+      <node id="Tn9176227" label="Prenocephale prenes" otu="Tl864351"/>
+      <node id="Tn9176237"/>
+      <node id="Tn9176217" label="Prenocephale goodwini" otu="Tl864352"/>
+      <node id="Tn9176231"/>
+      <node id="Tn9176221" label="Prenocephale brevis" otu="Tl864342"/>
+      <node id="Tn9176235" label="Prenocephale edmontonensis" otu="Tl864355"/>
+      <node id="Tn9176236"/>
+      <node id="Tn9176238" label="Hanssuesia" otu="Tl864346"/>
+      <node id="Tn9176214"/>
+      <node id="Tn9176216" label="Stygimoloch" otu="Tl864356"/>
+      <node id="Tn9176215" label="Pachycephalosaurus" otu="Tl864343"/>
+      <edge id="edge499215" source="Tn9176222" target="Tn9176230"/>
+      <edge id="edge499217" source="Tn9176222" target="Tn9176224"/>
+      <edge id="edge499219" source="Tn9176224" target="Tn9176220"/>
+      <edge id="edge499221" source="Tn9176224" target="Tn9176211"/>
+      <edge id="edge499223" source="Tn9176211" target="Tn9176228"/>
+      <edge id="edge499225" source="Tn9176211" target="Tn9176218"/>
+      <edge id="edge499227" source="Tn9176218" target="Tn9176229"/>
+      <edge id="edge499229" source="Tn9176218" target="Tn9176234"/>
+      <edge id="edge499231" source="Tn9176234" target="Tn9176212"/>
+      <edge id="edge499233" source="Tn9176234" target="Tn9176233"/>
+      <edge id="edge499235" source="Tn9176233" target="Tn9176239"/>
+      <edge id="edge499237" source="Tn9176233" target="Tn9176213"/>
+      <edge id="edge499239" source="Tn9176213" target="Tn9176232"/>
+      <edge id="edge499241" source="Tn9176213" target="Tn9176223"/>
+      <edge id="edge499243" source="Tn9176213" target="Tn9176225"/>
+      <edge id="edge499245" source="Tn9176225" target="Tn9176219"/>
+      <edge id="edge499247" source="Tn9176219" target="Tn9176226"/>
+      <edge id="edge499249" source="Tn9176219" target="Tn9176227"/>
+      <edge id="edge499251" source="Tn9176219" target="Tn9176237"/>
+      <edge id="edge499253" source="Tn9176237" target="Tn9176217"/>
+      <edge id="edge499255" source="Tn9176237" target="Tn9176231"/>
+      <edge id="edge499257" source="Tn9176231" target="Tn9176221"/>
+      <edge id="edge499259" source="Tn9176231" target="Tn9176235"/>
+      <edge id="edge499261" source="Tn9176225" target="Tn9176236"/>
+      <edge id="edge499263" source="Tn9176236" target="Tn9176238"/>
+      <edge id="edge499265" source="Tn9176236" target="Tn9176214"/>
+      <edge id="edge499267" source="Tn9176214" target="Tn9176216"/>
+      <edge id="edge499269" source="Tn9176214" target="Tn9176215"/>
+    </tree>
+  </trees>
+</nex:nexml>

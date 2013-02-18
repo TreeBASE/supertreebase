@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S12863" generator="org.nexml.model.impl.DocumentImpl" id="S12863" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Sun Feb 17 15:41:55 EST 2013" datatype="xsd:string" id="meta713885" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@52e75e75 $Rev: 1060 $" datatype="xsd:string" id="meta713884" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta713883" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta713882" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Phycological Research" datatype="xsd:string" id="meta713881" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Phycological Research" datatype="xsd:string" id="meta713880" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="rDNA primers" datatype="xsd:string" id="meta713879" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="phylogenetic analysis" datatype="xsd:string" id="meta713878" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="ITS regions" datatype="xsd:string" id="meta713877" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="introns" datatype="xsd:string" id="meta713876" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="D. salina" datatype="xsd:string" id="meta713875" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="carotenogenic Dunaliella" datatype="xsd:string" id="meta713874" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="18S rRNA gene" datatype="xsd:string" id="meta713873" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta713872" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012" datatype="xsd:string" id="meta713871" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Nittala S.S." datatype="xsd:string" id="meta713870" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Koduru U.D." datatype="xsd:string" id="meta713869" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Keerthi S." datatype="xsd:string" id="meta713868" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Keerthi S., Koduru U.D., &amp; Nittala S.S." datatype="xsd:string" id="meta713867" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="Ribosomal DNA typing in the genus Dunaliella (Chlorophyceae)  A reliable barcode for species identification?" datatype="xsd:string" id="meta713866" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Keerthi S., Koduru U.D., &amp; Nittala S.S. 2012. Ribosomal DNA typing in the genus Dunaliella (Chlorophyceae)  A reliable barcode for species identification?. Phycological Research, ." datatype="xsd:string" id="meta713865" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-06-19" datatype="xsd:string" id="meta713864" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-07-01" datatype="xsd:string" id="meta713863" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-07-01" datatype="xsd:string" id="meta713862" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="Alignment of 18S rRNA sequence of Dunaliella isolate I2 with sequences from Dunaliella species with no, one and two introns to demonstrate the position of the intron" datatype="xsd:string" id="meta713861" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta713860" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="12863" datatype="xsd:string" id="meta713859" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta713857" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls26620" id="Tls26620" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@22115b3f $Rev: 1040 $" datatype="xsd:string" id="meta713887" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl836958" id="Tl836958" label="Dunaliella salina I2 JF903801">
+      <meta content="9656" datatype="xsd:long" id="meta713894" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="23077" datatype="xsd:long" id="meta713893" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/3046" id="meta713892" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Dunaliella salina" datatype="xsd:string" id="meta713891" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2638126" id="meta713890" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12863" id="meta713889" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl836957" id="Tl836957" label="Dunaliella sp. ABRIINW EU678868">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12863" id="meta713896" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl836953" id="Tl836953" label="Dunaliella salin M84320 DUNRDGAB">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12863" id="meta713898" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl836956" id="Tl836956" label="Dunaliella salina CCAP DQ447648">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12863" id="meta713900" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl836955" id="Tl836955" label="Dunaliella bardawil AF150905">
+      <meta content="50515" datatype="xsd:long" id="meta713907" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="119812" datatype="xsd:long" id="meta713906" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/3045" id="meta713905" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Dunaliella bardawil" datatype="xsd:string" id="meta713904" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:436218" id="meta713903" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12863" id="meta713902" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl836952" id="Tl836952" label="Dunaliella salina CCAP EF473749">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12863" id="meta713909" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl836954" id="Tl836954" label="Dunaliella bardawil Str JF815099">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12863" id="meta713911" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M13509" id="M13509" label="Dunaliella" otus="Tls26620" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:DnaSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@460b9f90 $Rev: 1056 $" datatype="xsd:string" id="meta713936" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="13509" datatype="xsd:long" id="meta713935" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="604" datatype="xsd:integer" id="meta713934" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="7" datatype="xsd:integer" id="meta713933" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="DNA" datatype="xsd:string" id="meta713932" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states713913">
+        <state id="state713914" symbol="A"/>
+        <state id="state713915" symbol="C"/>
+        <state id="state713916" symbol="G"/>
+        <state id="state713917" symbol="T"/>
+        <uncertain_state_set id="uncertain_state_set713918" symbol="K">
+          <member state="state713916"/>
+          <member state="state713917"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713919" symbol="M">
+          <member state="state713914"/>
+          <member state="state713915"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713920" symbol="R">
+          <member state="state713914"/>
+          <member state="state713916"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713921" symbol="S">
+          <member state="state713915"/>
+          <member state="state713916"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713922" symbol="W">
+          <member state="state713914"/>
+          <member state="state713917"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713923" symbol="Y">
+          <member state="state713915"/>
+          <member state="state713917"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713924" symbol="B">
+          <member state="state713915"/>
+          <member state="state713917"/>
+          <member state="state713916"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713925" symbol="D">
+          <member state="state713914"/>
+          <member state="state713917"/>
+          <member state="state713916"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713926" symbol="H">
+          <member state="state713914"/>
+          <member state="state713917"/>
+          <member state="state713916"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713927" symbol="V">
+          <member state="state713914"/>
+          <member state="state713915"/>
+          <member state="state713916"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713928" symbol="N">
+          <member state="state713914"/>
+          <member state="state713915"/>
+          <member state="state713916"/>
+          <member state="state713917"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713929" symbol="X">
+          <member state="state713914"/>
+          <member state="state713915"/>
+          <member state="state713916"/>
+          <member state="state713917"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set713930" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set713931" symbol="?">
+          <member state="uncertain_state_set713930"/>
+          <member state="state713914"/>
+          <member state="state713917"/>
+          <member state="state713916"/>
+          <member state="state713915"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col41573527" label="DNA" states="states713913"/>
+      <char id="Col41573528" label="DNA" states="states713913"/>
+      <char id="Col41573529" label="DNA" states="states713913"/>
+      <char id="Col41573530" label="DNA" states="states713913"/>
+      <char id="Col41573531" label="DNA" states="states713913"/>
+      <char id="Col41573532" label="DNA" states="states713913"/>
+      <char id="Col41573533" label="DNA" states="states713913"/>
+      <char id="Col41573534" label="DNA" states="states713913"/>
+      <char id="Col41573535" label="DNA" states="states713913"/>
+      <char id="Col41573536" label="DNA" states="states713913"/>
+      <char id="Col41573537" label="DNA" states="states713913"/>
+      <char id="Col41573538" label="DNA" states="states713913"/>
+      <char id="Col41573539" label="DNA" states="states713913"/>
+      <char id="Col41573540" label="DNA" states="states713913"/>
+      <char id="Col41573541" label="DNA" states="states713913"/>
+      <char id="Col41573542" label="DNA" states="states713913"/>
+      <char id="Col41573543" label="DNA" states="states713913"/>
+      <char id="Col41573544" label="DNA" states="states713913"/>
+      <char id="Col41573545" label="DNA" states="states713913"/>
+      <char id="Col41573546" label="DNA" states="states713913"/>
+      <char id="Col41573547" label="DNA" states="states713913"/>
+      <char id="Col41573548" label="DNA" states="states713913"/>
+      <char id="Col41573549" label="DNA" states="states713913"/>
+      <char id="Col41573550" label="DNA" states="states713913"/>
+      <char id="Col41573551" label="DNA" states="states713913"/>
+      <char id="Col41573552" label="DNA" states="states713913"/>
+      <char id="Col41573553" label="DNA" states="states713913"/>
+      <char id="Col41573554" label="DNA" states="states713913"/>
+      <char id="Col41573555" label="DNA" states="states713913"/>
+      <char id="Col41573556" label="DNA" states="states713913"/>
+      <char id="Col41573557" label="DNA" states="states713913"/>
+      <char id="Col41573558" label="DNA" states="states713913"/>
+      <char id="Col41573559" label="DNA" states="states713913"/>
+      <char id="Col41573560" label="DNA" states="states713913"/>
+      <char id="Col41573561" label="DNA" states="states713913"/>
+      <char id="Col41573562" label="DNA" states="states713913"/>
+      <char id="Col41573563" label="DNA" states="states713913"/>
+      <char id="Col41573564" label="DNA" states="states713913"/>
+      <char id="Col41573565" label="DNA" states="states713913"/>
+      <char id="Col41573566" label="DNA" states="states713913"/>
+      <char id="Col41573567" label="DNA" states="states713913"/>
+      <char id="Col41573568" label="DNA" states="states713913"/>
+      <char id="Col41573569" label="DNA" states="states713913"/>
+      <char id="Col41573570" label="DNA" states="states713913"/>
+      <char id="Col41573571" label="DNA" states="states713913"/>
+      <char id="Col41573572" label="DNA" states="states713913"/>
+      <char id="Col41573573" label="DNA" states="states713913"/>
+      <char id="Col41573574" label="DNA" states="states713913"/>
+      <char id="Col41573575" label="DNA" states="states713913"/>
+      <char id="Col41573576" label="DNA" states="states713913"/>
+      <char id="Col41573577" label="DNA" states="states713913"/>
+      <char id="Col41573578" label="DNA" states="states713913"/>
+      <char id="Col41573579" label="DNA" states="states713913"/>
+      <char id="Col41573580" label="DNA" states="states713913"/>
+      <char id="Col41573581" label="DNA" states="states713913"/>
+      <char id="Col41573582" label="DNA" states="states713913"/>
+      <char id="Col41573583" label="DNA" states="states713913"/>
+      <char id="Col41573584" label="DNA" states="states713913"/>
+      <char id="Col41573585" label="DNA" states="states713913"/>
+      <char id="Col41573586" label="DNA" states="states713913"/>
+      <char id="Col41573587" label="DNA" states="states713913"/>
+      <char id="Col41573588" label="DNA" states="states713913"/>
+      <char id="Col41573589" label="DNA" states="states713913"/>
+      <char id="Col41573590" label="DNA" states="states713913"/>
+      <char id="Col41573591" label="DNA" states="states713913"/>
+      <char id="Col41573592" label="DNA" states="states713913"/>
+      <char id="Col41573593" label="DNA" states="states713913"/>
+      <char id="Col41573594" label="DNA" states="states713913"/>
+      <char id="Col41573595" label="DNA" states="states713913"/>
+      <char id="Col41573596" label="DNA" states="states713913"/>
+      <char id="Col41573597" label="DNA" states="states713913"/>
+      <char id="Col41573598" label="DNA" states="states713913"/>
+      <char id="Col41573599" label="DNA" states="states713913"/>
+      <char id="Col41573600" label="DNA" states="states713913"/>
+      <char id="Col41573601" label="DNA" states="states713913"/>
+      <char id="Col41573602" label="DNA" states="states713913"/>
+      <char id="Col41573603" label="DNA" states="states713913"/>
+      <char id="Col41573604" label="DNA" states="states713913"/>
+      <char id="Col41573605" label="DNA" states="states713913"/>
+      <char id="Col41573606" label="DNA" states="states713913"/>
+      <char id="Col41573607" label="DNA" states="states713913"/>
+      <char id="Col41573608" label="DNA" states="states713913"/>
+      <char id="Col41573609" label="DNA" states="states713913"/>
+      <char id="Col41573610" label="DNA" states="states713913"/>
+      <char id="Col41573611" label="DNA" states="states713913"/>
+      <char id="Col41573612" label="DNA" states="states713913"/>
+      <char id="Col41573613" label="DNA" states="states713913"/>
+      <char id="Col41573614" label="DNA" states="states713913"/>
+      <char id="Col41573615" label="DNA" states="states713913"/>
+      <char id="Col41573616" label="DNA" states="states713913"/>
+      <char id="Col41573617" label="DNA" states="states713913"/>
+      <char id="Col41573618" label="DNA" states="states713913"/>
+      <char id="Col41573619" label="DNA" states="states713913"/>
+      <char id="Col41573620" label="DNA" states="states713913"/>
+      <char id="Col41573621" label="DNA" states="states713913"/>
+      <char id="Col41573622" label="DNA" states="states713913"/>
+      <char id="Col41573623" label="DNA" states="states713913"/>
+      <char id="Col41573624" label="DNA" states="states713913"/>
+      <char id="Col41573625" label="DNA" states="states713913"/>
+      <char id="Col41573626" label="DNA" states="states713913"/>
+      <char id="Col41573627" label="DNA" states="states713913"/>
+      <char id="Col41573628" label="DNA" states="states713913"/>
+      <char id="Col41573629" label="DNA" states="states713913"/>
+      <char id="Col41573630" label="DNA" states="states713913"/>
+      <char id="Col41573631" label="DNA" states="states713913"/>
+      <char id="Col41573632" label="DNA" states="states713913"/>
+      <char id="Col41573633" label="DNA" states="states713913"/>
+      <char id="Col41573634" label="DNA" states="states713913"/>
+      <char id="Col41573635" label="DNA" states="states713913"/>
+      <char id="Col41573636" label="DNA" states="states713913"/>
+      <char id="Col41573637" label="DNA" states="states713913"/>
+      <char id="Col41573638" label="DNA" states="states713913"/>
+      <char id="Col41573639" label="DNA" states="states713913"/>
+      <char id="Col41573640" label="DNA" states="states713913"/>
+      <char id="Col41573641" label="DNA" states="states713913"/>
+      <char id="Col41573642" label="DNA" states="states713913"/>
+      <char id="Col41573643" label="DNA" states="states713913"/>
+      <char id="Col41573644" label="DNA" states="states713913"/>
+      <char id="Col41573645" label="DNA" states="states713913"/>
+      <char id="Col41573646" label="DNA" states="states713913"/>
+      <char id="Col41573647" label="DNA" states="states713913"/>
+      <char id="Col41573648" label="DNA" states="states713913"/>
+      <char id="Col41573649" label="DNA" states="states713913"/>
+      <char id="Col41573650" label="DNA" states="states713913"/>
+      <char id="Col41573651" label="DNA" states="states713913"/>
+      <char id="Col41573652" label="DNA" states="states713913"/>
+      <char id="Col41573653" label="DNA" states="states713913"/>
+      <char id="Col41573654" label="DNA" states="states713913"/>
+      <char id="Col41573655" label="DNA" states="states713913"/>
+      <char id="Col41573656" label="DNA" states="states713913"/>
+      <char id="Col41573657" label="DNA" states="states713913"/>
+      <char id="Col41573658" label="DNA" states="states713913"/>
+      <char id="Col41573659" label="DNA" states="states713913"/>
+      <char id="Col41573660" label="DNA" states="states713913"/>
+      <char id="Col41573661" label="DNA" states="states713913"/>
+      <char id="Col41573662" label="DNA" states="states713913"/>
+      <char id="Col41573663" label="DNA" states="states713913"/>
+      <char id="Col41573664" label="DNA" states="states713913"/>
+      <char id="Col41573665" label="DNA" states="states713913"/>
+      <char id="Col41573666" label="DNA" states="states713913"/>
+      <char id="Col41573667" label="DNA" states="states713913"/>
+      <char id="Col41573668" label="DNA" states="states713913"/>
+      <char id="Col41573669" label="DNA" states="states713913"/>
+      <char id="Col41573670" label="DNA" states="states713913"/>
+      <char id="Col41573671" label="DNA" states="states713913"/>
+      <char id="Col41573672" label="DNA" states="states713913"/>
+      <char id="Col41573673" label="DNA" states="states713913"/>
+      <char id="Col41573674" label="DNA" states="states713913"/>
+      <char id="Col41573675" label="DNA" states="states713913"/>
+      <char id="Col41573676" label="DNA" states="states713913"/>
+      <char id="Col41573677" label="DNA" states="states713913"/>
+      <char id="Col41573678" label="DNA" states="states713913"/>
+      <char id="Col41573679" label="DNA" states="states713913"/>
+      <char id="Col41573680" label="DNA" states="states713913"/>
+      <char id="Col41573681" label="DNA" states="states713913"/>
+      <char id="Col41573682" label="DNA" states="states713913"/>
+      <char id="Col41573683" label="DNA" states="states713913"/>
+      <char id="Col41573684" label="DNA" states="states713913"/>
+      <char id="Col41573685" label="DNA" states="states713913"/>
+      <char id="Col41573686" label="DNA" states="states713913"/>
+      <char id="Col41573687" label="DNA" states="states713913"/>
+      <char id="Col41573688" label="DNA" states="states713913"/>
+      <char id="Col41573689" label="DNA" states="states713913"/>
+      <char id="Col41573690" label="DNA" states="states713913"/>
+      <char id="Col41573691" label="DNA" states="states713913"/>
+      <char id="Col41573692" label="DNA" states="states713913"/>
+      <char id="Col41573693" label="DNA" states="states713913"/>
+      <char id="Col41573694" label="DNA" states="states713913"/>
+      <char id="Col41573695" label="DNA" states="states713913"/>
+      <char id="Col41573696" label="DNA" states="states713913"/>
+      <char id="Col41573697" label="DNA" states="states713913"/>
+      <char id="Col41573698" label="DNA" states="states713913"/>
+      <char id="Col41573699" label="DNA" states="states713913"/>
+      <char id="Col41573700" label="DNA" states="states713913"/>
+      <char id="Col41573701" label="DNA" states="states713913"/>
+      <char id="Col41573702" label="DNA" states="states713913"/>
+      <char id="Col41573703" label="DNA" states="states713913"/>
+      <char id="Col41573704" label="DNA" states="states713913"/>
+      <char id="Col41573705" label="DNA" states="states713913"/>
+      <char id="Col41573706" label="DNA" states="states713913"/>
+      <char id="Col41573707" label="DNA" states="states713913"/>
+      <char id="Col41573708" label="DNA" states="states713913"/>
+      <char id="Col41573709" label="DNA" states="states713913"/>
+      <char id="Col41573710" label="DNA" states="states713913"/>
+      <char id="Col41573711" label="DNA" states="states713913"/>
+      <char id="Col41573712" label="DNA" states="states713913"/>
+      <char id="Col41573713" label="DNA" states="states713913"/>
+      <char id="Col41573714" label="DNA" states="states713913"/>
+      <char id="Col41573715" label="DNA" states="states713913"/>
+      <char id="Col41573716" label="DNA" states="states713913"/>
+      <char id="Col41573717" label="DNA" states="states713913"/>
+      <char id="Col41573718" label="DNA" states="states713913"/>
+      <char id="Col41573719" label="DNA" states="states713913"/>
+      <char id="Col41573720" label="DNA" states="states713913"/>
+      <char id="Col41573721" label="DNA" states="states713913"/>
+      <char id="Col41573722" label="DNA" states="states713913"/>
+      <char id="Col41573723" label="DNA" states="states713913"/>
+      <char id="Col41573724" label="DNA" states="states713913"/>
+      <char id="Col41573725" label="DNA" states="states713913"/>
+      <char id="Col41573726" label="DNA" states="states713913"/>
+      <char id="Col41573727" label="DNA" states="states713913"/>
+      <char id="Col41573728" label="DNA" states="states713913"/>
+      <char id="Col41573729" label="DNA" states="states713913"/>
+      <char id="Col41573730" label="DNA" states="states713913"/>
+      <char id="Col41573731" label="DNA" states="states713913"/>
+      <char id="Col41573732" label="DNA" states="states713913"/>
+      <char id="Col41573733" label="DNA" states="states713913"/>
+      <char id="Col41573734" label="DNA" states="states713913"/>
+      <char id="Col41573735" label="DNA" states="states713913"/>
+      <char id="Col41573736" label="DNA" states="states713913"/>
+      <char id="Col41573737" label="DNA" states="states713913"/>
+      <char id="Col41573738" label="DNA" states="states713913"/>
+      <char id="Col41573739" label="DNA" states="states713913"/>
+      <char id="Col41573740" label="DNA" states="states713913"/>
+      <char id="Col41573741" label="DNA" states="states713913"/>
+      <char id="Col41573742" label="DNA" states="states713913"/>
+      <char id="Col41573743" label="DNA" states="states713913"/>
+      <char id="Col41573744" label="DNA" states="states713913"/>
+      <char id="Col41573745" label="DNA" states="states713913"/>
+      <char id="Col41573746" label="DNA" states="states713913"/>
+      <char id="Col41573747" label="DNA" states="states713913"/>
+      <char id="Col41573748" label="DNA" states="states713913"/>
+      <char id="Col41573749" label="DNA" states="states713913"/>
+      <char id="Col41573750" label="DNA" states="states713913"/>
+      <char id="Col41573751" label="DNA" states="states713913"/>
+      <char id="Col41573752" label="DNA" states="states713913"/>
+      <char id="Col41573753" label="DNA" states="states713913"/>
+      <char id="Col41573754" label="DNA" states="states713913"/>
+      <char id="Col41573755" label="DNA" states="states713913"/>
+      <char id="Col41573756" label="DNA" states="states713913"/>
+      <char id="Col41573757" label="DNA" states="states713913"/>
+      <char id="Col41573758" label="DNA" states="states713913"/>
+      <char id="Col41573759" label="DNA" states="states713913"/>
+      <char id="Col41573760" label="DNA" states="states713913"/>
+      <char id="Col41573761" label="DNA" states="states713913"/>
+      <char id="Col41573762" label="DNA" states="states713913"/>
+      <char id="Col41573763" label="DNA" states="states713913"/>
+      <char id="Col41573764" label="DNA" states="states713913"/>
+      <char id="Col41573765" label="DNA" states="states713913"/>
+      <char id="Col41573766" label="DNA" states="states713913"/>
+      <char id="Col41573767" label="DNA" states="states713913"/>
+      <char id="Col41573768" label="DNA" states="states713913"/>
+      <char id="Col41573769" label="DNA" states="states713913"/>
+      <char id="Col41573770" label="DNA" states="states713913"/>
+      <char id="Col41573771" label="DNA" states="states713913"/>
+      <char id="Col41573772" label="DNA" states="states713913"/>
+      <char id="Col41573773" label="DNA" states="states713913"/>
+      <char id="Col41573774" label="DNA" states="states713913"/>
+      <char id="Col41573775" label="DNA" states="states713913"/>
+      <char id="Col41573776" label="DNA" states="states713913"/>
+      <char id="Col41573777" label="DNA" states="states713913"/>
+      <char id="Col41573778" label="DNA" states="states713913"/>
+      <char id="Col41573779" label="DNA" states="states713913"/>
+      <char id="Col41573780" label="DNA" states="states713913"/>
+      <char id="Col41573781" label="DNA" states="states713913"/>
+      <char id="Col41573782" label="DNA" states="states713913"/>
+      <char id="Col41573783" label="DNA" states="states713913"/>
+      <char id="Col41573784" label="DNA" states="states713913"/>
+      <char id="Col41573785" label="DNA" states="states713913"/>
+      <char id="Col41573786" label="DNA" states="states713913"/>
+      <char id="Col41573787" label="DNA" states="states713913"/>
+      <char id="Col41573788" label="DNA" states="states713913"/>
+      <char id="Col41573789" label="DNA" states="states713913"/>
+      <char id="Col41573790" label="DNA" states="states713913"/>
+      <char id="Col41573791" label="DNA" states="states713913"/>
+      <char id="Col41573792" label="DNA" states="states713913"/>
+      <char id="Col41573793" label="DNA" states="states713913"/>
+      <char id="Col41573794" label="DNA" states="states713913"/>
+      <char id="Col41573795" label="DNA" states="states713913"/>
+      <char id="Col41573796" label="DNA" states="states713913"/>
+      <char id="Col41573797" label="DNA" states="states713913"/>
+      <char id="Col41573798" label="DNA" states="states713913"/>
+      <char id="Col41573799" label="DNA" states="states713913"/>
+      <char id="Col41573800" label="DNA" states="states713913"/>
+      <char id="Col41573801" label="DNA" states="states713913"/>
+      <char id="Col41573802" label="DNA" states="states713913"/>
+      <char id="Col41573803" label="DNA" states="states713913"/>
+      <char id="Col41573804" label="DNA" states="states713913"/>
+      <char id="Col41573805" label="DNA" states="states713913"/>
+      <char id="Col41573806" label="DNA" states="states713913"/>
+      <char id="Col41573807" label="DNA" states="states713913"/>
+      <char id="Col41573808" label="DNA" states="states713913"/>
+      <char id="Col41573809" label="DNA" states="states713913"/>
+      <char id="Col41573810" label="DNA" states="states713913"/>
+      <char id="Col41573811" label="DNA" states="states713913"/>
+      <char id="Col41573812" label="DNA" states="states713913"/>
+      <char id="Col41573813" label="DNA" states="states713913"/>
+      <char id="Col41573814" label="DNA" states="states713913"/>
+      <char id="Col41573815" label="DNA" states="states713913"/>
+      <char id="Col41573816" label="DNA" states="states713913"/>
+      <char id="Col41573817" label="DNA" states="states713913"/>
+      <char id="Col41573818" label="DNA" states="states713913"/>
+      <char id="Col41573819" label="DNA" states="states713913"/>
+      <char id="Col41573820" label="DNA" states="states713913"/>
+      <char id="Col41573821" label="DNA" states="states713913"/>
+      <char id="Col41573822" label="DNA" states="states713913"/>
+      <char id="Col41573823" label="DNA" states="states713913"/>
+      <char id="Col41573824" label="DNA" states="states713913"/>
+      <char id="Col41573825" label="DNA" states="states713913"/>
+      <char id="Col41573826" label="DNA" states="states713913"/>
+      <char id="Col41573827" label="DNA" states="states713913"/>
+      <char id="Col41573828" label="DNA" states="states713913"/>
+      <char id="Col41573829" label="DNA" states="states713913"/>
+      <char id="Col41573830" label="DNA" states="states713913"/>
+      <char id="Col41573831" label="DNA" states="states713913"/>
+      <char id="Col41573832" label="DNA" states="states713913"/>
+      <char id="Col41573833" label="DNA" states="states713913"/>
+      <char id="Col41573834" label="DNA" states="states713913"/>
+      <char id="Col41573835" label="DNA" states="states713913"/>
+      <char id="Col41573836" label="DNA" states="states713913"/>
+      <char id="Col41573837" label="DNA" states="states713913"/>
+      <char id="Col41573838" label="DNA" states="states713913"/>
+      <char id="Col41573839" label="DNA" states="states713913"/>
+      <char id="Col41573840" label="DNA" states="states713913"/>
+      <char id="Col41573841" label="DNA" states="states713913"/>
+      <char id="Col41573842" label="DNA" states="states713913"/>
+      <char id="Col41573843" label="DNA" states="states713913"/>
+      <char id="Col41573844" label="DNA" states="states713913"/>
+      <char id="Col41573845" label="DNA" states="states713913"/>
+      <char id="Col41573846" label="DNA" states="states713913"/>
+      <char id="Col41573847" label="DNA" states="states713913"/>
+      <char id="Col41573848" label="DNA" states="states713913"/>
+      <char id="Col41573849" label="DNA" states="states713913"/>
+      <char id="Col41573850" label="DNA" states="states713913"/>
+      <char id="Col41573851" label="DNA" states="states713913"/>
+      <char id="Col41573852" label="DNA" states="states713913"/>
+      <char id="Col41573853" label="DNA" states="states713913"/>
+      <char id="Col41573854" label="DNA" states="states713913"/>
+      <char id="Col41573855" label="DNA" states="states713913"/>
+      <char id="Col41573856" label="DNA" states="states713913"/>
+      <char id="Col41573857" label="DNA" states="states713913"/>
+      <char id="Col41573858" label="DNA" states="states713913"/>
+      <char id="Col41573859" label="DNA" states="states713913"/>
+      <char id="Col41573860" label="DNA" states="states713913"/>
+      <char id="Col41573861" label="DNA" states="states713913"/>
+      <char id="Col41573862" label="DNA" states="states713913"/>
+      <char id="Col41573863" label="DNA" states="states713913"/>
+      <char id="Col41573864" label="DNA" states="states713913"/>
+      <char id="Col41573865" label="DNA" states="states713913"/>
+      <char id="Col41573866" label="DNA" states="states713913"/>
+      <char id="Col41573867" label="DNA" states="states713913"/>
+      <char id="Col41573868" label="DNA" states="states713913"/>
+      <char id="Col41573869" label="DNA" states="states713913"/>
+      <char id="Col41573870" label="DNA" states="states713913"/>
+      <char id="Col41573871" label="DNA" states="states713913"/>
+      <char id="Col41573872" label="DNA" states="states713913"/>
+      <char id="Col41573873" label="DNA" states="states713913"/>
+      <char id="Col41573874" label="DNA" states="states713913"/>
+      <char id="Col41573875" label="DNA" states="states713913"/>
+      <char id="Col41573876" label="DNA" states="states713913"/>
+      <char id="Col41573877" label="DNA" states="states713913"/>
+      <char id="Col41573878" label="DNA" states="states713913"/>
+      <char id="Col41573879" label="DNA" states="states713913"/>
+      <char id="Col41573880" label="DNA" states="states713913"/>
+      <char id="Col41573881" label="DNA" states="states713913"/>
+      <char id="Col41573882" label="DNA" states="states713913"/>
+      <char id="Col41573883" label="DNA" states="states713913"/>
+      <char id="Col41573884" label="DNA" states="states713913"/>
+      <char id="Col41573885" label="DNA" states="states713913"/>
+      <char id="Col41573886" label="DNA" states="states713913"/>
+      <char id="Col41573887" label="DNA" states="states713913"/>
+      <char id="Col41573888" label="DNA" states="states713913"/>
+      <char id="Col41573889" label="DNA" states="states713913"/>
+      <char id="Col41573890" label="DNA" states="states713913"/>
+      <char id="Col41573891" label="DNA" states="states713913"/>
+      <char id="Col41573892" label="DNA" states="states713913"/>
+      <char id="Col41573893" label="DNA" states="states713913"/>
+      <char id="Col41573894" label="DNA" states="states713913"/>
+      <char id="Col41573895" label="DNA" states="states713913"/>
+      <char id="Col41573896" label="DNA" states="states713913"/>
+      <char id="Col41573897" label="DNA" states="states713913"/>
+      <char id="Col41573898" label="DNA" states="states713913"/>
+      <char id="Col41573899" label="DNA" states="states713913"/>
+      <char id="Col41573900" label="DNA" states="states713913"/>
+      <char id="Col41573901" label="DNA" states="states713913"/>
+      <char id="Col41573902" label="DNA" states="states713913"/>
+      <char id="Col41573903" label="DNA" states="states713913"/>
+      <char id="Col41573904" label="DNA" states="states713913"/>
+      <char id="Col41573905" label="DNA" states="states713913"/>
+      <char id="Col41573906" label="DNA" states="states713913"/>
+      <char id="Col41573907" label="DNA" states="states713913"/>
+      <char id="Col41573908" label="DNA" states="states713913"/>
+      <char id="Col41573909" label="DNA" states="states713913"/>
+      <char id="Col41573910" label="DNA" states="states713913"/>
+      <char id="Col41573911" label="DNA" states="states713913"/>
+      <char id="Col41573912" label="DNA" states="states713913"/>
+      <char id="Col41573913" label="DNA" states="states713913"/>
+      <char id="Col41573914" label="DNA" states="states713913"/>
+      <char id="Col41573915" label="DNA" states="states713913"/>
+      <char id="Col41573916" label="DNA" states="states713913"/>
+      <char id="Col41573917" label="DNA" states="states713913"/>
+      <char id="Col41573918" label="DNA" states="states713913"/>
+      <char id="Col41573919" label="DNA" states="states713913"/>
+      <char id="Col41573920" label="DNA" states="states713913"/>
+      <char id="Col41573921" label="DNA" states="states713913"/>
+      <char id="Col41573922" label="DNA" states="states713913"/>
+      <char id="Col41573923" label="DNA" states="states713913"/>
+      <char id="Col41573924" label="DNA" states="states713913"/>
+      <char id="Col41573925" label="DNA" states="states713913"/>
+      <char id="Col41573926" label="DNA" states="states713913"/>
+      <char id="Col41573927" label="DNA" states="states713913"/>
+      <char id="Col41573928" label="DNA" states="states713913"/>
+      <char id="Col41573929" label="DNA" states="states713913"/>
+      <char id="Col41573930" label="DNA" states="states713913"/>
+      <char id="Col41573931" label="DNA" states="states713913"/>
+      <char id="Col41573932" label="DNA" states="states713913"/>
+      <char id="Col41573933" label="DNA" states="states713913"/>
+      <char id="Col41573934" label="DNA" states="states713913"/>
+      <char id="Col41573935" label="DNA" states="states713913"/>
+      <char id="Col41573936" label="DNA" states="states713913"/>
+      <char id="Col41573937" label="DNA" states="states713913"/>
+      <char id="Col41573938" label="DNA" states="states713913"/>
+      <char id="Col41573939" label="DNA" states="states713913"/>
+      <char id="Col41573940" label="DNA" states="states713913"/>
+      <char id="Col41573941" label="DNA" states="states713913"/>
+      <char id="Col41573942" label="DNA" states="states713913"/>
+      <char id="Col41573943" label="DNA" states="states713913"/>
+      <char id="Col41573944" label="DNA" states="states713913"/>
+      <char id="Col41573945" label="DNA" states="states713913"/>
+      <char id="Col41573946" label="DNA" states="states713913"/>
+      <char id="Col41573947" label="DNA" states="states713913"/>
+      <char id="Col41573948" label="DNA" states="states713913"/>
+      <char id="Col41573949" label="DNA" states="states713913"/>
+      <char id="Col41573950" label="DNA" states="states713913"/>
+      <char id="Col41573951" label="DNA" states="states713913"/>
+      <char id="Col41573952" label="DNA" states="states713913"/>
+      <char id="Col41573953" label="DNA" states="states713913"/>
+      <char id="Col41573954" label="DNA" states="states713913"/>
+      <char id="Col41573955" label="DNA" states="states713913"/>
+      <char id="Col41573956" label="DNA" states="states713913"/>
+      <char id="Col41573957" label="DNA" states="states713913"/>
+      <char id="Col41573958" label="DNA" states="states713913"/>
+      <char id="Col41573959" label="DNA" states="states713913"/>
+      <char id="Col41573960" label="DNA" states="states713913"/>
+      <char id="Col41573961" label="DNA" states="states713913"/>
+      <char id="Col41573962" label="DNA" states="states713913"/>
+      <char id="Col41573963" label="DNA" states="states713913"/>
+      <char id="Col41573964" label="DNA" states="states713913"/>
+      <char id="Col41573965" label="DNA" states="states713913"/>
+      <char id="Col41573966" label="DNA" states="states713913"/>
+      <char id="Col41573967" label="DNA" states="states713913"/>
+      <char id="Col41573968" label="DNA" states="states713913"/>
+      <char id="Col41573969" label="DNA" states="states713913"/>
+      <char id="Col41573970" label="DNA" states="states713913"/>
+      <char id="Col41573971" label="DNA" states="states713913"/>
+      <char id="Col41573972" label="DNA" states="states713913"/>
+      <char id="Col41573973" label="DNA" states="states713913"/>
+      <char id="Col41573974" label="DNA" states="states713913"/>
+      <char id="Col41573975" label="DNA" states="states713913"/>
+      <char id="Col41573976" label="DNA" states="states713913"/>
+      <char id="Col41573977" label="DNA" states="states713913"/>
+      <char id="Col41573978" label="DNA" states="states713913"/>
+      <char id="Col41573979" label="DNA" states="states713913"/>
+      <char id="Col41573980" label="DNA" states="states713913"/>
+      <char id="Col41573981" label="DNA" states="states713913"/>
+      <char id="Col41573982" label="DNA" states="states713913"/>
+      <char id="Col41573983" label="DNA" states="states713913"/>
+      <char id="Col41573984" label="DNA" states="states713913"/>
+      <char id="Col41573985" label="DNA" states="states713913"/>
+      <char id="Col41573986" label="DNA" states="states713913"/>
+      <char id="Col41573987" label="DNA" states="states713913"/>
+      <char id="Col41573988" label="DNA" states="states713913"/>
+      <char id="Col41573989" label="DNA" states="states713913"/>
+      <char id="Col41573990" label="DNA" states="states713913"/>
+      <char id="Col41573991" label="DNA" states="states713913"/>
+      <char id="Col41573992" label="DNA" states="states713913"/>
+      <char id="Col41573993" label="DNA" states="states713913"/>
+      <char id="Col41573994" label="DNA" states="states713913"/>
+      <char id="Col41573995" label="DNA" states="states713913"/>
+      <char id="Col41573996" label="DNA" states="states713913"/>
+      <char id="Col41573997" label="DNA" states="states713913"/>
+      <char id="Col41573998" label="DNA" states="states713913"/>
+      <char id="Col41573999" label="DNA" states="states713913"/>
+      <char id="Col41574000" label="DNA" states="states713913"/>
+      <char id="Col41574001" label="DNA" states="states713913"/>
+      <char id="Col41574002" label="DNA" states="states713913"/>
+      <char id="Col41574003" label="DNA" states="states713913"/>
+      <char id="Col41574004" label="DNA" states="states713913"/>
+      <char id="Col41574005" label="DNA" states="states713913"/>
+      <char id="Col41574006" label="DNA" states="states713913"/>
+      <char id="Col41574007" label="DNA" states="states713913"/>
+      <char id="Col41574008" label="DNA" states="states713913"/>
+      <char id="Col41574009" label="DNA" states="states713913"/>
+      <char id="Col41574010" label="DNA" states="states713913"/>
+      <char id="Col41574011" label="DNA" states="states713913"/>
+      <char id="Col41574012" label="DNA" states="states713913"/>
+      <char id="Col41574013" label="DNA" states="states713913"/>
+      <char id="Col41574014" label="DNA" states="states713913"/>
+      <char id="Col41574015" label="DNA" states="states713913"/>
+      <char id="Col41574016" label="DNA" states="states713913"/>
+      <char id="Col41574017" label="DNA" states="states713913"/>
+      <char id="Col41574018" label="DNA" states="states713913"/>
+      <char id="Col41574019" label="DNA" states="states713913"/>
+      <char id="Col41574020" label="DNA" states="states713913"/>
+      <char id="Col41574021" label="DNA" states="states713913"/>
+      <char id="Col41574022" label="DNA" states="states713913"/>
+      <char id="Col41574023" label="DNA" states="states713913"/>
+      <char id="Col41574024" label="DNA" states="states713913"/>
+      <char id="Col41574025" label="DNA" states="states713913"/>
+      <char id="Col41574026" label="DNA" states="states713913"/>
+      <char id="Col41574027" label="DNA" states="states713913"/>
+      <char id="Col41574028" label="DNA" states="states713913"/>
+      <char id="Col41574029" label="DNA" states="states713913"/>
+      <char id="Col41574030" label="DNA" states="states713913"/>
+      <char id="Col41574031" label="DNA" states="states713913"/>
+      <char id="Col41574032" label="DNA" states="states713913"/>
+      <char id="Col41574033" label="DNA" states="states713913"/>
+      <char id="Col41574034" label="DNA" states="states713913"/>
+      <char id="Col41574035" label="DNA" states="states713913"/>
+      <char id="Col41574036" label="DNA" states="states713913"/>
+      <char id="Col41574037" label="DNA" states="states713913"/>
+      <char id="Col41574038" label="DNA" states="states713913"/>
+      <char id="Col41574039" label="DNA" states="states713913"/>
+      <char id="Col41574040" label="DNA" states="states713913"/>
+      <char id="Col41574041" label="DNA" states="states713913"/>
+      <char id="Col41574042" label="DNA" states="states713913"/>
+      <char id="Col41574043" label="DNA" states="states713913"/>
+      <char id="Col41574044" label="DNA" states="states713913"/>
+      <char id="Col41574045" label="DNA" states="states713913"/>
+      <char id="Col41574046" label="DNA" states="states713913"/>
+      <char id="Col41574047" label="DNA" states="states713913"/>
+      <char id="Col41574048" label="DNA" states="states713913"/>
+      <char id="Col41574049" label="DNA" states="states713913"/>
+      <char id="Col41574050" label="DNA" states="states713913"/>
+      <char id="Col41574051" label="DNA" states="states713913"/>
+      <char id="Col41574052" label="DNA" states="states713913"/>
+      <char id="Col41574053" label="DNA" states="states713913"/>
+      <char id="Col41574054" label="DNA" states="states713913"/>
+      <char id="Col41574055" label="DNA" states="states713913"/>
+      <char id="Col41574056" label="DNA" states="states713913"/>
+      <char id="Col41574057" label="DNA" states="states713913"/>
+      <char id="Col41574058" label="DNA" states="states713913"/>
+      <char id="Col41574059" label="DNA" states="states713913"/>
+      <char id="Col41574060" label="DNA" states="states713913"/>
+      <char id="Col41574061" label="DNA" states="states713913"/>
+      <char id="Col41574062" label="DNA" states="states713913"/>
+      <char id="Col41574063" label="DNA" states="states713913"/>
+      <char id="Col41574064" label="DNA" states="states713913"/>
+      <char id="Col41574065" label="DNA" states="states713913"/>
+      <char id="Col41574066" label="DNA" states="states713913"/>
+      <char id="Col41574067" label="DNA" states="states713913"/>
+      <char id="Col41574068" label="DNA" states="states713913"/>
+      <char id="Col41574069" label="DNA" states="states713913"/>
+      <char id="Col41574070" label="DNA" states="states713913"/>
+      <char id="Col41574071" label="DNA" states="states713913"/>
+      <char id="Col41574072" label="DNA" states="states713913"/>
+      <char id="Col41574073" label="DNA" states="states713913"/>
+      <char id="Col41574074" label="DNA" states="states713913"/>
+      <char id="Col41574075" label="DNA" states="states713913"/>
+      <char id="Col41574076" label="DNA" states="states713913"/>
+      <char id="Col41574077" label="DNA" states="states713913"/>
+      <char id="Col41574078" label="DNA" states="states713913"/>
+      <char id="Col41574079" label="DNA" states="states713913"/>
+      <char id="Col41574080" label="DNA" states="states713913"/>
+      <char id="Col41574081" label="DNA" states="states713913"/>
+      <char id="Col41574082" label="DNA" states="states713913"/>
+      <char id="Col41574083" label="DNA" states="states713913"/>
+      <char id="Col41574084" label="DNA" states="states713913"/>
+      <char id="Col41574085" label="DNA" states="states713913"/>
+      <char id="Col41574086" label="DNA" states="states713913"/>
+      <char id="Col41574087" label="DNA" states="states713913"/>
+      <char id="Col41574088" label="DNA" states="states713913"/>
+      <char id="Col41574089" label="DNA" states="states713913"/>
+      <char id="Col41574090" label="DNA" states="states713913"/>
+      <char id="Col41574091" label="DNA" states="states713913"/>
+      <char id="Col41574092" label="DNA" states="states713913"/>
+      <char id="Col41574093" label="DNA" states="states713913"/>
+      <char id="Col41574094" label="DNA" states="states713913"/>
+      <char id="Col41574095" label="DNA" states="states713913"/>
+      <char id="Col41574096" label="DNA" states="states713913"/>
+      <char id="Col41574097" label="DNA" states="states713913"/>
+      <char id="Col41574098" label="DNA" states="states713913"/>
+      <char id="Col41574099" label="DNA" states="states713913"/>
+      <char id="Col41574100" label="DNA" states="states713913"/>
+      <char id="Col41574101" label="DNA" states="states713913"/>
+      <char id="Col41574102" label="DNA" states="states713913"/>
+      <char id="Col41574103" label="DNA" states="states713913"/>
+      <char id="Col41574104" label="DNA" states="states713913"/>
+      <char id="Col41574105" label="DNA" states="states713913"/>
+      <char id="Col41574106" label="DNA" states="states713913"/>
+      <char id="Col41574107" label="DNA" states="states713913"/>
+      <char id="Col41574108" label="DNA" states="states713913"/>
+      <char id="Col41574109" label="DNA" states="states713913"/>
+      <char id="Col41574110" label="DNA" states="states713913"/>
+      <char id="Col41574111" label="DNA" states="states713913"/>
+      <char id="Col41574112" label="DNA" states="states713913"/>
+      <char id="Col41574113" label="DNA" states="states713913"/>
+      <char id="Col41574114" label="DNA" states="states713913"/>
+      <char id="Col41574115" label="DNA" states="states713913"/>
+      <char id="Col41574116" label="DNA" states="states713913"/>
+      <char id="Col41574117" label="DNA" states="states713913"/>
+      <char id="Col41574118" label="DNA" states="states713913"/>
+      <char id="Col41574119" label="DNA" states="states713913"/>
+      <char id="Col41574120" label="DNA" states="states713913"/>
+      <char id="Col41574121" label="DNA" states="states713913"/>
+      <char id="Col41574122" label="DNA" states="states713913"/>
+      <char id="Col41574123" label="DNA" states="states713913"/>
+      <char id="Col41574124" label="DNA" states="states713913"/>
+      <char id="Col41574125" label="DNA" states="states713913"/>
+      <char id="Col41574126" label="DNA" states="states713913"/>
+      <char id="Col41574127" label="DNA" states="states713913"/>
+      <char id="Col41574128" label="DNA" states="states713913"/>
+      <char id="Col41574129" label="DNA" states="states713913"/>
+      <char id="Col41574130" label="DNA" states="states713913"/>
+    </format>
+    <matrix>
+      <row id="Row1012173" otu="Tl836958">
+        <seq>CTGCGGCTTAATTTGACTCAACACGGGAAAACTTACCAGGTCCAGACACGGGGAGGATTGACAGATTGAGAGCTCTTTCTTGATTCTGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGGTTGCCTTGTCAGGTTGATTCCGGTAACGAACGAGACCTCAGCCTRCTAAATAGTCACGTCTACCTCGGTAGGCGCCTGACTTCTTAGAGGGACTATTGGCGTTTAGCCAATGGAAGTGTGAGGCAATAACAGGTCTGTGATGCCCTTAGATGTTCTGGGCCGCACGCGCGCTACACTGATGCATTCAACGAGCCTATCCTTGGCCGAGAGGTCCGGGTAATCTTTGAAACTGCATCGTGATGGGGATAGATTATTGCAATTATTAGTCTTCAACGAGGAATGCCTAGTAAGCGCGAGTCATCAGCTCGCGTTGATTACGTCCCTGCCCTTTGTACACACCGCCCGTCGCTCCTACCGATTGGGTGTGCTGGTGAAGTGTTTGGAYYGGTRTCARTGGGGGGCAACCTCTGYTTGGYRCTGRGAAGAACATTAAACCCTCCCACCTAGAGGAAGGAGAAGTCGTAACAAGGTTTCCGTATA-</seq>
+      </row>
+      <row id="Row1012174" otu="Tl836957">
+        <seq>CTGCGGCTTAATTTGACTCAACACGGGAAAACTTACCAGGTCCAGACACGGGGAGGATTGACAGATTGAGAGCTCTTTCTTGATTCTGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGGTTGCCTTGTCAGGTTGATTCCGGTAACGAACGAGACCTCAGCCTGCTAAATAGTCACGTCTACCTCGGTAGGCGCTTGACTTCTTAGAGGGACTATTGGCGTTTAGCCAATGGAAGTGTGAGGCAATAACAGGTCTGTGATGCCCTTAGATGTTCTGGGCCGCACGCGCGCTACACTGATGCATTCAACGAGCCTATCCTTGGCCGAGAGGTCTGGGTAATCTTTGAAACTGCATCGTGATGGGGATAGATTATTGCAATTATTAGTCTTCAACGAGGAATGCCTAGTAAGCGCGAGTCATCAGCTCGCGTTGATTACGTCCCTGCCCTTTGTACACACCGCCCGTCGCTCCTACCGATTGGGTGTGCTGGTGAAGTGTTTGGATTGATATCAATGGGGGGCAACCTCTGTT-GGTGTTGAGAAGAACATTAAACCCTCCCACCTAGAGGAAGGAGAAGTCGTAACAAGGTTTCCGTATAA</seq>
+      </row>
+      <row id="Row1012175" otu="Tl836953">
+        <seq>CTGCGGCTTAATTTGACTCAACACGGGAAAACTTACCAGGTCCAGACACGGGGAGGATTGACAGATTGAGAGCTCTTTCTTGATTCTGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGGTTGCCTTGTCAGGTTGATTCCGGTAACGAACGAGACCTCAGCCTGCTAAATAGTCACGTCTACCTCGGTAGGCGCCTGACTTCTTAGAGGGACTATTGGCGTTTAGCCAATGGAAGTGTGAGGCAATAACAGGTCTGTGATGCCCTTAGATGTTCTGGGCCGCACGCGCGCTACACTGATGCATTCAACGAGCCTATCCTTGGCCGAGAGGTCCGGGTAATCTTTGAAACTGCATCGTGATGGGGATAGATTATTGCAATTATTAGTCTTCAACGAGGAATGCCTAGTAAGCGCGAGTCATCAGCTCGCGTTGATTACGTCCCTGCCCTTTGTACACACCGCCCGTCGCTCCTACCGATTGGGTGTGCTGGTGAAGTGTTTGGATCGGTACCAATGGGGGGAAACCTCTGTT-GGTACTGAGAAGAACATTAAACCCTCCCACCTAGAGGAAGGAGAAGTCGTAACAAGGTTTCCGTAGGT</seq>
+      </row>
+      <row id="Row1012176" otu="Tl836956">
+        <seq>CTGCGGCTTAATTTGACTCAACACGGGAAAACTTACCAGGTCCAGACACGGGGAGGATTGACAGATTGAGAGCTCTTTCTTGATTCTGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGGTTGCCTTGTCAGGTTGATTCCGGTAACGAACGAGACCTCAGCCTGCTAAATAGTCACGTCTACCTCGGTAGGCGCCTGACTTCTTAGAGGGACTATTGGCGTTTAGCCAATGGAAGTGTGAGGCAATAACAGGTCTGTGATGCCCTTAGATGTTCTGGGCCGCACGCGCGCTACACTGATGCATTCAACGAGCCTATCCTTGGCCGAGAGGTCCGGGTAATCTTTGAAACTGCATCGTGATGGGGATAGATTATTGCAATTATTAGTCTTCAACGAGGAATGCCTAGTAAGCGCGAGTCATCAGCTCGCGTTGATTACGTCCCTGCCCTTTGTACACACCGCCCGTCGCTCCTACCGATTGGGTGTGCTGGTGAAGTGTTTGGATCGGTATCAATGGGGGGCAACCTCTGTT-GGTACTGAGAAGAACATTAAACCCTCCCACCTAGAGGAAGGAGAAGTCGTAACAAGGTTTCCGTAGGT</seq>
+      </row>
+      <row id="Row1012177" otu="Tl836955">
+        <seq>CTGCGGCTTAATTTGACTCAACACGGGAAAACTTACCAGGTCCAGACACGGGGAGGATTGACAGATTGAGAGCTCTTTCTTGATTCTGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGGTTGCCTTGTCAGGTTGATTCCGGTAACGAACGAGACCTCAGCCTACTAAATAGTCACGTCTACCTCGGTAGGCGCCTGACTTCTTAGAGGGACTATTGGCGTTTAGCCAATGGAAGTGTGAGGCAATAACAGGTCTGTGATGCCCTTAGATGTTCTGGGCCGCACGCGCGCTACACTGATGCATTCAACGAGCCTATCCTTGGCCGAGAGGTCCGGGTAATCTTTGAAACTGCATCGTGATGGGGATAGATTATTGCAATTATTAGTCTTCAACGAGGAATGCCTAGTAAGCGCGAGTCATCAGCTCGCGTTGATTACGTCCCTGCCCTTTGTACACACCGTCCGTCGCTCCTACCGATTGGGTGTGCTGGTGAAGTGTTTGGACTGGTGTCAGTGGGGGGCAACCTCTGCT-GGCGCTGGGAAGAACATTAAACCCTCCCACCTAGAGGAAGGAGAAGTCGTAACAAGGTTTCCGTATTA</seq>
+      </row>
+      <row id="Row1012178" otu="Tl836952">
+        <seq>CTGCGGCTTAATTTGACTCAACACGGGAAAACTTACCAGGTCCAGACACGGGGAGGATTGACAGATTGAGAGCTCTTTCTTGATTCTGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGGTTGCCTTGTCAGGTTGATTCCGGTAACGAACGAGACCTCAGCCTGCTAAATAGTCACGTCTACCTCGGTAGGCGCCTGACTTCTTAGAGGGACTATTGGCGTTTAGCCAATGGAAGTGTGAGGCAATAACAGGTCTGTGATGCCCTTAGATGTTCTGGGCCGCACGCGCGCTACACTGATGCATTCAACGAGCCTATCCTTGGCCGAGAGGTCCGGGTAATCTTTGAAACTGCATCGTGATGGGGATAGATTATTGCAATTATTAGTCTTCAACGAGGAATGCCTAGTAAGCGCGAGTCATCAGCTCGCGTTGATTACGTCCCTGCCCTTTGTACACACCGCCCGTCGCTCCTACCGATTGGGTGTGCTGGTGAAGTGTTTGGATCGGTATCAATGGGGGGCAACCTCTGTT-GGTACTGAGAAGAACATTAAACCCTCCCACCTAGAGGAAGGAGAAGTCGTAACAAGGTTTCCGTAGGT</seq>
+      </row>
+      <row id="Row1012179" otu="Tl836954">
+        <seq>CTGCGGCTTA-TTTGACTCA-CACGGGAAAACTTACCAGGTCCAGACACGGGGAGGATTGACAGATTGAGAGCTCTTTCTTGATTCTGTGGGTGGTGGTGCATGGCCGTTCTTAGTTGGTGGGTTGCCTTGTCAGGTTGATTCCGGTAACGAACGAGACCTCAGCCTACTAAATAGTCACGTCTACCTCGGTAGGCGCCTGACTTCTTAGAGGGACTATTGGCGTTTAGCCAATGGAAGTGTGAGGCAATAACAGGTCTGTGATGCCCTTAGATGTTCTGGGCCGCACGCGCGCTACACTGATGCATTCAACGAGCCTATCCTTGGCCGAGAGGTCCGGGTAATCTTTGAAACTGCATCGTGATGGGGATAGATTATTGCAATTATTAGTCTTCAACGAGGAATGCCTAGTAAGCGCGAGTCATCAGCTCGCGTTGATTACGTCCCTGCCCTTTGTACACACCGCCCGTCGCTCCTACCGATTGGGTGTGCTGGTGAAGTGTTTGGACTGGTGTCAGTGGGGGGCAACCTCTGCT-GGCGCTGGGAAGAACATTAAACCCTCCCACCTAGAGGAAGGAGAAGTCGTAACAAGGTTTCCGTATA-</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb17957" id="Tb17957" label="Dunaliella" otus="Tls26620" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@1229caa0 $Rev: 1040 $" datatype="xsd:string" id="meta714550" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S12863" id="meta714549" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr54535" id="Tr54535" label="Fig. 3" xsi:type="nex:FloatTree">
+      <meta content="7" datatype="xsd:integer" id="meta714556" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta714555" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta714554" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta714553" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S12863" id="meta714552" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn9025756"/>
+      <node id="Tn9025754"/>
+      <node id="Tn9025759" label="Dunaliella bardawil AF150905" otu="Tl836955"/>
+      <node id="Tn9025753" label="Dunaliella bardawil Str JF815099" otu="Tl836954"/>
+      <node id="Tn9025755"/>
+      <node id="Tn9025758" label="Dunaliella salina I2 JF903801" otu="Tl836958"/>
+      <node id="Tn9025761"/>
+      <node id="Tn9025762" label="Dunaliella sp. ABRIINW EU678868" otu="Tl836957"/>
+      <node id="Tn9025764"/>
+      <node id="Tn9025760" label="Dunaliella salina CCAP DQ447648" otu="Tl836956"/>
+      <node id="Tn9025763"/>
+      <node id="Tn9025757" label="Dunaliella salin M84320 DUNRDGAB" otu="Tl836953"/>
+      <node id="Tn9025765" label="Dunaliella salina CCAP EF473749" otu="Tl836952"/>
+      <edge id="edge714559" length="0.005932" source="Tn9025756" target="Tn9025754"/>
+      <edge id="edge714561" length="0.003363" source="Tn9025754" target="Tn9025759"/>
+      <edge id="edge714563" length="0.0" source="Tn9025754" target="Tn9025753"/>
+      <edge id="edge714565" length="0.005932" source="Tn9025756" target="Tn9025755"/>
+      <edge id="edge714567" length="0.0" source="Tn9025755" target="Tn9025758"/>
+      <edge id="edge714569" length="0.0" source="Tn9025755" target="Tn9025761"/>
+      <edge id="edge714571" length="0.007031" source="Tn9025761" target="Tn9025762"/>
+      <edge id="edge714573" length="0.008585" source="Tn9025761" target="Tn9025764"/>
+      <edge id="edge714575" length="0.0" source="Tn9025764" target="Tn9025760"/>
+      <edge id="edge714577" length="0.0" source="Tn9025764" target="Tn9025763"/>
+      <edge id="edge714579" length="0.003356" source="Tn9025763" target="Tn9025757"/>
+      <edge id="edge714581" length="0.0" source="Tn9025763" target="Tn9025765"/>
+    </tree>
+  </trees>
+</nex:nexml>

@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S13373" generator="org.nexml.model.impl.DocumentImpl" id="S13373" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Fri Feb 01 05:44:00 EST 2013" datatype="xsd:string" id="meta307187" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@c3a0cb2 $Rev: 1060 $" datatype="xsd:string" id="meta307186" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta307185" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta307184" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Systematic Entomology" datatype="xsd:string" id="meta307183" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Systematic Entomology" datatype="xsd:string" id="meta307182" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="flies" datatype="xsd:string" id="meta307181" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="morphology" datatype="xsd:string" id="meta307180" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="10.1111/j.1365-3113.2012.00652.x" datatype="xsd:string" id="meta307179" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013" datatype="xsd:string" id="meta307178" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Wiegmann B.M." datatype="xsd:string" id="meta307177" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Blagoderov V." datatype="xsd:string" id="meta307176" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Yeates D." datatype="xsd:string" id="meta307175" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Meier R." datatype="xsd:string" id="meta307174" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Skevington J." datatype="xsd:string" id="meta307173" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Courtney G.W." datatype="xsd:string" id="meta307172" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Pape T." datatype="xsd:string" id="meta307171" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Sinclair B." datatype="xsd:string" id="meta307170" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Lambkin C." datatype="xsd:string" id="meta307169" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Lambkin C., Sinclair B., Pape T., Courtney G.W., Skevington J., Meier R., Yeates D., Blagoderov V., &amp; Wiegmann B.M." datatype="xsd:string" id="meta307168" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="The phylogenetic relationships among infraorders and superfamilies of Diptera based on morphological evidence" datatype="xsd:string" id="meta307167" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Lambkin C., Sinclair B., Pape T., Courtney G.W., Skevington J., Meier R., Yeates D., Blagoderov V., &amp; Wiegmann B.M. 2013. The phylogenetic relationships among infraorders and superfamilies of Diptera based on morphological evidence. Systematic Entomology, ." datatype="xsd:string" id="meta307166" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-09-04" datatype="xsd:string" id="meta307165" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-11-29" datatype="xsd:string" id="meta307164" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-11-29" datatype="xsd:string" id="meta307163" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="The Phylogenetic Relationships Among Infraorders and Superfamilies of Diptera based on morphological evidence" datatype="xsd:string" id="meta307162" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta307161" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="13373" datatype="xsd:string" id="meta307160" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta307158" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls28812" id="Tls28812" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@23d7c043 $Rev: 1040 $" datatype="xsd:string" id="meta307189" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl889485" id="Tl889485" label="Acrosathe novella">
+      <meta content="314482" datatype="xsd:long" id="meta307195" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="359888" datatype="xsd:long" id="meta307194" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/359425" id="meta307193" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2596969" id="meta307192" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307191" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889473" id="Tl889473" label="Anopheles gambiae">
+      <meta content="1774" datatype="xsd:long" id="meta307201" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="4344" datatype="xsd:long" id="meta307200" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7165" id="meta307199" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:586228" id="meta307198" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307197" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889490" id="Tl889490" label="Arachnocampa flava">
+      <meta content="242809" datatype="xsd:long" id="meta307207" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="304161" datatype="xsd:long" id="meta307206" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/270899" id="meta307205" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3649358" id="meta307204" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307203" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889480" id="Tl889480" label="Asilus crabroniformis">
+      <meta content="46054" datatype="xsd:long" id="meta307213" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="107798" datatype="xsd:long" id="meta307212" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/468697" id="meta307211" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2946844" id="meta307210" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307209" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889471" id="Tl889471" label="Bibio longipes">
+      <meta content="493092" datatype="xsd:long" id="meta307219" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="653457" datatype="xsd:long" id="meta307218" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/560707" id="meta307217" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2613507" id="meta307216" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307215" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889474" id="Tl889474" label="Bittacus mastrillii">
+      <meta content="616594" datatype="xsd:long" id="meta307224" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="825132" datatype="xsd:long" id="meta307223" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5179865" id="meta307222" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307221" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889477" id="Tl889477" label="Bombylius major">
+      <meta content="46046" datatype="xsd:long" id="meta307230" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="107779" datatype="xsd:long" id="meta307229" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/240869" id="meta307228" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2613684" id="meta307227" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307226" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889493" id="Tl889493" label="Bradysia tilicola">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307232" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889482" id="Tl889482" label="Ceratitis capitata">
+      <meta content="52376" datatype="xsd:long" id="meta307238" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="122440" datatype="xsd:long" id="meta307237" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7213" id="meta307236" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2596837" id="meta307235" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307234" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889463" id="Tl889463" label="Chamaepsila hennigi">
+      <meta content="604136" datatype="xsd:long" id="meta307243" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="806132" datatype="xsd:long" id="meta307242" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3716991" id="meta307241" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307240" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889466" id="Tl889466" label="Chironomus tepperi">
+      <meta content="117260" datatype="xsd:long" id="meta307249" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="195590" datatype="xsd:long" id="meta307248" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/113505" id="meta307247" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3651996" id="meta307246" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307245" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889470" id="Tl889470" label="Clogmia albipunctata">
+      <meta content="95846" datatype="xsd:long" id="meta307255" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="175077" datatype="xsd:long" id="meta307254" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/85120" id="meta307253" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5570887" id="meta307252" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307251" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889460" id="Tl889460" label="Coboldia fuscipes">
+      <meta content="160886" datatype="xsd:long" id="meta307261" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="235920" datatype="xsd:long" id="meta307260" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/170625" id="meta307259" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2596212" id="meta307258" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307257" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889486" id="Tl889486" label="Cochliomyia macellaria">
+      <meta content="82258" datatype="xsd:long" id="meta307267" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="160280" datatype="xsd:long" id="meta307266" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/66361" id="meta307265" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2593119" id="meta307264" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307263" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889479" id="Tl889479" label="Ctenocephalides felis">
+      <meta content="7634" datatype="xsd:long" id="meta307273" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="18409" datatype="xsd:long" id="meta307272" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7515" id="meta307271" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1666829" id="meta307270" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307269" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889464" id="Tl889464" label="Delia radicum">
+      <meta content="58116" datatype="xsd:long" id="meta307279" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="130742" datatype="xsd:long" id="meta307278" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/30064" id="meta307277" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2594949" id="meta307276" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307275" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889495" id="Tl889495" label="Drosophila melanogaster">
+      <meta content="9608" datatype="xsd:long" id="meta307285" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="22965" datatype="xsd:long" id="meta307284" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7227" id="meta307283" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2614985" id="meta307282" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307281" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889496" id="Tl889496" label="Edwardsina gigantea">
+      <meta content="493097" datatype="xsd:long" id="meta307291" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="653467" datatype="xsd:long" id="meta307290" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/560712" id="meta307289" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3655253" id="meta307288" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307287" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889475" id="Tl889475" label="Episyrphus balteatus">
+      <meta content="253067" datatype="xsd:long" id="meta307297" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="312287" datatype="xsd:long" id="meta307296" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/286459" id="meta307295" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2952087" id="meta307294" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307293" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889484" id="Tl889484" label="Exeretonevra angustifrons">
+      <meta content="493109" datatype="xsd:long" id="meta307303" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="653486" datatype="xsd:long" id="meta307302" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/560724" id="meta307301" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3761894" id="meta307300" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307299" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889465" id="Tl889465" label="Exorista larvarum">
+      <meta content="332221" datatype="xsd:long" id="meta307309" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="372219" datatype="xsd:long" id="meta307308" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/380514" id="meta307307" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:1667698" id="meta307306" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307305" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889452" id="Tl889452" label="Glossina morsitans">
+      <meta content="52477" datatype="xsd:long" id="meta307315" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="122573" datatype="xsd:long" id="meta307314" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7394" id="meta307313" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5449768" id="meta307312" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307311" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889476" id="Tl889476" label="Haematopota pluvialis">
+      <meta content="167017" datatype="xsd:long" id="meta307321" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="241679" datatype="xsd:long" id="meta307320" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/178770" id="meta307319" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2952301" id="meta307318" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307317" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889481" id="Tl889481" label="Hermetia illucens">
+      <meta content="301515" datatype="xsd:long" id="meta307327" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="350262" datatype="xsd:long" id="meta307326" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/343691" id="meta307325" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2596513" id="meta307324" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307323" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889458" id="Tl889458" label="Lonchoptera lutea">
+      <meta content="101588" datatype="xsd:long" id="meta307333" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="180855" datatype="xsd:long" id="meta307332" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/92596" id="meta307331" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2947815" id="meta307330" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307329" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889497" id="Tl889497" label="Mayetiola destructor">
+      <meta content="64148" datatype="xsd:long" id="meta307339" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="138695" datatype="xsd:long" id="meta307338" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/39758" id="meta307337" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2593518" id="meta307336" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307335" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889459" id="Tl889459" label="Megaselia scalaris">
+      <meta content="61685" datatype="xsd:long" id="meta307345" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="135559" datatype="xsd:long" id="meta307344" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/36166" id="meta307343" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2592861" id="meta307342" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307341" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889455" id="Tl889455" label="Micropteryx calthella">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307347" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889468" id="Tl889468" label="Minettia flaveola">
+      <meta content="604146" datatype="xsd:long" id="meta307352" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="806142" datatype="xsd:long" id="meta307351" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2594356" id="meta307350" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307349" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889457" id="Tl889457" label="Musca domestica">
+      <meta content="40632" datatype="xsd:long" id="meta307358" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="94579" datatype="xsd:long" id="meta307357" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7370" id="meta307356" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2616529" id="meta307355" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307354" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889483" id="Tl889483" label="Nannochorista philpotti">
+      <meta content="616596" datatype="xsd:long" id="meta307363" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="825134" datatype="xsd:long" id="meta307362" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6297862" id="meta307361" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307360" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889467" id="Tl889467" label="Nymphomyia dolichopeza">
+      <meta content="493148" datatype="xsd:long" id="meta307369" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="653536" datatype="xsd:long" id="meta307368" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/560767" id="meta307367" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3677373" id="meta307366" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307365" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889489" id="Tl889489" label="Ogcodes basalis">
+      <meta content="192854" datatype="xsd:long" id="meta307375" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="264322" datatype="xsd:long" id="meta307374" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/210251" id="meta307373" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5971167" id="meta307372" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307371" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889491" id="Tl889491" label="Oreogeton obscurus">
+      <meta content="600728" datatype="xsd:long" id="meta307380" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="800902" datatype="xsd:long" id="meta307379" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2762239" id="meta307378" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307377" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889469" id="Tl889469" label="Physocephala marginata">
+      <meta content="604147" datatype="xsd:long" id="meta307385" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="806143" datatype="xsd:long" id="meta307384" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2593918" id="meta307383" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307382" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889462" id="Tl889462" label="Phytomyza ilicicola">
+      <meta content="38872" datatype="xsd:long" id="meta307391" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="89897" datatype="xsd:long" id="meta307390" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/132625" id="meta307389" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2617152" id="meta307388" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307387" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889453" id="Tl889453" label="Protoplasa fitchii">
+      <meta content="493156" datatype="xsd:long" id="meta307397" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="653548" datatype="xsd:long" id="meta307396" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/560777" id="meta307395" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2622051" id="meta307394" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307393" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889492" id="Tl889492" label="Sarcophaga bullata">
+      <meta content="52470" datatype="xsd:long" id="meta307403" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="122560" datatype="xsd:long" id="meta307402" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7385" id="meta307401" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2620503" id="meta307400" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307399" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889494" id="Tl889494" label="Scathophaga stercoraria">
+      <meta content="103741" datatype="xsd:long" id="meta307409" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="182832" datatype="xsd:long" id="meta307408" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/95463" id="meta307407" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2596204" id="meta307406" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307405" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889461" id="Tl889461" label="Sepsis cynipsea">
+      <meta content="138770" datatype="xsd:long" id="meta307415" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="215279" datatype="xsd:long" id="meta307414" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/141453" id="meta307413" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2951865" id="meta307412" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307411" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889454" id="Tl889454" label="Spelobia bifrons">
+      <meta content="604184" datatype="xsd:long" id="meta307420" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="806210" datatype="xsd:long" id="meta307419" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2596454" id="meta307418" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307417" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889488" id="Tl889488" label="Sylvicola fenestralis">
+      <meta content="28307" datatype="xsd:long" id="meta307426" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="66022" datatype="xsd:long" id="meta307425" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/52754" id="meta307424" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2594821" id="meta307423" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307422" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889487" id="Tl889487" label="Teleopsis dalmanni">
+      <meta content="137310" datatype="xsd:long" id="meta307432" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="213915" datatype="xsd:long" id="meta307431" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/139649" id="meta307430" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5962974" id="meta307429" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307428" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889478" id="Tl889478" label="Thaumatomyia glabra">
+      <meta content="616595" datatype="xsd:long" id="meta307437" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="825133" datatype="xsd:long" id="meta307436" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2593883" id="meta307435" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307434" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889472" id="Tl889472" label="Tipula abdominalis">
+      <meta content="428047" datatype="xsd:long" id="meta307443" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="563804" datatype="xsd:long" id="meta307442" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/560804" id="meta307441" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2592484" id="meta307440" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307439" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl889456" id="Tl889456" label="Trichocera brevicornis">
+      <meta content="493142" datatype="xsd:long" id="meta307449" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="653527" datatype="xsd:long" id="meta307448" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/560761" id="meta307447" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2622254" id="meta307446" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307445" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M15322" id="M15322" label="FLYTREE Morphological Matrix with Exemplar Species Names" otus="Tls28812" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:StandardSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@19cb8078 $Rev: 1056 $" datatype="xsd:string" id="meta307455" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="15322" datatype="xsd:long" id="meta307454" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="371" datatype="xsd:integer" id="meta307453" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="46" datatype="xsd:integer" id="meta307452" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="Standard" datatype="xsd:string" id="meta307451" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states307456">
+        <state id="Dcs508435" label="3" symbol="3"/>
+        <state id="Dcs508516" label="2" symbol="2"/>
+        <state id="Dcs508521" label="1" symbol="1"/>
+        <state id="Dcs508522" label="0" symbol="0"/>
+        <state id="Dcs507921" label="7" symbol="7"/>
+        <state id="Dcs507922" label="6" symbol="6"/>
+        <state id="Dcs508434" label="5" symbol="5"/>
+        <state id="Dcs508431" label="4" symbol="4"/>
+        <uncertain_state_set id="uncertain_state_set307465" label="-" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set307466" label="?" symbol="?">
+          <member state="Dcs508434"/>
+          <member state="Dcs508522"/>
+          <member state="uncertain_state_set307465"/>
+          <member state="Dcs508521"/>
+          <member state="Dcs507922"/>
+          <member state="Dcs508516"/>
+          <member state="Dcs507921"/>
+          <member state="Dcs508431"/>
+          <member state="Dcs508435"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col69972796" label="Head capsule" states="states307456"/>
+      <char id="Col69972797" label="head capsule" states="states307456"/>
+      <char id="Col69972798" label="Metacephalic rods" states="states307456"/>
+      <char id="Col69972799" label="paired lateral Metacephalic rods" states="states307456"/>
+      <char id="Col69972800" label="single medial Metacephalic rod" states="states307456"/>
+      <char id="Col69972801" label="Metacephalic rods" states="states307456"/>
+      <char id="Col69972802" label="Metacephalic rods" states="states307456"/>
+      <char id="Col69972803" label="Posterodorsal cranial margin" states="states307456"/>
+      <char id="Col69972804" label="Postgenae" states="states307456"/>
+      <char id="Col69972805" label="Instar I frontal sclerite" states="states307456"/>
+      <char id="Col69972806" label="Head" states="states307456"/>
+      <char id="Col69972807" label="Head" states="states307456"/>
+      <char id="Col69972808" label="Instar 3 Intermediate sclerite" states="states307456"/>
+      <char id="Col69972809" label="intermediate sclerite" states="states307456"/>
+      <char id="Col69972810" label="tentorial bridge" states="states307456"/>
+      <char id="Col69972811" label="Antennal segments" states="states307456"/>
+      <char id="Col69972812" label="Length of first instar larval antenna" states="states307456"/>
+      <char id="Col69972813" label="Antenna" states="states307456"/>
+      <char id="Col69972814" label="antennal structure, ring and peg" states="states307456"/>
+      <char id="Col69972815" label="Larval stemmata" states="states307456"/>
+      <char id="Col69972816" label="Bolwigs organ, internalized in optical depression" states="states307456"/>
+      <char id="Col69972817" label="Pigment of adult eye" states="states307456"/>
+      <char id="Col69972818" label="Frontoclypeal apotome" states="states307456"/>
+      <char id="Col69972819" label="Frontoclypeal apotome" states="states307456"/>
+      <char id="Col69972820" label="'Labrum-like' blade in first instar larva" states="states307456"/>
+      <char id="Col69972821" label="'Labrum-like' blade in final instar larva" states="states307456"/>
+      <char id="Col69972822" label="Labrum" states="states307456"/>
+      <char id="Col69972823" label="Brushes on ventral surface of labrum" states="states307456"/>
+      <char id="Col69972824" label="Premandibles" states="states307456"/>
+      <char id="Col69972825" label="Premandible" states="states307456"/>
+      <char id="Col69972826" label="Invaginated premandible apodeme" states="states307456"/>
+      <char id="Col69972827" label="Premandible" states="states307456"/>
+      <char id="Col69972828" label="Premandible with tongs like or spike like external portion" states="states307456"/>
+      <char id="Col69972829" label="Torma" states="states307456"/>
+      <char id="Col69972830" label="Torma" states="states307456"/>
+      <char id="Col69972831" label="Mandibular rotation" states="states307456"/>
+      <char id="Col69972832" label="Mandible" states="states307456"/>
+      <char id="Col69972833" label="Mandibular epicondyle" states="states307456"/>
+      <char id="Col69972834" label="Mandible" states="states307456"/>
+      <char id="Col69972835" label="Basal mandibular sclerite from posterior view" states="states307456"/>
+      <char id="Col69972836" label="Subapical adoral surface of mandible" states="states307456"/>
+      <char id="Col69972837" label="Apex of mandible" states="states307456"/>
+      <char id="Col69972838" label="Mandibular brush" states="states307456"/>
+      <char id="Col69972839" label="Mandibular brush position" states="states307456"/>
+      <char id="Col69972840" label="Mandibular chela" states="states307456"/>
+      <char id="Col69972841" label="Mandible" states="states307456"/>
+      <char id="Col69972842" label="Inner face of mandibular hook" states="states307456"/>
+      <char id="Col69972843" label="Egg burster on frontal sclerite of first instar" states="states307456"/>
+      <char id="Col69972844" label="Mandiblular prostheca" states="states307456"/>
+      <char id="Col69972845" label="Mandiblular prostheca" states="states307456"/>
+      <char id="Col69972846" label="Cardo" states="states307456"/>
+      <char id="Col69972847" label="Antennal and maxillary lobes" states="states307456"/>
+      <char id="Col69972848" label="Maxillary palpus" states="states307456"/>
+      <char id="Col69972849" label="Maxillary palpus" states="states307456"/>
+      <char id="Col69972850" label="Salivary pump" states="states307456"/>
+      <char id="Col69972851" label="Cibarial filter" states="states307456"/>
+      <char id="Col69972852" label="Cibarium" states="states307456"/>
+      <char id="Col69972853" label="Pharyngeal grinding mill" states="states307456"/>
+      <char id="Col69972854" label="Prementohypopharyngeal apparatus" states="states307456"/>
+      <char id="Col69972855" label="Prementohypopharyngeal apparatus" states="states307456"/>
+      <char id="Col69972856" label="Sclerotised postmentum" states="states307456"/>
+      <char id="Col69972857" label="Postmentum" states="states307456"/>
+      <char id="Col69972858" label="Postmentum" states="states307456"/>
+      <char id="Col69972859" label="Parastomal bars in last instar" states="states307456"/>
+      <char id="Col69972860" label="Thoracic segments" states="states307456"/>
+      <char id="Col69972861" label="Thoracic legs" states="states307456"/>
+      <char id="Col69972862" label="First instar prothoracic prolegs" states="states307456"/>
+      <char id="Col69972863" label="Cuticle encrusted with warts of calcium carbonate" states="states307456"/>
+      <char id="Col69972864" label="Free abdominal segments excluding anal division" states="states307456"/>
+      <char id="Col69972865" label="Body segments" states="states307456"/>
+      <char id="Col69972866" label="Elongate eversible crochet tipped prolegs on abdominal segments one to seven" states="states307456"/>
+      <char id="Col69972867" label="Abdomen with single proleg on segment one" states="states307456"/>
+      <char id="Col69972868" label="First instar larva with terminal pair of sac-like vesicles on anal division" states="states307456"/>
+      <char id="Col69972869" label="Crotchet tipped prolegs on anal division" states="states307456"/>
+      <char id="Col69972870" label="Anal division with fan-like row of long midventral setae" states="states307456"/>
+      <char id="Col69972871" label="Base of midventral setae on anal division" states="states307456"/>
+      <char id="Col69972872" label="Anal division with sclerotised dorsal plates surrounding the spiracles and ending in a pair of hook like processes" states="states307456"/>
+      <char id="Col69972873" label="Anal papillae" states="states307456"/>
+      <char id="Col69972874" label="Number of Malpighian tubules" states="states307456"/>
+      <char id="Col69972875" label="Respiratory system of full grown larva" states="states307456"/>
+      <char id="Col69972876" label="Anterior spiracles" states="states307456"/>
+      <char id="Col69972877" label="Arrangement of multiple papilla in anterior spiracles" states="states307456"/>
+      <char id="Col69972878" label="Spiracles on anal division" states="states307456"/>
+      <char id="Col69972879" label="Position of posterior abdominal spiracle" states="states307456"/>
+      <char id="Col69972880" label="Position of posterior abdominal spiracle" states="states307456"/>
+      <char id="Col69972881" label="Posterior abdominal spiracles in a cavity" states="states307456"/>
+      <char id="Col69972882" label="Stigmatophore (siphon bearing posterior abdominal spiracles) longer than diameter of spiracle" states="states307456"/>
+      <char id="Col69972883" label="Each posterior spiracle surrounded by four tufts of flattened cuticular outgrowths 101" states="states307456"/>
+      <char id="Col69972884" label="Openings of each posterior tracheal trunk of last instar" states="states307456"/>
+      <char id="Col69972885" label="Reproduction" states="states307456"/>
+      <char id="Col69972886" label="Reproduction with incubated eggs" states="states307456"/>
+      <char id="Col69972887" label="Reproduction with incubated eggs" states="states307456"/>
+      <char id="Col69972888" label="Number of instars" states="states307456"/>
+      <char id="Col69972889" label="Mode of pupation" states="states307456"/>
+      <char id="Col69972890" label="Cyclorrhaphan puparium  cleavage lines" states="states307456"/>
+      <char id="Col69972891" label="Cyclorrhaphan puparium anterior spiracles" states="states307456"/>
+      <char id="Col69972892" label="Body" states="states307456"/>
+      <char id="Col69972893" label="Mandibles" states="states307456"/>
+      <char id="Col69972894" label="Ovoid Ventrolateral adhesive discs on abdomenal segments" states="states307456"/>
+      <char id="Col69972895" label="plastron-bearing gill" states="states307456"/>
+      <char id="Col69972896" label="plastron-bearing gill" states="states307456"/>
+      <char id="Col69972897" label="Developing adult wing" states="states307456"/>
+      <char id="Col69972898" label="Metathoracic leg sheath" states="states307456"/>
+      <char id="Col69972899" label="Terminus of abdomen with pair of articulated membranous paddles bearing supporting midrib" states="states307456"/>
+      <char id="Col69972900" label="Abdominal ganglia" states="states307456"/>
+      <char id="Col69972901" label="Abdominal ganglia" states="states307456"/>
+      <char id="Col69972902" label="Head and thorax setae" states="states307456"/>
+      <char id="Col69972903" label="Eyes configuration male" states="states307456"/>
+      <char id="Col69972904" label="Eyes configuration female" states="states307456"/>
+      <char id="Col69972905" label="Ocelli" states="states307456"/>
+      <char id="Col69972906" label="Ocelli on raised plate" states="states307456"/>
+      <char id="Col69972907" label="Vertex" states="states307456"/>
+      <char id="Col69972908" label="Ocellar setae or bristles" states="states307456"/>
+      <char id="Col69972909" label="Inner vertical bristles" states="states307456"/>
+      <char id="Col69972910" label="Outer vertical bristles" states="states307456"/>
+      <char id="Col69972911" label="Postocellar bristles" states="states307456"/>
+      <char id="Col69972912" label="Postocellar bristles" states="states307456"/>
+      <char id="Col69972913" label="Ptilinal fissure" states="states307456"/>
+      <char id="Col69972914" label="Frons differentiated into frontal vitta and lateral fronto orbital plates" states="states307456"/>
+      <char id="Col69972915" label="Orbital bristles" states="states307456"/>
+      <char id="Col69972916" label="Orbital bristles" states="states307456"/>
+      <char id="Col69972917" label="Anterior frontal bristles" states="states307456"/>
+      <char id="Col69972918" label="Anterior frontal bristles" states="states307456"/>
+      <char id="Col69972919" label="Interfrontal bristles" states="states307456"/>
+      <char id="Col69972920" label="Face with mystax" states="states307456"/>
+      <char id="Col69972921" label="Vibrissa" states="states307456"/>
+      <char id="Col69972922" label="Adult clypeus" states="states307456"/>
+      <char id="Col69972923" label="Adult clypeus" states="states307456"/>
+      <char id="Col69972924" label="Clypeus" states="states307456"/>
+      <char id="Col69972925" label="Clypeal ridge position" states="states307456"/>
+      <char id="Col69972926" label="Occipital sclerite" states="states307456"/>
+      <char id="Col69972927" label="Median occipital sclerite OR Median occipital plate" states="states307456"/>
+      <char id="Col69972928" label="Occipital internal thickenings - dorsal lateral apodemes arising above occipital condyles" states="states307456"/>
+      <char id="Col69972929" label="Occipital pockets" states="states307456"/>
+      <char id="Col69972930" label="Hypostomal bridge" states="states307456"/>
+      <char id="Col69972931" label="Well defined row of postocular setae" states="states307456"/>
+      <char id="Col69972932" label="Postocular setae" states="states307456"/>
+      <char id="Col69972933" label="Antennal flagellomere 1" states="states307456"/>
+      <char id="Col69972934" label="Pedicel" states="states307456"/>
+      <char id="Col69972935" label="Pedicel" states="states307456"/>
+      <char id="Col69972936" label="Pedicel flagellum articulation" states="states307456"/>
+      <char id="Col69972937" label="Antennal pedicel of male" states="states307456"/>
+      <char id="Col69972938" label="Flagellum segments not including arista stylus" states="states307456"/>
+      <char id="Col69972939" label="Antennal flagellum of male" states="states307456"/>
+      <char id="Col69972940" label="Antennae consisting of enlarged first flagellomere with apically elonged 1 to 3 segment arista" states="states307456"/>
+      <char id="Col69972941" label="Arista insertion" states="states307456"/>
+      <char id="Col69972942" label="Arista" states="states307456"/>
+      <char id="Col69972943" label="Mouthparts and digestive track" states="states307456"/>
+      <char id="Col69972944" label="Labrum Adult mouthparts" states="states307456"/>
+      <char id="Col69972945" label="Hyoid sclerite" states="states307456"/>
+      <char id="Col69972946" label="Adult hypopharynx" states="states307456"/>
+      <char id="Col69972947" label="Galea" states="states307456"/>
+      <char id="Col69972948" label="Lacinia" states="states307456"/>
+      <char id="Col69972949" label="Maxillary palpus segments" states="states307456"/>
+      <char id="Col69972950" label="Anterior mandibular condyle" states="states307456"/>
+      <char id="Col69972951" label="Glossae and paraglossae of labium" states="states307456"/>
+      <char id="Col69972952" label="Segments of labial palps" states="states307456"/>
+      <char id="Col69972953" label="Labellum" states="states307456"/>
+      <char id="Col69972954" label="Labellum" states="states307456"/>
+      <char id="Col69972955" label="Pseudotracheae" states="states307456"/>
+      <char id="Col69972956" label="Pseudotracheae" states="states307456"/>
+      <char id="Col69972957" label="Prestomal teeth" states="states307456"/>
+      <char id="Col69972958" label="Precervicale" states="states307456"/>
+      <char id="Col69972959" label="Prothorax" states="states307456"/>
+      <char id="Col69972960" label="Postpronotal callus" states="states307456"/>
+      <char id="Col69972961" label="Postpronotal ie humeral setae" states="states307456"/>
+      <char id="Col69972962" label="Proepisternal depression" states="states307456"/>
+      <char id="Col69972963" label="Proepisternum ie propleuron" states="states307456"/>
+      <char id="Col69972964" label="Proepisternum dorsally" states="states307456"/>
+      <char id="Col69972965" label="Episternal lobe" states="states307456"/>
+      <char id="Col69972966" label="Precoxal bridge" states="states307456"/>
+      <char id="Col69972967" label="Scutum" states="states307456"/>
+      <char id="Col69972968" label="Scutum with transverse suture" states="states307456"/>
+      <char id="Col69972969" label="Scutal transverse suture" states="states307456"/>
+      <char id="Col69972970" label="Scutum acrostichal bristles" states="states307456"/>
+      <char id="Col69972971" label="Supra alar bristles" states="states307456"/>
+      <char id="Col69972972" label="Post alar bristles" states="states307456"/>
+      <char id="Col69972973" label="Dorsocentral bristles" states="states307456"/>
+      <char id="Col69972974" label="Pleural suture of mesothorax between episternum and epimeron" states="states307456"/>
+      <char id="Col69972975" label="Posterior anepisternal bristles" states="states307456"/>
+      <char id="Col69972976" label="Katepisternal bristles" states="states307456"/>
+      <char id="Col69972977" label="Katepisternal bristles" states="states307456"/>
+      <char id="Col69972978" label="Anepimeral bristle" states="states307456"/>
+      <char id="Col69972979" label="Anepimeron" states="states307456"/>
+      <char id="Col69972980" label="Notopleuron" states="states307456"/>
+      <char id="Col69972981" label="Notopleural bristles" states="states307456"/>
+      <char id="Col69972982" label="Posterior notopleural bristle" states="states307456"/>
+      <char id="Col69972983" label="Postalar wall" states="states307456"/>
+      <char id="Col69972984" label="Postalar wall" states="states307456"/>
+      <char id="Col69972985" label="Scutellum" states="states307456"/>
+      <char id="Col69972986" label="Paired scutellar outgrowths" states="states307456"/>
+      <char id="Col69972987" label="Scutellar bristles" states="states307456"/>
+      <char id="Col69972988" label="Scutellar bristles" states="states307456"/>
+      <char id="Col69972989" label="Lower surface of scutellum" states="states307456"/>
+      <char id="Col69972990" label="Suprasquamal ridge" states="states307456"/>
+      <char id="Col69972991" label="Suprasquamal ridge" states="states307456"/>
+      <char id="Col69972992" label="Dorsal Anatergite setosity" states="states307456"/>
+      <char id="Col69972993" label="Subscutellum" states="states307456"/>
+      <char id="Col69972994" label="Greater ampulla" states="states307456"/>
+      <char id="Col69972995" label="Meron" states="states307456"/>
+      <char id="Col69972996" label="Meral setae" states="states307456"/>
+      <char id="Col69972997" label="Coxopleural streak" states="states307456"/>
+      <char id="Col69972998" label="Metepisternum" states="states307456"/>
+      <char id="Col69972999" label="Metathoracic spiracle with fringe composed of dense hairs" states="states307456"/>
+      <char id="Col69973000" label="Metathoracic spiracle with opercular lappet" states="states307456"/>
+      <char id="Col69973001" label="Postspiracular area" states="states307456"/>
+      <char id="Col69973002" label="Metasternal area" states="states307456"/>
+      <char id="Col69973003" label="Meron of metacoxa" states="states307456"/>
+      <char id="Col69973004" label="Postmetacoxal bridge" states="states307456"/>
+      <char id="Col69973005" label="Metasternal furca" states="states307456"/>
+      <char id="Col69973006" label="Wings on mesothorax" states="states307456"/>
+      <char id="Col69973007" label="Wings on metathorax" states="states307456"/>
+      <char id="Col69973008" label="Wings of female" states="states307456"/>
+      <char id="Col69973009" label="Upper calypter" states="states307456"/>
+      <char id="Col69973010" label="Upper calypter" states="states307456"/>
+      <char id="Col69973011" label="Hair-like setae well developed in the fold between upper and lower calypter or in that region of the axillary wing membrane" states="states307456"/>
+      <char id="Col69973012" label="Lower calypter" states="states307456"/>
+      <char id="Col69973013" label="Lower calypter" states="states307456"/>
+      <char id="Col69973014" label="Stem vein ie basal section of R upper surface" states="states307456"/>
+      <char id="Col69973015" label="Costa" states="states307456"/>
+      <char id="Col69973016" label="Basal costal bristles" states="states307456"/>
+      <char id="Col69973017" label="Basal costal bristles" states="states307456"/>
+      <char id="Col69973018" label="Costal setae" states="states307456"/>
+      <char id="Col69973019" label="Humeral crossvein" states="states307456"/>
+      <char id="Col69973020" label="Humeral break" states="states307456"/>
+      <char id="Col69973021" label="Costal break" states="states307456"/>
+      <char id="Col69973022" label="Wing vein Sc course" states="states307456"/>
+      <char id="Col69973023" label="Subcosta termination" states="states307456"/>
+      <char id="Col69973024" label="Subcosta" states="states307456"/>
+      <char id="Col69973025" label="Crossvein sc to r" states="states307456"/>
+      <char id="Col69973026" label="Crossvein sc to r" states="states307456"/>
+      <char id="Col69973027" label="Wing vein R1 configuration opposite end of subcosta" states="states307456"/>
+      <char id="Col69973028" label="Rs" states="states307456"/>
+      <char id="Col69973029" label="Rs origin" states="states307456"/>
+      <char id="Col69973030" label="Rs" states="states307456"/>
+      <char id="Col69973031" label="Radial vein distribution" states="states307456"/>
+      <char id="Col69973032" label="Wing vein R2plus3" states="states307456"/>
+      <char id="Col69973033" label="Node at base of vein R4plus5" states="states307456"/>
+      <char id="Col69973034" label="R 4 plus 5" states="states307456"/>
+      <char id="Col69973035" label="Fork of wing vein R4plus5" states="states307456"/>
+      <char id="Col69973036" label="Crossvein r to r between the first and second radial veins usually named R2" states="states307456"/>
+      <char id="Col69973037" label="R4+5 or R5  and M1" states="states307456"/>
+      <char id="Col69973038" label="R4+5 or R5 and M" states="states307456"/>
+      <char id="Col69973039" label="M" states="states307456"/>
+      <char id="Col69973040" label="Vein M" states="states307456"/>
+      <char id="Col69973041" label="M2" states="states307456"/>
+      <char id="Col69973042" label="Wing vein M3" states="states307456"/>
+      <char id="Col69973043" label="Discal or discal medial cell" states="states307456"/>
+      <char id="Col69973044" label="Discal cell" states="states307456"/>
+      <char id="Col69973045" label="Basal or basal medial cell" states="states307456"/>
+      <char id="Col69973046" label="Crossvein bm to cu" states="states307456"/>
+      <char id="Col69973047" label="Relative lengths of basal and discal cells" states="states307456"/>
+      <char id="Col69973048" label="Spurious vein" states="states307456"/>
+      <char id="Col69973049" label="Wing venation" states="states307456"/>
+      <char id="Col69973050" label="CuA1" states="states307456"/>
+      <char id="Col69973051" label="Vein CuA2" states="states307456"/>
+      <char id="Col69973052" label="Shape of distal side of cup" states="states307456"/>
+      <char id="Col69973053" label="Veins CuA2 and A1" states="states307456"/>
+      <char id="Col69973054" label="First anal vein ie A1 plus CuA2" states="states307456"/>
+      <char id="Col69973055" label="First anal vein ie A1 plus CuA2" states="states307456"/>
+      <char id="Col69973056" label="Vein A2 sensu Stary (2008)" states="states307456"/>
+      <char id="Col69973057" label="Alular fold sensu Stary (2008) (=A2 MND)" states="states307456"/>
+      <char id="Col69973058" label="Vein A3" states="states307456"/>
+      <char id="Col69973059" label="Veins of wing" states="states307456"/>
+      <char id="Col69973060" label="Halteres on metathorax" states="states307456"/>
+      <char id="Col69973061" label="Halteres on mesothorax" states="states307456"/>
+      <char id="Col69973062" label="Mid coxal prong" states="states307456"/>
+      <char id="Col69973063" label="Hind coxa" states="states307456"/>
+      <char id="Col69973064" label="Hind surface of hind coxa" states="states307456"/>
+      <char id="Col69973065" label="Femora" states="states307456"/>
+      <char id="Col69973066" label="Hind femur" states="states307456"/>
+      <char id="Col69973067" label="Fore tibial spurs" states="states307456"/>
+      <char id="Col69973068" label="Mid tibial spur" states="states307456"/>
+      <char id="Col69973069" label="Hind tibial spurs" states="states307456"/>
+      <char id="Col69973070" label="Preapical dorsal tibial bristle" states="states307456"/>
+      <char id="Col69973071" label="Male fore tarsus or fore and hind tarsus" states="states307456"/>
+      <char id="Col69973072" label="Hind tarsus" states="states307456"/>
+      <char id="Col69973073" label="Last tarsomere of male" states="states307456"/>
+      <char id="Col69973074" label="Arolium" states="states307456"/>
+      <char id="Col69973075" label="Mediolobus" states="states307456"/>
+      <char id="Col69973076" label="Setiform empodium" states="states307456"/>
+      <char id="Col69973077" label="Abdominal spiracles" states="states307456"/>
+      <char id="Col69973078" label="Abdominal spiracles in segments 1 to 5" states="states307456"/>
+      <char id="Col69973079" label="Female spiracles" states="states307456"/>
+      <char id="Col69973080" label="T1 to 2" states="states307456"/>
+      <char id="Col69973081" label="First abdominal tergite" states="states307456"/>
+      <char id="Col69973082" label="Abdominal tergite 1" states="states307456"/>
+      <char id="Col69973083" label="Abdominal tergite 2" states="states307456"/>
+      <char id="Col69973084" label="Sternite 2 degree of exposition" states="states307456"/>
+      <char id="Col69973085" label="Abdominal plaques" states="states307456"/>
+      <char id="Col69973086" label="Abdominal spiracle 8 in males" states="states307456"/>
+      <char id="Col69973087" label="Rectal papillae" states="states307456"/>
+      <char id="Col69973088" label="Female abdominal segments 5 to 8 directed" states="states307456"/>
+      <char id="Col69973089" label="Apical female abdominal segments" states="states307456"/>
+      <char id="Col69973090" label="Female T6 and ST6" states="states307456"/>
+      <char id="Col69973091" label="Female T7 ST7" states="states307456"/>
+      <char id="Col69973092" label="Female segment 7" states="states307456"/>
+      <char id="Col69973093" label="Ovipositor shape" states="states307456"/>
+      <char id="Col69973094" label="Alpha setae sensilla trichodea on ovipositor sternites" states="states307456"/>
+      <char id="Col69973095" label="T8" states="states307456"/>
+      <char id="Col69973096" label="ST8" states="states307456"/>
+      <char id="Col69973097" label="Sclerites of segment 8 of female" states="states307456"/>
+      <char id="Col69973098" label="Female abdominal tergite 9" states="states307456"/>
+      <char id="Col69973099" label="Sternite 9" states="states307456"/>
+      <char id="Col69973100" label="Sternite 9" states="states307456"/>
+      <char id="Col69973101" label="Female T10" states="states307456"/>
+      <char id="Col69973102" label="T10" states="states307456"/>
+      <char id="Col69973103" label="T10" states="states307456"/>
+      <char id="Col69973104" label="Sternite 10" states="states307456"/>
+      <char id="Col69973105" label="Segment 10" states="states307456"/>
+      <char id="Col69973106" label="hypoproct" states="states307456"/>
+      <char id="Col69973107" label="Female Cerci" states="states307456"/>
+      <char id="Col69973108" label="Female Cerci" states="states307456"/>
+      <char id="Col69973109" label="Female cercus" states="states307456"/>
+      <char id="Col69973110" label="Cerci" states="states307456"/>
+      <char id="Col69973111" label="Female cerci" states="states307456"/>
+      <char id="Col69973112" label="Cercus" states="states307456"/>
+      <char id="Col69973113" label="Spermathecae" states="states307456"/>
+      <char id="Col69973114" label="Spermathecal ducts" states="states307456"/>
+      <char id="Col69973115" label="Branching of spermathecal ducts" states="states307456"/>
+      <char id="Col69973116" label="Sperm pump" states="states307456"/>
+      <char id="Col69973117" label="Female accessory glands" states="states307456"/>
+      <char id="Col69973118" label="Ventral receptacle" states="states307456"/>
+      <char id="Col69973119" label="Male tergite 6" states="states307456"/>
+      <char id="Col69973120" label="Syntergosternite comprised of at least fusion of sternite and tergite of segment 8" states="states307456"/>
+      <char id="Col69973121" label="Syntergosternite" states="states307456"/>
+      <char id="Col69973122" label="Vasa deferentia configuration" states="states307456"/>
+      <char id="Col69973123" label="Accessory gland" states="states307456"/>
+      <char id="Col69973124" label="Epididymis" states="states307456"/>
+      <char id="Col69973125" label="Male terminalia resting position" states="states307456"/>
+      <char id="Col69973126" label="Hypopygium" states="states307456"/>
+      <char id="Col69973127" label="Position of hypopygium" states="states307456"/>
+      <char id="Col69973128" label="Epandrium articulation" states="states307456"/>
+      <char id="Col69973129" label="Epandrium" states="states307456"/>
+      <char id="Col69973130" label="Epandrium and hypandrium" states="states307456"/>
+      <char id="Col69973131" label="Hypandrium and gonocoxites" states="states307456"/>
+      <char id="Col69973132" label="Gonocoxal apodemes" states="states307456"/>
+      <char id="Col69973133" label="Postgonites" states="states307456"/>
+      <char id="Col69973134" label="Postgonal apodeme" states="states307456"/>
+      <char id="Col69973135" label="Gonostyli" states="states307456"/>
+      <char id="Col69973136" label="Gonostyli" states="states307456"/>
+      <char id="Col69973137" label="Gonostyli articulation" states="states307456"/>
+      <char id="Col69973138" label="Aedeagal complex" states="states307456"/>
+      <char id="Col69973139" label="Parameres" states="states307456"/>
+      <char id="Col69973140" label="Aedeagus or phallus" states="states307456"/>
+      <char id="Col69973141" label="Aedeagus or phallus" states="states307456"/>
+      <char id="Col69973142" label="Phallus" states="states307456"/>
+      <char id="Col69973143" label="Phallus dorsal wall of distiphallic tube" states="states307456"/>
+      <char id="Col69973144" label="Phallus dorsal plate" states="states307456"/>
+      <char id="Col69973145" label="Phallus apical part of dorsolateral processes" states="states307456"/>
+      <char id="Col69973146" label="Phallus armature small sclerotized teeth on distalmost ventral and ventrolateral surfaces" states="states307456"/>
+      <char id="Col69973147" label="Phallus" states="states307456"/>
+      <char id="Col69973148" label="Phallus" states="states307456"/>
+      <char id="Col69973149" label="Mesohypophallic sclerotisation mid ventrally along distiphallus" states="states307456"/>
+      <char id="Col69973150" label="Phallapodeme" states="states307456"/>
+      <char id="Col69973151" label="Phallapodeme" states="states307456"/>
+      <char id="Col69973152" label="Ejaculatory apodeme" states="states307456"/>
+      <char id="Col69973153" label="Ejaculatory apodeme" states="states307456"/>
+      <char id="Col69973154" label="Ejaculatory apodeme" states="states307456"/>
+      <char id="Col69973155" label="Lateral ejaculatory processes" states="states307456"/>
+      <char id="Col69973156" label="Lateral ejaculatory processes" states="states307456"/>
+      <char id="Col69973157" label="Ventral plate" states="states307456"/>
+      <char id="Col69973158" label="Aedeagal tines" states="states307456"/>
+      <char id="Col69973159" label="Male tergite 10" states="states307456"/>
+      <char id="Col69973160" label="Male sternite 10" states="states307456"/>
+      <char id="Col69973161" label="Surstyli composed of epandrium dorsally and bacilliform sclerites ventrally" states="states307456"/>
+      <char id="Col69973162" label="Surstylar position" states="states307456"/>
+      <char id="Col69973163" label="Subepandrial sclerite" states="states307456"/>
+      <char id="Col69973164" label="Male cerci" states="states307456"/>
+      <char id="Col69973165" label="Cerci" states="states307456"/>
+      <char id="Col69973166" label="Cerci" states="states307456"/>
+      <set char="Col69973035 Col69973036 Col69973037 Col69973038 Col69973039 Col69973041 Col69973040 Col69973043 Col69973042 Col69973045 Col69972921 Col69973044 Col69972920 Col69972923 Col69972922 Col69972925 Col69972924 Col69972927 Col69972926 Col69972929 Col69972928 Col69973048 Col69973049 Col69973046 Col69973047 Col69973052 Col69973051 Col69973050 Col69972932 Col69973056 Col69972931 Col69973055 Col69973054 Col69972930 Col69973053 Col69972936 Col69972935 Col69972934 Col69972933 Col69972939 Col69972938 Col69972937 Col69972987 Col69972986 Col69972985 Col69972984 Col69972908 Col69972983 Col69972982 Col69972909 Col69972981 Col69972980 Col69973057 Col69973058 Col69973059 Col69972989 Col69972988 Col69973065 Col69973064 Col69973067 Col69973066 Col69973061 Col69973060 Col69973063 Col69973062 Col69972905 Col69972990 Col69972904 Col69972907 Col69972906 Col69972901 Col69972900 Col69972903 Col69972902 Col69972996 Col69972995 Col69972998 Col69972997 Col69972992 Col69972991 Col69972994 Col69972919 Col69972993 Col69972999 Col69973068 Col69973069 Col69972910 Col69973078 Col69973077 Col69973076 Col69973075 Col69973074 Col69973073 Col69973072 Col69973071 Col69972918 Col69973070 Col69972917 Col69972916 Col69972915 Col69972914 Col69972913 Col69972912 Col69972911 Col69972968 Col69972969 Col69972966 Col69972967 Col69972960 Col69972961 Col69972964 Col69972965 Col69972962 Col69972963 Col69973000 Col69973001 Col69972977 Col69973005 Col69972978 Col69973004 Col69973003 Col69972979 Col69973002 Col69973009 Col69973008 Col69973007 Col69973006 Col69972970 Col69972971 Col69972972 Col69972973 Col69972974 Col69972975 Col69972976 Col69973011 Col69973012 Col69973010 Col69973018 Col69973017 Col69972948 Col69972949 Col69973019 Col69973014 Col69972946 Col69972947 Col69973013 Col69972944 Col69973016 Col69972945 Col69973015 Col69972942 Col69972943 Col69972940 Col69972941 Col69973020 Col69973021 Col69973022 Col69973023 Col69972959 Col69973029 Col69973086 Col69973087 Col69973028 Col69972955 Col69973084 Col69973027 Col69973085 Col69973026 Col69972956 Col69972957 Col69973082 Col69973025 Col69973083 Col69972958 Col69973024 Col69972951 Col69973080 Col69972952 Col69973081 Col69972953 Col69972954 Col69972950 Col69973033 Col69973034 Col69973031 Col69973032 Col69973030 Col69973079" id="set307884" label="adultext"/>
+      <set char="Col69973035 Col69973036 Col69973037 Col69973038 Col69973039 Col69973041 Col69973040 Col69973043 Col69973042 Col69973045 Col69973044 Col69973048 Col69973049 Col69973046 Col69973047 Col69973052 Col69973051 Col69973050 Col69973056 Col69973055 Col69973054 Col69973053 Col69972987 Col69973156 Col69973157 Col69972986 Col69972985 Col69973158 Col69973159 Col69972984 Col69972983 Col69972982 Col69972981 Col69972980 Col69973057 Col69973058 Col69973059 Col69972989 Col69972988 Col69973065 Col69973064 Col69973067 Col69973066 Col69973061 Col69973060 Col69973063 Col69973062 Col69973160 Col69972990 Col69973162 Col69973161 Col69973164 Col69973163 Col69973166 Col69973165 Col69972996 Col69972995 Col69972998 Col69972997 Col69972992 Col69972991 Col69972994 Col69972993 Col69972999 Col69973068 Col69973069 Col69973078 Col69973077 Col69973076 Col69973075 Col69973074 Col69973073 Col69973072 Col69973071 Col69973070 Col69972968 Col69972969 Col69972966 Col69972967 Col69973139 Col69972960 Col69972961 Col69973138 Col69973135 Col69972964 Col69973134 Col69972965 Col69973137 Col69972962 Col69973136 Col69972963 Col69973141 Col69973142 Col69973143 Col69973144 Col69973140 Col69973000 Col69973001 Col69972977 Col69973005 Col69972978 Col69973004 Col69973003 Col69972979 Col69973002 Col69973009 Col69973008 Col69973007 Col69973006 Col69972970 Col69972971 Col69972972 Col69973149 Col69973148 Col69972973 Col69972974 Col69973147 Col69972975 Col69973146 Col69972976 Col69973145 Col69973154 Col69973155 Col69973152 Col69973153 Col69973150 Col69973151 Col69973011 Col69973012 Col69973010 Col69973018 Col69973017 Col69972948 Col69973019 Col69972949 Col69972946 Col69973014 Col69972947 Col69973013 Col69972944 Col69973016 Col69972945 Col69973015 Col69972942 Col69973113 Col69972943 Col69973112 Col69973115 Col69972940 Col69972941 Col69973114 Col69973117 Col69973116 Col69973119 Col69973118 Col69973120 Col69973121 Col69973122 Col69973020 Col69973021 Col69973022 Col69973023 Col69972959 Col69973029 Col69973028 Col69973027 Col69972955 Col69973026 Col69972956 Col69972957 Col69973025 Col69973024 Col69972958 Col69973126 Col69972951 Col69973125 Col69972952 Col69972953 Col69973124 Col69973123 Col69972954 Col69973129 Col69973128 Col69973127 Col69972950 Col69973132 Col69973133 Col69973130 Col69973131 Col69973033 Col69973034 Col69973031 Col69973032 Col69973030 Col69973100 Col69972921 Col69972920 Col69972923 Col69972922 Col69972925 Col69972924 Col69972927 Col69972926 Col69972929 Col69972928 Col69973111 Col69973110 Col69973105 Col69973106 Col69973107 Col69973108 Col69973101 Col69972932 Col69972931 Col69973102 Col69972930 Col69973103 Col69973104 Col69972936 Col69972935 Col69972934 Col69972933 Col69973109 Col69972939 Col69972938 Col69972937 Col69972908 Col69972909 Col69972905 Col69972904 Col69972907 Col69972906 Col69972901 Col69972900 Col69972903 Col69972902 Col69972919 Col69972910 Col69972918 Col69972917 Col69972916 Col69972915 Col69972914 Col69972913 Col69972912 Col69972911 Col69973097 Col69973098 Col69973099 Col69973093 Col69973094 Col69973095 Col69973096 Col69973090 Col69973091 Col69973092 Col69973088 Col69973089 Col69973086 Col69973087 Col69973084 Col69973085 Col69973082 Col69973083 Col69973080 Col69973081 Col69973079" id="set307885" label="adult"/>
+      <set char="Col69973035 Col69973036 Col69973037 Col69973038 Col69973039 Col69973041 Col69973040 Col69973043 Col69973042 Col69973045 Col69973044 Col69973009 Col69973008 Col69973007 Col69973006 Col69973048 Col69973049 Col69973046 Col69973047 Col69973052 Col69973051 Col69973050 Col69973056 Col69973055 Col69973054 Col69973053 Col69973011 Col69973012 Col69973010 Col69973018 Col69973017 Col69973019 Col69973014 Col69973013 Col69973016 Col69973015 Col69973057 Col69973058 Col69973059 Col69973020 Col69973021 Col69973022 Col69973023 Col69973029 Col69973028 Col69973027 Col69973026 Col69973025 Col69973024 Col69973033 Col69973034 Col69973031 Col69973032 Col69973030" id="set307886" label="extwing"/>
+      <set char="Col69972880 Col69972831 Col69972830 Col69972833 Col69972832 Col69972878 Col69972879 Col69972874 Col69972839 Col69972838 Col69972875 Col69972876 Col69972877 Col69972835 Col69972870 Col69972834 Col69972871 Col69972837 Col69972872 Col69972836 Col69972873 Col69972822 Col69972821 Col69972820 Col69972869 Col69972867 Col69972868 Col69972865 Col69972866 Col69972829 Col69972828 Col69972863 Col69972827 Col69972864 Col69972826 Col69972861 Col69972862 Col69972825 Col69972824 Col69972860 Col69972823 Col69972814 Col69972815 Col69972812 Col69972813 Col69972818 Col69972819 Col69972816 Col69972817 Col69972810 Col69972811 Col69972851 Col69972850 Col69972853 Col69972852 Col69972855 Col69972854 Col69972857 Col69972856 Col69972859 Col69972858 Col69972801 Col69972802 Col69972803 Col69972804 Col69972805 Col69972806 Col69972807 Col69972808 Col69972796 Col69972799 Col69972798 Col69972797 Col69972800 Col69972840 Col69972844 Col69972843 Col69972842 Col69972841 Col69972883 Col69972848 Col69972884 Col69972809 Col69972847 Col69972881 Col69972846 Col69972882 Col69972845 Col69972887 Col69972888 Col69972885 Col69972849 Col69972886" id="set307887" label="larva"/>
+      <set char="Col69973100 Col69973139 Col69973138 Col69973135 Col69973134 Col69973137 Col69973136 Col69973141 Col69973142 Col69973143 Col69973144 Col69973140 Col69973111 Col69973149 Col69973110 Col69973148 Col69973147 Col69973146 Col69973145 Col69973105 Col69973154 Col69973155 Col69973106 Col69973152 Col69973107 Col69973153 Col69973108 Col69973150 Col69973101 Col69973102 Col69973151 Col69973103 Col69973104 Col69973109 Col69973097 Col69973156 Col69973157 Col69973098 Col69973158 Col69973099 Col69973159 Col69973093 Col69973094 Col69973095 Col69973096 Col69973113 Col69973090 Col69973112 Col69973115 Col69973091 Col69973092 Col69973114 Col69973117 Col69973116 Col69973119 Col69973118 Col69973120 Col69973121 Col69973122 Col69973160 Col69973162 Col69973161 Col69973164 Col69973163 Col69973166 Col69973165 Col69973088 Col69973089 Col69973126 Col69973125 Col69973124 Col69973123 Col69973129 Col69973128 Col69973127 Col69973132 Col69973133 Col69973130 Col69973131" id="set307888" label="adultint"/>
+      <set char="Col69972921 Col69972920 Col69972923 Col69972922 Col69972925 Col69972924 Col69972927 Col69972926 Col69972929 Col69972928 Col69972932 Col69972931 Col69972930 Col69972936 Col69972935 Col69972934 Col69972933 Col69972939 Col69972938 Col69972937 Col69972987 Col69972986 Col69972985 Col69972984 Col69972983 Col69972908 Col69972909 Col69972982 Col69972981 Col69972980 Col69972989 Col69972988 Col69973065 Col69973064 Col69973067 Col69973066 Col69973061 Col69973060 Col69973063 Col69973062 Col69972905 Col69972990 Col69972904 Col69972907 Col69972906 Col69972901 Col69972900 Col69972903 Col69972902 Col69972996 Col69972995 Col69972998 Col69972997 Col69972992 Col69972991 Col69972994 Col69972919 Col69972993 Col69972999 Col69973068 Col69973069 Col69972910 Col69973078 Col69973077 Col69973076 Col69973075 Col69973074 Col69973073 Col69973072 Col69973071 Col69972918 Col69973070 Col69972917 Col69972916 Col69972915 Col69972914 Col69972913 Col69972912 Col69972911 Col69972968 Col69972969 Col69972966 Col69972967 Col69972960 Col69972961 Col69972964 Col69972965 Col69972962 Col69972963 Col69973000 Col69973001 Col69972977 Col69973005 Col69972978 Col69973004 Col69973003 Col69972979 Col69973002 Col69972970 Col69972971 Col69972972 Col69972973 Col69972974 Col69972975 Col69972976 Col69972948 Col69972949 Col69972946 Col69972947 Col69972944 Col69972945 Col69972942 Col69972943 Col69972940 Col69972941 Col69972959 Col69973086 Col69973087 Col69972955 Col69973084 Col69973085 Col69972956 Col69972957 Col69973082 Col69973083 Col69972958 Col69973080 Col69972951 Col69973081 Col69972952 Col69972953 Col69972954 Col69972950 Col69973079" id="set307889" label="extnonwing"/>
+      <set char="Col69973097 Col69973098 Col69973099 Col69973093 Col69973094 Col69973095 Col69973096 Col69973113 Col69973100 Col69973112 Col69973090 Col69973115 Col69973091 Col69973114 Col69973092 Col69973117 Col69973116 Col69973118 Col69973088 Col69973089 Col69973111 Col69973110 Col69973105 Col69973106 Col69973107 Col69973108 Col69973101 Col69973102 Col69973103 Col69973104 Col69973109" id="set307890" label="female"/>
+      <set char="Col69972889 Col69972891 Col69972890 Col69972892 Col69972893 Col69972894 Col69972895 Col69972896 Col69972897 Col69972898 Col69972899" id="set307891" label="pupa"/>
+      <set char="Col69973156 Col69973157 Col69973158 Col69973159 Col69973139 Col69973138 Col69973135 Col69973134 Col69973119 Col69973137 Col69973136 Col69973141 Col69973142 Col69973143 Col69973144 Col69973120 Col69973121 Col69973140 Col69973122 Col69973160 Col69973162 Col69973161 Col69973164 Col69973163 Col69973166 Col69973165 Col69973126 Col69973125 Col69973124 Col69973149 Col69973123 Col69973148 Col69973129 Col69973147 Col69973128 Col69973146 Col69973145 Col69973127 Col69973154 Col69973155 Col69973152 Col69973153 Col69973150 Col69973132 Col69973133 Col69973151 Col69973130 Col69973131" id="set307892" label="male"/>
+    </format>
+    <matrix>
+      <row id="Row1144027" otu="Tl889485">
+        <seq>101011102000??11?015001???100????1?10120000?001?1??00001000?1??101002100000?01211?11000020??00??0100?0005?1100100000?000?0?0000000000011000000200??0000112111101101010000110000111101?0011011001111100000100?001000101000?000?000000000001200001000100000000000002001010100110111100001010000000401?001000001000101100011000120?00000?000200101010?0111?0000??00000?0000100110?0000</seq>
+      </row>
+      <row id="Row1144028" otu="Tl889473">
+        <seq>100????00000??1110010101??02101200110000100?0000010000001011011111001000001100110?00101000??00??0100?0111?1003?0?000?000?0?00010101?0001001001010??0001110111100?0000?000010010000001?000??0?000?11000000100?001000101000?000?00000001?00120001?00000011?00?0000?0001?101000000000000010100000004011001000001000000000011000010?0??00?00005000000??0000010????????0?1??1?10000?0000</seq>
+      </row>
+      <row id="Row1144029" otu="Tl889490">
+        <seq>100????01000??10?0040000??0010???0000000000?000001101001000?000101001000000?00210?100010?0??00??0100?0001?1000000000?000?0?00010101?0000?00000000??0000110111100?0100?000100010110001?000??0?001?11000000100?0010?0101000?010?0000000010010??01?00010011?00?0000?0001010100000000000001100000000401?001000001000100000010000020?0?000?110000001010?0000100????????0?00?1?00000?0000</seq>
+      </row>
+      <row id="Row1144030" otu="Tl889480">
+        <seq>101011002010??110016001???100????1?10120000?001?1??00001000?1??101002000000?01210?11000020??00??0100?0001?0000110000?000?0?0100000010011000000200??0002112111110?01010000100000111101?0011011001011000000100?001100101100?000?000000000001201000000100000000000002001?101000002111000010100000004012001000001000100000011000130000000?000000111000?0111?0200??00000?0100000100?0000</seq>
+      </row>
+      <row id="Row1144031" otu="Tl889471">
+        <seq>100????01000??00?00?0000??000????0000000000?000001000001000?000101001000000?01200??0001000??00??0100?0001?1100100000?000?0?00000001?0010?00000000??0000110111100?0100?000110010110001?000??0?001?11000000100?001010101000?010?0000010010010??01?00010011?00?0000?0011010100000000000001100000000401?00100000000011??0001100003000??00?110000000110?0000100????????0?00?1?00000?0000</seq>
+      </row>
+      <row id="Row1144032" otu="Tl889474">
+        <seq>100????0??00??02?0000000??000????1?00000000?000001000001000?1??100000000?00?01000????00010??00??0000?0002?1000000000?000?0?00000001?0000?00000000??00000001110?0?0010?000001??0??0001?000??0?001010?00000100?000000000??0?000?0000000000013000001000000000000000?0000?000000000000000100000000004003001000000000100010?11000010?00000?1110000100?0?0000000????????0????1?00000?0000</seq>
+      </row>
+      <row id="Row1144033" otu="Tl889477">
+        <seq>101010002010??11?016001???100????1?10120000?000?1??00001000?1??101002000000?00210?11000020??10??0100?0001?1100100000?000?0?0000001011110?00000200??0000112111101001010000100000010101?0011011000?11100000100?001000101100?000?00000001?001200001002000100000000011001?10100000111100001010000010401?011000?02000101100011000030010000?000120101010?0111?0000??00000?0000000100?0000</seq>
+      </row>
+      <row id="Row1144034" otu="Tl889493">
+        <seq>100????01000??00?00?0000??0010???0000000000?000001101001000?000101001000000?01200?100010?0??00??0100?0001?1000000000?000?0?00010001?0000?00000000??0000110111100?0100?000110010110101?000??0?001?11000000100?001000101000?000?00000101?0010??01?00010011?11?0000?0011?11100000000000001100000000401?0010000010001000000100000???0??00?110000000110?0000100????????0?00?1?00100?0000</seq>
+      </row>
+      <row id="Row1144035" otu="Tl889482">
+        <seq>0??????????2111??016101?11??0????1?11?0?000?000?1??11000300?1??001002000000?01211020101120??11112100?0007?100010111101010120000101001011010110301000000112111101101011101100000011110?0011110001111000100000?0010001010010010?00111011?10010011?000001100001000043011?10101000010000001010001000411?011111102011?1??1?01100012??0011110?014011110101??1?0000??0100110021?001?102001</seq>
+      </row>
+      <row id="Row1144036" otu="Tl889463">
+        <seq>0??????????2111??016101?11??0????1?11?0?000?000?1??11000300?1??001002000000?01211020101120??11212100?000??10001011110101?0?0000100001010?00120301000000112111101101011101100000111101?0013110001011000000000?001010101000?010?00010101?00010001?000001100001000012011?10101000011100001010001000411?021100100011?1??1?011000020?0??01100014011110101??1?0000??0100110021?001?102001</seq>
+      </row>
+      <row id="Row1144037" otu="Tl889466">
+        <seq>100????00000??13100?0000??00101110110000?00?0000010000010010011101101000010?0022??????00?0??00??01010010??1003?0?000?000?0?00010001?0000?00001010??0000110111100?0000?000010010000001?000??0?000?11000000100?001000101000?010?00100101?00111001?00000111?00?0000?01?1?11100000000000001010000000401?001000000000101010011000020?01000?110000000010?0000010????????0?1??1?00100?0000</seq>
+      </row>
+      <row id="Row1144038" otu="Tl889470">
+        <seq>100????00000??00?00?0000??10110000110110100?100001000001?00?011101002100000?00110??0101000??00??0100?000??1003?0?000?000?0?00010001?0000?00000000??0000110111100?0000?000010010000001?000??0?000?11000000100?001000101000?000?01000200?00030000000000001?00?0000?0001?10100000000000001100000000401?00100000000011??1?0110001??????00?010020000000?0010100????????0?00?1?00100?0000</seq>
+      </row>
+      <row id="Row1144039" otu="Tl889460">
+        <seq>100????01000??11000?0000??10110000110100100?100001001000100?000101001000000?01200??0101000??00??0100?000??1000000000?000?0?00000?11?0000?00000100??0000112111100?0100?000100010000101?000??0?000?11000000100?001000100??0?010?00000201?0010??01?00010011?11?0000?0011?11100000000000001100000000401?011?0000100011??0?011000010?0?000?000000000110?1??0100????????0?00?1?00100?0000</seq>
+      </row>
+      <row id="Row1144040" otu="Tl889486">
+        <seq>0??????????2111?0016101?01??0????1?11?0?000?000?1??11000300?1??001002000000?01211020101120??11102100?0007?1100101111011111200101010010111101103010100101121111011110111011001011111103101101100111101010100110110001010111111110111001?10010011?0010111000010000130110101010100111000010101010003111031000000011?1??1?111000030100011100014011110111??1?0001011111110021?0011102010</seq>
+      </row>
+      <row id="Row1144041" otu="Tl889479">
+        <seq>100????00000??0110060000??000????1?00000000?00001?000001000?000101000000?00?01200????000?0??00??0100???00?1??1000000?000?0?000?00?1?0000?00000000??0000110?100?0?0000?000001??0??0?01?0?0??0??????????0??10??0010111????????????????????????????????????????????????????000000011100001000000000010300100000000101??00011000010?02000?1010000000?0?0110?00????????0????1?00000?0000</seq>
+      </row>
+      <row id="Row1144042" otu="Tl889464">
+        <seq>0??????????2111?0016101?01??0????1?11?0?000?000?1??11000?00?1??001002000000?01211020101120??11112100?000??1100101111011111210101010010111101103010000101121111011110111001001011111103001101000110100010000100010001010110011110110001?10010001?0000011000010000130010101010000111000010101010000111031000002011?1??1?111000030?00011100014011110101??1?0000??0110110021?0011102011</seq>
+      </row>
+      <row id="Row1144043" otu="Tl889495">
+        <seq>0??????????2111?0016101?11??0????1?11?0?000?000?1??11000300?1??001002000000?01211120101120??11112100?0006010001011112101{01}0?0010101001011010120301010000112111101101011100100000111100?0011110001111000000?00?0010?0101000?01100011?101?00010001?00000110011?000012011?101000000101100010100010004111011000002011?1??1?00?????20?00101100014011110101??1?0000??0100110021?001?102000</seq>
+      </row>
+      <row id="Row1144044" otu="Tl889496">
+        <seq>100????10100??1110050000??000????0110100000?000001001000100?1?0101004010000?0012??????00?0??00??11111100??1000000000?000?0?00010101?00?0?00000000??0000110111100?0000?000000110000001?000??0?000?11000010100?0010?0101000?000?00000101?00120000000010011?00?0000?0001?10100000000000001??0000000401?001000001000100000011000030000000?000200001110?0000102????????0?00?1?00100?0000</seq>
+      </row>
+      <row id="Row1144045" otu="Tl889475">
+        <seq>0??????????2001??016101?10??0????1?11?0?000?000?1??11000000?1??001002000000?01211?20101020??11402100?0005?0100100000?000?0?00001001?1010?00020301000000112111101101010100100000000101?0010?10000?01000000100?0110001010010010?00000001?00110001?0010001000001000020010101000000111000010000011004111031000000011?00000011000030?0?011000014111110101??1?0000??0100110021?0010102000</seq>
+      </row>
+      <row id="Row1144046" otu="Tl889484">
+        <seq>111100000000??110006001???100????1?10120000?001?1??00001000?1??101002000000?11210?10100020??00??0100?0001?1000100000?000?0?0001010000011000000100??0000111111101101010000100000000101?0010?11000?11101000100?011000101000?000?000000000001200000010100000000010011001010100000000000001100000000401?001000001000101000010000130000000???0200001010?0000100????????0?0100000100?0000</seq>
+      </row>
+      <row id="Row1144047" otu="Tl889465">
+        <seq>0??????????2111?0016101?01??0????1?11?0?000?000?1??11000?00?1??101002000000?01211020101020??11102100?0007?1000101111011111200101010010111101103010000101121111011010111001001011111102101101000111100210100110010001010111011110111001?10010011?0010111000010000130110101010000111000010101010002111031000000011?1??1?011000030?00011100014011110111??1?00011?1111110021?0011102011</seq>
+      </row>
+      <row id="Row1144048" otu="Tl889452">
+        <seq>0??????????2111?0016101?01??0????1?11?0?000?000?1??11000?00?1??10?002000000?0121???01010211111112100?000??1000101100?11111200101010010110101103010100101121111011110111011001011111104001101000111100010010100110001010110011100111001?00010001?001001100001000013011010101000011100001010001000411101100010?011?1??1?011000020?00011100014011110101??1?0000??1100111??1?0011102000</seq>
+      </row>
+      <row id="Row1144049" otu="Tl889476">
+        <seq>100????02010??131006001???100????1?101210012010?1??00011000?1??101002000000?01210?00101020??00??0100?000{3456}01103?0?000?000?0?00010001?0001000000100??0000112111101101010000100000000101?0010?11000?11001000100?2111001010010000?000000000001200001001100000000000002001?101010000111000011000000104013001000001000101000011010030010000?110000121120?0000100????????0?0100201100?1000</seq>
+      </row>
+      <row id="Row1144050" otu="Tl889481">
+        <seq>100????02000??121005001???100????1?10120000?000?1??00100210?1??101012000000?01210?10110020??01??0100?000{456}01000100000?000?0?0001000010010?00000100??0000112111101101010000110000000101?0010?11000?11101000100?011000101000?010?000000000001211100000100001000000022001010100000011100001100000000401?021000000000100000010001130010000?000000001120?0101?0100??10000?0001?00000?0000</seq>
+      </row>
+      <row id="Row1144051" otu="Tl889458">
+        <seq>0??????????1001??016101??0??0????1?11?3?000?000?1??11000300?1??101002000000?01211?20101020??11502100?000??10001010112000?1300101001?101100002030110000011211110110100?100100001101101?0011010001011000000100?001000100?00?001000000001?00010011?000000110001000010001?101000000111100010101010004111001000000010100000011000020?0?001000004001110101??1?0000??0100110021?0010100000</seq>
+      </row>
+      <row id="Row1144052" otu="Tl889497">
+        <seq>100????01000??00?00?0000??000????0000000000?000001101001000?000101001000000?01200??0001000??00??0100?000??1003?0?000?000?0?00000?01?0000?00000020??0000110111100?0100?000110010000001?000??0?000?11000000100?001000100??0?010?01000101?01?00?01?00000011?11?0000?01?1?11100000011100001100000000401?00100100000011??00011000020?0??00?110200001110?0000100????????0?00?1?00100?0000</seq>
+      </row>
+      <row id="Row1144053" otu="Tl889459">
+        <seq>0??????????1001??016101?10??0????1?11?0?000?000?1??11000300?1??001002000000?01211?20101020??11402100?0007?0000100011100101110101011?101100002030110000011211110110100?100101??0111101?000??10001011100000100?001000100?00?011000000001?00011101?00000010011?000002001?111000000100000010101011004111021000000011?00000011000020?0?0011000040111100?1??1?0000??0100100021?0010102000</seq>
+      </row>
+      <row id="Row1144054" otu="Tl889455">
+        <seq>100????0??00?????00000????000????1?00000000?000101000000000?000100000000?00?01000????00010??00??0000?0002??0010000000000?0?000100?010000?00000000??000?0000010?0?0000?000001??0??0001?000??0?000?10?00000100?000000000??0?000?000000001001300?1?00000001?00?0000?0000?10000000011000000000000000000000100000001001??1??0?????10?00000?0000000000?0?1??1?0000??00000?1??1?00000?01??</seq>
+      </row>
+      <row id="Row1144055" otu="Tl889468">
+        <seq>0??????????2111??016101?11??0????1?11?0?000?000?1??11000300?1??001002000000?01211?20101?20??11112100?0006010001011112101?100000101001011000010301010000112111101101011100100001111110?0011110001111000000000?011000101000?011000001001?00010001?000001100001000013011?10101000000010001010001000011?031100102011?1??1?01100003010??1110?014011110101??1?0000??01?0110021?001?102000</seq>
+      </row>
+      <row id="Row1144056" otu="Tl889457">
+        <seq>0??????????2111?0016101?01??0????1?11?0?000?000?1??11000300?1??101002000000?01211020101120??11102100?0007?1200101111011111200101010010110101103010100101121111011110111001001011111104001101000111100010000100010001010110011110111001?10010001?0010111000010000130110101010000111000010101110000111031000002011?1??1?111000030?00011101014011110101??1?0000??0110110021?0011102010</seq>
+      </row>
+      <row id="Row1144057" otu="Tl889483">
+        <seq>100????01?00???310060000??000????1?00000000?000000000001000?000100000000?00?00000??00000?0??00??0000?000??1000000000?000?0?00000101?0010?00000000??00001101110?0?0010?000001??0??0001?000??0?000?10?00000100?000000000??0?000?00000001?0012000001000000000000000?0000?000000000000000000000000004???001000000000000000010000010?0??0101110000000?0?0000000????????0?1??1?00000?0000</seq>
+      </row>
+      <row id="Row1144058" otu="Tl889467">
+        <seq>100????00000??1110050000??100????0110000010?0000010000010010011101000010010?0022??????00?0??00??0100?0000?1003?0?000?000?0?000000?1?0010?00000000??1??????????????000?000000??0000001?000??0?000?11000000100?0010?0110??0?000?01000001?01?00????0??00111?11?0001??1?1?10100001011100001101000000401?001000000?0001??1?01100000??0??00???00000001?0?0100100????????0?1??1?00110?0000</seq>
+      </row>
+      <row id="Row1144059" otu="Tl889489">
+        <seq>100????02010??12?016001?????0????1?10120000?000?1??00001000?1??101002000000?01200??1101020??10??0100?0002?1111100000?000?0?000??0?010010?00000300??1??????????????1010000111??0000101?0010?11000?11100000100?0010001010011010?01000000000100???????00111?11?0000?0011010100000011100001100100000401?02100000000011??00011000020?00000?000130101110?1??1?0000??00000?0000000100?0000</seq>
+      </row>
+      <row id="Row1144060" otu="Tl889491">
+        <seq>1010110020100011?016001???100????1?10130000?000?1??10001000?1??101002010010?01210?10101010??10??0100?0002?1100101110?000?0?00000001?0011000000300??0100112111101001011000100001111100?0011010001111010000120?001000101000?0010000000000001200000000000100000000023011?101000000111000010100000004011001000000010101000011000010?00000?00000011111101??1?0000??00000?0011?00100?2000</seq>
+      </row>
+      <row id="Row1144061" otu="Tl889469">
+        <seq>0??????????2001??016101?10??0????1?11?0?000?000?1??11000000?1??001002000000?01211220101020??11112100?000611003?00000?100?0?0000101001010?01010200??0000112111101101011100100000000101?0010?10000?11000000000?001100101000?010?00000000100010001?0010011000010000020010101000002111000010101011004111131000000011?1?01?011000030?0??01100014011110101??1?0000??0100110021?0011102000</seq>
+      </row>
+      <row id="Row1144062" otu="Tl889462">
+        <seq>0??????????2021??016101?11??0????1?11?0?000?000?1??11000400?1??101002000000?01211020101?20??11112100?000??100010111101113120010101001011000010301000000112111101101011100100000111110?0011010001111000000000?001010101000?011100011101?00010001?00000110??0?000012011?11101000000000001010001000411?0101101?20?????????1000002??0011110?014011110101??1?0000??0100110021?001?102000</seq>
+      </row>
+      <row id="Row1144063" otu="Tl889453">
+        <seq>100????00000??12100?0000??01100000000000000?000001000000100?010101001000010?00110??100?000??00??0100?000??1003?0?000?000?0?000100?1?0000?00000000??0000110111100?0010?000000110000001?000??0?000?11000000100?001000101000?000?0000000010013000000000000000000000?0001?10100000000000011100000000401?0010000000001??????1000003000??00???0000001110?0000002????????0?00?1?00110?0000</seq>
+      </row>
+      <row id="Row1144064" otu="Tl889492">
+        <seq>0??????????2111?0016101?01??0????1?11?0?000?000?1??11000300?1??001002000000?012110201111210011112100?0007?1200101111011111200101010010111101103010100101121111011110111001001011111102101101100111101010110110110001010111011110111001?10010011?0010111000010000130110101010100111000010101010003111031000100011?1??1?011000030100011100014011110111??1?00011?1101110021?0011102010</seq>
+      </row>
+      <row id="Row1144065" otu="Tl889494">
+        <seq>0??????????2111?0016101?01??0????1?11?0?000?000?1??11000?00?1??101002000000?01211020101120??11112100?000??100010111101111120010101001011010110301010010112111101111011101100101111110500110100011110001000010001000100?10?011100111001?10010001?0000011000010000130010101010000111000010101010000111031000002011?1??1?011000030?00011101014011110101??1?0000??0110110021?0011102010</seq>
+      </row>
+      <row id="Row1144066" otu="Tl889461">
+        <seq>0??????????2111?0016101?11??0????1?11?0?000?000?1??11000300?1??001002000000?01211120101120??11112100?000??10001011110101?0?0000100001010?00010301000000112111101001011101100000101111?0011110001011000000000?001000101000?011100010001?00010001?000001100001000013011?101010000100100010100010004111031000112011?1??1?011000020?0?111100014011110101??1?0000??0100110021?001?102000</seq>
+      </row>
+      <row id="Row1144067" otu="Tl889454">
+        <seq>0??????????2111??016101?11??0????1?11?0?000?000?1??11000300?1??001002000000?01211?20101?20??11112100?000??1000101111210130?1010101001011000010301000000112111101101011100100001111100?0011110001111000000000?001000100?00?01110011?001?00010101?00000110011?0001??011?11100000010000101010001000411?02?000100011?1????01100003010??1110?014011110101??1?0000??0100110021?001?10200?</seq>
+      </row>
+      <row id="Row1144068" otu="Tl889488">
+        <seq>100????02000??01000?0000??10110000110110100?10001?001000100?000101001100000?01210?10101000??00??0100?0001?1000100000?000?0?00000001?0001000000000??0000110111100?0100?000100010011001?000??10001011000000100?001000101000?010?00000000000110101?0000000000000000?0001010100000000000001100000000401?00100000100011??00011000010?0??00?010020020110?0010100????????0?00?1?00000?0000</seq>
+      </row>
+      <row id="Row1144069" otu="Tl889487">
+        <seq>0??????????2111??016101?11??0????1?11?0?000?000?1??11000300?1??001002000000?01211020101120??11?12100?000??1000101010?111?0?0000101????11001010301000000112111101101110100110000000100?0110?10011011100100000?001100100?10?010??0000001?00010001?00000110011?000012011?10101000011100001010001000411?031100102011?0001?011000020?00101100014011110101??1?0000??0100110021?001?102000</seq>
+      </row>
+      <row id="Row1144070" otu="Tl889478">
+        <seq>0??????????2111??016101?11??0????1?11?0?000?000?1??11000300?1???01002000000?01211020101?20??11112100?000611000101111011130?0010101001011000010301000000112111101101011110100000011101?0011010001111000000000?001000101000?01110001?201?00010001?00000110011?0011??1?1?10100000011100001010001000411?03??001???1????????11000020?00111100014011110101??1?0000??0100110021?001?10200?</seq>
+      </row>
+      <row id="Row1144071" otu="Tl889472">
+        <seq>100????10010??11?0010000??000????0110000000?00000000100??010011101002000000?00210?1010?000??00??0100?0001?1003?0?000?000?0?00000001?0000?00000000??000011011110110010?000000110000001?000??0?000?11000000100?001000101000?000?00000300100120001?1000000000000000?00000101000000000000000000000004011001001000000100000011000130000000?100000000110?000??00????????0?00?1?00110?0000</seq>
+      </row>
+      <row id="Row1144072" otu="Tl889456">
+        <seq>100????01000???1000?0000??10110000110110100?100001001000100?000101002100000?00210?1010?000??00??0100?0000?1000100000?000?0?00010001?0000?00000000??0000110111100?0010?000000110000001?000??0?000?11000000100?001000101000?000?0000000010012000001000000000000000?0000010100000000000000000000000401?00100100100010000001100013000?000?100000000010?0000100????????0?00?1?00100?0000</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb19542" id="Tb19542" label="Chosen MPT from FLYTREE morphology matrix" otus="Tls28812" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@2a2866ad $Rev: 1040 $" datatype="xsd:string" id="meta307895" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S13373" id="meta307894" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr59132" id="Tr59132" label="FLYTREE" xsi:type="nex:FloatTree">
+      <meta content="46" datatype="xsd:integer" id="meta307901" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta307900" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta307899" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta307898" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13373" id="meta307897" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn9606415"/>
+      <node id="Tn9606394"/>
+      <node id="Tn9606375"/>
+      <node id="Tn9606381" label="Micropteryx calthella" otu="Tl889455"/>
+      <node id="Tn9606395"/>
+      <node id="Tn9606410" label="Bittacus mastrillii" otu="Tl889474"/>
+      <node id="Tn9606385" label="Nannochorista philpotti" otu="Tl889483"/>
+      <node id="Tn9606335" label="Ctenocephalides felis" otu="Tl889479"/>
+      <node id="Tn9606354"/>
+      <node id="Tn9606358"/>
+      <node id="Tn9606382"/>
+      <node id="Tn9606364" label="Anopheles gambiae" otu="Tl889473"/>
+      <node id="Tn9606368" label="Chironomus tepperi" otu="Tl889466"/>
+      <node id="Tn9606367"/>
+      <node id="Tn9606348"/>
+      <node id="Tn9606363"/>
+      <node id="Tn9606366"/>
+      <node id="Tn9606336"/>
+      <node id="Tn9606404"/>
+      <node id="Tn9606384"/>
+      <node id="Tn9606350"/>
+      <node id="Tn9606332"/>
+      <node id="Tn9606414"/>
+      <node id="Tn9606328" label="Arachnocampa flava" otu="Tl889490"/>
+      <node id="Tn9606357" label="Bibio longipes" otu="Tl889471"/>
+      <node id="Tn9606351" label="Bradysia tilicola" otu="Tl889493"/>
+      <node id="Tn9606345" label="Mayetiola destructor" otu="Tl889497"/>
+      <node id="Tn9606333" label="Coboldia fuscipes" otu="Tl889460"/>
+      <node id="Tn9606374" label="Sylvicola fenestralis" otu="Tl889488"/>
+      <node id="Tn9606369" label="Trichocera brevicornis" otu="Tl889456"/>
+      <node id="Tn9606346" label="Clogmia albipunctata" otu="Tl889470"/>
+      <node id="Tn9606397"/>
+      <node id="Tn9606380"/>
+      <node id="Tn9606377"/>
+      <node id="Tn9606400"/>
+      <node id="Tn9606353"/>
+      <node id="Tn9606391"/>
+      <node id="Tn9606372"/>
+      <node id="Tn9606362" label="Asilus crabroniformis" otu="Tl889480"/>
+      <node id="Tn9606412" label="Acrosathe novella" otu="Tl889485"/>
+      <node id="Tn9606341" label="Bombylius major" otu="Tl889477"/>
+      <node id="Tn9606408"/>
+      <node id="Tn9606383" label="Oreogeton obscurus" otu="Tl889491"/>
+      <node id="Tn9606343"/>
+      <node id="Tn9606338"/>
+      <node id="Tn9606326" label="Episyrphus balteatus" otu="Tl889475"/>
+      <node id="Tn9606331"/>
+      <node id="Tn9606393" label="Physocephala marginata" otu="Tl889469"/>
+      <node id="Tn9606401"/>
+      <node id="Tn9606359"/>
+      <node id="Tn9606361" label="Chamaepsila hennigi" otu="Tl889463"/>
+      <node id="Tn9606402"/>
+      <node id="Tn9606403"/>
+      <node id="Tn9606390"/>
+      <node id="Tn9606373"/>
+      <node id="Tn9606342"/>
+      <node id="Tn9606378"/>
+      <node id="Tn9606337" label="Drosophila melanogaster" otu="Tl889495"/>
+      <node id="Tn9606376" label="Spelobia bifrons" otu="Tl889454"/>
+      <node id="Tn9606339" label="Thaumatomyia glabra" otu="Tl889478"/>
+      <node id="Tn9606399" label="Phytomyza ilicicola" otu="Tl889462"/>
+      <node id="Tn9606405" label="Minettia flaveola" otu="Tl889468"/>
+      <node id="Tn9606386"/>
+      <node id="Tn9606347" label="Ceratitis capitata" otu="Tl889482"/>
+      <node id="Tn9606409"/>
+      <node id="Tn9606371"/>
+      <node id="Tn9606406"/>
+      <node id="Tn9606379"/>
+      <node id="Tn9606360"/>
+      <node id="Tn9606344"/>
+      <node id="Tn9606387" label="Cochliomyia macellaria" otu="Tl889486"/>
+      <node id="Tn9606365" label="Sarcophaga bullata" otu="Tl889492"/>
+      <node id="Tn9606356" label="Exorista larvarum" otu="Tl889465"/>
+      <node id="Tn9606352" label="Musca domestica" otu="Tl889457"/>
+      <node id="Tn9606388" label="Delia radicum" otu="Tl889464"/>
+      <node id="Tn9606325" label="Scathophaga stercoraria" otu="Tl889494"/>
+      <node id="Tn9606355" label="Glossina morsitans" otu="Tl889452"/>
+      <node id="Tn9606349" label="Sepsis cynipsea" otu="Tl889461"/>
+      <node id="Tn9606392" label="Teleopsis dalmanni" otu="Tl889487"/>
+      <node id="Tn9606396"/>
+      <node id="Tn9606340" label="Megaselia scalaris" otu="Tl889459"/>
+      <node id="Tn9606389" label="Lonchoptera lutea" otu="Tl889458"/>
+      <node id="Tn9606411" label="Ogcodes basalis" otu="Tl889489"/>
+      <node id="Tn9606329" label="Haematopota pluvialis" otu="Tl889476"/>
+      <node id="Tn9606334" label="Hermetia illucens" otu="Tl889481"/>
+      <node id="Tn9606407" label="Exeretonevra angustifrons" otu="Tl889484"/>
+      <node id="Tn9606413"/>
+      <node id="Tn9606370" label="Edwardsina gigantea" otu="Tl889496"/>
+      <node id="Tn9606327" label="Protoplasa fitchii" otu="Tl889453"/>
+      <node id="Tn9606398" label="Tipula abdominalis" otu="Tl889472"/>
+      <node id="Tn9606330" label="Nymphomyia dolichopeza" otu="Tl889467"/>
+      <edge id="edge307904" source="Tn9606415" target="Tn9606394"/>
+      <edge id="edge307906" source="Tn9606394" target="Tn9606375"/>
+      <edge id="edge307908" source="Tn9606375" target="Tn9606381"/>
+      <edge id="edge307910" source="Tn9606375" target="Tn9606395"/>
+      <edge id="edge307912" source="Tn9606395" target="Tn9606410"/>
+      <edge id="edge307914" source="Tn9606395" target="Tn9606385"/>
+      <edge id="edge307916" source="Tn9606394" target="Tn9606335"/>
+      <edge id="edge307918" source="Tn9606415" target="Tn9606354"/>
+      <edge id="edge307920" source="Tn9606354" target="Tn9606358"/>
+      <edge id="edge307922" source="Tn9606358" target="Tn9606382"/>
+      <edge id="edge307924" source="Tn9606382" target="Tn9606364"/>
+      <edge id="edge307926" source="Tn9606382" target="Tn9606368"/>
+      <edge id="edge307928" source="Tn9606358" target="Tn9606367"/>
+      <edge id="edge307930" source="Tn9606367" target="Tn9606348"/>
+      <edge id="edge307932" source="Tn9606348" target="Tn9606363"/>
+      <edge id="edge307934" source="Tn9606363" target="Tn9606366"/>
+      <edge id="edge307936" source="Tn9606366" target="Tn9606336"/>
+      <edge id="edge307938" source="Tn9606336" target="Tn9606404"/>
+      <edge id="edge307940" source="Tn9606404" target="Tn9606384"/>
+      <edge id="edge307942" source="Tn9606384" target="Tn9606350"/>
+      <edge id="edge307944" source="Tn9606350" target="Tn9606332"/>
+      <edge id="edge307946" source="Tn9606332" target="Tn9606414"/>
+      <edge id="edge307948" source="Tn9606414" target="Tn9606328"/>
+      <edge id="edge307950" source="Tn9606414" target="Tn9606357"/>
+      <edge id="edge307952" source="Tn9606332" target="Tn9606351"/>
+      <edge id="edge307954" source="Tn9606350" target="Tn9606345"/>
+      <edge id="edge307956" source="Tn9606384" target="Tn9606333"/>
+      <edge id="edge307958" source="Tn9606404" target="Tn9606374"/>
+      <edge id="edge307960" source="Tn9606336" target="Tn9606369"/>
+      <edge id="edge307962" source="Tn9606366" target="Tn9606346"/>
+      <edge id="edge307964" source="Tn9606363" target="Tn9606397"/>
+      <edge id="edge307966" source="Tn9606397" target="Tn9606380"/>
+      <edge id="edge307968" source="Tn9606380" target="Tn9606377"/>
+      <edge id="edge307970" source="Tn9606377" target="Tn9606400"/>
+      <edge id="edge307972" source="Tn9606400" target="Tn9606353"/>
+      <edge id="edge307974" source="Tn9606353" target="Tn9606391"/>
+      <edge id="edge307976" source="Tn9606391" target="Tn9606372"/>
+      <edge id="edge307978" source="Tn9606372" target="Tn9606362"/>
+      <edge id="edge307980" source="Tn9606372" target="Tn9606412"/>
+      <edge id="edge307982" source="Tn9606391" target="Tn9606341"/>
+      <edge id="edge307984" source="Tn9606353" target="Tn9606408"/>
+      <edge id="edge307986" source="Tn9606408" target="Tn9606383"/>
+      <edge id="edge307988" source="Tn9606408" target="Tn9606343"/>
+      <edge id="edge307990" source="Tn9606343" target="Tn9606338"/>
+      <edge id="edge307992" source="Tn9606338" target="Tn9606326"/>
+      <edge id="edge307994" source="Tn9606338" target="Tn9606331"/>
+      <edge id="edge307996" source="Tn9606331" target="Tn9606393"/>
+      <edge id="edge307998" source="Tn9606331" target="Tn9606401"/>
+      <edge id="edge308000" source="Tn9606401" target="Tn9606359"/>
+      <edge id="edge308002" source="Tn9606359" target="Tn9606361"/>
+      <edge id="edge308004" source="Tn9606359" target="Tn9606402"/>
+      <edge id="edge308006" source="Tn9606402" target="Tn9606403"/>
+      <edge id="edge308008" source="Tn9606403" target="Tn9606390"/>
+      <edge id="edge308010" source="Tn9606390" target="Tn9606373"/>
+      <edge id="edge308012" source="Tn9606373" target="Tn9606342"/>
+      <edge id="edge308014" source="Tn9606342" target="Tn9606378"/>
+      <edge id="edge308016" source="Tn9606378" target="Tn9606337"/>
+      <edge id="edge308018" source="Tn9606378" target="Tn9606376"/>
+      <edge id="edge308020" source="Tn9606342" target="Tn9606339"/>
+      <edge id="edge308022" source="Tn9606373" target="Tn9606399"/>
+      <edge id="edge308024" source="Tn9606390" target="Tn9606405"/>
+      <edge id="edge308026" source="Tn9606403" target="Tn9606386"/>
+      <edge id="edge308028" source="Tn9606386" target="Tn9606347"/>
+      <edge id="edge308030" source="Tn9606386" target="Tn9606409"/>
+      <edge id="edge308032" source="Tn9606409" target="Tn9606371"/>
+      <edge id="edge308034" source="Tn9606371" target="Tn9606406"/>
+      <edge id="edge308036" source="Tn9606406" target="Tn9606379"/>
+      <edge id="edge308038" source="Tn9606379" target="Tn9606360"/>
+      <edge id="edge308040" source="Tn9606360" target="Tn9606344"/>
+      <edge id="edge308042" source="Tn9606344" target="Tn9606387"/>
+      <edge id="edge308044" source="Tn9606344" target="Tn9606365"/>
+      <edge id="edge308046" source="Tn9606360" target="Tn9606356"/>
+      <edge id="edge308048" source="Tn9606379" target="Tn9606352"/>
+      <edge id="edge308050" source="Tn9606406" target="Tn9606388"/>
+      <edge id="edge308052" source="Tn9606371" target="Tn9606325"/>
+      <edge id="edge308054" source="Tn9606409" target="Tn9606355"/>
+      <edge id="edge308056" source="Tn9606402" target="Tn9606349"/>
+      <edge id="edge308058" source="Tn9606401" target="Tn9606392"/>
+      <edge id="edge308060" source="Tn9606343" target="Tn9606396"/>
+      <edge id="edge308062" source="Tn9606396" target="Tn9606340"/>
+      <edge id="edge308064" source="Tn9606396" target="Tn9606389"/>
+      <edge id="edge308066" source="Tn9606400" target="Tn9606411"/>
+      <edge id="edge308068" source="Tn9606377" target="Tn9606329"/>
+      <edge id="edge308070" source="Tn9606380" target="Tn9606334"/>
+      <edge id="edge308072" source="Tn9606397" target="Tn9606407"/>
+      <edge id="edge308074" source="Tn9606348" target="Tn9606413"/>
+      <edge id="edge308076" source="Tn9606413" target="Tn9606370"/>
+      <edge id="edge308078" source="Tn9606413" target="Tn9606327"/>
+      <edge id="edge308080" source="Tn9606367" target="Tn9606398"/>
+      <edge id="edge308082" source="Tn9606354" target="Tn9606330"/>
+    </tree>
+  </trees>
+</nex:nexml>

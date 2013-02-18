@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S13115" generator="org.nexml.model.impl.DocumentImpl" id="S13115" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Sun Feb 17 16:13:45 EST 2013" datatype="xsd:string" id="meta619495" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@4a295857 $Rev: 1060 $" datatype="xsd:string" id="meta619494" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="4" datatype="xsd:string" id="meta619493" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="158" datatype="xsd:string" id="meta619492" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Zoological Journal of the Linnean Society" datatype="xsd:string" id="meta619491" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Zoological Journal of the Linnean Society" datatype="xsd:string" id="meta619490" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="Carnosaurs; Meglosauroidea; Spinosauroidea; dinosaur endemism; faunal turnover; phylogeny; tetanuran evolution" datatype="xsd:string" id="meta619489" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="882-935" datatype="xsd:string" id="meta619488" property="prism:pageRange" xsi:type="nex:LiteralMeta"/>
+  <meta content="935" datatype="xsd:string" id="meta619487" property="prism:endingPage" xsi:type="nex:LiteralMeta"/>
+  <meta content="882" datatype="xsd:string" id="meta619486" property="prism:startingPage" xsi:type="nex:LiteralMeta"/>
+  <meta content="10.1111/j.1096-3642.2009.00569.x" datatype="xsd:string" id="meta619485" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2010" datatype="xsd:string" id="meta619484" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Benson R.B." datatype="xsd:string" id="meta619483" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Benson R.B." datatype="xsd:string" id="meta619482" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="A description of Megalosaurus bucklandii (Dinosauria: Theropoda) from the Bathonian of the UK and the relationships of Middle Jurassic theropods." datatype="xsd:string" id="meta619481" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Benson R.B. 2010. A description of Megalosaurus bucklandii (Dinosauria: Theropoda) from the Bathonian of the UK and the relationships of Middle Jurassic theropods. Zoological Journal of the Linnean Society, 158(4): 882-935." datatype="xsd:string" id="meta619480" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-07-23" datatype="xsd:string" id="meta619479" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-08-15" datatype="xsd:string" id="meta619478" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012-08-15" datatype="xsd:string" id="meta619477" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="A description of Megalosaurus bucklandii (Dinosauria: Theropoda) from the Bathonian of the UK and the relationships of Middle Jurassic theropods." datatype="xsd:string" id="meta619476" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta619475" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="13115" datatype="xsd:string" id="meta619474" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta619472" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls26974" id="Tls26974" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1d65bb9d $Rev: 1040 $" datatype="xsd:string" id="meta619497" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl851063" id="Tl851063" label="Syntarsus kayentakae outgroup">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619499" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851097" id="Tl851097" label="Abelisauridae">
+      <meta content="614134" datatype="xsd:long" id="meta619504" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="821210" datatype="xsd:long" id="meta619503" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5434538" id="meta619502" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619501" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851090" id="Tl851090" label="Ceratosaurus">
+      <meta content="611274" datatype="xsd:long" id="meta619509" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817112" datatype="xsd:long" id="meta619508" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4106780" id="meta619507" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619506" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851082" id="Tl851082" label="Dilophosaurus">
+      <meta content="611302" datatype="xsd:long" id="meta619514" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817140" datatype="xsd:long" id="meta619513" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6730910" id="meta619512" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619511" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851094" id="Tl851094" label="Acrocanthosaurus">
+      <meta content="611261" datatype="xsd:long" id="meta619519" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817099" datatype="xsd:long" id="meta619518" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4421281" id="meta619517" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619516" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851101" id="Tl851101" label="Afrovenator">
+      <meta content="611304" datatype="xsd:long" id="meta619524" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817142" datatype="xsd:long" id="meta619523" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4600060" id="meta619522" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619521" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851073" id="Tl851073" label="Allosaurus">
+      <meta content="611323" datatype="xsd:long" id="meta619529" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817161" datatype="xsd:long" id="meta619528" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4063622" id="meta619527" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619526" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851068" id="Tl851068" label="Baryonyx">
+      <meta content="611324" datatype="xsd:long" id="meta619534" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817162" datatype="xsd:long" id="meta619533" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4533073" id="meta619532" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619531" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851084" id="Tl851084" label="Chuandongocoelurus">
+      <meta content="613770" datatype="xsd:long" id="meta619539" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820823" datatype="xsd:long" id="meta619538" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4539883" id="meta619537" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619536" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851092" id="Tl851092" label="Condorraptor">
+      <meta content="613777" datatype="xsd:long" id="meta619544" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820830" datatype="xsd:long" id="meta619543" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5438259" id="meta619542" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619541" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851072" id="Tl851072" label="Dubreuillosaurus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619546" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851070" id="Tl851070" label="Eocarcharia">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619548" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851091" id="Tl851091" label="Eustreptospondylus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619550" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851061" id="Tl851061" label="Fukuiraptor">
+      <meta content="613776" datatype="xsd:long" id="meta619555" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820829" datatype="xsd:long" id="meta619554" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4618193" id="meta619553" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619552" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851069" id="Tl851069" label="Carcharodontosaurus">
+      <meta content="611255" datatype="xsd:long" id="meta619560" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817093" datatype="xsd:long" id="meta619559" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4103556" id="meta619558" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619557" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851065" id="Tl851065" label="Giganotosaurus">
+      <meta content="611256" datatype="xsd:long" id="meta619565" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817094" datatype="xsd:long" id="meta619564" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4598652" id="meta619563" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619562" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851093" id="Tl851093" label="Mapusaurus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619567" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851096" id="Tl851096" label="Irritator">
+      <meta content="611297" datatype="xsd:long" id="meta619572" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817135" datatype="xsd:long" id="meta619571" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4600446" id="meta619570" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619569" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851066" id="Tl851066" label="Lourinhanosaurus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619574" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851088" id="Tl851088" label="Magnosaurus">
+      <meta content="613767" datatype="xsd:long" id="meta619579" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820820" datatype="xsd:long" id="meta619578" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4230506" id="meta619577" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619576" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851076" id="Tl851076" label="Marshosaurus">
+      <meta content="613766" datatype="xsd:long" id="meta619584" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820819" datatype="xsd:long" id="meta619583" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4505124" id="meta619582" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619581" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851100" id="Tl851100" label="Megalosaurus">
+      <meta content="613773" datatype="xsd:long" id="meta619589" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820826" datatype="xsd:long" id="meta619588" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4234935" id="meta619587" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619586" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851098" id="Tl851098" label="Megalosaurus hesperis">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619591" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851074" id="Tl851074" label="Megaraptor">
+      <meta content="613779" datatype="xsd:long" id="meta619596" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820832" datatype="xsd:long" id="meta619595" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4608571" id="meta619594" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619593" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851079" id="Tl851079" label="Metriacanthosaurus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619598" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851095" id="Tl851095" label="Monolophosaurus">
+      <meta content="611312" datatype="xsd:long" id="meta619603" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817150" datatype="xsd:long" id="meta619602" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4564374" id="meta619601" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619600" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851081" id="Tl851081" label="Neovenator">
+      <meta content="611301" datatype="xsd:long" id="meta619608" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817139" datatype="xsd:long" id="meta619607" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4604167" id="meta619606" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619605" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851099" id="Tl851099" label="Piatnitzkysaurus">
+      <meta content="611296" datatype="xsd:long" id="meta619613" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817134" datatype="xsd:long" id="meta619612" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4574822" id="meta619611" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619610" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851086" id="Tl851086" label="Piveteausaurus">
+      <meta content="613775" datatype="xsd:long" id="meta619618" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820828" datatype="xsd:long" id="meta619617" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4514688" id="meta619616" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619615" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851087" id="Tl851087" label="Poekilopleuron">
+      <meta content="613774" datatype="xsd:long" id="meta619623" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820827" datatype="xsd:long" id="meta619622" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4304791" id="meta619621" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619620" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851080" id="Tl851080" label="Sinraptor">
+      <meta content="607505" datatype="xsd:long" id="meta619628" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="811341" datatype="xsd:long" id="meta619627" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4584792" id="meta619626" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619625" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851078" id="Tl851078" label="Spinosaurus">
+      <meta content="613338" datatype="xsd:long" id="meta619633" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820355" datatype="xsd:long" id="meta619632" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4349153" id="meta619631" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619630" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851071" id="Tl851071" label="Streptospondylus">
+      <meta content="613778" datatype="xsd:long" id="meta619638" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820831" datatype="xsd:long" id="meta619637" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4355875" id="meta619636" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619635" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851077" id="Tl851077" label="Suchomimus">
+      <meta content="611309" datatype="xsd:long" id="meta619643" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817147" datatype="xsd:long" id="meta619642" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4607991" id="meta619641" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619640" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851089" id="Tl851089" label="Torvosaurus">
+      <meta content="611318" datatype="xsd:long" id="meta619648" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817156" datatype="xsd:long" id="meta619647" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4589791" id="meta619646" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619645" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851085" id="Tl851085" label="Tyrannotitan">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619650" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851064" id="Tl851064" label="Xuanhanosaurus">
+      <meta content="613771" datatype="xsd:long" id="meta619655" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820824" datatype="xsd:long" id="meta619654" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4594037" id="meta619653" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619652" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851062" id="Tl851062" label="Chilantaisaurus">
+      <meta content="613337" datatype="xsd:long" id="meta619660" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="820354" datatype="xsd:long" id="meta619659" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4454690" id="meta619658" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619657" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851075" id="Tl851075" label="Compsognathus">
+      <meta content="611313" datatype="xsd:long" id="meta619665" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="817151" datatype="xsd:long" id="meta619664" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:4123015" id="meta619663" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619662" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851083" id="Tl851083" label="Guanlong">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619667" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl851067" id="Tl851067" label="Tanycolagreus">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619669" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M13828" id="M13828" label="Character Matrix" otus="Tls26974" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:StandardSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@6c515b62 $Rev: 1056 $" datatype="xsd:string" id="meta619675" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="13828" datatype="xsd:long" id="meta619674" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="213" datatype="xsd:integer" id="meta619673" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="41" datatype="xsd:integer" id="meta619672" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="Standard" datatype="xsd:string" id="meta619671" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states619676">
+        <state id="Dcs351599" label="3" symbol="3"/>
+        <state id="Dcs351601" label="2" symbol="2"/>
+        <state id="Dcs351600" label="1" symbol="1"/>
+        <state id="Dcs351602" label="0" symbol="0"/>
+        <uncertain_state_set id="uncertain_state_set619681" label="-" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set619682" label="?" symbol="?">
+          <member state="Dcs351602"/>
+          <member state="uncertain_state_set619681"/>
+          <member state="Dcs351599"/>
+          <member state="Dcs351600"/>
+          <member state="Dcs351601"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col41892957" states="states619676"/>
+      <char id="Col41892958" states="states619676"/>
+      <char id="Col41892959" states="states619676"/>
+      <char id="Col41892960" states="states619676"/>
+      <char id="Col41892961" states="states619676"/>
+      <char id="Col41892962" states="states619676"/>
+      <char id="Col41892963" states="states619676"/>
+      <char id="Col41892964" states="states619676"/>
+      <char id="Col41892965" states="states619676"/>
+      <char id="Col41892966" states="states619676"/>
+      <char id="Col41892967" states="states619676"/>
+      <char id="Col41892968" states="states619676"/>
+      <char id="Col41892969" states="states619676"/>
+      <char id="Col41892970" states="states619676"/>
+      <char id="Col41892971" states="states619676"/>
+      <char id="Col41892972" states="states619676"/>
+      <char id="Col41892973" states="states619676"/>
+      <char id="Col41892974" states="states619676"/>
+      <char id="Col41892975" states="states619676"/>
+      <char id="Col41892976" states="states619676"/>
+      <char id="Col41892977" states="states619676"/>
+      <char id="Col41892978" states="states619676"/>
+      <char id="Col41892979" states="states619676"/>
+      <char id="Col41892980" states="states619676"/>
+      <char id="Col41892981" states="states619676"/>
+      <char id="Col41892982" states="states619676"/>
+      <char id="Col41892983" states="states619676"/>
+      <char id="Col41892984" states="states619676"/>
+      <char id="Col41892985" states="states619676"/>
+      <char id="Col41892986" states="states619676"/>
+      <char id="Col41892987" states="states619676"/>
+      <char id="Col41892988" states="states619676"/>
+      <char id="Col41892989" states="states619676"/>
+      <char id="Col41892990" states="states619676"/>
+      <char id="Col41892991" states="states619676"/>
+      <char id="Col41892992" states="states619676"/>
+      <char id="Col41892993" states="states619676"/>
+      <char id="Col41892994" states="states619676"/>
+      <char id="Col41892995" states="states619676"/>
+      <char id="Col41892996" states="states619676"/>
+      <char id="Col41892997" states="states619676"/>
+      <char id="Col41892998" states="states619676"/>
+      <char id="Col41892999" states="states619676"/>
+      <char id="Col41893000" states="states619676"/>
+      <char id="Col41893001" states="states619676"/>
+      <char id="Col41893002" states="states619676"/>
+      <char id="Col41893003" states="states619676"/>
+      <char id="Col41893004" states="states619676"/>
+      <char id="Col41893005" states="states619676"/>
+      <char id="Col41893006" states="states619676"/>
+      <char id="Col41893007" states="states619676"/>
+      <char id="Col41893008" states="states619676"/>
+      <char id="Col41893009" states="states619676"/>
+      <char id="Col41893010" states="states619676"/>
+      <char id="Col41893011" states="states619676"/>
+      <char id="Col41893012" states="states619676"/>
+      <char id="Col41893013" states="states619676"/>
+      <char id="Col41893014" states="states619676"/>
+      <char id="Col41893015" states="states619676"/>
+      <char id="Col41893016" states="states619676"/>
+      <char id="Col41893017" states="states619676"/>
+      <char id="Col41893018" states="states619676"/>
+      <char id="Col41893019" states="states619676"/>
+      <char id="Col41893020" states="states619676"/>
+      <char id="Col41893021" states="states619676"/>
+      <char id="Col41893022" states="states619676"/>
+      <char id="Col41893023" states="states619676"/>
+      <char id="Col41893024" states="states619676"/>
+      <char id="Col41893025" states="states619676"/>
+      <char id="Col41893026" states="states619676"/>
+      <char id="Col41893027" states="states619676"/>
+      <char id="Col41893028" states="states619676"/>
+      <char id="Col41893029" states="states619676"/>
+      <char id="Col41893030" states="states619676"/>
+      <char id="Col41893031" states="states619676"/>
+      <char id="Col41893032" states="states619676"/>
+      <char id="Col41893033" states="states619676"/>
+      <char id="Col41893034" states="states619676"/>
+      <char id="Col41893035" states="states619676"/>
+      <char id="Col41893036" states="states619676"/>
+      <char id="Col41893037" states="states619676"/>
+      <char id="Col41893038" states="states619676"/>
+      <char id="Col41893039" states="states619676"/>
+      <char id="Col41893040" states="states619676"/>
+      <char id="Col41893041" states="states619676"/>
+      <char id="Col41893042" states="states619676"/>
+      <char id="Col41893043" states="states619676"/>
+      <char id="Col41893044" states="states619676"/>
+      <char id="Col41893045" states="states619676"/>
+      <char id="Col41893046" states="states619676"/>
+      <char id="Col41893047" states="states619676"/>
+      <char id="Col41893048" states="states619676"/>
+      <char id="Col41893049" states="states619676"/>
+      <char id="Col41893050" states="states619676"/>
+      <char id="Col41893051" states="states619676"/>
+      <char id="Col41893052" states="states619676"/>
+      <char id="Col41893053" states="states619676"/>
+      <char id="Col41893054" states="states619676"/>
+      <char id="Col41893055" states="states619676"/>
+      <char id="Col41893056" states="states619676"/>
+      <char id="Col41893057" states="states619676"/>
+      <char id="Col41893058" states="states619676"/>
+      <char id="Col41893059" states="states619676"/>
+      <char id="Col41893060" states="states619676"/>
+      <char id="Col41893061" states="states619676"/>
+      <char id="Col41893062" states="states619676"/>
+      <char id="Col41893063" states="states619676"/>
+      <char id="Col41893064" states="states619676"/>
+      <char id="Col41893065" states="states619676"/>
+      <char id="Col41893066" states="states619676"/>
+      <char id="Col41893067" states="states619676"/>
+      <char id="Col41893068" states="states619676"/>
+      <char id="Col41893069" states="states619676"/>
+      <char id="Col41893070" states="states619676"/>
+      <char id="Col41893071" states="states619676"/>
+      <char id="Col41893072" states="states619676"/>
+      <char id="Col41893073" states="states619676"/>
+      <char id="Col41893074" states="states619676"/>
+      <char id="Col41893075" states="states619676"/>
+      <char id="Col41893076" states="states619676"/>
+      <char id="Col41893077" states="states619676"/>
+      <char id="Col41893078" states="states619676"/>
+      <char id="Col41893079" states="states619676"/>
+      <char id="Col41893080" states="states619676"/>
+      <char id="Col41893081" states="states619676"/>
+      <char id="Col41893082" states="states619676"/>
+      <char id="Col41893083" states="states619676"/>
+      <char id="Col41893084" states="states619676"/>
+      <char id="Col41893085" states="states619676"/>
+      <char id="Col41893086" states="states619676"/>
+      <char id="Col41893087" states="states619676"/>
+      <char id="Col41893088" states="states619676"/>
+      <char id="Col41893089" states="states619676"/>
+      <char id="Col41893090" states="states619676"/>
+      <char id="Col41893091" states="states619676"/>
+      <char id="Col41893092" states="states619676"/>
+      <char id="Col41893093" states="states619676"/>
+      <char id="Col41893094" states="states619676"/>
+      <char id="Col41893095" states="states619676"/>
+      <char id="Col41893096" states="states619676"/>
+      <char id="Col41893097" states="states619676"/>
+      <char id="Col41893098" states="states619676"/>
+      <char id="Col41893099" states="states619676"/>
+      <char id="Col41893100" states="states619676"/>
+      <char id="Col41893101" states="states619676"/>
+      <char id="Col41893102" states="states619676"/>
+      <char id="Col41893103" states="states619676"/>
+      <char id="Col41893104" states="states619676"/>
+      <char id="Col41893105" states="states619676"/>
+      <char id="Col41893106" states="states619676"/>
+      <char id="Col41893107" states="states619676"/>
+      <char id="Col41893108" states="states619676"/>
+      <char id="Col41893109" states="states619676"/>
+      <char id="Col41893110" states="states619676"/>
+      <char id="Col41893111" states="states619676"/>
+      <char id="Col41893112" states="states619676"/>
+      <char id="Col41893113" states="states619676"/>
+      <char id="Col41893114" states="states619676"/>
+      <char id="Col41893115" states="states619676"/>
+      <char id="Col41893116" states="states619676"/>
+      <char id="Col41893117" states="states619676"/>
+      <char id="Col41893118" states="states619676"/>
+      <char id="Col41893119" states="states619676"/>
+      <char id="Col41893120" states="states619676"/>
+      <char id="Col41893121" states="states619676"/>
+      <char id="Col41893122" states="states619676"/>
+      <char id="Col41893123" states="states619676"/>
+      <char id="Col41893124" states="states619676"/>
+      <char id="Col41893125" states="states619676"/>
+      <char id="Col41893126" states="states619676"/>
+      <char id="Col41893127" states="states619676"/>
+      <char id="Col41893128" states="states619676"/>
+      <char id="Col41893129" states="states619676"/>
+      <char id="Col41893130" states="states619676"/>
+      <char id="Col41893131" states="states619676"/>
+      <char id="Col41893132" states="states619676"/>
+      <char id="Col41893133" states="states619676"/>
+      <char id="Col41893134" states="states619676"/>
+      <char id="Col41893135" states="states619676"/>
+      <char id="Col41893136" states="states619676"/>
+      <char id="Col41893137" states="states619676"/>
+      <char id="Col41893138" states="states619676"/>
+      <char id="Col41893139" states="states619676"/>
+      <char id="Col41893140" states="states619676"/>
+      <char id="Col41893141" states="states619676"/>
+      <char id="Col41893142" states="states619676"/>
+      <char id="Col41893143" states="states619676"/>
+      <char id="Col41893144" states="states619676"/>
+      <char id="Col41893145" states="states619676"/>
+      <char id="Col41893146" states="states619676"/>
+      <char id="Col41893147" states="states619676"/>
+      <char id="Col41893148" states="states619676"/>
+      <char id="Col41893149" states="states619676"/>
+      <char id="Col41893150" states="states619676"/>
+      <char id="Col41893151" states="states619676"/>
+      <char id="Col41893152" states="states619676"/>
+      <char id="Col41893153" states="states619676"/>
+      <char id="Col41893154" states="states619676"/>
+      <char id="Col41893155" states="states619676"/>
+      <char id="Col41893156" states="states619676"/>
+      <char id="Col41893157" states="states619676"/>
+      <char id="Col41893158" states="states619676"/>
+      <char id="Col41893159" states="states619676"/>
+      <char id="Col41893160" states="states619676"/>
+      <char id="Col41893161" states="states619676"/>
+      <char id="Col41893162" states="states619676"/>
+      <char id="Col41893163" states="states619676"/>
+      <char id="Col41893164" states="states619676"/>
+      <char id="Col41893165" states="states619676"/>
+      <char id="Col41893166" states="states619676"/>
+      <char id="Col41893167" states="states619676"/>
+      <char id="Col41893168" states="states619676"/>
+      <char id="Col41893169" states="states619676"/>
+    </format>
+    <matrix>
+      <row id="Row1030143" otu="Tl851063">
+        <seq>20?101100111100?0??0????000200?01021200?10?0000?1011100??0010002000000000??010?1??1?010???000?00?100?0?11001000001???0?00???00?10???????0??010110?0??????0?00001?0?00001?01010?011?0??000000100001{01}01101000000132?00?</seq>
+      </row>
+      <row id="Row1030144" otu="Tl851097">
+        <seq>001{01}000000002000{01}1001010{01}{01}0010?{01}2011000??0110020020110100010001{01}0000?00101?0010000110{12}0001010000010001?00010210000{12}01000100010000{01}2110011010011101000000?0100000{01}0100001000020?0100001001101100001101011100120??22000</seq>
+      </row>
+      <row id="Row1030145" otu="Tl851090">
+        <seq>001110000001201010001000111000?01011131000000000100110110100000100000001010000000100010001010000000001?0000020000110000210001??10020100110101011000?????001000?1??100001?01010?010?0010011011000011010111001100330000</seq>
+      </row>
+      <row id="Row1030146" otu="Tl851082">
+        <seq>201?0010011110000000{01}10{01}???20100201?100?101000?0101110000010??02000010001?001010011?101000010000?1?000?11000?00000100001000000?00020100000101001000100100010000110000001100000?00?0001??11011000000000000000000?20000</seq>
+      </row>
+      <row id="Row1030147" otu="Tl851094">
+        <seq>10101?000001112121001000100000?02111121?0011112002111100010000000001101100012011011001001?020?1001101100?10021201?2?10120001?1?0010?1?10210121100110011111010100?11?????????211010101?0110201110111000010101100212011</seq>
+      </row>
+      <row id="Row1030148" otu="Tl851101">
+        <seq>???????0101110?1?1000000?????????01112100000001110?0101?1?000????????????????????????0?011020000????00011100?11?1?{01}10?0?000???????011100??????1?0???????1001??00?110121?0?0?20??1101?10110110100100000??00?1101001?1?</seq>
+      </row>
+      <row id="Row1030149" otu="Tl851073">
+        <seq>{01}011100010011021{01}10010000001010110{01}01311001010000011000101000001010001110001010001210100110200101111010001101110101000000001000001011?1021012100011100001001110011111301010121101001110100101110111000010101000111011</seq>
+      </row>
+      <row id="Row1030150" otu="Tl851068">
+        <seq>21010?1121???????1110100?11?0????0011310010??????????00?0??????000100?111?0?1010113?12100?1?1100011??11101101110101101020110???00???01?01??10?1110001100??????1?????12?1010??????0?00100??111???100001?????????01????</seq>
+      </row>
+      <row id="Row1030151" otu="Tl851084">
+        <seq>???????????????????????????????????????????????????????????????????????????????????????????????????????????0??????{01}????????????????????????????????????????????0???0110?10?0??????????????0?1100001000000??101122?01?</seq>
+      </row>
+      <row id="Row1030152" otu="Tl851092">
+        <seq>???????????????????????????????????????????????????????????????????????????????????????0100?0010??????????0011110?11010?000100?10?2?11?????????????????????????0?1?0110??100?????0???100???????010100001000??????????</seq>
+      </row>
+      <row id="Row1030153" otu="Tl851072">
+        <seq>1?????001011201001000000?????????011????00??0?111000????????00?0001011010?0?101111100000110200001??????????01?1???1??????0?0???00?0?1??1?0???????????????????????????????????????????????????1??0?0?0??????1??000????</seq>
+      </row>
+      <row id="Row1030154" otu="Tl851070">
+        <seq>???????0001111212??01000???????????????????11000?1???????????????????????????????????1?01?????10?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????</seq>
+      </row>
+      <row id="Row1030155" otu="Tl851091">
+        <seq>2?????001100??11?1000000??????????11011000000011?000101?0??00??0001010010?0?1011111?0000?00?0000?????1?1111011101?100101000000?00?0?????1????012000??????????????0?010110?0?20?0?101?001??111100100000000?0100000?010</seq>
+      </row>
+      <row id="Row1030156" otu="Tl851061">
+        <seq>??????????????????????00???????????????????????????????????????????????????????????????0?10?0??0???????????0??????{01}????????????????????????1?0010??100????????0??????0????????????????????1011?0111000?1?0????????01?</seq>
+      </row>
+      <row id="Row1030157" otu="Tl851069">
+        <seq>?????0?0000021010100100010001111?11??21??0?11120??????????0011101??1??11011?????0????0?0010?0021?????????0?0??1?1??1?0??????????1?????????????????????????????????????????????????????????2??1201111?0??????????3????</seq>
+      </row>
+      <row id="Row1030158" otu="Tl851065">
+        <seq>00????00?000?10101?0100010002111??1?12110011112002???10?00?011101??10?11011?2101001?0000010?0021?1??11000000212010201012000?0??20?0?10?0???1???????????????????0??1113010101211010101?01102011?01???0?010101200212???</seq>
+      </row>
+      <row id="Row1030159" otu="Tl851093">
+        <seq>???????0000021010100100010002111?1????1100111120?2???10?0000????????????????2101?0???000010?002101?????????02?2?1?2?1012000??1?20?0?1???21???11?011??????1?????0?????????1???????01?1101?02??1101?1?0001010120021?011</seq>
+      </row>
+      <row id="Row1030160" otu="Tl851096">
+        <seq>??????????0??02?0?11????11?000?01001130?010??0???0??0??2?000?00000100011100????????????1?0121101?110?????????????????????????????????????????????????????????????????????????????????????????????????????????????????</seq>
+      </row>
+      <row id="Row1030161" otu="Tl851066">
+        <seq>???????????????????????????????????????????????????????????????????????????????????????????????????????????01?1??0{01}0??0?000?0?10010?1??1???????????????????????0??1112?001?0???????01100??10111010??0?000?0110011????</seq>
+      </row>
+      <row id="Row1030162" otu="Tl851088">
+        <seq>????????????????????00??????????????????????????????????????????????????????1011?1?????0?00?0000???????????0??????{01}?????0???????????????????????????????????????????????????????????????????????10000?000??110???????</seq>
+      </row>
+      <row id="Row1030163" otu="Tl851076">
+        <seq>00???0000001001100000000???00????0??????????0??1100010000?0?00000000?11100????????1000?0??0?0??0????10011110111110100101000?????????????1?????0?0??????????????0?????????????????????????????????????????????????????</seq>
+      </row>
+      <row id="Row1030164" otu="Tl851100">
+        <seq>???????00001??11?1000011?????????1??????????????????????????????????????????000011???000110?0010?0?0???????01?1?1?{01}1010200000010010?????00?00?121??000?????????001101210010??0?00101?1111011010010000001001100?????10</seq>
+      </row>
+      <row id="Row1030165" otu="Tl851098">
+        <seq>10???10010?1?01101000000????????????????????????????????????????????????????001111?00000100?0000?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????</seq>
+      </row>
+      <row id="Row1030166" otu="Tl851074">
+        <seq>???????????????????????????????????????????????????????????????????????????????????????????????????????????0211?1????1?????????01???1????1?12???????000010?11000??????????012????????????????????????????????????????</seq>
+      </row>
+      <row id="Row1030167" otu="Tl851079">
+        <seq>???????????????????????????????????????????????????????????????????????????????????????????????????????????0??1???{01}?00020001???00?0????????????????????????????0????120?01??2???10?????0??1??1?0???0000?001??????????</seq>
+      </row>
+      <row id="Row1030168" otu="Tl851095">
+        <seq>00111?0010001?{12}?0??000??1100110121111?0?0000000?111?1001?01000000000?01100??1000?11?0010??020?101010?1???11011101?110?010000???00??????????????????????????????00110110?1010?????00?0100?0???????????????????????????</seq>
+      </row>
+      <row id="Row1030169" otu="Tl851081">
+        <seq>10??0000100110210100100110011101????????????????????????????0??????????????11010002?0100100?0010????111001102120112010000001?0?2010110101??12??????????????????0??12130101012110101011?11120?110111100010101200111?11</seq>
+      </row>
+      <row id="Row1030170" otu="Tl851099">
+        <seq>???????00?010?11?1000010????????????????????????????????????0???00001011000?010?01???1?0110?0010????0001111011{01}?0?110101000?00?10???????10?120010101?0??1??????0?1?0110?010020?000001100101?1100100000010011000111?10</seq>
+      </row>
+      <row id="Row1030171" otu="Tl851086">
+        <seq>????????????????????????????????????????????????????????????000?0010100110???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????</seq>
+      </row>
+      <row id="Row1030172" otu="Tl851087">
+        <seq>??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????011?11??????1?01100001?001???????????????????????????????????????????????110?1??0??</seq>
+      </row>
+      <row id="Row1030173" otu="Tl851080">
+        <seq>0010000000010121100000?000000101211022110010100001011001000001011100011100010001?1110100?1020010010111011010111011110102000100?001211?1?1100?????????????0??10?011101200010020?01000111011101110111000000011000110011</seq>
+      </row>
+      <row id="Row1030174" otu="Tl851078">
+        <seq>21101?112100000????1?1??????????????????????????????????????????????????????1010??3?1??1?0121101??????????10??{01}?1??????2?000?????????????????????????????????????????????????????????????????????????????????????????</seq>
+      </row>
+      <row id="Row1030175" otu="Tl851071">
+        <seq>???????????????????????????????????????????????????????????????????????????????????????????????????????????0??1?1?10????000?????????????????????????????????????????????????20?00???????????????????00?????110????0??</seq>
+      </row>
+      <row id="Row1030176" otu="Tl851077">
+        <seq>21010?112101200?0?110100????????????????????0???????????????????????????????10????3?121000121100?????1??0?00111?1?1101020110????0?0?010010?1001110001100??????1001101??1?10??????0??11??1?1?11101000010?010101101????</seq>
+      </row>
+      <row id="Row1030177" otu="Tl851089">
+        <seq>101?00001000201001001001?????????011011001000011?0??101?1000????????????????0010??1?0000110?0010????0110010011101?21010100000??0110?110000000?1200000000?0110?10?0101110010020?001010001001?0100100000000101200002010</seq>
+      </row>
+      <row id="Row1030178" otu="Tl851085">
+        <seq>????????????????????1?0?????{12}????1??????????????????????????????????????????2?01?0?????0??0?0020???????????0212?1?2?1012000??0???????????1?1???????????????????0??????????0?2???????11????20?11011100??????1???2?????</seq>
+      </row>
+      <row id="Row1030179" otu="Tl851064">
+        <seq>???????????????????????????????????????????????????????????????????????????????????????????????????????????0??????110?0??000????????????????2?1??101000010?1000??????????????????????????????????????????????????1???</seq>
+      </row>
+      <row id="Row1030180" otu="Tl851062">
+        <seq>?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????011001???????????1???02?????1????????????????1??1?1???00?0???0101??1??11</seq>
+      </row>
+      <row id="Row1030181" otu="Tl851075">
+        <seq>10???100000?002?0??000??000000?00010100?0??000?200?????0?0?10?0?????????????0?00??1?01001?02000010?0?1?????1?110100???000?000???00001?011111?01????1000??00?0100?00?1?????01?101?1??100?1????1?1??????0????1??????1??</seq>
+      </row>
+      <row id="Row1030182" otu="Tl851083">
+        <seq>0??00?001001102?0????????10000?02110102?00?000??00100??2??010?0?????????????0?01??110000??020??0?01??????????1?00?????00???0????0?1?????2????000???1000?1011010??21213??0?00?10??0?10?0?1????11????0??0???????0???1??</seq>
+      </row>
+      <row id="Row1030183" otu="Tl851067">
+        <seq>0?????00?????????????????0??00?0??2?202?000?0?1201???00?0?0???????????????????????110??0??0?00?00????1011110??1?0?0??0000000????0?111??120?1101010?1?0101011110?????????????21011?????????1?111101100001010102011211?</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb18300" id="Tb18300" label="Analysis results" otus="Tls26974" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@7c4a81ea $Rev: 1040 $" datatype="xsd:string" id="meta619939" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S13115" id="meta619938" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr55533" id="Tr55533" label="Figure 20" xsi:type="nex:FloatTree">
+      <meta content="41" datatype="xsd:integer" id="meta619945" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta619944" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Consensus" datatype="xsd:string" id="meta619943" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta619942" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13115" id="meta619941" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn9121607"/>
+      <node id="Tn9121634" label="Syntarsus kayentakae outgroup" otu="Tl851063"/>
+      <node id="Tn9121651"/>
+      <node id="Tn9121640" label="Dilophosaurus" otu="Tl851082"/>
+      <node id="Tn9121635"/>
+      <node id="Tn9121654"/>
+      <node id="Tn9121659" label="Abelisauridae" otu="Tl851097"/>
+      <node id="Tn9121621" label="Ceratosaurus" otu="Tl851090"/>
+      <node id="Tn9121645"/>
+      <node id="Tn9121641" label="Acrocanthosaurus" otu="Tl851094"/>
+      <node id="Tn9121625" label="Afrovenator" otu="Tl851101"/>
+      <node id="Tn9121642" label="Allosaurus" otu="Tl851073"/>
+      <node id="Tn9121646" label="Dubreuillosaurus" otu="Tl851072"/>
+      <node id="Tn9121618" label="Eocarcharia" otu="Tl851070"/>
+      <node id="Tn9121647" label="Eustreptospondylus" otu="Tl851091"/>
+      <node id="Tn9121639" label="Fukuiraptor" otu="Tl851061"/>
+      <node id="Tn9121652" label="Carcharodontosaurus" otu="Tl851069"/>
+      <node id="Tn9121632" label="Giganotosaurus" otu="Tl851065"/>
+      <node id="Tn9121636" label="Mapusaurus" otu="Tl851093"/>
+      <node id="Tn9121609" label="Lourinhanosaurus" otu="Tl851066"/>
+      <node id="Tn9121613" label="Magnosaurus" otu="Tl851088"/>
+      <node id="Tn9121649" label="Marshosaurus" otu="Tl851076"/>
+      <node id="Tn9121611" label="Megalosaurus" otu="Tl851100"/>
+      <node id="Tn9121630" label="Megalosaurus hesperis" otu="Tl851098"/>
+      <node id="Tn9121617" label="Megaraptor" otu="Tl851074"/>
+      <node id="Tn9121628" label="Metriacanthosaurus" otu="Tl851079"/>
+      <node id="Tn9121644" label="Neovenator" otu="Tl851081"/>
+      <node id="Tn9121638" label="Piveteausaurus" otu="Tl851086"/>
+      <node id="Tn9121648" label="Poekilopleuron" otu="Tl851087"/>
+      <node id="Tn9121650" label="Sinraptor" otu="Tl851080"/>
+      <node id="Tn9121653" label="Streptospondylus" otu="Tl851071"/>
+      <node id="Tn9121608" label="Torvosaurus" otu="Tl851089"/>
+      <node id="Tn9121615" label="Tyrannotitan" otu="Tl851085"/>
+      <node id="Tn9121633" label="Xuanhanosaurus" otu="Tl851064"/>
+      <node id="Tn9121619"/>
+      <node id="Tn9121614"/>
+      <node id="Tn9121658" label="Baryonyx" otu="Tl851068"/>
+      <node id="Tn9121624" label="Suchomimus" otu="Tl851077"/>
+      <node id="Tn9121637"/>
+      <node id="Tn9121620" label="Irritator" otu="Tl851096"/>
+      <node id="Tn9121629" label="Spinosaurus" otu="Tl851078"/>
+      <node id="Tn9121655"/>
+      <node id="Tn9121656" label="Chuandongocoelurus" otu="Tl851084"/>
+      <node id="Tn9121606" label="Monolophosaurus" otu="Tl851095"/>
+      <node id="Tn9121626"/>
+      <node id="Tn9121627" label="Condorraptor" otu="Tl851092"/>
+      <node id="Tn9121610" label="Piatnitzkysaurus" otu="Tl851099"/>
+      <node id="Tn9121616"/>
+      <node id="Tn9121623"/>
+      <node id="Tn9121657" label="Chilantaisaurus" otu="Tl851062"/>
+      <node id="Tn9121622" label="Compsognathus" otu="Tl851075"/>
+      <node id="Tn9121631"/>
+      <node id="Tn9121643" label="Guanlong" otu="Tl851083"/>
+      <node id="Tn9121612" label="Tanycolagreus" otu="Tl851067"/>
+      <edge id="edge619948" source="Tn9121607" target="Tn9121634"/>
+      <edge id="edge619950" source="Tn9121607" target="Tn9121651"/>
+      <edge id="edge619952" source="Tn9121651" target="Tn9121640"/>
+      <edge id="edge619954" source="Tn9121651" target="Tn9121635"/>
+      <edge id="edge619956" source="Tn9121635" target="Tn9121654"/>
+      <edge id="edge619958" source="Tn9121654" target="Tn9121659"/>
+      <edge id="edge619960" source="Tn9121654" target="Tn9121621"/>
+      <edge id="edge619962" source="Tn9121635" target="Tn9121645"/>
+      <edge id="edge619964" source="Tn9121645" target="Tn9121641"/>
+      <edge id="edge619966" source="Tn9121645" target="Tn9121625"/>
+      <edge id="edge619968" source="Tn9121645" target="Tn9121642"/>
+      <edge id="edge619970" source="Tn9121645" target="Tn9121646"/>
+      <edge id="edge619972" source="Tn9121645" target="Tn9121618"/>
+      <edge id="edge619974" source="Tn9121645" target="Tn9121647"/>
+      <edge id="edge619976" source="Tn9121645" target="Tn9121639"/>
+      <edge id="edge619978" source="Tn9121645" target="Tn9121652"/>
+      <edge id="edge619980" source="Tn9121645" target="Tn9121632"/>
+      <edge id="edge619982" source="Tn9121645" target="Tn9121636"/>
+      <edge id="edge619984" source="Tn9121645" target="Tn9121609"/>
+      <edge id="edge619986" source="Tn9121645" target="Tn9121613"/>
+      <edge id="edge619988" source="Tn9121645" target="Tn9121649"/>
+      <edge id="edge619990" source="Tn9121645" target="Tn9121611"/>
+      <edge id="edge619992" source="Tn9121645" target="Tn9121630"/>
+      <edge id="edge619994" source="Tn9121645" target="Tn9121617"/>
+      <edge id="edge619996" source="Tn9121645" target="Tn9121628"/>
+      <edge id="edge619998" source="Tn9121645" target="Tn9121644"/>
+      <edge id="edge620000" source="Tn9121645" target="Tn9121638"/>
+      <edge id="edge620002" source="Tn9121645" target="Tn9121648"/>
+      <edge id="edge620004" source="Tn9121645" target="Tn9121650"/>
+      <edge id="edge620006" source="Tn9121645" target="Tn9121653"/>
+      <edge id="edge620008" source="Tn9121645" target="Tn9121608"/>
+      <edge id="edge620010" source="Tn9121645" target="Tn9121615"/>
+      <edge id="edge620012" source="Tn9121645" target="Tn9121633"/>
+      <edge id="edge620014" source="Tn9121645" target="Tn9121619"/>
+      <edge id="edge620016" source="Tn9121619" target="Tn9121614"/>
+      <edge id="edge620018" source="Tn9121614" target="Tn9121658"/>
+      <edge id="edge620020" source="Tn9121614" target="Tn9121624"/>
+      <edge id="edge620022" source="Tn9121619" target="Tn9121637"/>
+      <edge id="edge620024" source="Tn9121637" target="Tn9121620"/>
+      <edge id="edge620026" source="Tn9121637" target="Tn9121629"/>
+      <edge id="edge620028" source="Tn9121645" target="Tn9121655"/>
+      <edge id="edge620030" source="Tn9121655" target="Tn9121656"/>
+      <edge id="edge620032" source="Tn9121655" target="Tn9121606"/>
+      <edge id="edge620034" source="Tn9121645" target="Tn9121626"/>
+      <edge id="edge620036" source="Tn9121626" target="Tn9121627"/>
+      <edge id="edge620038" source="Tn9121626" target="Tn9121610"/>
+      <edge id="edge620040" source="Tn9121645" target="Tn9121616"/>
+      <edge id="edge620042" source="Tn9121616" target="Tn9121623"/>
+      <edge id="edge620044" source="Tn9121623" target="Tn9121657"/>
+      <edge id="edge620046" source="Tn9121623" target="Tn9121622"/>
+      <edge id="edge620048" source="Tn9121616" target="Tn9121631"/>
+      <edge id="edge620050" source="Tn9121631" target="Tn9121643"/>
+      <edge id="edge620052" source="Tn9121631" target="Tn9121612"/>
+    </tree>
+  </trees>
+</nex:nexml>

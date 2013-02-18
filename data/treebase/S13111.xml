@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- This is modified from Ashton Treebase_Forms/form_example.xml  -->
+    
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><!-- HTTP 1.1 -->
+<meta http-equiv="Cache-Control" content="no-store"/>
+<!-- HTTP 1.0 -->
+<meta http-equiv="Pragma" content="no-cache"/>
+<!-- Prevents caching at the Proxy Server -->
+<meta http-equiv="Expires" content="0"/>        
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/> 
+<meta name="author" content="Rutger A. Vos (rutgeraldo@gmail.com)"/>
+<meta name="google-site-verification" content="9Lr7BwyD6VMDIk5dENnSt_2YsUdpq_aEhnee0mMTxrw" />
+<meta name="y_key" content="8c736195266b5ebb" />
+<meta name="msvalidate.01" content="D931446190993D0D2D719F2978AC44EB" />
+<link rel="icon" href="/treebase-web/images/favicon.ico;jsessionid=AD37758D13D6377BF5222A387E704375"/>
+
+<!-- curl/7.19.7 (universal-apple-darwin10.0) libcurl/7.19.7 OpenSSL/0.9.8r zlib/1.2.3 -->
+
+<title>TreeBASE-Access denied</title>
+<link rel="stylesheet" type="text/css" media="all" href="/treebase-web/styles/styles.css;jsessionid=AD37758D13D6377BF5222A387E704375" />
+<link rel="stylesheet" type="text/css" media="all" href="/treebase-web/styles/displaytag.css;jsessionid=AD37758D13D6377BF5222A387E704375" />
+<link rel="stylesheet" type="text/css" media="all" href="/treebase-web/styles/treebase.css;jsessionid=AD37758D13D6377BF5222A387E704375" />
+<link rel="stylesheet" type="text/css" media="all" href="/treebase-web/styles/menuExpandable.css;jsessionid=AD37758D13D6377BF5222A387E704375" />
+<link rel="stylesheet" type="text/css" media="all" href="/treebase-web/styles/messages.css;jsessionid=AD37758D13D6377BF5222A387E704375" />
+<link rel="stylesheet" type="text/css" media="all" href="/treebase-web/styles/ajaxProgress.css;jsessionid=AD37758D13D6377BF5222A387E704375" />
+<link rel="stylesheet" type="text/css" media="all" href="/treebase-web/styles/submissionSummary.css;jsessionid=AD37758D13D6377BF5222A387E704375" />
+<script type="text/javascript" src="/treebase-web/scripts/menuExpandable.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/scripts/common.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+
+<!-- Following script lines have been added for DWR and they are used for now only on author page -->
+
+<link rel="stylesheet" type="text/css" media="all" href="/treebase-web/styles/autocomplete.css;jsessionid=AD37758D13D6377BF5222A387E704375" />
+<script type="text/javascript" src="/treebase-web/dwr/interface/RemotePersonService.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/dwr/interface/RemoteSoftwareNameService.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/dwr/interface/RemoteJournalNameService.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/dwr/interface/RemoteAjaxProgressListener.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/dwr/interface/RemoteUniqueOtherAlgorithmService.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+
+<script type="text/javascript" src="/treebase-web/dwr/engine.js;jsessionid=AD37758D13D6377BF5222A387E704375"> </script>
+<script type="text/javascript" src="/treebase-web/dwr/util.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/scripts/prototype/prototype.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/scripts/prototype/prototype-1.6.0.3.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/scripts/script.aculo.us/effects.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/scripts/script.aculo.us/controls.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/scripts/autocomplete.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript" src="/treebase-web/scripts/ajaxProgress.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script language="Javascript" type="text/javascript">
+
+      	function updateList(autocompleter, token) {
+      		RemotePersonService.findCompleteEmailAddress(token, function(data) { autocompleter.setChoices(data) });
+        }
+        function nameValueSelector(tag){
+    	   return tag;
+        }
+// nameValueSelctor(tag) method is used by all the four methods related to Auto Suggestion Box
+        
+        function updateSoftwareNameList(autocompleter, token) {
+	       RemoteSoftwareNameService.findCompleteSoftwareName(token, function(data) { autocompleter.setChoices(data) });
+        }
+        
+        function updateJournalNameList(autocompleter, token) {
+	       RemoteJournalNameService.findCompleteJournalName(token, function(data) { autocompleter.setChoices(data) });
+        }
+        
+        function updateUniqueOtherAlgorithmList(autocompleter, token) {
+	       RemoteUniqueOtherAlgorithmService.findAllUniqueOtherAlgorithmDescriptions(token, function(data) { autocompleter.setChoices(data) });
+        }
+	
+</script>
+
+ <!-- DWR STUFF END -->
+
+</head>
+	
+<body  onload="TreeBASE.initialize()">
+
+<!-- BEGIN WRAP -->
+<div id="wrap">
+	<!--  BEGIN HEADER -->
+	<div id="header">
+
+
+
+
+
+
+
+
+
+
+<h1 style="padding-bottom:0px !important;margin-bottom:0px !important">
+	<a href="/treebase-web/home.html;jsessionid=AD37758D13D6377BF5222A387E704375">
+		<img 
+			src="/treebase-web/images/logo.gif;jsessionid=AD37758D13D6377BF5222A387E704375" 
+			alt="TreeBase Logo" 
+			width="523" 
+			height="112" 
+			border="0" />
+	</a>
+	<img 
+		src="/treebase-web/images/gradient.jpg;jsessionid=AD37758D13D6377BF5222A387E704375" 
+		style="width:100%;height:10px;padding:0px !important;margin:0px !important" 
+		height="10"
+		alt="" />	
+</h1>
+</div>
+	
+	<!--  show top navigation menu for a logged in user -->
+	
+	
+
+	
+	<!-- BEGIN RIGHT COLUMN -->
+	<div id="content">
+		<div class="gutter">
+		<h2>Access denied</h2>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<strong>Sorry! your action is not authorized.</strong>
+		</div>
+	</div>
+	
+	<!-- show RHS menu for a logged in user after a submission is selected but not when display the all submissions -->
+	
+	
+	<!-- BEING FOOTER -->
+	<div id="footer">
+
+
+
+
+
+
+
+
+
+
+<p class="footerLogo"><!-- Revision 245  -->
+<!-- there used to be a logo here - but we don't want a NESCent logo here as 
+     NESCent is only the host, and the TreeBASE logo is already in the header
+-->
+</p>	
+<p style="text-align:center">
+	<a href="http://validator.w3.org/check?uri=referer">
+		<img 
+			src="/treebase-web/images/icons/xhtml.png" 
+			alt="XHTML" 
+			title="Validate page markup" 
+			class="iconButton" 
+			style="vertical-align:middle"/>
+	</a> 
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img 
+			src="/treebase-web/images/icons/css.png" 
+			alt="CSS" 
+			title="Validate page styles" 
+			class="iconButton"  
+			style="vertical-align:middle"/>
+	</a>
+</p>
+</div>
+</div> <!-- END WRAP -->
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/treebase-web/scripts/googleAnalytics.js;jsessionid=AD37758D13D6377BF5222A387E704375"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23411098-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
