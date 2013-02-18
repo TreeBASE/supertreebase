@@ -4,6 +4,7 @@ PERL=perl
 EXTRACT=unzip -f
 ARCH=zip
 MKPATH=mkdir -p
+RM_RF=rm -rf
 SCRIPT=script
 CURL=curl
 CAT=cat
@@ -35,7 +36,7 @@ TB2SPECIES=$(TB2DATA)/species.txt
 TB2NCHAR=$(TB2DATA)/nchar.txt
 TNTSCRIPT=$(TB2DATA)/tntscript.runall
 
-.PHONY : all clean_tb2
+.PHONY : all clean_tb2 tb2sitemap
 
 all : tb2 $(NCBIMRP)
 
@@ -56,15 +57,18 @@ mrp : $(MRPTABLE)
 tnt : $(TB2NRMLMRP) $(TNTSCRIPT)
 
 clean_tb2 :
-	rm -rf $(TB2DATA)/*.url
-	rm -rf $(TB2DATA)/*.dat
-	rm -rf $(TB2DATA)/*.xml
-	rm -rf $(TB2DATA)/*.txt
+	$(RM_RF) $(TB2DATA)/*.url
+	$(RM_RF) $(TB2DATA)/*.dat
+	$(RM_RF) $(TB2DATA)/*.xml
+	$(RM_RF) $(TB2DATA)/*.txt
 
 # fetch the TreeBASE site map
-$(TB2SITEMAPXML) :
+tb2sitemap :
 	$(MKPATH) $(TB2DATA)
-	$(CURL) -o $@ $(TB2SITEMAPURL)
+	$(RM_RF) $(TB2SITEMAPXML)
+	$(CURL) -o $(TB2SITEMAPXML) $(TB2SITEMAPURL)
+
+$(TB2SITEMAPXML) : tb2sitemap
 
 # turn the study URLs in the site map into local *.url files with PURLs
 tb2studypurls : $(TB2SITEMAPXML)
