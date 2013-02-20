@@ -4,6 +4,9 @@ use warnings;
 use Getopt::Long;
 
 # see: http://tnt.insectmuseum.org/index.php/How_to_manage_several_datasets
+# note that the default RAM allocated by TNT at time of writing is 16Mb, 
+# whereas the full data set at present appears to require more something like
+# 50Gb(!)
 
 # process command line arguments
 my $infile;
@@ -26,18 +29,26 @@ my %tables;
 }
 
 # iterate over tables
-for my $block ( keys %tables ) {
+my @blocks = sort { $a cmp $b } keys %tables;
+for my $i ( 0 .. $#blocks ) {
+	my $block = $blocks[$i];
 	
 	# print header
 	my $matrix = "Label data\n";
 	
 	# iterate over rows
 	my $nchar;
-	for my $row ( keys %{ $tables{$block} } ) {
+	ROW: for my $row ( keys %{ $tables{$block} } ) {
+
+		# fetch the seq, move to next row if the 
+		# entire row consists of missing data
+                my $seq = $tables{$block}->{$row};
+		next ROW if $seq =~ /^\?+$/;
+
+		# append the row label to the matrix
 		$matrix .= $row . "\t";
 		
 		# create ambiguity codes		
-		my $seq = $tables{$block}->{$row};
 		my @char = map { $_ eq '2' ? '[01]' : $_ } split //, $seq;
 		$matrix .= join '', @char;
 		$matrix .= "\n";
@@ -52,7 +63,7 @@ for my $block ( keys %tables ) {
 	}
 	
 	# print closing token, for the last file this is a semicolon
-	my $token = $infile =~ /S9999/ ? ';' : '@@';
+	my $token = $infile =~ /S99\./ && $i == $#blocks ? ';' : '@@';
 	$matrix .= $token . "\n";
 	
 	# write separate outfile for each matrix
@@ -66,6 +77,7 @@ for my $block ( keys %tables ) {
 	$filename =~ s|^.+/||;
 	print '& [ num ] @@ ' . $filename . ' data ;' . "\n";
 
-	# print $nchar to STDERR so we can redirect that as well
+	# print $nchar to STDERR so we can redirect that as well, notice the
+	# invocation in the Makefile
 	print STDERR $block, "\t", $nchar, "\n";
 }
