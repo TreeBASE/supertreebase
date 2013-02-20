@@ -42,6 +42,9 @@ my $ntax;
 
 print <<"HERE";
 macro=;
+/* execute me be starting up TNT and then type 'proc <scriptname> ;' */
+/* note that you will need to increase memory to at least 50Gb! */
+/* memory is increased in megabytes, e.g. using 'mxram 50000 ;' */
 nstates 2;
 xread 
 $nchar $ntax
