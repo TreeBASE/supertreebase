@@ -40,6 +40,8 @@ TNTSCRIPT=$(TB2DATA)/tntscript.runall
 
 all : tb2 $(NCBIMRP)
 
+ncbi : $(NCBIMRP)
+
 tb2 : tb2download $(TB2TAXA)
 
 tb2download : tb2studypurls $(TB2STUDYFILES)
@@ -55,6 +57,8 @@ normalized : $(TB2SPECIES) $(TB2NRMLMRP)
 mrp : $(MRPTABLE)
 
 tnt : $(TB2NRMLMRP) $(TNTSCRIPT)
+
+tntcommands : $(TNTCOMMANDS)
 
 clean_tb2 :
 	$(RM_RF) $(TB2DATA)/*.url
@@ -87,8 +91,8 @@ $(TB2TAXA) : $(TB2MRPFILES)
 	cat $(TB2MRPFILES) | cut -f 2 | sort | uniq > $@
 
 # make species-level list from TreeBASE taxon IDs
-$(TB2SPECIES) : $(TB2TAXA)
-	$(PERL) $(SCRIPT)/make_species_list.pl -taxa $(TB2TAXA) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+$(TB2SPECIES) : $(TB2TAXA) $(NCBIFILES)
+	$(PERL) $(SCRIPT)/make_species_list.pl -taxa `pwd`/$(TB2TAXA) -nodes `pwd`/$(NCBINODES) -names `pwd`/$(NCBINAMES) -dir `pwd`/$(TAXDMPTMP) $(VERBOSITY) > $@
 
 # make MRP tables with normalized species and ambiguity codes for polyphyly
 $(TB2NRMLMRP) : %.dat : %.txt
@@ -104,9 +108,9 @@ $(NCBIFILES) : $(TAXDMPARCH)
 	cd $(TAXDMPDIR) && $(EXTRACT) $(TAXDMP).$(ARCH) && cd -	
 
 # make NCBI MRP matrix
-#$(NCBIMRP) : $(NCBIFILES) $(TB2SPECIES)
-#	$(MKPATH) $(MRPDIR) $(TAXDMPTMP)
-#	$(PERL) $(SCRIPT)/make_ncbi_mrp.pl -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+$(NCBIMRP) : $(NCBIFILES) $(TB2SPECIES)
+	$(MKPATH) $(MRPDIR) $(TAXDMPTMP)
+	$(PERL) $(SCRIPT)/make_ncbi_mrp.pl -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
 
 # concatenate NCBI and TreeBASE MRP matrices
 $(MRPTABLE) : $(TB2MRPFILES) $(TB2SPECIES)
