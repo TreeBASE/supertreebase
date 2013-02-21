@@ -91,9 +91,13 @@ for my $taxa ( @{ $taxa_blocks } ) {
 for my $forest ( @{ $proj->get_forests } ) {
 	my $matrix = $forest->make_matrix;
 	my $id = $forest->get_xml_id;
-	for my $row ( @{ $matrix->get_entities } ) {
+	ROW: for my $row ( @{ $matrix->get_entities } ) {
 		my $name = $row->get_name;
 		my $char = $row->get_char;
+		if ( $char =~ /^\?+$/ ) {
+			$log->warn("only missing data for taxon $name from tree block $id in file $infile");
+			next ROW;
+		}
 		print $id, "\t", $name, "\t", $char, "\n";
 	}
 }
