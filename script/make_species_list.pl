@@ -13,7 +13,7 @@ GetOptions(
     'namesfile=s' => \$namesfile,
     'directory=s' => \$directory,
     'taxafile=s'  => \$taxafile,
-	'verbose+'    => \$verbosity,
+    'verbose+'    => \$verbosity,
 );
 
 # instantiate logger
@@ -82,6 +82,7 @@ ID: for my $id ( @ids ) {
 	
 	# 1. retain if it is a species
 	if ( $rank eq 'species' ) {
+		$log->debug("ID $id is a species, no need to collapse or expand");
 		$map{$id} = {} if not $map{$id};
 		$map{$id}->{$id} = 1;
 		$species{$id} = 1;
@@ -89,6 +90,7 @@ ID: for my $id ( @ids ) {
 	
 	# 2. collapse up to species if lower than species
 	elsif ( $lower{$rank} ) {
+		$log->debug("ID $id is a $rank, I think I need to collapse this");
 		while( $rank ne 'species' ) {
 			$taxon = $db->ancestor($taxon);
 			if ( not $taxon ) {
@@ -105,17 +107,18 @@ ID: for my $id ( @ids ) {
 	
 	# 3/4: prepare for expansion
 	else {
+		$log->debug("ID $id is a $rank, I think I need to expand this");
 		push @higher, $id;
 	}
 }
-$log->info("have identified ".scalar(keys %species)." TreeBASE species");
+$log->info("have identified ".scalar(keys %species)." TreeBASE species so far");
 
 # now expand the higher taxa
 my $j = 1;
 for my $id ( @higher ) {
 	my $taxon = $db->get_Taxonomy_Node( '-taxonid' => $id );
 	my $rank = $taxon->rank;
-	$log->info("normalizing $rank $id ($j/ ".scalar(@higher).")");
+	$log->info("expanding $rank $id ($j/ ".scalar(@higher).")");
 	$j++;		
 	my @species = get_species_tips($taxon);
 	for my $species_id ( @species ) {
