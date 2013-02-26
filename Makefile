@@ -80,9 +80,9 @@ tb2mrp_taxa : $(TB2MRPFILES)
 tb2mrp_taxa_clean : 
 	$(RM_RF) $(TB2MRPFILES)
 
-# create list of unique taxon IDs
+# create list of unique taxon IDs with occurrence counts
 $(TB2TAXA) : $(TB2MRPFILES)
-	cat $(TB2MRPFILES) | cut -f 2 | sort | uniq > $@
+	cat $(TB2MRPFILES) | cut -f 2 | sort | uniq -c > $@
 taxa : $(TB2TAXA)
 taxa_clean : 
 	$(RM_RF) $(TB2TAXA)
@@ -117,10 +117,6 @@ $(NCBIMRP) : $(NCBIFILES) $(TB2SPECIES)
 ncbimrp : $(NCBIMRP)
 ncbimrp_clean : 
 	$(RM_RF) $(NCBIMRP)
-
-# concatenate NCBI and TreeBASE MRP matrices
-#$(MRPTABLE) : $(TB2MRPFILES) $(TB2SPECIES)
-#	$(PERL) $(SCRIPT)/concat_mrp.pl -d $(TB2DATA) -s $(TB2SPECIES) -p 'S[0-9]+\.dat' $(VERBOSITY) > $@
 
 # make tnt file inclusion commands and single file with nchar for each treeblock
 $(TNTCOMMANDS) : %.run : %.dat
