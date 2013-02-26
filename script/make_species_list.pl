@@ -40,7 +40,13 @@ my @ids;
 	open my $fh, '<', $taxafile or die $!;
 	while(<$fh>) {
 		chomp;
-		push @ids, $_ if $_;
+		if ( /^\s*\d+\s+(\d+)/ ) {
+			my $id = $1;
+			push @ids, $id;
+		}
+		else {
+			$log->warn("unexpected pattern in $taxafile: $_");
+		}
 	}
 	close $fh;
 }
@@ -50,6 +56,7 @@ my @ids;
 # 2. collapse up to species if a subspecies
 # 3. expand to TreeBASE species if a higher taxon
 # 4. keep higher taxon if no TreeBASE species exist
+# 5. ignore unranked taxa (e.g. "no rank")
 $log->info("going to normalize ".scalar(@ids)." taxon IDs");
 
 # XXX verify that these are the only
@@ -105,6 +112,11 @@ ID: for my $id ( @ids ) {
 		$species{$species_id} = 1;
 	}
 	
+	# 5: ignore 'no rank'
+	elsif ( $rank eq 'no rank' ) {
+		$log->warn("ID $id has no rank, can neither collaps nor expand, skipping...");
+	}
+
 	# 3/4: prepare for expansion
 	else {
 		$log->debug("ID $id is a $rank, I think I need to expand this");
