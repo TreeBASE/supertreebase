@@ -9,10 +9,12 @@ use Bio::Phylo::Util::Logger ':levels';
 
 # process command line options
 my ( $scale, $verbosity ) = ( 1000, WARN );
-my $outfile    = 'metadata/bands.txt';
-my $labeltrack = 'metadata/labels.txt';
-my $figure     = 'metadata/radial.svg';
-my ( $table, $namesfile, $nodesfile, $directory );
+my $outfile      = 'metadata/bands.txt';
+my $labeltrack   = 'metadata/labels.txt';
+my $scattertrack = 'metadata/scatter.txt';
+my $figure       = 'metadata/radial.svg';
+my $table        = 'metadata/representation.txt';
+my ( $namesfile, $nodesfile, $directory );
 GetOptions( 
 	'table=s'      => \$table,
 	'scale=i'      => \$scale,
@@ -36,35 +38,37 @@ my $log = Bio::Phylo::Util::Logger->new(
 );
 my $db = Bio::DB::Taxonomy->new(
 	'-source'    => 'flatfile',
-    '-nodesfile' => $nodesfile,
-    '-namesfile' => $namesfile,
-    '-directory' => $directory,	
+	'-nodesfile' => $nodesfile,
+	'-namesfile' => $namesfile,
+	'-directory' => $directory,	
 );
 my $td = Bio::Phylo::Treedrawer->new(
-    '-width'  => 1600,
-    '-height' => 1600,
-    '-shape'  => 'radial',
-    '-mode'   => 'phylo',
-    '-format' => 'svg'
+	'-width'  => 1600,
+	'-height' => 1600,
+	'-shape'  => 'radial',
+	'-mode'   => 'phylo',
+	'-format' => 'svg'
 );
 
 # read table
-my ( %Node );
+my %Node;
 {
+	my @header;
 	open my $fh, '<', $table or die $!;
 	LINE: while(<$fh>) {
 		chomp;
-		my ( $id, $name, $rank, $treebase, $ncbi ) = split /\t/, $_;
-		next LINE if $id eq 'ID'; # header
+
+		# create header row
+		if ( not @header ) {
+			@header = split /\t/, $_;
+			next LINE;
+		}
+		my @fields = split /\t/, $_;
+		my %record = map { $header[$_] => $fields[$_] } 0 .. $#header;
+		my $id = delete $record{'ID'};
 		
 		# pseudo objects with data from table
-		$Node{$id} = {
-			'name' => $name,
-			'rank' => $rank,
-			'ncbi' => $ncbi,
-			'tb2'  => $treebase,			
-		};
-		$log->debug("$name => $ncbi");
+		$Node{$id} = \%record;
 	}
 	close $fh;
 }
@@ -72,7 +76,7 @@ my ( %Node );
 my %seen;
 my %root;
 my $tree = $fac->create_tree;
-for my $id ( keys %Node ) {
+for my $id ( grep { $Node{$_}->{Rank} eq 'phylum' } keys %Node ) {
 
 	# fetch taxon from database
 	$log->info("ID: $id");
@@ -80,13 +84,9 @@ for my $id ( keys %Node ) {
 	
 	# instantiate bio::phylo node
 	my $node  = $fac->create_node(
-		'-guid' => $id,
-		'-name' => $Node{$id}->{'name'},
-		'-generic' => {
-			'rank' => $Node{$id}->{'name'},
-			'ncbi' => $Node{$id}->{'ncbi'},
-			'tb2'  => $Node{$id}->{'tb2'},			
-		},
+		'-guid'    => $id,
+		'-name'    => $Node{$id}->{'Name'},
+		'-generic' => $Node{$id},
 	);
 	$tree->insert($node);
 	
@@ -125,11 +125,12 @@ $log->info("ROOTS: " . join " ", keys %root);
 # make branches initially length 1, then stretch 
 # tips to make them line up
 $tree->remove_unbranched_internals;
-$tree->visit(sub{ shift->set_branch_length(1) });
-$tree->ultrametricize;
+#$tree->visit(sub{ shift->set_branch_length(1) });
+#$tree->ultrametricize;
 
 open my $fh,  '>', $outfile or die $!;
 open my $lfh, '>', $labeltrack or die $!;
+open my $sfh, '>', $scattertrack or die $!;
 my $tipcounter = 1;
 
 # now add as many tips as needed to make the width to size
@@ -141,11 +142,12 @@ $tree->visit_depth_first(
 			my $name = $node->get_name;		
 			
 			# compute number of tips to add
-			my $count = int( $node->get_generic('ncbi') / $scale ) || 1;
+			my @tips = sort { $Node{$a}->{Pos} <=> $Node{$b}->{Pos} }  
+				   grep { $Node{$_}->{Phylum} == $id && $Node{$_}->{ChildCount} == 0 } keys %Node;
+			my $count = int( scalar(@tips) / $scale ) || 1;
 			
 			# add tips
  			for my $i ( 1 .. $count ) {
-# 				my $label = $i == int($count/2) ? $name : '';
  				my $child = $fac->create_node( 
  					'-branch_length' => 0, 
  					'-name'          => '', 
@@ -160,14 +162,25 @@ $tree->visit_depth_first(
 			             $id, " ", 
 			             $id, " ",
 			               0, " ",
-			          $count, " ",
+			   scalar(@tips), " ",
 			         'black', "\n";
 
 			# write circos label track
 			print   $lfh $id, " ",
 			               0, " ",
-			          $count, " ",
+			   scalar(@tips), " ",
 			           $name, "\n";
+
+			# write circos scatter track
+			for my $i ( 0 .. $#tips ) {
+				my $studies = $Node{$tips[$i]}->{Studies};
+				if ( $studies ) {
+					print $sfh $id, " ",
+					            $i, " ",
+                	                            $i, " ",
+		        	              $studies, "\n";
+				}
+			}
 
 			# report progress
 			$log->info("seen tip $name: " . $tipcounter++);
