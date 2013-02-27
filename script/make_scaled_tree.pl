@@ -8,23 +8,27 @@ use Bio::Phylo::Treedrawer;
 use Bio::Phylo::Util::Logger ':levels';
 
 # process command line options
-my ( $scale, $verbosity ) = ( 1000, WARN );
+my $scale        = 1000;
+my $verbosity    = WARN;
 my $outfile      = 'metadata/bands.txt';
 my $labeltrack   = 'metadata/labels.txt';
 my $scattertrack = 'metadata/scatter.txt';
 my $figure       = 'metadata/radial.svg';
 my $table        = 'metadata/representation.txt';
-my ( $namesfile, $nodesfile, $directory );
+my $namesfile    = 'data/taxdmp/names.dmp';
+my $nodesfile    = 'data/taxdmp/nodes.dmp';
+my $directory    = 'data/taxdmp/';
 GetOptions( 
-	'table=s'      => \$table,
-	'scale=i'      => \$scale,
-	'verbose+'     => \$verbosity,
-	'namesfile=s'  => \$namesfile,
-	'nodesfile=s'  => \$nodesfile,
-	'directory=s'  => \$directory,	
-	'outfile=s'    => \$outfile,
-	'labeltrack=s' => \$labeltrack,
-	'figure=s'     => \$figure,
+	'scale=i'        => \$scale,
+	'verbose+'       => \$verbosity,
+	'outfile=s'      => \$outfile,	
+	'labeltrack=s'   => \$labeltrack,
+	'scattertrack=s' => \$scattertrack,
+	'figure=s'       => \$figure,
+	'table=s'        => \$table,	
+	'namesfile=s'    => \$namesfile,
+	'nodesfile=s'    => \$nodesfile,
+	'directory=s'    => \$directory,
 );
 
 # instantiate helper objects
@@ -54,6 +58,7 @@ my $td = Bio::Phylo::Treedrawer->new(
 my %Node;
 {
 	my @header;
+	$log->info("going to read data from $table");
 	open my $fh, '<', $table or die $!;
 	LINE: while(<$fh>) {
 		chomp;
@@ -71,6 +76,7 @@ my %Node;
 		$Node{$id} = \%record;
 	}
 	close $fh;
+	$log->info("done reading $table");
 }
 
 my %seen;
@@ -121,12 +127,8 @@ for my $id ( grep { $Node{$_}->{Rank} eq 'phylum' } keys %Node ) {
 	}
 }
 $log->info("ROOTS: " . join " ", keys %root);
-
-# make branches initially length 1, then stretch 
-# tips to make them line up
 $tree->remove_unbranched_internals;
-#$tree->visit(sub{ shift->set_branch_length(1) });
-#$tree->ultrametricize;
+$tree->remove_orphans;
 
 open my $fh,  '>', $outfile or die $!;
 open my $lfh, '>', $labeltrack or die $!;
@@ -143,12 +145,14 @@ $tree->visit_depth_first(
 			
 			# compute number of tips to add
 			my @tips = sort { $Node{$a}->{Pos} <=> $Node{$b}->{Pos} }  
-				   grep { $Node{$_}->{Phylum} == $id && $Node{$_}->{ChildCount} == 0 } keys %Node;
+				       grep { $Node{$_}->{Phylum} == $id && $Node{$_}->{ChildCount} == 0 } 
+				       keys %Node;
 			my $count = int( scalar(@tips) / $scale ) || 1;
 			
 			# add tips
  			for my $i ( 1 .. $count ) {
  				my $child = $fac->create_node( 
+ 					'-branch_color'  => 'white', 				
  					'-branch_length' => 0, 
  					'-name'          => '', 
  				);
@@ -162,23 +166,24 @@ $tree->visit_depth_first(
 			             $id, " ", 
 			             $id, " ",
 			               0, " ",
-			   scalar(@tips), " ",
+		  scalar(@tips) || 1, " ",
 			         'black', "\n";
 
 			# write circos label track
 			print   $lfh $id, " ",
 			               0, " ",
-			   scalar(@tips), " ",
+		  scalar(@tips) || 1, " ",
 			           $name, "\n";
 
 			# write circos scatter track
 			for my $i ( 0 .. $#tips ) {
 				my $studies = $Node{$tips[$i]}->{Studies};
 				if ( $studies ) {
+					my $log = log($studies) / log(10);
 					print $sfh $id, " ",
 					            $i, " ",
-                	                            $i, " ",
-		        	              $studies, "\n";
+                	            $i, " ",
+		        	          $log, "\n";
 				}
 			}
 
@@ -190,8 +195,6 @@ $tree->visit_depth_first(
 		}
 	}
 );
-#$tree->ladderize;
-#print $tree->to_newick( '-nodelabels' => 1 );
 $td->set_tree($tree);
 open my $figfh, '>', $figure or die $!;
 print $figfh $td->draw;
