@@ -39,6 +39,7 @@ TB2STUDYPURLS=$(wildcard $(TB2DATA)/*.url)
 TB2STUDYFILES=$(patsubst %.url,%.xml,$(TB2STUDYPURLS))
 TB2MRPFILES=$(patsubst %.xml,%.txt,$(TB2STUDYFILES))
 TB2NRMLMRP=$(patsubst %.xml,%.dat,$(TB2STUDYFILES))
+TB2CLASSES=$(patsubst %.xml,%.class,$(TB2STUDYFILES))
 TNTCOMMANDS=$(patsubst %.dat,%.run,$(TB2NRMLMRP))
 TB2DATA=$(DATA)/treebase
 TB2SITEMAP=sitemap.xml
@@ -72,6 +73,13 @@ $(TB2STUDYFILES) : %.xml : %.url
 studies : $(TB2STUDYFILES)
 studies_clean : 
 	$(RM_RF) $(TB2STUDYFILES)
+
+# extract the NCBI classes
+$(TB2CLASSES) : %.class : %.xml
+	$(PERL) $(SCRIPT)/getclass.pl -nodes $(NCBINODES) -names $(NCBINAMES) -taxa $(TAXDMPDIR) -i $< $(VERBOSITY) > $@
+classes : $(TB2CLASSES)
+classes_clean :
+	$(RM_RF) $(TB2CLASSES)
 
 # make TreeBASE MRP matrices
 $(TB2MRPFILES) : %.txt : %.xml
