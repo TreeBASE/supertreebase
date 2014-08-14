@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S11908" generator="org.nexml.model.impl.DocumentImpl" id="S11908" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Wed Aug 13 11:24:44 EDT 2014" datatype="xsd:string" id="meta27322" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@1fba20ca $Rev: 1060 $" datatype="xsd:string" id="meta27321" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta27320" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="28" datatype="xsd:string" id="meta27319" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Persoonia" datatype="xsd:string" id="meta27318" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Persoonia" datatype="xsd:string" id="meta27317" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="taxonomy" datatype="xsd:string" id="meta27316" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="phylogeny" datatype="xsd:string" id="meta27315" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="hypogeous fungi" datatype="xsd:string" id="meta27314" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="cryptic species" datatype="xsd:string" id="meta27313" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Boletaceae" datatype="xsd:string" id="meta27312" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="biogeography" datatype="xsd:string" id="meta27311" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta27310" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012" datatype="xsd:string" id="meta27309" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Maekawa N." datatype="xsd:string" id="meta27308" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Iwase K." datatype="xsd:string" id="meta27307" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Shimomura N." datatype="xsd:string" id="meta27306" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Smith M.E." datatype="xsd:string" id="meta27305" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Orihara T." datatype="xsd:string" id="meta27304" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Orihara T., Smith M.E., Shimomura N., Iwase K., &amp; Maekawa N." datatype="xsd:string" id="meta27303" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="Diversity and systematics of the sequestrate genus Octaviania in Japan: two new subgenera and eleven new species" datatype="xsd:string" id="meta27302" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Orihara T., Smith M.E., Shimomura N., Iwase K., &amp; Maekawa N. 2012. Diversity and systematics of the sequestrate genus Octaviania in Japan: two new subgenera and eleven new species. Persoonia, 28." datatype="xsd:string" id="meta27301" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2011-09-06" datatype="xsd:string" id="meta27300" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013-12-31" datatype="xsd:string" id="meta27299" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013-12-31" datatype="xsd:string" id="meta27298" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="Diversity and systematics of the sequestrate genus Octaviania in Japan: two new subgenera and eleven new species" datatype="xsd:string" id="meta27297" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta27296" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="11908" datatype="xsd:string" id="meta27295" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta27293" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls23367" id="Tls23367" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@51b829bb $Rev: 1040 $" datatype="xsd:string" id="meta27324" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl660504" id="Tl660504" label="Tylopilus chromapes JN378517">
+      <meta content="620813" datatype="xsd:long" id="meta27332" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="831354" datatype="xsd:long" id="meta27331" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Harrya chromapes" datatype="xsd:string" id="meta27330" property="skos:prefLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/121043" id="meta27329" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Tylopilus chromapes" datatype="xsd:string" id="meta27328" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3203551" id="meta27327" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27326" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660486" id="Tl660486" label="Octaviania decimae JN378465">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27334" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660485" id="Tl660485" label="Octaviania decimae JN378466">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27336" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660523" id="Tl660523" label="Octaviania decimae JN378467">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27338" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660483" id="Tl660483" label="Octaviania decimae JN378468">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27340" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660506" id="Tl660506" label="Octaviania decimae JN378469">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27342" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660547" id="Tl660547" label="Octaviania nonae JN378459">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27344" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660517" id="Tl660517" label="Octaviania decimae JN378460">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27346" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660519" id="Tl660519" label="Octaviania decimae JN378461">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27348" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660494" id="Tl660494" label="Octaviania decimae JN378462">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27350" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660511" id="Tl660511" label="Octaviania decimae JN378463">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27352" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660530" id="Tl660530" label="Octaviania decimae JN378464">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27354" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660525" id="Tl660525" label="Octaviania mortae JN378470">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27356" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660533" id="Tl660533" label="Octaviania mortae JN378471">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27358" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660522" id="Tl660522" label="Octaviania mortae JN378472">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27360" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660540" id="Tl660540" label="Octaviania celatifilia JN378473">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27362" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660544" id="Tl660544" label="Octaviania asterosperma JN378497">
+      <meta content="339049" datatype="xsd:long" id="meta27369" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="501827" datatype="xsd:long" id="meta27368" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/388861" id="meta27367" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Octaviania asterosperma" datatype="xsd:string" id="meta27366" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3102704" id="meta27365" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27364" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660509" id="Tl660509" label="Octaviania asterosperma DQ534619">
+      <meta content="339049" datatype="xsd:long" id="meta27376" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="501827" datatype="xsd:long" id="meta27375" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/388861" id="meta27374" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Octaviania asterosperma" datatype="xsd:string" id="meta27373" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3102704" id="meta27372" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27371" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660493" id="Tl660493" label="Octaviania nigrescens JN378498">
+      <meta content="608919" datatype="xsd:long" id="meta27382" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813454" datatype="xsd:long" id="meta27381" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania nigrescens" datatype="xsd:string" id="meta27380" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3182954" id="meta27379" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27378" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660489" id="Tl660489" label="Octaviania tasmanica JN378493">
+      <meta content="608918" datatype="xsd:long" id="meta27388" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813453" datatype="xsd:long" id="meta27387" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania tasmanica" datatype="xsd:string" id="meta27386" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3148691" id="meta27385" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27384" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660487" id="Tl660487" label="Octaviania tasmanica JN378494">
+      <meta content="608918" datatype="xsd:long" id="meta27394" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813453" datatype="xsd:long" id="meta27393" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania tasmanica" datatype="xsd:string" id="meta27392" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3148691" id="meta27391" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27390" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660496" id="Tl660496" label="Octaviania tasmanica JN378495">
+      <meta content="608918" datatype="xsd:long" id="meta27400" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813453" datatype="xsd:long" id="meta27399" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania tasmanica" datatype="xsd:string" id="meta27398" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3148691" id="meta27397" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27396" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660538" id="Tl660538" label="Octaviania tasmanica JN378496">
+      <meta content="608918" datatype="xsd:long" id="meta27406" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813453" datatype="xsd:long" id="meta27405" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania tasmanica" datatype="xsd:string" id="meta27404" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3148691" id="meta27403" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27402" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660507" id="Tl660507" label="Octaviania asahimontana JN378489">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27408" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660502" id="Tl660502" label="Octaviania cyanescens JN378502">
+      <meta content="608916" datatype="xsd:long" id="meta27414" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813451" datatype="xsd:long" id="meta27413" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania cyanescens" datatype="xsd:string" id="meta27412" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3992192" id="meta27411" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27410" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660529" id="Tl660529" label="Octaviania cyanescens JN378503">
+      <meta content="608916" datatype="xsd:long" id="meta27420" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813451" datatype="xsd:long" id="meta27419" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania cyanescens" datatype="xsd:string" id="meta27418" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3992192" id="meta27417" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27416" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660541" id="Tl660541" label="Octaviania kobayasii JN378474">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27422" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660548" id="Tl660548" label="Octaviania kobayasii JN378475">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27424" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660549" id="Tl660549" label="Octaviania kobayasii JN378476">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27426" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660531" id="Tl660531" label="Octaviania kobayasii JN378478">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27428" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660534" id="Tl660534" label="Octaviania kobayasii JN378477">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27430" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660546" id="Tl660546" label="Octaviania sp RH30 USA JN378500">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27432" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660505" id="Tl660505" label="Octaviania sp RH1181 USA JN378501">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27434" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660498" id="Tl660498" label="Octaviania sp OSC131925 USA JN378499">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27436" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660492" id="Tl660492" label="Octaviania hesperi JN378479">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27438" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660537" id="Tl660537" label="Octaviania hesperi JN378480">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27440" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660484" id="Tl660484" label="Octaviania hesperi JN378481">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27442" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660497" id="Tl660497" label="Octaviania japonimontana JN378482">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27444" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660500" id="Tl660500" label="Octaviania japonimontana JN378483">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27446" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660536" id="Tl660536" label="Octaviania japonimontana JN378484">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27448" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660514" id="Tl660514" label="Octaviania japonimontana JN378485">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27450" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660535" id="Tl660535" label="Octaviania japonimontana JN378486">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27452" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660520" id="Tl660520" label="Octaviania sp.E Amami Oshima JN378487">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27454" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660512" id="Tl660512" label="Octaviania durianelloides JN378488">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27456" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660491" id="Tl660491" label="Octaviania yaeyamaensis JN378490">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27458" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660495" id="Tl660495" label="Octaviania yaeyamaensis JN378491">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27460" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660515" id="Tl660515" label="Octaviania etchuensis JN378492">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27462" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660488" id="Tl660488" label="Rossbeevera vittatispora JN378506">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27464" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660482" id="Tl660482" label="Rossbeevera westraliensis JN378505">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27466" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660518" id="Tl660518" label="Rossbeevera vittatispora JN378507">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27468" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660545" id="Tl660545" label="Rossbeevera eucyanea HQ693879">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27470" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660513" id="Tl660513" label="Leccinellum aff griseum JN378508">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27472" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660490" id="Tl660490" label="Leccinellum aff griseum JN378509">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27474" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660521" id="Tl660521" label="Leccinum scabrum Scotland JN378515">
+      <meta content="15473" datatype="xsd:long" id="meta27481" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="36324" datatype="xsd:long" id="meta27480" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/121051" id="meta27479" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Leccinum scabrum" datatype="xsd:string" id="meta27478" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3018208" id="meta27477" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27476" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660510" id="Tl660510" label="Leccinum scabrum JN378511">
+      <meta content="15473" datatype="xsd:long" id="meta27488" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="36324" datatype="xsd:long" id="meta27487" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/121051" id="meta27486" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Leccinum scabrum" datatype="xsd:string" id="meta27485" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3018208" id="meta27484" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27483" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660503" id="Tl660503" label="Leccinum versipelle JN378514">
+      <meta content="15475" datatype="xsd:long" id="meta27495" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="36329" datatype="xsd:long" id="meta27494" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/121053" id="meta27493" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Leccinum versipelle" datatype="xsd:string" id="meta27492" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3170635" id="meta27491" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27490" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660524" id="Tl660524" label="Leccinum sp Japan JN378513">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27497" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660516" id="Tl660516" label="Leccinum sp Japan JN378512">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27499" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660528" id="Tl660528" label="Leccinum durisculum Uwan JN378510">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27501" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660539" id="Tl660539" label="Leccinellum carpini AF454588">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27503" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660501" id="Tl660501" label="Leccinellum carpini AF139691">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27505" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660508" id="Tl660508" label="Chamonixia caespitosa EU669260">
+      <meta content="5698" datatype="xsd:long" id="meta27512" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="13823" datatype="xsd:long" id="meta27511" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/90414" id="meta27510" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Chamonixia caespitosa" datatype="xsd:string" id="meta27509" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3094383" id="meta27508" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27507" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660526" id="Tl660526" label="Chamonixia caespitosa AF336245">
+      <meta content="5698" datatype="xsd:long" id="meta27519" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="13823" datatype="xsd:long" id="meta27518" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/90414" id="meta27517" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Chamonixia caespitosa" datatype="xsd:string" id="meta27516" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3094383" id="meta27515" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27514" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660499" id="Tl660499" label="Chamonixia caespitosa EU669427">
+      <meta content="5698" datatype="xsd:long" id="meta27526" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="13823" datatype="xsd:long" id="meta27525" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/90414" id="meta27524" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Chamonixia caespitosa" datatype="xsd:string" id="meta27523" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3094383" id="meta27522" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27521" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660527" id="Tl660527" label="Austroboletus mucosus AY612798">
+      <meta content="247339" datatype="xsd:long" id="meta27533" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="307801" datatype="xsd:long" id="meta27532" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/279505" id="meta27531" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Austroboletus mucosus" datatype="xsd:string" id="meta27530" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3034122" id="meta27529" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27528" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660532" id="Tl660532" label="Austroboletus gracilis DQ534624">
+      <meta content="339027" datatype="xsd:long" id="meta27540" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="376322" datatype="xsd:long" id="meta27539" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/388838" id="meta27538" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Austroboletus gracilis" datatype="xsd:string" id="meta27537" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3034119" id="meta27536" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27535" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660542" id="Tl660542" label="Austroboletus niveus DQ534622">
+      <meta content="339028" datatype="xsd:long" id="meta27547" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="376323" datatype="xsd:long" id="meta27546" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/388839" id="meta27545" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Austroboletus niveus" datatype="xsd:string" id="meta27544" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3034123" id="meta27543" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27542" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660543" id="Tl660543" label="Austroboletus novaezelandiae DQ534623">
+      <meta content="608917" datatype="xsd:long" id="meta27553" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813452" datatype="xsd:long" id="meta27552" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Austroboletus novaezelandiae" datatype="xsd:string" id="meta27551" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3034124" id="meta27550" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27549" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <otus about="#Tls23368" id="Tls23368" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@51b829bb $Rev: 1040 $" datatype="xsd:string" id="meta27555" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl660560" id="Tl660560" label="Octaviania decimae KYOTO 1 JN378409">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27557" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660568" id="Tl660568" label="Octaviania decimae KYOTO 2 JN378410">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27559" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660553" id="Tl660553" label="Octaviania decimae OITA 1 JN378411">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27561" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660594" id="Tl660594" label="Octaviania decimae OITA 2 JN378412">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27563" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660567" id="Tl660567" label="Octaviania nonae Amami 1 JN378403">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27565" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660574" id="Tl660574" label="Octaviania nonae Amami 2 JN378404">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27567" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660603" id="Tl660603" label="Octaviania nonae MIE JN378405">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27569" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660595" id="Tl660595" label="Octaviania nonae HYOGO JN378406">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27571" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660597" id="Tl660597" label="Octaviania nonae HIROSHIMA JN378407">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27573" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660565" id="Tl660565" label="Octaviania nonae OITA JN378408">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27575" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660566" id="Tl660566" label="Octaviania mortae TOTTORI JN378413">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27577" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660589" id="Tl660589" label="Octaviania mortae KYOTO 1 JN378414">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27579" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660592" id="Tl660592" label="Octaviania mortae KYOTO 2 JN378415">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27581" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660564" id="Tl660564" label="Octaviania celatifilia NARA JN378416">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27583" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660601" id="Tl660601" label="Octaviania nigrescens FL MES270 JN378440">
+      <meta content="608914" datatype="xsd:long" id="meta27588" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813448" datatype="xsd:long" id="meta27587" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3189254" id="meta27586" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27585" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660557" id="Tl660557" label="Octaviania tasmanica VIC JN378434">
+      <meta content="608918" datatype="xsd:long" id="meta27594" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813453" datatype="xsd:long" id="meta27593" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania tasmanica" datatype="xsd:string" id="meta27592" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3148691" id="meta27591" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27590" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660588" id="Tl660588" label="Octaviania tasmanica TAS JN378435">
+      <meta content="608918" datatype="xsd:long" id="meta27600" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813453" datatype="xsd:long" id="meta27599" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania tasmanica" datatype="xsd:string" id="meta27598" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3148691" id="meta27597" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27596" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660600" id="Tl660600" label="Octaviania tasmanica TAS JN378436">
+      <meta content="608918" datatype="xsd:long" id="meta27606" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813453" datatype="xsd:long" id="meta27605" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania tasmanica" datatype="xsd:string" id="meta27604" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3148691" id="meta27603" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27602" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660599" id="Tl660599" label="Octaviania tasmanica NSW JN378437">
+      <meta content="608918" datatype="xsd:long" id="meta27612" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813453" datatype="xsd:long" id="meta27611" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania tasmanica" datatype="xsd:string" id="meta27610" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3148691" id="meta27609" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27608" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660571" id="Tl660571" label="Octaviania asahimontana HOKKAIDO JN378430">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27614" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660559" id="Tl660559" label="Octaviania cyanescens CANADA BC JN378439">
+      <meta content="608916" datatype="xsd:long" id="meta27620" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813451" datatype="xsd:long" id="meta27619" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania cyanescens" datatype="xsd:string" id="meta27618" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3992192" id="meta27617" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27616" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660558" id="Tl660558" label="Octaviania cyanescens OR JN378502">
+      <meta content="608916" datatype="xsd:long" id="meta27626" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="813451" datatype="xsd:long" id="meta27625" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Octaviania cyanescens" datatype="xsd:string" id="meta27624" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3992192" id="meta27623" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27622" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660572" id="Tl660572" label="Octavania kobayasii KYOTO 1 JN378417">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27628" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660563" id="Tl660563" label="Octavania kobayasii OKAYAMA JN378418">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27630" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660555" id="Tl660555" label="Octavania kobayasii NARA JN378420">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27632" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660596" id="Tl660596" label="Octavania kobayasii KYOTO 2 JN378419">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27634" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660580" id="Tl660580" label="Octaviania sp. RH30 USA IA JN378442">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27636" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660587" id="Tl660587" label="Octaviania sp. RH1181 USA MN JN378443">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27638" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660582" id="Tl660582" label="Octaviania sp. FL USA JN378441">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27640" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660590" id="Tl660590" label="Octaviania hesperi TOKYO JN378421">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27642" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660575" id="Tl660575" label="Octaviania hesperi KANAGAWA JN378422">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27644" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660602" id="Tl660602" label="Octaviania hesperi TOTTORIO JN378423">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27646" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660561" id="Tl660561" label="Octaviania japonimontana TOTTORI 1 JN378424">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27648" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660552" id="Tl660552" label="Octaviania japonimontana AKITA JN378425">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27650" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660570" id="Tl660570" label="Octaviania japonimontana TOTTORI 2 JN378426">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27652" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660584" id="Tl660584" label="Octaviania japonimontana TOTTORI 3 JN3784247">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27654" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660577" id="Tl660577" label="Octaviania japonimontana OKAYAMA JN3784248">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27656" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660585" id="Tl660585" label="Octaviania sp.E Amami Oshima JN378429">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27658" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660569" id="Tl660569" label="Octaviania yaeyamaensis Ishigaki Isl 1 JN378431">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27660" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660551" id="Tl660551" label="Octaviania yaeyamaensis Ishigaki Isl 2 JN378432">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27662" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660583" id="Tl660583" label="Octaviania etchuensis TOYAMA JN378433">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27664" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660593" id="Tl660593" label="Rossbeevera vittatispora NSW JN378446">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27666" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660586" id="Tl660586" label="Rossbeevera westraliensis WA JN378445">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27668" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660579" id="Tl660579" label="Rossbeevera vittatispora NSW JN378447">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27670" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660554" id="Tl660554" label="Rossbeevera eucyanea MIE JN378444">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27672" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660550" id="Tl660550" label="Leccinellum aff griseum HYOGO JN378449">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27674" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660598" id="Tl660598" label="Leccinellum aff griseum TOTTORI JN378450">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27676" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660573" id="Tl660573" label="Leccinum scabrum Scotland JN378455">
+      <meta content="15473" datatype="xsd:long" id="meta27683" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="36324" datatype="xsd:long" id="meta27682" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/121051" id="meta27681" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Leccinum scabrum" datatype="xsd:string" id="meta27680" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3018208" id="meta27679" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27678" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660578" id="Tl660578" label="Leccinum vulpinum Scotland JN378456">
+      <meta content="15476" datatype="xsd:long" id="meta27690" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="36331" datatype="xsd:long" id="meta27689" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/196699" id="meta27688" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Leccinum vulpinum" datatype="xsd:string" id="meta27687" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3210860" id="meta27686" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27685" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660562" id="Tl660562" label="Leccinum scabrum IWATE JN378451">
+      <meta content="15473" datatype="xsd:long" id="meta27697" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="36324" datatype="xsd:long" id="meta27696" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/121051" id="meta27695" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Leccinum scabrum" datatype="xsd:string" id="meta27694" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3018208" id="meta27693" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27692" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660591" id="Tl660591" label="Leccinum sp IWATE JN378452">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27699" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660576" id="Tl660576" label="Leccinum sp IWATE JN378453">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27701" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660581" id="Tl660581" label="Leccinum durisculum HYOGO JN378448">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11908" id="meta27703" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl660556" id="Tl660556" label="Leccinum versipelle Scotland JN378454">
+      <meta content="15475" datatype="xsd:long" id="meta27710" property="tb:identifier.taxon" xsi:type="nex:Litera

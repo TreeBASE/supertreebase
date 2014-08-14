@@ -1,0 +1,1915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S11783" generator="org.nexml.model.impl.DocumentImpl" id="S11783" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Wed Aug 13 11:24:34 EDT 2014" datatype="xsd:string" id="meta17681" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@75fdb6d4 $Rev: 1060 $" datatype="xsd:string" id="meta17680" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta17679" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="51" datatype="xsd:string" id="meta17678" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Australian Journal of Entomology" datatype="xsd:string" id="meta17677" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Australian Journal of Entomology" datatype="xsd:string" id="meta17676" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta17675" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="175-188" datatype="xsd:string" id="meta17674" property="prism:pageRange" xsi:type="nex:LiteralMeta"/>
+  <meta content="188" datatype="xsd:string" id="meta17673" property="prism:endingPage" xsi:type="nex:LiteralMeta"/>
+  <meta content="175" datatype="xsd:string" id="meta17672" property="prism:startingPage" xsi:type="nex:LiteralMeta"/>
+  <meta content="10.1111/j.1440-6055.2011.00853.x" datatype="xsd:string" id="meta17671" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2012" datatype="xsd:string" id="meta17670" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Oberprieler R." datatype="xsd:string" id="meta17669" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Matsuki M." datatype="xsd:string" id="meta17668" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Burgess T.I." datatype="xsd:string" id="meta17667" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapondera T." datatype="xsd:string" id="meta17666" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapondera T., Burgess T.I., Matsuki M., &amp; Oberprieler R." datatype="xsd:string" id="meta17665" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="Identification and molecular phylogenetics of the cryptic species of the Gonipterus scutellatus complex (Coleoptera: Curculionidae: Gonipterini)" datatype="xsd:string" id="meta17664" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapondera T., Burgess T.I., Matsuki M., &amp; Oberprieler R. 2012. Identification and molecular phylogenetics of the cryptic species of the Gonipterus scutellatus complex (Coleoptera: Curculionidae: Gonipterini). Australian Journal of Entomology, 51: 175-188." datatype="xsd:string" id="meta17663" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2011-07-27" datatype="xsd:string" id="meta17662" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013-04-16" datatype="xsd:string" id="meta17661" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013-04-16" datatype="xsd:string" id="meta17660" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="Phylogeny of Gonipterus scutellatus complex" datatype="xsd:string" id="meta17659" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta17658" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="11783" datatype="xsd:string" id="meta17657" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta17655" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls23298" id="Tls23298" label="Untitled Block of Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3add7f8e $Rev: 1040 $" datatype="xsd:string" id="meta17683" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl587284" id="Tl587284" label="Haplonyx sp. TIB-2009 FJ888591">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17685" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657975" id="Tl657975" label="Gonipterus platensis co1 FJ888530">
+      <meta content="607176" datatype="xsd:long" id="meta17691" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17690" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17689" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17688" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17687" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657992" id="Tl657992" label="Gonipterus platensis co2 FJ888529">
+      <meta content="607176" datatype="xsd:long" id="meta17697" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17696" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17695" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17694" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17693" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657993" id="Tl657993" label="Gonipterus platensis co3 JN3191478">
+      <meta content="607176" datatype="xsd:long" id="meta17703" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17702" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17701" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17700" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17699" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658008" id="Tl658008" label="Gonipterus platensis ESP JN3191479">
+      <meta content="607176" datatype="xsd:long" id="meta17709" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17708" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17707" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17706" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17705" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658002" id="Tl658002" label="Gonipterus platensis POR JN3191480">
+      <meta content="607176" datatype="xsd:long" id="meta17715" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17714" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17713" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17712" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17711" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658021" id="Tl658021" label="Gonipterus pulverulentus Co4 FJ888531">
+      <meta content="618091" datatype="xsd:long" id="meta17721" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="827343" datatype="xsd:long" id="meta17720" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus pulverulentus" datatype="xsd:string" id="meta17719" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10087259" id="meta17718" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17717" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657988" id="Tl657988" label="Gonipterus pulverulentus co5 FJ888532">
+      <meta content="618091" datatype="xsd:long" id="meta17727" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="827343" datatype="xsd:long" id="meta17726" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus pulverulentus" datatype="xsd:string" id="meta17725" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10087259" id="meta17724" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17723" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657999" id="Tl657999" label="Gonipterus pulverulentus co6 FJ888533">
+      <meta content="618091" datatype="xsd:long" id="meta17733" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="827343" datatype="xsd:long" id="meta17732" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus pulverulentus" datatype="xsd:string" id="meta17731" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10087259" id="meta17730" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17729" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658012" id="Tl658012" label="Gonipterus sp n 1 co7 FJ888534">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17735" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658027" id="Tl658027" label="Gonipterus sp n 1 co8 FJ888535">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17737" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657972" id="Tl657972" label="Gonipterus sp n 1 co9 FJ888536">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17739" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658038" id="Tl658038" label="Gonipterus sp n 1 co10 FJ888537">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17741" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657983" id="Tl657983" label="Gonipterus sp n 1 co11 FJ888538">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17743" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658013" id="Tl658013" label="Gonipterus sp n 2 co12 FJ888539">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17745" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657980" id="Tl657980" label="Gonipterus sp n 2 co13 FJ888540">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17747" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657996" id="Tl657996" label="Gonipterus sp n 2 co14 FJ888541">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17749" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658024" id="Tl658024" label="Gonipterus sp n 2 co15 FJ888542">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17751" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658017" id="Tl658017" label="Gonipterus sp n 2 co16 FJ888543">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17753" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658037" id="Tl658037" label="Gonipterus sp n 2 co17 FJ888544">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17755" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658007" id="Tl658007" label="Gonipterus sp n 2 co18 FJ888545">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17757" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658014" id="Tl658014" label="Gonipterus sp n 2 co19 FJ888546">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17759" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658010" id="Tl658010" label="Gonipterus sp n 2 co20 FJ888547">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17761" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657981" id="Tl657981" label="Gonipterus sp n 2 co21 FJ888548">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17763" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657976" id="Tl657976" label="Gonipterus sp n 2 co22 FJ888549">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17765" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658018" id="Tl658018" label="Gonipterus sp n 2 co23 FJ888550">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17767" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657977" id="Tl657977" label="Gonipterus sp n 2 co24 FJ888551">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17769" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658022" id="Tl658022" label="Gonipterus sp n 2 co25 FJ888552">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17771" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657985" id="Tl657985" label="Gonipterus sp n 2 co26 FJ888552">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17773" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657990" id="Tl657990" label="Gonipterus sp n 2 co27 FJ888553">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17775" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658033" id="Tl658033" label="Gonipterus sp n 2 co28 JN3191481">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17777" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658009" id="Tl658009" label="Gonipterus sp n 2 co29 JN3191482">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17779" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657974" id="Tl657974" label="Gonipterus sp n 2 co30 JN3191483">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17781" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658001" id="Tl658001" label="Gonipterus sp n 2 RSA JN3191484">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17783" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658006" id="Tl658006" label="Gonipterus sp n 2 co31 JN3191485">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17785" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658028" id="Tl658028" label="Gonipterus sp n 3 co32 FJ888557">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17787" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657998" id="Tl657998" label="Gonipterus sp n 3 co33 FJ888558">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17789" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657971" id="Tl657971" label="Gonipterus sp n 3 co34 FJ888559">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17791" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657978" id="Tl657978" label="Gonipterus sp n 3 co35 FJ888560">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17793" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658015" id="Tl658015" label="Gonipterus sp n 3 co36 FJ888561">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17795" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658034" id="Tl658034" label="Gonipterus sp n 3 co37 FJ888562">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17797" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657997" id="Tl657997" label="Gonipterus sp n 3 co38 FJ888563">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17799" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658032" id="Tl658032" label="Gonipterus sp n 3 co39 FJ888564">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17801" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657989" id="Tl657989" label="Gonipterus sp n 3 co40 FJ888565">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17803" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658026" id="Tl658026" label="Gonipterus sp n 3 co41 FJ888566">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17805" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658003" id="Tl658003" label="Gonipterus sp n 4 co42 FJ888568">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17807" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657994" id="Tl657994" label="Gonipterus sp n 4 co43 FJ888569">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17809" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658029" id="Tl658029" label="Gonipterus balteatus co44 FJ888567">
+      <meta content="618092" datatype="xsd:long" id="meta17815" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="827344" datatype="xsd:long" id="meta17814" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus balteatus" datatype="xsd:string" id="meta17813" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10081708" id="meta17812" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17811" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658035" id="Tl658035" label="Gonipterus notographus co45 FJ888570">
+      <meta content="607177" datatype="xsd:long" id="meta17821" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17820" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17819" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17818" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17817" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657991" id="Tl657991" label="Gonipterus notographus co46 FJ888571">
+      <meta content="607177" datatype="xsd:long" id="meta17827" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17826" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17825" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17824" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17823" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658023" id="Tl658023" label="Gonipterus notographus co47 FJ888572">
+      <meta content="607177" datatype="xsd:long" id="meta17833" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17832" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17831" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17830" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17829" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658019" id="Tl658019" label="Gonipterus notographus co48 FJ888573">
+      <meta content="607177" datatype="xsd:long" id="meta17839" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17838" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17837" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17836" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17835" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658020" id="Tl658020" label="Gonipterus notographus co49 FJ888574">
+      <meta content="607177" datatype="xsd:long" id="meta17845" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17844" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17843" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17842" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17841" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658005" id="Tl658005" label="Gonipterus notographus co50 FJ888575">
+      <meta content="607177" datatype="xsd:long" id="meta17851" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17850" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17849" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17848" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17847" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658031" id="Tl658031" label="Gonipterus notographus co51 FJ888576">
+      <meta content="607177" datatype="xsd:long" id="meta17857" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17856" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17855" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17854" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17853" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657995" id="Tl657995" label="Gonipterus notographus co52 FJ888577">
+      <meta content="607177" datatype="xsd:long" id="meta17863" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17862" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17861" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17860" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17859" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657979" id="Tl657979" label="Gonipterus notographus co53 FJ888578">
+      <meta content="607177" datatype="xsd:long" id="meta17869" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17868" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17867" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17866" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17865" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658030" id="Tl658030" label="Gonipterus notographus co54 FJ888579">
+      <meta content="607177" datatype="xsd:long" id="meta17875" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17874" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17873" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17872" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17871" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657986" id="Tl657986" label="Gonipterus notographus co55 FJ888580">
+      <meta content="607177" datatype="xsd:long" id="meta17881" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17880" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17879" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17878" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17877" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657987" id="Tl657987" label="Gonipterus notographus co56 FJ888581">
+      <meta content="607177" datatype="xsd:long" id="meta17887" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17886" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17885" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17884" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17883" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657984" id="Tl657984" label="Gonipterus notographus co57 FJ888582">
+      <meta content="607177" datatype="xsd:long" id="meta17893" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17892" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17891" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17890" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17889" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658000" id="Tl658000" label="Gonipterus notographus co59 FJ888584">
+      <meta content="607177" datatype="xsd:long" id="meta17899" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17898" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17897" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17896" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17895" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658004" id="Tl658004" label="Gonipterus notographus co60 FJ888585">
+      <meta content="607177" datatype="xsd:long" id="meta17905" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17904" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17903" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17902" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17901" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658036" id="Tl658036" label="Gonipterus notographus co61 FJ888586">
+      <meta content="607177" datatype="xsd:long" id="meta17911" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17910" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17909" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17908" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17907" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657970" id="Tl657970" label="Gonipterus notographus co62 FJ888587">
+      <meta content="607177" datatype="xsd:long" id="meta17917" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta17916" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta17915" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta17914" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17913" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657973" id="Tl657973" label="Gonipterus sp n 5 co63 FJ888588">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17919" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658011" id="Tl658011" label="Gonipterus sp n 5 co64 FJ888589">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17921" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657982" id="Tl657982" label="Gonipterus scutellatus co65 JN3191486">
+      <meta content="607178" datatype="xsd:long" id="meta17927" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810855" datatype="xsd:long" id="meta17926" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus scutellatus" datatype="xsd:string" id="meta17925" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5474694" id="meta17924" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17923" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658016" id="Tl658016" label="Oxyops sp. TIB-2011 co66 FJ888590">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17929" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658025" id="Tl658025" label="Oxyops co67 JN3191487">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17931" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <otus about="#Tls23297" id="Tls23297" label="Untitled Taxa Block" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3add7f8e $Rev: 1040 $" datatype="xsd:string" id="meta17933" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl587284" id="Tl587284" label="Haplonyx sp. TIB-2009 FJ888591">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17935" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657975" id="Tl657975" label="Gonipterus platensis co1 FJ888530">
+      <meta content="607176" datatype="xsd:long" id="meta17941" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17940" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17939" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17938" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17937" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657992" id="Tl657992" label="Gonipterus platensis co2 FJ888529">
+      <meta content="607176" datatype="xsd:long" id="meta17947" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17946" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17945" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17944" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17943" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657993" id="Tl657993" label="Gonipterus platensis co3 JN3191478">
+      <meta content="607176" datatype="xsd:long" id="meta17953" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17952" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17951" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17950" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17949" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658008" id="Tl658008" label="Gonipterus platensis ESP JN3191479">
+      <meta content="607176" datatype="xsd:long" id="meta17959" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17958" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17957" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17956" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17955" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658002" id="Tl658002" label="Gonipterus platensis POR JN3191480">
+      <meta content="607176" datatype="xsd:long" id="meta17965" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810853" datatype="xsd:long" id="meta17964" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus platensis" datatype="xsd:string" id="meta17963" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6868323" id="meta17962" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17961" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658021" id="Tl658021" label="Gonipterus pulverulentus Co4 FJ888531">
+      <meta content="618091" datatype="xsd:long" id="meta17971" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="827343" datatype="xsd:long" id="meta17970" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus pulverulentus" datatype="xsd:string" id="meta17969" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10087259" id="meta17968" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17967" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657988" id="Tl657988" label="Gonipterus pulverulentus co5 FJ888532">
+      <meta content="618091" datatype="xsd:long" id="meta17977" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="827343" datatype="xsd:long" id="meta17976" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus pulverulentus" datatype="xsd:string" id="meta17975" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10087259" id="meta17974" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17973" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657999" id="Tl657999" label="Gonipterus pulverulentus co6 FJ888533">
+      <meta content="618091" datatype="xsd:long" id="meta17983" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="827343" datatype="xsd:long" id="meta17982" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus pulverulentus" datatype="xsd:string" id="meta17981" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10087259" id="meta17980" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17979" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658012" id="Tl658012" label="Gonipterus sp n 1 co7 FJ888534">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17985" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658027" id="Tl658027" label="Gonipterus sp n 1 co8 FJ888535">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17987" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657972" id="Tl657972" label="Gonipterus sp n 1 co9 FJ888536">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17989" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658038" id="Tl658038" label="Gonipterus sp n 1 co10 FJ888537">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17991" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657983" id="Tl657983" label="Gonipterus sp n 1 co11 FJ888538">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17993" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658013" id="Tl658013" label="Gonipterus sp n 2 co12 FJ888539">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17995" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657980" id="Tl657980" label="Gonipterus sp n 2 co13 FJ888540">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17997" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657996" id="Tl657996" label="Gonipterus sp n 2 co14 FJ888541">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta17999" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658024" id="Tl658024" label="Gonipterus sp n 2 co15 FJ888542">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18001" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658017" id="Tl658017" label="Gonipterus sp n 2 co16 FJ888543">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18003" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658037" id="Tl658037" label="Gonipterus sp n 2 co17 FJ888544">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18005" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658007" id="Tl658007" label="Gonipterus sp n 2 co18 FJ888545">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18007" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658014" id="Tl658014" label="Gonipterus sp n 2 co19 FJ888546">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18009" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658010" id="Tl658010" label="Gonipterus sp n 2 co20 FJ888547">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18011" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657981" id="Tl657981" label="Gonipterus sp n 2 co21 FJ888548">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18013" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657976" id="Tl657976" label="Gonipterus sp n 2 co22 FJ888549">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18015" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658018" id="Tl658018" label="Gonipterus sp n 2 co23 FJ888550">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18017" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657977" id="Tl657977" label="Gonipterus sp n 2 co24 FJ888551">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18019" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658022" id="Tl658022" label="Gonipterus sp n 2 co25 FJ888552">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18021" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657985" id="Tl657985" label="Gonipterus sp n 2 co26 FJ888552">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18023" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657990" id="Tl657990" label="Gonipterus sp n 2 co27 FJ888553">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18025" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658033" id="Tl658033" label="Gonipterus sp n 2 co28 JN3191481">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18027" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658009" id="Tl658009" label="Gonipterus sp n 2 co29 JN3191482">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18029" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657974" id="Tl657974" label="Gonipterus sp n 2 co30 JN3191483">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18031" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658001" id="Tl658001" label="Gonipterus sp n 2 RSA JN3191484">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18033" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658006" id="Tl658006" label="Gonipterus sp n 2 co31 JN3191485">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18035" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658028" id="Tl658028" label="Gonipterus sp n 3 co32 FJ888557">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18037" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657998" id="Tl657998" label="Gonipterus sp n 3 co33 FJ888558">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18039" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657971" id="Tl657971" label="Gonipterus sp n 3 co34 FJ888559">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18041" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657978" id="Tl657978" label="Gonipterus sp n 3 co35 FJ888560">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18043" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658015" id="Tl658015" label="Gonipterus sp n 3 co36 FJ888561">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18045" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658034" id="Tl658034" label="Gonipterus sp n 3 co37 FJ888562">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18047" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657997" id="Tl657997" label="Gonipterus sp n 3 co38 FJ888563">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18049" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658032" id="Tl658032" label="Gonipterus sp n 3 co39 FJ888564">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18051" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657989" id="Tl657989" label="Gonipterus sp n 3 co40 FJ888565">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18053" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658026" id="Tl658026" label="Gonipterus sp n 3 co41 FJ888566">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18055" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658003" id="Tl658003" label="Gonipterus sp n 4 co42 FJ888568">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18057" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657994" id="Tl657994" label="Gonipterus sp n 4 co43 FJ888569">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18059" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658029" id="Tl658029" label="Gonipterus balteatus co44 FJ888567">
+      <meta content="618092" datatype="xsd:long" id="meta18065" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="827344" datatype="xsd:long" id="meta18064" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus balteatus" datatype="xsd:string" id="meta18063" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10081708" id="meta18062" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18061" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658035" id="Tl658035" label="Gonipterus notographus co45 FJ888570">
+      <meta content="607177" datatype="xsd:long" id="meta18071" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18070" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18069" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18068" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18067" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657991" id="Tl657991" label="Gonipterus notographus co46 FJ888571">
+      <meta content="607177" datatype="xsd:long" id="meta18077" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18076" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18075" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18074" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18073" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658023" id="Tl658023" label="Gonipterus notographus co47 FJ888572">
+      <meta content="607177" datatype="xsd:long" id="meta18083" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18082" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18081" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18080" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18079" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658019" id="Tl658019" label="Gonipterus notographus co48 FJ888573">
+      <meta content="607177" datatype="xsd:long" id="meta18089" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18088" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18087" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18086" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18085" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658020" id="Tl658020" label="Gonipterus notographus co49 FJ888574">
+      <meta content="607177" datatype="xsd:long" id="meta18095" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18094" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18093" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18092" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18091" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658005" id="Tl658005" label="Gonipterus notographus co50 FJ888575">
+      <meta content="607177" datatype="xsd:long" id="meta18101" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18100" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18099" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18098" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18097" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658031" id="Tl658031" label="Gonipterus notographus co51 FJ888576">
+      <meta content="607177" datatype="xsd:long" id="meta18107" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18106" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18105" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18104" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18103" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657995" id="Tl657995" label="Gonipterus notographus co52 FJ888577">
+      <meta content="607177" datatype="xsd:long" id="meta18113" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18112" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18111" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18110" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18109" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657979" id="Tl657979" label="Gonipterus notographus co53 FJ888578">
+      <meta content="607177" datatype="xsd:long" id="meta18119" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18118" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18117" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18116" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18115" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658030" id="Tl658030" label="Gonipterus notographus co54 FJ888579">
+      <meta content="607177" datatype="xsd:long" id="meta18125" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18124" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18123" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18122" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18121" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657986" id="Tl657986" label="Gonipterus notographus co55 FJ888580">
+      <meta content="607177" datatype="xsd:long" id="meta18131" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18130" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18129" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18128" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18127" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657987" id="Tl657987" label="Gonipterus notographus co56 FJ888581">
+      <meta content="607177" datatype="xsd:long" id="meta18137" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18136" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18135" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18134" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18133" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657984" id="Tl657984" label="Gonipterus notographus co57 FJ888582">
+      <meta content="607177" datatype="xsd:long" id="meta18143" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18142" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18141" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18140" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18139" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658000" id="Tl658000" label="Gonipterus notographus co59 FJ888584">
+      <meta content="607177" datatype="xsd:long" id="meta18149" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18148" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18147" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18146" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18145" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658004" id="Tl658004" label="Gonipterus notographus co60 FJ888585">
+      <meta content="607177" datatype="xsd:long" id="meta18155" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18154" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18153" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18152" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18151" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658036" id="Tl658036" label="Gonipterus notographus co61 FJ888586">
+      <meta content="607177" datatype="xsd:long" id="meta18161" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18160" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18159" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18158" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18157" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657970" id="Tl657970" label="Gonipterus notographus co62 FJ888587">
+      <meta content="607177" datatype="xsd:long" id="meta18167" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810854" datatype="xsd:long" id="meta18166" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus notographus" datatype="xsd:string" id="meta18165" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6330073" id="meta18164" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18163" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657973" id="Tl657973" label="Gonipterus sp n 5 co63 FJ888588">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18169" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658011" id="Tl658011" label="Gonipterus sp n 5 co64 FJ888589">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18171" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl657982" id="Tl657982" label="Gonipterus scutellatus co65 JN3191486">
+      <meta content="607178" datatype="xsd:long" id="meta18177" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="810855" datatype="xsd:long" id="meta18176" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta content="Gonipterus scutellatus" datatype="xsd:string" id="meta18175" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5474694" id="meta18174" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18173" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658016" id="Tl658016" label="Oxyops sp. TIB-2011 co66 FJ888590">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18179" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl658025" id="Tl658025" label="Oxyops co67 JN3191487">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18181" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M10733" id="M10733" label="Gonipterus scutellatus COI" otus="Tls23297" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:DnaSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@72f32a30 $Rev: 1056 $" datatype="xsd:string" id="meta18206" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="10733" datatype="xsd:long" id="meta18205" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="420" datatype="xsd:integer" id="meta18204" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="70" datatype="xsd:integer" id="meta18203" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="DNA" datatype="xsd:string" id="meta18202" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states18183">
+        <state id="state18184" symbol="A"/>
+        <state id="state18185" symbol="C"/>
+        <state id="state18186" symbol="G"/>
+        <state id="state18187" symbol="T"/>
+        <uncertain_state_set id="uncertain_state_set18188" symbol="K">
+          <member state="state18186"/>
+          <member state="state18187"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18189" symbol="M">
+          <member state="state18184"/>
+          <member state="state18185"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18190" symbol="R">
+          <member state="state18184"/>
+          <member state="state18186"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18191" symbol="S">
+          <member state="state18186"/>
+          <member state="state18185"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18192" symbol="W">
+          <member state="state18184"/>
+          <member state="state18187"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18193" symbol="Y">
+          <member state="state18187"/>
+          <member state="state18185"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18194" symbol="B">
+          <member state="state18187"/>
+          <member state="state18186"/>
+          <member state="state18185"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18195" symbol="D">
+          <member state="state18187"/>
+          <member state="state18186"/>
+          <member state="state18184"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18196" symbol="H">
+          <member state="state18187"/>
+          <member state="state18186"/>
+          <member state="state18184"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18197" symbol="V">
+          <member state="state18186"/>
+          <member state="state18184"/>
+          <member state="state18185"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18198" symbol="N">
+          <member state="state18184"/>
+          <member state="state18186"/>
+          <member state="state18187"/>
+          <member state="state18185"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18199" symbol="X">
+          <member state="state18184"/>
+          <member state="state18186"/>
+          <member state="state18187"/>
+          <member state="state18185"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set18200" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set18201" symbol="?">
+          <member state="state18187"/>
+          <member state="state18186"/>
+          <member state="state18184"/>
+          <member state="uncertain_state_set18200"/>
+          <member state="state18185"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col24842777" label="DNA" states="states18183"/>
+      <char id="Col24842778" label="DNA" states="states18183"/>
+      <char id="Col24842779" label="DNA" states="states18183"/>
+      <char id="Col24842780" label="DNA" states="states18183"/>
+      <char id="Col24842781" label="DNA" states="states18183"/>
+      <char id="Col24842782" label="DNA" states="states18183"/>
+      <char id="Col24842783" label="DNA" states="states18183"/>
+      <char id="Col24842784" label="DNA" states="states18183"/>
+      <char id="Col24842785" label="DNA" states="states18183"/>
+      <char id="Col24842786" label="DNA" states="states18183"/>
+      <char id="Col24842787" label="DNA" states="states18183"/>
+      <char id="Col24842788" label="DNA" states="states18183"/>
+      <char id="Col24842789" label="DNA" states="states18183"/>
+      <char id="Col24842790" label="DNA" states="states18183"/>
+      <char id="Col24842791" label="DNA" states="states18183"/>
+      <char id="Col24842792" label="DNA" states="states18183"/>
+      <char id="Col24842793" label="DNA" states="states18183"/>
+      <char id="Col24842794" label="DNA" states="states18183"/>
+      <char id="Col24842795" label="DNA" states="states18183"/>
+      <char id="Col24842796" label="DNA" states="states18183"/>
+      <char id="Col24842797" label="DNA" states="states18183"/>
+      <char id="Col24842798" label="DNA" states="states18183"/>
+      <char id="Col24842799" label="DNA" states="states18183"/>
+      <char id="Col24842800" label="DNA" states="states18183"/>
+      <char id="Col24842801" label="DNA" states="states18183"/>
+      <char id="Col24842802" label="DNA" states="states18183"/>
+      <char id="Col24842803" label="DNA" states="states18183"/>
+      <char id="Col24842804" label="DNA" states="states18183"/>
+      <char id="Col24842805" label="DNA" states="states18183"/>
+      <char id="Col24842806" label="DNA" states="states18183"/>
+      <char id="Col24842807" label="DNA" states="states18183"/>
+      <char id="Col24842808" label="DNA" states="states18183"/>
+      <char id="Col24842809" label="DNA" states="states18183"/>
+      <char id="Col24842810" label="DNA" states="states18183"/>
+      <char id="Col24842811" label="DNA" states="states18183"/>
+      <char id="Col24842812" label="DNA" states="states18183"/>
+      <char id="Col24842813" label="DNA" states="states18183"/>
+      <char id="Col24842814" label="DNA" states="states18183"/>
+      <char id="Col24842815" label="DNA" states="states18183"/>
+      <char id="Col24842816" label="DNA" states="states18183"/>
+      <char id="Col24842817" label="DNA" states="states18183"/>
+      <char id="Col24842818" label="DNA" states="states18183"/>
+      <char id="Col24842819" label="DNA" states="states18183"/>
+      <char id="Col24842820" label="DNA" states="states18183"/>
+      <char id="Col24842821" label="DNA" states="states18183"/>
+      <char id="Col24842822" label="DNA" states="states18183"/>
+      <char id="Col24842823" label="DNA" states="states18183"/>
+      <char id="Col24842824" label="DNA" states="states18183"/>
+      <char id="Col24842825" label="DNA" states="states18183"/>
+      <char id="Col24842826" label="DNA" states="states18183"/>
+      <char id="Col24842827" label="DNA" states="states18183"/>
+      <char id="Col24842828" label="DNA" states="states18183"/>
+      <char id="Col24842829" label="DNA" states="states18183"/>
+      <char id="Col24842830" label="DNA" states="states18183"/>
+      <char id="Col24842831" label="DNA" states="states18183"/>
+      <char id="Col24842832" label="DNA" states="states18183"/>
+      <char id="Col24842833" label="DNA" states="states18183"/>
+      <char id="Col24842834" label="DNA" states="states18183"/>
+      <char id="Col24842835" label="DNA" states="states18183"/>
+      <char id="Col24842836" label="DNA" states="states18183"/>
+      <char id="Col24842837" label="DNA" states="states18183"/>
+      <char id="Col24842838" label="DNA" states="states18183"/>
+      <char id="Col24842839" label="DNA" states="states18183"/>
+      <char id="Col24842840" label="DNA" states="states18183"/>
+      <char id="Col24842841" label="DNA" states="states18183"/>
+      <char id="Col24842842" label="DNA" states="states18183"/>
+      <char id="Col24842843" label="DNA" states="states18183"/>
+      <char id="Col24842844" label="DNA" states="states18183"/>
+      <char id="Col24842845" label="DNA" states="states18183"/>
+      <char id="Col24842846" label="DNA" states="states18183"/>
+      <char id="Col24842847" label="DNA" states="states18183"/>
+      <char id="Col24842848" label="DNA" states="states18183"/>
+      <char id="Col24842849" label="DNA" states="states18183"/>
+      <char id="Col24842850" label="DNA" states="states18183"/>
+      <char id="Col24842851" label="DNA" states="states18183"/>
+      <char id="Col24842852" label="DNA" states="states18183"/>
+      <char id="Col24842853" label="DNA" states="states18183"/>
+      <char id="Col24842854" label="DNA" states="states18183"/>
+      <char id="Col24842855" label="DNA" states="states18183"/>
+      <char id="Col24842856" label="DNA" states="states18183"/>
+      <char id="Col24842857" label="DNA" states="states18183"/>
+      <char id="Col24842858" label="DNA" states="states18183"/>
+      <char id="Col24842859" label="DNA" states="states18183"/>
+      <char id="Col24842860" label="DNA" states="states18183"/>
+      <char id="Col24842861" label="DNA" states="states18183"/>
+      <char id="Col24842862" label="DNA" states="states18183"/>
+      <char id="Col24842863" label="DNA" states="states18183"/>
+      <char id="Col24842864" label="DNA" states="states18183"/>
+      <char id="Col24842865" label="DNA" states="states18183"/>
+      <char id="Col24842866" label="DNA" states="states18183"/>
+      <char id="Col24842867" label="DNA" states="states18183"/>
+      <char id="Col24842868" label="DNA" states="states18183"/>
+      <char id="Col24842869" label="DNA" states="states18183"/>
+      <char id="Col24842870" label="DNA" states="states18183"/>
+      <char id="Col24842871" label="DNA" states="states18183"/>
+      <char id="Col24842872" label="DNA" states="states18183"/>
+      <char id="Col24842873" label="DNA" states="states18183"/>
+      <char id="Col24842874" label="DNA" states="states18183"/>
+      <char id="Col24842875" label="DNA" states="states18183"/>
+      <char id="Col24842876" label="DNA" states="states18183"/>
+      <char id="Col24842877" label="DNA" states="states18183"/>
+      <char id="Col24842878" label="DNA" states="states18183"/>
+      <char id="Col24842879" label="DNA" states="states18183"/>
+      <char id="Col24842880" label="DNA" states="states18183"/>
+      <char id="Col24842881" label="DNA" states="states18183"/>
+      <char id="Col24842882" label="DNA" states="states18183"/>
+      <char id="Col24842883" label="DNA" states="states18183"/>
+      <char id="Col24842884" label="DNA" states="states18183"/>
+      <char id="Col24842885" label="DNA" states="states18183"/>
+      <char id="Col24842886" label="DNA" states="states18183"/>
+      <char id="Col24842887" label="DNA" states="states18183"/>
+      <char id="Col24842888" label="DNA" states="states18183"/>
+      <char id="Col24842889" label="DNA" states="states18183"/>
+      <char id="Col24842890" label="DNA" states="states18183"/>
+      <char id="Col24842891" label="DNA" states="states18183"/>
+      <char id="Col24842892" label="DNA" states="states18183"/>
+      <char id="Col24842893" label="DNA" states="states18183"/>
+      <char id="Col24842894" label="DNA" states="states18183"/>
+      <char id="Col24842895" label="DNA" states="states18183"/>
+      <char id="Col24842896" label="DNA" states="states18183"/>
+      <char id="Col24842897" label="DNA" states="states18183"/>
+      <char id="Col24842898" label="DNA" states="states18183"/>
+      <char id="Col24842899" label="DNA" states="states18183"/>
+      <char id="Col24842900" label="DNA" states="states18183"/>
+      <char id="Col24842901" label="DNA" states="states18183"/>
+      <char id="Col24842902" label="DNA" states="states18183"/>
+      <char id="Col24842903" label="DNA" states="states18183"/>
+      <char id="Col24842904" label="DNA" states="states18183"/>
+      <char id="Col24842905" label="DNA" states="states18183"/>
+      <char id="Col24842906" label="DNA" states="states18183"/>
+      <char id="Col24842907" label="DNA" states="states18183"/>
+      <char id="Col24842908" label="DNA" states="states18183"/>
+      <char id="Col24842909" label="DNA" states="states18183"/>
+      <char id="Col24842910" label="DNA" states="states18183"/>
+      <char id="Col24842911" label="DNA" states="states18183"/>
+      <char id="Col24842912" label="DNA" states="states18183"/>
+      <char id="Col24842913" label="DNA" states="states18183"/>
+      <char id="Col24842914" label="DNA" states="states18183"/>
+      <char id="Col24842915" label="DNA" states="states18183"/>
+      <char id="Col24842916" label="DNA" states="states18183"/>
+      <char id="Col24842917" label="DNA" states="states18183"/>
+      <char id="Col24842918" label="DNA" states="states18183"/>
+      <char id="Col24842919" label="DNA" states="states18183"/>
+      <char id="Col24842920" label="DNA" states="states18183"/>
+      <char id="Col24842921" label="DNA" states="states18183"/>
+      <char id="Col24842922" label="DNA" states="states18183"/>
+      <char id="Col24842923" label="DNA" states="states18183"/>
+      <char id="Col24842924" label="DNA" states="states18183"/>
+      <char id="Col24842925" label="DNA" states="states18183"/>
+      <char id="Col24842926" label="DNA" states="states18183"/>
+      <char id="Col24842927" label="DNA" states="states18183"/>
+      <char id="Col24842928" label="DNA" states="states18183"/>
+      <char id="Col24842929" label="DNA" states="states18183"/>
+      <char id="Col24842930" label="DNA" states="states18183"/>
+      <char id="Col24842931" label="DNA" states="states18183"/>
+      <char id="Col24842932" label="DNA" states="states18183"/>
+      <char id="Col24842933" label="DNA" states="states18183"/>
+      <char id="Col24842934" label="DNA" states="states18183"/>
+      <char id="Col24842935" label="DNA" states="states18183"/>
+      <char id="Col24842936" label="DNA" states="states18183"/>
+      <char id="Col24842937" label="DNA" states="states18183"/>
+      <char id="Col24842938" label="DNA" states="states18183"/>
+      <char id="Col24842939" label="DNA" states="states18183"/>
+      <char id="Col24842940" label="DNA" states="states18183"/>
+      <char id="Col24842941" label="DNA" states="states18183"/>
+      <char id="Col24842942" label="DNA" states="states18183"/>
+      <char id="Col24842943" label="DNA" states="states18183"/>
+      <char id="Col24842944" label="DNA" states="states18183"/>
+      <char id="Col24842945" label="DNA" states="states18183"/>
+      <char id="Col24842946" label="DNA" states="states18183"/>
+      <char id="Col24842947" label="DNA" states="states18183"/>
+      <char id="Col24842948" label="DNA" states="states18183"/>
+      <char id="Col24842949" label="DNA" states="states18183"/>
+      <char id="Col24842950" label="DNA" states="states18183"/>
+      <char id="Col24842951" label="DNA" states="states18183"/>
+      <char id="Col24842952" label="DNA" states="states18183"/>
+      <char id="Col24842953" label="DNA" states="states18183"/>
+      <char id="Col24842954" label="DNA" states="states18183"/>
+      <char id="Col24842955" label="DNA" states="states18183"/>
+      <char id="Col24842956" label="DNA" states="states18183"/>
+      <char id="Col24842957" label="DNA" states="states18183"/>
+      <char id="Col24842958" label="DNA" states="states18183"/>
+      <char id="Col24842959" label="DNA" states="states18183"/>
+      <char id="Col24842960" label="DNA" states="states18183"/>
+      <char id="Col24842961" label="DNA" states="states18183"/>
+      <char id="Col24842962" label="DNA" states="states18183"/>
+      <char id="Col24842963" label="DNA" states="states18183"/>
+      <char id="Col24842964" label="DNA" states="states18183"/>
+      <char id="Col24842965" label="DNA" states="states18183"/>
+      <char id="Col24842966" label="DNA" states="states18183"/>
+      <char id="Col24842967" label="DNA" states="states18183"/>
+      <char id="Col24842968" label="DNA" states="states18183"/>
+      <char id="Col24842969" label="DNA" states="states18183"/>
+      <char id="Col24842970" label="DNA" states="states18183"/>
+      <char id="Col24842971" label="DNA" states="states18183"/>
+      <char id="Col24842972" label="DNA" states="states18183"/>
+      <char id="Col24842973" label="DNA" states="states18183"/>
+      <char id="Col24842974" label="DNA" states="states18183"/>
+      <char id="Col24842975" label="DNA" states="states18183"/>
+      <char id="Col24842976" label="DNA" states="states18183"/>
+      <char id="Col24842977" label="DNA" states="states18183"/>
+      <char id="Col24842978" label="DNA" states="states18183"/>
+      <char id="Col24842979" label="DNA" states="states18183"/>
+      <char id="Col24842980" label="DNA" states="states18183"/>
+      <char id="Col24842981" label="DNA" states="states18183"/>
+      <char id="Col24842982" label="DNA" states="states18183"/>
+      <char id="Col24842983" label="DNA" states="states18183"/>
+      <char id="Col24842984" label="DNA" states="states18183"/>
+      <char id="Col24842985" label="DNA" states="states18183"/>
+      <char id="Col24842986" label="DNA" states="states18183"/>
+      <char id="Col24842987" label="DNA" states="states18183"/>
+      <char id="Col24842988" label="DNA" states="states18183"/>
+      <char id="Col24842989" label="DNA" states="states18183"/>
+      <char id="Col24842990" label="DNA" states="states18183"/>
+      <char id="Col24842991" label="DNA" states="states18183"/>
+      <char id="Col24842992" label="DNA" states="states18183"/>
+      <char id="Col24842993" label="DNA" states="states18183"/>
+      <char id="Col24842994" label="DNA" states="states18183"/>
+      <char id="Col24842995" label="DNA" states="states18183"/>
+      <char id="Col24842996" label="DNA" states="states18183"/>
+      <char id="Col24842997" label="DNA" states="states18183"/>
+      <char id="Col24842998" label="DNA" states="states18183"/>
+      <char id="Col24842999" label="DNA" states="states18183"/>
+      <char id="Col24843000" label="DNA" states="states18183"/>
+      <char id="Col24843001" label="DNA" states="states18183"/>
+      <char id="Col24843002" label="DNA" states="states18183"/>
+      <char id="Col24843003" label="DNA" states="states18183"/>
+      <char id="Col24843004" label="DNA" states="states18183"/>
+      <char id="Col24843005" label="DNA" states="states18183"/>
+      <char id="Col24843006" label="DNA" states="states18183"/>
+      <char id="Col24843007" label="DNA" states="states18183"/>
+      <char id="Col24843008" label="DNA" states="states18183"/>
+      <char id="Col24843009" label="DNA" states="states18183"/>
+      <char id="Col24843010" label="DNA" states="states18183"/>
+      <char id="Col24843011" label="DNA" states="states18183"/>
+      <char id="Col24843012" label="DNA" states="states18183"/>
+      <char id="Col24843013" label="DNA" states="states18183"/>
+      <char id="Col24843014" label="DNA" states="states18183"/>
+      <char id="Col24843015" label="DNA" states="states18183"/>
+      <char id="Col24843016" label="DNA" states="states18183"/>
+      <char id="Col24843017" label="DNA" states="states18183"/>
+      <char id="Col24843018" label="DNA" states="states18183"/>
+      <char id="Col24843019" label="DNA" states="states18183"/>
+      <char id="Col24843020" label="DNA" states="states18183"/>
+      <char id="Col24843021" label="DNA" states="states18183"/>
+      <char id="Col24843022" label="DNA" states="states18183"/>
+      <char id="Col24843023" label="DNA" states="states18183"/>
+      <char id="Col24843024" label="DNA" states="states18183"/>
+      <char id="Col24843025" label="DNA" states="states18183"/>
+      <char id="Col24843026" label="DNA" states="states18183"/>
+      <char id="Col24843027" label="DNA" states="states18183"/>
+      <char id="Col24843028" label="DNA" states="states18183"/>
+      <char id="Col24843029" label="DNA" states="states18183"/>
+      <char id="Col24843030" label="DNA" states="states18183"/>
+      <char id="Col24843031" label="DNA" states="states18183"/>
+      <char id="Col24843032" label="DNA" states="states18183"/>
+      <char id="Col24843033" label="DNA" states="states18183"/>
+      <char id="Col24843034" label="DNA" states="states18183"/>
+      <char id="Col24843035" label="DNA" states="states18183"/>
+      <char id="Col24843036" label="DNA" states="states18183"/>
+      <char id="Col24843037" label="DNA" states="states18183"/>
+      <char id="Col24843038" label="DNA" states="states18183"/>
+      <char id="Col24843039" label="DNA" states="states18183"/>
+      <char id="Col24843040" label="DNA" states="states18183"/>
+      <char id="Col24843041" label="DNA" states="states18183"/>
+      <char id="Col24843042" label="DNA" states="states18183"/>
+      <char id="Col24843043" label="DNA" states="states18183"/>
+      <char id="Col24843044" label="DNA" states="states18183"/>
+      <char id="Col24843045" label="DNA" states="states18183"/>
+      <char id="Col24843046" label="DNA" states="states18183"/>
+      <char id="Col24843047" label="DNA" states="states18183"/>
+      <char id="Col24843048" label="DNA" states="states18183"/>
+      <char id="Col24843049" label="DNA" states="states18183"/>
+      <char id="Col24843050" label="DNA" states="states18183"/>
+      <char id="Col24843051" label="DNA" states="states18183"/>
+      <char id="Col24843052" label="DNA" states="states18183"/>
+      <char id="Col24843053" label="DNA" states="states18183"/>
+      <char id="Col24843054" label="DNA" states="states18183"/>
+      <char id="Col24843055" label="DNA" states="states18183"/>
+      <char id="Col24843056" label="DNA" states="states18183"/>
+      <char id="Col24843057" label="DNA" states="states18183"/>
+      <char id="Col24843058" label="DNA" states="states18183"/>
+      <char id="Col24843059" label="DNA" states="states18183"/>
+      <char id="Col24843060" label="DNA" states="states18183"/>
+      <char id="Col24843061" label="DNA" states="states18183"/>
+      <char id="Col24843062" label="DNA" states="states18183"/>
+      <char id="Col24843063" label="DNA" states="states18183"/>
+      <char id="Col24843064" label="DNA" states="states18183"/>
+      <char id="Col24843065" label="DNA" states="states18183"/>
+      <char id="Col24843066" label="DNA" states="states18183"/>
+      <char id="Col24843067" label="DNA" states="states18183"/>
+      <char id="Col24843068" label="DNA" states="states18183"/>
+      <char id="Col24843069" label="DNA" states="states18183"/>
+      <char id="Col24843070" label="DNA" states="states18183"/>
+      <char id="Col24843071" label="DNA" states="states18183"/>
+      <char id="Col24843072" label="DNA" states="states18183"/>
+      <char id="Col24843073" label="DNA" states="states18183"/>
+      <char id="Col24843074" label="DNA" states="states18183"/>
+      <char id="Col24843075" label="DNA" states="states18183"/>
+      <char id="Col24843076" label="DNA" states="states18183"/>
+      <char id="Col24843077" label="DNA" states="states18183"/>
+      <char id="Col24843078" label="DNA" states="states18183"/>
+      <char id="Col24843079" label="DNA" states="states18183"/>
+      <char id="Col24843080" label="DNA" states="states18183"/>
+      <char id="Col24843081" label="DNA" states="states18183"/>
+      <char id="Col24843082" label="DNA" states="states18183"/>
+      <char id="Col24843083" label="DNA" states="states18183"/>
+      <char id="Col24843084" label="DNA" states="states18183"/>
+      <char id="Col24843085" label="DNA" states="states18183"/>
+      <char id="Col24843086" label="DNA" states="states18183"/>
+      <char id="Col24843087" label="DNA" states="states18183"/>
+      <char id="Col24843088" label="DNA" states="states18183"/>
+      <char id="Col24843089" label="DNA" states="states18183"/>
+      <char id="Col24843090" label="DNA" states="states18183"/>
+      <char id="Col24843091" label="DNA" states="states18183"/>
+      <char id="Col24843092" label="DNA" states="states18183"/>
+      <char id="Col24843093" label="DNA" states="states18183"/>
+      <char id="Col24843094" label="DNA" states="states18183"/>
+      <char id="Col24843095" label="DNA" states="states18183"/>
+      <char id="Col24843096" label="DNA" states="states18183"/>
+      <char id="Col24843097" label="DNA" states="states18183"/>
+      <char id="Col24843098" label="DNA" states="states18183"/>
+      <char id="Col24843099" label="DNA" states="states18183"/>
+      <char id="Col24843100" label="DNA" states="states18183"/>
+      <char id="Col24843101" label="DNA" states="states18183"/>
+      <char id="Col24843102" label="DNA" states="states18183"/>
+      <char id="Col24843103" label="DNA" states="states18183"/>
+      <char id="Col24843104" label="DNA" states="states18183"/>
+      <char id="Col24843105" label="DNA" states="states18183"/>
+      <char id="Col24843106" label="DNA" states="states18183"/>
+      <char id="Col24843107" label="DNA" states="states18183"/>
+      <char id="Col24843108" label="DNA" states="states18183"/>
+      <char id="Col24843109" label="DNA" states="states18183"/>
+      <char id="Col24843110" label="DNA" states="states18183"/>
+      <char id="Col24843111" label="DNA" states="states18183"/>
+      <char id="Col24843112" label="DNA" states="states18183"/>
+      <char id="Col24843113" label="DNA" states="states18183"/>
+      <char id="Col24843114" label="DNA" states="states18183"/>
+      <char id="Col24843115" label="DNA" states="states18183"/>
+      <char id="Col24843116" label="DNA" states="states18183"/>
+      <char id="Col24843117" label="DNA" states="states18183"/>
+      <char id="Col24843118" label="DNA" states="states18183"/>
+      <char id="Col24843119" label="DNA" states="states18183"/>
+      <char id="Col24843120" label="DNA" states="states18183"/>
+      <char id="Col24843121" label="DNA" states="states18183"/>
+      <char id="Col24843122" label="DNA" states="states18183"/>
+      <char id="Col24843123" label="DNA" states="states18183"/>
+      <char id="Col24843124" label="DNA" states="states18183"/>
+      <char id="Col24843125" label="DNA" states="states18183"/>
+      <char id="Col24843126" label="DNA" states="states18183"/>
+      <char id="Col24843127" label="DNA" states="states18183"/>
+      <char id="Col24843128" label="DNA" states="states18183"/>
+      <char id="Col24843129" label="DNA" states="states18183"/>
+      <char id="Col24843130" label="DNA" states="states18183"/>
+      <char id="Col24843131" label="DNA" states="states18183"/>
+      <char id="Col24843132" label="DNA" states="states18183"/>
+      <char id="Col24843133" label="DNA" states="states18183"/>
+      <char id="Col24843134" label="DNA" states="states18183"/>
+      <char id="Col24843135" label="DNA" states="states18183"/>
+      <char id="Col24843136" label="DNA" states="states18183"/>
+      <char id="Col24843137" label="DNA" states="states18183"/>
+      <char id="Col24843138" label="DNA" states="states18183"/>
+      <char id="Col24843139" label="DNA" states="states18183"/>
+      <char id="Col24843140" label="DNA" states="states18183"/>
+      <char id="Col24843141" label="DNA" states="states18183"/>
+      <char id="Col24843142" label="DNA" states="states18183"/>
+      <char id="Col24843143" label="DNA" states="states18183"/>
+      <char id="Col24843144" label="DNA" states="states18183"/>
+      <char id="Col24843145" label="DNA" states="states18183"/>
+      <char id="Col24843146" label="DNA" states="states18183"/>
+      <char id="Col24843147" label="DNA" states="states18183"/>
+      <char id="Col24843148" label="DNA" states="states18183"/>
+      <char id="Col24843149" label="DNA" states="states18183"/>
+      <char id="Col24843150" label="DNA" states="states18183"/>
+      <char id="Col24843151" label="DNA" states="states18183"/>
+      <char id="Col24843152" label="DNA" states="states18183"/>
+      <char id="Col24843153" label="DNA" states="states18183"/>
+      <char id="Col24843154" label="DNA" states="states18183"/>
+      <char id="Col24843155" label="DNA" states="states18183"/>
+      <char id="Col24843156" label="DNA" states="states18183"/>
+      <char id="Col24843157" label="DNA" states="states18183"/>
+      <char id="Col24843158" label="DNA" states="states18183"/>
+      <char id="Col24843159" label="DNA" states="states18183"/>
+      <char id="Col24843160" label="DNA" states="states18183"/>
+      <char id="Col24843161" label="DNA" states="states18183"/>
+      <char id="Col24843162" label="DNA" states="states18183"/>
+      <char id="Col24843163" label="DNA" states="states18183"/>
+      <char id="Col24843164" label="DNA" states="states18183"/>
+      <char id="Col24843165" label="DNA" states="states18183"/>
+      <char id="Col24843166" label="DNA" states="states18183"/>
+      <char id="Col24843167" label="DNA" states="states18183"/>
+      <char id="Col24843168" label="DNA" states="states18183"/>
+      <char id="Col24843169" label="DNA" states="states18183"/>
+      <char id="Col24843170" label="DNA" states="states18183"/>
+      <char id="Col24843171" label="DNA" states="states18183"/>
+      <char id="Col24843172" label="DNA" states="states18183"/>
+      <char id="Col24843173" label="DNA" states="states18183"/>
+      <char id="Col24843174" label="DNA" states="states18183"/>
+      <char id="Col24843175" label="DNA" states="states18183"/>
+      <char id="Col24843176" label="DNA" states="states18183"/>
+      <char id="Col24843177" label="DNA" states="states18183"/>
+      <char id="Col24843178" label="DNA" states="states18183"/>
+      <char id="Col24843179" label="DNA" states="states18183"/>
+      <char id="Col24843180" label="DNA" states="states18183"/>
+      <char id="Col24843181" label="DNA" states="states18183"/>
+      <char id="Col24843182" label="DNA" states="states18183"/>
+      <char id="Col24843183" label="DNA" states="states18183"/>
+      <char id="Col24843184" label="DNA" states="states18183"/>
+      <char id="Col24843185" label="DNA" states="states18183"/>
+      <char id="Col24843186" label="DNA" states="states18183"/>
+      <char id="Col24843187" label="DNA" states="states18183"/>
+      <char id="Col24843188" label="DNA" states="states18183"/>
+      <char id="Col24843189" label="DNA" states="states18183"/>
+      <char id="Col24843190" label="DNA" states="states18183"/>
+      <char id="Col24843191" label="DNA" states="states18183"/>
+      <char id="Col24843192" label="DNA" states="states18183"/>
+      <char id="Col24843193" label="DNA" states="states18183"/>
+      <char id="Col24843194" label="DNA" states="states18183"/>
+      <char id="Col24843195" label="DNA" states="states18183"/>
+      <char id="Col24843196" label="DNA" states="states18183"/>
+    </format>
+    <matrix>
+      <row id="Row795385" otu="Tl587284">
+        <seq>GCAATTGGATTACTAGGATTTGTTGTTTGAGCTCATCATATATTTACCGTGGGAATAGATGTGGATACCCGAGCATACTTTACTTCTGCTACTATAATTATTGCTATTCCAACAGGT---ATTAAGATTTTTAGTTGATTAGCTACTTACCACGGTGCCAATATTTCATTTAATCCACCTTCACTCTGATCGATTGGATTTTTATTCCTTTTTACTATAGGTGGTTTAACTGGTGTAGTTTTAGCTAATTCTTCTATTGATATTGTTCTTCATGATACTTATTATGTAGTAGCTCATTTTCACTACGTTTTATCAATAGGAGCAGTTTTTGCTATTCTTGGAGGATTAATCCAATGATTCCCCTTATTCACTGGATTAACCTTGAATGGAAAATTTCTTAAGACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795386" otu="Tl657975">
+        <seq>GCAATTGGGTTATTAGGATTTGTTGTATGAGCCCATCATATATTTACAGTAGGAATAGACGTAGATACACGAGCATACTTTACTTCAGCAACAATAATCATTGCAGTACCTACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTATCATGGAGCTAATATCTCATTTAATCCTAGATCCTTATGATCTTTGGGATTTATTTTTTTATTTACTATAGGAGGATTAACTGGTGTAGTATTAGCAAACTCTTCTATTGATATTGTCTTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTAGCAGGAATAGTGCAATGATTCCCTTTATTCACAGGTTTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795387" otu="Tl657992">
+        <seq>GCAATTGGGCTATTAGGATTTGTTGTATGAGCCCATCATATATTTACAGTAGGAATAGACGTAGATACACGAGCATACTTTACTTCAGCAACAATAATCATTGCAGTACCTACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTATCATGGAGCTAATATCTCATTTAATCCTAGATCCTTATGATCTTTAGGATTTATTTTTTTATTTACTATAGGAGGATTAACTGGTGTAGTATTAGCAAACTCTTCTATTGATATTGTCTTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTAGCGGGAATAGTGCAATGATTCCCTTTATTCACAGGTTTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795388" otu="Tl657993">
+        <seq>GCAATTGGGTTATTAGGATTTGTTGTATGAGCCCATCATATATTTACAGTAGGAATAGACGTAGATACACGAGCATACTTTACTTCAGCAACAATAATCATTGCAGTACCTACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTATCATGGAGCTAATATCTCATTTAATCCTAGATCCTTATGATCTTTAGGGTTTATTTTTTTATTTACTATAGGAGGATTAACTGGTGTAGTATTAGCAAACTCTTCTATTGATATTGTCTTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTAGCAGGAATAGTGCAATGATTCCCTTTATTCACAGGTTTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795389" otu="Tl658008">
+        <seq>GCACTTGGATTATTAGGATTGGTCGTATGAGCCCATCACATATTTACATGTGGAATAGACGTAGATGCACGAGCGTACTTTACTTCCGCAACAATAATCATTGCAGTACCTACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTATCATGGAGCTAATATCTCATTTAATCCTAGATCCTTATGATCTTTAGGATTTATTTTTTTATTTACTATAGGAGGATTAACTGGTGTAGTATTAGCAAACTCTTCTATTGATATTGTCCTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTAGCGGGAATAGTGCAATGATTCCCTTTATTCACAGGTTTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795390" otu="Tl658002">
+        <seq>GCAATTGGTGTATTAGGATTTGTCGTATGAGCCCATCACATATTTACAGTAGGAATAGACGTGGAGACGCGAGCATACTTTACTTCAGCAACCATAATCATTGCAGTGCCTACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTATCATGGAGCTAATATCTCATTTAATCCTAGATCCTTATGATCTTTAGGATTTATTTTTTTATTTACTATAGGAGGATTAACTGGTGTAGTATTAGCAAACTCTTCTATTGATATTGTCTTACATGACTACTATTATGTAGTTGCTCATTTTCATTATGCTCTTTCTATAGGTGCAGTATTTGCAATTTTAGCAGGAATAGTGCAATGATTCCCTTTATTCACAGGGTTAACTTTAAATAATAAATTCTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795391" otu="Tl658021">
+        <seq>GCAATTGGGTTATTAGGATTTGTTGTATGGGCCCATCATATATTTACAGTAGGTATAGATGTAGATACTCGAGCATACTTTACCTCAGCAACAATGATCATTGCGGTACCCACGGGT---ATTAAAATTTTTAGATGATTAGCTACCTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCCTTAGGATTTATTTTTTTATTTACTATAGGAGGATTAACTGGTGTAGTATTAGCAAACTCTTCCATTGATATTGTACTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTTCTTTCTATAGGCGCAGTATTTGCAATTTTAGCAGGAATAGTACAATGATTTCCTTTATTTACAGGTTTAACTTTAAACAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795392" otu="Tl657988">
+        <seq>GCAATTGGGTTGTTAGGATTTGTTGTATGGGCTCATCATATATTTACAGTAGGGATAGATGTAGATACACGAGCATACTTTACCTCAGCAACAATGATCATTGCAGTACCTACGGGT---ATTAAAATTTTTAGATGACTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCATTAGGATTTATTTTTTTATTTACTATAGGAGGGTTAACTGGTGTAGTATTGGCAAACTCTTCCATTGATATTGTCCTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTTCTTTCTATAGGCGCAGTATTTGCAATTTTAGCAGGAATAGTGCAATGATTCCCTTTATTTACAGGTTTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795393" otu="Tl657999">
+        <seq>GCAATTGGGTTATTAGGATTTGTTGTATGGGCTCATCATATATTTACAGTAGGTATAGATGTAGATACGCGGGCATACTTTACCTCAGCAACAATGATCATTGCAGTACCTACTGGT---ATTAAAATTTTTAGATGACTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCATTAGGATTCATTTTTTTATTTACTATAGGAGGGTTAACTGGTGTAGTATTGGCAAACTCTTCCATTGATATTGTCCTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTTCTTTCTATAGGCGCAGTATTTGCAATTTTAGCAGGGATAGTGCAATGATTCCCTTTATTTACAGGTTTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795394" otu="Tl658012">
+        <seq>GCAATTGGATTGTTGGGGTTTGTTGGATGAGCTCATCATATATTCACAGTAGGAATAGATGTAGACACCCGAGCCTATTTTACTTCAGCGACAATAATTATTGCTGTACCAACTGGT---ATCAAAATTTTTAGATGATTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCTTTATGATCTTTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTCGCTCATTTTCATTATGTTCTTTCTATAGGAGCAGTATTTGCAATTTTAGCAGGAGTAGTACAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACCCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795395" otu="Tl658027">
+        <seq>GCAATTGGATTGTTGGGGTTTGTTGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTAGACACCCGAGCCTATTTTACTTCAGCGACAATAATTATTGCGGTACCAACTGGT---ATCAAAATTTTTAGATGATTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCTTTATGATCTCTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTCGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTAGCAGGAGTAGTACAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACCCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795396" otu="Tl657972">
+        <seq>GCAATTGGATTGTTGGGGTTTGTTGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTAGACACCCGAGCCTATTTTACTTCAGCGACAATAATTATTGCTGTACCAACTGGT---ATCAAAATTTTTAGATGATTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCTTTATGATCTTTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTCGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTAGCAGGAATAGTACAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACCCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795397" otu="Tl658038">
+        <seq>GCAATTGGATTGTTGGGGTTTGTTGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTAGACACCCGAGCCTATTTTACTTCAGCGACAATAATTATTGCTGTACCAACTGGT---ATCAAAATTTTTAGATGACTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCTTTATGATCTTTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTCGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTAGCAGGAGTAGTACAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACCCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795398" otu="Tl657983">
+        <seq>GCAATTGGATTGTTGGGGTTTGTTGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTAGACACCCGAGCCTATTTTACTTCAGCGACAATAATTATTGCTGTACCAACTGGT---ATCAAAATTTTTAGATGATTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCTTTATGATCTTTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTCGCTCATTTTCATTATGTCCTTTCTATGGGCGCAGTATTTGCAATTTTAGCAGGAATAGTACAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACCCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795399" otu="Tl658013">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGACACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACTGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTGCATGATACTTATTACGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795400" otu="Tl657980">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGACACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACTGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATGGGCGCAGTATTTGCAATTTTAGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAACAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795401" otu="Tl657996">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCAGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACTGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTACGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGGTTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795402" otu="Tl658024">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCAGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACTGGTGTAGTATTAGCAAATTCTTCTATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795403" otu="Tl658017">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGGATAGATGTGGATACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACTGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795404" otu="Tl658037">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCAGTACCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTGACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795405" otu="Tl658007">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCAGTACCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTGCATGATACTTATTACGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795406" otu="Tl658014">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCAGTACCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTACGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795407" otu="Tl658010">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATGGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795408" otu="Tl657981">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGGGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAACAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795409" otu="Tl657976">
+        <seq>GCCATTGGCTTATTAGGATTTGTAGGATGAGCTCATCATATATTCACAGTAGGAATAGATGTAGACACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGGGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATGGGTGCAGTATTTGCAATTTTAGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAACAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795410" otu="Tl658018">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGGGTTGTACTAGCAAATTCTTCTATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATGGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795411" otu="Tl657977">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGGGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATGGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAACAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795412" otu="Tl658022">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTTCTTTCTATGGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTACAATGATTTCCTCTTTTTACTGGGTTAACTTTAAATAATAAATTCCTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795413" otu="Tl657985">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCAGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTGACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTAATA</seq>
+      </row>
+      <row id="Row795414" otu="Tl657990">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTAGATACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTACCAAGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTAGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795415" otu="Tl658033">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTAGATACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATGGGTGCAGTATTTGCAATTTTAGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAACAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795416" otu="Tl658009">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTACTTTACTTCAGCAACAATAATCATTGCAGTACCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTACGTAGTTGCTCATTTTCATTATGTCCTTTCTATGGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795417" otu="Tl657974">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCACATATTCACAGTAGGAATAGATGTAGATACTCGAGCTTACTTTACTTCAGCAACAATAATTATTGCGGTACCAACTGGT---ATTAAAATTTTTAGATGATTGGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATGGGCGCAGTATTTGCAATTTTAGCAGGATTAGTGCAATGGTTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795418" otu="Tl658001">
+        <seq>GCCATTGGTTTATTAGGGTTTGTAGTAGGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCAGTCCCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795419" otu="Tl658006">
+        <seq>GCCATTGGCTTATTAGGGTTTGTAGTATGAGCTCATCATATATTCACAGTAGGAATAGATGTGGATACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCAGTACCAACTGGT---ATTAAAATTTTTAGATGACTAGCTACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCCTTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCAATTGATATTGTATTACATGATACTTATTATGTAGTTGCTCATTTTCATTATGTCCTTTCTATAGGCGCAGTATTTGCAATTTTGGCAGGATTAGTGCAATGATTTCCTCTTTTTACTGGATTGACTTTAAATAATAAATTTTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795420" otu="Tl658028">
+        <seq>GCAATTGGGTTACTAGGGTTTGTTGTATGGGCTCATCATATATTTACAGTAGGAATAGATGTAGACACTCGAGCCTACTTTACTTCAGCAACAATAATCATTGCGGTCCCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTGTGATCTCTAGGATTTATTTTTTTATTTACTTTAGGGGGACTAACAGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACCTACTATGTGGTAGCTCATTTTCATTATGTTCTTTCTATGGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTACAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTCCTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795421" otu="Tl657998">
+        <seq>GCCATTGGATTATTAGGATTTGTTGTATGGGCTCCTCATATATTTACAGTAGGAATAGATGTAGACACTCGAGCCTACTTTACTTCAGCAACAATAATCATTGCGGTCCCAACTGGG---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGGGGATTAACAGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACATACTATGTGGTCGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTCTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795422" otu="Tl657971">
+        <seq>GCAATTGGATTATTAGGATTTGTTGTATGGGCTCATCATATATTTACAGTAGGAATAGATGTAGACACTCGAGCTTATTTTACTTCAGCAACAATAATCATTGCGGTCCCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGGGGATTAACAGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACATACTATGTGGTCGCCCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTCTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795423" otu="Tl657978">
+        <seq>GCAATTGGATTATTAGGATTTGTTGTATGGGCTCATCATATATTTACAGTAGGGATAGATGTAGACACTCGAGCCTACTTTACTTCAGCAACAATAATCATTGCGGTTCCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTATGATCCCTAGGATTCATTTTTTTATTTACTTTAGGGGGATTAACAGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACATACTATGTAGTTGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTACAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTCTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795424" otu="Tl658015">
+        <seq>GCAATTGGATTATTAGGATTTGTTGTATGGGCTCATCATATATTTACAGTAGGAATAGATGTAGACACTCGAGCCTATTTTACTTCAGCAACAATAATCATTGCGGTCCCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGGGGATTAACAGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACATACTATGTGGTCGCCCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTCTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795425" otu="Tl658034">
+        <seq>GCAATTGGATTATTAGGATTTGTTGTATGGGCTCATCATATATTTACAGTAGGAATAGATGTAGACACTCGAGCCTACTTTACTTCAGCAACAATAATCATTGCGGTCCCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACATACTATGTGGTCGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTCTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795426" otu="Tl657997">
+        <seq>GCAATTGGATTATTAGGATTTGTTGTATGGGCTCATCATATATTTACAGTAGGAATAGATGTAGACACTCGAGCCTACTTTACTTCAGCAACAATAATCATTGCGGTCCCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGGGGATTAACAGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACATACTATGTGGTCGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTCTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795427" otu="Tl658032">
+        <seq>GCAATTGGATTATTAGGATTTGTTGTATGGGCTCATCATATATTTACAGTAGGAATAGATGTAGACACTCGAGCCTACTTTACTTCAGCAACAATAATCATTGCGGTCCCAACTGGG---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTATGATCTCTAGGATTCATTTTTTTATTTACTTTAGGGGGATTAACAGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACATACTATGTGGTCGCTCATTTTCATTATGTTCTTTCTATAGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTGCAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTTCTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795428" otu="Tl657989">
+        <seq>GCAATTGGGTTATTAGGGTTTGTTGTATGGGCTCATCATATATTTACAGTAGGAATAGATGTAGACACTCGAGCCTACTTTACTTCAGCAACAATAATCATTGCGGTCCCAGCTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTGTGATCTCTAGGATTTATTTTTTTATTTACTTTAGGGGGACTAACAGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACCTACTATGTGGTAGCTCATTTTCATTATGTTCTTTCTATGGGCGCAGTATTTGCAATTTTGGCTGGAGTAGTACAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTCCTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795429" otu="Tl658026">
+        <seq>GCAATTGGGTTATTAGGGTTTGTTGTATGGGCTCATCATATATTTACAGTAGGAATAGATGTAGACACTCGAGCCTACTTTACTTCAGCAACAATAATCATTGCGGTCCCAACTGGT---ATTAAAATTTTTAGATGATTAGCTACTTACCATGGAGCAAATATTTCGTTTAATCCTAGATCCCTGTGATCTCTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACTGGTGTAGTATTAGCAAATTCTTCAATTGATATTGTATTACATGATACCTACTATGTGGTAGCTCATTTTCATTATGTTCTTTCTATGGGTGCAGTATTTGCAATTTTGGCTGGAGTAGTACAATGATTTCCTCTTTTTACTGGATTAACTTTAAATAATAAATTCCTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795430" otu="Tl658003">
+        <seq>GCAATTGGACTACTAGGATTTGTTGTGTGGGCTCATCATATATTTACAGTAGGAATAGACGTCGACACACGAGCTTATTTTACCTCAGCAACAATAATTATTGCTGTACCTACTGGT---ATTAAAATTTTTAGATGGTTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCTCTTTGATCATTAGGGTTTATTTTTTTGTTTACAATAGGAGGACTCACAGGTGTAGTATTAGCTAATTCTTCTATTGATATTGTCCTACATGACACCTACTATGTAGTTGCTCATTTTCACTATGTTCTTTCTATAGGGGCAGTATTTGCAATTTTAGCTGGAATAGTTCAATGATTTCCTTTATTTACAGGATTAACTTTAAATAATAAATTCTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795431" otu="Tl657994">
+        <seq>GCAATTGGACTATTAGGATTTGTTGTGTGGGCTCATCATATATTTACAGTAGGAATAGACGTCGACACACGAGCTTATTTTACCTCAGCAACAATAATTATTGCTGTACCTACTGGT---ATTAAAATTTTTAGATGGTTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCTAGATCTCTTTGATCATTAGGGTTTATTTTTTTGTTTACAATAGGAGGACTCACAGGTGTAGTATTAGCTAATTCTTCTATTGATATTGTCCTACATGACACCTACTATGTAGTTGCTCATTTTCACTATGTTCTTTCTATAGGGGCAGTATTTGCAATTTTAGCTGGAATAGTTCAATGATTTCCTTTATTTACAGGATTAACTTTAAATAATAAATTCTTAAAAACTCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795432" otu="Tl658029">
+        <seq>GCAATTGGATTATTAGGATTTGTTGTATGAGATCACCATATGTTTACAGTAGGGATAGATGTAGACACACGATCTTACTTTACTTCAGCAACAA---TTATTGCTGTACCACCTGGTGGGATTAAAATTTTTAGATGATTAGCTACTTGCCATGGAGCTAATATTTCATTTAACCCTAGATTCCTATGATCTTTAGGATTTATTTTTTTATTTACTCTAGGAGGATTAACTGGTGTTGTACTAGCAAACTCTTCCATTGATATTGTTCTACATGATACTTATTATGTAGTTGCCCATTTTCATTATGTTCTTTCTATAGGTGCAGCATTTGCAATTTTAGCAGAAAGTTTACAATGATTTCCTTTATTCACAGGGATAACTTTAAACAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795433" otu="Tl658035">
+        <seq>GCAATTGGGTTGCTAGGATTTGTAGAATGGGCACATCATATATTTACGGTAGGAATAGATGTAGATACACGAGCGTATTTTACCTCGGCAACAATAATTATTGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTCTAGGGGGATTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACACGATACATACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATGGTTCAATGATTCCCTTTATTTACAGGATTAACCTTAAATAATAAATTCCTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795434" otu="Tl657991">
+        <seq>GCAATTGGGTTGCTAGGATTTGTAGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGGGCTTATTTTACCTCTGCAACAATAATTATCGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCACGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTCTAGGGGGATTAACTGGAGTTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCACTACGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCGGGAATGGTTCAATGATTCCCTTTATTTACAGGATTAACCTTAAACAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795435" otu="Tl658023">
+        <seq>GCAATTGGGTTGCTAGGATTTGTAGTATGGGCACATCATATATTTACAGTAGGGATAGATGTAGATACACGAGCTTATTTTACCTCTGCAACAATAATTATCGCTGTTCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCACGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTATAGGGGGATTAACTGGAGTTGTACTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCACTACGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATAGTTCAATGATTCCCTTTATTTACAGGATTAACTTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795436" otu="Tl658019">
+        <seq>GCAATTGGGTTGTTAGGATTTGTTGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGGGCGTATTTTACCTCTGCAACAATAATTATTGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTCTGGGGGGATTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTATTACATGATACATACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATGGTTCAATGATTCCTTATTTTTACAGGATTAACCTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795437" otu="Tl658020">
+        <seq>GCAATTGGGTTGCTAGGATTTGTAGTATGGGCACATCATATATTTACAGTAGGGATAGATGTAGATACACGAGCTTATTTTACCTCTGCAACAATAATTATTGCTGTTCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTTACTATAGGGGGATTAACTGGAGTTGTACTAGCTAACTCTTCTATTGATATTGTTCTACATGATACTTACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCTGGAATAGTTCAATGATTCCCTTTATTTACAGGATTAACTTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795438" otu="Tl658005">
+        <seq>GCAATTGGGTTGTTAGGATTTGTTGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGGGCGTATTTTACATCTGCAACAATAATTATTGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTTACTCTAGGGGGGTTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATGGTTCAATGATTCCCATTATTTACAGGATTAACTTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795439" otu="Tl658031">
+        <seq>GCAATTGGGTTGCTAGGATTTGTTGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGAGCTTATTTTACCTCTGCAACAATAATTATCGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTTACTCTAGGGGGATTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCACTACGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATAGTTCAATGATTCCTTTATTTTACAGGATTAACCTTAAACAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795440" otu="Tl657995">
+        <seq>GCAATTGGGTTGCTAGGATTTGTTGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGGGCGTATTTTACCTCTGCAACAATAATTATTGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTCTGGGGGGATTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATGGTTCAATGATTCCTTATTTTTACAGGATTAACCTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795441" otu="Tl657979">
+        <seq>GCAATTGGGTTGCTAGGATTTGTTGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGGGCGTATTTTACCTCTGCAACAATAATTATTGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTCTAGGGGGATTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATGGTTCAATGATTCCTTTTATTTACAGGATTAACCTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795442" otu="Tl658030">
+        <seq>GCAATTGGGTTGCTAGGATTTGTAGTATGGGCACATCATATATTTACAGTAGGGATAGATGTAGATACACGAGCTTATTTTACCTCTGCAACAATAATTATCGCTGTTCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCACGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTATAGGGGGATTAACTGGAGTTGTACTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCACTACGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATAGTTCAATGATTCCTTTTATTTACAGGATTAACCTTAAACAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795443" otu="Tl657986">
+        <seq>GCAATTGGGTTGTTAGGATTTGTTGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGGGCCTATTTTACATCTGCAACAATAATTATTGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCGTTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTTACTCTAGGAGGATTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATGGTTCAATGATTCCCTTTATTTACAGGATTAACTTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795444" otu="Tl657987">
+        <seq>GCAATTGGGTTGTTAGGATTTGTTGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGGGCGTATTTTACTTCTGCAACAATAATTATTGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTTACTCTGGGGGGATTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATGGTTCAATGATTCCCATTATTTACAGGATTAACCTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795445" otu="Tl657984">
+        <seq>GCAATTGGGTTGCTAGGATTTGTAGTATGGGCACATCATATATTTACAGTAGGGATAGATGTAGACACACGAGCTTATTTTACCTCTGCAACAATAATTATCGCTGTCCCAACAGGA---ATTAAGATTTTCAGATGATTAGCCACTTATCACGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTATAGGGGGATTAACTGGAGTTGTACTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCACTACGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATAGTTCAATGATTCCCTTTATTTACAGGATTAACCTTAAACAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795446" otu="Tl658000">
+        <seq>GCAATTGGGTTGCTAGGATTTGTAGTATGGGCACATCATATATTTACAGTAGGGATAGATGTAGATACACGAGCTTATTTTACCTCTGCAACAATAATTATCGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCACGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTATAGGGGGATTAACTGGAGTTGTACTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCACTACGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATAGTTCAATGATTCCCTTTATTTACAGGATTAACCTTAAACAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795447" otu="Tl658004">
+        <seq>GCAATTGGGTTGCTAGGATTTGTAGTATGGGCACATCATATATTTACAGTAGGGATAGATGTAGACACACGAGCTTATTTTACCTCTGCAACAATAATTATCGCTGTTCCAACAGGA---ATTAAGATTTTCAGATGATTAGCCACTTATCACGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTCACTATAGGGGGATTAACTGGAGTTGTACTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCACTACGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATAGTTCAATGATTCCCTTTATTTACAGGATTAACCTTAAACAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795448" otu="Tl658036">
+        <seq>GCAATTGGGTTGCTAGGATTTGTAGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGGGCTTATTTTACCTCTGCAACAATAATTATTGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTTACTATAGGGGGATTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATGGTTCAATGATTCCCTTTATTTACAGGATTAACTTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795449" otu="Tl657970">
+        <seq>GCAATTGGGTTGTTAGGATTTGTTGTATGGGCACATCATATATTTACAGTAGGAATAGATGTAGATACACGGGCCTATTTTACATCTGCAACAATAATTATTGCTGTCCCAACAGGA---ATTAAAATTTTCAGATGATTAGCCACTTATCATGGAGCTAATATTTCATTTAATCCAAGATCTCTATGATCTTTAGGGTTTATTTTTCTATTTACTCTGGGGGGATTAACTGGAATTGTGCTAGCTAACTCTTCTATTGATATTGTTCTACATGATACATACTACGTAGTTGCTCATTTTCATTATGTACTTTCTATGGGGGCAGTATTTGCAATTTTAGCAGGAATGGTTCAATGATTCCCTTTATTTACAGGATTAACTTTAAATAATAAATTCTTAAAAACTCAATTCTTAGTAATA</seq>
+      </row>
+      <row id="Row795450" otu="Tl657973">
+        <seq>GCAATTGGATTACTAGGATTTGTTGTATGAGCACATCATATATTTACTGTAGGTATAGATGTAGATACGCGAGCTTATTTCACTTCTGCAACAATAATTATTGCTGTACCCACAGGT---ATTAAAATTTTTAGATGATTAGCTACATATCACGGAGCTAATATTTCATTTAATCCAAGATCCCTGTGATCATTAGGATTTATCTTCCTATTCACTATAGGAGGATTGACAGGTGTAGTATTAGCTAACTCTTCTATTGATATTGTTCTTCATGATACTTATTATGTAGTAGCACATTTTCATTATGTTCTTTCAATAGGGGCAGTATTTGCAATTCTAGCGGGAATAGTTCAATGATTCCCCCTATTTACAGGGTTAACTCTAAATAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795451" otu="Tl658011">
+        <seq>GCAATTGGATTACTAGGATTTGTTGTATGGGCACATCATATATTTACTGTAGGTATAGATGTAGATACGCGAGCTTATTTCACTTCTGCAACAATAATTATTGCTGTACCCACAGGT---ATTAAAATTTTTAGATGATTAGCTACATATCACGGAGCTAATATTTCATTTAATCCAAGATCCCTGTGATCATTAGGATTTATCTTCCTATTCACTATAGGAGGATTGACAGGTGTAGTATTAGCTAACTCTTCTATTGATATTGTTCTTCATGATACTTATTATGTAGTAGCACATTTTCATTATGTTCTTTCAATAGGGGCAGTATTTGCAATTCTAGCGGGAATAGTTCAATGATTCCCCCTATTTACAGGGTTAACTCTAAACAATAAATTTTTAAAAACTCAATTTTTAGTCATA</seq>
+      </row>
+      <row id="Row795452" otu="Tl657982">
+        <seq>GCAATTGGATTATTAGGATTTGTTGTATGGGCTCATCATATATTTACAGTAGGAATAGATGTAGATACACGAGCCTATTTTACTTCAGCAACAATAATTATTGCTGTACCAACTGGT---ATTAAAATTTTCAGATGATTAGCTACCTATCATGGTGCTAATATCTCATTTAATCCTAGATCTTTATGATCTCTAGGATTTATTTTTTTATTTACTTTAGGAGGATTAACAGGTGTTGTACTAGCAAATTCTTCTATTGATATTGTATTACATGATACTTATTATGTAGTTGCACATTTTCATTATGTTCTTTCTATAGGAGCAGTATTTGCAATTTTAGCAGGAATAGTACAATGATTCCCACTATTTACAGGATTAACTTTAAACAATAAATTTTTAAAAACCCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795453" otu="Tl658016">
+        <seq>GCAATTGGATTATTAGGATTTGTAGTATGGGCACATCATATATTTACTGTAGGAATAGATGTTGATACACGAGCTTATTTTACATCAGCCACTATGATTATTGCTGTTCCAACAGGA---ATTAAAATTTTTAGATGATTAGCTACATACCACGGTGCTAATATCTCCTTTAATCCAAGATCACTATGATCATTAGGATTTATTTTCTTATTTACAATAGGAGGATTAACAGGAGTAATTCTTGCCAATTCTTCTATTGATATTATCCTACATGATACTTATTATGTAGTAGCACATTTTCATTATGTATTATCTATGGGAGCAGTATTTGCAATTTTAGCTGGAATAGTACAATGATTCCCTTTATTTACAGGTTTAACTCTTAATAATAAATATCTAAAAACCCAATTTTTAGTTATA</seq>
+      </row>
+      <row id="Row795454" otu="Tl658025">
+        <seq>GCAATTGGATTATTAGGATTTGTAGTATGAGCACATCATATATTTACTGTAGGAATAGACGTTGATACACGAGCTTATTTTACATCAGCTACTATAATTATTGCTGTTCCAACAGGA---ATTAAAATCTTCAGATGATTAGCTACATATCATGGCGCTAATATCTCCTTTAATCCAAGATCATTATGATCATTAGGATTTATTTTCCTATTTACAATAGGAGGATTAACAGGAGTAATTCTTGCTAATTCTTCTATTGATATTATCCTGCATGATACTTATTATGTAGTAGCTCATTTTCATTATGTATTATCTATAGGAGCAGTATTTGCAATTTTAGCTGGAATAGTACAATGATTCCCTTTATTTACAGGTTTAACTCTTAATAATAAATATCTAAAAACCCAATTTTTAGTTATA</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb15682" id="Tb15682" label="Gonipterus scutellatus" otus="Tls23298" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@55d437be $Rev: 1040 $" datatype="xsd:string" id="meta18699" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S11783" id="meta18698" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr49482" id="Tr49482" label="PAUP 1" xsi:type="nex:FloatTree">
+      <meta content="70" datatype="xsd:integer" id="meta18705" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta18704" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta18703" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta18702" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18701" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn8291285"/>
+      <node id="Tn8291348" label="Haplonyx FJ888591" otu="Tl587284"/>
+      <node id="Tn8291284"/>
+      <node id="Tn8291288"/>
+      <node id="Tn8291377"/>
+      <node id="Tn8291311"/>
+      <node id="Tn8291305"/>
+      <node id="Tn8291354"/>
+      <node id="Tn8291300"/>
+      <node id="Tn8291266"/>
+      <node id="Tn8291294" label="Gonipterus platensis co1 FJ888530" otu="Tl657975"/>
+      <node id="Tn8291374" label="Gonipterus platensis co2 FJ888529" otu="Tl657992"/>
+      <node id="Tn8291321" label="Gonipterus platensis co3 JN3191478" otu="Tl657993"/>
+      <node id="Tn8291296"/>
+      <node id="Tn8291290" label="Gonipterus platensis ESP JN3191479" otu="Tl658008"/>
+      <node id="Tn8291358" label="Gonipterus platensis POR JN3191480" otu="Tl658002"/>
+      <node id="Tn8291262"/>
+      <node id="Tn8291329" label="Gonipterus pulverulentus co4 FJ888531" otu="Tl658021"/>
+      <node id="Tn8291326"/>
+      <node id="Tn8291302" label="Gonipterus pulverulentus co5 FJ888532" otu="Tl657988"/>
+      <node id="Tn8291316" label="Gonipterus pulverulentus co6 FJ888533" otu="Tl657999"/>
+      <node id="Tn8291264" label="Gonipterus baltentus co44 FJ888567" otu="Tl658029"/>
+      <node id="Tn8291253"/>
+      <node id="Tn8291309"/>
+      <node id="Tn8291273"/>
+      <node id="Tn8291382"/>
+      <node id="Tn8291314" label="Gonipterus sp n 1 co7 FJ888534" otu="Tl658012"/>
+      <node id="Tn8291380"/>
+      <node id="Tn8291261" label="Gonipterus sp n 1 co9 FJ888536" otu="Tl657972"/>
+      <node id="Tn8291292" label="Gonipterus sp n 1 co11 FJ888538" otu="Tl657983"/>
+      <node id="Tn8291260" label="Gonipterus sp n 1 co10 FJ888537" otu="Tl658038"/>
+      <node id="Tn8291335" label="Gonipterus sp n 1 co8 FJ888535" otu="Tl658027"/>
+      <node id="Tn8291379"/>
+      <node id="Tn8291287"/>
+      <node id="Tn8291359"/>
+      <node id="Tn8291307"/>
+      <node id="Tn8291298"/>
+      <node id="Tn8291353"/>
+      <node id="Tn8291306"/>
+      <node id="Tn8291278"/>
+      <node id="Tn8291328"/>
+      <node id="Tn8291317"/>
+      <node id="Tn8291376"/>
+      <node id="Tn8291297" label="Gonipterus sp n 2 co12 FJ888539" otu="Tl658013"/>
+      <node id="Tn8291324" label="Gonipterus sp n 2 co13 FJ888540" otu="Tl657980"/>
+      <node id="Tn8291340" label="Gonipterus sp n 2 co16 FJ888543" otu="Tl658017"/>
+      <node id="Tn8291367" label="Gonipterus sp n 2 co14 FJ888541" otu="Tl657996"/>
+      <node id="Tn8291282" label="Gonipterus sp n 2 co15 FJ888542" otu="Tl658024"/>
+      <node id="Tn8291365"/>
+      <node id="Tn8291361"/>
+      <node id="Tn8291325" label="Gonipterus sp n 2 co17 FJ888544" otu="Tl658037"/>
+      <node id="Tn8291252" label="Gonipterus sp n 2 co31 JN3191485" otu="Tl658006"/>
+      <node id="Tn8291281"/>
+      <node id="Tn8291352" label="Gonipterus sp n 2 co18 FJ888545" otu="Tl658007"/>
+      <node id="Tn8291318" label="Gonipterus sp n 2 co19 FJ888546" otu="Tl658014"/>
+      <node id="Tn8291312" label="Gonipterus sp n 2 RSA JN3191484" otu="Tl658001"/>
+      <node id="Tn8291343" label="Gonipterus sp n 2 co26 FJ888552" otu="Tl657985"/>
+      <node id="Tn8291313"/>
+      <node id="Tn8291362" label="Gonipterus sp n 2 co27 FJ888553" otu="Tl657990"/>
+      <node id="Tn8291375" label="Gonipterus sp n 2 co30 JN3191483" otu="Tl657974"/>
+      <node id="Tn8291265" label="Gonipterus sp n 2 co20 FJ888547" otu="Tl658010"/>
+      <node id="Tn8291319"/>
+      <node id="Tn8291303"/>
+      <node id="Tn8291347"/>
+      <node id="Tn8291378" label="Gonipterus sp n 2 co21 FJ888548" otu="Tl657981"/>
+      <node id="Tn8291269"/>
+      <node id="Tn8291323" label="Gonipterus sp n 2 co22 FJ888549" otu="Tl657976"/>
+      <node id="Tn8291289" label="Gonipterus sp n 2 co28 JN3191481" otu="Tl658033"/>
+      <node id="Tn8291267" label="Gonipterus sp n 2 co24 FJ888551" otu="Tl657977"/>
+      <node id="Tn8291310" label="Gonipterus sp n 2 co23 FJ888550" otu="Tl658018"/>
+      <node id="Tn8291371" label="Gonipterus sp n 2 co29 JN3191482" otu="Tl658009"/>
+      <node id="Tn8291336" label="Gonipterus sp n 2 co25 FJ888552" otu="Tl658022"/>
+      <node id="Tn8291299"/>
+      <node id="Tn8291304"/>
+      <node id="Tn8291327"/>
+      <node id="Tn8291346" label="Gonipterus sp n 3 co32 FJ888557" otu="Tl658028"/>
+      <node id="Tn8291350" label="Gonipterus sp n 3 co40 FJ888565" otu="Tl657989"/>
+      <node id="Tn8291342" label="Gonipterus sp n 3 co41 FJ888566" otu="Tl658026"/>
+      <node id="Tn8291338"/>
+      <node id="Tn8291301"/>
+      <node id="Tn8291280"/>
+      <node id="Tn8291341"/>
+      <node id="Tn8291293" label="Gonipterus sp n 3 co33 FJ888558" otu="Tl657998"/>
+      <node id="Tn8291279" label="Gonipterus sp n 3 co39 FJ888564" otu="Tl658032"/>
+      <node id="Tn8291385"/>
+      <node id="Tn8291259" label="Gonipterus sp n 3 co34 FJ888559" otu="Tl657971"/>
+      <node id="Tn8291339" label="Gonipterus sp n 3 co36 FJ888561" otu="Tl658015"/>
+      <node id="Tn8291351" label="Gonipterus sp n 3 co38 FJ888563" otu="Tl657997"/>
+      <node id="Tn8291333" label="Gonipterus sp n 3 co37 FJ888562" otu="Tl658034"/>
+      <node id="Tn8291286" label="Gonipterus sp n 3 co35 FJ888560" otu="Tl657978"/>
+      <node id="Tn8291384" label="Gonipterus scutellatus co65 JN3191486" otu="Tl657982"/>
+      <node id="Tn8291366"/>
+      <node id="Tn8291272"/>
+      <node id="Tn8291255" label="Gonipterus sp n 4 co42 FJ888568" otu="Tl658003"/>
+      <node id="Tn8291295" label="Gonipterus sp n 4 co43 FJ888569" otu="Tl657994"/>
+      <node id="Tn8291356"/>
+      <node id="Tn8291349"/>
+      <node id="Tn8291357"/>
+      <node id="Tn8291334"/>
+      <node id="Tn8291372"/>
+      <node id="Tn8291271" label="Gonipterus notographus co45 FJ888570" otu="Tl658035"/>
+      <node id="Tn8291320"/>
+      <node id="Tn8291383"/>
+      <node id="Tn8291363" label="Gonipterus notographus co46 FJ888571" otu="Tl657991"/>
+      <node id="Tn8291373"/>
+      <node id="Tn8291360"/>
+      <node id="Tn8291369"/>
+      <node id="Tn8291308" label="Gonipterus notographus co47 FJ888572" otu="Tl658023"/>
+      <node id="Tn8291283" label="Gonipterus notographus co54 FJ888579" otu="Tl658030"/>
+      <node id="Tn8291345"/>
+      <node id="Tn8291258" label="Gonipterus notographus co57 FJ888582" otu="Tl657984"/>
+      <node id="Tn8291274" label="Gonipterus notographus co60 FJ888585" otu="Tl658004"/>
+      <node id="Tn8291263" label="Gonipterus notographus co59 FJ888584" otu="Tl658000"/>
+      <node id="Tn8291256" label="Gonipterus notographus co51 FJ888576" otu="Tl658031"/>
+      <node id="Tn8291322"/>
+      <node id="Tn8291268"/>
+      <node id="Tn8291330" label="Gonipterus notographus co48 FJ888573" otu="Tl658019"/>
+      <node id="Tn8291254" label="Gonipterus notographus co52 FJ888577" otu="Tl657995"/>
+      <node id="Tn8291291" label="Gonipterus notographus co53 FJ888578" otu="Tl657979"/>
+      <node id="Tn8291332"/>
+      <node id="Tn8291257"/>
+      <node id="Tn8291370" label="Gonipterus notographus co50 FJ888575" otu="Tl658005"/>
+      <node id="Tn8291275" label="Gonipterus notographus co56 FJ888581" otu="Tl657987"/>
+      <node id="Tn8291277"/>
+      <node id="Tn8291355" label="Gonipterus notographus co55 FJ888580" otu="Tl657986"/>
+      <node id="Tn8291270" label="Gonipterus notographus co62 FJ888587" otu="Tl657970"/>
+      <node id="Tn8291344" label="Gonipterus notographus co61 FJ888586" otu="Tl658036"/>
+      <node id="Tn8291364" label="Gonipterus notographus co49 FJ888574" otu="Tl658020"/>
+      <node id="Tn8291381"/>
+      <node id="Tn8291368" label="Gonipterus sp n 5 co63 FJ888588" otu="Tl657973"/>
+      <node id="Tn8291276" label="Gonipterus sp n 5 co64 FJ888589" otu="Tl658011"/>
+      <node id="Tn8291331"/>
+      <node id="Tn8291315" label="Oxyops co66 FJ888590" otu="Tl658016"/>
+      <node id="Tn8291337" label="Oxyops co67 JN3191487" otu="Tl658025"/>
+      <edge id="edge18708" source="Tn8291285" target="Tn8291348"/>
+      <edge id="edge18710" source="Tn8291285" target="Tn8291284"/>
+      <edge id="edge18712" source="Tn8291284" target="Tn8291288"/>
+      <edge id="edge18714" source="Tn8291288" target="Tn8291377"/>
+      <edge id="edge18716" source="Tn8291377" target="Tn8291311"/>
+      <edge id="edge18718" source="Tn8291311" target="Tn8291305"/>
+      <edge id="edge18720" source="Tn8291305" target="Tn8291354"/>
+      <edge id="edge18722" source="Tn8291354" target="Tn8291300"/>
+      <edge id="edge18724" source="Tn8291300" target="Tn8291266"/>
+      <edge id="edge18726" source="Tn8291266" target="Tn8291294"/>
+      <edge id="edge18728" source="Tn8291266" target="Tn8291374"/>
+      <edge id="edge18730" source="Tn8291266" target="Tn8291321"/>
+      <edge id="edge18732" source="Tn8291300" target="Tn8291296"/>
+      <edge id="edge18734" source="Tn8291296" target="Tn8291290"/>
+      <edge id="edge18736" source="Tn8291296" target="Tn8291358"/>
+      <edge id="edge18738" source="Tn8291354" target="Tn8291262"/>
+      <edge id="edge18740" source="Tn8291262" target="Tn8291329"/>
+      <edge id="edge18742" source="Tn8291262" target="Tn8291326"/>
+      <edge id="edge18744" source="Tn8291326" target="Tn8291302"/>
+      <edge id="edge18746" source="Tn8291326" target="Tn8291316"/>
+      <edge id="edge18748" source="Tn8291305" target="Tn8291264"/>
+      <edge id="edge18750" source="Tn8291311" target="Tn8291253"/>
+      <edge id="edge18752" source="Tn8291253" target="Tn8291309"/>
+      <edge id="edge18754" source="Tn8291309" target="Tn8291273"/>
+      <edge id="edge18756" source="Tn8291273" target="Tn8291382"/>
+      <edge id="edge18758" source="Tn8291382" target="Tn8291314"/>
+      <edge id="edge18760" source="Tn8291382" target="Tn8291380"/>
+      <edge id="edge18762" source="Tn8291380" target="Tn8291261"/>
+      <edge id="edge18764" source="Tn8291380" target="Tn8291292"/>
+      <edge id="edge18766" source="Tn8291382" target="Tn8291260"/>
+      <edge id="edge18768" source="Tn8291273" target="Tn8291335"/>
+      <edge id="edge18770" source="Tn8291309" target="Tn8291379"/>
+      <edge id="edge18772" source="Tn8291379" target="Tn8291287"/>
+      <edge id="edge18774" source="Tn8291287" target="Tn8291359"/>
+      <edge id="edge18776" source="Tn8291359" target="Tn8291307"/>
+      <edge id="edge18778" source="Tn8291307" target="Tn8291298"/>
+      <edge id="edge18780" source="Tn8291298" target="Tn8291353"/>
+      <edge id="edge18782" source="Tn8291353" target="Tn8291306"/>
+      <edge id="edge18784" source="Tn8291306" target="Tn8291278"/>
+      <edge id="edge18786" source="Tn8291278" target="Tn8291328"/>
+      <edge id="edge18788" source="Tn8291328" target="Tn8291317"/>
+      <edge id="edge18790" source="Tn8291317" target="Tn8291376"/>
+      <edge id="edge18792" source="Tn8291376" target="Tn8291297"/>
+      <edge id="edge18794" source="Tn8291376" target="Tn8291324"/>
+      <edge id="edge18796" source="Tn8291317" target="Tn8291340"/>
+      <edge id="edge18798" source="Tn8291328" target="Tn8291367"/>
+      <edge id="edge18800" source="Tn8291328" target="Tn8291282"/>
+      <edge id="edge18802" source="Tn8291278" target="Tn8291365"/>
+      <edge id="edge18804" source="Tn8291365" target="Tn8291361"/>
+      <edge id="edge18806" source="Tn8291361" target="Tn8291325"/>
+      <edge id="edge18808" source="Tn8291361" target="Tn8291252"/>
+      <edge id="edge18810" source="Tn8291365" target="Tn8291281"/>
+      <edge id="edge18812" source="Tn8291281" target="Tn8291352"/>
+      <edge id="edge18814" source="Tn8291281" target="Tn8291318"/>
+      <edge id="edge18816" source="Tn8291365" target="Tn8291312"/>
+      <edge id="edge18818" source="Tn8291306" target="Tn8291343"/>
+      <edge id="edge18820" source="Tn8291353" target="Tn8291313"/>
+      <edge id="edge18822" source="Tn8291313" target="Tn8291362"/>
+      <edge id="edge18824" source="Tn8291313" target="Tn8291375"/>
+      <edge id="edge18826" source="Tn8291298" target="Tn8291265"/>
+      <edge id="edge18828" source="Tn8291307" target="Tn8291319"/>
+      <edge id="edge18830" source="Tn8291319" target="Tn8291303"/>
+      <edge id="edge18832" source="Tn8291303" target="Tn8291347"/>
+      <edge id="edge18834" source="Tn8291347" target="Tn8291378"/>
+      <edge id="edge18836" source="Tn8291347" target="Tn8291269"/>
+      <edge id="edge18838" source="Tn8291269" target="Tn8291323"/>
+      <edge id="edge18840" source="Tn8291269" target="Tn8291289"/>
+      <edge id="edge18842" source="Tn8291303" target="Tn8291267"/>
+      <edge id="edge18844" source="Tn8291319" target="Tn8291310"/>
+      <edge id="edge18846" source="Tn8291359" target="Tn8291371"/>
+      <edge id="edge18848" source="Tn8291287" target="Tn8291336"/>
+      <edge id="edge18850" source="Tn8291379" target="Tn8291299"/>
+      <edge id="edge18852" source="Tn8291299" target="Tn8291304"/>
+      <edge id="edge18854" source="Tn8291304" target="Tn8291327"/>
+      <edge id="edge18856" source="Tn8291327" target="Tn8291346"/>
+      <edge id="edge18858" source="Tn8291327" target="Tn8291350"/>
+      <edge id="edge18860" source="Tn8291304" target="Tn8291342"/>
+      <edge id="edge18862" source="Tn8291299" target="Tn8291338"/>
+      <edge id="edge18864" source="Tn8291338" target="Tn8291301"/>
+      <edge id="edge18866" source="Tn8291301" target="Tn8291280"/>
+      <edge id="edge18868" source="Tn8291280" target="Tn8291341"/>
+      <edge id="edge18870" source="Tn8291341" target="Tn8291293"/>
+      <edge id="edge18872" source="Tn8291341" target="Tn8291279"/>
+      <edge id="edge18874" source="Tn8291280" target="Tn8291385"/>
+      <edge id="edge18876" source="Tn8291385" target="Tn8291259"/>
+      <edge id="edge18878" source="Tn8291385" target="Tn8291339"/>
+      <edge id="edge18880" source="Tn8291280" target="Tn8291351"/>
+      <edge id="edge18882" source="Tn8291301" target="Tn8291333"/>
+      <edge id="edge18884" source="Tn8291338" target="Tn8291286"/>
+      <edge id="edge18886" source="Tn8291253" target="Tn8291384"/>
+      <edge id="edge18888" source="Tn8291377" target="Tn8291366"/>
+      <edge id="edge18890" source="Tn8291366" target="Tn8291272"/>
+      <edge id="edge18892" source="Tn8291272" target="Tn8291255"/>
+      <edge id="edge18894" source="Tn8291272" target="Tn8291295"/>
+      <edge id="edge18896" source="Tn8291366" target="Tn8291356"/>
+      <edge id="edge18898" source="Tn8291356" target="Tn8291349"/>
+      <edge id="edge18900" source="Tn8291349" target="Tn8291357"/>
+      <edge id="edge18902" source="Tn8291357" target="Tn8291334"/>
+      <edge id="edge18904" source="Tn8291334" target="Tn8291372"/>
+      <edge id="edge18906" source="Tn8291372" target="Tn8291271"/>
+      <edge id="edge18908" source="Tn8291372" target="Tn8291320"/>
+      <edge id="edge18910" source="Tn8291320" target="Tn8291383"/>
+      <edge id="edge18912" source="Tn8291383" target="Tn8291363"/>
+      <edge id="edge18914" source="Tn8291383" target="Tn8291373"/>
+      <edge id="edge18916" source="Tn8291373" target="Tn8291360"/>
+      <edge id="edge18918" source="Tn8291360" target="Tn8291369"/>
+      <edge id="edge18920" source="Tn8291369" target="Tn8291308"/>
+      <edge id="edge18922" source="Tn8291369" target="Tn8291283"/>
+      <edge id="edge18924" source="Tn8291360" target="Tn8291345"/>
+      <edge id="edge18926" source="Tn8291345" target="Tn8291258"/>
+      <edge id="edge18928" source="Tn8291345" target="Tn8291274"/>
+      <edge id="edge18930" source="Tn8291373" target="Tn8291263"/>
+      <edge id="edge18932" source="Tn8291320" target="Tn8291256"/>
+      <edge id="edge18934" source="Tn8291334" target="Tn8291322"/>
+      <edge id="edge18936" source="Tn8291322" target="Tn8291268"/>
+      <edge id="edge18938" source="Tn8291268" target="Tn8291330"/>
+      <edge id="edge18940" source="Tn8291268" target="Tn8291254"/>
+      <edge id="edge18942" source="Tn8291322" target="Tn8291291"/>
+      <edge id="edge18944" source="Tn8291357" target="Tn8291332"/>
+      <edge id="edge18946" source="Tn8291332" target="Tn8291257"/>
+      <edge id="edge18948" source="Tn8291257" target="Tn8291370"/>
+      <edge id="edge18950" source="Tn8291257" target="Tn8291275"/>
+      <edge id="edge18952" source="Tn8291332" target="Tn8291277"/>
+      <edge id="edge18954" source="Tn8291277" target="Tn8291355"/>
+      <edge id="edge18956" source="Tn8291277" target="Tn8291270"/>
+      <edge id="edge18958" source="Tn8291349" target="Tn8291344"/>
+      <edge id="edge18960" source="Tn8291356" target="Tn8291364"/>
+      <edge id="edge18962" source="Tn8291288" target="Tn8291381"/>
+      <edge id="edge18964" source="Tn8291381" target="Tn8291368"/>
+      <edge id="edge18966" source="Tn8291381" target="Tn8291276"/>
+      <edge id="edge18968" source="Tn8291284" target="Tn8291331"/>
+      <edge id="edge18970" source="Tn8291331" target="Tn8291315"/>
+      <edge id="edge18972" source="Tn8291331" target="Tn8291337"/>
+    </tree>
+    <tree about="#Tr49484" id="Tr49484" label="PAUP BAYES" xsi:type="nex:FloatTree">
+      <meta content="70" datatype="xsd:integer" id="meta18978" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta18977" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta18976" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta18975" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta18974" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn8291605"/>
+      <node id="Tn8291578" label="Haplonyx FJ888591" otu="Tl587284"/>
+      <node id="Tn8291526"/>
+      <node id="Tn8291559"/>
+      <node id="Tn8291556"/>
+      <node id="Tn8291499"/>
+      <node id="Tn8291554"/>
+      <node id="Tn8291562"/>
+      <node id="Tn8291557" label="Gonipterus platensis co1 FJ888530" otu="Tl657975"/>
+      <node id="Tn8291516" label="Gonipterus platensis co2 FJ888529" otu="Tl657992"/>
+      <node id="Tn8291537" label="Gonipterus platensis co3 JN3191478" otu="Tl657993"/>
+      <node id="Tn8291566" label="Gonipterus platensis ESP JN3191479" otu="Tl658008"/>
+      <node id="Tn8291523" label="Gonipterus platensis POR JN3191480" otu="Tl658002"/>
+      <node id="Tn8291532"/>
+      <node id="Tn8291583" label="Gonipterus pulverulentus co4 FJ888531" otu="Tl658021"/>
+      <node id="Tn8291598"/>
+      <node id="Tn8291610" label="Gonipterus pulverulentus co5 FJ888532" otu="Tl657988"/>
+      <node id="Tn8291493" label="Gonipterus pulverulentus co6 FJ888533" otu="Tl657999"/>
+      <node id="Tn8291560"/>
+      <node id="Tn8291586"/>
+      <node id="Tn8291521"/>
+      <node id="Tn8291569"/>
+      <node id="Tn8291530"/>
+      <node id="Tn8291522" label="Gonipterus sp n 1 co7 FJ888534" otu="Tl658012"/>
+      <node id="Tn8291529"/>
+      <node id="Tn8291527" label="Gonipterus sp n 1 co9 FJ888536" otu="Tl657972"/>
+      <node id="Tn8291592" label="Gonipterus sp n 1 co11 FJ888538" otu="Tl657983"/>
+      <node id="Tn8291547" label="Gonipterus sp n 1 co10 FJ888537" otu="Tl658038"/>
+      <node id="Tn8291539" label="Gonipterus sp n 1 co8 FJ888535" otu="Tl658027"/>
+      <node id="Tn8291597"/>
+      <node id="Tn8291576"/>
+      <node id="Tn8291542"/>
+      <node id="Tn8291531"/>
+      <node id="Tn8291584" label="Gonipterus sp n 2 co12 FJ888539" otu="Tl658013"/>
+      <node id="Tn8291555" label="Gonipterus sp n 2 co13 FJ888540" otu="Tl657980"/>
+      <node id="Tn8291588"/>
+      <node id="Tn8291612"/>
+      <node id="Tn8291524" label="Gonipterus sp n 2 co14 FJ888541" otu="Tl657996"/>
+      <node id="Tn8291510" label="Gonipterus sp n 2 co15 FJ888542" otu="Tl658024"/>
+      <node id="Tn8291549" label="Gonipterus sp n 2 co16 FJ888543" otu="Tl658017"/>
+      <node id="Tn8291579"/>
+      <node id="Tn8291601"/>
+      <node id="Tn8291546" label="Gonipterus sp n 2 co17 FJ888544" otu="Tl658037"/>
+      <node id="Tn8291611" label="Gonipterus sp n 2 co26 FJ888552" otu="Tl657985"/>
+      <node id="Tn8291500" label="Gonipterus sp n 2 co31 JN3191485" otu="Tl658006"/>
+      <node id="Tn8291543"/>
+      <node id="Tn8291519" label="Gonipterus sp n 2 co18 FJ888545" otu="Tl658007"/>
+      <node id="Tn8291509" label="Gonipterus sp n 2 co19 FJ888546" otu="Tl658014"/>
+      <node id="Tn8291589" label="Gonipterus sp n 2 RSA JN3191484" otu="Tl658001"/>
+      <node id="Tn8291581" label="Gonipterus sp n 2 co20 FJ888547" otu="Tl658010"/>
+      <node id="Tn8291544"/>
+      <node id="Tn8291494"/>
+      <node id="Tn8291518"/>
+      <node id="Tn8291528" label="Gonipterus sp n 2 co21 FJ888548" otu="Tl657981"/>
+      <node id="Tn8291520" label="Gonipterus sp n 2 co22 FJ888549" otu="Tl657976"/>
+      <node id="Tn8291503" label="Gonipterus sp n 2 co24 FJ888551" otu="Tl657977"/>
+      <node id="Tn8291545" label="Gonipterus sp n 2 co23 FJ888550" otu="Tl658018"/>
+      <node id="Tn8291501"/>
+      <node id="Tn8291504" label="Gonipterus sp n 2 co27 FJ888553" otu="Tl657990"/>
+      <node id="Tn8291533" label="Gonipterus sp n 2 co28 JN3191481" otu="Tl658033"/>
+      <node id="Tn8291553" label="Gonipterus sp n 2 co30 JN3191483" otu="Tl657974"/>
+      <node id="Tn8291587" label="Gonipterus sp n 2 co29 JN3191482" otu="Tl658009"/>
+      <node id="Tn8291534" label="Gonipterus sp n 2 co25 FJ888552" otu="Tl658022"/>
+      <node id="Tn8291497"/>
+      <node id="Tn8291609"/>
+      <node id="Tn8291551"/>
+      <node id="Tn8291548" label="Gonipterus sp n 3 co32 FJ888557" otu="Tl658028"/>
+      <node id="Tn8291565" label="Gonipterus sp n 3 co40 FJ888565" otu="Tl657989"/>
+      <node id="Tn8291558" label="Gonipterus sp n 3 co41 FJ888566" otu="Tl658026"/>
+      <node id="Tn8291514"/>
+      <node id="Tn8291590" label="Gonipterus sp n 3 co33 FJ888558" otu="Tl657998"/>
+      <node id="Tn8291498" label="Gonipterus sp n 3 co39 FJ888564" otu="Tl658032"/>
+      <node id="Tn8291538"/>
+      <node id="Tn8291567" label="Gonipterus sp n 3 co34 FJ888559" otu="Tl657971"/>
+      <node id="Tn8291506" label="Gonipterus sp n 3 co36 FJ888561" otu="Tl658015"/>
+      <node id="Tn8291575" label="Gonipterus sp n 3 co35 FJ888560" otu="Tl657978"/>
+      <node id="Tn8291604" label="Gonipterus sp n 3 co37 FJ888562" otu="Tl658034"/>
+      <node id="Tn8291536" label="Gonipterus sp n 3 co38 FJ888563" otu="Tl657997"/>
+      <node id="Tn8291563" label="Gonipterus scutellatus co65 JN3191486" otu="Tl657982"/>
+      <node id="Tn8291603" label="Gonipterus baltentus co44 FJ888567" otu="Tl658029"/>
+      <node id="Tn8291607"/>
+      <node id="Tn8291599" label="Gonipterus sp n 4 co42 FJ888568" otu="Tl658003"/>
+      <node id="Tn8291561" label="Gonipterus sp n 4 co43 FJ888569" otu="Tl657994"/>
+      <node id="Tn8291594"/>
+      <node id="Tn8291568"/>
+      <node id="Tn8291511"/>
+      <node id="Tn8291574"/>
+      <node id="Tn8291602"/>
+      <node id="Tn8291496"/>
+      <node id="Tn8291541"/>
+      <node id="Tn8291492"/>
+      <node id="Tn8291577" label="Gonipterus notographus co45 FJ888570" otu="Tl658035"/>
+      <node id="Tn8291595"/>
+      <node id="Tn8291540"/>
+      <node id="Tn8291600"/>
+      <node id="Tn8291517"/>
+      <node id="Tn8291507" label="Gonipterus notographus co48 FJ888573" otu="Tl658019"/>
+      <node id="Tn8291495" label="Gonipterus notographus co52 FJ888577" otu="Tl657995"/>
+      <node id="Tn8291502" label="Gonipterus notographus co51 FJ888576" otu="Tl658031"/>
+      <node id="Tn8291606" label="Gonipterus notographus co53 FJ888578" otu="Tl657979"/>
+      <node id="Tn8291508"/>
+      <node id="Tn8291513"/>
+      <node id="Tn8291525" label="Gonipterus notographus co50 FJ888575" otu="Tl658005"/>
+      <node id="Tn8291515"/>
+      <node id="Tn8291571" label="Gonipterus notographus co55 FJ888580" otu="Tl657986"/>
+      <node id="Tn8291593" label="Gonipterus notographus co62 FJ888587" otu="Tl657970"/>
+      <node id="Tn8291572" label="Gonipterus notographus co56 FJ888581" otu="Tl657987"/>
+      <node id="Tn8291585" label="Gonipterus notographus co61 FJ888586" otu="Tl658036"/>
+      <node id="Tn8291580" label="Gonipterus notographus co46 FJ888571" otu="Tl657991"/>
+      <node id="Tn8291582"/>
+      <node id="Tn8291591" label="Gonipterus notographus co57 FJ888582" otu="Tl657984"/>
+      <node id="Tn8291552" label="Gonipterus notographus co60 FJ888585" otu="Tl658004"/>
+      <node id="Tn8291564" label="Gonipterus notographus co59 FJ888584" otu="Tl658000"/>
+      <node id="Tn8291613" label="Gonipterus notographus co54 FJ888579" otu="Tl658030"/>
+      <node id="Tn8291512" label="Gonipterus notographus co47 FJ888572" otu="Tl658023"/>
+      <node id="Tn8291596" label="Gonipterus notographus co49 FJ888574" otu="Tl658020"/>
+      <node id="Tn8291608"/>
+      <node id="Tn8291505" label="Oxyops co66 FJ888590" otu="Tl658016"/>
+      <node id="Tn8291573" label="Oxyops co67 JN3191487" otu="Tl658025"/>
+      <node id="Tn8291535"/>
+      <node id="Tn8291570" label="Gonipterus sp n 5 co63 FJ888588" otu="Tl657973"/>
+      <node id="Tn8291550" label="Gonipterus sp n 5 co64 FJ888589" otu="Tl658011"/>
+      <edge id="edge18981" source="Tn8291605" target="Tn8291578"/>
+      <edge id="edge18983" source="Tn8291605" target="Tn8291526"/>
+      <edge id="edge18985" source="Tn8291526" target="Tn8291559"/>
+      <edge id="edge18987" source="Tn8291559" target="Tn8291556"/>
+      <edge id="edge18989" source="Tn8291556" target="Tn8291499"/>
+      <edge id="edge18991" source="Tn8291499" target="Tn8291554"/>
+      <edge id="edge18993" source="Tn8291554" target="Tn8291562"/>
+      <edge id="edge18995" source="Tn8291562" target="Tn8291557"/>
+      <edge id="edge18997" source="Tn8291562" target="Tn8291516"/>
+      <edge id="edge18999" source="Tn8291562" target="Tn8291537"/>
+      <edge id="edge19001" source="Tn8291562" target="Tn8291566"/>
+      <edge id="edge19003" source="Tn8291562" target="Tn8291523"/>
+      <edge id="edge19005" source="Tn8291554" target="Tn8291532"/>
+      <edge id="edge19007" source="Tn8291532" target="Tn8291583"/>
+      <edge id="edge19009" source="Tn8291532" target="Tn8291598"/>
+      <edge id="edge19011" source="Tn8291598" target="Tn8291610"/>
+      <edge id="edge19013" source="Tn8291598" target="Tn8291493"/>
+      <edge id="edge19015" source="Tn8291499" target="Tn8291560"/>
+      <edge id="edge19017" source="Tn8291560" target="Tn8291586"/>
+      <edge id="edge19019" source="Tn8291586" target="Tn8291521"/>
+      <edge id="edge19021" source="Tn8291521" target="Tn8291569"/>
+      <edge id="edge19023" source="Tn8291569" target="Tn8291530"/>
+      <edge id="edge19025" source="Tn8291530" target="Tn8291522"/>
+      <edge id="edge19027" source="Tn8291530" target="Tn8291529"/>
+      <edge id="edge19029" source="Tn8291529" target="Tn8291527"/>
+      <edge id="edge19031" source="Tn8291529" target="Tn8291592"/>
+      <edge id="edge19033" source="Tn8291530" target="Tn8291547"/>
+      <edge id="edge19035" source="Tn8291569" target="Tn8291539"/>
+      <edge id="edge19037" source="Tn8291521" target="Tn8291597"/>
+      <edge id="edge19039" source="Tn8291597" target="Tn8291576"/>
+      <edge id="edge19041" source="Tn8291576" target="Tn8291542"/>
+      <edge id="edge19043" source="Tn8291542" target="Tn8291531"/>
+      <edge id="edge19045" source="Tn8291531" target="Tn8291584"/>
+      <edge id="edge19047" source="Tn8291531" target="Tn8291555"/>
+      <edge id="edge19049" source="Tn8291531" target="Tn8291588"/>
+      <edge id="edge19051" source="Tn8291588" target="Tn8291612"/>
+      <edge id="edge19053" source="Tn8291612" target="Tn8291524"/>
+      <edge id="edge19055" source="Tn8291612" target="Tn8291510"/>
+      <edge id="edge19057" source="Tn8291588" target="Tn8291549"/>
+      <edge id="edge19059" source="Tn8291542" target="Tn8291579"/>
+      <edge id="edge19061" source="Tn8291579" target="Tn8291601"/>
+      <edge id="edge19063" source="Tn8291601" target="Tn8291546"/>
+      <edge id="edge19065" source="Tn8291601" target="Tn8291611"/>
+      <edge id="edge19067" source="Tn8291601" target="Tn8291500"/>
+      <edge id="edge19069" source="Tn8291579" target="Tn8291543"/>
+      <edge id="edge19071" source="Tn8291543" target="Tn8291519"/>
+      <edge id="edge19073" source="Tn8291543" target="Tn8291509"/>
+      <edge id="edge19075" source="Tn8291579" target="Tn8291589"/>
+      <edge id="edge19077" source="Tn8291542" target="Tn8291581"/>
+      <edge id="edge19079" source="Tn8291542" target="Tn8291544"/>
+      <edge id="edge19081" source="Tn8291544" target="Tn8291494"/>
+      <edge id="edge19083" source="Tn8291494" target="Tn8291518"/>
+      <edge id="edge19085" source="Tn8291518" target="Tn8291528"/>
+      <edge id="edge19087" source="Tn8291518" target="Tn8291520"/>
+      <edge id="edge19089" source="Tn8291494" target="Tn8291503"/>
+      <edge id="edge19091" source="Tn8291544" target="Tn8291545"/>
+      <edge id="edge19093" source="Tn8291542" target="Tn8291501"/>
+      <edge id="edge19095" source="Tn8291501" target="Tn8291504"/>
+      <edge id="edge19097" source="Tn8291501" target="Tn8291533"/>
+      <edge id="edge19099" source="Tn8291501" target="Tn8291553"/>
+      <edge id="edge19101" source="Tn8291542" target="Tn8291587"/>
+      <edge id="edge19103" source="Tn8291576" target="Tn8291534"/>
+      <edge id="edge19105" source="Tn8291597" target="Tn8291497"/>
+      <edge id="edge19107" source="Tn8291497" target="Tn8291609"/>
+      <edge id="edge19109" source="Tn8291609" target="Tn8291551"/>
+      <edge id="edge19111" source="Tn8291551" target="Tn8291548"/>
+      <edge id="edge19113" source="Tn8291551" target="Tn8291565"/>
+      <edge id="edge19115" source="Tn8291609" target="Tn8291558"/>
+      <edge id="edge19117" source="Tn8291497" target="Tn8291514"/>
+      <edge id="edge19119" source="Tn8291514" target="Tn8291590"/>
+      <edge id="edge19121" source="Tn8291514" target="Tn8291498"/>
+      <edge id="edge19123" source="Tn8291497" target="Tn8291538"/>
+      <edge id="edge19125" source="Tn8291538" target="Tn8291567"/>
+      <edge id="edge19127" source="Tn8291538" target="Tn8291506"/>
+      <edge id="edge19129" source="Tn8291497" target="Tn8291575"/>
+      <edge id="edge19131" source="Tn8291497" target="Tn8291604"/>
+      <edge id="edge19133" source="Tn8291497" target="Tn8291536"/>
+      <edge id="edge19135" source="Tn8291586" target="Tn8291563"/>
+      <edge id="edge19137" source="Tn8291560" target="Tn8291603"/>
+      <edge id="edge19139" source="Tn8291556" target="Tn8291607"/>
+      <edge id="edge19141" source="Tn8291607" target="Tn8291599"/>
+      <edge id="edge19143" source="Tn8291607" target="Tn8291561"/>
+      <edge id="edge19145" source="Tn8291559" target="Tn8291594"/>
+      <edge id="edge19147" source="Tn8291594" target="Tn8291568"/>
+      <edge id="edge19149" source="Tn8291568" target="Tn8291511"/>
+      <edge id="edge19151" source="Tn8291511" target="Tn8291574"/>
+      <edge id="edge19153" source="Tn8291574" target="Tn8291602"/>
+      <edge id="edge19155" source="Tn8291602" target="Tn8291496"/>
+      <edge id="edge19157" source="Tn8291496" target="Tn8291541"/>
+      <edge id="edge19159" source="Tn8291541" target="Tn8291492"/>
+      <edge id="edge19161" source="Tn8291492" target="Tn8291577"/>
+      <edge id="edge19163" source="Tn8291492" target="Tn8291595"/>
+      <edge id="edge19165" source="Tn8291595" target="Tn8291540"/>
+      <edge id="edge19167" source="Tn8291540" target="Tn8291600"/>
+      <edge id="edge19169" source="Tn8291600" target="Tn8291517"/>
+      <edge id="edge19171" source="Tn8291517" target="Tn8291507"/>
+      <edge id="edge19173" source="Tn8291517" target="Tn8291495"/>
+      <edge id="edge19175" source="Tn8291600" target="Tn8291502"/>
+      <edge id="edge19177" source="Tn8291540" target="Tn8291606"/>
+      <edge id="edge19179" source="Tn8291595" target="Tn8291508"/>
+      <edge id="edge19181" source="Tn8291508" target="Tn8291513"/>
+      <edge id="edge19183" source="Tn8291513" target="Tn8291525"/>
+      <edge id="edge19185" source="Tn8291513" target="Tn8291515"/>
+      <edge id="edge19187" source="Tn8291515" target="Tn8291571"/>
+      <edge id="edge19189" source="Tn8291515" target="Tn8291593"/>
+      <edge id="edge19191" source="Tn8291508" target="Tn8291572"/>
+      <edge id="edge19193" source="Tn8291541" target="Tn8291585"/>
+      <edge id="edge19195" source="Tn8291496" target="Tn8291580"/>
+      <edge id="edge19197" source="Tn8291602" target="Tn8291582"/>
+      <edge id="edge19199" source="Tn8291582" target="Tn8291591"/>
+      <edge id="edge19201" source="Tn8291582" target="Tn8291552"/>
+      <edge id="edge19203" source="Tn8291602" target="Tn8291564"/>
+      <edge id="edge19205" source="Tn8291574" target="Tn8291613"/>
+      <edge id="edge19207" source="Tn8291511" target="Tn8291512"/>
+      <edge id="edge19209" source="Tn8291568" target="Tn8291596"/>
+      <edge id="edge19211" source="Tn8291594" target="Tn8291608"/>
+      <edge id="edge19213" source="Tn8291608" target="Tn8291505"/>
+      <edge id="edge19215" source="Tn8291608" target="Tn8291573"/>
+      <edge id="edge19217" source="Tn8291526" target="Tn8291535"/>
+      <edge id="edge19219" source="Tn8291535" target="Tn8291570"/>
+      <edge id="edge19221" source="Tn8291535" target="Tn8291550"/>
+    </tree>
+    <tree about="#Tr49483" id="Tr49483" label="PAUP BS" xsi:type="nex:FloatTree">
+      <meta content="70" datatype="xsd:integer" id="meta19227" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta19226" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta19225" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta19224" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11783" id="meta19223" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn829143

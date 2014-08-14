@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S15820" generator="org.nexml.model.impl.DocumentImpl" id="S15820" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Thu Aug 14 03:34:08 EDT 2014" datatype="xsd:string" id="meta1797231" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@7a0878c6 $Rev: 1060 $" datatype="xsd:string" id="meta1797230" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta1797229" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta1797228" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="BioMed Central Research Note" datatype="xsd:string" id="meta1797227" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="BioMed Central Research Note" datatype="xsd:string" id="meta1797226" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="olfactory receptor" datatype="xsd:string" id="meta1797225" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="speciation" datatype="xsd:string" id="meta1797224" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Anopheles gambiae" datatype="xsd:string" id="meta1797223" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="malaria" datatype="xsd:string" id="meta1797222" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mosquito" datatype="xsd:string" id="meta1797221" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta1797220" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2014" datatype="xsd:string" id="meta1797219" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Simard F." datatype="xsd:string" id="meta1797218" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Bassene H." datatype="xsd:string" id="meta1797217" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Diabate A." datatype="xsd:string" id="meta1797216" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Dabire R.K." datatype="xsd:string" id="meta1797215" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Brengues C." datatype="xsd:string" id="meta1797214" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Kengne P." datatype="xsd:string" id="meta1797213" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Arnal A." datatype="xsd:string" id="meta1797212" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Arnal A., Kengne P., Brengues C., Dabire R.K., Diabate A., Bassene H., &amp; Simard F." datatype="xsd:string" id="meta1797211" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="Genetic polymorphism at an odorant receptor gene (Or39) among mosquitoes of the Anopheles gambiae complex in Senegal (West Africa)" datatype="xsd:string" id="meta1797210" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Arnal A., Kengne P., Brengues C., Dabire R.K., Diabate A., Bassene H., &amp; Simard F. 2014. Genetic polymorphism at an odorant receptor gene (Or39) among mosquitoes of the Anopheles gambiae complex in Senegal (West Africa). BioMed Central Research Note, ." datatype="xsd:string" id="meta1797209" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2014-05-14" datatype="xsd:string" id="meta1797208" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2014-05-20" datatype="xsd:string" id="meta1797207" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2014-05-20" datatype="xsd:string" id="meta1797206" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="Genetic polymorphism at an odorant receptor gene (Or39) among mosquitoes of the Anopheles gambiae complex in Senegal (West Africa)" datatype="xsd:string" id="meta1797205" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta1797204" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="15820" datatype="xsd:string" id="meta1797203" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta1797201" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls37568" id="Tls37568" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@7369ba3d $Rev: 1040 $" datatype="xsd:string" id="meta1797233" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl1494165" id="Tl1494165" label="Anopheles gambiae 2">
+      <meta content="1774" datatype="xsd:long" id="meta1797240" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="4344" datatype="xsd:long" id="meta1797239" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7165" id="meta1797238" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anopheles gambiae" datatype="xsd:string" id="meta1797237" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:586228" id="meta1797236" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797235" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1494169" id="Tl1494169" label="Anopheles gambiae 4">
+      <meta content="1774" datatype="xsd:long" id="meta1797247" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="4344" datatype="xsd:long" id="meta1797246" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7165" id="meta1797245" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anopheles gambiae" datatype="xsd:string" id="meta1797244" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:586228" id="meta1797243" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797242" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1494167" id="Tl1494167" label="Anopheles gambiae 3">
+      <meta content="1774" datatype="xsd:long" id="meta1797254" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="4344" datatype="xsd:long" id="meta1797253" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7165" id="meta1797252" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anopheles gambiae" datatype="xsd:string" id="meta1797251" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:586228" id="meta1797250" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797249" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1494172" id="Tl1494172" label="Anopheles gambiae 1">
+      <meta content="1774" datatype="xsd:long" id="meta1797261" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="4344" datatype="xsd:long" id="meta1797260" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7165" id="meta1797259" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anopheles gambiae" datatype="xsd:string" id="meta1797258" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:586228" id="meta1797257" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797256" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1494168" id="Tl1494168" label="Anopheles gambiae PEST">
+      <meta content="1774" datatype="xsd:long" id="meta1797268" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="4344" datatype="xsd:long" id="meta1797267" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7165" id="meta1797266" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anopheles gambiae" datatype="xsd:string" id="meta1797265" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:586228" id="meta1797264" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797263" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1494173" id="Tl1494173" label="Anopheles coluzzii 1">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797270" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1494171" id="Tl1494171" label="Anopheles coluzzii 2">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797272" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1494166" id="Tl1494166" label="Anopheles arabiensis 1">
+      <meta content="52349" datatype="xsd:long" id="meta1797279" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="122396" datatype="xsd:long" id="meta1797278" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7173" id="meta1797277" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anopheles arabiensis" datatype="xsd:string" id="meta1797276" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3741422" id="meta1797275" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797274" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1494170" id="Tl1494170" label="Anopheles arabiensis 2">
+      <meta content="52349" datatype="xsd:long" id="meta1797286" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="122396" datatype="xsd:long" id="meta1797285" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7173" id="meta1797284" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anopheles arabiensis" datatype="xsd:string" id="meta1797283" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3741422" id="meta1797282" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797281" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1494164" id="Tl1494164" label="Anopheles arabiensis 3">
+      <meta content="52349" datatype="xsd:long" id="meta1797293" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="122396" datatype="xsd:long" id="meta1797292" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/7173" id="meta1797291" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Anopheles arabiensis" datatype="xsd:string" id="meta1797290" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3741422" id="meta1797289" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1797288" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M22206" id="M22206" label="Anopheles gambiae HaploOr39-10" otus="Tls37568" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:DnaSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@5ccd3a8f $Rev: 1056 $" datatype="xsd:string" id="meta1797318" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="22206" datatype="xsd:long" id="meta1797317" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="1608" datatype="xsd:integer" id="meta1797316" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="10" datatype="xsd:integer" id="meta1797315" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="DNA" datatype="xsd:string" id="meta1797314" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states1797295">
+        <state id="state1797296" symbol="A"/>
+        <state id="state1797297" symbol="C"/>
+        <state id="state1797298" symbol="G"/>
+        <state id="state1797299" symbol="T"/>
+        <uncertain_state_set id="uncertain_state_set1797300" symbol="K">
+          <member state="state1797298"/>
+          <member state="state1797299"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797301" symbol="M">
+          <member state="state1797296"/>
+          <member state="state1797297"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797302" symbol="R">
+          <member state="state1797296"/>
+          <member state="state1797298"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797303" symbol="S">
+          <member state="state1797298"/>
+          <member state="state1797297"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797304" symbol="W">
+          <member state="state1797296"/>
+          <member state="state1797299"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797305" symbol="Y">
+          <member state="state1797299"/>
+          <member state="state1797297"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797306" symbol="B">
+          <member state="state1797299"/>
+          <member state="state1797298"/>
+          <member state="state1797297"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797307" symbol="D">
+          <member state="state1797299"/>
+          <member state="state1797298"/>
+          <member state="state1797296"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797308" symbol="H">
+          <member state="state1797299"/>
+          <member state="state1797298"/>
+          <member state="state1797296"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797309" symbol="V">
+          <member state="state1797298"/>
+          <member state="state1797296"/>
+          <member state="state1797297"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797310" symbol="N">
+          <member state="state1797296"/>
+          <member state="state1797298"/>
+          <member state="state1797299"/>
+          <member state="state1797297"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797311" symbol="X">
+          <member state="state1797296"/>
+          <member state="state1797298"/>
+          <member state="state1797299"/>
+          <member state="state1797297"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set1797312" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set1797313" symbol="?">
+          <member state="state1797296"/>
+          <member state="state1797297"/>
+          <member state="state1797299"/>
+          <member state="state1797298"/>
+          <member state="uncertain_state_set1797312"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col109646301" label="DNA" states="states1797295"/>
+      <char id="Col109646302" label="DNA" states="states1797295"/>
+      <char id="Col109646303" label="DNA" states="states1797295"/>
+      <char id="Col109646304" label="DNA" states="states1797295"/>
+      <char id="Col109646305" label="DNA" states="states1797295"/>
+      <char id="Col109646306" label="DNA" states="states1797295"/>
+      <char id="Col109646307" label="DNA" states="states1797295"/>
+      <char id="Col109646308" label="DNA" states="states1797295"/>
+      <char id="Col109646309" label="DNA" states="states1797295"/>
+      <char id="Col109646310" label="DNA" states="states1797295"/>
+      <char id="Col109646311" label="DNA" states="states1797295"/>
+      <char id="Col109646312" label="DNA" states="states1797295"/>
+      <char id="Col109646313" label="DNA" states="states1797295"/>
+      <char id="Col109646314" label="DNA" states="states1797295"/>
+      <char id="Col109646315" label="DNA" states="states1797295"/>
+      <char id="Col109646316" label="DNA" states="states1797295"/>
+      <char id="Col109646317" label="DNA" states="states1797295"/>
+      <char id="Col109646318" label="DNA" states="states1797295"/>
+      <char id="Col109646319" label="DNA" states="states1797295"/>
+      <char id="Col109646320" label="DNA" states="states1797295"/>
+      <char id="Col109646321" label="DNA" states="states1797295"/>
+      <char id="Col109646322" label="DNA" states="states1797295"/>
+      <char id="Col109646323" label="DNA" states="states1797295"/>
+      <char id="Col109646324" label="DNA" states="states1797295"/>
+      <char id="Col109646325" label="DNA" states="states1797295"/>
+      <char id="Col109646326" label="DNA" states="states1797295"/>
+      <char id="Col109646327" label="DNA" states="states1797295"/>
+      <char id="Col109646328" label="DNA" states="states1797295"/>
+      <char id="Col109646329" label="DNA" states="states1797295"/>
+      <char id="Col109646330" label="DNA" states="states1797295"/>
+      <char id="Col109646331" label="DNA" states="states1797295"/>
+      <char id="Col109646332" label="DNA" states="states1797295"/>
+      <char id="Col109646333" label="DNA" states="states1797295"/>
+      <char id="Col109646334" label="DNA" states="states1797295"/>
+      <char id="Col109646335" label="DNA" states="states1797295"/>
+      <char id="Col109646336" label="DNA" states="states1797295"/>
+      <char id="Col109646337" label="DNA" states="states1797295"/>
+      <char id="Col109646338" label="DNA" states="states1797295"/>
+      <char id="Col109646339" label="DNA" states="states1797295"/>
+      <char id="Col109646340" label="DNA" states="states1797295"/>
+      <char id="Col109646341" label="DNA" states="states1797295"/>
+      <char id="Col109646342" label="DNA" states="states1797295"/>
+      <char id="Col109646343" label="DNA" states="states1797295"/>
+      <char id="Col109646344" label="DNA" states="states1797295"/>
+      <char id="Col109646345" label="DNA" states="states1797295"/>
+      <char id="Col109646346" label="DNA" states="states1797295"/>
+      <char id="Col109646347" label="DNA" states="states1797295"/>
+      <char id="Col109646348" label="DNA" states="states1797295"/>
+      <char id="Col109646349" label="DNA" states="states1797295"/>
+      <char id="Col109646350" label="DNA" states="states1797295"/>
+      <char id="Col109646351" label="DNA" states="states1797295"/>
+      <char id="Col109646352" label="DNA" states="states1797295"/>
+      <char id="Col109646353" label="DNA" states="states1797295"/>
+      <char id="Col109646354" label="DNA" states="states1797295"/>
+      <char id="Col109646355" label="DNA" states="states1797295"/>
+      <char id="Col109646356" label="DNA" states="states1797295"/>
+      <char id="Col109646357" label="DNA" states="states1797295"/>
+      <char id="Col109646358" label="DNA" states="states1797295"/>
+      <char id="Col109646359" label="DNA" states="states1797295"/>
+      <char id="Col109646360" label="DNA" states="states1797295"/>
+      <char id="Col109646361" label="DNA" states="states1797295"/>
+      <char id="Col109646362" label="DNA" states="states1797295"/>
+      <char id="Col109646363" label="DNA" states="states1797295"/>
+      <char id="Col109646364" label="DNA" states="states1797295"/>
+      <char id="Col109646365" label="DNA" states="states1797295"/>
+      <char id="Col109646366" label="DNA" states="states1797295"/>
+      <char id="Col109646367" label="DNA" states="states1797295"/>
+      <char id="Col109646368" label="DNA" states="states1797295"/>
+      <char id="Col109646369" label="DNA" states="states1797295"/>
+      <char id="Col109646370" label="DNA" states="states1797295"/>
+      <char id="Col109646371" label="DNA" states="states1797295"/>
+      <char id="Col109646372" label="DNA" states="states1797295"/>
+      <char id="Col109646373" label="DNA" states="states1797295"/>
+      <char id="Col109646374" label="DNA" states="states1797295"/>
+      <char id="Col109646375" label="DNA" states="states1797295"/>
+      <char id="Col109646376" label="DNA" states="states1797295"/>
+      <char id="Col109646377" label="DNA" states="states1797295"/>
+      <char id="Col109646378" label="DNA" states="states1797295"/>
+      <char id="Col109646379" label="DNA" states="states1797295"/>
+      <char id="Col109646380" label="DNA" states="states1797295"/>
+      <char id="Col109646381" label="DNA" states="states1797295"/>
+      <char id="Col109646382" label="DNA" states="states1797295"/>
+      <char id="Col109646383" label="DNA" states="states1797295"/>
+      <char id="Col109646384" label="DNA" states="states1797295"/>
+      <char id="Col109646385" label="DNA" states="states1797295"/>
+      <char id="Col109646386" label="DNA" states="states1797295"/>
+      <char id="Col109646387" label="DNA" states="states1797295"/>
+      <char id="Col109646388" label="DNA" states="states1797295"/>
+      <char id="Col109646389" label="DNA" states="states1797295"/>
+      <char id="Col109646390" label="DNA" states="states1797295"/>
+      <char id="Col109646391" label="DNA" states="states1797295"/>
+      <char id="Col109646392" label="DNA" states="states1797295"/>
+      <char id="Col109646393" label="DNA" states="states1797295"/>
+      <char id="Col109646394" label="DNA" states="states1797295"/>
+      <char id="Col109646395" label="DNA" states="states1797295"/>
+      <char id="Col109646396" label="DNA" states="states1797295"/>
+      <char id="Col109646397" label="DNA" states="states1797295"/>
+      <char id="Col109646398" label="DNA" states="states1797295"/>
+      <char id="Col109646399" label="DNA" states="states1797295"/>
+      <char id="Col109646400" label="DNA" states="states1797295"/>
+      <char id="Col109646401" label="DNA" states="states1797295"/>
+      <char id="Col109646402" label="DNA" states="states1797295"/>
+      <char id="Col109646403" label="DNA" states="states1797295"/>
+      <char id="Col109646404" label="DNA" states="states1797295"/>
+      <char id="Col109646405" label="DNA" states="states1797295"/>
+      <char id="Col109646406" label="DNA" states="states1797295"/>
+      <char id="Col109646407" label="DNA" states="states1797295"/>
+      <char id="Col109646408" label="DNA" states="states1797295"/>
+      <char id="Col109646409" label="DNA" states="states1797295"/>
+      <char id="Col109646410" label="DNA" states="states1797295"/>
+      <char id="Col109646411" label="DNA" states="states1797295"/>
+      <char id="Col109646412" label="DNA" states="states1797295"/>
+      <char id="Col109646413" label="DNA" states="states1797295"/>
+      <char id="Col109646414" label="DNA" states="states1797295"/>
+      <char id="Col109646415" label="DNA" states="states1797295"/>
+      <char id="Col109646416" label="DNA" states="states1797295"/>
+      <char id="Col109646417" label="DNA" states="states1797295"/>
+      <char id="Col109646418" label="DNA" states="states1797295"/>
+      <char id="Col109646419" label="DNA" states="states1797295"/>
+      <char id="Col109646420" label="DNA" states="states1797295"/>
+      <char id="Col109646421" label="DNA" states="states1797295"/>
+      <char id="Col109646422" label="DNA" states="states1797295"/>
+      <char id="Col109646423" label="DNA" states="states1797295"/>
+      <char id="Col109646424" label="DNA" states="states1797295"/>
+      <char id="Col109646425" label="DNA" states="states1797295"/>
+      <char id="Col109646426" label="DNA" states="states1797295"/>
+      <char id="Col109646427" label="DNA" states="states1797295"/>
+      <char id="Col109646428" label="DNA" states="states1797295"/>
+      <char id="Col109646429" label="DNA" states="states1797295"/>
+      <char id="Col109646430" label="DNA" states="states1797295"/>
+      <char id="Col109646431" label="DNA" states="states1797295"/>
+      <char id="Col109646432" label="DNA" states="states1797295"/>
+      <char id="Col109646433" label="DNA" states="states1797295"/>
+      <char id="Col109646434" label="DNA" states="states1797295"/>
+      <char id="Col109646435" label="DNA" states="states1797295"/>
+      <char id="Col109646436" label="DNA" states="states1797295"/>
+      <char id="Col109646437" label="DNA" states="states1797295"/>
+      <char id="Col109646438" label="DNA" states="states1797295"/>
+      <char id="Col109646439" label="DNA" states="states1797295"/>
+      <char id="Col109646440" label="DNA" states="states1797295"/>
+      <char id="Col109646441" label="DNA" states="states1797295"/>
+      <char id="Col109646442" label="DNA" states="states1797295"/>
+      <char id="Col109646443" label="DNA" states="states1797295"/>
+      <char id="Col109646444" label="DNA" states="states1797295"/>
+      <char id="Col109646445" label="DNA" states="states1797295"/>
+      <char id="Col109646446" label="DNA" states="states1797295"/>
+      <char id="Col109646447" label="DNA" states="states1797295"/>
+      <char id="Col109646448" label="DNA" states="states1797295"/>
+      <char id="Col109646449" label="DNA" states="states1797295"/>
+      <char id="Col109646450" label="DNA" states="states1797295"/>
+      <char id="Col109646451" label="DNA" states="states1797295"/>
+      <char id="Col109646452" label="DNA" states="states1797295"/>
+      <char id="Col109646453" label="DNA" states="states1797295"/>
+      <char id="Col109646454" label="DNA" states="states1797295"/>
+      <char id="Col109646455" label="DNA" states="states1797295"/>
+      <char id="Col109646456" label="DNA" states="states1797295"/>
+      <char id="Col109646457" label="DNA" states="states1797295"/>
+      <char id="Col109646458" label="DNA" states="states1797295"/>
+      <char id="Col109646459" label="DNA" states="states1797295"/>
+      <char id="Col109646460" label="DNA" states="states1797295"/>
+      <char id="Col109646461" label="DNA" states="states1797295"/>
+      <char id="Col109646462" label="DNA" states="states1797295"/>
+      <char id="Col109646463" label="DNA" states="states1797295"/>
+      <char id="Col109646464" label="DNA" states="states1797295"/>
+      <char id="Col109646465" label="DNA" states="states1797295"/>
+      <char id="Col109646466" label="DNA" states="states1797295"/>
+      <char id="Col109646467" label="DNA" states="states1797295"/>
+      <char id="Col109646468" label="DNA" states="states1797295"/>
+      <char id="Col109646469" label="DNA" states="states1797295"/>
+      <char id="Col109646470" label="DNA" states="states1797295"/>
+      <char id="Col109646471" label="DNA" states="states1797295"/>
+      <char id="Col109646472" label="DNA" states="states1797295"/>
+      <char id="Col109646473" label="DNA" states="states1797295"/>
+      <char id="Col109646474" label="DNA" states="states1797295"/>
+      <char id="Col109646475" label="DNA" states="states1797295"/>
+      <char id="Col109646476" label="DNA" states="states1797295"/>
+      <char id="Col109646477" label="DNA" states="states1797295"/>
+      <char id="Col109646478" label="DNA" states="states1797295"/>
+      <char id="Col109646479" label="DNA" states="states1797295"/>
+      <char id="Col109646480" label="DNA" states="states1797295"/>
+      <char id="Col109646481" label="DNA" states="states1797295"/>
+      <char id="Col109646482" label="DNA" states="states1797295"/>
+      <char id="Col109646483" label="DNA" states="states1797295"/>
+      <char id="Col109646484" label="DNA" states="states1797295"/>
+      <char id="Col109646485" label="DNA" states="states1797295"/>
+      <char id="Col109646486" label="DNA" states="states1797295"/>
+      <char id="Col109646487" label="DNA" states="states1797295"/>
+      <char id="Col109646488" label="DNA" states="states1797295"/>
+      <char id="Col109646489" label="DNA" states="states1797295"/>
+      <char id="Col109646490" label="DNA" states="states1797295"/>
+      <char id="Col109646491" label="DNA" states="states1797295"/>
+      <char id="Col109646492" label="DNA" states="states1797295"/>
+      <char id="Col109646493" label="DNA" states="states1797295"/>
+      <char id="Col109646494" label="DNA" states="states1797295"/>
+      <char id="Col109646495" label="DNA" states="states1797295"/>
+      <char id="Col109646496" label="DNA" states="states1797295"/>
+      <char id="Col109646497" label="DNA" states="states1797295"/>
+      <char id="Col109646498" label="DNA" states="states1797295"/>
+      <char id="Col109646499" label="DNA" states="states1797295"/>
+      <char id="Col109646500" label="DNA" states="states1797295"/>
+      <char id="Col109646501" label="DNA" states="states1797295"/>
+      <char id="Col109646502" label="DNA" states="states1797295"/>
+      <char id="Col109646503" label="DNA" states="states1797295"/>
+      <char id="Col109646504" label="DNA" states="states1797295"/>
+      <char id="Col109646505" label="DNA" states="states1797295"/>
+      <char id="Col109646506" label="DNA" states="states1797295"/>
+      <char id="Col109646507" label="DNA" states="states1797295"/>
+      <char id="Col109646508" label="DNA" states="states1797295"/>
+      <char id="Col109646509" label="DNA" states="states1797295"/>
+      <char id="Col109646510" label="DNA" states="states1797295"/>
+      <char id="Col109646511" label="DNA" states="states1797295"/>
+      <char id="Col109646512" label="DNA" states="states1797295"/>
+      <char id="Col109646513" label="DNA" states="states1797295"/>
+      <char id="Col109646514" label="DNA" states="states1797295"/>
+      <char id="Col109646515" label="DNA" states="states1797295"/>
+      <char id="Col109646516" label="DNA" states="states1797295"/>
+      <char id="Col109646517" label="DNA" states="states1797295"/>
+      <char id="Col109646518" label="DNA" states="states1797295"/>
+      <char id="Col109646519" label="DNA" states="states1797295"/>
+      <char id="Col109646520" label="DNA" states="states1797295"/>
+      <char id="Col109646521" label="DNA" states="states1797295"/>
+      <char id="Col109646522" label="DNA" states="states1797295"/>
+      <char id="Col109646523" label="DNA" states="states1797295"/>
+      <char id="Col109646524" label="DNA" states="states1797295"/>
+      <char id="Col109646525" label="DNA" states="states1797295"/>
+      <char id="Col109646526" label="DNA" states="states1797295"/>
+      <char id="Col109646527" label="DNA" states="states1797295"/>
+      <char id="Col109646528" label="DNA" states="states1797295"/>
+      <char id="Col109646529" label="DNA" states="states1797295"/>
+      <char id="Col109646530" label="DNA" states="states1797295"/>
+      <char id="Col109646531" label="DNA" states="states1797295"/>
+      <char id="Col109646532" label="DNA" states="states1797295"/>
+      <char id="Col109646533" label="DNA" states="states1797295"/>
+      <char id="Col109646534" label="DNA" states="states1797295"/>
+      <char id="Col109646535" label="DNA" states="states1797295"/>
+      <char id="Col109646536" label="DNA" states="states1797295"/>
+      <char id="Col109646537" label="DNA" states="states1797295"/>
+      <char id="Col109646538" label="DNA" states="states1797295"/>
+      <char id="Col109646539" label="DNA" states="states1797295"/>
+      <char id="Col109646540" label="DNA" states="states1797295"/>
+      <char id="Col109646541" label="DNA" states="states1797295"/>
+      <char id="Col109646542" label="DNA" states="states1797295"/>
+      <char id="Col109646543" label="DNA" states="states1797295"/>
+      <char id="Col109646544" label="DNA" states="states1797295"/>
+      <char id="Col109646545" label="DNA" states="states1797295"/>
+      <char id="Col109646546" label="DNA" states="states1797295"/>
+      <char id="Col109646547" label="DNA" states="states1797295"/>
+      <char id="Col109646548" label="DNA" states="states1797295"/>
+      <char id="Col109646549" label="DNA" states="states1797295"/>
+      <char id="Col109646550" label="DNA" states="states1797295"/>
+      <char id="Col109646551" label="DNA" states="states1797295"/>
+      <char id="Col109646552" label="DNA" states="states1797295"/>
+      <char id="Col109646553" label="DNA" states="states1797295"/>
+      <char id="Col109646554" label="DNA" states="states1797295"/>
+      <char id="Col109646555" label="DNA" states="states1797295"/>
+      <char id="Col109646556" label="DNA" states="states1797295"/>
+      <char id="Col109646557" label="DNA" states="states1797295"/>
+      <char id="Col109646558" label="DNA" states="states1797295"/>
+      <char id="Col109646559" label="DNA" states="states1797295"/>
+      <char id="Col109646560" label="DNA" states="states1797295"/>
+      <char id="Col109646561" label="DNA" states="states1797295"/>
+      <char id="Col109646562" label="DNA" states="states1797295"/>
+      <char id="Col109646563" label="DNA" states="states1797295"/>
+      <char id="Col109646564" label="DNA" states="states1797295"/>
+      <char id="Col109646565" label="DNA" states="states1797295"/>
+      <char id="Col109646566" label="DNA" states="states1797295"/>
+      <char id="Col109646567" label="DNA" states="states1797295"/>
+      <char id="Col109646568" label="DNA" states="states1797295"/>
+      <char id="Col109646569" label="DNA" states="states1797295"/>
+      <char id="Col109646570" label="DNA" states="states1797295"/>
+      <char id="Col109646571" label="DNA" states="states1797295"/>
+      <char id="Col109646572" label="DNA" states="states1797295"/>
+      <char id="Col109646573" label="DNA" states="states1797295"/>
+      <char id="Col109646574" label="DNA" states="states1797295"/>
+      <char id="Col109646575" label="DNA" states="states1797295"/>
+      <char id="Col109646576" label="DNA" states="states1797295"/>
+      <char id="Col109646577" label="DNA" states="states1797295"/>
+      <char id="Col109646578" label="DNA" states="states1797295"/>
+      <char id="Col109646579" label="DNA" states="states1797295"/>
+      <char id="Col109646580" label="DNA" states="states1797295"/>
+      <char id="Col109646581" label="DNA" states="states1797295"/>
+      <char id="Col109646582" label="DNA" states="states1797295"/>
+      <char id="Col109646583" label="DNA" states="states1797295"/>
+      <char id="Col109646584" label="DNA" states="states1797295"/>
+      <char id="Col109646585" label="DNA" states="states1797295"/>
+      <char id="Col109646586" label="DNA" states="states1797295"/>
+      <char id="Col109646587" label="DNA" states="states1797295"/>
+      <char id="Col109646588" label="DNA" states="states1797295"/>
+      <char id="Col109646589" label="DNA" states="states1797295"/>
+      <char id="Col109646590" label="DNA" states="states1797295"/>
+      <char id="Col109646591" label="DNA" states="states1797295"/>
+      <char id="Col109646592" label="DNA" states="states1797295"/>
+      <char id="Col109646593" label="DNA" states="states1797295"/>
+      <char id="Col109646594" label="DNA" states="states1797295"/>
+      <char id="Col109646595" label="DNA" states="states1797295"/>
+      <char id="Col109646596" label="DNA" states="states1797295"/>
+      <char id="Col109646597" label="DNA" states="states1797295"/>
+      <char id="Col109646598" label="DNA" states="states1797295"/>
+      <char id="Col109646599" label="DNA" states="states1797295"/>
+      <char id="Col109646600" label="DNA" states="states1797295"/>
+      <char id="Col109646601" label="DNA" states="states1797295"/>
+      <char id="Col109646602" label="DNA" states="states1797295"/>
+      <char id="Col109646603" label="DNA" states="states1797295"/>
+      <char id="Col109646604" label="DNA" states="states1797295"/>
+      <char id="Col109646605" label="DNA" states="states1797295"/>
+      <char id="Col109646606" label="DNA" states="states1797295"/>
+      <char id="Col109646607" label="DNA" states="states1797295"/>
+      <char id="Col109646608" label="DNA" states="states1797295"/>
+      <char id="Col109646609" label="DNA" states="states1797295"/>
+      <char id="Col109646610" label="DNA" states="states1797295"/>
+      <char id="Col109646611" label="DNA" states="states1797295"/>
+      <char id="Col109646612" label="DNA" states="states1797295"/>
+      <char id="Col109646613" label="DNA" states="states1797295"/>
+      <char id="Col109646614" label="DNA" states="states1797295"/>
+      <char id="Col109646615" label="DNA" states="states1797295"/>
+      <char id="Col109646616" label="DNA" states="states1797295"/>
+      <char id="Col109646617" label="DNA" states="states1797295"/>
+      <char id="Col109646618" label="DNA" states="states1797295"/>
+      <char id="Col109646619" label="DNA" states="states1797295"/>
+      <char id="Col109646620" label="DNA" states="states1797295"/>
+      <char id="Col109646621" label="DNA" states="states1797295"/>
+      <char id="Col109646622" label="DNA" states="states1797295"/>
+      <char id="Col109646623" label="DNA" states="states1797295"/>
+      <char id="Col109646624" label="DNA" states="states1797295"/>
+      <char id="Col109646625" label="DNA" states="states1797295"/>
+      <char id="Col109646626" label="DNA" states="states1797295"/>
+      <char id="Col109646627" label="DNA" states="states1797295"/>
+      <char id="Col109646628" label="DNA" states="states1797295"/>
+      <char id="Col109646629" label="DNA" states="states1797295"/>
+      <char id="Col109646630" label="DNA" states="states1797295"/>
+      <char id="Col109646631" label="DNA" states="states1797295"/>
+      <char id="Col109646632" label="DNA" states="states1797295"/>
+      <char id="Col109646633" label="DNA" states="states1797295"/>
+      <char id="Col109646634" label="DNA" states="states1797295"/>
+      <char id="Col109646635" label="DNA" states="states1797295"/>
+      <char id="Col109646636" label="DNA" states="states1797295"/>
+      <char id="Col109646637" label="DNA" states="states1797295"/>
+      <char id="Col109646638" label="DNA" states="states1797295"/>
+      <char id="Col109646639" label="DNA" states="states1797295"/>
+      <char id="Col109646640" label="DNA" states="states1797295"/>
+      <char id="Col109646641" label="DNA" states="states1797295"/>
+      <char id="Col109646642" label="DNA" states="states1797295"/>
+      <char id="Col109646643" label="DNA" states="states1797295"/>
+      <char id="Col109646644" label="DNA" states="states1797295"/>
+      <char id="Col109646645" label="DNA" states="states1797295"/>
+      <char id="Col109646646" label="DNA" states="states1797295"/>
+      <char id="Col109646647" label="DNA" states="states1797295"/>
+      <char id="Col109646648" label="DNA" states="states1797295"/>
+      <char id="Col109646649" label="DNA" states="states1797295"/>
+      <char id="Col109646650" label="DNA" states="states1797295"/>
+      <char id="Col109646651" label="DNA" states="states1797295"/>
+      <char id="Col109646652" label="DNA" states="states1797295"/>
+      <char id="Col109646653" label="DNA" states="states1797295"/>
+      <char id="Col109646654" label="DNA" states="states1797295"/>
+      <char id="Col109646655" label="DNA" states="states1797295"/>
+      <char id="Col109646656" label="DNA" states="states1797295"/>
+      <char id="Col109646657" label="DNA" states="states1797295"/>
+      <char id="Col109646658" label="DNA" states="states1797295"/>
+      <char id="Col109646659" label="DNA" states="states1797295"/>
+      <char id="Col109646660" label="DNA" states="states1797295"/>
+      <char id="Col109646661" label="DNA" states="states1797295"/>
+      <char id="Col109646662" label="DNA" states="states1797295"/>
+      <char id="Col109646663" label="DNA" states="states1797295"/>
+      <char id="Col109646664" label="DNA" states="states1797295"/>
+      <char id="Col109646665" label="DNA" states="states1797295"/>
+      <char id="Col109646666" label="DNA" states="states1797295"/>
+      <char id="Col109646667" label="DNA" states="states1797295"/>
+      <char id="Col109646668" label="DNA" states="states1797295"/>
+      <char id="Col109646669" label="DNA" states="states1797295"/>
+      <char id="Col109646670" label="DNA" states="states1797295"/>
+      <char id="Col109646671" label="DNA" states="states1797295"/>
+      <char id="Col109646672" label="DNA" states="states1797295"/>
+      <char id="Col109646673" label="DNA" states="states1797295"/>
+      <char id="Col109646674" label="DNA" states="states1797295"/>
+      <char id="Col109646675" label="DNA" states="states1797295"/>
+      <char id="Col109646676" label="DNA" states="states1797295"/>
+      <char id="Col109646677" label="DNA" states="states1797295"/>
+      <char id="Col109646678" label="DNA" states="states1797295"/>
+      <char id="Col109646679" label="DNA" states="states1797295"/>
+      <char id="Col109646680" label="DNA" states="states1797295"/>
+      <char id="Col109646681" label="DNA" states="states1797295"/>
+      <char id="Col109646682" label="DNA" states="states1797295"/>
+      <char id="Col109646683" label="DNA" states="states1797295"/>
+      <char id="Col109646684" label="DNA" states="states1797295"/>
+      <char id="Col109646685" label="DNA" states="states1797295"/>
+      <char id="Col109646686" label="DNA" states="states1797295"/>
+      <char id="Col109646687" label="DNA" states="states1797295"/>
+      <char id="Col109646688" label="DNA" states="states1797295"/>
+      <char id="Col109646689" label="DNA" states="states1797295"/>
+      <char id="Col109646690" label="DNA" states="states1797295"/>
+      <char id="Col109646691" label="DNA" states="states1797295"/>
+      <char id="Col109646692" label="DNA" states="states1797295"/>
+      <char id="Col109646693" label="DNA" states="states1797295"/>
+      <char id="Col109646694" label="DNA" states="states1797295"/>
+      <char id="Col109646695" label="DNA" states="states1797295"/>
+      <char id="Col109646696" label="DNA" states="states1797295"/>
+      <char id="Col109646697" label="DNA" states="states1797295"/>
+      <char id="Col109646698" label="DNA" states="states1797295"/>
+      <char id="Col109646699" label="DNA" states="states1797295"/>
+      <char id="Col109646700" label="DNA" states="states1797295"/>
+      <char id="Col109646701" label="DNA" states="states1797295"/>
+      <char id="Col109646702" label="DNA" states="states1797295"/>
+      <char id="Col109646703" label="DNA" states="states1797295"/>
+      <char id="Col109646704" label="DNA" states="states1797295"/>
+      <char id="Col109646705" label="DNA" states="states1797295"/>
+      <char id="Col109646706" label="DNA" states="states1797295"/>
+      <char id="Col109646707" label="DNA" states="states1797295"/>
+      <char id="Col109646708" label="DNA" states="states1797295"/>
+      <char id="Col109646709" label="DNA" states="states1797295"/>
+      <char id="Col109646710" label="DNA" states="states1797295"/>
+      <char id="Col109646711" label="DNA" states="states1797295"/>
+      <char id="Col109646712" label="DNA" states="states1797295"/>
+      <char id="Col109646713" label="DNA" states="states1797295"/>
+      <char id="Col109646714" label="DNA" states="states1797295"/>
+      <char id="Col109646715" label="DNA" states="states1797295"/>
+      <char id="Col109646716" label="DNA" states="states1797295"/>
+      <char id="Col109646717" label="DNA" states="states1797295"/>
+      <char id="Col109646718" label="DNA" states="states1797295"/>
+      <char id="Col109646719" label="DNA" states="states1797295"/>
+      <char id="Col109646720" label="DNA" states="states1797295"/>
+      <char id="Col109646721" label="DNA" states="states1797295"/>
+      <char id="Col109646722" label="DNA" states="states1797295"/>
+      <char id="Col109646723" label="DNA" states="states1797295"/>
+      <char id="Col109646724" label="DNA" states="states1797295"/>
+      <char id="Col109646725" label="DNA" states="states1797295"/>
+      <char id="Col109646726" label="DNA" states="states1797295"/>
+      <char id="Col109646727" label="DNA" states="states1797295"/>
+      <char id="Col109646728" label="DNA" states="states1797295"/>
+      <char id="Col109646729" label="DNA" states="states1797295"/>
+      <char id="Col109646730" label="DNA" states="states1797295"/>
+      <char id="Col109646731" label="DNA" states="states1797295"/>
+      <char id="Col109646732" label="DNA" states="states1797295"/>
+      <char id="Col109646733" label="DNA" states="states1797295"/>
+      <char id="Col109646734" label="DNA" states="states1797295"/>
+      <char id="Col109646735" label="DNA" states="states1797295"/>
+      <char id="Col109646736" label="DNA" states="states1797295"/>
+      <char id="Col109646737" label="DNA" states="states1797295"/>
+      <char id="Col109646738" label="DNA" states="states1797295"/>
+      <char id="Col109646739" label="DNA" states="states1797295"/>
+      <char id="Col109646740" label="DNA" states="states1797295"/>
+      <char id="Col109646741" label="DNA" states="states1797295"/>
+      <char id="Col109646742" label="DNA" states="states1797295"/>
+      <char id="Col109646743" label="DNA" states="states1797295"/>
+      <char id="Col109646744" label="DNA" states="states1797295"/>
+      <char id="Col109646745" label="DNA" states="states1797295"/>
+      <char id="Col109646746" label="DNA" states="states1797295"/>
+      <char id="Col109646747" label="DNA" states="states1797295"/>
+      <char id="Col109646748" label="DNA" states="states1797295"/>
+      <char id="Col109646749" label="DNA" states="states1797295"/>
+      <char id="Col109646750" label="DNA" states="states1797295"/>
+      <char id="Col109646751" label="DNA" states="states1797295"/>
+      <char id="Col109646752" label="DNA" states="states1797295"/>
+      <char id="Col109646753" label="DNA" states="states1797295"/>
+      <char id="Col109646754" label="DNA" states="states1797295"/>
+      <char id="Col109646755" label="DNA" states="states1797295"/>
+      <char id="Col109646756" label="DNA" states="states1797295"/>
+      <char id="Col109646757" label="DNA" states="states1797295"/>
+      <char id="Col109646758" label="DNA" states="states1797295"/>
+      <char id="Col109646759" label="DNA" states="states1797295"/>
+      <char id="Col109646760" label="DNA" states="states1797295"/>
+      <char id="Col109646761" label="DNA" states="states1797295"/>
+      <char id="Col109646762" label="DNA" states="states1797295"/>
+      <char id="Col109646763" label="DNA" states="states1797295"/>
+      <char id="Col109646764" label="DNA" states="states1797295"/>
+      <char id="Col109646765" label="DNA" states="states1797295"/>
+      <char id="Col109646766" label="DNA" states="states1797295"/>
+      <char id="Col109646767" label="DNA" states="states1797295"/>
+      <char id="Col109646768" label="DNA" states="states1797295"/>
+      <char id="Col109646769" label="DNA" states="states1797295"/>
+      <char id="Col109646770" label="DNA" states="states1797295"/>
+      <char id="Col109646771" label="DNA" states="states1797295"/>
+      <char id="Col109646772" label="DNA" states="states1797295"/>
+      <char id="Col109646773" label="DNA" states="states1797295"/>
+      <char id="Col109646774" label="DNA" states="states1797295"/>
+      <char id="Col109646775" label="DNA" states="states1797295"/>
+      <char id="Col109646776" label="DNA" states="states1797295"/>
+      <char id="Col109646777" label="DNA" states="states1797295"/>
+      <char id="Col109646778" label="DNA" states="states1797295"/>
+      <char id="Col109646779" label="DNA" states="states1797295"/>
+      <char id="Col109646780" label="DNA" states="states1797295"/>
+      <char id="Col109646781" label="DNA" states="states1797295"/>
+      <char id="Col109646782" label="DNA" states="states1797295"/>
+      <char id="Col109646783" label="DNA" states="states1797295"/>
+      <char id="Col109646784" label="DNA" states="states1797295"/>
+      <char id="Col109646785" label="DNA" states="states1797295"/>
+      <char id="Col109646786" label="DNA" states="states1797295"/>
+      <char id="Col109646787" label="DNA" states="states1797295"/>
+      <char id="Col109646788" label="DNA" states="states1797295"/>
+      <char id="Col109646789" label="DNA" states="states1797295"/>
+      <char id="Col109646790" label="DNA" states="states1797295"/>
+      <char id="Col109646791" label="DNA" states="states1797295"/>
+      <char id="Col109646792" label="DNA" states="states1797295"/>
+      <char id="Col109646793" label="DNA" states="states1797295"/>
+      <char id="Col109646794" label="DNA" states="states1797295"/>
+      <char id="Col109646795" label="DNA" states="states1797295"/>
+      <char id="Col109646796" label="DNA" states="states1797295"/>
+      <char id="Col109646797" label="DNA" states="states1797295"/>
+      <char id="Col109646798" label="DNA" states="states1797295"/>
+      <char id="Col109646799" label="DNA" states="states1797295"/>
+      <char id="Col109646800" label="DNA" states="states1797295"/>
+      <char id="Col109646801" label="DNA" states="states1797295"/>
+      <char id="Col109646802" label="DNA" states="states1797295"/>
+      <char id="Col109646803" label="DNA" states="states1797295"/>
+      <char id="Col109646804" label="DNA" states="states1797295"/>
+      <char id="Col109646805" label="DNA" states="states1797295"/>
+      <char id="Col109646806" label="DNA" states="states1797295"/>
+      <char id="Col109646807" label="DNA" states="states1797295"/>
+      <char id="Col109646808" label="DNA" states="states1797295"/>
+      <char id="Col109646809" label="DNA" states="states1797295"/>
+      <char id="Col109646810" label="DNA" states="states1797295"/>
+      <char id="Col109646811" label="DNA" states="states1797295"/>
+      <char id="Col109646812" label="DNA" states="states1797295"/>
+      <char id="Col109646813" label="DNA" states="states1797295"/>
+      <char id="Col109646814" label="DNA" states="states1797295"/>
+      <char id="Col109646815" label="DNA" states="states1797295"/>
+      <char id="Col109646816" label="DNA" states="states1797295"/>
+      <char id="Col109646817" label="DNA" states="states1797295"/>
+      <char id="Col109646818" label="DNA" states="states1797295"/>
+      <char id="Col109646819" label="DNA" states="states1797295"/>
+      <char id="Col109646820" label="DNA" states="states1797295"/>
+      <char id="Col109646821" label="DNA" states="states1797295"/>
+      <char id="Col109646822" label="DNA" states="states1797295"/>
+      <char id="Col109646823" label="DNA" states="states1797295"/>
+      <char id="Col109646824" label="DNA" states="states1797295"/>
+      <char id="Col109646825" label="DNA" states="states1797295"/>
+      <char id="Col109646826" label="DNA" states="states1797295"/>
+      <char id="Col109646827" label="DNA" states="states1797295"/>
+      <char id="Col109646828" label="DNA" states="states1797295"/>
+      <char id="Col109646829" label="DNA" states="states1797295"/>
+      <char id="Col109646830" label="DNA" states="states1797295"/>
+      <char id="Col109646831" label="DNA" states="states1797295"/>
+      <char id="Col109646832" label="DNA" states="states1797295"/>
+      <char id="Col109646833" label="DNA" states="states1797295"/>
+      <char id="Col109646834" label="DNA" states="states1797295"/>
+      <char id="Col109646835" label="DNA" states="states1797295"/>
+      <char id="Col109646836" label="DNA" states="states1797295"/>
+      <char id="Col109646837" label="DNA" states="states1797295"/>
+      <char id="Col109646838" label="DNA" states="states1797295"/>
+      <char id="Col109646839" label="DNA" states="states1797295"/>
+      <char id="Col109646840" label="DNA" states="states1797295"/>
+      <char id="Col109646841" label="DNA" states="states1797295"/>
+      <char id="Col109646842" label="DNA" states="states1797295"/>
+      <char id="Col109646843" label="DNA" states="states1797295"/>
+      <char id="Col109646844" label="DNA" states="states1797295"/>
+      <char id="Col109646845" label="DNA" states="states1797295"/>
+      <char id="Col109646846" label="DNA" states="states1797295"/>
+      <char id="Col109646847" label="DNA" states="states1797295"/>
+      <char id="Col109646848" label="DNA" states="states1797295"/>
+      <char id="Col109646849" label="DNA" states="states1797295"/>
+      <char id="Col109646850" label="DNA" states="states1797295"/>
+      <char id="Col109646851" label="DNA" states="states1797295"/>
+      <char id="Col109646852" label="DNA" states="states1797295"/>
+      <char id="Col109646853" label="DNA" states="states1797295"/>
+      <char id="Col109646854" label="DNA" states="states1797295"/>
+      <char id="Col109646855" label="DNA" states="states1797295"/>
+      <char id="Col109646856" label="DNA" states="states1797295"/>
+      <char id="Col109646857" label="DNA" states="states1797295"/>
+      <char id="Col109646858" label="DNA" states="states1797295"/>
+      <char id="Col109646859" label="DNA" states="states1797295"/>
+      <char id="Col109646860" label="DNA" states="states1797295"/>
+      <char id="Col109646861" label="DNA" states="states1797295"/>
+      <char id="Col109646862" label="DNA" states="states1797295"/>
+      <char id="Col109646863" label="DNA" states="states1797295"/>
+      <char id="Col109646864" label="DNA" states="states1797295"/>
+      <char id="Col109646865" label="DNA" states="states1797295"/>
+      <char id="Col109646866" label="DNA" states="states1797295"/>
+      <char id="Col109646867" label="DNA" states="states1797295"/>
+      <char id="Col109646868" label="DNA" states="states1797295"/>
+      <char id="Col109646869" label="DNA" states="states1797295"/>
+      <char id="Col109646870" label="DNA" states="states1797295"/>
+      <char id="Col109646871" label="DNA" states="states1797295"/>
+      <char id="Col109646872" label="DNA" states="states1797295"/>
+      <char id="Col109646873" label="DNA" states="states1797295"/>
+      <char id="Col109646874" label="DNA" states="states1797295"/>
+      <char id="Col109646875" label="DNA" states="states1797295"/>
+      <char id="Col109646876" label="DNA" states="states1797295"/>
+      <char id="Col109646877" label="DNA" states="states1797295"/>
+      <char id="Col109646878" label="DNA" states="states1797295"/>
+      <char id="Col109646879" label="DNA" states="states1797295"/>
+      <char id="Col109646880" label="DNA" states="states1797295"/>
+      <char id="Col109646881" label="DNA" states="states1797295"/>
+      <char id="Col109646882" label="DNA" states="states1797295"/>
+      <char id="Col109646883" label="DNA" states="states1797295"/>
+      <char id="Col109646884" label="DNA" states="states1797295"/>
+      <char id="Col109646885" label="DNA" states="states1797295"/>
+      <char id="Col109646886" label="DNA" states="states1797295"/>
+      <char id="Col109646887" label="DNA" states="states1797295"/>
+      <char id="Col109646888" label="DNA" states="states1797295"/>
+      <char id="Col109646889" label="DNA" states="states1797295"/>
+      <char id="Col109646890" label="DNA" states="states1797295"/>
+      <char id="Col109646891" label="DNA" states="states1797295"/>
+      <char id="Col109646892" label="DNA" states="states1797295"/>
+      <char id="Col109646893" label="DNA" states="states1797295"/>
+      <char id="Col109646894" label="DNA" states="states1797295"/>
+      <char id="Col109646895" label="DNA" states="states1797295"/>
+      <char id="Col109646896" label="DNA" states="states1797295"/>
+      <char id="Col109646897" label="DNA" states="states1797295"/>
+      <char id="Col109646898" label="DNA" states="states1797295"/>
+      <char id="Col109646899" label="DNA" states="states1797295"/>
+      <char id="Col109646900" label="DNA" states="states1797295"/>
+      <char id="Col109646901" label="DNA" states="states1797295"/>
+      <char id="Col109646902" label="DNA" states="states1797295"/>
+      <char id="Col109646903" label="DNA" states="states1797295"/>
+      <char id="Col109646904" label="DNA" states="states1797295"/>
+      <char id="Col109646905" label="DNA" states="states1797295"/>
+      <char id="Col109646906" label="DNA" states="states1797295"/>
+      <char id="Col109646907" label="DNA" states="states1797295"/>
+      <char id="Col109646908" label="DNA" states="states1797295"/>
+      <char id="Col109646909" label="DNA" states="states1797295"/>
+      <char id="Col109646910" label="DNA" states="states1797295"/>
+      <char id="Col109646911" label="DNA" states="states1797295"/>
+      <char id="Col109646912" label="DNA" states="states1797295"/>
+      <char id="Col109646913" label="DNA" states="states1797295"/>
+      <char id="Col109646914" label="DNA" states="states1797295"/>
+      <char id="Col109646915" label="DNA" states="states1797295"/>
+      <char id="Col109646916" label="DNA" states="states1797295"/>
+      <char id="Col109646917" label="DNA" states="states1797295"/>
+      <char id="Col109646918" label="DNA" states="states1797295"/>
+      <char id="Col109646919" label="DNA" states="states1797295"/>
+      <char id="Col109646920" label="DNA" states="states1797295"/>
+      <char id="Col109646921" label="DNA" states="states1797295"/>
+      <char id="Col109646922" label="DNA" states="states1797295"/>
+      <char id="Col109646923" label="DNA" states="states1797295"/>
+      <char id="Col109646924" label="DNA" states="states1797295"/>
+      <char id="Col109646925" label="DNA" states="states1797295"/>
+      <char id="Col109646926" label="DNA" states="states1797295"/>
+      <char id="Col109646927" label="DNA" states="states1797295"/>
+      <char id="Col109646928" label="DNA" states="states1797295"/>
+      <char id="Col109646929" label="DNA" states="states1797295"/>
+      <char id="Col109646930" label="DNA" states="states1797295"/>
+      <char id="Col109646931" label="DNA" states="states1797295"/>
+      <char id="Col109646932" label="DNA" states="states1797295"/>
+      <char id="Col109646933" label="DNA" states="states1797295"/>
+      <char id="Col109646934" label="DNA" states="states1797295"/>
+      <char id="Col109646935" label="DNA" states="states1797295"/>
+      <char id="Col109646936" label="DNA" states="states1797295"/>
+      <char id="Col109646937" label="DNA" states="states1797295"/>
+      <char id="Col109646938" label="DNA" states="states1797295"/>
+      <char id="Col109646939" label="DNA" states="states1797295"/>
+      <char id="Col109646940" label="DNA" states="states1797295"/>
+      <char id="Col109646941" label="DNA" states="states1797295"/>
+      <char id="Col109646942" label="DNA" states="states1797295"/>
+      <char id="Col109646943" label="DNA" states="states1797295"/>
+      <char id="Col109646944" label="DNA" states="states1797295"/>
+      <char id="Col109646945" label="DNA" states="states1797295"/>
+      <char id="Col109646946" label="DNA" states="states1797295"/>
+      <char id="Col109646947" label="DNA" states="states1797295"/>
+      <char id="Col109646948" label="DNA" states="states1797295"/>
+      <char id="Col109646949" label="DNA" states="states1797295"/>
+      <char id="Col109646950" label="DNA" states="states1797295"/>
+      <char id="Col109646951" label="DNA" states="states1797295"/>
+      <char id="Col109646952" label="DNA" states="states1797295"/>
+      <char id="Col109646953" label="DNA" states="states1797295"/>
+      <char id="Col109646954" label="DNA" states="states1797295"/>
+      <char id="Col109646955" label="DNA" states="states1797295"/>
+      <char id="Col109646956" label="DNA" states="states1797295"/>
+      <char id="Col109646957" label="DNA" states="states1797295"/>
+      <char id="Col109646958" label="DNA" states="states1797295"/>
+      <char id="Col109646959" label="DNA" states="states1797295"/>
+      <char id="Col109646960" label="DNA" states="states1797295"/>
+      <char id="Col109646961" label="DNA" states="states1797295"/>
+      <char id="Col109646962" label="DNA" states="states1797295"/>
+      <char id="Col109646963" label="DNA" states="states1797295"/>
+      <char id="Col109646964" label="DNA" states="states1797295"/>
+      <char id="Col109646965" label="DNA" states="states1797295"/>
+      <char id="Col109646966" label="DNA" states="states1797295"/>
+      <char id="Col109646967" label="DNA" states="states1797295"/>
+      <char id="Col109646968" label="DNA" states="states1797295"/>
+      <char id="Col109646969" label="DNA" states="states1797295"/>
+      <char id="Col109646970" label="DNA" states="states1797295"/>
+      <char id="Col109646971" label="DNA" states="states1797295"/>
+      <char id="Col109646972" label="DNA" states="states1797295"/>
+      <char id="Col109646973" label="DNA" states="states1797295"/>
+      <char id="Col109646974" label="DNA" states="states1797295"/>
+      <char id="Col109646975" label="DNA" states="states1797295"/>
+      <char id="Col109646976" label="DNA" states="states1797295"/>
+      <char id="Col109646977" label="DNA" states="states1797295"/>
+      <char id="Col109646978" label="DNA" states="states1797295"/>
+      <char id="Col109646979" label="DNA" states="states1797295"/>
+      <char id="Col109646980" label="DNA" states="states1797295"/>
+      <char id="Col109646981" label="DNA" states="states1797295"/>
+      <char id="Col109646982" label="DNA" states="states1797295"/>
+      <char id="Col109646983" label="DNA" states="states1797295"/>
+      <char id="Col109646984" label="DNA" states="states1797295"/>
+      <char id="Col109646985" label="DNA" states="states1797295"/>
+      <char id="Col109646986" label="DNA" states="states1797295"/>
+      <char id="Col109646987" label="DNA" states="states1797295"/>
+      <char id="Col109646988" label="DNA" states="states1797295"/>
+      <char id="Col109646989" label="DNA" states="states1797295"/>
+      <char id="Col109646990" label="DNA" states="states1797295"/>
+      <char id="Col109646991" label="DNA" states="states1797295"/>
+      <char id="Col109646992" label="DNA" states="states1797295"/>
+      <char id="Col109646993" label="DNA" states="states1797295"/>
+      <char id="Col109646994" label="DNA" states="states1797295"/>
+      <char id="Col109646995" label="DNA" states="states1797295"/>
+      <char id="Col109646996" label="DNA" states="states1797295"/>
+      <char id="Col109646997" label="DNA" states="states1797295"/>
+      <char id="Col109646998" label="DNA" states="states1797295"/>
+      <char id="Col109646999" label="DNA" states="states1797295"/>
+      <char id="Col109647000" label="DNA" states="states1797295"/>
+      <char id="Col109647001" label="DNA" states="states1797295"/>
+      <char id="Col109647002" label="DNA" states="states1797295"/>
+      <char id="Col109647003" label="DNA" states="states1797295"/>
+      <char id="Col109647004" label="DNA" states="states1797295"/>
+      <char id="Col109647005" label="DNA" states="states1797295"/>
+      <char id="Col109647006" label="DNA" states="states1797295"/>
+      <char id="Col109647007" label="DNA" states="states1797295"/>
+      <char id="Col109647008" label="DNA" states="states1797295"/>
+      <char id="Col109647009" label="DNA" states="states1797295"/>
+      <char id="Col109647010" label="DNA" states="states1797295"/>
+      <char id="Col109647011" label="DNA" states="states1797295"/>
+      <char id="Col109647012" label="DNA" states="states1797295"/>
+      <char id="Col109647013" label="DNA" states="states1797295"/>
+      <char id="Col109647014" label="DNA" states="states1797295"/>
+      <char id="Col109647015" label="DNA" states="states1797295"/>
+      <char id="Col109647016" label="DNA" states="states1797295"/>
+      <char id="Col109647017" label="DNA" states="states1797295"/>
+      <char id="Col109647018" label="DNA" states="states1797295"/>
+      <char id="Col109647019" label="DNA" states="states1797295"/>
+      <char id="Col109647020" label="DNA" states="states1797295"/>
+      <char id="Col109647021" label="DNA" states="states1797295"/>
+      <char id="Col109647022" label="DNA" states="states1797295"/>
+      <char id="Col109647023" label="DNA" states="states1797295"/>
+      <char id="Col109647024" label="DNA" states="states1797295"/>
+      <char id="Col109647025" label="DNA" states="states1797295"/>
+      <char id="Col109647026" label="DNA" states="states1797295"/>
+      <char id="Col109647027" label="DNA" states="states1797295"/>
+      <char id="Col109647028" label="DNA" states="states1797295"/>
+      <char id="Col109647029" label="DNA" states="states1797295"/>
+      <char id="Col109647030" label="DNA" states="states1797295"/>
+      <char id="Col109647031" label="DNA" states="states1797295"/>
+      <char id="Col109647032" label="DNA" states="states1797295"/>
+      <char id="Col109647033" label="DNA" states="states1797295"/>
+      <char id="Col109647034" label="DNA" states="states1797295"/>
+      <char id="Col109647035" label="DNA" states="states1797295"/>
+      <char id="Col109647036" label="DNA" states="states1797295"/>
+      <char id="Col109647037" label="DNA" states="states1797295"/>
+      <char id="Col109647038" label="DNA" states="states1797295"/>
+      <char id="Col109647039" label="DNA" states="states1797295"/>
+      <char id="Col109647040" label="DNA" states="states1797295"/>
+      <char id="Col109647041" label="DNA" states="states1797295"/>
+      <char id="Col109647042" label="DNA" states="states1797295"/>
+      <char id="Col109647043" label="DNA" states="states1797295"/>
+      <char id="Col109647044" label="DNA" states="states1797295"/>
+      <char id="Col109647045" label="DNA" states="states1797295"/>
+      <char id="Col109647046" label="DNA" states="states1797295"/>
+      <char id="Col109647047" label="DNA" states="states1797295"/>
+      <char id="Col109647048" label="DNA" states="states1797295"/>
+      <char id="Col109647049" label="DNA" states="states1797295"/>
+      <char id="Col109647050" label="DNA" states="states1797295"/>
+      <char id="Col109647051" label="DNA" states="states1797295"/>
+      <char id="Col109647052" label="DNA" states="states1797295"/>
+      <char id="Col109647053" label="DNA" states="states1797295"/>
+      <char id="Col109647054" label="DNA" states="states1797295"/>
+      <char id="Col109647055" label="DNA" states="states1797295"/>
+      <char id="Col109647056" label="DNA" states="states1797295"/>
+      <char id="Col109647057" label="DNA" states="states1797295"/>
+      <char id="Col109647058" label="DNA" states="states1797295"/>
+      <char id="Col109647059" label="DNA" states="states1797295"/>
+      <char id="Col109647060" label="DNA" states="states1797295"/>
+      <char id="Col109647061" label="DNA" states="states1797295"/>
+      <char id="Col109647062" label="DNA" states="states1797295"/>
+      <char id="Col109647063" label="DNA" states="states1797295"/>
+      <char id="Col109647064" label="DNA" states="states1797295"/>
+      <char id="Col109647065" label="DNA" states="states1797295"/>
+      <char id="Col109647066" label="DNA" states="states1797295"/>
+      <char id="Col109647067" label="DNA" states="states1797295"/>
+      <char id="Col109647068" label="DNA" states="states1797295"/>
+      <char id="Col109647069" label="DNA" states="states1797295"/>
+      <char id="Col109647070" label="DNA" states="states1797295"/>
+      <char id="Col109647071" label="DNA" states="states1797295"/>
+      <char id="Col109647072" label="DNA" states="states1797295"/>
+      <char id="Col109647073" label="DNA" states="states1797295"/>
+      <char id="Col109647074" label="DNA" states="states1797295"/>
+      <char id="Col109647075" label="DNA" states="states1797295"/>
+      <char id="Col109647076" label="DNA" states="states1797295"/>
+      <char id="Col109647077" label="DNA" states="states1797295"/>
+      <char id="Col109647078" label="DNA" states="states1797295"/>
+      <char id="Col109647079" label="DNA" states="states1797295"/>
+      <char id="Col109647080" label="DNA" states="states1797295"/>
+      <char id="Col109647081" label="DNA" states="states1797295"/>
+      <char id="Col109647082" label="DNA" states="states1797295"/>
+      <char id="Col109647083" label="DNA" states="states1797295"/>
+      <char id="Col109647084" label="DNA" states="states1797295"/>
+      <char id="Col109647085" label="DNA" states="states1797295"/>
+      <char id="Col109647086" label="DNA" states="states1797295"/>
+      <char id="Col109647087" label="DNA" states="states1797295"/>
+      <char id="Col109647088" label="DNA" states="states1797295"/>
+      <char id="Col109647089" label="DNA" states="states1797295"/>
+      <char id="Col109647090" label="DNA" states="states1797295"/>
+      <char id="Col109647091" label="DNA" states="states1797295"/>
+      <char id="Col109647092" label="DNA" states="states1797295"/>
+      <char id="Col109647093" label="DNA" states="states1797295"/>
+      <char id="Col109647094" label="DNA" states="states1797295"/>
+      <char id="Col109647095" label="DNA" states="states1797295"/>
+      <char id="Col109647096" label="DNA" states="states1797295"/>
+      <char id="Col109647097" label="DNA" states="states1797295"/>
+      <char id="Col109647098" label="DNA" states="states1797295"/>
+      <char id="Col109647099" label="DNA" states="states1797295"/>
+      <char id="Col109647100" label="DNA" states="states1797295"/>
+      <char id="Col109647101" label="DNA" states="states1797295"/>
+      <char id="Col109647102" label="DNA" states="states1797295"/>
+      <char id="Col109647103" label="DNA" states="states1797295"/>
+      <char id="Col109647104" label="DNA" states="states1797295"/>
+      <char id="Col109647105" label="DNA" states="states1797295"/>
+      <char id="Col109647106" label="DNA" states="states1797295"/>
+      <char id="Col109647107" label="DNA" states="states1797295"/>
+      <char id="Col109647108" label="DNA" states="states1797295"/>
+      <char id="Col109647109" label="DNA" states="states1797295"/>
+      <char id="Col109647110" label="DNA" states="states1797295"/>
+      <char id="Col109647111" label="DNA" states="states1797295"/>
+      <char id="Col109647112" label="DNA" states="states1797295"/>
+      <char id="Col109647113" label="DNA" states="states1797295"/>
+      <char id="Col109647114" label="DNA" states="states1797295"/>
+      <char id="Col109647115" label="DNA" states="states1797295"/>
+      <char id="Col109647116" label="DNA" states="states1797295"/>
+      <char id="Col109647117" label="DNA" states="states1797295"/>
+      <char id="Col109647118" label="DNA" states="states1797295"/>
+      <char id="Col109647119" label="DNA" states="states1797295"/>
+      <char id="Col109647120" label="DNA" states="states1797295"/>
+      <char id="Col109647121" label="DNA" states="states1797295"/>
+      <char id="Col109647122" label="DNA" states="states1797295"/>
+      <char id="Col109647123" label="DNA" states="states1797295"/>
+      <char id="Col109647124" label="DNA" states="states1797295"/>
+      <char id="Col109647125" label="DNA" states="states1797295"/>
+      <char id="Col109647126" label="DNA" states="states1797295"/>
+      <char id="Col109647127" label="DNA" states="states1797295"/>
+      <char id="Col109647128" label="DNA" states="states1797295"/>
+      <char id="Col109647129" label="DNA" states="states1797295"/>
+      <char id="Col109647130" label="DNA" states="states1797295"/>
+      <char id="Col109647131" label="DNA" states="states1797295"/>
+      <char id="Col109647132" label="DNA" states="states1797295"/>
+      <char id="Col109647133" label="DNA" states="states1797295"/>
+      <char id="Col109647134" label="DNA" states="states1797295"/>
+      <char id="Col109647135" label="DNA" states="states1797295"/>
+      <char id="Col109647136" label="DNA" states="states1797295"/>
+      <char id="Col109647137" label="DNA" states="states1797295"/>
+      <char id="Col109647138" label="DNA" states="states1797295"/>
+      <char id="Col109647139" label="DNA" states="states1797295"/>
+      <char id="Col109647140" label="DNA" states="states1797295"/>
+      <char id="Col109647141" label="DNA" states="states1797295"/>
+      <char id="Col109647142" label="DNA" states="states1797295"/>
+      <char id="Col109647143" label="DNA" states="states1797295"/>
+      <char id="Col109647144" label="DNA" states="states1797295"/>
+      <char id="Col109647145" label="DNA" states="states1797295"/>
+      <char id="Col109647146" label="DNA" states="states1797295"/>
+      <char id="Col109647147" label="DNA" states="states1797295"/>
+      <char id="Col109647148" label="DNA" states="states1797295"/>
+      <char id="Col109647149" label="DNA" states="states1797295"/>
+      <char id="Col109647150" label="DNA" states="states1797295"/>
+      <char id="Col109647151" label="DNA" states="states1797295"/>
+      <char id="Col109647152" label="DNA" states="states1797295"/>
+      <char id="Col109647153" label="DNA" states="states1797295"/>
+      <char id="Col109647154" label="DNA" states="states1797295"/>
+      <char id="Col109647155" label="DNA" states="states1797295"/>
+      <char id="Col109647156" label="DNA" states="states1797295"/>
+      <char id="Col109647157" label="DNA" states="states1797295"/>
+      <char id="Col109647158" label="DNA" states="states1797295"/>
+      <char id="Col109647159" label="DNA" states="states1797295"/>
+      <char id="Col109647160" label="DNA" states="states1797295"/>
+      <char id="Col109647161" label="DNA" states="states1797295"/>
+      <char id="Col109647162" label="DNA" states="states1797295"/>
+      <char id="Col109647163" label="DNA" states="states1797295"/>
+      <char id="Col109647164" label="DNA" states="states1797295"/>
+      <char id="Col109647165" label="DNA" states="states1797295"/>
+      <char id="Col109647166" label="DNA" states="states1797295"/>
+      <char id="Col109647167" label="DNA" states="states1797295"/>
+      <char id="Col109647168" label="DNA" states="states1797295"/>
+      <char id="Col109647169" label="DNA" states="states1797295"/>
+      <char id="Col109647170" label="DNA" states="states1797295"/>
+      <char id="Col109647171" label="DNA" states="states1797295"/>
+      <char id="Col109647172" label="DNA" states="states1797295"/>
+      <char id="Col109647173" label="DNA" states="states1797295"/>
+      <char id="Col109647174" label="DNA" states="states1797295"/>
+      <char id="Col109647175" label="DNA" states="states1797295"/>
+      <char id="Col109647176" label="DNA" states="states1797295"/>
+      <char id="Col109647177" label="DNA" states="states1797295"/>
+      <char id="Col109647178" label="DNA" states="states1797295"/>
+      <char id="Col109647179" label="DNA" states="states1797295"/>
+      <char id="Col109647180" label="DNA" states="states1797295"/>
+      <char id="Col109647181" label="DNA" states="states1797295"/>
+      <char id="Col109647182" label="DNA" states="states1797295"/>
+      <char id="Col109647183" label="DNA" states="states1797295"/>
+      <char id="Col109647184" label="DNA" states="states1797295"/>
+      <char id="Col109647185" label="DNA" states="states1797295"/>
+      <char id="Col109647186" label="DNA" states="states1797295"/>
+      <char id="Col109647187" label="DNA" states="states1797295"/>
+      <char id="Col109647188" label="DNA" states="states1797295"/>
+      <char id="Col109647189" label="DNA" states="states1797295"/>
+      <char id="Col109647190" label="DNA" states="states1797295"/>
+      <char id="Col109647191" label="DNA" states="states1797295"/>
+      <char id="Col109647192" label="DNA" states="states1797295"/>
+      <char id="Col109647193" label="DNA" states="states1797295"/>
+      <char id="Col109647194" label="DNA" states="states1797295"/>
+      <char id="Col109647195" label="DNA" states="states1797295"/>
+      <char id="Col109647196" label="DNA" states="states1797295"/>
+      <char id="Col109647197" label="DNA" states="states1797295"/>
+      <char id="Col109647198" label="DNA" states="states1797295"/>
+      <char id="Col109647199" label="DNA" states="states1797295"/>
+      <char id="Col109647200" label="DNA" states="states1797295"/>
+      <char id="Col109647201" label="DNA" states="states1797295"/>
+      <char id="Col109647202" label="DNA" states="states1797295"/>
+      <char id="Col109647203" label="DNA" states="states1797295"/>
+      <char id="Col109647204" label="DNA" states="states1797295"/>
+      <char id="Col109647205" label="DNA" states="states1797295"/>
+      <char id="Col109647206" label="DNA" states="states1797295"/>
+      <char id="Col109647207" label="DNA" states="states1797295"/>
+      <char id="Col109647208" label="DNA" states="states1797295"/>
+      <char id="Col109647209" label="DNA" states="states1797295"/>
+      <char id="Col109647210" label="DNA" states="states1797295"/>
+      <char id="Col109647211" label="DNA" states="states1797295"/>
+      <char id="Col109647212" label="DNA" states="states1797295"/>
+      <char id="Col109647213" label="DNA" states="states1797295"/>
+      <char id="Col109647214" label="DNA" states="states1797295"/>
+      <char id="Col109647215" label="DNA" states="states1797295"/>
+      <char id="Col109647216" label="DNA" states="states1797295"/>
+      <char id="Col109647217" label="DNA" states="states1797295"/>
+      <char id="Col109647218" label="DNA" states="states1797295"/>
+      <char id="Col109647219" label="DNA" states="states1797295"/>
+      <char id="Col109647220" label="DNA" states="states1797295"/>
+      <char id="Col109647221" label="DNA" states="states1797295"/>
+      <char id="Col109647222" label="DNA" states="states1797295"/>
+      <char id="Col109647223" label="DNA" states="states1797295"/>
+      <char id="Col109647224" label="DNA" states="states1797295"/>
+      <char id="Col109647225" label="DNA" states="states1797295"/>
+      <char id="Col109647226" label="DNA" states="states1797295"/>
+      <char id="Col109647227" label="DNA" states="states1797295"/>
+      <char id="Col109647228" label="DNA" states="states1797295"/>
+      <char id="Col109647229" label="DNA" states="states1797295"/>
+      <char id="Col109647230" label="DNA" states="states1797295"/>
+      <char id="Col109647231" label="DNA" states="states1797295"/>
+      <char id="Col109647232" label="DNA" states="states1797295"/>
+      <char id="Col109647233" label="DNA" states="states1797295"/>
+      <char id="Col109647234" label="DNA" states="states1797295"/>
+      <char id="Col109647235" label="DNA" states="states1797295"/>
+      <char id="Col109647236" label="DNA" states="states1797295"/>
+      <char id="Col109647237" label="DNA" states="states1797295"/>
+      <char id="Col109647238" label="DNA" states="states1797295"/>
+      <char id="Col109647239" label="DNA" states="states1797295"/>
+      <char id="Col109647240" label="DNA" states="states1797295"/>
+      <char id="Col109647241" label="DNA" states="states1797295"/>
+      <char id="Col109647242" label="DNA" states="states1797295"/>
+      <char id="Col109647243" label="DNA" states="states1797295"/>
+      <char id="Col109647244" label="DNA" states="states1797295"/>
+      <char id="Col109647245" label="DNA" states="states1797295"/>
+      <char id="Col109647246" label="DNA" states="states1797295"/>
+      <char id="Col109647247" label="DNA" states="states1797295"/>
+      <char id="Col109647248" label="DNA" states="states1797295"/>
+      <char id="Col109647249" label="DNA" states="states1797295"/>
+      <char id="Col109647250" label="DNA" states="states1797295"/>
+      <char id="Col109647251" label="DNA" states="states1797295"/>
+      <char id="Col109647252" label="DNA" states="states1797295"/>
+      <char id="Col109647253" label="DNA" states="states1797295"/>
+      <char id="Col109647254" label="DNA" states="states1797295"/>
+      <char id="Col109647255" label="DNA" states="states1797295"/>
+      <char id="Col109647256" label="DNA" states="states1797295"/>
+      <char id="Col109647257" label="DNA" states="states1797295"/>
+      <char id="Col109647258" label="DNA" states="states1797295"/>
+      <char id="Col109647259" label="DNA" states="states1797295"/>
+      <char id="Col109647260" label="DNA" states="states1797295"/>
+      <char id="Col109647261" label="DNA" states="states1797295"/>
+      <char id="Col109647262" label="DNA" states="states1797295"/>
+      <char id="Col109647263" label="DNA" states="states1797295"/>
+      <char id="Col109647264" label="DNA" states="states1797295"/>
+      <char id="Col109647265" label="DNA" states="states1797295"/>
+      <char id="Col109647266" label="DNA" states="states1797295"/>
+      <char id="Col109647267" label="DNA" states="states1797295"/>
+      <char id="Col109647268" label="DNA" states="states1797295"/>
+      <char id="Col109647269" label="DNA" states="states1797295"/>
+      <char id="Col109647270" label="DNA" states="states1797295"/>
+      <char id="Col109647271" label="DNA" states="states1797295"/>
+      <char id="Col109647272" label="DNA" states="states1797295"/>
+      <char id="Col109647273" label="DNA" states="states1797295"/>
+      <char id="Col109647274" label="DNA" states="states1797295"/>
+      <char id="Col109647275" label="DNA" states="states1797295"/>
+      <char id="Col109647276" label="DNA" states="states1797295"/>
+      <char id="Col109647277" label="DNA" states="states1797295"/>
+      <char id="Col109647278" label="DNA" states="states1797295"/>
+      <char id="Col109647279" label="DNA" states="states1797295"/>
+      <char id="Col109647280" label="DNA" states="states1797295"/>
+      <char id="Col109647281" label="DNA" states="states1797295"/>
+      <char id="Col109647282" label="DNA" states="states1797295"/>
+      <char id="Col109647283" label="DNA" states="states1797295"/>
+      <char id="Col109647284" label="DNA" states="states1797295"/>
+      <char id="Col109647285" label="DNA" states="states1797295"/>
+      <char id="Col109647286" label="DNA" states="states1797295"/>
+      <char id="Col109647287" label="DNA" states="states1797295"/>
+      <char id="Col109647288" label="DNA" states="states1797295"/>
+      <char id="Col109647289" label="DNA" states="states1797295"/>
+      <char id="Col109647290" label="DNA" states="states1797295"/>
+      <char id="Col109647291" label="DNA" states="states1797295"/>
+      <char id="Col109647292" label="DNA" states="states1797295"/>
+      <char id="Col109647293" label="DNA" states="states1797295"/>
+      <char id="Col109647294" label="DNA" states="states1797295"/>
+      <char id="Col109647295" label="DNA" states="states1797295"/>
+      <char id="Col109647296" label="DNA" states="states1797295"/>
+      <char id="Col109647297" label="DNA" states="states1797295"/>
+      <char id="Col109647298" label="DNA" states="states1797295"/>
+      <char id="Col109647299" label="DNA" states="states1797295"/>
+      <char id="Col109647300" label="DNA" states="states1797295"/>
+      <char id="Col109647301" label="DNA" states="states1797295"/>
+      <char id="Col109647302" label="DNA" states="states1797295"/>
+      <char id="Col109647303" label="DNA" states="states1797295"/>
+      <char id="Col109647304" label="DNA" states="states1797295"/>
+      <char id="Col109647305" label="DNA" states="states1797295"/>
+      <char id="Col109647306" label="DNA" states="states1797295"/>
+      <char id="Col109647307" label="DNA" states="states1797295"/>
+      <char id="Col109647308" label="DNA" states="states1797295"/>
+      <char id="Col109647309" label="DNA" states="states1797295"/>
+      <char id="Col109647310" label="DNA" states="states1797295"/>
+      <char id="Col109647311" label="DNA" states="states1797295"/>
+      <char id="Col109647312" label="DNA" states="states1797295"/>
+      <char id="Col109647313" label="DNA" states="states1797295"/>
+      <char id="Col109647314" label="DNA" states="states1797295"/>
+      <char id="Col109647315" label="DNA" states="states1797295"/>
+      <char id="Col109647316" label="DNA" states="states1797295"/>
+      <char id="Col109647317" label="DNA" states="states1797295"/>
+      <char id="Col109647318" label="DNA" states="states1797295"/>
+      <char id="Col109647319" label="DNA" states="states1797295"/>
+      <char id="Col109647320" label="DNA" states="states1797295"/>
+      <char id="Col109647321" label="DNA" states="states1797295"/>
+      <char id="Col109647322" label="DNA" states="states1797295"/>
+      <char id="Col109647323" label="DNA" states="states1797295"/>
+      <char id="Col109647324" label="DNA" states="states1797295"/>
+      <char id="Col109647325" label="DNA" states="states1797295"/>
+      <char id="Col109647326" label="DNA" states="states1797295"/>
+      <char id="Col109647327" label="DNA" states="states1797295"/>
+      <char id="Col109647328" label="DNA" states="states1797295"/>
+      <char id="Col109647329" label="DNA" states="states1797295"/>
+      <char id="Col109647330" label="DNA" states="states1797295"/>
+      <char id="Col109647331" label="DNA" states="states1797295"/>
+      <char id="Col109647332" label="DNA" states="states1797295"/>
+      <char id="Col109647333" label="DNA" states="states1797295"/>
+      <char id="Col109647334" label="DNA" states="states1797295"/>
+      <char id="Col109647335" label="DNA" states="states1797295"/>
+      <char id="Col109647336" label="DNA" states="states1797295"/>
+      <char id="Col109647337" label="DNA" states="states1797295"/>
+      <char id="Col109647338" label="DNA" states="states1797295"/>
+      <char id="Col109647339" label="DNA" states="states1797295"/>
+      <char id="Col109647340" label="DNA" states="states1797295"/>
+      <char id="Col109647341" label="DNA" states="states1797295"/>
+      <char id="Col109647342" label="DNA" states="states1797295"/>
+      <char id="Col109647343" label="DNA" states="states1797295"/>
+      <char id="Col109647344" label="DNA" states="states1797295"/>
+      <char id="Col109647345" label="DNA" states="states1797295"/>
+      <char id="Col109647346" label="DNA" states="states1797295"/>
+      <char id="Col109647347" label="DNA" states="states1797295"/>
+      <char id="Col109647348" label="DNA" states="states1797295"/>
+      <char id="Col109647349" label="DNA" states="states1797295"/>
+      <char id="Col109647350" label="DNA" states="states1797295"/>
+      <char id="Col109647351" label="DNA" states="states1797295"/>
+      <char id="Col109647352" label="DNA" states="states1797295"/>
+      <char id="Col109647353" label="DNA" states="states1797295"/>
+      <char id="Col109647354" label="DNA" states="states1797295"/>
+      <char id="Col109647355" label="DNA" states="states1797295"/>
+      <char id="Col109647356" label="DNA" states="states1797295"/>
+      <char id="Col109647357" label="DNA" states="states1797295"/>
+      <char id="Col109647358" label="DNA" states="states1797295"/>
+      <char id="Col109647359" label="DNA" states="states1797295"/>
+      <char id="Col109647360" label="DNA" states="states1797295"/>
+      <char id="Col109647361" label="DNA" states="states1797295"/>
+      <char id="Col109647362" label="DNA" states="states1797295"/>
+      <char id="Col109647363" label="DNA" states="states1797295"/>
+      <char id="Col109647364" label="DNA" states="states1797295"/>
+      <char id="Col109647365" label="DNA" states="states1797295"/>
+      <char id="Col109647366" label="DNA" states="states1797295"/>
+      <char id="Col109647367" label="DNA" states="states1797295"/>
+      <char id="Col109647368" label="DNA" states="states1797295"/>
+      <char id="Col109647369" label="DNA" states="states1797295"/>
+      <char id="Col109647370" label="DNA" states="states1797295"/>
+      <char id="Col109647371" label="DNA" states="states1797295"/>
+      <char id="Col109647372" label="DNA" states="states1797295"/>
+      <char id="Col109647373" label="DNA" states="states1797295"/>
+      <char id="Col109647374" label="DNA" states="states1797295"/>
+      <char id="Col109647375" label="DNA" states="states1797295"/>
+      <char id="Col109647376" label="DNA" states="states1797295"/>
+      <char id="Col109647377" label="DNA" states="states1797295"/>
+      <char id="Col109647378" label="DNA" states="states1797295"/>
+      <char id="Col109647379" label="DNA" states="states1797295"/>
+      <char id="Col109647380" label="DNA" states="states1797295"/>
+      <char id="Col109647381" label="DNA" states="states1797295"/>
+      <char id="Col109647382" label="DNA" states="states1797295"/>
+      <char id="Col109647383" label="DNA" states="states1797295"/>
+      <char id="Col109647384" label="DNA" states="states1797295"/>
+      <char id="Col109647385" label="DNA" states="states1797295"/>
+      <char id="Col109647386" label="DNA" states="states1797295"/>
+      <char id="Col109647387" label="DNA" states="states1797295"/>
+      <char id="Col109647388" label="DNA" states="states1797295"/>
+      <char id="Col109647389" label="DNA" states="states1797295"/>
+      <char id="Col109647390" label="DNA" states="states1797295"/>
+      <char id="Col109647391" label="DNA" states="states1797295"/>
+      <char id="Col109647392" label="DNA" states="states1797295"/>
+      <char id="Col109647393" label="DNA" states="states1797295"/>
+      <char id="Col109647394" label="DNA" states="states1797295"/>
+      <char id="Col109647395" label="DNA" states="states1797295"/>
+      <char id="Col109647396" label="DNA" states="states1797295"/>
+      <char id="Col109647397" label="DNA" states="states1797295"/>
+      <char id="Col109647398" label="DNA" states="states1797295"/>
+      <char id="Col109647399" label="DNA" states="states1797295"/>
+      <char id="Col109647400" label="DNA" states="states1797295"/>
+      <char id="Col109647401" label="DNA" states="states1797295"/>
+      <char id="Col109647402" label="DNA" states="states1797295"/>
+      <char id="Col109647403" label="DNA" states="states1797295"/>
+      <char id="Col109647404" label="DNA" states="states1797295"/>
+      <char id="Col109647405" label="DNA" states="states1797295"/>
+      <char id="Col109647406" label="DNA" states="states1797295"/>
+      <char id="Col109647407" label="DNA" states="states1797295"/>
+      <char id="Col109647408" label="DNA" states="states1797295"/>
+      <char id="Col109647409" label="DNA" states="states1797295"/>
+      <char id="Col109647410" label="DNA" states="states1797295"/>
+      <char id="Col109647411" label="DNA" states="states1797295"/>
+      <char id="Col109647412" label="DNA" states="states1797295"/>
+      <char id="Col109647413" label="DNA" states="states1797295"/>
+      <char id="Col109647414" label="DNA" states="states1797295"/>
+      <char id="Col109647415" label="DNA" states="states1797295"/>
+      <char id="Col109647416" label="DNA" states="states1797295"/>
+      <char id="Col109647417" label="DNA" states="states1797295"/>
+      <char id="Col109647418" label="DNA" states="states1797295"/>
+      <char id="Col109647419" label="DNA" states="states1797295"/>
+      <char id="Col109647420" label="DNA" states="states1797295"/>
+      <char id="Col109647421" label="DNA" states="states1797295"/>
+      <char id="Col109647422" label="DNA" states="states1797295"/>
+      <char id="Col109647423" label="DNA" states="states1797295"/>
+      <char id="Col109647424" label="DNA" states="states1797295"/>
+      <char id="Col109647425" label="DNA" states="states1797295"/>
+      <char id="Col109647426" label="DNA" states="states1797295"/>
+      <char id="Col109647427" label="DNA" states="states1797295"/>
+      <char id="Col109647428" label="DNA" states="states1797295"/>
+      <char id="Col109647429" label="DNA" states="states1797295"/>
+      <char id="Col109647430" label="DNA" states="states1797295"/>
+      <char id="Col109647431" label="DNA" states="states1797295"/>
+      <char id="Col109647432" label="DNA" states="states1797295"/>
+      <char id="Col109647433" label="DNA" states="states1797295"/>
+      <char id="Col109647434" label="DNA" states="states1797295"/>
+      <char id="Col109647435" label="DNA" states="states1797295"/>
+      <char id="Col109647436" label="DNA" states="states1797295"/>
+      <char id="Col109647437" label="DNA" states="states1797295"/>
+      <char id="Col109647438" label="DNA" states="states1797295"/>
+      <char id="Col109647439" label="DNA" states="states1797295"/>
+      <char id="Col109647440" label="DNA" states="states1797295"/>
+      <char id="Col109647441" label="DNA" states="states1797295"/>
+      <char id="Col109647442" label="DNA" states="states1797295"/>
+      <char id="Col109647443" label="DNA" states="states1797295"/>
+      <char id="Col109647444" label="DNA" states="states1797295"/>
+      <char id="Col109647445" label="DNA" states="states1797295"/>
+      <char id="Col109647446" label="DNA" states="states1797295"/>
+      <char id="Col109647447" label="DNA" states="states1797295"/>
+      <char id="Col109647448" label="DNA" states="states1797295"/>
+      <char id="Col109647449" label="DNA" states="states1797295"/>
+      <char id="Col109647450" label="DNA" states="states1797295"/>
+      <char id="Col109647451" label="DNA" states="states1797295"/>
+      <char id="Col109647452" label="DNA" states="states1797295"/>
+      <char id="Col109647453" label="DNA" states="states1797295"/>
+      <char id="Col109647454" label="DNA" states="states1797295"/>
+      <char id="Col109647455" label="DNA" states="states1797295"/>
+      <char id="Col109647456" label="DNA" states="states1797295"/>
+      <char id="Col109647457" label="DNA" states="states1797295"/>
+      <char id="Col109647458" label="DNA" states="states1797295"/>
+      <char id="Col109647459" label="DNA" states="states1797295"/>
+      <char id="Col109647460" label="DNA" states="states1797295"/>
+      <char id="Col109647461" label="DNA" states="states1797295"/>
+      <char id="Col109647462" label="DNA" states="states1797295"/>
+      <char id="Col109647463" label="DNA" states="states1797295"/>
+      <char id="Col109647464" label="DNA" states="states1797295"/>
+      <char id="Col109647465" label="DNA" states="states1797295"/>
+      <char id="Col109647466" label="DNA" states="states1797295"/>
+      <char id="Col109647467" label="DNA" states="states1797295"/>
+      <char id="Col109647468" label="DNA" states="states1797295"/>
+      <char id="Col109647469" label="DNA" states="states1797295"/>
+      <char id="Col109647470" label="DNA" states="states1797295"/>
+      <char id="Col109647471" label="DNA" states="states1797295"/>
+      <char id="Col109647472" label="DNA" states="states1797295"/>
+      <char id="Col109647473" label="DNA" states="states1797295"/>
+      <char id="Col109647474" label="DNA" states="states1797295"/>
+      <char id="Col109647475" label="DNA" states="states1797295"/>
+      <char id="Col109647476" label="DNA" states="states1797295"/>
+      <char id="Col109647477" label="DNA" states="states1797295"/>
+      <char id="Col109647478" label="DNA" states="states1797295"/>
+      <char id="Col109647479" label="DNA" states="states1797295"/>
+      <char id="Col109647480" label="DNA" states="states1797295"/>
+      <char id="Col109647481" label="DNA" states="states1797295"/>
+      <char id="Col109647482" label="DNA" states="states1797295"/>
+      <char id="Col109647483" label="DNA" states="states1797295"/>
+      <char id="Col109647484" label="DNA" states="states1797295"/>
+      <char id="Col109647485" label="DNA" states="states1797295"/>
+      <char id="Col109647486" label="DNA" states="states1797295"/>
+      <char id="Col109647487" label="DNA" states="states1797295"/>
+      <char id="Col109647488" label="DNA" states="states1797295"/>
+      <char id="Col109647489" label="DNA" states="states1797295"/>
+      <char id="Col109647490" label="DNA" states="states1797295"/>
+      <char id="Col109647491" label="DNA" states="states1797295"/>
+      <char id="Col109647492" label="DNA" states="states1797295"/>
+      <char id="Col109647493" label="DNA" states="states1797295"/>
+      <char id="Col109647494" label="DNA" states="states1797295"/>
+      <char id="Col109647495" label="DNA" states="states1797295"/>
+      <char id="Col109647496" label="DNA" states="states1797295"/>
+      <char id="Col109647497" label="DNA" states="states1797295"/>
+      <char id="Col109647498" label="DNA" states="states1797295"/>
+      <char id="Col109647499" label="DNA" states="states1797295"/>
+      <char id="Col109647500" label="DNA" states="states1797295"/>
+      <char id="Col109647501" label="DNA" states="states1797295"/>
+      <char id="Col109647502" label="DNA" states="states1797295"/>
+      <char id="Col109647503" label="DNA" states="states1797295"/>
+      <char id="Col109647504" label="DNA" states="states1797295"/>
+      <char id="Col109647505" label="DNA" states="states1797295"/>
+      <char id="Col109647506" label="DNA" states="states1797295"/>
+      <char id="Col109647507" label="DNA" states="states1797295"/>
+      <char id="Col109647508" label="DNA" states="states1797295"/>
+      <char id="Col109647509" label="DNA" states="states1797295"/>
+      <char id="Col109647510" label="DNA" states="states1797295"/>
+      <char id="Col109647511" label="DNA" states="states1797295"/>
+      <char id="Col109647512" label="DNA" states="states1797295"/>
+      <char id="Col109647513" label="DNA" states="states1797295"/>
+      <char id="Col109647514" label="DNA" states="states1797295"/>
+      <char id="Col109647515" label="DNA" states="states1797295"/>
+      <char id="Col109647516" label="DNA" states="states1797295"/>
+      <char id="Col109647517" label="DNA" states="states1797295"/>
+      <char id="Col109647518" label="DNA" states="states1797295"/>
+      <char id="Col109647519" label="DNA" states="states1797295"/>
+      <char id="Col109647520" label="DNA" states="states1797295"/>
+      <char id="Col109647521" label="DNA" states="states1797295"/>
+      <char id="Col109647522" label="DNA" states="states1797295"/>
+      <char id="Col109647523" label="DNA" states="states1797295"/>
+      <char id="Col109647524" label="DNA" states="states1797295"/>
+      <char id="Col109647525" label="DNA" states="states1797295"/>
+      <char id="Col109647526" label="DNA" states="states1797295"/>
+      <char id="Col109647527" label="DNA" states="states1797295"/>
+      <char id="Col109647528" label="DNA" states="states1797295"/>
+      <char id="Col109647529" label="DNA" states="states1797295"/>
+      <char id="Col109647530" label="DNA" states="states1797295"/>
+      <char id="Col109647531" label="DNA" states="states1797295"/>
+      <char id="Col109647532" label="DNA" states="states1797295"/>
+      <char id="Col109647533" label="DNA" states="states1797295"/>
+      <char id="Col109647534" label="DNA" states="states1797295"/>
+      <char id="Col109647535" label="DNA" states="states1797295"/>
+      <char id="Col109647536" label="DNA" states="states1797295"/>
+      <char id="Col109647537" label="DNA" states="states1797295"/>
+      <char id="Col109647538" label="DNA" states="states1797295"/>
+      <char id="Col109647539" label="DNA" states="states1797295"/>
+      <char id="Col109647540" label="DNA" states="states1797295"/>
+      <char id="Col109647541" label="DNA" states="states1797295"/>
+      <char id="Col109647542" label="DNA" states="states1797295"/>
+      <char id="Col109647543" label="DNA" states="states1797295"/>
+      <char id="Col109647544" label="DNA" states="states1797295"/>
+      <char id="Col109647545" label="DNA" states="states1797295"/>
+      <char id="Col109647546" label="DNA" states="states1797295"/>
+      <char id="Col109647547" label="DNA" states="states1797295"/>
+      <char id="Col109647548" label="DNA" states="states1797295"/>
+      <char id="Col109647549" label="DNA" states="states1797295"/>
+      <char id="Col109647550" label="DNA" states="states1797295"/>
+      <char id="Col109647551" label="DNA" states="states1797295"/>
+      <char id="Col109647552" label="DNA" states="states1797295"/>
+      <char id="Col109647553" label="DNA" states="states1797295"/>
+      <char id="Col109647554" label="DNA" states="states1797295"/>
+      <char id="Col109647555" label="DNA" states="states1797295"/>
+      <char id="Col109647556" label="DNA" states="states1797295"/>
+      <char id="Col109647557" label="DNA" states="states1797295"/>
+      <char id="Col109647558" label="DNA" states="states1797295"/>
+      <char id="Col109647559" label="DNA" states="states1797295"/>
+      <char id="Col109647560" label="DNA" states="states1797295"/>
+      <char id="Col109647561" label="DNA" states="states1797295"/>
+      <char id="Col109647562" label="DNA" states="states1797295"/>
+      <char id="Col109647563" label="DNA" states="states1797295"/>
+      <char id="Col109647564" label="DNA" states="states1797295"/>
+      <char id="Col109647565" label="DNA" states="states1797295"/>
+      <char id="Col109647566" label="DNA" states="states1797295"/>
+      <char id="Col109647567" label="DNA" states="states1797295"/>
+      <char id="Col109647568" label="DNA" states="states1797295"/>
+      <char id="Col109647569" label="DNA" states="states1797295"/>
+      <char id="Col109647570" label="DNA" states="states1797295"/>
+      <char id="Col109647571" label="DNA" states="states1797295"/>
+      <char id="Col109647572" label="DNA" states="states1797295"/>
+      <char id="Col109647573" label="DNA" states="states1797295"/>
+      <char id="Col109647574" label="DNA" states="states1797295"/>
+      <char id="Col109647575" label="DNA" states="states1797295"/>
+      <char id="Col109647576" label="DNA" states="states1797295"/>
+      <char id="Col109647577" label="DNA" states="states1797295"/>
+      <char id="Col109647578" label="DNA" states="states1797295"/>
+      <char id="Col109647579" label="DNA" states="states1797295"/>
+      <char id="Col109647580" label="DNA" states="states1797295"/>
+      <char id="Col109647581" label="DNA" states="states1797295"/>
+      <char id="Col109647582" label="DNA" states="states1797295"/>
+      <char id="Col109647583" label="DNA" states="states1797295"/>
+      <char id="Col109647584" label="DNA" states="states1797295"/>
+      <char id="Col109647585" label="DNA" states="states1797295"/>
+      <char id="Col109647586" label="DNA" states="states1797295"/>
+      <char id="Col109647587" label="DNA" states="states1797295"/>
+      <char id="Col109647588" label="DNA" states="states1797295"/>
+      <char id="Col109647589" label="DNA" states="states1797295"/>
+      <char id="Col109647590" label="DNA" states="states1797295"/>
+      <char id="Col109647591" label="DNA" states="states1797295"/>
+      <char id="Col109647592" label="DNA" states="states1797295"/>
+      <char id="Col109647593" label="DNA" states="states1797295"/>
+      <char id="Col109647594" label="DNA" states="states1797295"/>
+      <char id="Col109647595" label="DNA" states="states1797295"/>
+      <char id="Col109647596" label="DNA" states="states1797295"/>
+      <char id="Col109647597" label="DNA" states="states1797295"/>
+      <char id="Col109647598" label="DNA" states="states1797295"/>
+      <char id="Col109647599" label="DNA" states="states1797295"/>
+      <char id="Col109647600" label="DNA" states="states1797295"/>
+      <char id="Col109647601" label="DNA" states="states1797295"/>
+      <char id="Col109647602" label="DNA" states="states1797295"/>
+      <char id="Col109647603" label="DNA" states="states1797295"/>
+      <char id="Col109647604" label="DNA" states="states1797295"/>
+      <char id="Col109647605" label="DNA" states="states1797295"/>
+      <char id="Col109647606" label="DNA" states="states1797295"/>
+      <char id="Col109647607" label="DNA" states="states1797295"/>
+      <char id="Col109647608" label="DNA" states="states1797295"/>
+      <char id="Col109647609" label="DNA" states="states1797295"/>
+      <char id="Col109647610" label="DNA" states="states1797295"/>
+      <char id="Col109647611" label="DNA" states="states1797295"/>
+      <char id="Col109647612" label="DNA" states="states1797295"/>
+      <char id="Col109647613" label="DNA" states="states1797295"/>
+      <char id="Col109647614" label="DNA" states="states1797295"/>
+      <char id="Col109647615" label="DNA" states="states1797295"/>
+      <char id="Col109647616" label="DNA" states="states1797295"/>
+      <char id="Col109647617" label="DNA" states="states1797295"/>
+      <char id="Col109647618" label="DNA" states="states1797295"/>
+      <char id="Col109647619" label="DNA" states="states1797295"/>
+      <char id="Col109647620" label="DNA" states="states1797295"/>
+      <char id="Col109647621" label="DNA" states="states1797295"/>
+      <char id="Col109647622" label="DNA" states="states1797295"/>
+      <char id="Col109647623" label="DNA" states="states1797295"/>
+      <char id="Col109647624" label="DNA" states="states1797295"/>
+      <char id="Col109647625" label="DNA" states="states1797295"/>
+      <char id="Col109647626" label="DNA" states="states1797295"/>
+      <char id="Col109647627" label="DNA" states="states1797295"/>
+      <char id="Col109647628" label="DNA" states="states1797295"/>
+      <char id="Col109647629" label="DNA" states="states1797295"/>
+      <char id="Col109647630" label="DNA" states="states1797295"/>
+      <char id="Col109647631" label="DNA" states="states1797295"/>
+      <char id="Col109647632" label="DNA" states="states1797295"/>
+      <char id="Col109647633" label="DNA" states="states1797295"/>
+      <char id="Col109647634" label="DNA" states="states1797295"/>
+      <char id="Col109647635" label="DNA" states="states1797295"/>
+      <char id="Col109647636" label="DNA" states="states1797295"/>
+      <char id="Col109647637" label="DNA" states="states1797295"/>
+      <char id="Col109647638" label="DNA" states="states1797295"/>
+      <char id="Col109647639" label="DNA" states="states1797295"/>
+      <char id="Col109647640" label="DNA" states="states1797295"/>
+      <char id="Col109647641" label="DNA" states="states1797295"/>
+      <char id="Col109647642" label="DNA" states="states1797295"/>
+      <char id="Col109647643" label="DNA" states="states1797295"/>
+      <char id="Col109647644" label="DNA" states="states1797295"/>
+      <char id="Col109647645" label="DNA" states="states1797295"/>
+      <char id="Col109647646" label="DNA" states="states1797295"/>
+      <char id="Col109647647" label="DNA" states="states1797295"/>
+      <char id="Col109647648" label="DNA" states="states1797295"/>
+      <char id="Col109647649" label="DNA" states="states1797295"/>
+      <char id="Col109647650" label="DNA" states="states1797295"/>
+      <char id="Col109647651" label="DNA" states="states1797295"/>
+      <char id="Col109647652" label="DNA" states="states1797295"/>
+      <char id="Col109647653" label="DNA" states="states1797295"/>
+      <char id="Col109647654" label="DNA" states="states1797295"/>
+      <char id="Col109647655" label="DNA" states="states1797295"/>
+      <char id="Col109647656" label="DNA" states="states1797295"/>
+      <char id="Col109647657" label="DNA" states="states1797295"/>
+      <char id="Col109647658" label="DNA" states="states1797295"/>
+      <char id="Col109647659" label="DNA" states="states1797295"/>
+      <char id="Col109647660" label="DNA" states="states1797295"/>
+      <char id="Col109647661" label="DNA" states="states1797295"/>
+      <char id="Col109647662" label="DNA" states="states1797295"/>
+      <char id="Col109647663" label="DNA" states="states1797295"/>
+      <char id="Col109647664" label="DNA" states="states1797295"/>
+      <char id="Col109647665" label="DNA" states="states1797295"/>
+      <char id="Col109647666" label="DNA" states="states1797295"/>
+      <char id="Col109647667" label="DNA" states="states1797295"/>
+      <char id="Col109647668" label="DNA" states="states1797295"/>
+      <char id="Col109647669" label="DNA" states="states1797295"/>
+      <char id="Col109647670" label="DNA" states="states1797295"/>
+      <char id="Col109647671" label="DNA" states="states1797295"/>
+      <char id="Col109647672" label="DNA" states="states1797295"/>
+      <char id="Col109647673" label="DNA" states="states1797295"/>
+      <char id="Col109647674" label="DNA" states="states1797295"/>
+      <char id="Col109647675" label="DNA" states="states1797295"/>
+      <char id="Col109647676" label="DNA" states="states1797295"/>
+      <char id="Col109647677" label="DNA" states="states1797295"/>
+      <char id="Col109647678" label="DNA" states="states1797295"/>
+      <char id="Col109647679" label="DNA" states="states1797295"/>
+      <char id="Col109647680" label="DNA" states="states1797295"/>
+      <char id="Col109647681" label="DNA" states="states1797295"/>
+      <char id="Col109647682" label="DNA" states="states1797295"/>
+      <char id="Col109647683" label="DNA" states="states1797295"/>
+      <char id="Col109647684" label="DNA" states="states1797295"/>
+      <char id="Col109647685" label="DNA" states="states1797295"/>
+      <char id="Col109647686" label="DNA" states="states1797295"/>
+      <char id="Col109647687" label="DNA" states="states1797295"/>
+      <char id="Col109647688" label="DNA" states="states1797295"/>
+      <char id="Col109647689" label="DNA" states="states1797295"/>
+      <char id="Col109647690" label="DNA" states="states1797295"/>
+      <char id="Col109647691" label="DNA" states="states1797295"/>
+      <char id="Col109647692" label="DNA" states="states1797295"/>
+      <char id="Col109647693" label="DNA" states="states1797295"/>
+      <char id="Col109647694" label="DNA" states="states1797295"/>
+      <char id="Col109647695" label="DNA" states="states1797295"/>
+      <char id="Col109647696" label="DNA" states="states1797295"/>
+      <char id="Col109647697" label="DNA" states="states1797295"/>
+      <char id="Col109647698" label="DNA" states="states1797295"/>
+      <char id="Col109647699" label="DNA" states="states1797295"/>
+      <char id="Col109647700" label="DNA" states="states1797295"/>
+      <char id="Col109647701" label="DNA" states="states1797295"/>
+      <char id="Col109647702" label="DNA" states="states1797295"/>
+      <char id="Col109647703" label="DNA" states="states1797295"/>
+      <char id="Col109647704" label="DNA" states="states1797295"/>
+      <char id="Col109647705" label="DNA" states="states1797295"/>
+      <char id="Col109647706" label="DNA" states="states1797295"/>
+      <char id="Col109647707" label="DNA" states="states1797295"/>
+      <char id="Col109647708" label="DNA" states="states1797295"/>
+      <char id="Col109647709" label="DNA" states="states1797295"/>
+      <char id="Col109647710" label="DNA" states="states1797295"/>
+      <char id="Col109647711" label="DNA" states="states1797295"/>
+      <char id="Col109647712" label="DNA" states="states1797295"/>
+      <char id="Col109647713" label="DNA" states="states1797295"/>
+      <char id="Col109647714" label="DNA" states="states1797295"/>
+      <char id="Col109647715" label="DNA" states="states1797295"/>
+      <char id="Col109647716" label="DNA" states="states1797295"/>
+      <char id="Col109647717" label="DNA" states="states1797295"/>
+      <char id="Col109647718" label="DNA" states="states1797295"/>
+      <char id="Col109647719" label="DNA" states="states1797295"/>
+      <char id="Col109647720" label="DNA" states="states1797295"/>
+      <char id="Col109647721" label="DNA" states="states1797295"/>
+      <char id="Col109647722" label="DNA" states="states1797295"/>
+      <char id="Col109647723" label="DNA" states="states1797295"/>
+      <char id="Col109647724" label="DNA" states="states1797295"/>
+      <char id="Col109647725" label="DNA" states="states1797295"/>
+      <char id="Col109647726" label="DNA" states="states1797295"/>
+      <char id="Col109647727" label="DNA" states="states1797295"/>
+      <char id="Col109647728" label="DNA" states="states1797295"/>
+      <char id="Col109647729" label="DNA" states="states1797295"/>
+      <char id="Col109647730" label="DNA" states="states1797295"/>
+      <char id="Col109647731" label="DNA" states="states1797295"/>
+      <char id="Col109647732" label="DNA" states="states1797295"/>
+      <char id="Col109647733" label="DNA" states="states1797295"/>
+      <char id="Col109647734" label="DNA" states="states1797295"/>
+      <char id="Col109647735" label="DNA" states="states1797295"/>
+      <char id="Col109647736" label="DNA" states="states1797295"/>
+      <char id="Col109647737" label="DNA" states="states1797295"/>
+      <char id="Col109647738" label="DNA" states="states1797295"/>
+      <char id="Col109647739" label="DNA" states="states1797295"/>
+      <char id="Col109647740" label="DNA" states="states1797295"/>
+      <char id="Col109647741" label="DNA" states="states1797295"/>
+      <char id="Col109647742" label="DNA" states="states1797295"/>
+      <char id="Col109647743" label="DNA" states="states1797295"/>
+      <char id="Col109647744" label="DNA" states="states1797295"/>
+      <char id="Col109647745" label="DNA" states="states1797295"/>
+      <char id="Col109647746" label="DNA" states="states1797295"/>
+      <char id="Col109647747" label="DNA" states="states1797295"/>
+      <char id="Col109647748" label="DNA" states="states1797295"/>
+      <char id="Col109647749" label="DNA" states="states1797295"/>
+      <char id="Col109647750" label="DNA" states="states1797295"/>
+      <char id="Col109647751" label="DNA" states="states1797295"/>
+      <char id="Col109647752" label="DNA" states="states1797295"/>
+      <char id="Col109647753" label="DNA" states="states1797295"/>
+      <char id="Col109647754" label="DNA" states="states1797295"/>
+      <char id="Col109647755" label="DNA" states="states1797295"/>
+      <char id="Col109647756" label="DNA" states="states1797295"/>
+      <char id="Col109647757" label="DNA" states="states1797295"/>
+      <char id="Col109647758" label="DNA" states="states1797295"/>
+      <char id="Col109647759" label="DNA" states="states1797295"/>
+      <char id="Col109647760" label="DNA" states="states1797295"/>
+      <char id="Col109647761" label="DNA" states="states1797295"/>
+      <char id="Col109647762" label="DNA" states="states1797295"/>
+      <char id="Col109647763" label="DNA" states="states1797295"/>
+      <char id="Col109647764" label="DNA" states="states1797295"/>
+      <char id="Col109647765" label="DNA" states="states1797295"/>
+      <char id="Col109647766" label="DNA" states="states1797295"/>
+      <char id="Col109647767" label="DNA" states="states1797295"/>
+      <char id="Col109647768" label="DNA" states="states1797295"/>
+      <char id="Col109647769" label="DNA" states="states1797295"/>
+      <char id="Col109647770" label="DNA" states="states1797295"/>
+      <char id="Col109647771" label="DNA" states="states1797295"/>
+      <char id="Col109647772" label="DNA" states="states1797295"/>
+      <char id="Col109647773" label="DNA" states="states1797295"/>
+      <char id="Col109647774" label="DNA" states="states1797295"/>
+      <char id="Col109647775" label="DNA" states="states1797295"/>
+      <char id="Col109647776" label="DNA" states="states1797295"/>
+      <char id="Col109647777" label="DNA" states="states1797295"/>
+      <char id="Col109647778" label="DNA" states="states1797295"/>
+      <char id="Col109647779" label="DNA" states="states1797295"/>
+      <char id="Col109647780" label="DNA" states="states1797295"/>
+      <char id="Col109647781" label="DNA" states="states1797295"/>
+      <char id="Col109647782" label="DNA" states="states1797295"/>
+      <char id="Col109647783" label="DNA" states="states1797295"/>
+      <char id="Col109647784" label="DNA" states="states1797295"/>
+      <char id="Col109647785" label="DNA" states="states1797295"/>
+      <char id="Col109647786" label="DNA" states="states1797295"/>
+      <char id="Col109647787" label="DNA" states="states1797295"/>
+      <char id="Col109647788" label="DNA" states="states1797295"/>
+      <char id="Col109647789" label="DNA" states="states1797295"/>
+      <char id="Col109647790" label="DNA" states="states1797295"/>
+      <char id="Col109647791" label="DNA" states="states1797295"/>
+      <char id="Col109647792" label="DNA" states="states1797295"/>
+      <char id="Col109647793" label="DNA" states="states1797295"/>
+      <char id="Col109647794" label="DNA" states="states1797295"/>
+      <char id="Col109647795" label="DNA" states="states1797295"/>
+      <char id="Col109647796" label="DNA" states="states1797295"/>
+      <char id="Col109647797" label="DNA" states="states1797295"/>
+      <char id="Col109647798" label="DNA" states="states1797295"/>
+      <char id="Col109647799" label="DNA" states="states1797295"/>
+      <char id="Col109647800" label="DNA" states="states1797295"/>
+      <char id="Col109647801" label="DNA" states="states1797295"/>
+      <char id="Col109647802" label="DNA" states="states1797295"/>
+      <char id="Col109647803" label="DNA" states="states1797295"/>
+      <char id="Col109647804" label="DNA" states="states1797295"/>
+      <char id="Col109647805" label="DNA" states="states1797295"/>
+      <char id="Col109647806" label="DNA" states="states1797295"/>
+      <char id="Col109647807" label="DNA" states="states1797295"/>
+      <char id="Col109647808" label="DNA" states="states1797295"/>
+      <char id="Col109647809" label="DNA" states="states1797295"/>
+      <char id="Col109647810" label="DNA" states="states1797295"/>
+      <char id="Col109647811" label="DNA" states="states1797295"/>
+      <char id="Col109647812" label="DNA" states="states1797295"/>
+      <char id="Col109647813" label="DNA" states="states1797295"/>
+      <char id="Col109647814" label="DNA" states="states1797295"/>
+      <char id="Col109647815" label="DNA" states="states1797295"/>
+      <char id="Col109647816" label="DNA" states="states1797295"/>
+      <char id="Col109647817" label="DNA" states="states1797295"/>
+      <char id="Col109647818" label="DNA" states="states1797295"/>
+      <char id="Col109647819" label="DNA" states="states1797295"/>
+      <char id="Col109647820" label="DNA" states="states1797295"/>
+      <char id="Col109647821" label="DNA" states="states1797295"/>
+      <char id="Col109647822" label="DNA" states="states1797295"/>
+      <char id="Col109647823" label="DNA" states="states1797295"/>
+      <char id="Col109647824" label="DNA" states="states1797295"/>
+      <char id="Col109647825" label="DNA" states="states1797295"/>
+      <char id="Col109647826" label="DNA" states="states1797295"/>
+      <char id="Col109647827" label="DNA" states="states1797295"/>
+      <char id="Col109647828" label="DNA" states="states1797295"/>
+      <char id="Col109647829" label="DNA" states="states1797295"/>
+      <char id="Col109647830" label="DNA" states="states1797295"/>
+      <char id="Col109647831" label="DNA" states="states1797295"/>
+      <char id="Col109647832" label="DNA" states="states1797295"/>
+      <char id="Col109647833" label="DNA" states="states1797295"/>
+      <char id="Col109647834" label="DNA" states="states1797295"/>
+      <char id="Col109647835" label="DNA" states="states1797295"/>
+      <char id="Col109647836" label="DNA" states="states1797295"/>
+      <char id="Col109647837" label="DNA" states="states1797295"/>
+      <char id="Col109647838" label="DNA" states="states1797295"/>
+      <char id="Col109647839" label="DNA" states="states1797295"/>
+      <char id="Col109647840" label="DNA" states="states1797295"/>
+      <char id="Col109647841" label="DNA" states="states1797295"/>
+      <char id="Col109647842" label="DNA" states="states1797295"/>
+      <char id="Col109647843" label="DNA" states="states1797295"/>
+      <char id="Col109647844" label="DNA" states="states1797295"/>
+      <char id="Col109647845" label="DNA" states="states1797295"/>
+      <char id="Col109647846" label="DNA" states="states1797295"/>
+      <char id="Col109647847" label="DNA" states="states1797295"/>
+      <char id="Col109647848" label="DNA" states="states1797295"/>
+      <char id="Col109647849" label="DNA" states="states1797295"/>
+      <char id="Col109647850" label="DNA" states="states1797295"/>
+      <char id="Col109647851" label="DNA" states="states1797295"/>
+      <char id="Col109647852" label="DNA" states="states1797295"/>
+      <char id="Col109647853" label="DNA" states="states1797295"/>
+      <char id="Col109647854" label="DNA" states="states1797295"/>
+      <char id="Col109647855" label="DNA" states="states1797295"/>
+      <char id="Col109647856" label="DNA" states="states1797295"/>
+      <char id="Col109647857" label="DNA" states="states1797295"/>
+      <char id="Col109647858" label="DNA" states="states1797295"/>
+      <char id="Col109647859" label="DNA" states="states1797295"/>
+      <char id="Col109647860" label="DNA" states="states1797295"/>
+      <char id="Col109647861" label="DNA" states="states1797295"/>
+      <char id="Col109647862" label="DNA" states="states1797295"/>
+      <char id="Col109647863" label="DNA" states="states1797295"/>
+      <char id="Col109647864" label="DNA" states="states1797295"/>
+      <char id="Col109647865" label="DNA" states="states1797295"/>
+      <char id="Col109647866" label="DNA" states="states1797295"/>
+      <char id="Col109647867" label="DNA" states="states1797295"/>
+      <char id="Col109647868" label="DNA" states="states1797295"/>
+      <char id="Col109647869" label="DNA" states="states1797295"/>
+      <char id="Col109647870" label="DNA" states="states1797295"/>
+      <char id="Col109647871" label="DNA" states="states1797295"/>
+      <char id="Col109647872" label="DNA" states="states1797295"/>
+      <char id="Col109647873" label="DNA" states="states1797295"/>
+      <char id="Col109647874" label="DNA" states="states1797295"/>
+      <char id="Col109647875" label="DNA" states="states1797295"/>
+      <char id="Col109647876" label="DNA" states="states1797295"/>
+      <char id="Col109647877" label="DNA" states="states1797295"/>
+      <char id="Col109647878" label="DNA" states="states1797295"/>
+      <char id="Col109647879" label="DNA" states="states1797295"/>
+      <char id="Col109647880" label="DNA" states="states1797295"/>
+      <char id="Col109647881" label="DNA" states="states1797295"/>
+      <char id="Col109647882" label="DNA" states="states1797295"/>
+      <char id="Col109647883" label="DNA" states="states1797295"/>
+      <char id="Col109647884" label="DNA" states="states1797295"/>
+      <char id="Col109647885" label="DNA" states="states1797295"/>
+      <char id="Col109647886" label="DNA" states="states1797295"/>
+      <char id="Col109647887" label="DNA" states="states1797295"/>
+      <char id="Col109647888" label="DNA" states="states1797295"/>
+      <char id="Col109647889" label="DNA" states="states1797295"/>
+      <char id="Col109647890" label="DNA" states="states1797295"/>
+      <char id="Col109647891" label="DNA" states="states1797295"/>
+      <char id="Col109647892" label="DNA" states="states1797295"/>
+      <char id="Col109647893" label="DNA" states="states1797295"/>
+      <char id="Col109647894" label="DNA" states="states1797295"/>
+      <char id="Col109647895" label="DNA" states="states1797295"/>
+      <char id="Col109647896" label="DNA" states="states1797295"/>
+      <char id="Col109647897" label="DNA" states="states1797295"/>
+      <char id="Col109647898" label="DNA" states="states1797295"/>
+      <char id="Col109647899" label="DNA" states="states1797295"/>
+      <char id="Col109647900" label="DNA" states="states1797295"/>
+      <char id="Col109647901" label="DNA" states="states1797295"/>
+      <char id="Col109647902" label="DNA" states="states1797295"/>
+      <char id="Col109647903" label="DNA" states="states1797295"/>
+      <char id="Col109647904" label="DNA" states="states1797295"/>
+      <char id="Col109647905" label="DNA" states="states1797295"/>
+      <char id="Col109647906" label="DNA" states="states1797295"/>
+      <char id="Col109647907" label="DNA" states="states1797295"/>
+      <char id="Col109647908" label="DNA" states="states1797295"/>
+    </format>
+    <matrix>
+      <row id="Row1819317" otu="Tl1494165">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACAGTGGGACATCTTCAAGCTGCAGCGTAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCGGATCGGTTGGTGCGTCCGTGGTATGTGAAGGTGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCTAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCACCAAGACGCTGCAAGGTAAGCTGACTGTCACGCCTGCACATATGCAATTGGAGCAACAGATTAGAAAGCGTCATCCAAAGACC-------TAATGCTGCGTTTCCAAAATCAGACGAGCATCCGCGGGAGCACATCATCACCAAACAGCTGACAACGCTGGGGCAACAGTTTACCTTCTACCTATTTCTGATGATGTTTTTTGCCGCCTGCCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCATTTAAGTTGGCGTAAGTTACTTGTGGAGTCCTATTCTTGCAACCATTTTTCGAACATTTCCACATCTGTTGTAGCTTGCCCTTTGACTCCCAGAACCTTTTTCACTTTGTCGTAACCACACTATTCCTGAACTACGCCTCGGCACCCACCATAACCTCCCAGTCGGGAAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTAGACAGGAACACGCTGAAAAGCTCCGCAGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGACCTTGTGTCGGAGGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCTACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTGCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCGCGATTCGGTACGGTGGTGCGAAAGGCCTAGCTTGCGAGCAGCAATCTTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGGAGCCGTGCAGACGGTAGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACGCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGATGATGCACAAACGGCTACCGCGAATTACACTACTTCTCTTTTCATTACAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+      <row id="Row1819318" otu="Tl1494169">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACAGTGGGACATCTTCAAGCTGCAGCGTAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCGGATCGGTTGGTGCGCCCGTGGTATGTGAAGGTGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCTAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCACCAAGACGCTGCAAGGTAAGCTGACTGTCACGCCTGCACATATGCAATTGGAGCAACAGATTAGAAAGCGTCATCCAAAGACC-------TAATGCTGCGTTTCCAAAATCAGACGAGCATCCGCGGGAGCACATCATCACCAAACAGCTGACAACGCTGGGGCAACAGTTTACCTTCTACCTATTTCTGATGATGTTTTTTGCCGCCTGCCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCATTTAAGTTGGCGTAAGTTACTTGTGGAGTCCTATTCTTGCAACCATTTTTCGAACATTTCCACATCTGTTGTAGCTTGCCCTTTGACTCCCAGAACCTTTTTCACTTTGTCGTAACCACACTATTCCTGAACTACGCCTCGGCACCCACCATAACCTCCCAGTCGGGAAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTAGACAGGAACACGCTGAAAAGCTCCGCAGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGACCTTGTGTCGGAGGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCTACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTGCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCGCGATTCGGTACGGTGGTGCGAAAGGCCTAGCTTGCGAGCAGCAATCTTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGGAGCCGTGCAGACGGTAGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACGCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGATGATGCACAAACGGCTACCGCGAATTACACTACTTCTCTTTTCATTACAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+      <row id="Row1819319" otu="Tl1494167">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACAGTGGGACATCTTCAAGCTGCAGCGTAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCGGATCGGTTGGTGCGCCCGTGGTATGTGAAGGTGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCTAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCACCAAGACGCTGCAAGGTAAGCTGACTGTCACGCCTGCACATATGCAATTGGAGCAACAGATTAGAAAGCGTCATCCAAAGACC-------TAATGCTGCGTTTCCAAAATCAGACGAGCATCCGCGGGAGCACATCATCACCAAACAGCTGACAACGCTGGGGCAACAGTTTACCTTCTACCTATTTCTGATGATGTTTTTTGCCGCCTGCCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCATTTAAGTTGGCGTAAGTTACTTGTGGAGTCCTATTCTTGCAACCATTTTTCAAACATTTCCACATCTGTTGTAGCTTGCCCTTTGACTCCCAGAACCTTTTTCACTTTGTCGTAACCACACTATTCCTGAACTACGCCTCGGCACCCACCATAACCTCCCAGTCGGGAAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTAGACAGGAACACGCTGAAAAGCTCCGCAGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGACCTTGTGTCGGAGGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCTACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTGCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCGCGATTCGGTACGGTGGTGCGAAAGGCCTAGCTTGCGAGCAGCAATCTTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGGAGCCGTGCAGACGGTAGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACGCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGATGATGCACAAACGGCTACCGCGAATTACACTACTTCTCTTTTCATTACAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+      <row id="Row1819320" otu="Tl1494172">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACAGTGGGACATCTTCAAGCTGCAGCGTAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCGGATCGGTTGGTGCGCCCGTGGTATGTGAAGGTGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCTAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCACCAAGACGCTGCAAGGTAAGCTGACTGTCACGCCTGCACATATGCAATTGGAGCAACAGATTAGAAAGCGTCATCCAAAGACC-------TAATGCTGCGTTTCCAAAATCAGACGAGCATCCGCGGGAGCACACCATCACCAAACAGCTGACAACGCTGGGGCAACAGTTTACCTTCTACCTATTTCTGATGATGTTTTTTGCCGCCTGCCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCATTTAAGTTGGCGTAAGTTACTTGTGGAGTCCTATTCTTGCAACCATTTTTCAAACATTTCCACATCTGTTGTAGCTTGCCCTTTGACTCCCAGAACCTTTTTCACTTTGTCGTAACCACACTATTCCTGAACTACGCCTCGGCACCCACCATAACCTCCCAGTCGGGAAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTAGACAGGAACACGCTGAAAAGCTCCGCAGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGACCTTGTGTCGGAGGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCTACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTCCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCGCGATTCGGTACGGTGGTGCGAAAGGCCTAGCTTGCGAGCAGCAATCTTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGGAGCCGTGCAGACGGTAGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACGCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGATGATGCACAAACGGCTACCGCGAATTACACTACTTCTCTTTTCATTACAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+      <row id="Row1819321" otu="Tl1494168">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACACTGGGACATCTTCAAGCTGCAGCGAAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCGGATCGGTTGGTGCGCCCGTGGTATGTGAAGGTGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCTAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCAGCAAGACGCTGCAAGGTAAGCTGACTGTCACGCCTGCACATATGCAACTGGAGCAACAGATTAGAAAGCGTCATCCAAAGACC-------TAATGCTGCGTTTCCAAATTCAGACGAGCATCCGCGGGAGCACACCATCACCAAACAGCTGACAACGCTGGGGCAACAGTTTACCTTCTACCTATTTCTGATGATGTTTTTTGCCGCATGTCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCGTTTAAGTTGGCGTAAGTTACTTGTGGAGTCCTATTCTTGCAACCATTTTTCAAACATTCCCACATCTGTTGTAGCTTGCCCTTTGATTCCCAGAACCTTTTTCCCTTTGTCGTAACCACACTATTCCTGAACTACGCCTCGGCACCCACCATAACCTCGCAGTCGGGCAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTGGACAGGAACACGCTGAAAAGCTCCGCAGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGACCTTGTGTCGGAGGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCTACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTCCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCGCGATTCGGTACGGTGGTGCAAAAGGCCTAGCTTGCGAGCAGCAATCGTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGAAGCCGTGCAGACGGTAGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACTCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGATGATGCACAAACGGCTACCGCGAATTACACTACTTCTCTTTTCATTACAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+      <row id="Row1819322" otu="Tl1494173">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACAGTGGGACATCTTCAAGCTGCAGCGTAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCGGATCGGTTGGTGCGCCCGTGGTATGTGAAGATGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCCAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCAGCAAGACGCTGCAAGGTAAGCTGACTGTCACGACTGCATGTATGCAATTTGAGCAACTGATTAGAATGCGTCATCGAACGACC-------TAATGCTGTGTTTCCAAAATCAGAGGAGCATCCGCGGGAGCACACCATCACCAAACAGCTGACAACGCTGGGGCAACAGTTTACCTTCTACCTATTCCTGATGATGTTTTTTGCCGCCTGTCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCATTCAAGTTGGCGTAAGTTACTTGTGAATTTCTGTTCTTGCAACCATTTTTCAAACATTCTCACCTCTGTTATAGCTTGCCCTTTGACTCCCAGCACCTTTTTCACTTTGTCGTAACAACATTATTCCTAAACTACGCCTCTGCACCCACCATAACCTCGCAGTCGGGCAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTAGACAGGAACACGCTGAAAAGCTCCGCTGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGACCTTGTGTCGGATGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCTACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTCCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCGCGATTCGGTACGGTGGTGCGAAAGGCCTAGCTTGCGAGCGGCAATCTTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGAAGCCGTGCAGACGGTGGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACTCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGATGATGCACAAACGGCTACCGCGAATTACACTACTTCTCTTTTCATTGCAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+      <row id="Row1819323" otu="Tl1494171">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACAGTGGGACATCTTCAAGCTGCAGCGTAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCAGATCGGTTGGTGCGCCCGTGGTATGTGAAGATGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCCAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCAGCAAGACGCTGCAAGGTAAGCTGACTGTCACACCTGCATGTATGCAATTTGAGCAACTGATTAGAATGCGTCATCGAACGACC-------TAATGCTGTGTTTCCAAAATCAGAGGAGCATCCGCGGGAGCACACCATCACCAAACAGCTGACAACGCTGGGGCAACAGTTTACCTTCTACCTATTCCTGATGATGTTTTTTGCCGCCTGTCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCATTCAAGTTGGCGTAAGTTACTTGTGAATTTCTGTTCTTGCAACCATTTTTCAAACATTCTCACCTCTGTTATAGCTTGCCCTTTGACTCCCAGCACCTTTTTCACTTTGTCGTAACAACATTATTCCTAAACTACGCCTCTGCACCCACCATAACCTCGCAGTCGGGCAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTAGACAGGAACACGCTGAAAAGCTCCGCTGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGACCTTGTGTCGGATGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCGACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTCCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCGCGATTCGGTACGGTGGTGCGAAAGGCCTAGCTCGCGAGCAGCAATCTTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGAAGCCGTGCAGACGGTGGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACTCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGATGATGCACAAACGGCTGCCGCGAATTACACTACTTCTCTTTTCATTGCAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+      <row id="Row1819324" otu="Tl1494166">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACAGTGGGACATCTTCAAGCTGCAGCGTAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCAGATCGGTTGGTGCGCCCGTGGTATGTGAAGATGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCCAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCAGCAAGACGCTGCAAGGTAAGCTGACTGTCACACCTGCATGTATGCAATTTGAGCAACTGATTAGAATGCGTCATCGAACGACC-------TAATGCTGTGTTTCCAAAATCAGAGGAGCATCCGCGGGAGCACACCATCACCAAACAGCTGACAACGCTGGGGCAACGGTTTACCTTCTACCTATTCCTGATGATGTTTTTTGCCGCCTGTCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCATTCAAGTTGGCGTAAGTTACTTGTGAATTTCTGTTCTTGCAACCATTCTTCAAACATTCTCACCTCTGTTATAGCTTGCCCTTTGACTCCCAGCACCTTTTTCACTTTGTCGTAACAACATTATTCCTAAACTACGCCTCTGCACCCACCATAACCTCGCAGTCGGGCAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTAGACAGGAACACGCTGAAAAGCTCCGCTGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGATCTTGTGTCGGAGGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCTACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTCCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCGCGATTCGGTACGGTGGTGCGAAAGGCCTAGCTTGCGAGCAGTAATCTTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGAAGCCGTGCAGACGGTAGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACTCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGATGATGCACAAACGGCTACCGCGAATTACACTACTTCTCTTTTCATTGCAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+      <row id="Row1819325" otu="Tl1494170">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACAGTGGGACATCTTCAAGCTGCAGCGCAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCGGATCGGTTGATGCGCCCTTGGTATGTGAAGGTGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCTAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCAGCAAGACGCTGCAAGGTAAGCTGACTGTCACGCCTGCACATATGCAATTGGAGCAACAGATTAGAAAGGGTCATCCAAAGACC-------TAATGCTGCGTTTCCAAATTCAGACGAGCATCCGCGGGAGCACACCATCACCAAACAGCTGACAACGCTGGGGCAACAGTTTACCTTCTACCTATTCCTGATGATGTTTTTTGCCGCCTGCCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCGTTTAAGTTGGCGTAAGTTACTTGTGGAGTCCTATTCTTGCAACCATTTTTCAAACATTCCCACATCTGTTGTAGCTTGCCCTTTGACTCCCAGAACCTTTTTCACTTTGTCGTAACCACACTATTCCTGAACTACGCTTCGGCACCCACCATAACCTCCCAGTCGGGAAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTAGACAGGAACACGCTGAAAAGCTCCGCAGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGATCTTGTGTCCGAGGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCTACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTCCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCACGATTCGGTACGGTGGTGCGAAAGGCCTAGCTTGCGAGCAGCAATCTTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGAAGCCGTGCAGACGGTGGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACTCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGGTGATGCACAAACGGCTACCGCGAATTACACTACTTCTCTTTTCATTGCAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+      <row id="Row1819326" otu="Tl1494164">
+        <seq>ATGGTGTCGTTTGGTGCTGCAGCTTCTAATCCACGGGACGCGGAAACTACGCCACAGTGGGACATCTTCAAGCTGCAGCGCAAGATCCTGCTCATCTTTGGAGTCTGGCCAGCGGATCGGTTGATGCGCCCGTGGTATGTGAAGGTGCTGATTGCCATCAATCTGGCAACGCTTGCCATCTGCATGGTGGGTGAGTTTCTGCACGGGCTGTACGCTTACCAGGAGGGCGACCTGAGCGAATCGATCGAAAGCATCTGCCCAACGGTGGCGCGAATATCGGGCTTTCTACGGATGGTGTTTTATCTTGCTAATGAGGAGAAAATCCACCGCGTGCTGAACAACATCAGCAAGACGCTGCAAGGTAAGCTGACTGTCACGCCTGCACATATGCAATTGGAGCAACAGATTAGAAAGGGTCATCCAAAGACC-------TAATGCTGCGTTTCCAAATTCAGACGAGCATCCGCGGGAGCACACCATCACCAAACAGCTGACAACGCTGGGGCAACAGTTTACCTTCTACCTATTCCTGATGATGTTTTTTGCCGCCTGCCTCTACGGAGTTACACCCTTTTTTATCATGATCTACAATTGGGTCCAGGGACAGAGGCCGCTCGTCAAGCTTCTGCCGTTTAAGTTGGCGTAAGTTACTTGTGGAGTCCTATTCTTGCAACCATTTTTCAAACATTCCCACATCTGTTGTAGCTTGCCCTTTGACTCCCAGAACCTTTTTCACTTTGTCGTAACCACACTATTCCTGAACTACGCTTCGGCACCCACCATAACCTCCCAGTCGGGAAGCGATGCACTCTTCAGTGGAGTTTGCCTCTACATTTACGGTCAGTTTCAAGCGATCCGGCTGGAGGTGGAAGCACTCGCCGAAACGGTAGACAGGAACACGCTGAAAAGCTCCGCAGCTGAAACGCATCGCATCAATCTCGAGCTGAGACGCATCAGTAAGCGCCATCAGGCAATCATTGATCTTGTGTCCGAGGTGCGGTCCGCCTTTACGCCGAATGTGCTGCTCGTCTACACGGCCACCGCGATCATCATGTGCATCGTGTGCATCGCCATGCTTGTGGTAAGCGCAGTTTTGGCGTGATTGAAGTCGCATTGAAGTTCTTTGCAAACGGTCCTGCTCCCGTTCCAATACAGGTGGAAGGAATCTACAAGCTCACCTACCTGCCGTACGCGTTTGCCGAGCTGACGTTACTGTTTCTCTACTCGTACAGCGGCACAATCATCCACGATTCGGTACGGTGGTGCGAAAGGCCTAGCTTGCGAGCAGCAATCTTTTACCATCGAGCGTTTCCTAATTCCCTTTTCCCAGAGTGAAGCCGTGCAGACGGTGGCGTACGATTTCCCGTGGTACCGGTACGACCGCAACACTCGCCATCTTATACAAATGATGATGATTAGGGCGCAGTACGGATCGAACGTTGATGTGCCTTTCTTCGAAACCTCGATGGCAAGCTTTTCGGCGGTGCGTCATGTGAACCGGGGTGATGCACAAACGGCTACCGCGAATTACACTACTTCTCTTTTCATTGCAGATCGTTCGTACAGCTTCATCGTACATCACACTGATGAAGTCCTTTTTGTAA</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb25706" id="Tb25706" label="Anopheles gambiae Or39" otus="Tls37568" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@16b8f306 $Rev: 1040 $" datatype="xsd:string" id="meta1798939" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S15820" id="meta1798938" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr75079" id="Tr75079" label="Fig. 2" xsi:type="nex:FloatTree">
+      <meta content="10" datatype="xsd:integer" id="meta1798945" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta1798944" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta1798943" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta1798942" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S15820" id="meta1798941" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn11686103"/>
+      <node id="Tn11686111"/>
+      <node id="Tn11686117"/>
+      <node id="Tn11686114"/>
+      <node id="Tn11686106"/>
+      <node id="Tn11686101"/>
+      <node id="Tn11686115" label="Gambiae2" otu="Tl1494165"/>
+      <node id="Tn11686109" label="Gambiae4" otu="Tl1494169"/>
+      <node id="Tn11686112" label="Gambiae3" otu="Tl1494167"/>
+      <node id="Tn11686102" label="Gambiae1" otu="Tl1494172"/>
+      <node id="Tn11686110" label="PEST" otu="Tl1494168"/>
+      <node id="Tn11686118"/>
+      <node id="Tn11686113" label="Coluzzii1" otu="Tl1494173"/>
+      <node id="Tn11686100" label="Coluzzii2" otu="Tl1494171"/>
+      <node id="Tn11686116"/>
+      <node id="Tn11686107" label="Arabiensis1" otu="Tl1494166"/>
+      <node id="Tn11686108"/>
+      <node id="Tn11686105" label="Arabiensis2" otu="Tl1494170"/>
+      <node id="Tn11686104" label="Arabiensis3" otu="Tl1494164"/>
+      <edge id="edge1798948" source="Tn11686103" target="Tn11686111"/>
+      <edge id="edge1798950" source="Tn11686111" target="Tn11686117"/>
+      <edge id="edge1798952" source="Tn11686117" target="Tn11686114"/>
+      <edge id="edge1798954" source="Tn11686114" target="Tn11686106"/>
+      <edge id="edge1798956" source="Tn11686106" target="Tn11686101"/>
+      <edge id="edge1798958" source="Tn11686101" target="Tn11686115"/>
+      <edge id="edge1798960" source="Tn11686101" target="Tn11686109"/>
+      <edge id="edge1798962" source="Tn11686106" target="Tn11686112"/>
+      <edge id="edge1798964" source="Tn11686114" target="Tn11686102"/>
+      <edge id="edge1798966" source="Tn11686117" target="Tn11686110"/>
+      <edge id="edge1798968" source="Tn11686111" target="Tn11686118"/>
+      <edge id="edge1798970" source="Tn11686118" target="Tn11686113"/>
+      <edge id="edge1798972" source="Tn11686118" target="Tn11686100"/>
+      <edge id="edge1798974" source="Tn11686103" target="Tn11686116"/>
+      <edge id="edge1798976" source="Tn11686116" target="Tn11686107"/>
+      <edge id="edge1798978" source="Tn11686116" target="Tn11686108"/>
+      <edge id="edge1798980" source="Tn11686108" target="Tn11686105"/>
+      <edge id="edge1798982" source="Tn11686108" target="Tn11686104"/>
+    </tree>
+  </trees>
+</nex:nexml>

@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:DwC="http://rs.tdwg.org/dwc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#S14094" generator="org.nexml.model.impl.DocumentImpl" id="S14094" version="0.9" xml:base="http://purl.org/phylo/treebase/phylows/study/TB2:">
+  <meta content="Generated on Thu Aug 14 03:10:12 EDT 2014" datatype="xsd:string" id="meta322832" property="skos:changeNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@ba334e5 $Rev: 1060 $" datatype="xsd:string" id="meta322831" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta322830" property="prism:number" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta322829" property="prism:volume" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mycologia" datatype="xsd:string" id="meta322828" property="dc:publisher" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mycologia" datatype="xsd:string" id="meta322827" property="prism:publicationName" xsi:type="nex:LiteralMeta"/>
+  <meta content="soil" datatype="xsd:string" id="meta322826" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="taxonomy" datatype="xsd:string" id="meta322825" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="phylogeny" datatype="xsd:string" id="meta322824" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Lichtheimia" datatype="xsd:string" id="meta322823" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="Mucoromycotina" datatype="xsd:string" id="meta322822" property="dc:subject" xsi:type="nex:LiteralMeta"/>
+  <meta content="" datatype="xsd:string" id="meta322821" property="prism:doi" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013" datatype="xsd:string" id="meta322820" property="prism:publicationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="Silva G.A." datatype="xsd:string" id="meta322819" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Maia L.C." datatype="xsd:string" id="meta322818" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Malosso E." datatype="xsd:string" id="meta322817" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Vieira H.E." datatype="xsd:string" id="meta322816" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Oliveira R.J." datatype="xsd:string" id="meta322815" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Lima D.X." datatype="xsd:string" id="meta322814" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Hoffmann K." datatype="xsd:string" id="meta322813" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Santiago A.L." datatype="xsd:string" id="meta322812" property="dc:contributor" xsi:type="nex:LiteralMeta"/>
+  <meta content="Santiago A.L., Hoffmann K., Lima D.X., Oliveira R.J., Vieira H.E., Malosso E., Maia L.C., &amp; Silva G.A." datatype="xsd:string" id="meta322811" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+  <meta content="A new and interesting Mucorales (Mucoromycotina) isolated from Brazilian soil" datatype="xsd:string" id="meta322810" property="dc:title" xsi:type="nex:LiteralMeta"/>
+  <meta content="Santiago A.L., Hoffmann K., Lima D.X., Oliveira R.J., Vieira H.E., Malosso E., Maia L.C., &amp; Silva G.A. 2013. A new and interesting Mucorales (Mucoromycotina) isolated from Brazilian soil. Mycologia, ." datatype="xsd:string" id="meta322809" property="dcterms:bibliographicCitation" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013-04-02" datatype="xsd:string" id="meta322808" property="prism:creationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013-04-16" datatype="xsd:string" id="meta322807" property="prism:modificationDate" xsi:type="nex:LiteralMeta"/>
+  <meta content="2013-04-16" datatype="xsd:string" id="meta322806" property="dc:date" xsi:type="nex:LiteralMeta"/>
+  <meta content="A new and interesting Mucorales (Mucoromycotina) isolated from Brazilian soil" datatype="xsd:string" id="meta322805" property="tb:title.study" xsi:type="nex:LiteralMeta"/>
+  <meta datatype="xsd:anySimpleType" id="meta322804" property="tb:identifier.study.tb1" xsi:type="nex:LiteralMeta"/>
+  <meta content="14094" datatype="xsd:string" id="meta322803" property="tb:identifier.study" xsi:type="nex:LiteralMeta"/>
+  <meta content="Study" datatype="xsd:string" id="meta322801" property="prism:section" xsi:type="nex:LiteralMeta"/>
+  <otus about="#Tls30670" id="Tls30670" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1b2bf49c $Rev: 1040 $" datatype="xsd:string" id="meta322834" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <otu about="#Tl1078048" id="Tl1078048" label="Fennellomyces linderi FJ713096">
+      <meta content="11118" datatype="xsd:long" id="meta322841" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="26550" datatype="xsd:long" id="meta322840" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/101136" id="meta322839" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Fennellomyces linderi" datatype="xsd:string" id="meta322838" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832789" id="meta322837" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322836" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078043" id="Tl1078043" label="Fennellomyces linderi GQ249890">
+      <meta content="11118" datatype="xsd:long" id="meta322848" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="26550" datatype="xsd:long" id="meta322847" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/101136" id="meta322846" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Fennellomyces linderi" datatype="xsd:string" id="meta322845" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832789" id="meta322844" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322843" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078073" id="Tl1078073" label="Lichtheimia brasiliensis KC740488">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322850" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078068" id="Tl1078068" label="Lichtheimia brasiliensis KC740487">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322852" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078064" id="Tl1078064" label="Lichtheimia brailiensis KC740489">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322854" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078071" id="Tl1078071" label="Lichtheimia brasiliensis KC740486">
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322856" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078055" id="Tl1078055" label="Dichotomocladium elegans HM999950">
+      <meta content="8954" datatype="xsd:long" id="meta322863" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="21537" datatype="xsd:long" id="meta322862" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/101130" id="meta322861" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Dichotomocladium elegans" datatype="xsd:string" id="meta322860" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832785" id="meta322859" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322858" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078067" id="Tl1078067" label="Lichtheimia ramosa HQ285654">
+      <meta content="560395" datatype="xsd:long" id="meta322870" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322869" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322868" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322867" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322866" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322865" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078046" id="Tl1078046" label="Lichtheimia ramosa FJ719405">
+      <meta content="560395" datatype="xsd:long" id="meta322877" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322876" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322875" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322874" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322873" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322872" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078042" id="Tl1078042" label="Lichtheimia ramosa JF796106">
+      <meta content="560395" datatype="xsd:long" id="meta322884" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322883" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322882" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322881" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322880" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322879" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078075" id="Tl1078075" label="Lichtheimia ramosa EU852634">
+      <meta content="560395" datatype="xsd:long" id="meta322891" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322890" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322889" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322888" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322887" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322886" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078074" id="Tl1078074" label="Lichtheimia ramosa EU409804">
+      <meta content="560395" datatype="xsd:long" id="meta322898" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322897" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322896" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322895" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322894" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322893" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078062" id="Tl1078062" label="Lichtheimia ramosa EU409801">
+      <meta content="560395" datatype="xsd:long" id="meta322905" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322904" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322903" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322902" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322901" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322900" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078057" id="Tl1078057" label="Lichtheimia ramosa HQ285674">
+      <meta content="560395" datatype="xsd:long" id="meta322912" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322911" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322910" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322909" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322908" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322907" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078047" id="Tl1078047" label="Lichtheimia ramosa  HQ647301">
+      <meta content="560395" datatype="xsd:long" id="meta322919" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322918" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322917" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322916" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322915" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322914" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078038" id="Tl1078038" label="Lichtheimia ramosa HQ285700">
+      <meta content="560395" datatype="xsd:long" id="meta322926" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322925" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322924" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322923" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322922" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322921" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078041" id="Tl1078041" label="Lichtheimia ramosa FJ719406">
+      <meta content="560395" datatype="xsd:long" id="meta322933" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322932" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322931" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322930" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322929" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322928" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078065" id="Tl1078065" label="Lichtheimia ramosa GQ342875">
+      <meta content="560395" datatype="xsd:long" id="meta322940" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322939" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322938" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322937" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322936" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322935" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078063" id="Tl1078063" label="Lichtheimia ramosa GQ342874">
+      <meta content="560395" datatype="xsd:long" id="meta322947" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322946" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322945" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322944" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322943" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322942" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078049" id="Tl1078049" label="Lichtheimia sphaerocystis GQ342899">
+      <meta content="560440" datatype="xsd:long" id="meta322951" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742279" datatype="xsd:long" id="meta322950" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322949" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078051" id="Tl1078051" label="Lichtheimia sphaerocystis GQ342901">
+      <meta content="560440" datatype="xsd:long" id="meta322955" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742279" datatype="xsd:long" id="meta322954" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322953" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078066" id="Tl1078066" label="Lichtheimia sphaerocystis GQ342900">
+      <meta content="560440" datatype="xsd:long" id="meta322959" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742279" datatype="xsd:long" id="meta322958" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322957" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078072" id="Tl1078072" label="Lichtheimia ramosa EU852633">
+      <meta content="560395" datatype="xsd:long" id="meta322966" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742225" datatype="xsd:long" id="meta322965" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/688394" id="meta322964" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia ramosa" datatype="xsd:string" id="meta322963" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832917" id="meta322962" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322961" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078045" id="Tl1078045" label="Lichtheimia hyalospora AY944894">
+      <meta content="42146" datatype="xsd:long" id="meta322970" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="783753" datatype="xsd:long" id="meta322969" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322968" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078052" id="Tl1078052" label="Lichtheimia hyalospora AY944893">
+      <meta content="42146" datatype="xsd:long" id="meta322974" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="783753" datatype="xsd:long" id="meta322973" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322972" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078039" id="Tl1078039" label="Lichtheimia hyalospora GQ342898">
+      <meta content="42146" datatype="xsd:long" id="meta322978" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="783753" datatype="xsd:long" id="meta322977" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322976" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078060" id="Tl1078060" label="Lichtheimia hyalospora AY944892">
+      <meta content="42146" datatype="xsd:long" id="meta322982" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="783753" datatype="xsd:long" id="meta322981" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322980" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078044" id="Tl1078044" label="Lichtheimia hyalospora EF030530">
+      <meta content="42146" datatype="xsd:long" id="meta322986" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="783753" datatype="xsd:long" id="meta322985" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322984" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078050" id="Tl1078050" label="Lichtheimia hyalospora GQ342894">
+      <meta content="42146" datatype="xsd:long" id="meta322990" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="783753" datatype="xsd:long" id="meta322989" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322988" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078070" id="Tl1078070" label="Lichtheimia hyalospora GQ342895">
+      <meta content="42146" datatype="xsd:long" id="meta322994" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="783753" datatype="xsd:long" id="meta322993" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322992" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078058" id="Tl1078058" label="Lichtheimia corymbifera GQ342888">
+      <meta content="45" datatype="xsd:long" id="meta323001" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="780707" datatype="xsd:long" id="meta323000" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/42458" id="meta322999" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia corymbifera" datatype="xsd:string" id="meta322998" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832916" id="meta322997" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta322996" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078054" id="Tl1078054" label="Lichtheimia corymbifera HM104200">
+      <meta content="45" datatype="xsd:long" id="meta323008" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="780707" datatype="xsd:long" id="meta323007" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/42458" id="meta323006" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia corymbifera" datatype="xsd:string" id="meta323005" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832916" id="meta323004" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323003" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078061" id="Tl1078061" label="Lichtheimia corymbifera HM104221">
+      <meta content="45" datatype="xsd:long" id="meta323015" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="780707" datatype="xsd:long" id="meta323014" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/42458" id="meta323013" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia corymbifera" datatype="xsd:string" id="meta323012" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832916" id="meta323011" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323010" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078040" id="Tl1078040" label="Lichtheimia corymbifera GQ342878">
+      <meta content="45" datatype="xsd:long" id="meta323022" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="780707" datatype="xsd:long" id="meta323021" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/42458" id="meta323020" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia corymbifera" datatype="xsd:string" id="meta323019" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832916" id="meta323018" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323017" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078069" id="Tl1078069" label="Lichtheimia corymbifera GQ342889">
+      <meta content="45" datatype="xsd:long" id="meta323029" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="780707" datatype="xsd:long" id="meta323028" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.uniprot.org/taxonomy/42458" id="meta323027" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta content="Lichtheimia corymbifera" datatype="xsd:string" id="meta323026" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2832916" id="meta323025" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323024" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078053" id="Tl1078053" label="Lichtheimia ornata GQ342892">
+      <meta content="560439" datatype="xsd:long" id="meta323033" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742276" datatype="xsd:long" id="meta323032" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323031" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078059" id="Tl1078059" label="Lichtheimia ornata GQ342890">
+      <meta content="560439" datatype="xsd:long" id="meta323037" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742276" datatype="xsd:long" id="meta323036" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323035" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+    <otu about="#Tl1078056" id="Tl1078056" label="Lichtheimia ornata GQ342891">
+      <meta content="560439" datatype="xsd:long" id="meta323041" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
+      <meta content="742276" datatype="xsd:long" id="meta323040" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323039" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    </otu>
+  </otus>
+  <characters about="#M16830" id="M16830" label="Lichtheimia 5.8s" otus="Tls30670" xml:base="http://purl.org/phylo/treebase/phylows/matrix/TB2:" xsi:type="nex:DnaSeqs">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlMatrixWriter@3f7e2ef $Rev: 1056 $" datatype="xsd:string" id="meta323066" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta content="16830" datatype="xsd:long" id="meta323065" property="tb:identifier.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="173" datatype="xsd:integer" id="meta323064" property="tb:nchar.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="38" datatype="xsd:integer" id="meta323063" property="tb:ntax.matrix" xsi:type="nex:LiteralMeta"/>
+    <meta content="DNA" datatype="xsd:string" id="meta323062" property="tb:type.matrix" xsi:type="nex:LiteralMeta"/>
+    <format>
+      <states id="states323043">
+        <state id="state323044" symbol="A"/>
+        <state id="state323045" symbol="C"/>
+        <state id="state323046" symbol="G"/>
+        <state id="state323047" symbol="T"/>
+        <uncertain_state_set id="uncertain_state_set323048" symbol="K">
+          <member state="state323046"/>
+          <member state="state323047"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323049" symbol="M">
+          <member state="state323044"/>
+          <member state="state323045"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323050" symbol="R">
+          <member state="state323044"/>
+          <member state="state323046"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323051" symbol="S">
+          <member state="state323045"/>
+          <member state="state323046"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323052" symbol="W">
+          <member state="state323044"/>
+          <member state="state323047"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323053" symbol="Y">
+          <member state="state323045"/>
+          <member state="state323047"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323054" symbol="B">
+          <member state="state323045"/>
+          <member state="state323046"/>
+          <member state="state323047"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323055" symbol="D">
+          <member state="state323044"/>
+          <member state="state323046"/>
+          <member state="state323047"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323056" symbol="H">
+          <member state="state323044"/>
+          <member state="state323046"/>
+          <member state="state323047"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323057" symbol="V">
+          <member state="state323044"/>
+          <member state="state323045"/>
+          <member state="state323046"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323058" symbol="N">
+          <member state="state323047"/>
+          <member state="state323044"/>
+          <member state="state323045"/>
+          <member state="state323046"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323059" symbol="X">
+          <member state="state323047"/>
+          <member state="state323044"/>
+          <member state="state323045"/>
+          <member state="state323046"/>
+        </uncertain_state_set>
+        <uncertain_state_set id="uncertain_state_set323060" symbol="-"/>
+        <uncertain_state_set id="uncertain_state_set323061" symbol="?">
+          <member state="uncertain_state_set323060"/>
+          <member state="state323047"/>
+          <member state="state323045"/>
+          <member state="state323046"/>
+          <member state="state323044"/>
+        </uncertain_state_set>
+      </states>
+      <char id="Col76199984" label="DNA" states="states323043"/>
+      <char id="Col76199985" label="DNA" states="states323043"/>
+      <char id="Col76199986" label="DNA" states="states323043"/>
+      <char id="Col76199987" label="DNA" states="states323043"/>
+      <char id="Col76199988" label="DNA" states="states323043"/>
+      <char id="Col76199989" label="DNA" states="states323043"/>
+      <char id="Col76199990" label="DNA" states="states323043"/>
+      <char id="Col76199991" label="DNA" states="states323043"/>
+      <char id="Col76199992" label="DNA" states="states323043"/>
+      <char id="Col76199993" label="DNA" states="states323043"/>
+      <char id="Col76199994" label="DNA" states="states323043"/>
+      <char id="Col76199995" label="DNA" states="states323043"/>
+      <char id="Col76199996" label="DNA" states="states323043"/>
+      <char id="Col76199997" label="DNA" states="states323043"/>
+      <char id="Col76199998" label="DNA" states="states323043"/>
+      <char id="Col76199999" label="DNA" states="states323043"/>
+      <char id="Col76200000" label="DNA" states="states323043"/>
+      <char id="Col76200001" label="DNA" states="states323043"/>
+      <char id="Col76200002" label="DNA" states="states323043"/>
+      <char id="Col76200003" label="DNA" states="states323043"/>
+      <char id="Col76200004" label="DNA" states="states323043"/>
+      <char id="Col76200005" label="DNA" states="states323043"/>
+      <char id="Col76200006" label="DNA" states="states323043"/>
+      <char id="Col76200007" label="DNA" states="states323043"/>
+      <char id="Col76200008" label="DNA" states="states323043"/>
+      <char id="Col76200009" label="DNA" states="states323043"/>
+      <char id="Col76200010" label="DNA" states="states323043"/>
+      <char id="Col76200011" label="DNA" states="states323043"/>
+      <char id="Col76200012" label="DNA" states="states323043"/>
+      <char id="Col76200013" label="DNA" states="states323043"/>
+      <char id="Col76200014" label="DNA" states="states323043"/>
+      <char id="Col76200015" label="DNA" states="states323043"/>
+      <char id="Col76200016" label="DNA" states="states323043"/>
+      <char id="Col76200017" label="DNA" states="states323043"/>
+      <char id="Col76200018" label="DNA" states="states323043"/>
+      <char id="Col76200019" label="DNA" states="states323043"/>
+      <char id="Col76200020" label="DNA" states="states323043"/>
+      <char id="Col76200021" label="DNA" states="states323043"/>
+      <char id="Col76200022" label="DNA" states="states323043"/>
+      <char id="Col76200023" label="DNA" states="states323043"/>
+      <char id="Col76200024" label="DNA" states="states323043"/>
+      <char id="Col76200025" label="DNA" states="states323043"/>
+      <char id="Col76200026" label="DNA" states="states323043"/>
+      <char id="Col76200027" label="DNA" states="states323043"/>
+      <char id="Col76200028" label="DNA" states="states323043"/>
+      <char id="Col76200029" label="DNA" states="states323043"/>
+      <char id="Col76200030" label="DNA" states="states323043"/>
+      <char id="Col76200031" label="DNA" states="states323043"/>
+      <char id="Col76200032" label="DNA" states="states323043"/>
+      <char id="Col76200033" label="DNA" states="states323043"/>
+      <char id="Col76200034" label="DNA" states="states323043"/>
+      <char id="Col76200035" label="DNA" states="states323043"/>
+      <char id="Col76200036" label="DNA" states="states323043"/>
+      <char id="Col76200037" label="DNA" states="states323043"/>
+      <char id="Col76200038" label="DNA" states="states323043"/>
+      <char id="Col76200039" label="DNA" states="states323043"/>
+      <char id="Col76200040" label="DNA" states="states323043"/>
+      <char id="Col76200041" label="DNA" states="states323043"/>
+      <char id="Col76200042" label="DNA" states="states323043"/>
+      <char id="Col76200043" label="DNA" states="states323043"/>
+      <char id="Col76200044" label="DNA" states="states323043"/>
+      <char id="Col76200045" label="DNA" states="states323043"/>
+      <char id="Col76200046" label="DNA" states="states323043"/>
+      <char id="Col76200047" label="DNA" states="states323043"/>
+      <char id="Col76200048" label="DNA" states="states323043"/>
+      <char id="Col76200049" label="DNA" states="states323043"/>
+      <char id="Col76200050" label="DNA" states="states323043"/>
+      <char id="Col76200051" label="DNA" states="states323043"/>
+      <char id="Col76200052" label="DNA" states="states323043"/>
+      <char id="Col76200053" label="DNA" states="states323043"/>
+      <char id="Col76200054" label="DNA" states="states323043"/>
+      <char id="Col76200055" label="DNA" states="states323043"/>
+      <char id="Col76200056" label="DNA" states="states323043"/>
+      <char id="Col76200057" label="DNA" states="states323043"/>
+      <char id="Col76200058" label="DNA" states="states323043"/>
+      <char id="Col76200059" label="DNA" states="states323043"/>
+      <char id="Col76200060" label="DNA" states="states323043"/>
+      <char id="Col76200061" label="DNA" states="states323043"/>
+      <char id="Col76200062" label="DNA" states="states323043"/>
+      <char id="Col76200063" label="DNA" states="states323043"/>
+      <char id="Col76200064" label="DNA" states="states323043"/>
+      <char id="Col76200065" label="DNA" states="states323043"/>
+      <char id="Col76200066" label="DNA" states="states323043"/>
+      <char id="Col76200067" label="DNA" states="states323043"/>
+      <char id="Col76200068" label="DNA" states="states323043"/>
+      <char id="Col76200069" label="DNA" states="states323043"/>
+      <char id="Col76200070" label="DNA" states="states323043"/>
+      <char id="Col76200071" label="DNA" states="states323043"/>
+      <char id="Col76200072" label="DNA" states="states323043"/>
+      <char id="Col76200073" label="DNA" states="states323043"/>
+      <char id="Col76200074" label="DNA" states="states323043"/>
+      <char id="Col76200075" label="DNA" states="states323043"/>
+      <char id="Col76200076" label="DNA" states="states323043"/>
+      <char id="Col76200077" label="DNA" states="states323043"/>
+      <char id="Col76200078" label="DNA" states="states323043"/>
+      <char id="Col76200079" label="DNA" states="states323043"/>
+      <char id="Col76200080" label="DNA" states="states323043"/>
+      <char id="Col76200081" label="DNA" states="states323043"/>
+      <char id="Col76200082" label="DNA" states="states323043"/>
+      <char id="Col76200083" label="DNA" states="states323043"/>
+      <char id="Col76200084" label="DNA" states="states323043"/>
+      <char id="Col76200085" label="DNA" states="states323043"/>
+      <char id="Col76200086" label="DNA" states="states323043"/>
+      <char id="Col76200087" label="DNA" states="states323043"/>
+      <char id="Col76200088" label="DNA" states="states323043"/>
+      <char id="Col76200089" label="DNA" states="states323043"/>
+      <char id="Col76200090" label="DNA" states="states323043"/>
+      <char id="Col76200091" label="DNA" states="states323043"/>
+      <char id="Col76200092" label="DNA" states="states323043"/>
+      <char id="Col76200093" label="DNA" states="states323043"/>
+      <char id="Col76200094" label="DNA" states="states323043"/>
+      <char id="Col76200095" label="DNA" states="states323043"/>
+      <char id="Col76200096" label="DNA" states="states323043"/>
+      <char id="Col76200097" label="DNA" states="states323043"/>
+      <char id="Col76200098" label="DNA" states="states323043"/>
+      <char id="Col76200099" label="DNA" states="states323043"/>
+      <char id="Col76200100" label="DNA" states="states323043"/>
+      <char id="Col76200101" label="DNA" states="states323043"/>
+      <char id="Col76200102" label="DNA" states="states323043"/>
+      <char id="Col76200103" label="DNA" states="states323043"/>
+      <char id="Col76200104" label="DNA" states="states323043"/>
+      <char id="Col76200105" label="DNA" states="states323043"/>
+      <char id="Col76200106" label="DNA" states="states323043"/>
+      <char id="Col76200107" label="DNA" states="states323043"/>
+      <char id="Col76200108" label="DNA" states="states323043"/>
+      <char id="Col76200109" label="DNA" states="states323043"/>
+      <char id="Col76200110" label="DNA" states="states323043"/>
+      <char id="Col76200111" label="DNA" states="states323043"/>
+      <char id="Col76200112" label="DNA" states="states323043"/>
+      <char id="Col76200113" label="DNA" states="states323043"/>
+      <char id="Col76200114" label="DNA" states="states323043"/>
+      <char id="Col76200115" label="DNA" states="states323043"/>
+      <char id="Col76200116" label="DNA" states="states323043"/>
+      <char id="Col76200117" label="DNA" states="states323043"/>
+      <char id="Col76200118" label="DNA" states="states323043"/>
+      <char id="Col76200119" label="DNA" states="states323043"/>
+      <char id="Col76200120" label="DNA" states="states323043"/>
+      <char id="Col76200121" label="DNA" states="states323043"/>
+      <char id="Col76200122" label="DNA" states="states323043"/>
+      <char id="Col76200123" label="DNA" states="states323043"/>
+      <char id="Col76200124" label="DNA" states="states323043"/>
+      <char id="Col76200125" label="DNA" states="states323043"/>
+      <char id="Col76200126" label="DNA" states="states323043"/>
+      <char id="Col76200127" label="DNA" states="states323043"/>
+      <char id="Col76200128" label="DNA" states="states323043"/>
+      <char id="Col76200129" label="DNA" states="states323043"/>
+      <char id="Col76200130" label="DNA" states="states323043"/>
+      <char id="Col76200131" label="DNA" states="states323043"/>
+      <char id="Col76200132" label="DNA" states="states323043"/>
+      <char id="Col76200133" label="DNA" states="states323043"/>
+      <char id="Col76200134" label="DNA" states="states323043"/>
+      <char id="Col76200135" label="DNA" states="states323043"/>
+      <char id="Col76200136" label="DNA" states="states323043"/>
+      <char id="Col76200137" label="DNA" states="states323043"/>
+      <char id="Col76200138" label="DNA" states="states323043"/>
+      <char id="Col76200139" label="DNA" states="states323043"/>
+      <char id="Col76200140" label="DNA" states="states323043"/>
+      <char id="Col76200141" label="DNA" states="states323043"/>
+      <char id="Col76200142" label="DNA" states="states323043"/>
+      <char id="Col76200143" label="DNA" states="states323043"/>
+      <char id="Col76200144" label="DNA" states="states323043"/>
+      <char id="Col76200145" label="DNA" states="states323043"/>
+      <char id="Col76200146" label="DNA" states="states323043"/>
+      <char id="Col76200147" label="DNA" states="states323043"/>
+      <char id="Col76200148" label="DNA" states="states323043"/>
+      <char id="Col76200149" label="DNA" states="states323043"/>
+      <char id="Col76200150" label="DNA" states="states323043"/>
+      <char id="Col76200151" label="DNA" states="states323043"/>
+      <char id="Col76200152" label="DNA" states="states323043"/>
+      <char id="Col76200153" label="DNA" states="states323043"/>
+      <char id="Col76200154" label="DNA" states="states323043"/>
+      <char id="Col76200155" label="DNA" states="states323043"/>
+      <char id="Col76200156" label="DNA" states="states323043"/>
+    </format>
+    <matrix>
+      <row about="#Row1306342" id="Row1306342" otu="Tl1078048">
+        <meta id="meta323241" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="FJ713096" datatype="xsd:string" id="meta323245" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="LB3B(ii)" datatype="xsd:string" id="meta323244" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323243" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323242" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTTTTAGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAATTGCGATAATTAGTGCGAATTGCAGACTTTGTGAATCATCGAGTTCTTGAACGCACCTTGCACCTAGTGGTTTATTCTACTAGGTACGGTTGTTTCAGTATC-ACAAA-AC---TC</seq>
+      </row>
+      <row about="#Row1306343" id="Row1306343" otu="Tl1078043">
+        <meta id="meta323247" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="GQ249890" datatype="xsd:string" id="meta323251" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="UD 95/08" datatype="xsd:string" id="meta323250" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323249" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323248" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTTTTAGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAATTGCGATAATTAGTGCGAATTGCAGACTTTGTGAATCATCGAGTTCTTGAACGCACCTTGCACCTAGTGGTTTATTCTACTAGGTACGGTTGTTTCAGTATC-ACAAA-AC---TC</seq>
+      </row>
+      <row about="#Row1306344" id="Row1306344" otu="Tl1078073">
+        <meta id="meta323253" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="KC740488" datatype="xsd:string" id="meta323256" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323255" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323254" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAA-CAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATCCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCACCTAGTGGTTTAT-CCACTAGGTACGGTTGTTTCAGTATCTGCAACTACCAAAC</seq>
+      </row>
+      <row about="#Row1306345" id="Row1306345" otu="Tl1078068">
+        <meta id="meta323258" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="KC740487" datatype="xsd:string" id="meta323261" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323260" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323259" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAA-CAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCACCTAGTGGTTTAT-CCACTAGGTACGGTTGTTTCAGTATCTGCAACTACCAAAC</seq>
+      </row>
+      <row about="#Row1306346" id="Row1306346" otu="Tl1078064">
+        <meta id="meta323263" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="KC740489" datatype="xsd:string" id="meta323266" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323265" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323264" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAA-CAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCACCTAGTGGTTTAT-CCACTAGGTACGGTTGTTTCGGTATCTGCAACTACCAAAC</seq>
+      </row>
+      <row about="#Row1306347" id="Row1306347" otu="Tl1078071">
+        <meta id="meta323268" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="KC740486" datatype="xsd:string" id="meta323271" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323270" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323269" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAA-CAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCACCTAGTGGTTTAT-CCACTAGGTACGGTTGTTTCAGTATCTGCAACTACCAAAC</seq>
+      </row>
+      <row about="#Row1306348" id="Row1306348" otu="Tl1078055">
+        <meta id="meta323273" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="HM999950" datatype="xsd:string" id="meta323277" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 695.76" datatype="xsd:string" id="meta323276" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323275" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323274" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTAGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTAATGCGACTTGCATACATTGCGAATCATCGAGTTCTTGAACGCACCTTGCACCTGGAGGTTCTT-CCTCCAGGTATGGTTGTTTCAGTATTCACAAA-AC---TC</seq>
+      </row>
+      <row about="#Row1306349" id="Row1306349" otu="Tl1078067">
+        <meta id="meta323279" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="HQ285654" datatype="xsd:string" id="meta323283" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="HC-A2" datatype="xsd:string" id="meta323282" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323281" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323280" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306350" id="Row1306350" otu="Tl1078046">
+        <meta id="meta323285" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="FJ719405" datatype="xsd:string" id="meta323289" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 269.65" datatype="xsd:string" id="meta323288" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323287" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323286" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306351" id="Row1306351" otu="Tl1078042">
+        <meta id="meta323291" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="JF796106" datatype="xsd:string" id="meta323295" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="124.198" datatype="xsd:string" id="meta323294" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323293" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323292" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306352" id="Row1306352" otu="Tl1078075">
+        <meta id="meta323297" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="EU852634" datatype="xsd:string" id="meta323301" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="HKU22" datatype="xsd:string" id="meta323300" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323299" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323298" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306353" id="Row1306353" otu="Tl1078074">
+        <meta id="meta323303" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="EU409804" datatype="xsd:string" id="meta323307" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="FH2" datatype="xsd:string" id="meta323306" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323305" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323304" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306354" id="Row1306354" otu="Tl1078062">
+        <meta id="meta323309" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="EU409801" datatype="xsd:string" id="meta323313" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="Band7" datatype="xsd:string" id="meta323312" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323311" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323310" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306355" id="Row1306355" otu="Tl1078057">
+        <meta id="meta323315" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="HQ285674" datatype="xsd:string" id="meta323319" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="PT-A3" datatype="xsd:string" id="meta323318" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323317" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323316" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCAATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306356" id="Row1306356" otu="Tl1078047">
+        <meta id="meta323321" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="China" datatype="xsd:string" id="meta323327" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="Xinjiang" datatype="xsd:string" id="meta323326" property="DwC:stateProvince" xsi:type="nex:LiteralMeta"/>
+          <meta content="HQ647301" datatype="xsd:string" id="meta323325" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="LppM" datatype="xsd:string" id="meta323324" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323323" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323322" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306357" id="Row1306357" otu="Tl1078038">
+        <meta id="meta323329" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="HQ285700" datatype="xsd:string" id="meta323333" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="PT-B3" datatype="xsd:string" id="meta323332" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323331" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323330" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306358" id="Row1306358" otu="Tl1078041">
+        <meta id="meta323335" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="FJ719406" datatype="xsd:string" id="meta323339" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 270.65" datatype="xsd:string" id="meta323338" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323337" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323336" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306359" id="Row1306359" otu="Tl1078065">
+        <meta id="meta323341" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="GQ342875" datatype="xsd:string" id="meta323345" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 271.65" datatype="xsd:string" id="meta323344" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323343" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323342" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306360" id="Row1306360" otu="Tl1078063">
+        <meta id="meta323347" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="Ghana" datatype="xsd:string" id="meta323352" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342874" datatype="xsd:string" id="meta323351" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 582.65" datatype="xsd:string" id="meta323350" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323349" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323348" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306361" id="Row1306361" otu="Tl1078049">
+        <meta id="meta323354" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="India" datatype="xsd:string" id="meta323359" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342899" datatype="xsd:string" id="meta323358" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 647.78" datatype="xsd:string" id="meta323357" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323356" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323355" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCATTTTACACCAATC</seq>
+      </row>
+      <row about="#Row1306362" id="Row1306362" otu="Tl1078051">
+        <meta id="meta323361" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="India" datatype="xsd:string" id="meta323366" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342901" datatype="xsd:string" id="meta323365" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 648.78" datatype="xsd:string" id="meta323364" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323363" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323362" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCATTTTACACCAATC</seq>
+      </row>
+      <row about="#Row1306363" id="Row1306363" otu="Tl1078066">
+        <meta id="meta323368" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="India" datatype="xsd:string" id="meta323373" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342900" datatype="xsd:string" id="meta323372" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 420.7" datatype="xsd:string" id="meta323371" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323370" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323369" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCATTTTACACCAATC</seq>
+      </row>
+      <row about="#Row1306364" id="Row1306364" otu="Tl1078072">
+        <meta id="meta323375" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="EU852633" datatype="xsd:string" id="meta323379" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="HKU21" datatype="xsd:string" id="meta323378" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323377" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323376" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGCGAATCATCGAGTTCTCGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCAACTACCAATC</seq>
+      </row>
+      <row about="#Row1306365" id="Row1306365" otu="Tl1078045">
+        <meta id="meta323381" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="AY944894" datatype="xsd:string" id="meta323385" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="FSU2686; CBS100.36" datatype="xsd:string" id="meta323384" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323383" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323382" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CCACTAGGCACAGTTGTTTCAGTATC-ATCCTAACCAATC</seq>
+      </row>
+      <row about="#Row1306366" id="Row1306366" otu="Tl1078052">
+        <meta id="meta323387" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="AY944893" datatype="xsd:string" id="meta323391" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="FSU2684; CBS100.28; ATCC 10148a; NRRL1304" datatype="xsd:string" id="meta323390" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323389" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323388" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATC-ATCCTAACCAATC</seq>
+      </row>
+      <row about="#Row1306367" id="Row1306367" otu="Tl1078039">
+        <meta id="meta323393" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="GQ342898" datatype="xsd:string" id="meta323397" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 100.36" datatype="xsd:string" id="meta323396" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323395" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323394" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTCCAGTATC-ATCCTAACCAATC</seq>
+      </row>
+      <row about="#Row1306368" id="Row1306368" otu="Tl1078060">
+        <meta id="meta323399" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="AY944892" datatype="xsd:string" id="meta323403" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="FSU2685; CBS518.71; ATCC 22617" datatype="xsd:string" id="meta323402" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323401" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323400" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACGGTTGTTTCAGTATC-ATCCTAACCAATC</seq>
+      </row>
+      <row about="#Row1306369" id="Row1306369" otu="Tl1078044">
+        <meta id="meta323405" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="EF030530" datatype="xsd:string" id="meta323409" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="FSU5796; CBS173.67; NRRL2916" datatype="xsd:string" id="meta323408" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323407" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323406" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACGGTTGTTTCAGTATC-ATCCTAACCAATC</seq>
+      </row>
+      <row about="#Row1306370" id="Row1306370" otu="Tl1078050">
+        <meta id="meta323411" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="Japan" datatype="xsd:string" id="meta323416" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342894" datatype="xsd:string" id="meta323415" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 518.71" datatype="xsd:string" id="meta323414" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323413" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323412" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACGGTTGTTTCAGTATC-ATCCTAACCAATC</seq>
+      </row>
+      <row about="#Row1306371" id="Row1306371" otu="Tl1078070">
+        <meta id="meta323418" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="Ghana" datatype="xsd:string" id="meta323423" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342895" datatype="xsd:string" id="meta323422" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 102.36" datatype="xsd:string" id="meta323421" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323420" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323419" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACGGTTGTTTCAGTATC-ATCCTAACCAATC</seq>
+      </row>
+      <row about="#Row1306372" id="Row1306372" otu="Tl1078058">
+        <meta id="meta323425" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="India" datatype="xsd:string" id="meta323430" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342888" datatype="xsd:string" id="meta323429" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 102.48" datatype="xsd:string" id="meta323428" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323427" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323426" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCATCCACCAATC</seq>
+      </row>
+      <row about="#Row1306373" id="Row1306373" otu="Tl1078054">
+        <meta id="meta323432" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="HM104200" datatype="xsd:string" id="meta323436" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CNM-CM CM5039" datatype="xsd:string" id="meta323435" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323434" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323433" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCATCCACCAATC</seq>
+      </row>
+      <row about="#Row1306374" id="Row1306374" otu="Tl1078061">
+        <meta id="meta323438" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="HM104221" datatype="xsd:string" id="meta323442" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CNM-CM CM5984" datatype="xsd:string" id="meta323441" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323440" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323439" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCATCCACCAATC</seq>
+      </row>
+      <row about="#Row1306375" id="Row1306375" otu="Tl1078040">
+        <meta id="meta323444" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="Afghanistan" datatype="xsd:string" id="meta323449" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342878" datatype="xsd:string" id="meta323448" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 429.75" datatype="xsd:string" id="meta323447" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323446" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323445" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCATCCACCAATC</seq>
+      </row>
+      <row about="#Row1306376" id="Row1306376" otu="Tl1078069">
+        <meta id="meta323451" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="Japan" datatype="xsd:string" id="meta323456" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342889" datatype="xsd:string" id="meta323455" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 519.71" datatype="xsd:string" id="meta323454" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323453" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323452" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCATCCACCAATC</seq>
+      </row>
+      <row about="#Row1306377" id="Row1306377" otu="Tl1078053">
+        <meta id="meta323458" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="Spain" datatype="xsd:string" id="meta323463" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342892" datatype="xsd:string" id="meta323462" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CNM-CM CM4978" datatype="xsd:string" id="meta323461" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323460" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323459" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCATCCACCAATC</seq>
+      </row>
+      <row about="#Row1306378" id="Row1306378" otu="Tl1078059">
+        <meta id="meta323465" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="GQ342890" datatype="xsd:string" id="meta323469" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 958.68" datatype="xsd:string" id="meta323468" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323467" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323466" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGAGCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCAGTATCTGCATCCACCAATC</seq>
+      </row>
+      <row about="#Row1306379" id="Row1306379" otu="Tl1078056">
+        <meta id="meta323471" rel="tb:rowSegment" xsi:type="nex:ResourceMeta">
+          <meta content="India" datatype="xsd:string" id="meta323476" property="DwC:country" xsi:type="nex:LiteralMeta"/>
+          <meta content="GQ342891" datatype="xsd:string" id="meta323475" property="DwC:associatedSequences" xsi:type="nex:LiteralMeta"/>
+          <meta content="CBS 291.66" datatype="xsd:string" id="meta323474" property="DwC:otherCatalogNumbers" xsi:type="nex:LiteralMeta"/>
+          <meta content="173" datatype="xsd:integer" id="meta323473" property="tb:endIndex" xsi:type="nex:LiteralMeta"/>
+          <meta content="1" datatype="xsd:integer" id="meta323472" property="tb:startIndex" xsi:type="nex:LiteralMeta"/>
+        </meta>
+        <seq>AAAACAACTCTTGGCAATGGATCTCTTGGTTCTCGCATCGATGAAGARCGTAGCAAAGTGCGATAATTATTGCGACTTGCATTCATAGTGAATCATCGAGTTCTTGAACGCATCTTGCGCCTAGTAGTCAAT-CTACTAGGCACAGTTGTTTCTGTATCTGCATCCACCAATC</seq>
+      </row>
+    </matrix>
+  </characters>
+  <trees about="#Tb20969" id="Tb20969" label="Lichtheimia 5.8s bayesian" otus="Tls30670" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@1e9f8f35 $Rev: 1040 $" datatype="xsd:string" id="meta323479" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S14094" id="meta323478" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr63109" id="Tr63109" label="PHYLIP 1+" xsi:type="nex:FloatTree">
+      <meta content="38" datatype="xsd:integer" id="meta323485" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta323484" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Consensus" datatype="xsd:string" id="meta323483" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta323482" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323481" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn10042985"/>
+      <node id="Tn10043006"/>
+      <node id="Tn10043013" label="Fennellomyces linderi FJ713096" otu="Tl1078048"/>
+      <node id="Tn10043022" label="Fennellomyces linderi GQ249890" otu="Tl1078043"/>
+      <node id="Tn10043002" label="1.00"/>
+      <node id="Tn10043016" label="Dichotomocladium elegans HM999950" otu="Tl1078055"/>
+      <node id="Tn10043011" label="1.00"/>
+      <node id="Tn10043014" label="0.68"/>
+      <node id="Tn10043018" label="Lichtheimia brasiliensis KC740488" otu="Tl1078073"/>
+      <node id="Tn10043012" label="Lichtheimia brasiliensis KC740487" otu="Tl1078068"/>
+      <node id="Tn10042981" label="Lichtheimia brailiensis KC740489" otu="Tl1078064"/>
+      <node id="Tn10042979" label="Lichtheimia brasiliensis KC740486" otu="Tl1078071"/>
+      <node id="Tn10042977" label="1.00"/>
+      <node id="Tn10043010" label="0.84"/>
+      <node id="Tn10043001" label="Lichtheimia ramosa HQ285654" otu="Tl1078067"/>
+      <node id="Tn10043015" label="Lichtheimia ramosa FJ719405" otu="Tl1078046"/>
+      <node id="Tn10042978" label="Lichtheimia ramosa JF796106" otu="Tl1078042"/>
+      <node id="Tn10043026" label="Lichtheimia ramosa EU852634" otu="Tl1078075"/>
+      <node id="Tn10043019" label="Lichtheimia ramosa EU409804" otu="Tl1078074"/>
+      <node id="Tn10042991" label="Lichtheimia ramosa EU409801" otu="Tl1078062"/>
+      <node id="Tn10043009" label="Lichtheimia ramosa HQ285674" otu="Tl1078057"/>
+      <node id="Tn10042995" label="Lichtheimia ramosa  HQ647301" otu="Tl1078047"/>
+      <node id="Tn10042993" label="Lichtheimia ramosa HQ285700" otu="Tl1078038"/>
+      <node id="Tn10043020" label="Lichtheimia ramosa FJ719406" otu="Tl1078041"/>
+      <node id="Tn10043003" label="Lichtheimia ramosa GQ342875" otu="Tl1078065"/>
+      <node id="Tn10043017" label="Lichtheimia ramosa GQ342874" otu="Tl1078063"/>
+      <node id="Tn10042994" label="Lichtheimia ramosa EU852633" otu="Tl1078072"/>
+      <node id="Tn10043024" label="0.96"/>
+      <node id="Tn10042987" label="Lichtheimia corymbifera GQ342888" otu="Tl1078058"/>
+      <node id="Tn10042990" label="Lichtheimia corymbifera HM104200" otu="Tl1078054"/>
+      <node id="Tn10043023" label="Lichtheimia corymbifera HM104221" otu="Tl1078061"/>
+      <node id="Tn10043005" label="Lichtheimia corymbifera GQ342878" otu="Tl1078040"/>
+      <node id="Tn10043007" label="Lichtheimia corymbifera GQ342889" otu="Tl1078069"/>
+      <node id="Tn10042983" label="Lichtheimia ornata GQ342892" otu="Tl1078053"/>
+      <node id="Tn10042984" label="Lichtheimia ornata GQ342890" otu="Tl1078059"/>
+      <node id="Tn10043025" label="Lichtheimia ornata GQ342891" otu="Tl1078056"/>
+      <node id="Tn10042996" label="0.96"/>
+      <node id="Tn10042980" label="0.83"/>
+      <node id="Tn10043004" label="Lichtheimia sphaerocystis GQ342899" otu="Tl1078049"/>
+      <node id="Tn10042982" label="Lichtheimia sphaerocystis GQ342901" otu="Tl1078051"/>
+      <node id="Tn10042999" label="Lichtheimia sphaerocystis GQ342900" otu="Tl1078066"/>
+      <node id="Tn10042997" label="1.00"/>
+      <node id="Tn10042998" label="Lichtheimia hyalospora AY944894" otu="Tl1078045"/>
+      <node id="Tn10042986" label="Lichtheimia hyalospora AY944893" otu="Tl1078052"/>
+      <node id="Tn10043000" label="Lichtheimia hyalospora GQ342898" otu="Tl1078039"/>
+      <node id="Tn10043021" label="0.92"/>
+      <node id="Tn10042989" label="Lichtheimia hyalospora AY944892" otu="Tl1078060"/>
+      <node id="Tn10042992" label="Lichtheimia hyalospora EF030530" otu="Tl1078044"/>
+      <node id="Tn10042988" label="Lichtheimia hyalospora GQ342894" otu="Tl1078050"/>
+      <node id="Tn10043008" label="Lichtheimia hyalospora GQ342895" otu="Tl1078070"/>
+      <edge id="edge323488" length="0.2199375" source="Tn10042985" target="Tn10043006"/>
+      <edge id="edge323490" length="0.05585" source="Tn10043006" target="Tn10043013"/>
+      <edge id="edge323492" length="0.056301" source="Tn10043006" target="Tn10043022"/>
+      <edge id="edge323494" length="0.2199375" source="Tn10042985" target="Tn10043002"/>
+      <edge id="edge323496" length="0.685068" source="Tn10043002" target="Tn10043016"/>
+      <edge id="edge323498" length="0.52243" source="Tn10043002" target="Tn10043011"/>
+      <edge id="edge323500" length="0.139018" source="Tn10043011" target="Tn10043014"/>
+      <edge id="edge323502" length="0.110391" source="Tn10043014" target="Tn10043018"/>
+      <edge id="edge323504" length="0.106601" source="Tn10043014" target="Tn10043012"/>
+      <edge id="edge323506" length="0.055291" source="Tn10043014" target="Tn10042981"/>
+      <edge id="edge323508" length="0.057602" source="Tn10043014" target="Tn10042979"/>
+      <edge id="edge323510" length="0.488509" source="Tn10043011" target="Tn10042977"/>
+      <edge id="edge323512" length="0.16965" source="Tn10042977" target="Tn10043010"/>
+      <edge id="edge323514" length="0.058393" source="Tn10043010" target="Tn10043001"/>
+      <edge id="edge323516" length="0.054939" source="Tn10043010" target="Tn10043015"/>
+      <edge id="edge323518" length="0.057665" source="Tn10043010" target="Tn10042978"/>
+      <edge id="edge323520" length="0.057138" source="Tn10043010" target="Tn10043026"/>
+      <edge id="edge323522" length="0.055682" source="Tn10043010" target="Tn10043019"/>
+      <edge id="edge323524" length="0.054748" source="Tn10043010" target="Tn10042991"/>
+      <edge id="edge323526" length="0.111853" source="Tn10043010" target="Tn10043009"/>
+      <edge id="edge323528" length="0.056852" source="Tn10043010" target="Tn10042995"/>
+      <edge id="edge323530" length="0.05703" source="Tn10043010" target="Tn10042993"/>
+      <edge id="edge323532" length="0.056274" source="Tn10043010" target="Tn10043020"/>
+      <edge id="edge323534" length="0.053831" source="Tn10043010" target="Tn10043003"/>
+      <edge id="edge323536" length="0.056463" source="Tn10043010" target="Tn10043017"/>
+      <edge id="edge323538" length="0.057254" source="Tn10043010" target="Tn10042994"/>
+      <edge id="edge323540" length="0.188414" source="Tn10042977" target="Tn10043024"/>
+      <edge id="edge323542" length="0.056911" source="Tn10043024" target="Tn10042987"/>
+      <edge id="edge323544" length="0.052789" source="Tn10043024" target="Tn10042990"/>
+      <edge id="edge323546" length="0.056268" source="Tn10043024" target="Tn10043023"/>
+      <edge id="edge323548" length="0.055478" source="Tn10043024" target="Tn10043005"/>
+      <edge id="edge323550" length="0.055657" source="Tn10043024" target="Tn10043007"/>
+      <edge id="edge323552" length="0.055257" source="Tn10043024" target="Tn10042983"/>
+      <edge id="edge323554" length="0.055771" source="Tn10043024" target="Tn10042984"/>
+      <edge id="edge323556" length="0.111941" source="Tn10043024" target="Tn10043025"/>
+      <edge id="edge323558" length="0.279597" source="Tn10043024" target="Tn10042996"/>
+      <edge id="edge323560" length="0.205774" source="Tn10042996" target="Tn10042980"/>
+      <edge id="edge323562" length="0.056551" source="Tn10042980" target="Tn10043004"/>
+      <edge id="edge323564" length="0.056288" source="Tn10042980" target="Tn10042982"/>
+      <edge id="edge323566" length="0.057286" source="Tn10042980" target="Tn10042999"/>
+      <edge id="edge323568" length="0.294638" source="Tn10042996" target="Tn10042997"/>
+      <edge id="edge323570" length="0.114929" source="Tn10042997" target="Tn10042998"/>
+      <edge id="edge323572" length="0.057469" source="Tn10042997" target="Tn10042986"/>
+      <edge id="edge323574" length="0.114366" source="Tn10042997" target="Tn10043000"/>
+      <edge id="edge323576" length="0.111398" source="Tn10042997" target="Tn10043021"/>
+      <edge id="edge323578" length="0.054877" source="Tn10043021" target="Tn10042989"/>
+      <edge id="edge323580" length="0.053148" source="Tn10043021" target="Tn10042992"/>
+      <edge id="edge323582" length="0.055558" source="Tn10043021" target="Tn10042988"/>
+      <edge id="edge323584" length="0.053966" source="Tn10043021" target="Tn10043008"/>
+    </tree>
+  </trees>
+  <trees about="#Tb20971" id="Tb20971" label="Lichtheimia 5.8s MP" otus="Tls30670" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@1e9f8f35 $Rev: 1040 $" datatype="xsd:string" id="meta323587" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S14094" id="meta323586" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr63111" id="Tr63111" label="PAUP 1" xsi:type="nex:FloatTree">
+      <meta content="38" datatype="xsd:integer" id="meta323593" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta323592" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta323591" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta323590" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323589" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn10043117"/>
+      <node id="Tn10043136" label="0"/>
+      <node id="Tn10043128" label="Fennellomyces linderi FJ713096" otu="Tl1078048"/>
+      <node id="Tn10043114" label="Fennellomyces linderi GQ249890" otu="Tl1078043"/>
+      <node id="Tn10043142" label="99.610001"/>
+      <node id="Tn10043146" label="Dichotomocladium elegans HM999950" otu="Tl1078055"/>
+      <node id="Tn10043139" label="95.538559"/>
+      <node id="Tn10043124" label="77.335403"/>
+      <node id="Tn10043144" label="Lichtheimia brasiliensis KC740488" otu="Tl1078073"/>
+      <node id="Tn10043102" label="Lichtheimia brasiliensis KC740487" otu="Tl1078068"/>
+      <node id="Tn10043127" label="Lichtheimia brailiensis KC740489" otu="Tl1078064"/>
+      <node id="Tn10043120" label="Lichtheimia brasiliensis KC740486" otu="Tl1078071"/>
+      <node id="Tn10043105" label="94.308319"/>
+      <node id="Tn10043107" label="86.163109"/>
+      <node id="Tn10043121" label="Lichtheimia ramosa HQ285654" otu="Tl1078067"/>
+      <node id="Tn10043135" label="Lichtheimia ramosa FJ719405" otu="Tl1078046"/>
+      <node id="Tn10043125" label="Lichtheimia ramosa JF796106" otu="Tl1078042"/>
+      <node id="Tn10043131" label="Lichtheimia ramosa EU852634" otu="Tl1078075"/>
+      <node id="Tn10043122" label="Lichtheimia ramosa EU409804" otu="Tl1078074"/>
+      <node id="Tn10043104" label="Lichtheimia ramosa EU409801" otu="Tl1078062"/>
+      <node id="Tn10043106" label="Lichtheimia ramosa HQ285674" otu="Tl1078057"/>
+      <node id="Tn10043137" label="Lichtheimia ramosa  HQ647301" otu="Tl1078047"/>
+      <node id="Tn10043134" label="Lichtheimia ramosa HQ285700" otu="Tl1078038"/>
+      <node id="Tn10043126" label="Lichtheimia ramosa FJ719406" otu="Tl1078041"/>
+      <node id="Tn10043140" label="Lichtheimia ramosa GQ342875" otu="Tl1078065"/>
+      <node id="Tn10043130" label="Lichtheimia ramosa GQ342874" otu="Tl1078063"/>
+      <node id="Tn10043112" label="Lichtheimia ramosa EU852633" otu="Tl1078072"/>
+      <node id="Tn10043150" label="64.998421"/>
+      <node id="Tn10043123" label="Lichtheimia corymbifera GQ342888" otu="Tl1078058"/>
+      <node id="Tn10043149" label="Lichtheimia corymbifera HM104200" otu="Tl1078054"/>
+      <node id="Tn10043113" label="Lichtheimia corymbifera HM104221" otu="Tl1078061"/>
+      <node id="Tn10043143" label="Lichtheimia corymbifera GQ342878" otu="Tl1078040"/>
+      <node id="Tn10043147" label="Lichtheimia corymbifera GQ342889" otu="Tl1078069"/>
+      <node id="Tn10043119" label="Lichtheimia ornata GQ342892" otu="Tl1078053"/>
+      <node id="Tn10043118" label="Lichtheimia ornata GQ342890" otu="Tl1078059"/>
+      <node id="Tn10043108" label="Lichtheimia ornata GQ342891" otu="Tl1078056"/>
+      <node id="Tn10043141" label="71.888092"/>
+      <node id="Tn10043109" label="67.811897"/>
+      <node id="Tn10043103" label="Lichtheimia sphaerocystis GQ342899" otu="Tl1078049"/>
+      <node id="Tn10043115" label="Lichtheimia sphaerocystis GQ342901" otu="Tl1078051"/>
+      <node id="Tn10043116" label="Lichtheimia sphaerocystis GQ342900" otu="Tl1078066"/>
+      <node id="Tn10043132" label="84.538986"/>
+      <node id="Tn10043111" label="Lichtheimia hyalospora AY944894" otu="Tl1078045"/>
+      <node id="Tn10043129" label="Lichtheimia hyalospora AY944893" otu="Tl1078052"/>
+      <node id="Tn10043145" label="Lichtheimia hyalospora GQ342898" otu="Tl1078039"/>
+      <node id="Tn10043138" label="56.919716"/>
+      <node id="Tn10043133" label="Lichtheimia hyalospora AY944892" otu="Tl1078060"/>
+      <node id="Tn10043110" label="Lichtheimia hyalospora EF030530" otu="Tl1078044"/>
+      <node id="Tn10043151" label="Lichtheimia hyalospora GQ342894" otu="Tl1078050"/>
+      <node id="Tn10043148" label="Lichtheimia hyalospora GQ342895" otu="Tl1078070"/>
+      <edge id="edge323596" length="49.8050005" source="Tn10043117" target="Tn10043136"/>
+      <edge id="edge323598" length="100.0" source="Tn10043136" target="Tn10043128"/>
+      <edge id="edge323600" length="100.0" source="Tn10043136" target="Tn10043114"/>
+      <edge id="edge323602" length="49.8050005" source="Tn10043117" target="Tn10043142"/>
+      <edge id="edge323604" length="100.0" source="Tn10043142" target="Tn10043146"/>
+      <edge id="edge323606" length="95.538559" source="Tn10043142" target="Tn10043139"/>
+      <edge id="edge323608" length="77.335403" source="Tn10043139" target="Tn10043124"/>
+      <edge id="edge323610" length="100.0" source="Tn10043124" target="Tn10043144"/>
+      <edge id="edge323612" length="100.0" source="Tn10043124" target="Tn10043102"/>
+      <edge id="edge323614" length="100.0" source="Tn10043124" target="Tn10043127"/>
+      <edge id="edge323616" length="100.0" source="Tn10043124" target="Tn10043120"/>
+      <edge id="edge323618" length="94.308319" source="Tn10043139" target="Tn10043105"/>
+      <edge id="edge323620" length="86.163109" source="Tn10043105" target="Tn10043107"/>
+      <edge id="edge323622" length="100.0" source="Tn10043107" target="Tn10043121"/>
+      <edge id="edge323624" length="100.0" source="Tn10043107" target="Tn10043135"/>
+      <edge id="edge323626" length="100.0" source="Tn10043107" target="Tn10043125"/>
+      <edge id="edge323628" length="100.0" source="Tn10043107" target="Tn10043131"/>
+      <edge id="edge323630" length="100.0" source="Tn10043107" target="Tn10043122"/>
+      <edge id="edge323632" length="100.0" source="Tn10043107" target="Tn10043104"/>
+      <edge id="edge323634" length="100.0" source="Tn10043107" target="Tn10043106"/>
+      <edge id="edge323636" length="100.0" source="Tn10043107" target="Tn10043137"/>
+      <edge id="edge323638" length="100.0" source="Tn10043107" target="Tn10043134"/>
+      <edge id="edge323640" length="100.0" source="Tn10043107" target="Tn10043126"/>
+      <edge id="edge323642" length="100.0" source="Tn10043107" target="Tn10043140"/>
+      <edge id="edge323644" length="100.0" source="Tn10043107" target="Tn10043130"/>
+      <edge id="edge323646" length="100.0" source="Tn10043107" target="Tn10043112"/>
+      <edge id="edge323648" length="64.998421" source="Tn10043105" target="Tn10043150"/>
+      <edge id="edge323650" length="100.0" source="Tn10043150" target="Tn10043123"/>
+      <edge id="edge323652" length="100.0" source="Tn10043150" target="Tn10043149"/>
+      <edge id="edge323654" length="100.0" source="Tn10043150" target="Tn10043113"/>
+      <edge id="edge323656" length="100.0" source="Tn10043150" target="Tn10043143"/>
+      <edge id="edge323658" length="100.0" source="Tn10043150" target="Tn10043147"/>
+      <edge id="edge323660" length="100.0" source="Tn10043150" target="Tn10043119"/>
+      <edge id="edge323662" length="100.0" source="Tn10043150" target="Tn10043118"/>
+      <edge id="edge323664" length="100.0" source="Tn10043150" target="Tn10043108"/>
+      <edge id="edge323666" length="71.888092" source="Tn10043150" target="Tn10043141"/>
+      <edge id="edge323668" length="67.811897" source="Tn10043141" target="Tn10043109"/>
+      <edge id="edge323670" length="100.0" source="Tn10043109" target="Tn10043103"/>
+      <edge id="edge323672" length="100.0" source="Tn10043109" target="Tn10043115"/>
+      <edge id="edge323674" length="100.0" source="Tn10043109" target="Tn10043116"/>
+      <edge id="edge323676" length="84.538986" source="Tn10043141" target="Tn10043132"/>
+      <edge id="edge323678" length="100.0" source="Tn10043132" target="Tn10043111"/>
+      <edge id="edge323680" length="100.0" source="Tn10043132" target="Tn10043129"/>
+      <edge id="edge323682" length="100.0" source="Tn10043132" target="Tn10043145"/>
+      <edge id="edge323684" length="56.919716" source="Tn10043132" target="Tn10043138"/>
+      <edge id="edge323686" length="100.0" source="Tn10043138" target="Tn10043133"/>
+      <edge id="edge323688" length="100.0" source="Tn10043138" target="Tn10043110"/>
+      <edge id="edge323690" length="100.0" source="Tn10043138" target="Tn10043151"/>
+      <edge id="edge323692" length="100.0" source="Tn10043138" target="Tn10043148"/>
+    </tree>
+  </trees>
+  <trees about="#Tb20970" id="Tb20970" label="Lichtheimia 5.8s ML" otus="Tls30670" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@1e9f8f35 $Rev: 1040 $" datatype="xsd:string" id="meta323695" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S14094" id="meta323694" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr63110" id="Tr63110" label="PHYLIP 1+" xsi:type="nex:FloatTree">
+      <meta content="38" datatype="xsd:integer" id="meta323701" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta323700" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta323699" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta323698" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323697" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn10043092"/>
+      <node id="Tn10043027"/>
+      <node id="Tn10043068" label="Fennellomyces linderi FJ713096" otu="Tl1078048"/>
+      <node id="Tn10043038" label="Fennellomyces linderi GQ249890" otu="Tl1078043"/>
+      <node id="Tn10043074" label="1000"/>
+      <node id="Tn10043050" label="Dichotomocladium elegans HM999950" otu="Tl1078055"/>
+      <node id="Tn10043076" label="978"/>
+      <node id="Tn10043067" label="792"/>
+      <node id="Tn10043054" label="Lichtheimia brasiliensis KC740488" otu="Tl1078073"/>
+      <node id="Tn10043061"/>
+      <node id="Tn10043039" label="Lichtheimia brailiensis KC740489" otu="Tl1078064"/>
+      <node id="Tn10043029"/>
+      <node id="Tn10043064" label="Lichtheimia brasiliensis KC740487" otu="Tl1078068"/>
+      <node id="Tn10043049" label="Lichtheimia brasiliensis KC740486" otu="Tl1078071"/>
+      <node id="Tn10043100" label="968"/>
+      <node id="Tn10043047" label="903"/>
+      <node id="Tn10043077"/>
+      <node id="Tn10043048" label="Lichtheimia ramosa FJ719406" otu="Tl1078041"/>
+      <node id="Tn10043033"/>
+      <node id="Tn10043080" label="Lichtheimia ramosa GQ342875" otu="Tl1078065"/>
+      <node id="Tn10043085" label="Lichtheimia ramosa GQ342874" otu="Tl1078063"/>
+      <node id="Tn10043052"/>
+      <node id="Tn10043057" label="Lichtheimia ramosa HQ285700" otu="Tl1078038"/>
+      <node id="Tn10043045"/>
+      <node id="Tn10043072" label="Lichtheimia ramosa  HQ647301" otu="Tl1078047"/>
+      <node id="Tn10043046"/>
+      <node id="Tn10043098" label="Lichtheimia ramosa EU852633" otu="Tl1078072"/>
+      <node id="Tn10043086"/>
+      <node id="Tn10043044" label="Lichtheimia ramosa EU409804" otu="Tl1078074"/>
+      <node id="Tn10043094"/>
+      <node id="Tn10043084" label="Lichtheimia ramosa EU852634" otu="Tl1078075"/>
+      <node id="Tn10043041"/>
+      <node id="Tn10043032" label="Lichtheimia ramosa JF796106" otu="Tl1078042"/>
+      <node id="Tn10043095"/>
+      <node id="Tn10043037" label="Lichtheimia ramosa EU409801" otu="Tl1078062"/>
+      <node id="Tn10043083"/>
+      <node id="Tn10043028" label="Lichtheimia ramosa FJ719405" otu="Tl1078046"/>
+      <node id="Tn10043036"/>
+      <node id="Tn10043090" label="Lichtheimia ramosa HQ285654" otu="Tl1078067"/>
+      <node id="Tn10043071" label="Lichtheimia ramosa HQ285674" otu="Tl1078057"/>
+      <node id="Tn10043066" label="827"/>
+      <node id="Tn10043031"/>
+      <node id="Tn10043051" label="Lichtheimia corymbifera GQ342889" otu="Tl1078069"/>
+      <node id="Tn10043034"/>
+      <node id="Tn10043081" label="Lichtheimia corymbifera GQ342878" otu="Tl1078040"/>
+      <node id="Tn10043035"/>
+      <node id="Tn10043040" label="Lichtheimia corymbifera HM104221" otu="Tl1078061"/>
+      <node id="Tn10043053"/>
+      <node id="Tn10043093" label="Lichtheimia corymbifera HM104200" otu="Tl1078054"/>
+      <node id="Tn10043078"/>
+      <node id="Tn10043069" label="Lichtheimia corymbifera GQ342888" otu="Tl1078058"/>
+      <node id="Tn10043087"/>
+      <node id="Tn10043088" label="Lichtheimia ornata GQ342891" otu="Tl1078056"/>
+      <node id="Tn10043056"/>
+      <node id="Tn10043058" label="Lichtheimia ornata GQ342892" otu="Tl1078053"/>
+      <node id="Tn10043060" label="Lichtheimia ornata GQ342890" otu="Tl1078059"/>
+      <node id="Tn10043075" label="850"/>
+      <node id="Tn10043042" label="994"/>
+      <node id="Tn10043062" label="Lichtheimia sphaerocystis GQ342900" otu="Tl1078066"/>
+      <node id="Tn10043043"/>
+      <node id="Tn10043079" label="Lichtheimia sphaerocystis GQ342899" otu="Tl1078049"/>
+      <node id="Tn10043091" label="Lichtheimia sphaerocystis GQ342901" otu="Tl1078051"/>
+      <node id="Tn10043101" label="933"/>
+      <node id="Tn10043099"/>
+      <node id="Tn10043070" label="Lichtheimia hyalospora AY944893" otu="Tl1078052"/>
+      <node id="Tn10043096"/>
+      <node id="Tn10043065" label="Lichtheimia hyalospora AY944894" otu="Tl1078045"/>
+      <node id="Tn10043073" label="Lichtheimia hyalospora GQ342898" otu="Tl1078039"/>
+      <node id="Tn10043063" label="652"/>
+      <node id="Tn10043089" label="Lichtheimia hyalospora GQ342895" otu="Tl1078070"/>
+      <node id="Tn10043030"/>
+      <node id="Tn10043059" label="Lichtheimia hyalospora GQ342894" otu="Tl1078050"/>
+      <node id="Tn10043055"/>
+      <node id="Tn10043082" label="Lichtheimia hyalospora AY944892" otu="Tl1078060"/>
+      <node id="Tn10043097" label="Lichtheimia hyalospora EF030530" otu="Tl1078044"/>
+      <edge id="edge323704" length="0.023498" source="Tn10043092" target="Tn10043027"/>
+      <edge id="edge323706" length="0.0" source="Tn10043027" target="Tn10043068"/>
+      <edge id="edge323708" length="0.0" source="Tn10043027" target="Tn10043038"/>
+      <edge id="edge323710" length="0.023498" source="Tn10043092" target="Tn10043074"/>
+      <edge id="edge323712" length="0.077985" source="Tn10043074" target="Tn10043050"/>
+      <edge id="edge323714" length="0.055327" source="Tn10043074" target="Tn10043076"/>
+      <edge id="edge323716" length="0.007125" source="Tn10043076" target="Tn10043067"/>
+      <edge id="edge323718" length="0.005821" source="Tn10043067" target="Tn10043054"/>
+      <edge id="edge323720" length="0.0" source="Tn10043067" target="Tn10043061"/>
+      <edge id="edge323722" length="0.005821" source="Tn10043061" target="Tn10043039"/>
+      <edge id="edge323724" length="0.0" source="Tn10043061" target="Tn10043029"/>
+      <edge id="edge323726" length="0.0" source="Tn10043029" target="Tn10043064"/>
+      <edge id="edge323728" length="0.0" source="Tn10043029" target="Tn10043049"/>
+      <edge id="edge323730" length="0.045334" source="Tn10043076" target="Tn10043100"/>
+      <edge id="edge323732" length="0.011718" source="Tn10043100" target="Tn10043047"/>
+      <edge id="edge323734" length="0.0" source="Tn10043047" target="Tn10043077"/>
+      <edge id="edge323736" length="0.0" source="Tn10043077" target="Tn10043048"/>
+      <edge id="edge323738" length="0.0" source="Tn10043077" target="Tn10043033"/>
+      <edge id="edge323740" length="0.0" source="Tn10043033" target="Tn10043080"/>
+      <edge id="edge323742" length="0.0" source="Tn10043033" target="Tn10043085"/>
+      <edge id="edge323744" length="0.0" source="Tn10043047" target="Tn10043052"/>
+      <edge id="edge323746" length="0.0" source="Tn10043052" target="Tn10043057"/>
+      <edge id="edge323748" length="0.0" source="Tn10043052" target="Tn10043045"/>
+      <edge id="edge323750" length="0.0" source="Tn10043045" target="Tn10043072"/>
+      <edge id="edge323752" length="0.0" source="Tn10043045" target="Tn10043046"/>
+      <edge id="edge323754" length="0.0" source="Tn10043046" target="Tn10043098"/>
+      <edge id="edge323756" length="0.0" source="Tn10043046" target="Tn10043086"/>
+      <edge id="edge323758" length="0.0" source="Tn10043086" target="Tn10043044"/>
+      <edge id="edge323760" length="0.0" source="Tn10043086" target="Tn10043094"/>
+      <edge id="edge323762" length="0.0" source="Tn10043094" target="Tn10043084"/>
+      <edge id="edge323764" length="0.0" source="Tn10043094" target="Tn10043041"/>
+      <edge id="edge323766" length="0.0" source="Tn10043041" target="Tn10043032"/>
+      <edge id="edge323768" length="0.0" source="Tn10043041" target="Tn10043095"/>
+      <edge id="edge323770" length="0.0" source="Tn10043095" target="Tn10043037"/>
+      <edge id="edge323772" length="0.0" source="Tn10043095" target="Tn10043083"/>
+      <edge id="edge323774" length="0.0" source="Tn10043083" target="Tn10043028"/>
+      <edge id="edge323776" length="0.0" source="Tn10043083" target="Tn10043036"/>
+      <edge id="edge323778" length="0.0" source="Tn10043036" target="Tn10043090"/>
+      <edge id="edge323780" length="0.005803" source="Tn10043036" target="Tn10043071"/>
+      <edge id="edge323782" length="0.012393" source="Tn10043100" target="Tn10043066"/>
+      <edge id="edge323784" length="1.0E-6" source="Tn10043066" target="Tn10043031"/>
+      <edge id="edge323786" length="0.0" source="Tn10043031" target="Tn10043051"/>
+      <edge id="edge323788" length="0.0" source="Tn10043031" target="Tn10043034"/>
+      <edge id="edge323790" length="0.0" source="Tn10043034" target="Tn10043081"/>
+      <edge id="edge323792" length="0.0" source="Tn10043034" target="Tn10043035"/>
+      <edge id="edge323794" length="0.0" source="Tn10043035" target="Tn10043040"/>
+      <edge id="edge323796" length="0.0" source="Tn10043035" target="Tn10043053"/>
+      <edge id="edge323798" length="0.0" source="Tn10043053" target="Tn10043093"/>
+      <edge id="edge323800" length="0.0" source="Tn10043053" target="Tn10043078"/>
+      <edge id="edge323802" length="0.0" source="Tn10043078" target="Tn10043069"/>
+      <edge id="edge323804" length="0.0" source="Tn10043078" target="Tn10043087"/>
+      <edge id="edge323806" length="0.005879" source="Tn10043087" target="Tn10043088"/>
+      <edge id="edge323808" length="0.0" source="Tn10043087" target="Tn10043056"/>
+      <edge id="edge323810" length="0.0" source="Tn10043056" target="Tn10043058"/>
+      <edge id="edge323812" length="0.0" source="Tn10043056" target="Tn10043060"/>
+      <edge id="edge323814" length="0.02269" source="Tn10043066" target="Tn10043075"/>
+      <edge id="edge323816" length="0.015371" source="Tn10043075" target="Tn10043042"/>
+      <edge id="edge323818" length="0.0" source="Tn10043042" target="Tn10043062"/>
+      <edge id="edge323820" length="0.0" source="Tn10043042" target="Tn10043043"/>
+      <edge id="edge323822" length="0.0" source="Tn10043043" target="Tn10043079"/>
+      <edge id="edge323824" length="0.0" source="Tn10043043" target="Tn10043091"/>
+      <edge id="edge323826" length="0.024264" source="Tn10043075" target="Tn10043101"/>
+      <edge id="edge323828" length="0.0" source="Tn10043101" target="Tn10043099"/>
+      <edge id="edge323830" length="0.0" source="Tn10043099" target="Tn10043070"/>
+      <edge id="edge323832" length="0.0" source="Tn10043099" target="Tn10043096"/>
+      <edge id="edge323834" length="0.005923" source="Tn10043096" target="Tn10043065"/>
+      <edge id="edge323836" length="0.005922" source="Tn10043096" target="Tn10043073"/>
+      <edge id="edge323838" length="0.005923" source="Tn10043101" target="Tn10043063"/>
+      <edge id="edge323840" length="0.0" source="Tn10043063" target="Tn10043089"/>
+      <edge id="edge323842" length="0.0" source="Tn10043063" target="Tn10043030"/>
+      <edge id="edge323844" length="0.0" source="Tn10043030" target="Tn10043059"/>
+      <edge id="edge323846" length="0.0" source="Tn10043030" target="Tn10043055"/>
+      <edge id="edge323848" length="0.0" source="Tn10043055" target="Tn10043082"/>
+      <edge id="edge323850" length="0.0" source="Tn10043055" target="Tn10043097"/>
+    </tree>
+  </trees>
+  <trees about="#Tb20972" id="Tb20972" label="Lichtheimia 5.8s NJ" otus="Tls30670" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
+    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@1e9f8f35 $Rev: 1040 $" datatype="xsd:string" id="meta323853" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
+    <meta href="S14094" id="meta323852" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+    <tree about="#Tr63112" id="Tr63112" label="PAUP 1" xsi:type="nex:FloatTree">
+      <meta content="38" datatype="xsd:integer" id="meta323859" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Unrated" datatype="xsd:string" id="meta323858" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Single" datatype="xsd:string" id="meta323857" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
+      <meta content="Species Tree" datatype="xsd:string" id="meta323856" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
+      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S14094" id="meta323855" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
+      <node id="Tn10043173"/>
+      <node id="Tn10043196" label="0"/>
+      <node id="Tn10043176" label="Fennellomyces linderi FJ713096" otu="Tl1078048"/>
+      <node id="Tn10043167" label="Fennellomyces linderi GQ249890" otu="Tl1078043"/>
+      <node id="Tn10043185" label="91.699997"/>
+      <node id="Tn10043178" label="Dichotomocladium elegans HM999950" otu="Tl1078055"/>
+      <node id="Tn10043155" label="98.800003"/>
+      <node id="Tn10043168" label="Lichtheimia brasiliensis KC740488" otu="Tl1078073"/>
+      <node id="Tn10043158" label="Lichtheimia brasiliensis KC740487" otu="Tl1078068"/>
+      <node id="Tn10043183" label="Lichtheimia brailiensis KC740489" otu="Tl1078064"/>
+      <node id="Tn10043175" label="Lichtheimia brasiliensis KC740486" otu="Tl1078071"/>
+      <node id="Tn10043181" label="95.099998"/>
+      <node id="Tn10043152" label="82.599998"/>
+      <node id="Tn10043191" label="Lichtheimia ramosa HQ285654" otu="Tl1078067"/>
+      <node id="Tn10043157" label="Lichtheimia ramosa FJ719405" otu="Tl1078046"/>
+      <node id="Tn10043193" label="Lichtheimia ramosa JF796106" otu="Tl1078042"/>
+      <node id="Tn10043187" label="Lichtheimia ramosa EU852634" otu="Tl1078075"/>
+      <node id="Tn10043186" label="Lichtheimia ramosa EU409804" otu="Tl1078074"/>
+      <node id="Tn10043174" label="Lichtheimia ramosa EU409801" otu="Tl1078062"/>
+      <node id="Tn10043171" label="Lichtheimia ramosa HQ285674" otu="Tl1078057"/>
+      <node id="Tn10043177" label="Lichtheimia ramosa  HQ647301" otu="Tl1078047"/>
+      <node id="Tn10043184" label="Lichtheimia ramosa HQ285700" otu="Tl1078038"/>
+      <node id="Tn10043182" label="Lichtheimia ramosa FJ719406" otu="Tl1078041"/>
+      <node id="Tn10043188" label="Lichtheimia ramosa GQ342875" otu="Tl1078065"/>
+      <node id="Tn10043156" label="Lichtheimia ramosa GQ342874" otu="Tl1078063"/>
+      <node id="Tn10043197" label="Lichtheimia ramosa EU852633" otu="Tl1078072"/>
+      <node id="Tn10043159" label="71.900002"/>
+      <node id="Tn10043162" label="Lichtheimia corymbifera GQ342888" otu="Tl1078058"/>
+      <node id="Tn10043153" label="Lichtheimia corymbifera HM104200" otu="Tl1078054"/>
+      <node id="Tn10043179" label="Lichtheimia corymbifera HM104221" otu="Tl1078061"/>
+      <node id="Tn10043172" label="Lichtheimia corymbifera GQ342878" otu="Tl1078040"/>
+      <node id="Tn10043200" label="Lichtheimia corymbifera GQ342889" otu="Tl1078069"/>
+      <node id="Tn10043166" label="Lichtheimia ornata GQ342892" otu="Tl1078053"/>
+      <node id="Tn10043180" label="Lichtheimia ornata GQ342890" otu="Tl1078059"/>
+      <node id="Tn10043169" label="Lichtheimia ornata GQ342891" otu="Tl1078056"/>
+      <node id="Tn10043192" label="86.800003"/>
+      <node id="Tn10043195" label="99.300003"/>
+      <node id="Tn10043199" label="Lichtheimia sphaerocystis GQ342899" otu="Tl1078049"/>
+      <node id="Tn10043170" label="Lichtheimia sphaerocystis GQ342901" otu="Tl1078051"/>
+      <node id="Tn10043165" label="Lichtheimia sphaerocystis GQ342900" otu="Tl1078066"/>
+      <node id="Tn10043194" label="87.199997"/>
+      <node id="Tn10043190" label="Lichtheimia hyalospora AY944894" otu="Tl1078045"/>
+      <node id="Tn10043189" label="Lichtheimia hyalospora AY944893" otu="Tl1078052"/>
+      <node id="Tn10043198" label="Lichtheimia hyalospora GQ342898" otu="Tl1078039"/>
+      <node id="Tn10043161" label="62.700001"/>
+      <node id="Tn10043163" label="Lichtheimia hyalospora AY944892" otu="Tl1078060"/>
+      <node id="Tn10043160" label="Lichtheimia hyalospora EF030530" otu="Tl1078044"/>
+      <node id="Tn10043164" label="Lichtheimia hyalospora GQ342894" otu="Tl1078050"/>
+      <node id="Tn10043154" label="Lichtheimia hyalospora GQ342895" otu="Tl1078070"/>
+      <edge id="edge323862" length="45.8499985" source="Tn10043173" target="Tn10043196"/>
+      <edge id="edge323864" length="100.0" source="Tn10043196" target="Tn10043176"/>
+      <edge id="edge323866" length="100.0" source="Tn10043196" target="Tn10043167"/>
+      <edge id="edge323868" length="45.8499985" source="Tn10043173" target="Tn10043185"/>
+      <edge id="edge323870" length="100.0" source="Tn10043185" target="Tn10043178"/>
+      <edge id="edge323872" length="98.800003" source="Tn10043185" target="Tn10043155"/>
+      <edge id="edge323874" length="100.0" source="Tn10043155" target="Tn10043168"/>
+      <edge id="edge323876" length="100.0" source="Tn10043155" target="Tn10043158"/>
+      <edge id="edge323878" length="100.0" source="Tn10043155" target="Tn10043183"/>
+      <edge id="edge323880" length="100.0" source="Tn10043155" target="Tn10043175"/>
+      <edge id="edge323882" length="95.099998" source="Tn10043155" target="Tn10043181"/>
+      <edge id="edge323884" length="82.599998" source="Tn10043181" target="Tn10043152"/>
+      <edge id="edge323886" length="100.0" source="Tn10043152" target="Tn10043191"/>
+      <edge id="edge323888" length="100.0" source="Tn10043152" target="Tn10043157"/>
+      <edge id="edge323890" length="100.0" source="Tn10043152" target="Tn10043193"/>
+      <edge id="edge323892" length="100.0" source="Tn10043152" target="Tn10043187"/>
+      <edge id="edge323894" length="100.0" source="Tn10043152" target="Tn10043186"/>
+      <edge id="edge323896" length="100.0" source="Tn10043152" target="Tn10043174"/>
+      <edge id="edge323898" length="100.0" source="Tn10043152" target="Tn10043171"/>
+      <edge id="edge323900" length="100.0" source="Tn10043152" target="Tn10043177"/>
+      <edge id="edge323902" length="100.0" source="Tn10043152" target="Tn10043184"/>
+      <edge id="edge323904" length="100.0" source="Tn10043152" target="Tn10043182"/>
+      <edge id="edge323906" length="100.0" source="Tn10043152" target="Tn10043188"/>
+      <edge id="edge323908" length="100.0" source="Tn10043152" target="Tn10043156"/>
+      <edge id="edge323910" length="100.0" source="Tn10043152" target="Tn10043197"/>
+      <edge id="edge323912" length="71.900002" source="Tn10043181" target="Tn10043159"/>
+      <edge id="edge323914" length="100.0" source="Tn10043159" target="Tn10043162"/>
+      <edge id="edge323916" length="100.0" source="Tn10043159" target="Tn10043153"/>
+      <edge id="edge323918" length="100.0" source="Tn10043159" target="Tn10043179"/>
+      <edge id="edge323920" length="100.0" source="Tn10043159" target="Tn10043172"/>
+      <edge id="edge323922" length="100.0" source="Tn10043159" target="Tn10043200"/>
+      <edge id="edge323924" length="100.0" source="Tn10043159" target="Tn10043166"/>
+      <edge id="edge323926" length="100.0" source="Tn10043159" target="Tn10043180"/>
+      <edge id="edge323928" length="100.0" source="Tn10043159" target="Tn10043169"/>
+      <edge id="edge323930" length="86.800003" source="Tn10043159" target="Tn10043192"/>
+      <edge id="edge323932" length="99.300003" source="Tn10043192" target="Tn10043195"/>
+      <edge id="edge323934" length="100.0" source="Tn10043195" target="Tn10043199"/>
+      <edge id="edge323936" length="100.0" source="Tn10043195" target="Tn10043170"/>
+      <edge id="edge323938" length="100.0" source="Tn10043195" target="Tn10043165"/>
+      <edge id="edge323940" length="87.199997" source="Tn10043192" target="Tn10043194"/>
+      <edge id="edge323942" length="100.0" source="Tn10043194" target="Tn10043190"/>
+      <edge id="edge323944" length="100.0" source="Tn10043194" target="Tn10043189"/>
+      <edge id="edge323946" length="100.0" source="Tn10043194" target="Tn10043198"/>
+      <edge id="edge323948" length="62.700001" source="Tn10043194" target="Tn10043161"/>
+      <edge id="edge323950" length="100.0" source="Tn10043161" target="Tn10043163"/>
+      <edge id="edge323952" length="100.0" source="Tn10043161" target="Tn10043160"/>
+      <edge id="edge323954" length="100.0" source="Tn10043161" target="Tn10043164"/>
+      <edge id="edge323956" length="100.0" source="Tn10043161" target="Tn10043154"/>
+    </tree>
+  </trees>
+</nex:nexml>
