@@ -4,6 +4,15 @@ use warnings;
 use Getopt::Long;
 use Bio::Phylo::Util::Logger ':levels';
 
+# given an input three-column MRP table (id,name,characters) emits
+# a "normalized" table, i.e. one where all IDs are for species (so
+# not higher taxa, which it expands, or lower taxa, which it collapses).
+# in cases where the expansion introduces a set of species that isn't
+# monophyletic in the focal tree, ambiguity codes are introduced.
+# the expansion and collapse of taxa is informed by a 'species file'
+# that must be provided on the command line. this script is executed
+# by the 'make tb2mrp_species' target.
+
 # mapping from TreeBASE NCBI taxon IDs to NCBI species
 my %Map;
 

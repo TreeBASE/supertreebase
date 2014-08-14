@@ -7,6 +7,15 @@ use Bio::Phylo::Util::Logger ':levels';
 use Bio::Phylo::Util::CONSTANT ':objecttypes';
 use Bio::Phylo::Util::Exceptions 'throw';
 
+# given a NeXML file, emits an MRP table as a tab-delimited
+# table with three columns:
+# 1. NCBI taxon ID
+# 2. taxon name
+# 3. MRP character state string
+# this script therefore results in MRP tables whose rows
+# might represent any taxonomic level. This script is 
+# executed by the 'make tb2mrp_taxa' target.
+
 # process command line arguments
 my ( $infile, $verbosity );
 GetOptions(

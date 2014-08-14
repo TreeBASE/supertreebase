@@ -4,6 +4,13 @@ use warnings;
 use Getopt::Long;
 use List::Util 'sum';
 
+# emits the header for a TNT command file, including the
+# number of characters (as computed earlier) and the number
+# of taxa (as computed from the species file). this script
+# is executed by the 'make tntscript' target, whose recipe
+# includes additional steps to specify which files to include
+# and to define the TNT command file's footer.
+
 # process command line arguments
 my ( $ncharfile, $speciesfile );
 GetOptions(

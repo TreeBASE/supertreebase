@@ -6,6 +6,18 @@ use Bio::DB::Taxonomy;
 use Bio::Phylo::Factory;
 use Bio::Phylo::Util::Logger ':levels';
 
+# this script turns a list of NCBI taxa (at arbitrary taxonomic levels)
+# into a list of the corresponding species, i.e. higher taxonomic levels
+# are expanded into all the species that have been seen for that taxon
+# elsewhere, and lower taxonomic levels are collapsed into the containing
+# species. it requires the following:
+# -nodesfile: the nodes table from the NCBI taxonomy dump
+# -namesfile: the names table from the NCBI taxonomy dump
+# -directory: the directory that contains the above dump files
+# -taxafile:  a table with two columns: 1. occurrence count, 2. taxon ID
+# it emits a tab-separated table with two columns: 1. input ID, 2. output ID(s)
+# the script is executed by the 'make species' target.
+
 # process command line arguments
 my ( $nodesfile, $namesfile, $directory, $taxafile, $verbosity );
 GetOptions(

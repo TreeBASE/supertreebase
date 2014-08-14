@@ -6,6 +6,10 @@ use Bio::DB::Taxonomy;
 use Bio::Phylo::Factory;
 use Bio::Phylo::Util::Logger ':levels';
 
+# creates a backbone MRP matrix of the NCBI common tree for all
+# species encountered in TreeBASE. this script is executed by the
+# 'make ncbimrp' target.
+
 # process command line arguments
 my ( $nodesfile, $namesfile, $directory, $speciesfile, $verbosity );
 GetOptions(

@@ -3,6 +3,10 @@ use strict;
 use warnings;
 use Getopt::Long;
 
+# given an input file, which contains the MRP matrices for all trees in a
+# study, emits a separate TNT data file for each matrix. this script is
+# executed by the 'make tntdata' target.
+
 # see: http://tnt.insectmuseum.org/index.php/How_to_manage_several_datasets
 # note that the default RAM allocated by TNT at time of writing is 16Mb, 
 # whereas the full data set at present appears to require more something like
