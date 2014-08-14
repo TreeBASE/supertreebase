@@ -4,8 +4,15 @@ use warnings;
 use Getopt::Long;
 use Bio::Phylo::Util::Logger ':levels';
 
+# this script traverses all the normalized MRP matrices 
+# (i.e. the *.dat files in the data/treebase folder that
+# are produced by the target 'make tb2mrp_species' in ../supertree) and
+# builds the links between studies on the basis of their taxonomic overlap.
+# the graph that is implied by these links is printed at in GraphViz/dot
+# syntax. this script is executed by the 'make cliques' target.
+
 # process command line arguments
-my ( $ext, $verbosity, $dir ) = ( 'dat', WARN );
+my ( $ext, $verbosity, $dir ) = ( 'dat' );
 GetOptions(
 	'dir=s'    => \$dir,
 	'verbose+' => \$verbosity,
@@ -26,7 +33,7 @@ opendir my $dh, $dir or die $!;
 while( my $file = readdir $dh ) {
 	
 	# file has the right extension
-	if ( $file =~ /\.$ext/ ) {
+	if ( $file =~ /\.$ext/ && $file ne "ncbi.${ext}" ) {
 		my $id = $file;
 		$id =~ s/\.$ext$//;
 		$Study{$id} = [];		
