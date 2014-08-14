@@ -6,6 +6,18 @@
 --    readability at the suggestion of Peter Rice, EMBL
 --  Later additions by Taxonomy Group staff at NCBI
 --
+--  Version 4.0
+--     Updated version to reflect numerous undocumented changes:
+--     Corrected start codons for genetic code 25
+--     Name of new genetic code is Candidate Division SR1 and Gracilibacteria
+--     Added candidate division SR1 nuclear genetic code 25
+--     Added GTG as start codon for genetic code 24
+--     Corrected Pterobranchia Mitochondrial genetic code (24)
+--     Added genetic code 24, Pterobranchia Mitochondrial
+--     Genetic code 11 is now Bacterial, Archaeal and Plant Plastid
+--     Fixed capitalization of mitochondrial in codes 22 and 23
+--     Added GTG, ATA, and TTG as alternative start codons to code 13
+--
 --  Version 3.9
 --     Code 14 differs from code 9 only by translating UAA to Tyr rather than
 --     STOP.  A recent study (Telford et al, 2000) has found no evidence that
@@ -234,6 +246,15 @@ Genetic-code-table ::= {
   id 24 ,
   ncbieaa  "FFLLSSSSYY**CCWWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSSKVVVVAAAADDEEGGGG",
   sncbieaa "---M---------------M---------------M---------------M------------"
+  -- Base1  TTTTTTTTTTTTTTTTCCCCCCCCCCCCCCCCAAAAAAAAAAAAAAAAGGGGGGGGGGGGGGGG
+  -- Base2  TTTTCCCCAAAAGGGGTTTTCCCCAAAAGGGGTTTTCCCCAAAAGGGGTTTTCCCCAAAAGGGG
+  -- Base3  TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
+ } ,
+ {
+  name "Candidate Division SR1 and Gracilibacteria" ,
+  id 25 ,
+  ncbieaa  "FFLLSSSSYY**CCGWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG",
+  sncbieaa "---M-------------------------------M---------------M------------"
   -- Base1  TTTTTTTTTTTTTTTTCCCCCCCCCCCCCCCCAAAAAAAAAAAAAAAAGGGGGGGGGGGGGGGG
   -- Base2  TTTTCCCCAAAAGGGGTTTTCCCCAAAAGGGGTTTTCCCCAAAAGGGGTTTTCCCCAAAAGGGG
   -- Base3  TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
