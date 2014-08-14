@@ -14,7 +14,7 @@
 # eukaryotes
 ROOTID=2759
 PERL=perl
-EXTRACT=unzip -f
+EXTRACT=unzip
 ARCH=zip
 MKPATH=mkdir -p
 RM_RF=rm -rf
