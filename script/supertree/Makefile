@@ -1,39 +1,54 @@
-# this makefile contains the steps needed for running a supertree analysis over the contents
-# of TreeBASE. The 10 targets are as follows:
-# 1.  sitemap        = Download the TreeBASE sitemap
-# 2.  purls          = Parse the sitemap, extract all study URIs
-# 3.  studies        = For each study URI, fetch the study, i.e. *.url => *.xml
-# 4.  tb2mrp_taxa    = For each tree block in each study, generate an MRP matrix, i.e. *.xml => *.txt
-# 5.  taxa           = Make a list of all taxa in the MRP matrices, i.e. taxa.txt
-# 6.  species        = Collapse subspecies and expand higher taxa to species, i.e. taxa.txt => species.txt
-# 7.  ncbimrp        = Write MRP matrix from NCBI taxonomy using species list, i.e. species.txt => ncbi.dat
-# 8.  tb2mrp_species = Normalize TreeBASE MRP matrices to species level, i.e. *.txt => *.dat
-# 9.  Convert TreeBASE MRP matrices to TNT file inclusion command and data matrix one file per tree block, i.e. *.dat => *.run, *.tnt, nchar.txt
-# 10. Create meta-file inclusion script for TNT
+# this makefile contains the steps needed for running a supertree analysis
 
 # eukaryotes
 ROOTID=2759
-PERL=perl
-EXTRACT=unzip
-ARCH=zip
-MKPATH=mkdir -p
-RM_RF=rm -rf
-SCRIPT=script
-CURL=curl
-CAT=cat
-ECHO=echo
-DATA=data
+
+# runtime verbosity
 VERBOSITY=-v -v -v
+ARCH=zip
+
+# relative locations. it is possible that these relative paths won't work when recursive
+# make is invoked from a different working directory
+SCRIPT=.
+DATA=../../data
+
+# contained folders. these are based on the relative locations defined above and probably
+# don't need to be updated, ever
 MRPDIR=$(DATA)/mrp
-MRPTABLE=$(MRPDIR)/combined.dat
 TAXDMP=taxdmp
 TAXDMPDIR=$(DATA)/$(TAXDMP)
 TAXDMPTMP=$(TAXDMPDIR)/tmp
+TB2DATA=$(DATA)/treebase
+
+# standard commands. unless these commands are installed in a non-standard location (this should be
+# very rare) there is no need to change these
+PERL=perl
+EXTRACT=unzip
+MKPATH=mkdir -p
+RM_RF=rm -rf
+CURL=curl
+CAT=cat
+ECHO=echo
+
+# file locations. these are based on contained folders defined above and probably
+# don't need updating, ever
+MRPTABLE=$(MRPDIR)/combined.dat
 TAXDMPARCH=$(TAXDMPDIR)/$(TAXDMP).$(ARCH)
-TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
 NCBIMRP=$(MRPDIR)/ncbi.dat
 NCBINODES=$(TAXDMPDIR)/nodes.dmp
 NCBINAMES=$(TAXDMPDIR)/names.dmp
+TB2SITEMAP=sitemap.xml
+TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
+TB2TAXA=$(TB2DATA)/taxa.txt
+TB2SPECIES=$(TB2DATA)/species.txt
+TB2NCHAR=$(TB2DATA)/nchar.txt
+TNTSCRIPT=$(TB2DATA)/tntscript.runall
+
+# URLs. these are based on variables defined above and probably don't need updating, ever
+TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
+TB2SITEMAPURL=http://treebase.org/treebase-web/$(TB2SITEMAP)
+
+# file lists.
 NCBIFILES=$(NCBINODES) $(NCBINAMES)
 TB2STUDYPURLS=$(wildcard $(TB2DATA)/*.url)
 TB2STUDYFILES=$(patsubst %.url,%.xml,$(TB2STUDYPURLS))
@@ -41,14 +56,6 @@ TB2MRPFILES=$(patsubst %.xml,%.txt,$(TB2STUDYFILES))
 TB2NRMLMRP=$(patsubst %.xml,%.dat,$(TB2STUDYFILES))
 TB2CLASSES=$(patsubst %.xml,%.class,$(TB2STUDYFILES))
 TNTCOMMANDS=$(patsubst %.dat,%.run,$(TB2NRMLMRP))
-TB2DATA=$(DATA)/treebase
-TB2SITEMAP=sitemap.xml
-TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
-TB2SITEMAPURL=http://treebase.org/treebase-web/$(TB2SITEMAP)
-TB2TAXA=$(TB2DATA)/taxa.txt
-TB2SPECIES=$(TB2DATA)/species.txt
-TB2NCHAR=$(TB2DATA)/nchar.txt
-TNTSCRIPT=$(TB2DATA)/tntscript.runall
 
 .PHONY : 
 
