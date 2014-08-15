@@ -8,21 +8,31 @@ use Bio::DB::Taxonomy;
 use Bio::Phylo::Factory;
 use Bio::Phylo::Util::Logger ':levels';
 
-# command line options
-my $verbosity = WARN;
+# given the table 'representation.txt', writes out the following
+# circos tracks:
+# - bands.txt   - dummy single line of "chromosomal bands"
+# - scatter.txt - scatter plot track with taxon sampling density
+# - <taxon>.txt and <taxon>-span.txt - labelled and unlabelled track for focal taxon,
+#                                    - where taxon starts at $tiplevel and proceeds
+#                                    - through all levels defined by @levels 
 
-# working directory for outfile
-my $workdir      = 'metadata';
-my $bandstrack   = $workdir . '/bands.txt';
-my $scattertrack = $workdir . '/scatter.txt';
-my $table        = $workdir . '/representation.txt';
+# logging verbosity
+my $verbosity;
+
+# working directory and outfiles
+my $workdir;      # e.g. metadata/circos
+my $bandstrack;   # e.g. metadata/circos/bands.txt
+my $scattertrack; # e.g. metadata/circos/scatter.txt
+my $table;        # e.g. metadata/circos/representation.txt
 
 # files and dir for NCBI taxonomy
-my $taxadir   = 'data/taxdmp';
-my $namesfile = $taxadir . '/names.dmp';
-my $nodesfile = $taxadir . '/nodes.dmp';
+my $taxadir;   # e.g. data/taxdmp/tmp
+my $namesfile; # e.g. data/taxdmp/names.dmp
+my $nodesfile; # e.g. data/taxdmp/nodes.dmp
 
-# taxonomic levels of interest
+# taxonomic levels of interest. these will result in circos tracks,
+# i.e. class.txt and class-span.txt, phylum.txt and phylum-span.txt, etc.
+
 my $tiplevel = 'class';
 my @levels = qw(class phylum superkingdom);
 
@@ -52,7 +62,7 @@ my $db = Bio::DB::Taxonomy->new(
 );
 my $fac = Bio::Phylo::Factory->new;
 
-# read table
+# read file representation.txt, created by representation.pl
 my %Node;
 {
 	my @header;

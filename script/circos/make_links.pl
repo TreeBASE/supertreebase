@@ -4,11 +4,15 @@ use warnings;
 use Getopt::Long;
 use Bio::Phylo::Util::Logger ':levels';
 
+# this script creates the links track for circos, i.e.
+# $0 -w data/treebase -c metadata/circos/class.txt \
+# -r metadata/circos/representation.txt > metadata/circos/links.txt
+
 # process command line arguments
-my $verbosity = WARN;
-my $workdir   = 'data/treebase';
-my $classes   = 'metadata/class.txt';
-my $representation = 'metadata/representation.txt';
+my $verbosity;
+my $workdir;        # e.g. 'data/treebase'
+my $classes;        # e.g. 'metadata/circos/class.txt'
+my $representation; # e.g. 'metadata/circos/representation.txt'
 GetOptions(
 	'verbose+'    => \$verbosity,
 	'workdir=s'   => \$workdir,

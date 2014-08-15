@@ -6,14 +6,20 @@ use Getopt::Long;
 use Bio::DB::Taxonomy;
 use Bio::Phylo::Util::Logger ':levels';
 
+# given an input NeXML file, this script fetches all the taxa in it and
+# looks up to which Class (i.e. the taxonomic level) they belong. prints
+# to STDOUT a tab-separated table with the following columns:
+# 1. study ID
+# 2. class ID (in NCBI taxonomy)
+# 3. number of species in that class
+# the idea is that for each XML file in the data folder there will be a
+# corresponding .class file that contains this table
+
 # classes seen in the focal file
 my %Classes;
 
 # process command line arguments
-my ( $infile, $verbosity );
-my $taxadir   = 'data/taxdmp';
-my $namesfile = $taxadir . '/names.dmp';
-my $nodesfile = $taxadir . '/nodes.dmp';
+my ( $infile, $verbosity, $taxadir, $namesfile, $nodesfile );
 GetOptions(
 	'infile=s'    => \$infile,
 	'verbose+'    => \$verbosity,

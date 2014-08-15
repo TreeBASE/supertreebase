@@ -5,6 +5,11 @@ use Getopt::Long;
 use Bio::DB::Taxonomy;
 use Bio::Phylo::Util::Logger ':levels';
 
+# this script writes out for each taxon in how many
+# studies it is represented. Usage:
+# $0 -nodes data/taxdmp/nodes.dmp -names data/taxdmp/names.dmp \
+# -d data/taxdmp/tmp -i data/treebase/taxa.txt > metadata/circos/representation.txt
+
 # The magic of NCBI's multiple origins...
 my @roots = (
 	2157,  # Archaea
@@ -28,7 +33,11 @@ my %block = (
 );
 
 # process command line arguments
-my ( $verbosity, $nodesfile, $namesfile, $directory, $infile ) = ( WARN );
+my $verbosity;
+my $nodesfile; # e.g. data/taxdmp/nodes.dmp
+my $namesfile; # e.g. data/taxdmp/names.dmp
+my $directory; # e.g. data/taxdmp/tmp
+my $infile;    # e.g. data/treebase/taxa.txt
 GetOptions(
 	'infile=s'    => \$infile, # taxa.txt
 	'verbose+'    => \$verbosity,
