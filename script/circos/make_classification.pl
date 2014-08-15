@@ -8,6 +8,10 @@ use Bio::DB::Taxonomy;
 use Bio::Phylo::Factory;
 use Bio::Phylo::Util::Logger ':levels';
 
+# this hack is here so that the NCBI taxonomy indexes aren't deleted
+# when the $db object is destroyed
+BEGIN { *Bio::DB::Taxonomy::flatfile::DESTROY = sub {} }
+
 # given the table 'representation.txt', writes out the following
 # circos tracks:
 # - bands.txt   - dummy single line of "chromosomal bands"
