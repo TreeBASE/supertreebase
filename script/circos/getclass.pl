@@ -6,6 +6,10 @@ use Getopt::Long;
 use Bio::DB::Taxonomy;
 use Bio::Phylo::Util::Logger ':levels';
 
+# this hack is here so that the NCBI taxonomy indexes aren't deleted
+# when the $db object is destroyed
+BEGIN { *Bio::DB::Taxonomy::flatfile::DESTROY = sub {} }
+
 # given an input NeXML file, this script fetches all the taxa in it and
 # looks up to which Class (i.e. the taxonomic level) they belong. prints
 # to STDOUT a tab-separated table with the following columns:
@@ -68,6 +72,9 @@ sub handle_meta {
 		if ( my $class = get_class( $taxonid ) ) {
 			$log->info("class for taxon ID $taxonid is $class");
 			$Classes{$class}++;
+		}
+		else {
+			$log->warn("no class for $taxonid");
 		}
 	}
 }
