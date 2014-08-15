@@ -3,6 +3,8 @@ use strict;
 use warnings;
 use Getopt::Long;
 
+no warnings 'uninitialized';
+
 # given an input file, which contains the MRP matrices for all trees in a
 # study, emits a separate TNT data file for each matrix. this script is
 # executed by the 'make tntdata' target.
@@ -72,7 +74,7 @@ for my $i ( 0 .. $#blocks ) {
 	
 	# write separate outfile for each matrix
 	my $filename = $infile;
-	$filename =~ s/\.[^\.]+/-$block.tnt/;
+	$filename .= ".$block.tnt";
 	open my $fh, '>', $filename or die "Can't open $filename: $!";
 	print $fh $matrix;
 	close $fh;
