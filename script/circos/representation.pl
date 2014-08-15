@@ -5,6 +5,10 @@ use Getopt::Long;
 use Bio::DB::Taxonomy;
 use Bio::Phylo::Util::Logger ':levels';
 
+# this hack is here so that the NCBI taxonomy indexes aren't deleted
+# when the $db object is destroyed
+BEGIN { *Bio::DB::Taxonomy::flatfile::DESTROY = sub {} }
+
 # this script writes out for each taxon in how many
 # studies it is represented. Usage:
 # $0 -nodes data/taxdmp/nodes.dmp -names data/taxdmp/names.dmp \
