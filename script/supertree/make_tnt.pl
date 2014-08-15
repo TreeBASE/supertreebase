@@ -51,13 +51,16 @@ for my $i ( 0 .. $#blocks ) {
                 my $seq = $tables{$block}->{$row};
 		next ROW if $seq =~ /^\?+$/;
 
-		# append the row label to the matrix
-		$matrix .= $row . "\t";
-		
-		# create ambiguity codes		
-		my @char = map { $_ eq '2' ? '[01]' : $_ } split //, $seq;
-		$matrix .= join '', @char;
-		$matrix .= "\n";
+		# apparently we can use ? for missing data in 
+		# TNT syntax. this should be equivalent to [01]
+		# and reduces file size.
+		$seq =~ s/2/?/g;
+		$matrix .= $row . "\t" . $seq . "\n";
+
+#		$matrix .= $row . "\t";
+#		my @char = map { $_ eq '2' ? '[01]' : $_ } split //, $seq;
+#		$matrix .= join '', @char;
+#		$matrix .= "\n";
 		
 		# track $nchar
 		if ( not defined $nchar ) {
