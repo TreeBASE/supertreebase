@@ -55,11 +55,17 @@ my $twig = XML::Twig->new(
 );
 
 # parse the input
-if ( $url ) {
-	$twig->parseurl($url);
-}
-else {
-	$twig->parsefile($infile);
+eval {
+	if ( $url ) {
+		$twig->parseurl($url);
+	}
+	else {
+		$twig->parsefile($infile);
+	}
+};
+if ( $@ ) {
+	warn "problem parsing:\n$@\n";
+	exit(0);
 }
 
 # write the output
