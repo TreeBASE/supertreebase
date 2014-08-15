@@ -135,16 +135,16 @@ ncbimrp_clean :
 
 # make tnt file inclusion commands and single file with nchar for each treeblock
 $(TNTCOMMANDS) : %.run : %.dat
-	$(PERL) $(SCRIPT)/make_tnt.pl -i $< $(VERBOSITY) > $@ 2>> $(TB2NCHAR)
+	$(PERL) $(SCRIPT)/make_tnt.pl -i $< > $@ 2>> $(TB2NCHAR)
 tntdata : $(TNTCOMMANDS)
 tntdata_clean : 
 	$(RM_RF) $(TNTCOMMANDS) $(TB2NCHAR) $(TB2DATA)/*.tnt
 
 # make the master tnt script
 $(TNTSCRIPT) : $(TNTCOMMANDS)
-	$(PERL) $(SCRIPT)/make_tnt_script.pl -n $(TB2NCHAR) -s $(TB2SPECIES) $(VERBOSITY) > $@
+	$(PERL) $(SCRIPT)/make_tnt_script.pl -n $(TB2NCHAR) -s $(TB2SPECIES) > $@
 	$(CAT) $(TNTCOMMANDS) >> $@
 	$(ECHO) 'proc/;' >> $@
 tntscript : $(TNTSCRIPT)
 tntscript_clean : 
-	$(RM_RF) $(TNTSCRIPT)
+	$(RM_RF) $(TNTSCRIPT) $(TB2DATA)/*.run
