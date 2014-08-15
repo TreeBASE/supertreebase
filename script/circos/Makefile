@@ -9,6 +9,9 @@ SCRIPT=.
 DATA=../../data
 METADATA=../../metadata
 
+# dependency program: circos, see http://www.circos.ca
+CIRCOS=circos
+
 # contained folders. these are based on the relative locations defined above and probably
 # don't need to be updated, ever
 TAXDMP=taxdmp
@@ -29,6 +32,8 @@ CIRCOSREPRS=$(CIRCOSMETA)/representation.txt
 CIRCOSSCATR=$(CIRCOSMETA)/scatter.txt
 CIRCOSLINKS=$(CIRCOSMETA)/links.txt
 CIRCOSCLASS=$(CIRCOSMETA)/class.txt
+CIRCOSCONF=$(CIRCOSMETA)/circos.conf
+CIRCOSSVG=$(CIRCOSMETA)/circos.svg
 NCBINODES=$(TAXDMPDIR)/nodes.dmp
 NCBINAMES=$(TAXDMPDIR)/names.dmp
 TB2TAXA=$(TB2DATA)/taxa.txt
@@ -67,3 +72,10 @@ $(CIRCOSLINKS) : $(CIRCOSBANDS)
 links : $(CIRCOSLINKS)
 links_clean :
 	$(RM_RF) $(CIRCOSLINKS)
+
+# run circos
+$(CIRCOSSVG) : $(CIRCOSLINKS)
+	cd $(CIRCOSMETA) && $(CIRCOS) -conf $(CIRCOSCONF)
+circos : $(CIRCOSSVG)
+circos_clean :
+	$(RM_RF) $(CIRCOSSVG)
