@@ -82,13 +82,6 @@ studies : $(TB2STUDYFILES)
 studies_clean : 
 	$(RM_RF) $(TB2STUDYFILES)
 
-# extract the NCBI classes
-$(TB2CLASSES) : %.class : %.xml
-	$(PERL) $(SCRIPT)/getclass.pl -nodes $(NCBINODES) -names $(NCBINAMES) -taxa $(TAXDMPDIR) -i $< $(VERBOSITY) > $@
-classes : $(TB2CLASSES)
-classes_clean :
-	$(RM_RF) $(TB2CLASSES)
-
 # make TreeBASE MRP matrices
 $(TB2MRPFILES) : %.txt : %.xml
 	$(PERL) $(SCRIPT)/make_tb2_mrp.pl -i $< $(VERBOSITY) > $@
