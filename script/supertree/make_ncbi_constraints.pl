@@ -6,19 +6,19 @@ use Bio::DB::Taxonomy;
 use Bio::Phylo::Factory;
 use Bio::Phylo::Util::Logger ':levels';
 
-# creates TNT-compatible monophyly constraint commands for levels
-# in the NCBI taxonomy. 
+# creates a backbone MRP matrix of the NCBI common tree for all
+# species encountered in TreeBASE. this script is executed by the
+# 'make ncbimrp' target.
 
 # process command line arguments
-my $root = 2759;
-my ( $nodesfile, $namesfile, $directory, $speciesfile, $verbosity );
+my ( $nodesfile, $namesfile, $directory, $speciesfile, $verbosity, $workdir );
 GetOptions(
     'nodesfile=s'   => \$nodesfile,
     'namesfile=s'   => \$namesfile,
     'directory=s'   => \$directory,
     'speciesfile=s' => \$speciesfile,
     'verbose+'      => \$verbosity,
-    'root=i'        => \$root,
+    'workdir=s'     => \$workdir,
 );
 
 # instantiate logger
@@ -44,8 +44,9 @@ my $tree = $fac->create_tree;
 
 # read species IDs that were encountered in treebase
 $log->info("going to read treebase species ids from $speciesfile");
-my %species;
+my @ids;
 {
+	my %species;
 	open my $fh, '<', $speciesfile or die $!;
 	while(<$fh>) {
 		chomp;
@@ -53,48 +54,96 @@ my %species;
 		my @species = split /,/, $line[1];
 		$species{$_} = 1 for @species;
 	}
+	@ids = keys %species;
 	close $fh;
 }
-$log->info("done reading $speciesfile");
 
-# depth-first recursion through the NCBI taxonomy. if the focal node
-# is a species seen in TreeBASE, cache it. if the focal node is a 
-# higher taxon, cache all the TreeBASE species it subtends and print
-# out the constraint statement if it groups two or more species.
-my %desc;
-sub recurse {
-	my $taxon = shift;
-	for my $child ( $taxon->each_Descendent ) {
-		recurse($child);
+# handy to know for logging purposes
+my $ntax = scalar @ids;
+
+{
+	# for each tip, walk up the taxonomy to the point where we
+	# reach a previously seen ancestor (i.e. one that was reached
+	# through another path), then move onto the next tip, building
+	# the common tree in the process
+	my %node_for_id; # stores Bio::Phylo nodes keyed on NCBI ids
+	my $i = 1;
+	for my $id ( sort { $a <=> $b } @ids ) {
+		$log->info("*** ($i / $ntax) going to build path for $id");
+		$i++;	
+		my $ncbi_node = $db->get_Taxonomy_Node( '-taxonid' => $id );
+		
+		# mirror the focal tip
+		$node_for_id{$id} = $fac->create_node( '-name' => $id );	
+		$tree->insert($node_for_id{$id});
+		
+		# recurse up the tree
+		PARENT: while( $ncbi_node and my $ncbi_parent = $db->ancestor($ncbi_node) ) {
+			my $parent_id = $ncbi_parent->id;
+			
+			# already seen parent, just add this child and quit traversal
+			if ( my $bp_parent = $node_for_id{$parent_id} ) {
+				$node_for_id{$ncbi_node->id}->set_parent($bp_parent);
+				last PARENT;
+			}
+			
+			# create new parent
+			else {
+				my $bp_parent = $fac->create_node( '-name' => $parent_id );
+				$tree->insert($bp_parent);
+				$node_for_id{$parent_id} = $bp_parent;
+				$node_for_id{$ncbi_node->id}->set_parent($bp_parent);
+				
+				# prepare for next iteration
+				$ncbi_node = $ncbi_parent;
+			}
+		}
 	}
-	my $id = $taxon->id;
-	if ( $species{$id} ) {
-		$desc{$id} = { $id => 1 };
-	}
-	else {
-		my %cdesc;
-		for my $child ( $taxon->each_Descendent ) {
-			my $cid = $child->id;
-			if ( my $href = $desc{$cid} ) {
-				for my $key ( keys %{ $href } ) {
-					$cdesc{$key} = 1;
+}
+
+# create a lookup from taxon label to index, i.e. the order in which it was encountered
+# in the input files.
+my %lookup;
+{
+	$log->info("going to lookup taxon indexes in $workdir");
+	my $i = 0;
+	opendir my $dh, $workdir or die $!;
+	while( my $entry = readdir $dh ) {
+
+		# S12622.dat.Tb17032.tnt
+		if ( $entry =~ /\.tnt$/ ) {
+			open my $fh, '<', "${workdir}/${entry}" or die $!;
+			while(<$fh>) {
+				if ( /^(\d+)\s/ ) {
+					my $id = $1;
+					$lookup{$id} = $i++ if not defined $lookup{$id};
 				}
 			}
 		}
-		if ( %cdesc ) {
-			$desc{$id} = \%cdesc;
-			my $count = scalar keys %cdesc;
-			if ( $count >= 2 ) {
-				my $name = $taxon->node_name;
-				my $rank = $taxon->rank;
-				$log->info("rank $name subtends $count species in TreeBASE");
-				print 'force = ( ', join( ' ', keys %cdesc ), " ) ; \n";
-			}
-		}
 	}
 }
 
-# do the recursion
-$log->info("going to traverse taxonomy");
-recurse( $db->get_taxon($root) );
-$log->info("done");
+# print the constraints
+$tree->visit_depth_first(
+	'-post' => sub {
+		my $node = shift;
+		if ( $node->is_terminal ) {
+			$node->set_generic( 'desc' => { $node->get_name => 1 } );
+		}
+		else {
+			my %desc;
+			for my $child ( @{ $node->get_children } ) {
+				my %cdesc = %{ $child->get_generic('desc') };
+				for my $key ( keys %cdesc ) {
+					$desc{$key} = 1;
+				}
+			}
+			$node->set_generic( 'desc' => \%desc );
+			my $count = scalar keys %desc;
+			if ( $count >= 2 ) {
+				print 'force = ( ', join( ' ', map { $lookup{$_} } keys %desc ), " ) ; \n";
+			}
+		}
+	},
+);
+print "constrain = ;\nproc/;\n";
