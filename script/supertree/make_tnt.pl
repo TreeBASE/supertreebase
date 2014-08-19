@@ -12,7 +12,7 @@ no warnings 'uninitialized';
 # see: http://tnt.insectmuseum.org/index.php/How_to_manage_several_datasets
 # note that the default RAM allocated by TNT at time of writing is 16Mb, 
 # whereas the full data set at present appears to require more something like
-# 50Gb(!)
+# 100Gb(!), as is available on the T7600 NGS workstation
 
 # process command line arguments
 my $infile;
@@ -57,11 +57,6 @@ for my $i ( 0 .. $#blocks ) {
 		$seq =~ s/2/?/g;
 		$matrix .= $row . "\t" . $seq . "\n";
 
-#		$matrix .= $row . "\t";
-#		my @char = map { $_ eq '2' ? '[01]' : $_ } split //, $seq;
-#		$matrix .= join '', @char;
-#		$matrix .= "\n";
-		
 		# track $nchar
 		if ( not defined $nchar ) {
 			$nchar = length($seq);
