@@ -35,6 +35,7 @@ ECHO=echo
 MRPTABLE=$(MRPDIR)/combined.dat
 TAXDMPARCH=$(TAXDMPDIR)/$(TAXDMP).$(ARCH)
 NCBIMRP=$(MRPDIR)/ncbi.dat
+NCBICON=$(MRPDIR)/ncbi_constraints.tnt
 NCBINODES=$(TAXDMPDIR)/nodes.dmp
 NCBINAMES=$(TAXDMPDIR)/names.dmp
 TB2SITEMAP=sitemap.xml
@@ -132,6 +133,13 @@ $(NCBIMRP) : $(NCBIFILES) $(TB2SPECIES)
 ncbimrp : $(NCBIMRP)
 ncbimrp_clean : 
 	$(RM_RF) $(NCBIMRP)
+
+# make NCBI constraints
+$(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
+	$(PERL) $(SCRIPT)/make_ncbi_constraints.pl -w $(TB2DATA) -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+ncbicon : $(NCBICON)
+ncbicon_clean :
+	$(RM_RF) $(NCBICON)
 
 # make tnt file inclusion commands and single file with nchar for each treeblock
 $(TNTCOMMANDS) : %.run : %.dat
