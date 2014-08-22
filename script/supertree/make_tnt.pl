@@ -40,8 +40,9 @@ for my $i ( 0 .. $#blocks ) {
 	my $block = $blocks[$i];
 	
 	# print header
-	my $matrix = "Label data\n";
-	
+	# my $matrix = "Label data\n";
+	my $matrix = '';	
+
 	# iterate over rows
 	my $nchar;
 	ROW: for my $row ( keys %{ $tables{$block} } ) {
@@ -65,6 +66,8 @@ for my $i ( 0 .. $#blocks ) {
 			die "Block $block in $infile is not flush!";
 		}
 	}
+	# add header
+	$matrix = "Label data\n" . '00000' . "\t" . ( '0' x $nchar ) . "\n" . $matrix;
 	
 	# print closing token, for the last file this is a semicolon
 	my $token = $infile =~ /S99\./ && $i == $#blocks ? ';' : '@@';
