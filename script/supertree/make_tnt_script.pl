@@ -44,7 +44,9 @@ my $ntax;
 		$ntax{$_} = 1 for @taxa;
 	}
 	close $fh;
-	$ntax = scalar(keys %ntax);
+
+	# add 1 to allow for the hypothetical MRP outgroup
+	$ntax = scalar(keys %ntax) + 1;
 }
 
 print <<"HERE";
