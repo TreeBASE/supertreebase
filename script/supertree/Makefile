@@ -128,11 +128,19 @@ ncbimrp_clean :
 	$(RM_RF) $(NCBIMRP)
 
 # make NCBI constraints
+# $(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
+#	$(PERL) $(SCRIPT)/make_ncbi_constraints.pl -w $(TB2DATA) -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+# ncbicon : $(NCBICON)
+# ncbicon_clean :
+#	$(RM_RF) $(NCBICON)
+
+# make NCBI constraints
 $(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
-	$(PERL) $(SCRIPT)/make_ncbi_constraints.pl -w $(TB2DATA) -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+	$(PERL) $(SCRIPT)/make_ncbi_constraint_tree.pl -w $(TB2DATA) -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
 ncbicon : $(NCBICON)
 ncbicon_clean :
 	$(RM_RF) $(NCBICON)
+
 
 # make tnt file inclusion commands and single file with nchar for each treeblock
 $(TNTCOMMANDS) : %.run : %.dat
