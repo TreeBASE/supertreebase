@@ -1,7 +1,7 @@
 macro=;
 
-/* increase claimed RAM to 100Gb */
-mxram 100000;
+/* increase claimed RAM to 170Gb */
+mxram 170000;
 
 /* process MRP data inclusions */
 proc tntscript.runall;
@@ -10,22 +10,28 @@ proc tntscript.runall;
 proc ../mrp/ncbi_constraints.tnt;
 
 /* run a parallel job over X nodes */
-ptnt begin ajob 7 = 
+/* ptnt begin ajob 7 = */
 
 /* cribbed from DOI:10.1111/j.1096-0031.2009.00255.x */
 bbreak: cluster 20;
 timeout 4:00:00; 
 sectsch: xss 15-8+6-2 gocomb 50 combst 5 fuse 4 slack 20 drift 7; 
-xmult = repl 8 rss xss drift 4 hit 10 dumpfuse keep; 
-tfuse; 
-best;
+xmult = repl 8 rss xss drift 4 hit 10 dumpfuse nokeep; 
+/* tfuse; */ 
+/* best; */
+
+/* save last tree to file */
+tsave* outfile.tre;
+save /;
+tsave /;
 
 /* end of parallel commands */
-return; 
+/* return;  */
 
 /* wait for completion */
-ptnt wait .;
+/* ptnt wait .; */
 
 /* fetch results */
-ptnt get ajob;
+/* ptnt get ajob; */
 
+procedure /;
