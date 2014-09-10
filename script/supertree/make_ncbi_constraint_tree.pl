@@ -71,6 +71,8 @@ my $ntax = scalar @ids;
 	for my $id ( sort { $a <=> $b } @ids ) {
 		$log->info("*** ($i / $ntax) going to build path for $id");
 		$i++;	
+
+		# fetch the focal taxonomy tip
 		my $ncbi_node = $db->get_Taxonomy_Node( '-taxonid' => $id );
 		
 		# mirror the focal tip
@@ -124,23 +126,19 @@ my %lookup;
 }
 
 # print the constraints, skip over unbranched internals
+$tree->remove_unbranched_internals;
 print 'force = ';
-$tree->visit_depth_first(
-	'-pre' => sub {
-		my $node = shift;
-		my @children = @{ $node->get_children };
-		print '(' if scalar(@children) >= 2;
-	},
-	'-post' => sub {
-		my $node = shift;
-		my @children = @{ $node->get_children };
-		if ( scalar(@children) == 0 ) {
-			my $id = $node->get_name;
-			print $lookup{$id}, ' ';
-		}
-		else {
-			print ')' if scalar(@children) >= 2;
-		}
-	},
-);
+recurse($tree->get_root);
+sub recurse {
+	my $node = shift;
+	my @children = @{ $node->get_children };
+	if ( @children ) {
+		print '(';
+		recurse($_) for @children;
+		print ')';
+	}
+	else {
+		print $lookup{$node->get_name}, ' ';
+	}
+}
 print " ; constrain = ;\nproc/;\n";
