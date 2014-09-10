@@ -14,7 +14,7 @@ proc ../mrp/ncbi_constraints.tnt;
 
 /* cribbed from DOI:10.1111/j.1096-0031.2009.00255.x */
 bbreak: cluster 20;
-timeout 4:00:00; 
+timeout 15:00:00; 
 sectsch: xss 15-8+6-2 gocomb 50 combst 5 fuse 4 slack 20 drift 7; 
 xmult = repl 8 rss xss drift 4 hit 10 dumpfuse nokeep; 
 /* tfuse; */ 
