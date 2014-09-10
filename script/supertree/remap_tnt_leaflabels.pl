@@ -6,7 +6,7 @@ use Bio::DB::Taxonomy;
 use Bio::Phylo::Util::Logger ':levels';
 
 # process command line arguments
-my ( $infile, $workdir, $nodesfile, $namesfile, $directory, $verbosity );
+my ( $infile, $workdir, $nodesfile, $namesfile, $directory, $verbosity, $labels, $tnt );
 GetOptions(
 	'infile=s'    => \$infile,
 	'workdir=s'   => \$workdir,
@@ -14,6 +14,8 @@ GetOptions(
 	'namesfile=s' => \$namesfile,
 	'directory=s' => \$directory,
 	'verbose+'    => \$verbosity,
+	'labels'      => \$labels, # set to true to use labels instead of IDs
+	'tnt'         => \$tnt,
 );
 
 # instantiate helper objects
@@ -34,15 +36,14 @@ my $db = Bio::DB::Taxonomy->new(
 	'-force'     => 1, # XXX this should NOT!!!! be needed
 );
 
-# strip the TNT bullshit from their goddamn tree format
+# strip the TNT commands from their tree format
 my $string;
 {
 	$log->info("going to read TNT tree from $infile");
 	open my $fh, '<', $infile or die $!;
 	while(<$fh>){
 		chomp;
-		next if /^tread/;
-		next if /^proc/;
+		next unless /^\(/;
 		$string .= $_;
 	}
 	$log->info("done reading TNT tree");
@@ -89,7 +90,8 @@ my %name_for_id;
 							
 							# only increment the index for distinct names
 							my $index = $i++;
-							$lookup{$index} = $name;
+							$index += 1 if not $tnt; # tnt nexus uses 1-based index
+							$lookup{$index} = $labels ? $name : $id;
 							$log->info("looked up name $i ($name)") unless $i % 1000;
 						}
 						else {
@@ -103,16 +105,21 @@ my %name_for_id;
 	$log->info("done reading taxon IDs");
 }
 
-# the string now holds NCBI taxon IDs
+# the string now holds escaped NCBI taxon binomials
 $string =~ s/(\d+)/$lookup{$1}/g;
 
-# strip spaces before closing parentheses
-$string =~ s/ ([\)])//g;
+# convert TNT tree string to newick
+if ( $tnt ) {
 
-# replace remaining spaces with commas
-$string =~ tr/ /,/;
+	# replace all spaces with commas
+	$string =~ s/\s/,/g;
 
-# place commas between sister clades
-$string =~ s/([^,\(])\(/$1,(/g;
+	# replace )( with ),(
+	$string =~ s/\)\(/),(/g;
+
+	# replace ",)" with ")"
+	$string =~ s/,\)/)/g;
+
+}
 
 print $string;
