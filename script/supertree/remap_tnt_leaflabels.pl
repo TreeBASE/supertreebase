@@ -33,7 +33,7 @@ my $db = Bio::DB::Taxonomy->new(
 	'-nodesfile' => $nodesfile,
 	'-namesfile' => $namesfile,
 	'-directory' => $directory,
-	'-force'     => 1, # XXX this should NOT!!!! be needed
+#	'-force'     => 1, # XXX this should NOT!!!! be needed
 );
 
 # strip the TNT commands from their tree format
@@ -120,6 +120,8 @@ if ( $tnt ) {
 	# replace ",)" with ")"
 	$string =~ s/,\)/)/g;
 
+	# replace )4342 with ),4342
+	$string =~ s/\)([^,\);])/),$1/g;
 }
 
 print $string;
