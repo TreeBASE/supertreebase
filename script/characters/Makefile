@@ -1,4 +1,5 @@
-# this makefile contains the steps needed for making the circos image
+# this Makefile contains the steps needed to extract interesting metadata about
+# character data from TreeBASE files
 
 # runtime verbosity
 VERBOSITY=-v -v -v
