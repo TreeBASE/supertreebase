@@ -3,7 +3,6 @@ use strict;
 use warnings;
 use XML::Twig;
 use Getopt::Long;
-use Bio::Phylo::Util::CONSTANT '_NS_TB2PURL_';
 
 # This script reads the sitemap.xml file from TreeBASE (which contains a full list
 # of all publicly reachable studies in the database) and extracts for each link
@@ -15,7 +14,7 @@ use Bio::Phylo::Util::CONSTANT '_NS_TB2PURL_';
 # e.g. by running the 'make purls' target.
 
 # permanent url for treebase phylows
-my $PURLBASE = _NS_TB2PURL_;
+my $PURLBASE = $ENV{'TB2PURL'} || 'http://purl.org/phylo/treebase/phylows/';
 
 # process command line arguments
 my ( $infile, $outdir, $force );
