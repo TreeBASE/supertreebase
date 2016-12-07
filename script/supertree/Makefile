@@ -23,12 +23,17 @@ TB2DATA=$(DATA)/treebase
 # standard commands. unless these commands are installed in a non-standard location (this should be
 # very rare) there is no need to change these
 PERL=perl
+PYTHON=python3
 EXTRACT=unzip
 MKPATH=mkdir -p
 RM_RF=rm -rf
 CURL=curl
+WGET=wget
 CAT=cat
 ECHO=echo
+FIND=find
+CHMOD=chmod
+SDM=sdm
 
 # file locations. these are based on contained folders defined above and probably
 # don't need updating, ever
@@ -44,6 +49,7 @@ TB2TAXA=$(TB2DATA)/taxa.txt
 TB2SPECIES=$(TB2DATA)/species.txt
 TB2NCHAR=$(TB2DATA)/nchar.txt
 TNTSCRIPT=$(TB2DATA)/tntscript.runall
+SDMINPUT=$(TB2DATA)/tb2dist
 
 # URLs. these are based on variables defined above and probably don't need updating, ever
 TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
@@ -57,6 +63,9 @@ TB2MRPFILES=$(patsubst %.xml,%.txt,$(TB2STUDYFILES))
 TB2NRMLMRP=$(patsubst %.xml,%.dat,$(TB2STUDYFILES))
 TB2CLASSES=$(patsubst %.xml,%.class,$(TB2STUDYFILES))
 TNTCOMMANDS=$(patsubst %.dat,%.run,$(TB2NRMLMRP))
+SDMLOGS=$(patsubst %.dat,%.log,$(TB2NRMLMRP))
+SDMMATRICES=$(wildcard $(TB2DATA)/*.sdm)
+
 
 .PHONY : 
 
@@ -64,7 +73,7 @@ TNTCOMMANDS=$(patsubst %.dat,%.run,$(TB2NRMLMRP))
 $(TB2SITEMAPXML) :
 	$(MKPATH) $(TB2DATA)
 	$(RM_RF) $(TB2SITEMAPXML)
-	$(CURL) -o $(TB2SITEMAPXML) $(TB2SITEMAPURL)
+	$(WGET) -O $(TB2SITEMAPXML) $(TB2SITEMAPURL)
 sitemap : $(TB2SITEMAPXML)
 sitemap_clean : 
 	$(RM_RF) $(TB2SITEMAPXML)
@@ -73,7 +82,7 @@ sitemap_clean :
 purls : $(TB2SITEMAPXML)
 	$(PERL) $(SCRIPT)/make_tb2_urls.pl -i $(TB2SITEMAPXML) -o $(TB2DATA)
 purls_clean : 
-	$(RM_RF) $(TB2DATA)/*.url
+	$(RM_RF) $(TB2DATA)/%.url
 
 # fetch the studies
 $(TB2STUDYFILES) : %.xml : %.url
@@ -98,6 +107,7 @@ taxa_clean :
 
 # make species-level list from TreeBASE taxon IDs
 $(TB2SPECIES) : $(TB2TAXA) $(NCBIFILES)
+	$(MKPATH) $(TAXDMPTMP)
 	$(PERL) $(SCRIPT)/make_species_list.pl -taxa `pwd`/$(TB2TAXA) -nodes `pwd`/$(NCBINODES) -names `pwd`/$(NCBINAMES) -dir `pwd`/$(TAXDMPTMP) $(VERBOSITY) > $@
 species : $(TB2SPECIES)
 species_clean : 
@@ -109,6 +119,37 @@ $(TB2NRMLMRP) : %.dat : %.txt
 tb2mrp_species : $(TB2NRMLMRP)
 tb2mrp_species_clean : 
 	$(RM_RF) $(TB2NRMLMRP)
+
+
+### SMD METHOD ###
+
+# convert MRP tables to distance matrices, for the SDM program
+$(SDMLOGS) : %.log : %.dat
+	$(PYTHON) $(SCRIPT)/make_sdm.py -o $(TB2DATA)/ -i $<
+sdmdata : $(SDMLOGS)
+sdmdata_clean : 
+	$(RM_RF) $(SDMLOGS) $(TB2DATA)/*.sdm
+ 
+# combine distance matrices to SDM input
+$(SDMINPUT) : $(SDMMATRICES)
+	$(CHMOD) -R 755 $(TB2DATA)
+	$(FIND) $(TB2DATA)/S*.sdm |  wc -l >> $@
+	$(CAT) $(SDMMATRICES) >> $@
+sdminput : $(SDMINPUT)
+sdminput_clean : 
+	$(RM_RF) $(SDMINPUT)
+ 
+# process distance matrices with SDM program
+$(SDMRUN) : $(SDMINPUT)
+	$(SDM) -i $(SDMINPUT) # square non-subreplicate matrix for FastME 
+sdmrun : $(SDMINPUT)
+sdmrun_clean : 
+	$(RM_RF) $(TB2DATA)/*_sdm_* 
+ 
+# process SDM output with ...
+
+
+### TNT METHOD ###
 
 # download taxdmp archive
 $(NCBIFILES) :
@@ -134,13 +175,13 @@ ncbimrp_clean :
 # ncbicon_clean :
 #	$(RM_RF) $(NCBICON)
 
+
 # make NCBI constraints
 $(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
 	$(PERL) $(SCRIPT)/make_ncbi_constraint_tree.pl -w $(TB2DATA) -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
 ncbicon : $(NCBICON)
 ncbicon_clean :
 	$(RM_RF) $(NCBICON)
-
 
 # make tnt file inclusion commands and single file with nchar for each treeblock
 $(TNTCOMMANDS) : %.run : %.dat
