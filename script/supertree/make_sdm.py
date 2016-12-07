@@ -7,6 +7,7 @@ Date: 23/11/2016
 Script to convert pipeline output in MRP matrix format to distance matrix format.
 Produces distance matrix file for every tree block in input,
 and also a log file for every input file.
+Run by using "make sdmdata" command.
 
 Pipeline MRP input:
     Tb_ID NCBI_ID charstring (0/1/2)
@@ -18,7 +19,8 @@ Distance matrix output:
 	taxa2 distance distance
 
 Usage:
-    -i  Input file (*.dat file from pipeline with MRP matrix)
+    -i  Input file (Input file (*.dat file from pipeline, containing MRP matrix/matrices))
+    -o 	Output directory (for *.sdm files with distance matrices and *.log file)
 '''
 
 import argparse
@@ -130,7 +132,7 @@ def main():
 	parser.add_argument("-i", type=str,
     	                help="Input file (*.dat file from pipeline, containing MRP matrix/matrices)")
 	parser.add_argument("-o", type=str,
-    	                help="Output directory (*.sdm files with distance matrices and *.log file)")
+    	                help="Output directory (for *.sdm files with distance matrices and *.log file)")
 	args = parser.parse_args()
 	
 	outname_log = args.o + args.i
