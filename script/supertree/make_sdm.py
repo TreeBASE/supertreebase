@@ -111,19 +111,19 @@ def write_dist_matrix(distdict, char_count, taxa, distance_file):
 	print("\n{} {}".format(tax_count, char_count), file=distance_file)
 	for t in taxa:
 		# start matrix row with taxon NCBI_ID
-		row = t + "      "
+		row = [t]
 		row_count = 0
 		for taxtuple in sorted_distdict:
 		# get the right combination of taxa in the right order
 			if t == taxtuple[0]:
 				dist = round(distdict[taxtuple], 8)
 				dist = "{:.8f}".format(dist)
-				row += (dist + "  ")
+				row.append(dist)
 			else:
 				row_count += 1
 				if row_count == combo_count:
 					break
-		print(row[:-2], file=distance_file)
+		print(*row, file=distance_file)
 
 
 def main():

@@ -133,6 +133,7 @@ sdmdata_clean :
 # combine distance matrices to SDM input
 $(SDMINPUT) : $(SDMMATRICES)
 	$(CHMOD) -R 755 $(TB2DATA)
+	$(FIND) S*.sdm -size -1k -delete
 	$(FIND) $(TB2DATA)/S*.sdm |  wc -l >> $@
 	$(CAT) $(SDMMATRICES) >> $@
 sdminput : $(SDMINPUT)
@@ -141,7 +142,8 @@ sdminput_clean :
  
 # process distance matrices with SDM program
 $(SDMRUN) : $(SDMINPUT)
-	$(SDM) -i $(SDMINPUT) # square non-subreplicate matrix for FastME 
+  # square non-subreplicate matrix for FastME 
+	$(SDM) -i $(SDMINPUT) -f PHYLIP_SQUARE 
 sdmrun : $(SDMINPUT)
 sdmrun_clean : 
 	$(RM_RF) $(TB2DATA)/*_sdm_* 
