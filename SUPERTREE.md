@@ -40,7 +40,12 @@ don't simply include all species in the NCBI taxonomy, just the ones TreeBASE kn
 - `tb2mrp_species` - for each study MRP file (*.txt) maps the $ncbiTaxonID to the species ID. Results in a *.dat
 file for every MRP *.txt file. _Note: the list of *.xml/*.txt/*.dat files is constructed by make from the list
 of *.url files generated out of the sitemap. Other files with the *.txt extension (such as species.txt) are ignored._
+- `ncbi` - downloads and extracts the NCBI taxonomy flat files into `data/taxdmp`
 
+Analysis using SDM 
+------------------------------
+
+Building a distance based supermatrix:
 - `sdmdata` - converts the treeblock MRP matrices (*.dat files) into distance matrices (*.sdm) and also adds log files.
 The distances are calculated for every combination of taxa as follows: Hamming distance (counting differences in character
 positions) divided by taxon count and character count.
@@ -49,7 +54,10 @@ positions) divided by taxon count and character count.
 based supermatrix, `deformed matrices`, `rates` (the 1/αp values), `tab` table indicating taxa covered by each gene and 
 also a `var` file containing the variances of each entry inside the supermatrix. 
 
-- `ncbi` - downloads and extracts the NCBI taxonomy flat files into `data/taxdmp`
+Analysis using TNT 
+------------------------------
+
+Processing MRP (character state) matrices:
 - `ncbimrp` - builds an MRP matrix for the species that occur in TreeBASE. _Note: this MRP matrix is not actually being
 used further, so this target is a dead end for now._
 - `ncbicon` - builds TNT constraint commands based on the NCBI common tree for the TreeBASE species.
@@ -59,9 +67,6 @@ for each *.dat file, a *.run file that contains the file inclusion commands (TNT
 matrices for a given study.
 - `tntscript` - creates a file `tntscript.runall` thath combines all the file inclusion commands from `tntdata` into a 
 single file.
-
-How to run TNT, the loose ends
-------------------------------
 
 So, in the end there is a `tntscript.runall` that contains a long list of file inclusion commands. Each inclusion command
 pulls in the MRP matrix for a single tree block in study. The rows in each MRP matrix are NCBI species identifiers.
