@@ -39,8 +39,7 @@ level, expand it to include all the species _that are seen to be subtended by th
 don't simply include all species in the NCBI taxonomy, just the ones TreeBASE knows about.
 - `tb2mrp_species` - for each study MRP file (*.txt) maps the $ncbiTaxonID to the species ID. Results in a *.dat
 file for every MRP *.txt file. _Note: the list of *.xml/*.txt/*.dat files is constructed by make from the list
-
-of *.url files generated out of the sitemap. Other files with the *.txt extension (such as species.txt) are ignored._
+of *.url files generated out of the sitemap. Other files with the *.txt extension (such as species.txt) are ignored.
 - `ncbi` - downloads and extracts the NCBI taxonomy flat files into `data/taxdmp`
 - `ncbimrp` - builds an MRP matrix for the species that occur in TreeBASE. _Note: this MRP matrix is not actually being
 used further, so this target is a dead end for now._
