@@ -1,4 +1,4 @@
-How to run the TNT pipeline, the nasty bits
+How to run the Make-based supertree pipeline
 ===========================================
 
 The file [script/supertree/Makefile](https://github.com/TreeBASE/supertreebase/blob/master/script/supertree/Makefile) 
