@@ -2,7 +2,7 @@ How to run the Make-based supertree pipeline
 ===========================================
 
 The file [script/supertree/Makefile](https://github.com/TreeBASE/supertreebase/blob/master/script/supertree/Makefile) 
-contains the steps for downloading TreeBASE data and preparing it for input into TNT. Below follows a discussion of
+contains the steps for downloading TreeBASE data and preparing it for input into SDM or TNT. Below follows a discussion of
 these steps, identified as make targets. 
 
 If you want to work your way through these steps one by one, you would issue them in the order given, and you would do 
