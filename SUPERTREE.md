@@ -1,8 +1,8 @@
-How to run the TNT pipeline, the nasty bits
+How to run the Make-based supertree pipeline
 ===========================================
 
 The file [script/supertree/Makefile](https://github.com/TreeBASE/supertreebase/blob/master/script/supertree/Makefile) 
-contains the steps for downloading TreeBASE data and preparing it for input into TNT. Below follows a discussion of
+contains the steps for downloading TreeBASE data and preparing it for input into SDM or TNT. Below follows a discussion of
 these steps, identified as make targets. 
 
 If you want to work your way through these steps one by one, you would issue them in the order given, and you would do 
@@ -52,6 +52,7 @@ Building a distance based supermatrix:
 The distances are calculated for every combination of taxa as follows: Hamming distance (counting differences in character
 positions) divided by taxon count and character count.
 - `sdminput` - every matrix is written to a input file for the SDM program. Also the number of matrices should be included.
+This step also includes filtering out empty/failed conversion files, so that the right number of actual input matrices is passed to the big SDM input file.
 - `sdmrun` - the input file is processed by the SDM program. This should result in a few output files; `mat` the distance 
 based supermatrix, `deformed matrices`, `rates` (the 1/αp values), `tab` table indicating taxa covered by each gene and 
 also a `var` file containing the variances of each entry inside the supermatrix. 
