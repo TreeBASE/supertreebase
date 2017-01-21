@@ -53,9 +53,10 @@ The distances are calculated for every combination of taxa as follows: Hamming d
 positions) divided by taxon count and character count.
 - `sdminput` - every matrix is written to a input file for the SDM program. Also the number of matrices should be included.
 This step also includes filtering out empty/failed conversion files, so that the right number of actual input matrices is passed to the big SDM input file.
-- `sdmrun` - the input file is processed by the SDM program. This should result in a few output files; `mat` the distance 
-based supermatrix, `deformed matrices`, `rates` (the 1/αp values), `tab` table indicating taxa covered by each gene and 
-also a `var` file containing the variances of each entry inside the supermatrix. 
+
+Now the input file can be processed by the SDM program. You can use the following command: `sdm -i tb2dist -f PHYLIP_SQUARE`
+
+This should result in a few output files; `mat` the distance based supermatrix, `deformed matrices`, `rates` (the 1/αp values), `tab` table indicating taxa covered by each gene and lastly a `var` file containing the variances of each entry inside the supermatrix.
 
 Analysis using TNT 
 ------------------------------
