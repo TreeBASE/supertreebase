@@ -1,0 +1,102 @@
+#!/bin/bash
+# Some useful bash commands, used during the superTreeBASE project
+
+
+### Filtering data ###
+
+
+# count XML downloads
+ls -lR S*.xml | wc -l
+
+# list succesful downloads 
+find S*.xml -size +4k -exec ls -lh {} \+
+
+# count succesful downloads 
+find S*.xml -size +4k |  wc -l
+
+# list failed downloads
+find S*.xml -size -4k -exec ls -lh {} \+
+
+# clean out files
+sudo find S*.xml -size -4k -exec truncate --size 0 {} \;
+
+# make recognizable for git
+sudo find S*.xml -size -1k -exec bash -c 'echo x > {}' \;
+
+# remove empty files
+find S*.xml -size 0 -delete
+
+
+# commit empty download files and then the new non-corrupted files
+find S*.xml -size -2k | xargs git add 
+git commit -m "adding failing studies" 
+find S*.xml -size +2k | xargs git add 
+git commit -m "adding freshly downloaded studies" 
+
+# zip succesfull files
+find S*.xml -size +2k -exec zip newdownloads.zip {} \+
+
+# find failed MRP > distance conversions
+find S*.sdm -size -1k 
+# remove failed conversions
+find S*.sdm -size -1k -delete
+
+
+### Increasing swap memory ###
+
+
+# turn off instance uit
+sudo poweroff
+
+# login to stack.naturalis.nl
+# volumes > actions > manage attachments > detach volume 
+# actions > extend volume
+# actions > manage attachments > attach volume 
+# start instance 
+
+# check swap size
+df -h 
+
+# format if needed
+lsblk
+sudo mkswap /dev/vdb
+sudo swapon -U #ID
+
+
+### Programs ###
+
+
+# TNT for infering phylogenies (from MRP formatted input for example)
+alias tnt='/home/ubuntu/Downloads/tnt64-no-tax-limit/./tnt.command'
+
+# SDM program for distance based phylogenomic (super)tree building
+# using variable memory usage
+alias sdm='java -Xmx1200g -jar /home/ubuntu/Downloads/SDM/SDM.jar' 
+
+# SDM commandline arguments
+
+# square non-subreplicate matrix for FastME 
+sdm -i 'infile' -f PHYLIP_SQUARE
+# in case of Newick input
+sdm -i 'infile' -t T -f PHYLIP_SQUARE -s Y
+# get variance matrix for PhyD* MVR*
+
+# PhyD* program for MVR run (in case of missing data entries in SDM output)
+alias phyd='java -Xmx1200g -jar /home/ubuntu/Downloads/PhyDstar/PhyDstar.jar'
+
+# In case of complete matrix, you can use the "fastme" program,
+# called by the command of the same name
+
+
+### Process primate data to SDM input (for testing) ###
+
+# count input trees
+find *.dat | wc -l >> primates_nwck
+# write trees
+for f in *.dat; do perl make_dist.pl -i "$f" >> primates_nwck;  done
+# SDM run 
+sdm -i "primates_nwck" -t T -f PHYLIP_SQUARE -s Y#Y
+# Tree inference 
+phyd -i "primates_nwck_sdm_mat.txt" #bionj
+phyd -i "primates_nwck_sdm_mat.txt" -d mvr
+

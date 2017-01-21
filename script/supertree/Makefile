@@ -47,6 +47,7 @@ TB2SITEMAP=sitemap.xml
 TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
 TB2TAXA=$(TB2DATA)/taxa.txt
 TB2SPECIES=$(TB2DATA)/species.txt
+TB2KINGDOMS=$(TB2DATA)/kingdoms.txt
 TB2NCHAR=$(TB2DATA)/nchar.txt
 TNTSCRIPT=$(TB2DATA)/tntscript.runall
 SDMINPUT=$(TB2DATA)/tb2dist
@@ -120,6 +121,23 @@ tb2mrp_species : $(TB2NRMLMRP)
 tb2mrp_species_clean : 
 	$(RM_RF) $(TB2NRMLMRP)
 
+# download taxdmp archive
+$(NCBIFILES) :
+	$(MKPATH) $(TAXDMPDIR)
+	$(CURL) -o $(TAXDMPARCH) $(TAXDMPURL)
+	cd $(TAXDMPDIR) && $(EXTRACT) $(TAXDMP).$(ARCH) && cd -
+ncbi : $(NCBIFILES)
+ncbi_clean : 
+	$(RM_RF) $(TAXDMPDIR)
+
+# make NCBI MRP matrix
+$(NCBIMRP) : $(NCBIFILES) $(TB2SPECIES)
+	$(MKPATH) $(MRPDIR) $(TAXDMPTMP)
+	$(PERL) $(SCRIPT)/make_ncbi_mrp.pl -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+ncbimrp : $(NCBIMRP)
+ncbimrp_clean : 
+	$(RM_RF) $(NCBIMRP)
+
 
 ### SMD METHOD ###
 
@@ -142,33 +160,19 @@ sdminput_clean :
  
 # process distance matrices with SDM program
 sdmrun :
+	- $(RM_RF) $(TB2DATA)/tb2dist_taxa.txt
 	- $(RM_RF) $(TB2DATA)/*_sdm_*
   # square non-subreplicate matrix for FastME 
-	$(SDM) -i $(SDMINPUT) -f PHYLIP_SQUARE 
+	- $(SDM) -i $(SDMINPUT) -f PHYLIP_SQUARE #-s Y
 sdmrun_clean : 
-	$(RM_RF) $(TB2DATA)/*_sdm_* 
- 
-# process SDM output with ...
+	$(RM_RF) $(TB2DATA)/*_sdm_*
+	$(RM_RF) $(TB2DATA)/tb2dist_taxa.txt
+  
+# Missing values? Process SDM matrix with PhyD* MVR*
+# Complete matrix? Process SDM matrix with FastME
 
 
 ### TNT METHOD ###
-
-# download taxdmp archive
-$(NCBIFILES) :
-	$(MKPATH) $(TAXDMPDIR)
-	$(CURL) -o $(TAXDMPARCH) $(TAXDMPURL)
-	cd $(TAXDMPDIR) && $(EXTRACT) $(TAXDMP).$(ARCH) && cd -
-ncbi : $(NCBIFILES)
-ncbi_clean : 
-	$(RM_RF) $(TAXDMPDIR)
-
-# make NCBI MRP matrix
-$(NCBIMRP) : $(NCBIFILES) $(TB2SPECIES)
-	$(MKPATH) $(MRPDIR) $(TAXDMPTMP)
-	$(PERL) $(SCRIPT)/make_ncbi_mrp.pl -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
-ncbimrp : $(NCBIMRP)
-ncbimrp_clean : 
-	$(RM_RF) $(NCBIMRP)
 
 # make NCBI constraints
 # $(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
@@ -176,7 +180,6 @@ ncbimrp_clean :
 # ncbicon : $(NCBICON)
 # ncbicon_clean :
 #	$(RM_RF) $(NCBICON)
-
 
 # make NCBI constraints
 $(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
@@ -200,3 +203,13 @@ $(TNTSCRIPT) : $(TNTCOMMANDS)
 tntscript : $(TNTSCRIPT)
 tntscript_clean : 
 	$(RM_RF) $(TNTSCRIPT) $(TB2DATA)/*.run
+ 
+ 
+ ### Partitioning ### 
+ 
+# find (super)kingdom level for every study, for partitioning
+$(TB2KINGDOMS) : $(TB2NRMLMRP) $(NCBIFILES)
+	$(PYTHON) $(SCRIPT)/find_kingdoms.py -i $< -n `pwd`/$(NCBINODES) >> $@
+kingdoms : $(TB2KINGDOMS)
+kingdoms_clean:
+	$(RM_RF) $(TB2KINGDOMS)
