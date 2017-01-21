@@ -48,15 +48,19 @@ Analysis using SDM
 ------------------------------
 
 Building a distance based supermatrix:
-- `sdmdata` - converts the treeblock MRP matrices (*.dat files) into distance matrices (*.sdm) and also adds log files.
-The distances are calculated for every combination of taxa as follows: Hamming distance (counting differences in character
+- `sdmdist` - converts the treeblock MRP matrices (*.dat files) into distance matrices (*.sdm) and also adds log files.
+The distances are calculated for every combination of taxa as follows: Hamming distance (counting differences for character
 positions) divided by taxon count and character count.
 - `sdminput` - every matrix is written to a input file for the SDM program. Also the number of matrices should be included.
 This step also includes filtering out empty/failed conversion files, so that the right number of actual input matrices is passed to the big SDM input file.
 
-Now the input file can be processed by the SDM program. You can use the following command: `sdm -i tb2dist -f PHYLIP_SQUARE`
+Now the input file can be processed by the SDM program. You could use the following basic command: `sdm -i tb2dist -f PHYLIP_SQUARE`
 
 This should result in a few output files; `mat` the distance based supermatrix, `deformed matrices`, `rates` (the 1/αp values), `tab` table indicating taxa covered by each gene and lastly a `var` file containing the variances of each entry inside the supermatrix.
+
+The `mat` file is used to build the actual supertree.
+In case of missing values (-99.0 distances): the MVR* method within the PhyD* package is recomended.
+In case of a complete matrix: the FastME program can be used!
 
 Analysis using TNT 
 ------------------------------
@@ -83,4 +87,3 @@ command. I never got this to work properly.
 - I also never got the commands that I cribbed from DOI:10.1111/j.1096-0031.2009.00255.x to work as advertised. Someone
 with a fairly intimate knowledge of the TNT language is going to have to deal with this. I guess in principle it's
 only a couple of lines of code that should go in the `tntwrap` but I can't figure it out.
-
