@@ -47,6 +47,7 @@ TB2SITEMAP=sitemap.xml
 TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
 TB2TAXA=$(TB2DATA)/taxa.txt
 TB2SPECIES=$(TB2DATA)/species.txt
+TB2STUDYSPECIES=$(TB2DATA)/study_species.txt
 TB2KINGDOMS=$(TB2DATA)/kingdoms.txt
 TB2NCHAR=$(TB2DATA)/nchar.txt
 TNTSCRIPT=$(TB2DATA)/tntscript.runall
@@ -207,9 +208,16 @@ tntscript_clean :
  
  ### Partitioning ### 
  
-# find (super)kingdom level for every study, for partitioning
+# making a table showing species ID's within every study
+$(TB2STUDYSPECIES) : $(TB2NRMLMRP) 
+	$(PYTHON) $(SCRIPT)/study_species.py -i $< >> $@
+studypecies : $(TB2STUDYSPECIES)
+studyspecies_clean:
+	$(RM_RF) $(TB2STUDYSPECIES) 
+ 
+# find (super)kingdom levels found in every study
 $(TB2KINGDOMS) : $(TB2NRMLMRP) $(NCBIFILES)
-	$(PYTHON) $(SCRIPT)/find_kingdoms.py -i $< -n `pwd`/$(NCBINODES) >> $@
+	$(PYTHON) $(SCRIPT)/make_kingdoms.py -i $< -n `pwd`/$(NCBINODES) >> $@
 kingdoms : $(TB2KINGDOMS)
 kingdoms_clean:
 	$(RM_RF) $(TB2KINGDOMS)
