@@ -75,11 +75,9 @@ alias sdm='java -Xmx1200g -jar /home/ubuntu/Downloads/SDM/SDM.jar'
 
 # SDM commandline arguments
 
-# square non-subreplicate matrix for FastME 
-sdm -i 'infile' -f PHYLIP_SQUARE
-# in case of Newick input
-sdm -i 'infile' -t T -f PHYLIP_SQUARE -s Y
-# get variance matrix for PhyD* MVR*
+# square non-subreplicate matrix for further processing
+# weighing the input based on their size is also a possibility!
+sdm -i 'infile' -f PHYLIP_SQUARE #-s YY -t T 
 
 # PhyD* program for MVR run (in case of missing data entries in SDM output)
 alias phyd='java -Xmx1200g -jar /home/ubuntu/Downloads/PhyDstar/PhyDstar.jar'
@@ -89,6 +87,7 @@ alias phyd='java -Xmx1200g -jar /home/ubuntu/Downloads/PhyDstar/PhyDstar.jar'
 
 
 ### Process primate data to SDM input (for testing) ###
+
 
 # count input trees
 find *.dat | wc -l >> primates_nwck

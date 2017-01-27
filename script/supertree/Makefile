@@ -210,13 +210,15 @@ tntscript_clean :
  
 # making a table showing species ID's within every study
 $(TB2STUDYSPECIES) : $(TB2NRMLMRP) 
-	$(PYTHON) $(SCRIPT)/study_species.py -i $< >> $@
-studypecies : $(TB2STUDYSPECIES)
+	for f in $< ; do \
+		$(PYTHON) $(SCRIPT)/study_species.py -i $$f >> $@ ; \
+   done
+studyspecies : $(TB2STUDYSPECIES)
 studyspecies_clean:
 	$(RM_RF) $(TB2STUDYSPECIES) 
  
 # find (super)kingdom levels found in every study
-$(TB2KINGDOMS) : $(TB2NRMLMRP) $(NCBIFILES)
+$(TB2KINGDOMS) : $(TB2STUDYSPECIES) $(NCBIFILES)
 	$(PYTHON) $(SCRIPT)/make_kingdoms.py -i $< -n `pwd`/$(NCBINODES) >> $@
 kingdoms : $(TB2KINGDOMS)
 kingdoms_clean:
