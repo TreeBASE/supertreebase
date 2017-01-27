@@ -59,7 +59,8 @@ Now the input file can be processed by the SDM program. You could use the follow
 This should result in a few output files; `mat` the distance based supermatrix, `deformed matrices`, `rates` (the 1/αp values), `tab` table indicating taxa covered by each gene and lastly a `var` file containing the variances of each entry inside the supermatrix.
 
 The `mat` file is used to build the actual supertree.
-In case of missing values (-99.0 distances): the MVR* method within the PhyD* package is recomended.
+In case of missing values (-99.0 distances): the MVR* method within the PhyD* package is recommended, 
+using the -i YY command for weighing the input based on their size.
 In case of a complete matrix: the FastME program can be used!
 
 Analysis using TNT 
@@ -87,3 +88,11 @@ command. I never got this to work properly.
 - I also never got the commands that I cribbed from DOI:10.1111/j.1096-0031.2009.00255.x to work as advertised. Someone
 with a fairly intimate knowledge of the TNT language is going to have to deal with this. I guess in principle it's
 only a couple of lines of code that should go in the `tntwrap` but I can't figure it out.
+
+Partitioning data 
+------------------------------
+
+if the normalized *.dat file for every MRP *.txt file was created, the studies can be mapped to the (super)kingdom ranks they cover.
+
+- `studyspecies` - creates a table file (study_species.txt) where every study is linked to the found species; study_ID \t species_count \t species_tax_ID,species_tax_ID,...
+- `kingdoms` - traces back every species id to (super)kingdom level with help of the NCBI taxonomy, creating the following table (kingdoms.txt); kingdom_name \t species_count \t study_count \t study_id_filename, study_id_filename, ...
