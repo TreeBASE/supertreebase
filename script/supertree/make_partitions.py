@@ -13,7 +13,6 @@ using *.sdm files or *.tnt
 Usage:
     -i  Text file containing study_ID's linked to kingdom_tax_ID list
     -a  (S/D), if data should be prepared for SDM or TNT analysis 
-    -n  Tree-block ID's linked to number of characters 
 '''
 
 import argparse
@@ -24,6 +23,29 @@ import sys
 import logging
 
 
+def get_filedict(filename):
+	'''
+	Input:
+		File name, for table -
+		kingdom_name species_count study_count study_ID(, study_ID)
+	Output:
+		dict { kingdom_name : [study_ID, study_ID] }
+	'''
+	outdict = dict()
+	kingdoms_file = open(filename)
+	for l in kingdoms_file:
+		l = l.strip()
+		kingdom_name = l.split()[0]
+		if kingdom_name not in outdict:
+			outdict[kingdom_name] = list()
+			filelist = l.split()
+			for f in filelist[3:]:
+				f = f.replace(",", "").strip()
+				outdict[kingdom_name].append(f)
+	kingdoms_file.close()		
+	return outdict
+
+
 def main():
 
 	parser = argparse.ArgumentParser(description='Process commandline arguments')
@@ -31,35 +53,19 @@ def main():
     	                help="Text file containing study_ID's linked to kingdom_tax_ID list")
 	parser.add_argument("-a", type=str,
     	                help="Analysis program where the data should be prepared for, SMD or TNT (S/T)")
-	parser.add_argument("-n", type=str,
-    	                help="Table containing Tb_ID's linked to number of character found in tree")
 	args = parser.parse_args()
 	
 	#outname_log = args.o + args.i
 	#outname_log = outname_log.replace(".dat", ".log")
 	#log_file = open(outname_log, "a")
 
-	kingdoms_file = open(args.i)
-	
-	nchar_file = open(args.n)
-	nchar_dict = dict()
-
-	print("reading nchar.txt ...")
-	for l in nchar_file:
-		l = l.strip()
-		if l.count("Tb") == 1 and len(l.split()) == 2:
-			tb_id = l.split()[0]
-			nchar = l.split()[1]
-			nchar_dict[tb_id] = nchar
-
+	filedict = get_filedict(args.i)
 	analysistype = args.a
 
 	datadir = "../../data/treebase/"
 
-	for l in kingdoms_file:
-		l = l.strip()
-		kingdom_name = l.split()[0]
-		print("processing " + kingdom_name + " ...")
+
+	for kingdom_name in filedict:
 
 		filecount = 0
 		out = ""
@@ -67,11 +73,11 @@ def main():
 		#SDM partition
 		if analysistype == "S":
 
+			print("processing " + kingdom_name + " ...")
 			kingdom_file = open(datadir + "tb2dist_" + kingdom_name, "a")
 
-			filelist = l.split()
+			filelist = filedict[kingdom_name]
 			for f in filelist:
-				f = f.replace(",", "").strip()
 				studyfiles = (datadir + f + "*.sdm")
 				datalist = glob.glob(studyfiles)
 				for tb in datalist:
@@ -83,42 +89,41 @@ def main():
 			kingdom_file.write(str(filecount) + "\n")
 			kingdom_file.write(out)
 
+
 		#TNT partition
 		if analysistype == "T":
 
+			print("processing " + kingdom_name + " ...")
 			kingdom_file = open(datadir + "tntscript.run" + kingdom_name, "a")
 			charcount = 0
 			specieslist = list()
 
-			filelist = l.split()
+			filelist = filedict[kingdom_name]
 			for f in filelist:
-				f = f.replace(",", "").strip()
 				studyfiles = (datadir + f + "*.tnt")
 				datalist = glob.glob(studyfiles)
 				for tb in datalist:
-					print("processing " + tb + " ...")
-
+					#print("processing " + tb + " ...")
+						
 					tb_file = open(tb)
-					out += ("& [ num ] @@ {} data ;\n".format(tb) )
+					out += ("& [ num ] @@ {} data ;\n".format(tb.split("/")[-1]) )
 
 					for l in tb_file:
 						l = l.strip()
 						components = l.split()
 						if len(components) != 1 and components[0] != "Label":
-							tb_name = tb.split(".")[-2]							
-							if tb_name in nchar_dict.keys():
-								charcount += int(nchar_dict[tb_name])
-							tax = components[0]
+							tax = components[0].strip()
 							if tax not in specieslist:
 								specieslist.append(tax)
+							charstring = components[1].strip()
+					charcount += len(charstring)
 
 					tb_file.close()
 				filecount += len(datalist)
-			
+				
 			species_count = len(specieslist)
 
-			intro = """
-macro=;
+			intro = """macro=;
 /* execute me be starting up TNT and then type 'proc <scriptname> ;' */
 /* note that you will need to increase memory to at least 50Gb! */
 /* memory is increased in megabytes, e.g. using 'mxram 50000 ;' */
@@ -128,7 +133,7 @@ xread
 			kingdom_file.write(intro)
 			kingdom_file.write(out)
 			kingdom_file.write("proc/;\n")
-	kingdoms_file.close()
+
 
 if __name__ == "__main__":
 	main()
