@@ -160,14 +160,14 @@ sdminput_clean :
 	$(RM_RF) $(SDMINPUT)
  
 # process distance matrices with SDM program
-sdmrun :
-	- $(RM_RF) $(TB2DATA)/tb2dist_taxa.txt
-	- $(RM_RF) $(TB2DATA)/*_sdm_*
+#sdmrun :
+#	- $(RM_RF) $(TB2DATA)/tb2dist_taxa.txt
+#	- $(RM_RF) $(TB2DATA)/*_sdm_*
   # square non-subreplicate matrix for FastME 
-	- $(SDM) -i $(SDMINPUT) -f PHYLIP_SQUARE #-s Y
-sdmrun_clean : 
-	$(RM_RF) $(TB2DATA)/*_sdm_*
-	$(RM_RF) $(TB2DATA)/tb2dist_taxa.txt
+#	- $(SDM) -i $(SDMINPUT) -f PHYLIP_SQUARE #-s Y
+#sdmrun_clean : 
+#	$(RM_RF) $(TB2DATA)/*_sdm_*
+#	$(RM_RF) $(TB2DATA)/tb2dist_taxa.txt
   
 # Missing values? Process SDM matrix with PhyD* MVR*
 # Complete matrix? Process SDM matrix with FastME
@@ -223,3 +223,16 @@ $(TB2KINGDOMS) : $(TB2STUDYSPECIES) $(NCBIFILES)
 kingdoms : $(TB2KINGDOMS)
 kingdoms_clean:
 	$(RM_RF) $(TB2KINGDOMS)
+ 
+# create SDM partitions
+sdm_partitions: $(TB2KINGDOMS)
+	$(PYTHON) $(SCRIPT)/make_partitions.py -i $< -a 'S'
+sdm_partitions_clean:
+	- $(RM_RF) $(TB2DATA)/tb2dist_*
+ 
+# create TNT partitions
+tnt_partitions: $(TB2KINGDOMS)
+	$(PYTHON) $(SCRIPT)/make_partitions.py -i $< -a 'T'
+tnt_partitions_clean:
+	- find $(TB2DATA)/tntscript.run* ! -name "tntscript.runall" -exec $(RM_RF) {} \;
+ 
