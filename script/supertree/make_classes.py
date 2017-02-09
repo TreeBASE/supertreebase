@@ -19,7 +19,8 @@ Class table output:
 
 Usage:
     -i  Text file containing study_ID's linked to species_ID list
-    -n  NCBI taxdmp nodes file
+    -t  NCBI taxdmp nodes file
+    -n 	NCBI names files
 '''
 
 import argparse
@@ -96,14 +97,33 @@ def get_nodes_objects(nodedmp):
 	nodes_file.close()
 	return nodes
 
+def get_names_dict(namedmp):
+	'''
+	Input:
+		NCBI names.dmp
+	Output:
+		dict {node_id : tax_name}
+	'''
+	names_file = open(namedmp)
+	names = dict()
+	for i in names_file:
+		line = i.split("|")
+		node_id = line[0].strip()
+		tax_name = line[1].strip()
+		if node_id not in names:
+			names[node_id] = tax_name
+	names_file.close()
+	return names
 
 def main():
 
 	parser = argparse.ArgumentParser(description='Process commandline arguments')
 	parser.add_argument("-i", type=str,
     	                help="Input file (*.dat file from pipeline, containing MRP matrix/matrices)")
-	parser.add_argument("-n", type=str,
+	parser.add_argument("-t", type=str,
     	                help="NCBI taxdmp nodes file")
+	parser.add_argument("-n", type=str,
+    	                help="NCBI names file")
 	args = parser.parse_args()
 	
 	#outname_log = args.o + args.i
@@ -116,7 +136,9 @@ def main():
 	classes_table = dict()
 	classes_table["none"] = [0, list()]
 	
-	nodes = get_nodes_objects(args.n)
+	nodes = get_nodes_objects(args.t)
+	names = get_names_dict(args.n)
+	names["none"] = "None"
 
 	for n in nodes:
 		n = nodes[n]
@@ -160,12 +182,20 @@ def main():
 	
 	hit = 0
 	nohit = 0
+	nameoccur = dict()
 	for cid in classes_table:
 		species_count = classes_table[cid][0]
 		studies_list = classes_table[cid][1]
 		if len(studies_list) > 0:
 			hit += 1
-			print(cid + "\t" + str(species_count) + "\t" + str(len(studies_list)) 
+			classname = names[cid].replace('"', "")
+			classname = classname.replace(" ", "_")
+			if classname not in nameoccur:
+				nameoccur[classname] = 1
+			else:
+				nameoccur[classname] += 1
+				classname = classname + "_" + str(nameoccur[classname])
+			print(classname + "\t" + str(species_count) + "\t" + str(len(studies_list)) 
 				+ "\t" + str(studies_list).replace("'", "")[1:-1] )
 		else:
 			nohit += 1

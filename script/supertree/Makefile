@@ -48,7 +48,7 @@ TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
 TB2TAXA=$(TB2DATA)/taxa.txt
 TB2SPECIES=$(TB2DATA)/species.txt
 TB2STUDYSPECIES=$(TB2DATA)/study_species.txt
-TB2CLASSES=$(TB2DATA)/classes.txt
+TB2CLASS=$(TB2DATA)/classes.txt
 TB2NCHAR=$(TB2DATA)/nchar.txt
 TNTSCRIPT=$(TB2DATA)/tntscript.runall
 SDMINPUT=$(TB2DATA)/tb2dist
@@ -218,20 +218,20 @@ studyspecies_clean:
 	$(RM_RF) $(TB2STUDYSPECIES) 
  
 # find class levels found in every study
-$(TB2CLASSES) : $(TB2STUDYSPECIES) $(NCBIFILES)
-	$(PYTHON) $(SCRIPT)/make_classes.py -i $< -n `pwd`/$(NCBINODES) >> $@
-classes : $(TB2CLASSES)
+$(TB2CLASS) : $(TB2STUDYSPECIES) $(NCBIFILES)
+	$(PYTHON) $(SCRIPT)/make_classes.py -i $< -t `pwd`/$(NCBINODES) -n `pwd`/$(NCBINAMES) >> $@
+classes : $(TB2CLASS)
 classes_clean:
-	$(RM_RF) $(TB2CLASSES)
+	$(RM_RF) $(TB2CLASS)
  
 # create SDM partitions
-sdm_partitions: $(TB2CLASSES)
+sdm_partitions: $(TB2CLASS)
 	$(PYTHON) $(SCRIPT)/make_partitions.py -i $< -a 'S'
 sdm_partitions_clean:
 	- $(RM_RF) $(TB2DATA)/tb2dist_*
  
 # create TNT partitions
-tnt_partitions: $(TB2CLASSES)
+tnt_partitions: $(TB2CLASS)
 	$(PYTHON) $(SCRIPT)/make_partitions.py -i $< -a 'T'
 tnt_partitions_clean:
 	- find $(TB2DATA)/tntscript.run* ! -name "tntscript.runall" -exec $(RM_RF) {} \;
