@@ -206,7 +206,7 @@ tntscript_clean :
 	$(RM_RF) $(TNTSCRIPT) $(TB2DATA)/*.run
  
  
- ### Partitioning ### 
+### Partitioning ### 
  
 # making a table showing species ID's within every study
 $(TB2STUDYSPECIES) : $(TB2NRMLMRP) 
@@ -219,7 +219,7 @@ studyspecies_clean:
  
 # find class levels found in every study
 $(TB2CLASS) : $(TB2STUDYSPECIES) $(NCBIFILES)
-	$(PYTHON) $(SCRIPT)/make_classes.py -i $< -t `pwd`/$(NCBINODES) -n `pwd`/$(NCBINAMES) >> $@
+	$(PYTHON) $(SCRIPT)/make_classes.py -i $< -t `pwd`/$(NCBINODES) -n `pwd`/$(NCBINAMES) -o $@
 classes : $(TB2CLASS)
 classes_clean:
 	$(RM_RF) $(TB2CLASS)

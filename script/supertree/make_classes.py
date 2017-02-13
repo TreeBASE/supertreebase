@@ -21,6 +21,7 @@ Usage:
     -i  Text file containing study_ID's linked to species_ID list
     -t  NCBI taxdmp nodes file
     -n 	NCBI names files
+    -o  Output file
 '''
 
 import argparse
@@ -29,15 +30,7 @@ import os
 import sys
 import logging
 
-logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
-
-def proc_log(logmessage, logtype, log_file):
-	if logtype == "inf":
-		logging.info(logmessage)
-		log_file.write("INFO: " + logmessage + "\n")
-	if logtype == "war":
-		logging.warning(logmessage)
-		log_file.write("WARNING: " + logmessage + "\n")
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 
 class TaxNode:
@@ -124,11 +117,12 @@ def main():
     	                help="NCBI taxdmp nodes file")
 	parser.add_argument("-n", type=str,
     	                help="NCBI names file")
+	parser.add_argument("-o", type=str,
+    	                help="Output file (table with rank_ID's linked to species_count, study_count and study_ID's)")
 	args = parser.parse_args()
 	
-	#outname_log = args.o + args.i
-	#outname_log = outname_log.replace(".dat", ".log")
-	#log_file = open(outname_log, "a")
+
+	outfile = open(args.o, "a")
 
 	species_dict = get_dict(args.i)		
 	unique_species = list()
@@ -136,6 +130,7 @@ def main():
 	classes_table = dict()
 	classes_table["none"] = [0, list()]
 	
+	logging.info("reading NCBI taxonomy")
 	nodes = get_nodes_objects(args.t)
 	names = get_names_dict(args.n)
 	names["none"] = "None"
@@ -147,8 +142,7 @@ def main():
 			classes_table[nid] = [0, list()]
 
 	for study in species_dict:	
-		#logmessage = "processing " + study
-		#logging.info(logmessage)
+		logging.info("processing " + study)
 
 		# trace back every species ID to class level
 		species_list = species_dict[study][1]
@@ -195,14 +189,15 @@ def main():
 			else:
 				nameoccur[classname] += 1
 				classname = classname + "_" + str(nameoccur[classname])
+			logging.info("writing " + classname)
 			print(classname + "\t" + str(species_count) + "\t" + str(len(studies_list)) 
-				+ "\t" + str(studies_list).replace("'", "")[1:-1] )
+				+ "\t" + str(studies_list).replace("'", "")[1:-1], file=outfile)
 		else:
 			nohit += 1
-	print(str(hit))
-	print(str(nohit))
+	print(str(hit), file=outfile)
+	print(str(nohit), file=outfile)
 
-	#log_file.close()
+	outfile.close()
 
 if __name__ == "__main__":
 	main()
