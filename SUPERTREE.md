@@ -60,7 +60,9 @@ if the normalized *.dat file for every MRP *.txt file was created, the studies c
 - `partitions` - create MRP files for the found class ranks, containing the matrices for each found study. For example; Mammalia.mrp. This is done using classes.txt and class_species.txt
 
 
------------------------------- Earlier experiment follows ------------------------------
+Earlier experiment below
+===========================================
+
 
 
 Analysis using TNT 
