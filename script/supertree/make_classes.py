@@ -112,7 +112,7 @@ def main():
 
 	parser = argparse.ArgumentParser(description='Process commandline arguments')
 	parser.add_argument("-i", type=str,
-    	                help="Input file (*.dat file from pipeline, containing MRP matrix/matrices)")
+    	                help="Input file (table file with study_ID's linked to species_ID's)")
 	parser.add_argument("-t", type=str,
     	                help="NCBI taxdmp nodes file")
 	parser.add_argument("-n", type=str,
