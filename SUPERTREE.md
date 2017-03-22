@@ -44,11 +44,6 @@ of *.url files generated out of the sitemap. Other files with the *.txt extensio
 - `ncbimrp` - builds an MRP matrix for the species that occur in TreeBASE. _Note: this MRP matrix is not actually being
 used further, so this target is a dead end for now._
 
-Analysis using PAUP* 
-------------------------------
-
-- Under construction 
-
 Partitioning data 
 ------------------------------
 
@@ -59,11 +54,13 @@ if the normalized *.dat file for every MRP *.txt file was created, the studies c
 - `classes` - traces back every species id to class level with help of the NCBI taxonomy and the study_species.txt file, creating the following table `classes.txt`; class_name \t species_count \t study_count \t study_id_filename, study_id_filename, ...
 - `partitions` - create MRP files for the found class ranks, containing the matrices for each found study. For example; Mammalia.mrp. This is done using classes.txt and class_species.txt
 
+Analysis using PAUP* 
+------------------------------
 
-Earlier experiment below
+- Under construction 
+
+Earlier experiment:
 ===========================================
-
-
 
 Analysis using TNT 
 ------------------------------
