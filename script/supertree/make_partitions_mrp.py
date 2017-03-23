@@ -2,7 +2,7 @@
 
 '''
 Author: Astrid Blaauw
-Date: 08/03/2016
+Date: 08/03/2017
 
 Making combined MRP files for class partitions, compiled from normalized MRP matrices.
 
@@ -95,7 +95,7 @@ def main():
 
 			outname = datadir + c + ".mrp"
 			logging.info("processing " + c + " ...")
-			#rank_file = open(outname, "a")
+			rank_file = open(outname, "a")
 
 			species = species_filedict[c]
 			if len(species) > 2:
@@ -123,31 +123,27 @@ def main():
 						
 						for tb in out:
 							lines = out[tb]
+							if len(lines) < 4:
+								skip += 1
 							input_count += 1
-							print("#" + study_id)
+
+							comment = "#" + study_id + "." + tb
+							#print(comment)
+							rank_file.write(comment)
+
 							for l in lines:
-								print(l.strip())
-
-						#else:
-						#	skip += 1
-							
-							#rank_file.write("# " + f + "\n")
-							#rank_file.write("\t" + str(species_count) + "\n")	
-							#rank_file.write(out + "\n")	
-						#else:
-						#	skip += 1
-
-							#print( str(input_count) )	
-							#print( "\t" + str(species_count) )	
-							#print(out)
+								tax_id = l.strip().split()[1]
+								char_str = l.strip().split()[2]
+								#print(tax_id + "\t" + char_str)
+								rank_file.write(tax_id + "\t" + char_str)
 
 			else:
 				logging.warning("not enough species in " + c)
 
 			logging.info("wrote " + str(input_count) + " matrices to " + outname)
-			logging.info("skipped " + str(skip) + " matrices")
+			logging.info(str(skip) + " less then 4 remaining species")
 
-			#rank_file.close()
+			rank_file.close()
 
 
 if __name__ == "__main__":
