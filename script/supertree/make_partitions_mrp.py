@@ -88,7 +88,7 @@ def main():
 
 	for c in species_filedict: 
 
-		if c == "Arachnida":
+		try:
 
 			input_count = 0
 			skip = 0
@@ -108,7 +108,7 @@ def main():
 
 						out = dict()
 						species_count = 0
-						
+							
 						for l in open(f):
 							linelist = l.split()
 							tb = linelist[0]
@@ -120,7 +120,7 @@ def main():
 									if linelist[1] in species:
 										species_count += 1
 										out[tb].append(l)
-						
+							
 						for tb in out:
 							lines = out[tb]
 							if len(lines) < 4:
@@ -129,13 +129,13 @@ def main():
 
 							comment = "#" + study_id + "." + tb
 							#print(comment)
-							rank_file.write(comment)
+							rank_file.write(comment + "\n")
 
 							for l in lines:
 								tax_id = l.strip().split()[1]
 								char_str = l.strip().split()[2]
 								#print(tax_id + "\t" + char_str)
-								rank_file.write(tax_id + "\t" + char_str)
+								rank_file.write(tax_id + "\t" + char_str  + "\n")
 
 			else:
 				logging.warning("not enough species in " + c)
@@ -144,6 +144,9 @@ def main():
 			logging.info(str(skip) + " less then 4 remaining species")
 
 			rank_file.close()
+
+		except KeyError:
+			logging.warning(c + " not found")
 
 
 if __name__ == "__main__":

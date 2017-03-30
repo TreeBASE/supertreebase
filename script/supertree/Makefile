@@ -46,12 +46,14 @@ NCBINAMES=$(TAXDMPDIR)/names.dmp
 TB2SITEMAP=sitemap.xml
 TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
 TB2TAXA=$(TB2DATA)/taxa.txt
+TB2LINEAGES=$(TB2DATA)/lineages.txt
 TB2SPECIES=$(TB2DATA)/species.txt
 TB2STUDYSPECIES=$(TB2DATA)/study_species.txt
+TB2CLASSSPECIES=$(TB2DATA)/class_species.txt
 TB2CLASS=$(TB2DATA)/classes.txt
 TB2NCHAR=$(TB2DATA)/nchar.txt
-TNTSCRIPT=$(TB2DATA)/tntscript.runall
-SDMINPUT=$(TB2DATA)/tb2dist
+#TNTSCRIPT=$(TB2DATA)/tntscript.runall
+#SDMINPUT=$(TB2DATA)/tb2dist
 
 # URLs. these are based on variables defined above and probably don't need updating, ever
 TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
@@ -64,9 +66,11 @@ TB2STUDYFILES=$(patsubst %.url,%.xml,$(TB2STUDYPURLS))
 TB2MRPFILES=$(patsubst %.xml,%.txt,$(TB2STUDYFILES))
 TB2NRMLMRP=$(patsubst %.xml,%.dat,$(TB2STUDYFILES))
 TB2CLASSES=$(patsubst %.xml,%.class,$(TB2STUDYFILES))
-TNTCOMMANDS=$(patsubst %.dat,%.run,$(TB2NRMLMRP))
-SDMLOGS=$(patsubst %.dat,%.log,$(TB2NRMLMRP))
-SDMMATRICES=$(wildcard $(TB2DATA)/*.sdm)
+#TNTCOMMANDS=$(patsubst %.dat,%.run,$(TB2NRMLMRP))
+#SDMLOGS=$(patsubst %.dat,%.log,$(TB2NRMLMRP))
+#SDMMATRICES=$(wildcard $(TB2DATA)/*.sdm)
+PARTITIONS=$(wildcard $(TB2DATA)/*.mrp)
+PAUPNEXUS=$(patsubst %.mrp,%.nex,$(PARTITIONS))
 
 
 .PHONY : 
@@ -143,21 +147,21 @@ ncbimrp_clean :
 ### SMD METHOD ###
 
 # convert MRP tables to distance matrices, for the SDM program
-$(SDMLOGS) : %.log : %.dat
-	$(PYTHON) $(SCRIPT)/make_sdm.py -o $(TB2DATA)/ -i $<
-sdmdata : $(SDMLOGS)
-sdmdata_clean : 
-	$(RM_RF) $(SDMLOGS) $(TB2DATA)/*.sdm
+#$(SDMLOGS) : %.log : %.dat
+#	$(PYTHON) $(SCRIPT)/make_sdm_dist_ncbi.py -l $(TB2LINEAGES) -o $(TB2DATA)/ -i $<
+#sdmdata : $(SDMLOGS)
+#sdmdata_clean : 
+#	$(RM_RF) $(SDMLOGS) $(TB2DATA)/*.sdm
  
 # combine distance matrices to SDM input
-$(SDMINPUT) : $(SDMMATRICES)
-	$(CHMOD) -R 755 $(TB2DATA)
-	- $(FIND) S*.sdm -size -1k -delete
-	$(FIND) $(TB2DATA)/S*.sdm |  wc -l >> $@
-	$(CAT) $(SDMMATRICES) >> $@
-sdminput : $(SDMINPUT)
-sdminput_clean : 
-	$(RM_RF) $(SDMINPUT)
+#$(SDMINPUT) : $(SDMMATRICES)
+#	$(CHMOD) -R 755 $(TB2DATA)
+#	- $(FIND) S*.sdm -size -1k -delete
+#	$(FIND) $(TB2DATA)/S*.sdm |  wc -l >> $@
+#	$(CAT) $(SDMMATRICES) >> $@
+#sdminput : $(SDMINPUT)
+#sdminput_clean : 
+#	$(RM_RF) $(SDMINPUT)
  
 # process distance matrices with SDM program
 #sdmrun :
@@ -183,38 +187,46 @@ sdminput_clean :
 #	$(RM_RF) $(NCBICON)
 
 # make NCBI constraints
-$(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
-	$(PERL) $(SCRIPT)/make_ncbi_constraint_tree.pl -w $(TB2DATA) -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
-ncbicon : $(NCBICON)
-ncbicon_clean :
-	$(RM_RF) $(NCBICON)
+#$(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
+#	$(PERL) $(SCRIPT)/make_ncbi_constraint_tree.pl -w $(TB2DATA) -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
+#ncbicon : $(NCBICON)
+#ncbicon_clean :
+#	$(RM_RF) $(NCBICON)
 
 # make tnt file inclusion commands and single file with nchar for each treeblock
-$(TNTCOMMANDS) : %.run : %.dat
-	$(PERL) $(SCRIPT)/make_tnt.pl -i $< > $@ 2>> $(TB2NCHAR)
-tntdata : $(TNTCOMMANDS)
-tntdata_clean : 
-	$(RM_RF) $(TNTCOMMANDS) $(TB2NCHAR) $(TB2DATA)/*.tnt
+#$(TNTCOMMANDS) : %.run : %.dat
+#	$(PERL) $(SCRIPT)/make_tnt.pl -i $< > $@ 2>> $(TB2NCHAR)
+#tntdata : $(TNTCOMMANDS)
+#tntdata_clean : 
+#	$(RM_RF) $(TNTCOMMANDS) $(TB2NCHAR) $(TB2DATA)/*.tnt
 
 # make the master tnt script
-$(TNTSCRIPT) : $(TNTCOMMANDS)
-	$(PERL) $(SCRIPT)/make_tnt_script.pl -n $(TB2NCHAR) -s $(TB2SPECIES) > $@
-	$(CAT) $(TNTCOMMANDS) >> $@
-	$(ECHO) 'proc/;' >> $@
-tntscript : $(TNTSCRIPT)
-tntscript_clean : 
-	$(RM_RF) $(TNTSCRIPT) $(TB2DATA)/*.run
+#$(TNTSCRIPT) : $(TNTCOMMANDS)
+#	$(PERL) $(SCRIPT)/make_tnt_script.pl -n $(TB2NCHAR) -s $(TB2SPECIES) > $@
+#	$(CAT) $(TNTCOMMANDS) >> $@
+#	$(ECHO) 'proc/;' >> $@
+#tntscript : $(TNTSCRIPT)
+#tntscript_clean : 
+#	$(RM_RF) $(TNTSCRIPT) $(TB2DATA)/*.run
  
  
 ### Partitioning ### 
+
+# making table showing species ID's linked to class ID's
+
+$(TB2CLASSSPECIES) : $(TB2NRMLMRP) $(NCBIFILES)
+	$(PYTHON) $(SCRIPT)/class_species.py -i $(TB2DATA)/ -t `pwd`/$(NCBINODES) -n `pwd`/$(NCBINAMES) >> $@
+class_species : $(TB2CLASSSPECIES)
+class_species_clean:
+	$(RM_RF) $(TB2CLASSSPECIES)
  
 # making a table showing species ID's within every study
 $(TB2STUDYSPECIES) : $(TB2NRMLMRP) 
 	for f in $< ; do \
 		$(PYTHON) $(SCRIPT)/study_species.py -i $$f >> $@ ; \
    done
-studyspecies : $(TB2STUDYSPECIES)
-studyspecies_clean:
+study_species : $(TB2STUDYSPECIES)
+study_species_clean:
 	$(RM_RF) $(TB2STUDYSPECIES) 
  
 # find class levels found in every study
@@ -224,15 +236,30 @@ classes : $(TB2CLASS)
 classes_clean:
 	$(RM_RF) $(TB2CLASS)
  
+# create a file with a list of corresponding MRP matrices, for each taxonomic class 
+partitions: $(TB2CLASSSPECIES) $(TB2CLASS)
+	$(PYTHON) $(SCRIPT)/make_partitions_mrp.py -c $(TB2CLASSSPECIES) -s $(TB2CLASS)
+partitions_clean:
+	- $(RM_RF) $(TB2DATA)/*.mrp
+   
 # create SDM partitions
-sdm_partitions: $(TB2CLASS)
-	$(PYTHON) $(SCRIPT)/make_partitions.py -i $< -a 'S'
-sdm_partitions_clean:
-	- $(RM_RF) $(TB2DATA)/tb2dist_*
+#sdm_partitions: $(TB2CLASSSPECIES) $(TB2CLASS)
+#	$(PYTHON) $(SCRIPT)/make_partitions_2.py -c $(TB2CLASSSPECIES) -s $(TB2CLASS) -a 'S'
+#sdm_partitions_clean:
+#	- $(RM_RF) $(TB2DATA)/tb2dist_*
  
 # create TNT partitions
-tnt_partitions: $(TB2CLASS)
-	$(PYTHON) $(SCRIPT)/make_partitions.py -i $< -a 'T'
-tnt_partitions_clean:
-	- find $(TB2DATA)/tntscript.run* ! -name "tntscript.runall" -exec $(RM_RF) {} \;
- 
+#tnt_partitions: $(TB2CLASS)
+#	$(PYTHON) $(SCRIPT)/make_partitions.py -i $< -a 'T'
+#tnt_partitions_clean:
+#	- find $(TB2DATA)/tntscript.run* ! -name "tntscript.runall" -exec $(RM_RF) {} \;
+
+
+### PAUP* METHOD ###
+
+# create NEXUS files with large combined MRP matrices
+$(PAUPNEXUS) : %.nex : %.mrp
+	$(PYTHON) $(SCRIPT)/combine_mrp.py -i $< >> $@
+paup_nexus : $(PAUPNEXUS)
+paup_nexus_clean : 
+	$(RM_RF) $(PAUPNEXUS)
