@@ -53,11 +53,12 @@ if the normalized *.dat file for every MRP *.txt file was created, the studies c
 - `study_species` - creates a table file `study_species.txt` where every study is linked to the found species; study_ID \t species_count \t species_tax_ID,species_tax_ID,...
 - `classes` - traces back every species id to class level with help of the NCBI taxonomy and the study_species.txt file, creating the following table `classes.txt`; class_name \t species_count \t study_count \t study_id_filename, study_id_filename, ...
 - `partitions` - create MRP files for the found class ranks, containing the matrices for each found study. For example; Mammalia.mrp. This is done using classes.txt and class_species.txt
+- `paup_nexus` - combines the MRP matrices to a large combined matrix, filling in the non-overlapping parts with questionmarks. The result is a Nexus file for every class-level partition. For example; Mammalia.nex
 
 Analysis using PAUP* 
 ------------------------------
 
-- Under construction 
+- under construction 
 
 Earlier experiment:
 ===========================================
