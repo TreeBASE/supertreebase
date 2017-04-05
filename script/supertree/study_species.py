@@ -25,14 +25,6 @@ import logging
 
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
 
-def proc_log(logmessage, logtype, log_file):
-	if logtype == "inf":
-		logging.info(logmessage)
-		log_file.write("INFO: " + logmessage + "\n")
-	if logtype == "war":
-		logging.warning(logmessage)
-		log_file.write("WARNING: " + logmessage + "\n")
-
 
 def get_species(filename):
 	'''
@@ -59,10 +51,6 @@ def main():
     	                help="Input file (*.dat file from pipeline, containing MRP matrix/matrices)")
 	args = parser.parse_args()
 	
-	#outname_log = args.o + args.i
-	#outname_log = outname_log.replace(".dat", ".log")
-	#log_file = open(outname_log, "a")
-	
 	filename = args.i
 
 	species = get_species(filename)
@@ -71,7 +59,6 @@ def main():
 	else:
 		print(filename + "\t" + "0" + "\t" + "1")
 
-	#log_file.close()
 
 if __name__ == "__main__":
 	main()

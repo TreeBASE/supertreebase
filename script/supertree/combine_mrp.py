@@ -103,19 +103,26 @@ def main():
 
 	# write output
 
-	print("#NEXUS\nbegin data;")
-	print('    dimensions ntax={} nchar={};'.format(ntax, nchar) )
-	print('    format datatype=standard symbols="012" missing=?;')
-	print("matrix")
+	if ntax > 3:
 
-	for tax in mrp_filedict:
-		mrp_list = mrp_filedict[tax]
-		out = ""
-		for i in sorted(mrp_list):
-			out += i[1]
-		print(tax, out)
+		print("#NEXUS\nbegin data;")
+		print('    dimensions ntax={} nchar={};'.format(ntax, nchar) )
+		print('    format datatype=standard symbols="012" missing=?;')
+		print("matrix")
 
-	print(";\nend;")
+		for tax in mrp_filedict:
+			mrp_list = mrp_filedict[tax]
+			out = ""
+			for i in sorted(mrp_list):
+				out += i[1]
+			print(tax, out)
+
+		print(";")
+	 	print("end;")
+	  
+ 		print("begin paup;")
+ 		print("exe spr_inference.nex;")
+ 		print("end;")
 
 
 if __name__ == "__main__":

@@ -33,7 +33,8 @@ CAT=cat
 ECHO=echo
 FIND=find
 CHMOD=chmod
-SDM=sdm
+#SDM=sdm
+PAUP=paup
 
 # file locations. these are based on contained folders defined above and probably
 # don't need updating, ever
@@ -54,6 +55,7 @@ TB2CLASS=$(TB2DATA)/classes.txt
 TB2NCHAR=$(TB2DATA)/nchar.txt
 #TNTSCRIPT=$(TB2DATA)/tntscript.runall
 #SDMINPUT=$(TB2DATA)/tb2dist
+PAUPSCRIPT=$(TB2DATA)/spr_inference.nex
 
 # URLs. these are based on variables defined above and probably don't need updating, ever
 TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
@@ -71,9 +73,12 @@ TB2CLASSES=$(patsubst %.xml,%.class,$(TB2STUDYFILES))
 #SDMMATRICES=$(wildcard $(TB2DATA)/*.sdm)
 PARTITIONS=$(wildcard $(TB2DATA)/*.mrp)
 PAUPNEXUS=$(patsubst %.mrp,%.nex,$(PARTITIONS))
+VALIDNEXUS=$(wildcard $(TB2DATA)/*.nex)
+CLASSTREES=$(patsubst %.nex,%.tre,$(VALIDNEXUS))
 
 
 .PHONY : 
+
 
 # fetch the TreeBASE site map
 $(TB2SITEMAPXML) :
@@ -125,6 +130,7 @@ $(TB2NRMLMRP) : %.dat : %.txt
 tb2mrp_species : $(TB2NRMLMRP)
 tb2mrp_species_clean : 
 	$(RM_RF) $(TB2NRMLMRP)
+ 
 
 # download taxdmp archive
 $(NCBIFILES) :
@@ -263,3 +269,10 @@ $(PAUPNEXUS) : %.nex : %.mrp
 paup_nexus : $(PAUPNEXUS)
 paup_nexus_clean : 
 	$(RM_RF) $(PAUPNEXUS)
+ 
+# create Newick tree files for every class
+$(CLASSTREES) : %.tre : %.nex
+	$(PAUP) $<
+class_trees : $(CLASSTREES)
+class_trees_clean : 
+	$(RM_RF) $(CLASSTREES)
