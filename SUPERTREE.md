@@ -58,7 +58,7 @@ if the normalized *.dat file for every MRP *.txt file was created, the studies c
 Analysis using PAUP* 
 ------------------------------
 
-- under construction 
+- `class_trees` - infering trees for every class partition, using the heuristic method in PAUP*
 
 Earlier experiment:
 ===========================================
