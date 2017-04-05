@@ -265,7 +265,7 @@ partitions_clean:
 
 # create NEXUS files with large combined MRP matrices
 $(PAUPNEXUS) : %.nex : %.mrp
-	$(PYTHON) $(SCRIPT)/combine_mrp.py -i $< >> $@
+	$(PYTHON) $(SCRIPT)/combine_mrp.py -s $< -n $(PAUPSCRIPT) >> $@
 paup_nexus : $(PAUPNEXUS)
 paup_nexus_clean : 
 	$(RM_RF) $(PAUPNEXUS)

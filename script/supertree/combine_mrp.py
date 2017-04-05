@@ -23,6 +23,7 @@ Nexus output:
 
 Usage:
     -i  Text file, containing MRP matrices for partition, devided by comment with source
+    -s  Nexus file, contaning the scripted commands for tree inference
 '''
 
 import argparse
@@ -66,6 +67,8 @@ def main():
 	parser = argparse.ArgumentParser(description='Process commandline arguments')
 	parser.add_argument("-i", type=str,
     	                help="Text file, containing MRP matrices for partition, devided by comment with source")
+	parser.add_argument("-s", type=str,
+    	                help="Nexus file, containing PAUP commands for tree inference") 
 	args = parser.parse_args()
 	
 
@@ -75,35 +78,35 @@ def main():
 	ntax = len(mrp_filedict)
 	nchar = 0
 
-	found_combos = list()
-
-	for tax in mrp_filedict:
-		mrp_list = mrp_filedict[tax]
-		out = ""
-		for i in mrp_list:
-			mrp = i[1]
-			tb = i[0]
-			tb_dict[tb] = len(mrp)
-			found_combos.append( (tax, tb) )
-
-	for combo in itertools.product(mrp_filedict.keys(), tb_dict.keys() ):
-		if combo not in found_combos:
-			missing_tax = combo[0]
-			missing_tb = combo[1]
-			missing_chars = "?"*tb_dict[missing_tb]
-			mrp_filedict[missing_tax].append([missing_tb, missing_chars])
-
-	for tax in mrp_filedict:
-		mrp_list = mrp_filedict[tax]
-		out = ""
-		for i in sorted(mrp_list):
-			out += i[1]
-		nchar = len(out)
-		break
-
-	# write output
-
 	if ntax > 3:
+
+		found_combos = list()
+
+		for tax in mrp_filedict:
+			mrp_list = mrp_filedict[tax]
+			out = ""
+			for i in mrp_list:
+				mrp = i[1]
+				tb = i[0]
+				tb_dict[tb] = len(mrp)
+				found_combos.append( (tax, tb) )
+
+		for combo in itertools.product(mrp_filedict.keys(), tb_dict.keys() ):
+			if combo not in found_combos:
+				missing_tax = combo[0]
+				missing_tb = combo[1]
+				missing_chars = "?"*tb_dict[missing_tb]
+				mrp_filedict[missing_tax].append([missing_tb, missing_chars])
+
+		for tax in mrp_filedict:
+			mrp_list = mrp_filedict[tax]
+			out = ""
+			for i in sorted(mrp_list):
+				out += i[1]
+			nchar = len(out)
+			break
+
+		# write output
 
 		print("#NEXUS\nbegin data;")
 		print('    dimensions ntax={} nchar={};'.format(ntax, nchar) )
@@ -121,7 +124,7 @@ def main():
 	 	print("end;")
 	  
  		print("begin paup;")
- 		print("exe spr_inference.nex;")
+ 		print("exe" + args.s + ";")
  		print("end;")
 
 
