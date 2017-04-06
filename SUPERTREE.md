@@ -47,7 +47,7 @@ used further, so this target is a dead end for now._
 Partitioning data 
 ------------------------------
 
-if the normalized *.dat file for every MRP *.txt file was created, the studies can be mapped to the (super)kingdom ranks they cover.
+if the normalized *.dat file for every MRP *.txt file was created, every datapoint (species) from every study can be mapped to the class rank it covers.
 
 - `class_species` - creates a table file `class_species.txt` where every class is linked to the found species, with help of the NCBI taxnomy; class_ID \t species_count \t unique_species_count \t overlap percentage \t species_tax_ID,species_tax_ID,...
 - `study_species` - creates a table file `study_species.txt` where every study is linked to the found species; study_ID \t species_count \t species_tax_ID,species_tax_ID,...
