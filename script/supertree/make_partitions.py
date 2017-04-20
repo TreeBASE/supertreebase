@@ -11,7 +11,7 @@ Table input:
 	rank_name species_count study_count study_ID(, study_ID)
 
 Usage:
-    -i  Text file containing study_ID's linked to kingdom_tax_name or ncbi_tax_ID
+    -i  Text file containing study_ID's linked to rank_ID
     -a  (S/D), if data should be prepared for SDM or TNT analysis 
 '''
 
@@ -53,7 +53,7 @@ def main():
 
 	parser = argparse.ArgumentParser(description='Process commandline arguments')
 	parser.add_argument("-i", type=str,
-    	                help="Text file containing study_ID's linked to kingdom_tax_ID list")
+    	                help="Text file containing study_ID's linked to rank_tax_ID list")
 	parser.add_argument("-a", type=str,
     	                help="Analysis program where the data should be prepared for, SMD or TNT (S/T)")
 	args = parser.parse_args()

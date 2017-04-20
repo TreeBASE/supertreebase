@@ -77,20 +77,25 @@ def main():
 
 	ntax = len(mrp_filedict)
 	nchar = 0
-
+	
+	# only make matrices suitable for PAUP* to work with
 	if ntax > 3:
 
 		found_combos = list()
-
+		
 		for tax in mrp_filedict:
 			mrp_list = mrp_filedict[tax]
 			out = ""
 			for i in mrp_list:
 				mrp = i[1]
 				tb = i[0]
+				# collect nchar for every treeblock-source
 				tb_dict[tb] = len(mrp)
+				# collect combinations of taxon ID's and treeblock-source ID's
 				found_combos.append( (tax, tb) )
-
+		
+		# evaluate every species-treeblock combination
+		# filling in missing combinations with the right ammount of questionmark characters
 		for combo in itertools.product(mrp_filedict.keys(), tb_dict.keys() ):
 			if combo not in found_combos:
 				missing_tax = combo[0]
@@ -98,6 +103,7 @@ def main():
 				missing_chars = "?"*tb_dict[missing_tb]
 				mrp_filedict[missing_tax].append([missing_tb, missing_chars])
 
+		# collect the total number of characters
 		for tax in mrp_filedict:
 			mrp_list = mrp_filedict[tax]
 			out = ""
@@ -106,13 +112,17 @@ def main():
 			nchar = len(out)
 			break
 
-		# write output
+		#ntax = ntax+1      
+
+		# write output!
 
 		print("#NEXUS\nbegin data;")
 		print('    dimensions ntax={} nchar={};'.format(ntax, nchar) )
 		print('    format datatype=standard symbols="012" missing=?;')
-		print("matrix")
-
+		print("matrix")  
+  
+		#print("1" + (nchar*"0") )  
+    
 		for tax in mrp_filedict:
 			mrp_list = mrp_filedict[tax]
 			out = ""
@@ -121,11 +131,11 @@ def main():
 			print(tax, out)
 
 		print(";")
-	 	print("end;")
+		print("end;")
 	  
- 		print("begin paup;")
- 		print("exe" + args.s + ";")
- 		print("end;")
+		print("begin paup;")
+		print("exe " + args.s + ";")
+		print("end;")
 
 
 if __name__ == "__main__":
