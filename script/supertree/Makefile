@@ -34,7 +34,7 @@ ECHO=echo
 FIND=find
 CHMOD=chmod
 #SDM=sdm
-PAUP=paup
+PAUP=/home/ubuntu/Downloads/paup4a152_ubuntu64/paup4a152_ubuntu64
 
 # file locations. these are based on contained folders defined above and probably
 # don't need updating, ever
@@ -47,7 +47,7 @@ NCBINAMES=$(TAXDMPDIR)/names.dmp
 TB2SITEMAP=sitemap.xml
 TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
 TB2TAXA=$(TB2DATA)/taxa.txt
-TB2LINEAGES=$(TB2DATA)/lineages.txt
+#TB2LINEAGES=$(TB2DATA)/lineages.txt
 TB2SPECIES=$(TB2DATA)/species.txt
 TB2STUDYSPECIES=$(TB2DATA)/study_species.txt
 TB2CLASSSPECIES=$(TB2DATA)/class_species.txt
@@ -55,7 +55,9 @@ TB2CLASS=$(TB2DATA)/classes.txt
 TB2NCHAR=$(TB2DATA)/nchar.txt
 #TNTSCRIPT=$(TB2DATA)/tntscript.runall
 #SDMINPUT=$(TB2DATA)/tb2dist
-PAUPSCRIPT=$(TB2DATA)/spr_inference.nex
+PAUPSCRIPT=$(TB2DATA)/bulk_exe.nex
+PAUPANALYSIS=$(TB2DATA)/spr_analysis.nex
+PAUPLOG=$(TB2DATA)/paup_log.txt
 
 # URLs. these are based on variables defined above and probably don't need updating, ever
 TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
@@ -73,8 +75,8 @@ TB2CLASSES=$(patsubst %.xml,%.class,$(TB2STUDYFILES))
 #SDMMATRICES=$(wildcard $(TB2DATA)/*.sdm)
 PARTITIONS=$(wildcard $(TB2DATA)/*.mrp)
 PAUPNEXUS=$(patsubst %.mrp,%.nex,$(PARTITIONS))
-VALIDNEXUS=$(wildcard $(TB2DATA)/*.nex)
-CLASSTREES=$(patsubst %.nex,%.tre,$(VALIDNEXUS))
+#VALIDNEXUS=$(wildcard $(TB2DATA)/*.nex)
+CLASSTREES=$(patsubst %.nex,%.tre,$(PAUPNEXUS))
 
 
 .PHONY : 
@@ -265,14 +267,22 @@ partitions_clean:
 
 # create NEXUS files with large combined MRP matrices
 $(PAUPNEXUS) : %.nex : %.mrp
-	$(PYTHON) $(SCRIPT)/combine_mrp.py -s $< -n $(PAUPSCRIPT) >> $@
+	$(PYTHON) $(SCRIPT)/combine_mrp.py -i $< >> $@
 paup_nexus : $(PAUPNEXUS)
 paup_nexus_clean : 
 	$(RM_RF) $(PAUPNEXUS)
  
+# make NEXUS file with PAUP* commands
+$(PAUPSCRIPT) : $(PAUPNEXUS)
+	$(PYTHON) $(SCRIPT)/combine_paupscript.py >> $@
+paupscript : $(PAUPSCRIPT)
+paupscript_clean : 
+	$(RM_RF) $(PAUPSCRIPT)
+ 
 # create Newick tree files for every class
-$(CLASSTREES) : %.tre : %.nex
+$(CLASSTREES) : $(PAUPSCRIPT)
 	$(PAUP) $<
 class_trees : $(CLASSTREES)
 class_trees_clean : 
 	$(RM_RF) $(CLASSTREES)
+	$(RM_RF) $(PAUPLOG) 

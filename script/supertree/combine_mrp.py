@@ -23,7 +23,6 @@ Nexus output:
 
 Usage:
     -i  Text file, containing MRP matrices for partition, devided by comment with source
-    -s  Nexus file, contaning the scripted commands for tree inference
 '''
 
 import argparse
@@ -67,8 +66,8 @@ def main():
 	parser = argparse.ArgumentParser(description='Process commandline arguments')
 	parser.add_argument("-i", type=str,
     	                help="Text file, containing MRP matrices for partition, devided by comment with source")
-	parser.add_argument("-s", type=str,
-    	                help="Nexus file, containing PAUP commands for tree inference") 
+	#parser.add_argument("-s", type=str,
+  #  	                help="Nexus file, containing PAUP commands for tree inference") 
 	args = parser.parse_args()
 	
 
@@ -133,9 +132,9 @@ def main():
 		print(";")
 		print("end;")
 	  
-		print("begin paup;")
-		print("exe " + args.s + ";")
-		print("end;")
+		#print("begin paup;")
+		#print("exe " + args.s + ";")
+		#print("end;")
 
 
 if __name__ == "__main__":
