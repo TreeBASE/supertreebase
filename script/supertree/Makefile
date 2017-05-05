@@ -58,6 +58,7 @@ TB2NCHAR=$(TB2DATA)/nchar.txt
 PAUPSCRIPT=$(TB2DATA)/bulk_exe.nex
 PAUPANALYSIS=$(TB2DATA)/spr_analysis.nex
 PAUPLOG=$(TB2DATA)/paup_log.txt
+PAUPLOGTABLE=$(TB2DATA)/paup_log_table.txt
 
 # URLs. these are based on variables defined above and probably don't need updating, ever
 TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
@@ -246,7 +247,7 @@ classes_clean:
  
 # create a file with a list of corresponding MRP matrices, for each taxonomic class 
 partitions: $(TB2CLASSSPECIES) $(TB2CLASS)
-	$(PYTHON) $(SCRIPT)/make_partitions_mrp.py -c $(TB2CLASSSPECIES) -s $(TB2CLASS)
+	$(PYTHON) $(SCRIPT)/make_partitions_mrp.py -c $(TB2CLASSSPECIES) -s $(TB2CLASS) -n `pwd`/$(NCBINAMES)
 partitions_clean:
 	- $(RM_RF) $(TB2DATA)/*.mrp
    
@@ -286,3 +287,10 @@ class_trees : $(CLASSTREES)
 class_trees_clean : 
 	$(RM_RF) $(CLASSTREES)
 	$(RM_RF) $(PAUPLOG) 
+ 
+# parse the PAUP* logfile
+$(PAUPLOGTABLE) : $(PAUPLOG)
+	$(PYTHON) $(SCRIPT)/parse_pauplog.py -i $< >> $@
+pauplog_table : $(PAUPLOGTABLE)
+pauplog_table_clean : 
+	$(RM_RF) $(PAUPLOGTABLE)
