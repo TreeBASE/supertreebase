@@ -12,8 +12,7 @@ Metadata input for study:
 	YEAR												NTAX.TREE	QUALITY.TREE	TYPE.TREE	KIND.TREE
 
 Table entry output:
-	#S.dat
-	YEAR(,YEAR)	TYPE.MATRIX(,TYPE.MATRIX)
+	S.dat	YEAR(,YEAR)	TYPE.MATRIX(,TYPE.MATRIX)
 
 Usage:
     -i  Meta file, containing information about matrices and trees
@@ -45,10 +44,10 @@ def main():
 					types.append(l[1])
 		
 		if years and types:		
-			print("#" + metafile.name.split("/")[-1].replace("meta", "dat") )
+			studyname = metafile.name.split("/")[-1].replace("meta", "dat")
 			years_str = str( set(years) ).replace("'", "").replace("{", "").replace("}", "").replace(" ", "") 
 			types_str = str( set(types) ).replace("'", "").replace("{", "").replace("}", "").replace(" ", "") 
-			print(years_str + "\t" + types_str)
+			print(studyname + "\t" + years_str + "\t" + types_str)
 
 	metafile.close()
 
