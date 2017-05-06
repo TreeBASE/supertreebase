@@ -25,8 +25,8 @@ CAT=cat
 # file locations. these are based on contained folders defined above and probably
 # don't need updating, ever
 METATABLE=$(CHARMETA)/metadata.tsv
-METACOMBINE=$(CHARMETA)/metacombine.txt
-ALLMETA=$(CHARMETA)/metatable.txt
+METAEXSTRACT=$(CHARMETA)/metaextract.txt
+ALLMETA=$(CHARMETA)/meta.tsv
 METASUMMARY=$(CHARMETA)/metasummary.txt
 
 # file lists.
@@ -42,16 +42,16 @@ meta : $(TB2STUDYMETA)
 meta_clean :
 	$(RM_RF) $(TB2STUDYMETA)
 
-# combine metadata
-$(METACOMBINE) : $(TB2STUDYMETA)
+# get relevant metadata, linked to study name
+$(METAEXSTRACT) : $(TB2STUDYMETA)
 	for f in $(TB2STUDYMETA) ; do \
 		$(PYTHON) $(SCRIPT)/combine_meta.py -i $$f >> $@ ; \
    done
-metacombine : $(METACOMBINE)
-metacombine_clean :
-	$(RM_RF) $(METACOMBINE) 
+metaextract : $(METAEXSTRACT)
+metaextract_clean :
+	$(RM_RF) $(METAEXSTRACT) 
 
-# add metadata to one file
+# combine metadata in one file
 $(ALLMETA) : $(TB2STUDYMETA)
 	$(CAT) $(TB2STUDYMETA) >> $@
 allmeta : $(ALLMETA)
