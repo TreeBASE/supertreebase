@@ -58,7 +58,7 @@ TB2NCHAR=$(TB2DATA)/nchar.txt
 PAUPSCRIPT=$(TB2DATA)/bulk_exe.nex
 PAUPANALYSIS=$(TB2DATA)/spr_analysis.nex
 PAUPLOG=$(TB2DATA)/paup_log.txt
-PAUPLOGTABLE=$(TB2DATA)/paup_log_table.txt
+PAUPLOGTABLE=$(TB2DATA)/class_scores.txt
 
 # URLs. these are based on variables defined above and probably don't need updating, ever
 TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
