@@ -1,7 +1,7 @@
 How to run the Make-based supertree pipeline
 ===========================================
 
-The file [script/supertree/Makefile](https://github.com/TreeBASE/supertreebase/blob/master/script/supertree/Makefile) 
+The file [script/supertree/Makefile](https://github.com/aiblaauw/supertreebase/blob/master/script/supertree/Makefile) 
 contains the steps for downloading TreeBASE data and preparing it for input into SDM or TNT. Below follows a discussion of
 these steps, identified as make targets. 
 
@@ -56,64 +56,20 @@ if the normalized *.dat file for every MRP *.txt file was created, every datapoi
 
 Analysis using PAUP* 
 ------------------------------
+
+the MRP partitions will be converted into Nexus format to be used for analysis with the PAUP* program.
+
 - `paup_nexus` - combines the MRP matrices to a large combined matrix, filling in the non-overlapping parts with questionmarks. The result is a Nexus file for every class-level partition. For example; Mammalia.nex
 - `paupscript` - makes `bulk_exe.nex` in which the commands for the anaylsis of every Nexus file get collected  
 - `class_trees` - infering trees for every class partition, using the heuristic method in PAUP*
 
-Earlier experiment:
-===========================================
-
-Analysis using TNT 
+Collect metadata 
 ------------------------------
 
-Processing MRP (character state) matrices:
+also the metadata behind the original databse entries will be collected,
+for this, the Make targets within [script/characters/Makefile](https://github.com/aiblaauw/supertreebase/blob/master/script/characters/Makefile) can be used!!
 
-- `ncbicon` - builds TNT constraint commands based on the NCBI common tree for the TreeBASE species.
-- `tntdata` - for each tree block in a *.dat file, creates a *.tnt file with the MRP matrix for that tree block, in TNT
-syntax. So, for $study.dat creates $study.dat.$treeBlock1.tnt, $study.dat.$treeBlock2.tnt, and so on. Also creates 
-for each *.dat file, a *.run file that contains the file inclusion commands (TNT syntax) to pull in all the MRP
-matrices for a given study.
-- `tntscript` - creates a file `tntscript.runall` thath combines all the file inclusion commands from `tntdata` into a 
-single file.
-
-So, in the end there is a `tntscript.runall` that contains a long list of file inclusion commands. Each inclusion command
-pulls in the MRP matrix for a single tree block in study. The rows in each MRP matrix are NCBI species identifiers.
-For the actual analysis in TNT there is the script [tntwrap](https://github.com/TreeBASE/supertreebase/tree/master/data/treebase/tntwrap). Here are some thoughs and
-experiences with this:
-- The first step in that script is to increase RAM. On the Naturalis workstation there is enough RAM to load all the data. 
-TNT gives an indication for how much RAM it would need - but that's only for the data itself, not for any trees. 
-It appears that we need much more RAM than TNT suggests.
-- TNT has some non-standard facility for parallel searches (not based on MPI or OpenMP), which involves the `ptnt`
-command. I never got this to work properly.
-- I also never got the commands that I cribbed from DOI:10.1111/j.1096-0031.2009.00255.x to work as advertised. Someone
-with a fairly intimate knowledge of the TNT language is going to have to deal with this. I guess in principle it's
-only a couple of lines of code that should go in the `tntwrap` but I can't figure it out.
-
-Analysis using SDM 
-------------------------------
-
-Building a distance based supermatrix:
-- `sdmdist` - converts the treeblock MRP matrices (*.dat files) into distance matrices (*.sdm) and also adds log files.
-The distances are calculated for every combination of taxa as follows: Hamming distance (counting differences for character
-positions) divided by taxon count and character count.
-- `sdminput` - every matrix is written to a input file for the SDM program. Also the number of matrices should be included.
-This step also includes filtering out empty/failed conversion files, so that the right number of actual input matrices is passed to the big SDM input file.
-
-Now the input file can be processed by the SDM program. You could use the following basic command: `sdm -i tb2dist -f PHYLIP_SQUARE`
-
-This should result in a few output files; `mat` the distance based supermatrix, `deformed matrices`, `rates` (the 1/αp values), `tab` table indicating taxa covered by each gene and lastly a `var` file containing the variances of each entry inside the supermatrix.
-
-The `mat` file is used to build the actual supertree.
-In case of missing values (-99.0 distances): the MVR* method within the PhyD* package is recommended, 
-using the -i YY command for weighing the input based on their size.
-In case of a complete matrix: the FastME program can be used!
-
-Partitioning data 
-------------------------------
-
-if the normalized *.dat file for every MRP *.txt file was created, the studies can be mapped to the (super)kingdom ranks they cover.
-
-- `studyspecies` - creates a table file `study_species.txt` where every study is linked to the found species; study_ID \t species_count \t species_tax_ID,species_tax_ID,...
-- `classes` - traces back every species id to class level with help of the NCBI taxonomy, creating the following table `classes.txt`; class_name \t species_count \t study_count \t study_id_filename, study_id_filename, ...
-- `sdm_partitions` - create SDM files for the found class ranks, containing the distance matrices for each found study. For example; tb2dist_Mammalia.
-- `tnt_partitions` - same as above, except the files contain TNT file inclusion commands for the found studies, named as; tntscript.runMammalia.
+- `meta` - creates *.meta files for every study, describing publication date, matrix info (data source type, nchar, ntax) and tree info (ntax, quality label, type and kind of tree assambled)
+- `metaextract` - this reduces the *.meta files to a table file, linking the relevant data to the study ID's within `metaextract.txt`  
+- `allmeta` - combining the text from every *.meta file to one file named `meta.tsv`
+- `metasummary` - using the combined text, creates `metasummary.txt` to show some percentages, describing the distribution of the (meta)data types
