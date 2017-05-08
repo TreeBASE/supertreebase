@@ -71,6 +71,6 @@ also the metadata behind the original databse entries will be collected,
 for this, the Make targets within [script/characters/Makefile](https://github.com/aiblaauw/supertreebase/blob/master/script/characters/Makefile) can be used!!
 
 - `meta` - creates *.meta files for every study, describing publication date, matrix info (data source type, nchar, ntax) and tree info (ntax, quality label, type and kind of tree assambled)
-- `metaextract` - this reduces the *.meta files to a `metaextract.txt`, a table linking study ID's to the relevant metadata   
+- `metaextract` - this reduces the *.meta files to a `metaextract.txt`, a table linking study ID's to the relevant metadata (study_ID \t year \t datatype)  
 - `allmeta` - combining the text from every *.meta file to one file named `meta.tsv`
 - `metasummary` - using the combined text, creates `metasummary.txt` to show some percentages, describing the distribution of the (meta)data types
