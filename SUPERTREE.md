@@ -62,7 +62,7 @@ the MRP partitions will be converted into Nexus format to be used for analysis w
 - `paup_nexus` - combines the MRP matrices to a large combined matrix, filling in the non-overlapping parts with questionmarks. The result is a Nexus file for every class-level partition. For example; Mammalia.nex
 - `paupscript` - makes `bulk_exe.nex` in which the commands for the anaylsis of every Nexus file get collected  
 - `class_trees` - infering trees for every class partition, using the heuristic method in PAUP* (using the commands in the `spr_inference.nex` script)
-- `pauplog_table` - parsing the logfile that resulted from all the PAUP* runs, so that class names get linked to their scores (class_name \t min_steps \t steps \t CI \t RI \t RC \t goloboff_fit \t species_count \t studies_count \t total_characters), found in `class_scores.txt`  
+- `pauplog_table` - parsing the logfile that resulted from all the PAUP* runs, so that class names get linked to their scores (class_name \t min_steps \t steps \t CI \t RI \t RC \t goloboff_fit), found in `class_scores.txt`  
 
 Collect metadata 
 ------------------------------
