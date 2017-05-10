@@ -13,9 +13,6 @@ Pipeline study_species table input:
 
 Class table output:
 	class_ID species_count study_count study_ID(, study_ID)
-	...
-	supported_class_ID_count
-	unsupported_class_ID_count
 
 Usage:
     -i  Text file containing study_ID's linked to species_ID list
@@ -194,8 +191,8 @@ def main():
 				+ "\t" + str(studies_list).replace("'", "")[1:-1], file=outfile)
 		else:
 			nohit += 1
-	print(str(hit), file=outfile)
-	print(str(nohit), file=outfile)
+	#print(str(hit), file=outfile)
+	#print(str(nohit), file=outfile)
 
 	outfile.close()
 
