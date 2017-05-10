@@ -6,11 +6,7 @@ Date: 26/04/2017
 
 Getting usefull information from PAUP* logfile
 
-Table input:
-	#comment
-	species_ID character_string
-
-Nexus output:
+Table output:
 	Class	minimum_length       length    consistenct_index	retention_index rescaled_consistency_index goloboff_fit
 	
 Usage:
