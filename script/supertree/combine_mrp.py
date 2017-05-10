@@ -48,7 +48,7 @@ def get_mrp_filedict(filename):
 	mrp_file = open(filename)
 
 	for l in mrp_file:
-		if len(l.split()) < 2:
+		if l.strip().startswith("#"):
 			tb_id = l.strip()
 		else:
 			species_id = l.strip().split()[0]
@@ -111,7 +111,7 @@ def main():
 			nchar = len(out)
 			break
 
-		#ntax = ntax+1      
+		ntax = ntax+1      
 
 		# write output!
 
@@ -119,8 +119,9 @@ def main():
 		print('    dimensions ntax={} nchar={};'.format(ntax, nchar) )
 		print('    format datatype=standard symbols="012" missing=?;')
 		print("matrix")  
-  
-		#print("1" + (nchar*"0") )  
+
+		# this will be the outgroup  
+		print("1" + (nchar*"0") )  
     
 		for tax in mrp_filedict:
 			mrp_list = mrp_filedict[tax]
