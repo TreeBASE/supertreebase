@@ -2,16 +2,12 @@ How to run the Make-based supertree pipeline
 ===========================================
 
 The file [script/supertree/Makefile](https://github.com/aiblaauw/supertreebase/blob/master/script/supertree/Makefile) 
-contains the steps for downloading TreeBASE data and preparing it for input into SDM or TNT. Below follows a discussion of
+contains the steps for downloading TreeBASE data and preparing it for input into PAUP*. Below follows a discussion of
 these steps, identified as make targets. 
 
 If you want to work your way through these steps one by one, you would issue them in the order given, and you would do 
 that inside the folder where the Makefile resides, i.e. in `script/supertree`. Most of the action will take place 
 inside `data/treebase`. 
-
-If you want to live dangerously you would simply get rid of the stale sitemap.xml (`make sitemap_clean`, if desired), 
-and issue the last target (`make -j 4 tntscript`). However, this will almost certainly not work, for example because 
-of failing downloads. 
 
 A number of steps can be parallelized by make, by providing the `-j $num` command to specify the number of cores to 
 run on. To revert any steps, issue the target as `make <target>_clean` (example: `make sitemap_clean` deletes the
