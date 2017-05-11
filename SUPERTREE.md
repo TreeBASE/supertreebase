@@ -7,7 +7,7 @@ these steps, identified as make targets.
 
 If you want to work your way through these steps one by one, you would issue them in the order given, and you would do 
 that inside the folder where the Makefile resides, i.e. in `script/supertree`. Most of the action will take place 
-inside `data/treebase`. 
+inside `data/treebase`. If you want to update the data with new studies, the sitemap.xml needs to be refreshed first. For a completely fresh database dump you probably should revert every step within the Makefile; 
 
 A number of steps can be parallelized by make, by providing the `-j $num` command to specify the number of cores to 
 run on. To revert any steps, issue the target as `make <target>_clean` (example: `make sitemap_clean` deletes the
