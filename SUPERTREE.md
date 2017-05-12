@@ -24,7 +24,7 @@ as make checks for the existence of target files (and their timestamps: if any *
 file, a download is initiated, if the NeXML is newer than the URL, make assumes the target has been built and it
 will leave well alone). _Some downloads fail (for a variety of reasons, e.g. the output is too much for
 the web app to generate without timeouts). To get past this step you can create empty *.xml files, e.g. for 
-study ID $foo, do `touch data/treebase/$foo.xml`_Alternavely, it seems that NOT running this step parrallel and just recalling it when there was a timeout (or other problem that stopped the process), eventually collects as many downloads as possible.  
+study ID $foo, do `touch data/treebase/$foo.xml`_ Alternavely, it seems that NOT running this step parrallel and just recalling it when there was a timeout (or other problem that stopped the process), eventually collects as many downloads as possible.  
 - `tb2mrp_taxa` - for each *.xml file, creates a *.txt file with multiple MRP matrices: one for each tree block in
 the study. The *.txt file is tab separated, structured thusly: $treeBlockID, "\t", $ncbiTaxonID, "\t", $mrpString, "\n".
 Note that at this point, $ncbiTaxonID can be anything: a (sub)species, genus, family, whatever.
