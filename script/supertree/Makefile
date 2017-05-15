@@ -231,7 +231,7 @@ class_species_clean:
  
 # making a table showing species ID's within every study
 $(TB2STUDYSPECIES) : $(TB2NRMLMRP) 
-	for f in $< ; do \
+	for f in $(TB2NRMLMRP) ; do \
 		$(PYTHON) $(SCRIPT)/study_species.py -i $$f >> $@ ; \
    done
 study_species : $(TB2STUDYSPECIES)

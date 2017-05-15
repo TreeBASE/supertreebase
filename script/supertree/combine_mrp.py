@@ -121,7 +121,7 @@ def main():
 		print("matrix")  
 
 		# this will be the outgroup  
-		print("1" + (nchar*"0") )  
+		print("Root\t" + (nchar*"0") )  
     
 		for tax in mrp_filedict:
 			mrp_list = mrp_filedict[tax]
