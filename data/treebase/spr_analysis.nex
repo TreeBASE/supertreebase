@@ -1,7 +1,8 @@
 #NEXUS
 begin paup;
 	log file=paup_log.txt start append;
-	Set rootMethod=midpoint;
+	Outgroup 1;
+	Set outRoot=monophyl;
 	HSearch swap=SPR nbest=1;
 	Reweight;
 	Pscores / CI RI RC HI Gfit;
