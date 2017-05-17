@@ -13,6 +13,9 @@ A number of steps can be parallelized by make, by providing the `-j $num` comman
 run on. To revert any steps, issue the target as `make <target>_clean` (example: `make sitemap_clean` deletes the
 sitemap.xml):
 
+Downloading and pre-processing
+------------------------------
+
 - `sitemap` - downloads the [sitemap.xml](http://treebase.org/treebase-web/sitemap.xml) from the TreeBASE website,
 which lists all the studies currently published. The URLs are not pretty PURLs but URLs that directly compose the
 query strings for the web application.
@@ -64,7 +67,7 @@ Collect metadata
 ------------------------------
 
 also the metadata behind the original databse entries will be collected,
-for this, the Make targets within [script/characters/Makefile](https://github.com/aiblaauw/supertreebase/blob/master/script/characters/Makefile) can be used!!
+for this, the Make targets within [script/characters/Makefile](https://github.com/aiblaauw/supertreebase/blob/master/script/characters/Makefile) can be used!! Ouput will be collected in `metadata/characters`.
 
 - `meta` - creates *.meta files for every study, describing publication date, matrix info (data source type, nchar, ntax) and tree info (ntax, quality label, type and kind of tree assambled)
 - `metaextract` - this reduces the *.meta files to a `metaextract.txt`, a table linking study ID's to the relevant metadata (study_ID \t year \t datatype)  
