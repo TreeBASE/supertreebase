@@ -71,9 +71,9 @@ def get_names_dict(namedmp):
 	names = dict()
 	for i in names_file:
 		line = i.split("|")
-		node_id = line[0].strip()
-		tax_name = line[1].strip()
-		if node_id not in names:
+		if "scientific name" in i:
+			node_id = line[0].strip()
+			tax_name = line[1].strip()
 			names[node_id] = tax_name
 	names_file.close()
 	return names
