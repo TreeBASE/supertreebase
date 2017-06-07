@@ -59,9 +59,15 @@ Analysis using PAUP*
 the MRP partitions will be converted into Nexus format to be used for analysis with the PAUP* program.
 
 - `paup_nexus` - combines the MRP matrices to a large combined matrix, filling in the non-overlapping parts with questionmarks. The result is a Nexus file for every class-level partition. For example; Mammalia.nex
+Also creating a table for the class, mapping the study name to the amount of characters.
 - `paupscript` - makes `bulk_exe.nex` in which the commands for the anaylsis of every Nexus file get collected  
 - `class_trees` - infering trees for every class partition, using the heuristic method in PAUP* (using the commands in the `spr_inference.nex` script)
 - `pauplog_table` - parsing the logfile that resulted from all the PAUP* runs, so that class names get linked to their scores (class_name \t min_steps \t steps \t CI \t RI \t RC \t goloboff_fit), found in `class_scores.txt`  
+
+Visualization 
+------------------------------
+
+- `study_score` - using the class partitions in Newick format, the coresponding mrp file and studyname-to-charcount table, this part creates a *.score file for each class, containing the found studynames and their Fitch-parsimony score.  
 
 Collect metadata 
 ------------------------------
