@@ -15,6 +15,7 @@ Nexus output:
 	begin data;
 	    dimensions ntax=2 nchar=16;
 	    format datatype=standard symbols="01" missing=?;
+      taxlabels species_ID species_ID;
 	matrix
 	species_ID character_string
 	species_ID character_string
@@ -63,11 +64,13 @@ def get_mrp_filedict(filename):
 
 def main():
 
+	datadir = "../../data/treebase/"
+
 	parser = argparse.ArgumentParser(description='Process commandline arguments')
 	parser.add_argument("-i", type=str,
     	                help="Text file, containing MRP matrices for partition, devided by comment with source")
-	#parser.add_argument("-s", type=str,
-  #  	                help="Nexus file, containing PAUP commands for tree inference") 
+	#parser.add_argument("-o", type=str,
+  #  	                help="Text file, containing a string of study-names, for labeling the source of each character") 
 	args = parser.parse_args()
 	
 
@@ -76,6 +79,7 @@ def main():
 
 	ntax = len(mrp_filedict)
 	nchar = 0
+	charlabels = dict()
 	
 	# only make matrices suitable for PAUP* to work with
 	if ntax > 3:
@@ -102,37 +106,42 @@ def main():
 				missing_chars = "?"*tb_dict[missing_tb]
 				mrp_filedict[missing_tax].append([missing_tb, missing_chars])
 
-		# collect the total number of characters
+		outlist = list()
+		charlabels_check = list()		
+		labelfile = open(datadir + args.i.split("/")[-1].split(".")[0] + "_charlabels.txt", "a")
+
+		# collect output lines, number of chars and char labels 
 		for tax in mrp_filedict:
 			mrp_list = mrp_filedict[tax]
 			out = ""
 			for i in sorted(mrp_list):
 				out += i[1]
+				if i[0] not in charlabels_check:
+					charlabels_check.append(i[0])
+					labels = i[0] + "\t" + str(len(i[1]))  
+					# write character-study label file                                            
+					print(labels, file=labelfile)
+			outlist.append(tax + " " + out)
 			nchar = len(out)
-			break
+
+		labelfile.close()   
+           
+		# write Nexus output
 
 		ntax = ntax+1      
-
-		# write output!
-
 		print("#NEXUS\nbegin data;")
 		print('    dimensions ntax={} nchar={};'.format(ntax, nchar) )
 		print('    format datatype=standard symbols="012" missing=?;')
 		print("matrix")  
 
-		# this will be the outgroup  
-		print("Root\t" + (nchar*"0") )  
-    
-		for tax in mrp_filedict:
-			mrp_list = mrp_filedict[tax]
-			out = ""
-			for i in sorted(mrp_list):
-				out += i[1]
-			print(tax, out)
+		print("Root\t" + (nchar*"0") ) # this will be the outgroup 
+         
+		for l in outlist:
+				print(l)     
 
 		print(";")
-		print("end;")
-	  
+		print("end;")   
+     
 		#print("begin paup;")
 		#print("exe " + args.s + ";")
 		#print("end;")
