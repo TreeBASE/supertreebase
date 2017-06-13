@@ -1,10 +1,5 @@
-#!/bin/bash
-# Some useful bash commands, used during the superTreeBASE project
+### Some useful bash commands, used during the superTreeBASE project ###
 
-
-# downloading Perl dependencies
-cpan
-cpan[1]> install Module::Name
 
 
 ### Filtering data ###
@@ -31,6 +26,14 @@ sudo find S*.xml -size -1k -exec bash -c 'echo x > {}' \;
 # remove empty files
 find S*.xml -size 0 -delete
 
+# failed combination of MRP data
+find *.mrp -size 0k |  wc -l
+# failed Nexus conversion 
+find *.nex -size 0k |  wc -l
+
+
+### Try to add source data to git ###
+
 
 # commit empty download files and then the new non-corrupted files
 find S*.xml -size -2k | xargs git add 
@@ -41,10 +44,24 @@ git commit -m "adding freshly downloaded studies"
 # zip succesfull files
 find S*.xml -size +2k -exec zip newdownloads.zip {} \+
 
-# find failed MRP > distance conversions
-find S*.sdm -size -1k 
-# remove failed conversions
-find S*.sdm -size -1k -delete
+
+### Creating class table with scores and other info ###
+
+
+get_nchar.py > 
+combine_classdata.py (using class_scores.txt, class_nchar.txt and classes.txt) >
+get_class_lineages.py (using classdata.txt and NCBI taxonomy) >
+the resulting files can be read and combined with R > coverage_score.r
+
+
+### Downloading dependencies ###
+
+
+# downloading Perl dependencies
+cpan
+cpan[1]> install Module::Name
+# downloading Python dependencies
+pip install SomePackage 
 
 
 ### Increasing swap memory ###
@@ -68,39 +85,11 @@ sudo mkswap /dev/vdb
 sudo swapon -U #ID
 
 
-### Programs ###
+### Other usefull commands ### 
 
 
-# TNT for infering phylogenies (from MRP formatted input for example)
-alias tnt='/home/ubuntu/Downloads/tnt64-no-tax-limit/./tnt.command'
+# replace strings/characters in a file
+sed -i 's/changethis/intothis/g' "filename"
 
-# SDM program for distance based phylogenomic (super)tree building
-# using variable memory usage
-alias sdm='java -Xmx1200g -jar /home/ubuntu/Downloads/SDM/SDM.jar' 
-
-# SDM commandline arguments
-
-# square non-subreplicate matrix for further processing
-# weighing the input based on their size is also a possibility!
-sdm -i 'infile' -f PHYLIP_SQUARE #-s YY -t T 
-
-# PhyD* program for MVR run (in case of missing data entries in SDM output)
-alias phyd='java -Xmx1200g -jar /home/ubuntu/Downloads/PhyDstar/PhyDstar.jar'
-
-# In case of complete matrix, you can use the "fastme" program,
-# called by the command of the same name
-
-
-### Process primate data to SDM input (for testing) ###
-
-
-# count input trees
-find *.dat | wc -l >> primates_nwck
-# write trees
-for f in *.dat; do perl make_dist.pl -i "$f" >> primates_nwck;  done
-# SDM run 
-sdm -i "primates_nwck" -t T -f PHYLIP_SQUARE -s Y#Y
-# Tree inference 
-phyd -i "primates_nwck_sdm_mat.txt" #bionj
-phyd -i "primates_nwck_sdm_mat.txt" -d mvr
-
+# count strings/characters in a file
+grep -c 'countthis' "filename"
