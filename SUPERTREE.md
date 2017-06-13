@@ -67,7 +67,7 @@ the script is also creating a table for the class, mapping the study name to the
 Visualization 
 ------------------------------
 
-- `study_score` - using the class partitions in Newick format, the coresponding mrp file and studyname-to-charcount table, this part creates a *.score file for each class, containing the found studynames and their Fitch-parsimony score. I sugest not parallelizing this, as the memory fills up very fast when serval large (containing many characters) files are processed at once.   
+- `study_score` - using the class partitions in Newick format, the coresponding mrp file and studyname-to-charcount table, this part creates a *.score file for each class, containing the found studynames and their Fitch-parsimony score. For now this needs improvement, as the top 5 of biggest partitions takes up tp much memory, due to the amount of characters!
 
 Collect metadata 
 ------------------------------
