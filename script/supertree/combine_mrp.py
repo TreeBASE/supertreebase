@@ -69,8 +69,6 @@ def main():
 	parser = argparse.ArgumentParser(description='Process commandline arguments')
 	parser.add_argument("-i", type=str,
     	                help="Text file, containing MRP matrices for partition, devided by comment with source")
-	#parser.add_argument("-o", type=str,
-  #  	                help="Text file, containing a string of study-names, for labeling the source of each character") 
 	args = parser.parse_args()
 	
 
@@ -134,17 +132,13 @@ def main():
 		print('    format datatype=standard symbols="012" missing=?;')
 		print("matrix")  
 
-		print("Root\t" + (nchar*"0") ) # this will be the outgroup 
+		print("Outgroup\t" + (nchar*"0") ) # this will be the hypothetical outgroup 
          
 		for l in outlist:
 				print(l)     
 
 		print(";")
-		print("end;")   
-     
-		#print("begin paup;")
-		#print("exe " + args.s + ";")
-		#print("end;")
+		print("end;")       
 
 
 if __name__ == "__main__":

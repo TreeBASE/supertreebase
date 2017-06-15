@@ -156,7 +156,6 @@ def main():
 							# writing output
 
 							comment = "#" + study_id + "." + tb
-							#print(comment)
 							rank_file.write(comment + "\n")
 
 							for l in lines:
@@ -166,7 +165,6 @@ def main():
 								# translate tax_id and check if it is valid
 								tax_name = names_dict[tax_id].replace(" ", "_")
 								if (tax_name.count("_") == 1) and ("sp." not in tax_name):
-									#print(tax_name.replace("-", "_").replace("'", "") + "\t" + char_str)
 									rank_file.write(tax_name.replace("-", "_").replace("'", "") + "\t" + char_str  + "\n")
 								else:
 									logging.warning("invalid taxon " + tax_name + " found, not writing")

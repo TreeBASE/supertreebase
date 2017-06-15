@@ -55,6 +55,7 @@ TB2CLASS=$(TB2DATA)/classes.txt
 TB2NCHAR=$(TB2DATA)/nchar.txt
 #TNTSCRIPT=$(TB2DATA)/tntscript.runall
 #SDMINPUT=$(TB2DATA)/tb2dist
+
 PAUPSCRIPT=$(TB2DATA)/bulk_exe.nex
 PAUPANALYSIS=$(TB2DATA)/spr_analysis.nex
 PAUPLOG=$(TB2DATA)/paup_log.txt
@@ -70,14 +71,21 @@ TB2STUDYPURLS=$(wildcard $(TB2DATA)/*.url)
 TB2STUDYFILES=$(patsubst %.url,%.xml,$(TB2STUDYPURLS))
 TB2MRPFILES=$(patsubst %.xml,%.txt,$(TB2STUDYFILES))
 TB2NRMLMRP=$(patsubst %.xml,%.dat,$(TB2STUDYFILES))
+
 TB2CLASSES=$(patsubst %.xml,%.class,$(TB2STUDYFILES))
 #TNTCOMMANDS=$(patsubst %.dat,%.run,$(TB2NRMLMRP))
 #SDMLOGS=$(patsubst %.dat,%.log,$(TB2NRMLMRP))
 #SDMMATRICES=$(wildcard $(TB2DATA)/*.sdm)
 PARTITIONS=$(wildcard $(TB2DATA)/*.mrp)
 PAUPNEXUS=$(patsubst %.mrp,%.nex,$(PARTITIONS))
+CHARLABELS=$(wildcard $(TB2DATA)/*_charlabels.txt)
 #VALIDNEXUS=$(wildcard $(TB2DATA)/*.nex)
 CLASSTREES=$(patsubst %.nex,%.tre,$(PAUPNEXUS))
+
+VALIDNEWICK=$(wildcard $(TB2DATA)/*.tre)
+STUDYSCORE=$(patsubst %.tre,%.score,$(VALIDNEWICK))
+NEWICKCSV=$(patsubst %.tre,%.csv,$(VALIDNEWICK))
+CSVHTML=$(patsubst %.csv,%.html,$(NEWICKCSV))
 
 
 .PHONY : 
@@ -272,6 +280,7 @@ $(PAUPNEXUS) : %.nex : %.mrp
 paup_nexus : $(PAUPNEXUS)
 paup_nexus_clean : 
 	$(RM_RF) $(PAUPNEXUS)
+	$(RM_RF) $(CHARLABELS)
  
 # make NEXUS file with PAUP* commands
 $(PAUPSCRIPT) : $(PAUPNEXUS)
@@ -281,12 +290,12 @@ paupscript_clean :
 	$(RM_RF) $(PAUPSCRIPT)
  
 # create Newick tree files for every class
-$(CLASSTREES) : $(PAUPSCRIPT)
-	$(PAUP) $<
-class_trees : $(CLASSTREES)
-class_trees_clean : 
-	$(RM_RF) $(CLASSTREES)
-	$(RM_RF) $(PAUPLOG) 
+#$(CLASSTREES) : $(PAUPSCRIPT)
+#	$(PAUP) $<
+#class_trees : $(CLASSTREES)
+#class_trees_clean : 
+#	$(RM_RF) $(CLASSTREES)
+#	$(RM_RF) $(PAUPLOG) 
  
 # parse the PAUP* logfile
 $(PAUPLOGTABLE) : $(PAUPLOG)
@@ -294,3 +303,27 @@ $(PAUPLOGTABLE) : $(PAUPLOG)
 pauplog_table : $(PAUPLOGTABLE)
 pauplog_table_clean : 
 	$(RM_RF) $(PAUPLOGTABLE)
+ 
+
+### VISUALIZATION ###
+
+# get every class tree in csv representation, including internal nodes
+$(NEWICKCSV) : %.csv : %.tre
+	$(PYTHON) $(SCRIPT)/newick_csv.py -i $< >> $@
+csvtrees : $(NEWICKCSV)
+csvtrees_clean : 
+	$(RM_RF) $(NEWICKCSV)
+
+# get study-score linkage for every class tree
+$(STUDYSCORE) : %.score : %.tre
+	$(PYTHON) $(SCRIPT)/newick_mrp_fit.py -i $< >> $@
+study_score : $(STUDYSCORE)
+study_score_clean : 
+	$(RM_RF) $(STUDYSCORE)
+ 
+# get study-score linkage for every class tree
+$(CSVHTML) : %.html : %.csv
+	$(PYTHON) $(SCRIPT)/csv_html.py -i $< >> $@
+htmltrees : $(CSVHTML)
+htmltrees_clean : 
+	$(RM_RF) $(CSVHTML) 
