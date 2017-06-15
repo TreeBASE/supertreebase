@@ -68,6 +68,8 @@ Visualization
 ------------------------------
 
 - `study_score` - using the class partitions in Newick format, the coresponding mrp file and studyname-to-charcount table, this part creates a *.score file for each class, containing the found studynames and their Fitch-parsimony score. For now this needs improvement, as the top 5 of biggest partitions takes up tp much memory, due to the amount of characters!
+- `csvtrees` - taking the Newick trees and convert them into csv format (child /t parent) which makes it easier to read for visualization and makes it possible to add metadata 
+- `htmltrees` - adding the csvtree into a html file for visualization, with help of the D3.js library
 
 Collect metadata 
 ------------------------------
