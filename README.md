@@ -41,8 +41,7 @@ resolve you will have to study the source code.
   into [Circos](http://circos.ca)
 * `cliques` - creates a [GraphViz](http://graphviz.org)
   network of taxonomic links between studies
-* `supertree` - creates MRP matrices for analysis with
-  [TNT](http://tnt.insectmuseum.org)
+* `supertree` - creates MRP matrices for analysis
 * `test` - contains throwaway scripts that can be
   ignored
 
