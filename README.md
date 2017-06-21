@@ -6,7 +6,7 @@ of phylogenetic knowledge. In addition there are various
 scripts and (make-based) pipelines to summarize the dump
 in various ways, including:
 * topologically, by integrating the tree topologies in the
-  database into MRP matrices that can be analyzed using TNT
+  database into MRP matrices that can be analyzed
 * taxonomically, by summarizing coverage of classes and
   by visualizing taxonomic overlap between studies
 * chronologically, by summarizing the growth in character
