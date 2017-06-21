@@ -52,14 +52,15 @@ if the normalized *.dat file for every MRP *.txt file was created, every datapoi
 - `study_species` - creates a table file `study_species.txt` where every study is linked to the found species; study_ID \t species_count \t species_tax_ID,species_tax_ID,...
 - `classes` - traces back every species id to class level with help of the NCBI taxonomy and the study_species.txt file, creating the following table `classes.txt`; class_name \t species_count \t study_count \t study_id_filename, study_id_filename, ...
 - `partitions` - create MRP files for the found class ranks, containing the matrices for each found study. For example; Mammalia.mrp. This is done using classes.txt and class_species.txt
+- `paup_nexus` - combines the MRP matrices to a large combined matrix, filling in the non-overlapping parts with questionmarks. The result is a Nexus file for every class-level partition. For example; Mammalia.nex -
+the script is also creating a table for the class, mapping the study name to the amount of characters.
+- `class_nchar` - makes the `class_nchar.txt` table (classname \t nchar), might be usefull in later calculations.
 
 Analysis using PAUP* 
 ------------------------------
 
 the MRP partitions will be converted into Nexus format to be used for analysis with the PAUP* program.
 
-- `paup_nexus` - combines the MRP matrices to a large combined matrix, filling in the non-overlapping parts with questionmarks. The result is a Nexus file for every class-level partition. For example; Mammalia.nex -
-the script is also creating a table for the class, mapping the study name to the amount of characters.
 - `paupscript` - makes `bulk_exe.nex` in which the commands for the anaylsis of every Nexus file get collected  
 - `class_trees` - infering trees for every class partition, using the heuristic method in PAUP* (using the commands in the `spr_inference.nex` script)
 - `pauplog_table` - parsing the logfile that resulted from all the PAUP* runs, so that class names get linked to their scores (class_name \t min_steps \t steps \t CI \t RI \t RC \t goloboff_fit), found in `class_scores.txt`  
@@ -67,7 +68,7 @@ the script is also creating a table for the class, mapping the study name to the
 Visualization 
 ------------------------------
 
-- `study_score` - using the class partitions in Newick format, the coresponding mrp file and studyname-to-charcount table, this part creates a *.score file for each class, containing the found studynames and their Fitch-parsimony score. For now this needs improvement, as the top 5 of biggest partitions takes up tp much memory, due to the amount of characters!
+- `study_score` - using the class partitions in Newick format, the coresponding mrp file and studyname-to-charcount table, this part creates a *.score file for each class, containing the found studynames and their Fitch-parsimony score. For now this needs improvement, as the top 5 of biggest partitions takes up tp much memory, due to the amount of characters!!!
 - `csvtrees` - taking the Newick trees and convert them into csv format (child /t parent) which makes it easier to read for visualization and makes it possible to add metadata 
 - `htmltrees` - adding the csvtree into a html file for visualization, with help of the D3.js library
 
