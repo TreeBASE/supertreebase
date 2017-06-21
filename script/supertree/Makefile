@@ -52,7 +52,7 @@ TB2SPECIES=$(TB2DATA)/species.txt
 TB2STUDYSPECIES=$(TB2DATA)/study_species.txt
 TB2CLASSSPECIES=$(TB2DATA)/class_species.txt
 TB2CLASS=$(TB2DATA)/classes.txt
-TB2NCHAR=$(TB2DATA)/nchar.txt
+#TB2NCHAR=$(TB2DATA)/nchar.txt
 #TNTSCRIPT=$(TB2DATA)/tntscript.runall
 #SDMINPUT=$(TB2DATA)/tb2dist
 
@@ -60,6 +60,7 @@ PAUPSCRIPT=$(TB2DATA)/bulk_exe.nex
 PAUPANALYSIS=$(TB2DATA)/spr_analysis.nex
 PAUPLOG=$(TB2DATA)/paup_log.txt
 PAUPLOGTABLE=$(TB2DATA)/class_scores.txt
+CLASSNCHAR=$(TB2DATA)/class_nchar.txt
 
 # URLs. these are based on variables defined above and probably don't need updating, ever
 TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
@@ -271,9 +272,6 @@ partitions_clean:
 #tnt_partitions_clean:
 #	- find $(TB2DATA)/tntscript.run* ! -name "tntscript.runall" -exec $(RM_RF) {} \;
 
-
-### PAUP* METHOD ###
-
 # create NEXUS files with large combined MRP matrices
 $(PAUPNEXUS) : %.nex : %.mrp
 	$(PYTHON) $(SCRIPT)/combine_mrp.py -i $< >> $@
@@ -281,6 +279,16 @@ paup_nexus : $(PAUPNEXUS)
 paup_nexus_clean : 
 	$(RM_RF) $(PAUPNEXUS)
 	$(RM_RF) $(CHARLABELS)
+ 
+# make a table that links Class-names to the number of characters used
+$(CLASSNCHAR) : $(PAUPNEXUS)
+	$(PYTHON) $(SCRIPT)/get_nchar.py >> $@
+class_nchar : $(CLASSNCHAR)
+class_nchar_clean : 
+	$(RM_RF) $(CLASSNCHAR)
+
+
+### PAUP* METHOD ###
  
 # make NEXUS file with PAUP* commands
 $(PAUPSCRIPT) : $(PAUPNEXUS)
@@ -290,12 +298,12 @@ paupscript_clean :
 	$(RM_RF) $(PAUPSCRIPT)
  
 # create Newick tree files for every class
-#$(CLASSTREES) : $(PAUPSCRIPT)
-#	$(PAUP) $<
-#class_trees : $(CLASSTREES)
-#class_trees_clean : 
-#	$(RM_RF) $(CLASSTREES)
-#	$(RM_RF) $(PAUPLOG) 
+$(CLASSTREES) : $(PAUPSCRIPT)
+	$(PAUP) $<
+class_trees : $(CLASSTREES)
+class_trees_clean : 
+	$(RM_RF) $(CLASSTREES)
+	$(RM_RF) $(PAUPLOG) 
  
 # parse the PAUP* logfile
 $(PAUPLOGTABLE) : $(PAUPLOG)
@@ -303,27 +311,3 @@ $(PAUPLOGTABLE) : $(PAUPLOG)
 pauplog_table : $(PAUPLOGTABLE)
 pauplog_table_clean : 
 	$(RM_RF) $(PAUPLOGTABLE)
- 
-
-### VISUALIZATION ###
-
-# get every class tree in csv representation, including internal nodes
-$(NEWICKCSV) : %.csv : %.tre
-	$(PYTHON) $(SCRIPT)/newick_csv.py -i $< >> $@
-csvtrees : $(NEWICKCSV)
-csvtrees_clean : 
-	$(RM_RF) $(NEWICKCSV)
-
-# get study-score linkage for every class tree
-$(STUDYSCORE) : %.score : %.tre
-	$(PYTHON) $(SCRIPT)/newick_mrp_fit.py -i $< >> $@
-study_score : $(STUDYSCORE)
-study_score_clean : 
-	$(RM_RF) $(STUDYSCORE)
- 
-# get study-score linkage for every class tree
-$(CSVHTML) : %.html : %.csv
-	$(PYTHON) $(SCRIPT)/csv_html.py -i $< >> $@
-htmltrees : $(CSVHTML)
-htmltrees_clean : 
-	$(RM_RF) $(CSVHTML) 

@@ -48,7 +48,6 @@ find S*.xml -size +2k -exec zip newdownloads.zip {} \+
 ### Creating class table with scores and other info ###
 
 
-get_nchar.py > 
 combine_classdata.py (using class_scores.txt, class_nchar.txt and classes.txt) >
 get_class_lineages.py (using classdata.txt and NCBI taxonomy) >
 the resulting files can be read and combined with R > coverage_score.r
