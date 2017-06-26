@@ -68,6 +68,8 @@ the MRP partitions will be converted into Nexus format to be used for analysis w
 Visualization 
 ------------------------------
 
+For visualization, there are separate scripts collected in [script/visualization/Makefile](https://github.com/aiblaauw/supertreebase/blob/master/script/visualization/Makefile), containing the following targets.
+
 - `study_score` - using the class partitions in Newick format, the coresponding mrp file and studyname-to-charcount table, this part creates a *.score file for each class, containing the found studynames and their Fitch-parsimony score. For now this needs improvement, as the top 5 of biggest partitions takes up tp much memory, due to the amount of characters!!!
 - `csvtrees` - taking the Newick trees and convert them into csv format (child /t parent) which makes it easier to read for visualization and makes it possible to add metadata 
 - `htmltrees` - adding the csvtree into a html file for visualization, with help of the D3.js library
