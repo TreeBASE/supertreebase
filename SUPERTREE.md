@@ -62,7 +62,7 @@ Analysis using PAUP*
 the MRP partitions will be converted into Nexus format to be used for analysis with the PAUP* program.
 
 - `paupscript` - makes `bulk_exe.nex` in which the commands for the anaylsis of every Nexus file get collected  
-- `class_trees` - infering trees for every class partition, using the heuristic method in PAUP* (using the commands in the `spr_inference.nex` script)
+- `class_trees` - infering trees for every class partition (*.tre), using the heuristic method in PAUP* (using the commands described in the `spr_inference.nex` script)
 - `pauplog_table` - parsing the logfile that resulted from all the PAUP* runs, so that class names get linked to their scores (class_name \t min_steps \t steps \t CI \t RI \t RC \t goloboff_fit), found in `class_scores.txt`  
 
 Visualization 
@@ -70,7 +70,9 @@ Visualization
 
 For visualization, there are separate scripts collected in [script/visualization/Makefile](https://github.com/aiblaauw/supertreebase/blob/master/script/visualization/Makefile), containing the following targets.
 
-- `study_score` - using the class partitions in Newick format, the coresponding mrp file and studyname-to-charcount table, this part creates a *.score file for each class, containing the found studynames and their Fitch-parsimony score. For now this needs improvement, as the top 5 of biggest partitions takes up tp much memory, due to the amount of characters!!!
+
+- `mrp_bipartition` - calculates bipartition (*.mrpsplit) for every *.mrp class, giving the following table output, separated by study_id labels: charnum \t ingroup_leaf,ingroup_leaf,.. \t outgroup_leaf,outgroup_leaf,.. 
+- `tree_bipartition` - comparing the splits to the splits found in every *.tre file, with help of the *mrpsplit files, it decides a scoring for every node in the Class tree in a *.treesplit file: node_id \t study_id_match,study_id_match,.. \t study_id_oppose,study_id,oppose,.. \t (match_count/oppose_count)/total_count 
 - `csvtrees` - taking the Newick trees and convert them into csv format (child /t parent) which makes it easier to read for visualization and makes it possible to add metadata 
 - `htmltrees` - adding the csvtree into a html file for visualization, with help of the D3.js library
 
