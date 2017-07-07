@@ -26,18 +26,38 @@ STUDYSCORE=$(patsubst %.tre,%.score,$(VALIDNEWICK))
 NEWICKCSV=$(patsubst %.tre,%.csv,$(VALIDNEWICK))
 CSVHTML=$(patsubst %.csv,%.html,$(NEWICKCSV))
 
+MRPBIPARTITION=$(patsubst %.tre,%.mrpsplit,$(VALIDNEWICK))
+TREEBIPARTITION=$(patsubst %.tre,%.treesplit,$(VALIDNEWICK))
+
 
 .PHONY : 
 
 
-### VISUALIZATION ###
+### Make and compare bipartitions for supertrees and source trees ###
+
+# create bipartition labels for every input matrix in the MRP collection
+$(MRPBIPARTITION) : %.mrpsplit : %.mrp
+	$(PYTHON) $(SCRIPT)/matrix_bipartition.py -i $< >> $@
+mrp_bipartition : $(MRPBIPARTITION)
+mrp_bipartition_clean : 
+	$(RM_RF) $(MRPBIPARTITION)
+ 
+# find study_id's matching partitions with the supertree partitions
+$(TREEBIPARTITION) : %.treesplit : %.tre
+	$(PYTHON) $(SCRIPT)/newick_bipartition.py -i $< >> $@
+tree_bipartition : $(TREEBIPARTITION)
+tree_bipartition_clean : 
+	$(RM_RF) $(TREEBIPARTITION) 
+
+
+### Visualization ###
 
 # get study-score linkage for every class tree
-$(STUDYSCORE) : %.score : %.tre
-	$(PYTHON) $(SCRIPT)/newick_mrp_fit.py -i $< >> $@
-study_score : $(STUDYSCORE)
-study_score_clean : 
-	$(RM_RF) $(STUDYSCORE)
+#$(STUDYSCORE) : %.score : %.tre
+#	$(PYTHON) $(SCRIPT)/newick_mrp_fit.py -i $< >> $@
+#study_score : $(STUDYSCORE)
+#study_score_clean : 
+#	$(RM_RF) $(STUDYSCORE)
  
 # get every class tree in csv representation, including internal nodes
 $(NEWICKCSV) : %.csv : %.tre
