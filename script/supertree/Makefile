@@ -33,7 +33,7 @@ CAT=cat
 ECHO=echo
 FIND=find
 CHMOD=chmod
-PAUP=/home/ubuntu/Downloads/paup4a152_ubuntu64/paup4a152_ubuntu64
+PAUP=/home/ubuntu/Downloads/paup4a154_ubuntu64/paup4a154_ubuntu64
 
 # file locations. these are based on contained folders defined above and probably
 # don't need updating, ever
