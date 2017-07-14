@@ -1,11 +1,10 @@
 #NEXUS
 begin paup;
-	log file=paup_log.txt start append;
-	Outgroup 1;
-	Set outRoot=monophyl;
-	HSearch swap=SPR nbest=1;
-	Reweight;
-	Pscores / CI RI RC HI Gfit;
-	SaveTrees format=Newick;
-	ClearData; 
+    log file=paup_log.txt start append; 
+    outgroup 1;
+    hsearch swap=SPR nbest=1;
+    reweight;
+    pscores / CI RI RC HI Gfit;
+    savetrees format=Newick;
+    clearData;
 end;
