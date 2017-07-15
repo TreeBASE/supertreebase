@@ -1,0 +1,97 @@
+### Some useful bash commands, used during the superTreeBASE project ###
+
+
+
+### Filtering data ###
+
+
+# count XML downloads
+ls -lR S*.xml | wc -l
+
+# list succesful downloads 
+find S*.xml -size +4k -exec ls -lh {} \+
+
+# count succesful downloads 
+find S*.xml -size +4k |  wc -l
+
+# list failed downloads
+find S*.xml -size -4k -exec ls -lh {} \+
+
+# clean out files
+sudo find S*.xml -size -4k -exec truncate --size 0 {} \;
+
+# make recognizable for git
+sudo find S*.xml -size -1k -exec bash -c 'echo x > {}' \;
+
+# remove empty files
+find S*.xml -size 0 -delete
+
+# failed combination of MRP data
+find *.mrp -size 0k |  wc -l
+# failed Nexus conversion 
+find *.nex -size 0k |  wc -l
+
+
+### Try to add source data to git ###
+
+
+# commit empty download files and then the new non-corrupted files
+find S*.xml -size -2k | xargs git add 
+git commit -m "adding failing studies" 
+find S*.xml -size +2k | xargs git add 
+git commit -m "adding freshly downloaded studies" 
+
+# zip succesfull files
+find S*.xml -size +2k -exec zip newdownloads.zip {} \+
+
+
+### Creating class table with scores and other info ###
+
+
+combine_classdata.py (using class_scores.txt, class_nchar.txt and classes.txt) >
+get_class_lineages.py (using classdata.txt and NCBI taxonomy) >
+the resulting files can be read and combined with R > coverage_score.r
+
+
+### Downloading dependencies ###
+
+
+# downloading Perl dependencies
+cpan
+cpan[1]> install Module::Name
+# downloading Python dependencies
+pip install SomePackage 
+
+
+### Increasing swap memory ###
+
+
+# turn off instance uit
+sudo poweroff
+
+# login to stack.naturalis.nl
+# volumes > actions > manage attachments > detach volume 
+# actions > extend volume
+# actions > manage attachments > attach volume 
+# start instance 
+
+# check swap size
+df -h 
+
+# format if needed
+lsblk
+sudo mkswap /dev/vdb
+sudo swapon -U #ID
+
+
+### Other usefull commands ### 
+
+
+# create/open a screen if you want that tasks keep running when you close your ssh session!!
+screen -R "screenname"
+
+# replace strings/characters in a file
+sed -i 's/changethis/intothis/g' "filename"
+
+# count strings/characters in a file
+grep -c 'countthis' "filename"

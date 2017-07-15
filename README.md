@@ -6,7 +6,7 @@ of phylogenetic knowledge. In addition there are various
 scripts and (make-based) pipelines to summarize the dump
 in various ways, including:
 * topologically, by integrating the tree topologies in the
-  database into MRP matrices that can be analyzed using TNT
+  database into MRP matrices that can be analyzed
 * taxonomically, by summarizing coverage of classes and
   by visualizing taxonomic overlap between studies
 * chronologically, by summarizing the growth in character
@@ -41,8 +41,7 @@ resolve you will have to study the source code.
   into [Circos](http://circos.ca)
 * `cliques` - creates a [GraphViz](http://graphviz.org)
   network of taxonomic links between studies
-* `supertree` - creates MRP matrices for analysis with
-  [TNT](http://tnt.insectmuseum.org)
+* `supertree` - creates MRP matrices for analysis
 * `test` - contains throwaway scripts that can be
   ignored
 

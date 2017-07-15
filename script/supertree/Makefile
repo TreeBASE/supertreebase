@@ -23,12 +23,17 @@ TB2DATA=$(DATA)/treebase
 # standard commands. unless these commands are installed in a non-standard location (this should be
 # very rare) there is no need to change these
 PERL=perl
+PYTHON=python3
 EXTRACT=unzip
 MKPATH=mkdir -p
 RM_RF=rm -rf
 CURL=curl
+WGET=wget
 CAT=cat
 ECHO=echo
+FIND=find
+CHMOD=chmod
+PAUP=/home/ubuntu/Downloads/paup4a154_ubuntu64/paup4a154_ubuntu64
 
 # file locations. these are based on contained folders defined above and probably
 # don't need updating, ever
@@ -41,9 +46,18 @@ NCBINAMES=$(TAXDMPDIR)/names.dmp
 TB2SITEMAP=sitemap.xml
 TB2SITEMAPXML=$(TB2DATA)/$(TB2SITEMAP)
 TB2TAXA=$(TB2DATA)/taxa.txt
+#TB2LINEAGES=$(TB2DATA)/lineages.txt
 TB2SPECIES=$(TB2DATA)/species.txt
-TB2NCHAR=$(TB2DATA)/nchar.txt
-TNTSCRIPT=$(TB2DATA)/tntscript.runall
+TB2STUDYSPECIES=$(TB2DATA)/study_species.txt
+TB2CLASSSPECIES=$(TB2DATA)/class_species.txt
+TB2CLASS=$(TB2DATA)/classes.txt
+#TB2NCHAR=$(TB2DATA)/nchar.txt
+
+PAUPSCRIPT=$(TB2DATA)/bulk_exe.nex
+PAUPANALYSIS=$(TB2DATA)/spr_analysis.nex
+PAUPLOG=$(TB2DATA)/paup_log.txt
+PAUPLOGTABLE=$(TB2DATA)/class_scores.txt
+CLASSNCHAR=$(TB2DATA)/class_nchar.txt
 
 # URLs. these are based on variables defined above and probably don't need updating, ever
 TAXDMPURL=ftp.ncbi.nlm.nih.gov/pub/taxonomy/$(TAXDMP).$(ARCH)
@@ -55,16 +69,23 @@ TB2STUDYPURLS=$(wildcard $(TB2DATA)/*.url)
 TB2STUDYFILES=$(patsubst %.url,%.xml,$(TB2STUDYPURLS))
 TB2MRPFILES=$(patsubst %.xml,%.txt,$(TB2STUDYFILES))
 TB2NRMLMRP=$(patsubst %.xml,%.dat,$(TB2STUDYFILES))
+
 TB2CLASSES=$(patsubst %.xml,%.class,$(TB2STUDYFILES))
-TNTCOMMANDS=$(patsubst %.dat,%.run,$(TB2NRMLMRP))
+PARTITIONS=$(wildcard $(TB2DATA)/*.mrp)
+PAUPNEXUS=$(patsubst %.mrp,%.nex,$(PARTITIONS))
+CHARLABELS=$(wildcard $(TB2DATA)/*_charlabels.txt)
+#VALIDNEXUS=$(wildcard $(TB2DATA)/*.nex)
+CLASSTREES=$(patsubst %.nex,%.tre,$(PAUPNEXUS))
+
 
 .PHONY : 
+
 
 # fetch the TreeBASE site map
 $(TB2SITEMAPXML) :
 	$(MKPATH) $(TB2DATA)
 	$(RM_RF) $(TB2SITEMAPXML)
-	$(CURL) -o $(TB2SITEMAPXML) $(TB2SITEMAPURL)
+	$(WGET) -O $(TB2SITEMAPXML) $(TB2SITEMAPURL)
 sitemap : $(TB2SITEMAPXML)
 sitemap_clean : 
 	$(RM_RF) $(TB2SITEMAPXML)
@@ -73,7 +94,7 @@ sitemap_clean :
 purls : $(TB2SITEMAPXML)
 	$(PERL) $(SCRIPT)/make_tb2_urls.pl -i $(TB2SITEMAPXML) -o $(TB2DATA)
 purls_clean : 
-	$(RM_RF) $(TB2DATA)/*.url
+	$(RM_RF) $(TB2DATA)/%.url
 
 # fetch the studies
 $(TB2STUDYFILES) : %.xml : %.url
@@ -98,6 +119,7 @@ taxa_clean :
 
 # make species-level list from TreeBASE taxon IDs
 $(TB2SPECIES) : $(TB2TAXA) $(NCBIFILES)
+	$(MKPATH) $(TAXDMPTMP)
 	$(PERL) $(SCRIPT)/make_species_list.pl -taxa `pwd`/$(TB2TAXA) -nodes `pwd`/$(NCBINODES) -names `pwd`/$(NCBINAMES) -dir `pwd`/$(TAXDMPTMP) $(VERBOSITY) > $@
 species : $(TB2SPECIES)
 species_clean : 
@@ -109,6 +131,7 @@ $(TB2NRMLMRP) : %.dat : %.txt
 tb2mrp_species : $(TB2NRMLMRP)
 tb2mrp_species_clean : 
 	$(RM_RF) $(TB2NRMLMRP)
+ 
 
 # download taxdmp archive
 $(NCBIFILES) :
@@ -127,33 +150,75 @@ ncbimrp : $(NCBIMRP)
 ncbimrp_clean : 
 	$(RM_RF) $(NCBIMRP)
 
-# make NCBI constraints
-# $(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
-#	$(PERL) $(SCRIPT)/make_ncbi_constraints.pl -w $(TB2DATA) -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
-# ncbicon : $(NCBICON)
-# ncbicon_clean :
-#	$(RM_RF) $(NCBICON)
 
-# make NCBI constraints
-$(NCBICON) : $(NCBIFILES) $(TB2SPECIES)
-	$(PERL) $(SCRIPT)/make_ncbi_constraint_tree.pl -w $(TB2DATA) -species $(TB2SPECIES) -nodes $(NCBINODES) -names $(NCBINAMES) -dir $(TAXDMPTMP) $(VERBOSITY) > $@
-ncbicon : $(NCBICON)
-ncbicon_clean :
-	$(RM_RF) $(NCBICON)
+### Partitioning ### 
+
+# making table showing species ID's linked to class ID's
+
+$(TB2CLASSSPECIES) : $(TB2NRMLMRP) $(NCBIFILES)
+	$(PYTHON) $(SCRIPT)/class_species.py -i $(TB2DATA)/ -t `pwd`/$(NCBINODES) -n `pwd`/$(NCBINAMES) >> $@
+class_species : $(TB2CLASSSPECIES)
+class_species_clean:
+	$(RM_RF) $(TB2CLASSSPECIES)
+ 
+# making a table showing species ID's within every study
+$(TB2STUDYSPECIES) : $(TB2NRMLMRP) 
+	for f in $(TB2NRMLMRP) ; do \
+		$(PYTHON) $(SCRIPT)/study_species.py -i $$f >> $@ ; \
+   done
+study_species : $(TB2STUDYSPECIES)
+study_species_clean:
+	$(RM_RF) $(TB2STUDYSPECIES) 
+ 
+# find class levels found in every study
+$(TB2CLASS) : $(TB2STUDYSPECIES) $(NCBIFILES)
+	$(PYTHON) $(SCRIPT)/make_classes.py -i $< -t `pwd`/$(NCBINODES) -n `pwd`/$(NCBINAMES) -o $@
+classes : $(TB2CLASS)
+classes_clean:
+	$(RM_RF) $(TB2CLASS)
+ 
+# create a file with a list of corresponding MRP matrices, for each taxonomic class 
+partitions: $(TB2CLASSSPECIES) $(TB2CLASS)
+	$(PYTHON) $(SCRIPT)/make_partitions_mrp.py -c $(TB2CLASSSPECIES) -s $(TB2CLASS) -n `pwd`/$(NCBINAMES)
+partitions_clean:
+	- $(RM_RF) $(TB2DATA)/*.mrp
+   
+# create NEXUS files with large combined MRP matrices
+$(PAUPNEXUS) : %.nex : %.mrp
+	$(PYTHON) $(SCRIPT)/combine_mrp.py -i $< >> $@
+paup_nexus : $(PAUPNEXUS)
+paup_nexus_clean : 
+	$(RM_RF) $(PAUPNEXUS)
+	$(RM_RF) $(CHARLABELS)
+ 
+# make a table that links Class-names to the number of characters used
+$(CLASSNCHAR) : $(PAUPNEXUS)
+	$(PYTHON) $(SCRIPT)/get_nchar.py >> $@
+class_nchar : $(CLASSNCHAR)
+class_nchar_clean : 
+	$(RM_RF) $(CLASSNCHAR)
 
 
-# make tnt file inclusion commands and single file with nchar for each treeblock
-$(TNTCOMMANDS) : %.run : %.dat
-	$(PERL) $(SCRIPT)/make_tnt.pl -i $< > $@ 2>> $(TB2NCHAR)
-tntdata : $(TNTCOMMANDS)
-tntdata_clean : 
-	$(RM_RF) $(TNTCOMMANDS) $(TB2NCHAR) $(TB2DATA)/*.tnt
-
-# make the master tnt script
-$(TNTSCRIPT) : $(TNTCOMMANDS)
-	$(PERL) $(SCRIPT)/make_tnt_script.pl -n $(TB2NCHAR) -s $(TB2SPECIES) > $@
-	$(CAT) $(TNTCOMMANDS) >> $@
-	$(ECHO) 'proc/;' >> $@
-tntscript : $(TNTSCRIPT)
-tntscript_clean : 
-	$(RM_RF) $(TNTSCRIPT) $(TB2DATA)/*.run
+### PAUP* method ###
+ 
+# make NEXUS file with PAUP* commands
+$(PAUPSCRIPT) : $(PAUPNEXUS)
+	$(PYTHON) $(SCRIPT)/combine_paupscript.py >> $@
+paupscript : $(PAUPSCRIPT)
+paupscript_clean : 
+	$(RM_RF) $(PAUPSCRIPT)
+ 
+# create Newick tree files for every class
+$(CLASSTREES) : $(PAUPSCRIPT)
+	$(PAUP) $<
+class_trees : $(CLASSTREES)
+class_trees_clean : 
+	$(RM_RF) $(CLASSTREES)
+	$(RM_RF) $(PAUPLOG) 
+ 
+# parse the PAUP* logfile
+$(PAUPLOGTABLE) : $(PAUPLOG)
+	$(PYTHON) $(SCRIPT)/parse_pauplog.py -i $< >> $@
+pauplog_table : $(PAUPLOGTABLE)
+pauplog_table_clean : 
+	$(RM_RF) $(PAUPLOGTABLE)
